@@ -19,7 +19,19 @@ def get_db(path: Path | str = DB_PATH) -> sqlite_utils.Database:
 
 
 def init_db(path: Path | str = DB_PATH) -> sqlite_utils.Database:
+    """Create or RESET the schema.
+
+    Drops the existing data tables (observations, sources, works,
+    work_images, v_conflicts) before re-creating, so that re-running
+    `make ingest` doesn't accumulate stale source rows from prior runs.
+    """
     db = get_db(path)
+    # Order matters: drop dependent objects first.
+    for tbl in ("v_conflicts", "work_images", "works", "observations", "sources"):
+        try:
+            db.execute(f"DROP TABLE IF EXISTS {tbl};")
+        except Exception:
+            db.execute(f"DROP VIEW IF EXISTS {tbl};")
     for stmt in [s.strip() for s in DDL.split(";") if s.strip()]:
         db.execute(stmt + ";")
     db.conn.commit()
