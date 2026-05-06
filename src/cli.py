@@ -682,6 +682,27 @@ def duplicate_titles(limit: int, db_path: str):
 
 
 @cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def classifications(db_path: str):
+    """Distribution of works by classification."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """SELECT classification, COUNT(*) AS n FROM works
+           WHERE classification IS NOT NULL AND classification != ''
+           GROUP BY classification ORDER BY n DESC"""
+    ).fetchall()
+    if not rows:
+        click.echo("\n  no classification data.\n")
+        return
+    total = sum(n for _, n in rows)
+    click.echo(f"\n  {total} classified works:\n")
+    for cls, n in rows:
+        bar = "█" * int(round(n / total * 30))
+        click.echo(f"    {n:5d}  {bar:30s}  {cls}")
+    click.echo()
+
+
+@cli.command()
 @click.option("--limit", default=20, show_default=True)
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def mediums(limit: int, db_path: str):
