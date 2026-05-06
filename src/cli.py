@@ -11,7 +11,7 @@ import yaml
 from . import db as dbmod
 from . import consolidate as consolidate_mod
 from . import reports
-from .exporters import artsy_upload_csv, conflicts_csv, gaps_csv, master_csv
+from .exporters import artsy_upload_csv, conflicts_csv, gaps_csv, master_csv, provenance_csv
 
 INGESTERS = {
     "artsy_csv": ("src.ingest.artsy_csv", "ArtsyCsvIngester"),
@@ -204,6 +204,7 @@ def report(db_path: str):
     nc = conflicts_csv.export_conflicts(db, "data/conflicts.csv")
     ng = gaps_csv.export_gaps(db, "data/gaps.csv")
     na = artsy_upload_csv.export_artsy_upload(db, "data/artsy_upload.csv")
+    np_ = provenance_csv.export_provenance(db, "data/master_provenance.csv")
     reports.coverage_report(db, "reports/coverage_report.md")
     reports.gaps_report(db, "reports/gaps_report.md")
     reports.provenance_report(db, "reports/provenance_report.md")
@@ -211,6 +212,7 @@ def report(db_path: str):
     click.echo(f"conflicts.csv: {nc} rows")
     click.echo(f"gaps.csv: {ng} rows")
     click.echo(f"artsy_upload.csv: {na} rows")
+    click.echo(f"master_provenance.csv: {np_} rows")
     click.echo("reports/*.md written")
 
 

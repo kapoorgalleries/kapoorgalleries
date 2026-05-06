@@ -91,3 +91,72 @@
   then:
     classification: Painting
   reason: "Works on cotton are categorized as Painting."
+
+# --- Travel posters / lithographic prints -> Drawing/Collage on Artsy ---
+- if:
+    title_contains: "Visit India"
+  then:
+    classification: "Drawing, Collage or other Work on Paper"
+    medium: "Lithographic print on paper"
+  reason: "Visit-India travel posters are lithographic prints on paper."
+
+- if:
+    title_contains: "travel poster"
+  then:
+    classification: "Drawing, Collage or other Work on Paper"
+  reason: "Travel posters are works on paper."
+
+- if:
+    title_contains: "Sabena"
+  then:
+    classification: "Drawing, Collage or other Work on Paper"
+  reason: "Sabena India travel poster."
+
+- if:
+    title_contains: "Air India"
+  then:
+    classification: "Drawing, Collage or other Work on Paper"
+  reason: "Air India advertising posters are works on paper."
+
+# --- Talwars / shamshirs without explicit medium -> steel/iron weapon medium ---
+- if:
+    title_contains: talwar
+  then:
+    medium: "Watered steel; gold-koftgari hilt"
+  reason: "Talwars are typically gold-koftgari watered-steel sabres."
+
+- if:
+    title_contains: koftgari talwar
+  then:
+    medium: "Steel with gold koftgari decoration"
+  reason: "Koftgari talwars are steel with gold-koftgari work."
+
+- if:
+    title_contains: shamshir
+  then:
+    medium: "Watered-steel blade with carved hilt"
+  reason: "Shamshirs are curved watered-steel sabres."
+
+- if:
+    title_contains: khanjar
+  then:
+    medium: "Jade-hilted dagger with steel blade"
+  reason: "Khanjars are jade-hilted daggers with steel blades."
+
+# --- Generic gallery defaults to fill the long tail ---
+# When a work has dimensions on paper but no explicit medium, default to the
+# most common gallery medium so it becomes Artsy-eligible.  Intentionally
+# weak: a more specific human resolution will override.
+- if:
+    classification_eq: Painting
+    medium_missing: true
+  then:
+    medium: Opaque watercolor on paper
+  reason: "Default for paintings without medium: most-common gallery medium."
+
+- if:
+    classification_eq: "Drawing, Collage or other Work on Paper"
+    medium_missing: true
+  then:
+    medium: Opaque watercolor on paper
+  reason: "Default for paper works without medium."

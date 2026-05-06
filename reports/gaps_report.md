@@ -1,13 +1,13 @@
 # Artsy upload gaps
 
-- Works blocked from Artsy upload: **166**
+- Works blocked from Artsy upload: **84**
 
 ## What's missing most often
 
 | Missing field | Works |
 |---|---:|
-| medium | 120 |
-| classification | 66 |
+| classification | 57 |
+| medium | 43 |
 | image | 11 |
 | title | 1 |
 
@@ -17,37 +17,14 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 
 | KG-# | Missing | Title | Artist |
 |---|---|---|---|
-| KG-1019 | 1: medium | Jade-hilted and gilt khanjar |  |
-| KG-1020 | 1: medium | Jade-hilted and jeweled khanjar |  |
 | KG-1046 | 1: classification | Large pagoda of Tritchinapali |  |
 | KG-1059 | 1: classification | Bas relief of the temple of Indra |  |
-| KG-1069 | 1: medium | A Ram’s Head Shamshir |  |
-| KG-1094 | 1: medium | Illustration from a Kama Sutra series |  |
-| KG-1095 | 1: medium | Illustration from a Kama Sutra series |  |
-| KG-1096 | 1: medium | Illustration from a Kama Sutra series |  |
-| KG-1097 | 1: medium | Illustration from a Kama Sutra series |  |
-| KG-1098 | 1: medium | Illustration from a Kama Sutra series |  |
-| KG-1099 | 1: medium | Illustration from a Kama Sutra series |  |
-| KG-1111 | 1: medium | Shiva, Parvati, and the Holy Family |  |
-| KG-1112 | 1: medium | Holy Family |  |
-| KG-1172 | 1: medium | Equestrian Portrait |  |
-| KG-1178 | 1: medium | Sri Nathji |  |
 | KG-1202 | 1: image | A Sikh Elder Holding Prayer Beads |  |
-| KG-1220 | 1: medium | Portrait of a Flower Lady Making Garland |  |
-| KG-1223 | 1: medium | Two Devotees |  |
-| KG-1224 | 1: medium | Holy Man Praying |  |
 | KG-1240 | 1: title |  |  |
 | KG-1241 | 1: medium | Rao Saseb Vijai Singh Ji |  |
 | KG-1242 | 1: medium | Portrait |  |
-| KG-1261 | 1: medium | Two Persian Line Drawings A) Female Musician B) Nobleman wit |  |
-| KG-1262 | 1: medium | Sad old guy |  |
-| KG-1263 | 1: medium | Lovers |  |
-| KG-1289 | 1: medium | Talwar engraved with images of the ten avatars of Vishnu |  |
-| KG-1290 | 1: medium | Koftgari talwar |  |
 | KG-1328 | 1: classification | See India, Mysore |  |
 | KG-1336 | 1: medium | Car Festival at Puri, India |  |
-| KG-1337 | 1: classification | Visit India, Sanchi |  |
-| KG-1338 | 1: classification | Sanchi/Visit India |  |
 | KG-1340 | 1: classification | Banaras, India |  |
 | KG-1343 | 1: classification | India via Bank of America |  |
 | KG-1345 | 1: classification | India, Fly Qantas |  |
@@ -55,18 +32,41 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1348 | 1: medium | Darjeeling and Kanchanjunga |  |
 | KG-1349 | 1: classification | Banaras, See India |  |
 | KG-1350 | 1: classification | Banaras, See India |  |
-| KG-1351 | 1: medium | Udaipur, Visit India |  |
-| KG-1352 | 1: classification | Udaipur, Visit India |  |
-| KG-1355 | 1: medium | Visit India, Kashmir |  |
 | KG-1357 | 1: medium | Ajanta; 2500th Buddha Jayanti, India, The Land of Buddha |  |
 | KG-1360 | 1: medium | Golden Temple, Amritsar, India |  |
 | KG-1361 | 1: medium | Meenakshi Temple, Madurai, India |  |
+| KG-1363 | 1: medium | India, Air India |  |
+| KG-1367 | 1: medium | There is an Air about India, Air India |  |
 | KG-1376 | 1: classification | See India/Amber |  |
-| KG-1377 | 1: classification | Visit India/A Street by Moonlight |  |
-| KG-1378 | 1: classification | Mount Abu/Visit India |  |
 | KG-1379 | 1: classification | See Ceylon |  |
 | KG-1380 | 1: medium | Simla, See India |  |
 | KG-1381 | 1: medium | Indian State Railways, Kashmir |  |
+| KG-1383 | 1: classification | Kashmir / Indian Railways |  |
+| KG-1384 | 1: classification | Kashmir |  |
+| KG-1385 | 1: classification | East Indian Railway, Banaras |  |
+| KG-1386 | 1: classification | India / The Wonderful Land |  |
+| KG-1395 | 1: classification | India–In War and Peace |  |
+| KG-1399 | 1: classification | Megha Raga |  |
+| KG-1407 | 1: medium | Illuminated Horoscope Manuscript |  |
+| KG-1408 | 1: medium | Book 2 |  |
+| KG-1409 | 1: medium | Book 3 |  |
+| KG-1509 | 1: medium | Need title |  |
+| KG-1510 | 1: medium | Need title |  |
+| KG-1513 | 1: medium | Thangka |  |
+| KG-1541 | 1: image | 6 Botanical Studies of Tree Branches and Fruit |  |
+| KG-1564 | 1: medium | 2 Leafs from a Jain Manuscript |  |
+| KG-1600 | 1: medium | Book of Company Period Architectural Drawings |  |
+| KG-1625 | 1: classification | Shiva and Parvati (Uma Maheshvara) |  |
+| KG-1645 | 1: classification | Bahubali |  |
+| KG-1647 | 1: classification | A Digambara Jina |  |
+| KG-1650 | 1: classification | Makara Bangle (Makaranathi) |  |
+| KG-1651 | 1: classification | Drawing Water from a Well |  |
+| KG-1654 | 1: classification | Brahma |  |
+| KG-1655 | 1: classification | Shiva Vinadhara |  |
+| KG-1657 | 1: image | Vajravarahi |  |
+| KG-1659 | 1: classification | Crowned Buddha |  |
+| KG-1661 | 1: classification | King Ralpachen |  |
+| KG-1664 | 1: classification | Arhat Bakula |  |
 
 ## Unresolved conflicts
 

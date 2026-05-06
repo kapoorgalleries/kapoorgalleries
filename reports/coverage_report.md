@@ -11,8 +11,8 @@
 | artist | 0 | 0.0% |
 | year | 539 | 82.7% |
 | period_school_region | 0 | 0.0% |
-| classification | 586 | 89.9% |
-| medium | 532 | 81.6% |
+| classification | 595 | 91.3% |
+| medium | 609 | 93.4% |
 | materials | 16 | 2.5% |
 | height_in | 103 | 15.8% |
 | width_in | 96 | 14.7% |
@@ -35,7 +35,7 @@
 
 | Source | Type | Rows | Extracted at |
 |---|---|---:|---|
-| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T05:59:34.557842+00:00 |
-| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T05:59:34.678962+00:00 |
-| human_resolutions | human_resolution |  | 2026-05-06T05:59:34.755548+00:00 |
-| auto_resolution_rules | auto_resolution | 12 | 2026-05-06T05:59:34.844213+00:00 |
+| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T06:01:35.605289+00:00 |
+| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T06:01:35.728027+00:00 |
+| human_resolutions | human_resolution |  | 2026-05-06T06:01:35.813014+00:00 |
+| auto_resolution_rules | auto_resolution | 22 | 2026-05-06T06:01:35.967507+00:00 |
