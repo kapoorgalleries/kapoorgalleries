@@ -11,6 +11,10 @@
 #     --reason "Opaque watercolor on paper; Artsy categorizes as Drawing." \
 #     --by sanjay@kapoors.com
 #
+# Or interactively:
+#
+#   python -m src.cli triage
+#
 # Schema (one entry per item):
 #   - work_id:    KG-####
 #     field:      <canonical field name>

@@ -672,10 +672,15 @@ def triage(decided_by: str, limit: int, db_path: str, yaml_path: str):
         })
         decided += 1
 
-    p.write_text(yaml.safe_dump(entries, sort_keys=False, default_flow_style=False))
-    click.echo()
-    click.echo(f"  Decided: {decided}   Skipped: {skipped}")
-    click.echo(f"  Wrote {yaml_path}.  Run `make consolidate report` to refresh master.csv.")
+    if decided > 0:
+        p.write_text(yaml.safe_dump(entries, sort_keys=False, default_flow_style=False))
+        click.echo()
+        click.echo(f"  Decided: {decided}   Skipped: {skipped}")
+        click.echo(f"  Wrote {yaml_path}.  Run `make consolidate report` to refresh master.csv.")
+    else:
+        click.echo()
+        click.echo(f"  Decided: {decided}   Skipped: {skipped}")
+        click.echo("  No decisions recorded — leaving file untouched.")
 
 
 @cli.command()
