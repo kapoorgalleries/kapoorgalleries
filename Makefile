@@ -1,4 +1,4 @@
-.PHONY: init ingest consolidate report all clean test
+.PHONY: init ingest consolidate report all clean test stats lint conflicts gaps
 
 PY ?= python3
 
@@ -34,6 +34,16 @@ all: init ingest consolidate report
 
 test:
 	$(PY) -m pytest
+
+# Read-only ops (after `make all`) — handy shortcuts.
+stats:
+	$(PY) -m src.cli stats
+lint:
+	$(PY) -m src.cli lint
+conflicts:
+	$(PY) -m src.cli conflicts
+gaps:
+	$(PY) -m src.cli gaps --max-missing 1
 
 clean:
 	rm -f data/inventory.db data/master.csv data/master_long.csv data/conflicts.csv data/gaps.csv data/artsy_upload.csv
