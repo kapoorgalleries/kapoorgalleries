@@ -1,0 +1,7 @@
+work_id,field,distinct_values,values_seen,source_types
+KG-1312,height_in,2,13.0 || 9.0,artsy_csv
+KG-1312,medium,2,Ground mineral pigments on paper || Opaque watercolor heightened with gold on paper,artsy_csv
+KG-1312,price_usd,2,50000.0 || 26000.0,artsy_csv
+KG-1312,title,2,Battle between Banasura and Krishna || Vasishtha Teaches Rama and Lakshmana,artsy_csv
+KG-1312,width_in,2,20.0 || 14.0,artsy_csv
+KG-1312,year,2,1775 || 1700,artsy_csv

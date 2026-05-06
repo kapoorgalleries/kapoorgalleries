@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+
+# Local-only raw downloads from Drive (large; reproducible from sources.yaml).
+# Keep small fixtures committed under tests/fixtures/, not data/raw/.
+data/raw/

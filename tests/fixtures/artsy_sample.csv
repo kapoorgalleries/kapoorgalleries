@@ -1,0 +1,6 @@
+Work_Number,Work_Artist,Work_Title,Work_Year,Work_Price,Work_Type,Work_Medium,I_Iinfo::D__Height,I_Iinfo::D__Width,I_Iinfo::D__Depth,I_Imgs::URL_public
+KG-9000,,A Test Painting,1850,,Painting,Opaque watercolor on paper,8.5,11,,https://data-us-east-1.primerws.com/test/i/aaaa-bbbb-cccc/test.jpg?Expires=1
+KG-9001,Unknown,Composite Camel and Rider,,12000,Painting,Opaque watercolor heightened with gold on paper,8.5,6,,https://data-us-east-1.primerws.com/test/i/dddd-eeee-ffff/test2.jpg?Expires=1
+,,,,,,,,,,https://data-us-east-1.primerws.com/test/i/dddd-eeee-ffff/test2_alt.jpg?Expires=1
+KG-9006,,A Sandstone Torso,,,Sculpture,Sandstone,40,26,12,
+KG-9006,,A Sandstone Torso,,,Sculpture,Sandstone,42,26,12,

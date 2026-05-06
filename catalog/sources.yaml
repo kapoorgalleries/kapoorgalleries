@@ -1,0 +1,98 @@
+# Source registry for the Kapoor Galleries inventory pipeline.
+#
+# `local_path` must point at a file under data/raw/ (gitignored). Any source
+# whose `local_path` is missing is reported in `make ingest` output and
+# silently skipped — drop the file in and re-run.
+#
+# To add a new source:
+#   1. Pick `type` from src/cli.py:INGESTERS
+#   2. Note the Drive ID (so we can re-fetch if needed)
+#   3. Drop the file at data/raw/<name>
+#   4. `make ingest`
+#
+# IDs were discovered during Phase A; the registry is append-only.
+
+- name: Artsy_2-16-2026.csv
+  type: artsy_csv
+  drive_file_id: 1IEIQhviVzfwXeaZoDzdAps5srjQOzmva
+  drive_file_path: My Drive / Kapoor Internal / Artsy / Artsy_2-16-2026.csv
+  local_path: data/raw/Artsy_2-16-2026.csv
+  notes: |
+    Primer→Artsy snapshot, Feb 16 2026. Authoritative for KG-1000..KG-1698.
+    FileMaker `I_Iinfo::D__Height` namespace; multi-image rows belong to the
+    previous KG-#.
+
+- name: Kapoor_Galleries_Artsy_Match_Workbook_completed_with_images.xlsx
+  type: match_workbook
+  drive_file_id: 1lUTRcjGczM0IuxmIYey4UqG5_hGgAvJW
+  drive_file_path: My Drive / Artsy Match Workbooks / Kapoor_Galleries_Artsy_Match_Workbook_completed_with_images.xlsx
+  local_path: data/raw/Kapoor_Galleries_Artsy_Match_Workbook_completed_with_images.xlsx
+  notes: |
+    26MB. KG-1000..KG-1099 → primary source PDF + page + match confidence.
+
+- name: Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099)
+  type: image_dir
+  drive_file_id: 1KZjEY1RbmCFNvhppOAGClLO84CVuBgX7
+  drive_file_path: My Drive / Artsy Match Workbooks / Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099)
+  local_path: data/raw/artsy_first_100_pngs
+  notes: |
+    76 PNGs. Many are tiny (<1KB) placeholders — flag with is_placeholder.
+
+- name: KG_The Blossom & the Sword Price List.pdf
+  type: price_list_pdf
+  drive_file_id: 1fEPjP_BkU4NQeV3aSFCN28k1YOYDqe7R
+  local_path: data/raw/Blossom_and_Sword_Price_List.pdf
+  notes: |
+    Sample price list with full provenance/exhibition/publication detail.
+    Reference shape for the catalog/price-list PDF parser.
+
+- name: KG Inventory - 9-25-2025.pdf
+  type: kg_inventory_pdf
+  drive_file_id: 16io-Drs2YYwpq4m3nifxfwT3YEqKwlFk
+  local_path: data/raw/KG_Inventory_2025-09-25.pdf
+  notes: |
+    172MB. Likely the printed-Primer inventory book the gallery referred to as
+    "primer pages". Page-stream the parser; never load the full PDF.
+
+# --- Sub-inventories (custom ID schemes, fuzzy match by title to KG-#) ---
+- name: Graham Inventory - owned.pdf
+  type: sub_inventory
+  drive_file_id: 1wSKFu8AX633cIocDvYQB9VwB4m0TEZ4o
+  local_path: data/raw/Graham_Inventory_owned.pdf
+  enabled: false  # parser stub only
+  notes: Graham collection, owned works.
+
+- name: Darion Inventory Book.pdf
+  type: sub_inventory
+  drive_file_id: 1OA6yU_XM6sOUzjeXsrXzLrWlQk7tM-RJ
+  local_path: data/raw/Darion_Inventory_Book.pdf
+  enabled: false
+
+- name: Notarized Scans of Huc Inventory.pdf
+  type: sub_inventory
+  drive_file_id: 1yxdGbvwF-2SqEpjVdiQUtsQpDldo8BMB
+  local_path: data/raw/Huc_Inventory_Notarized.pdf
+  enabled: false
+
+- name: July 2022 Textile Boxes Inventory.docx
+  type: sub_inventory
+  drive_file_id: 1SRs4jmAFSB0brRy_5WPAhkBALX8cWrRA
+  local_path: data/raw/Textile_Boxes_2022-07.docx
+  enabled: false
+
+# --- Catalog production (year-based) ---
+- name: Inventory for 2024 catalog.xlsx
+  type: catalog_inventory_xlsx
+  drive_file_id: 1l3rWoPT534jnuVsnSmJ_qhli8x47-K3G
+  local_path: data/raw/Inventory_for_2024_catalog.xlsx
+  enabled: false
+
+# --- Email gap reports ---
+- name: Sarah Fenner @ Artsy gap reports
+  type: email_gaps
+  drive_file_id: gmail:from:sarah.fenner@artsy.net
+  local_path: data/raw/email_gaps_sarah_fenner.json
+  enabled: false
+  notes: |
+    Run a Gmail MCP fetch into data/raw/email_gaps_sarah_fenner.json:
+    one JSON object per thread {thread_id, snippet, full_text}.
