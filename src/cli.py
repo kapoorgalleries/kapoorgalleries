@@ -923,9 +923,15 @@ def lint(db_path: str):
 @cli.command()
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 @click.option("--sources", default="catalog/sources.yaml", show_default=True)
+@click.option("--commit", is_flag=True, default=False,
+              help="git-commit the regenerated artifacts after refresh.")
 @click.pass_context
-def refresh(ctx, db_path: str, sources: str):
-    """One-stop: init-db + ingest + consolidate + report + lint + check-artsy."""
+def refresh(ctx, db_path: str, sources: str, commit: bool):
+    """One-stop: init-db + ingest + consolidate + report + lint + check-artsy.
+
+    Pass --commit to also stage and commit the regenerated CSV/JSON
+    artifacts (useful when iterating on rules).
+    """
     click.echo("\n  ┌── refresh ───────────────────────────────────────")
     ctx.invoke(init_db_cmd, db_path=db_path)
     ctx.invoke(ingest, db_path=db_path, sources=sources)
@@ -934,6 +940,26 @@ def refresh(ctx, db_path: str, sources: str):
     click.echo("\n  ├── post-checks ──────────────────────────────────")
     ctx.invoke(lint, db_path=db_path)
     ctx.invoke(check_artsy)
+    if commit:
+        import subprocess
+        click.echo("\n  ├── committing artifacts ─────────────────────────")
+        subprocess.run([
+            "git", "add",
+            "data/master.csv", "data/master.json", "data/master_provenance.csv",
+            "data/conflicts.csv", "data/gaps.csv", "data/artsy_upload.csv",
+            "data/primer_corrections.csv", "reports/",
+        ], check=False)
+        r = subprocess.run(
+            ["git", "diff", "--cached", "--quiet"], capture_output=True
+        )
+        if r.returncode == 0:
+            click.echo("    no changes to commit.")
+        else:
+            subprocess.run(
+                ["git", "commit", "-m", "chore: refresh inventory artifacts"],
+                check=False,
+            )
+            click.echo("    committed (push manually).")
     click.echo("\n  └── refreshed.\n")
 
 
