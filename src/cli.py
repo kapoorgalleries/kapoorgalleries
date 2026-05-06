@@ -575,6 +575,105 @@ def promote(work_id: str, field: str, decided_by: str, db_path: str, yaml_path: 
 
 
 @cli.command()
+@click.option("--by", "decided_by", default="", show_default=True)
+@click.option("--limit", default=20, show_default=True)
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--file", "yaml_path", default="data/human_resolutions.yaml", show_default=True)
+def triage(decided_by: str, limit: int, db_path: str, yaml_path: str):
+    """Interactively walk through unresolved conflicts, recording decisions.
+
+    For each conflict, shows the values and their sources, prompts for a
+    pick (1, 2, ..., 's' to skip, 'q' to stop), records the decision in
+    data/human_resolutions.yaml.
+    """
+    from datetime import datetime, timezone
+
+    if not decided_by:
+        decided_by = click.prompt("Your email", type=str)
+
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """WITH observed AS (
+              SELECT o.work_id, o.field, o.value, s.type AS stype
+              FROM observations o JOIN sources s ON s.id = o.source_id
+              WHERE o.value IS NOT NULL AND o.value != ''
+                AND s.type NOT IN ('human_resolution','auto_resolution')
+           )
+           SELECT work_id, field,
+                  GROUP_CONCAT(DISTINCT stype || '||' || value, ';;')
+           FROM observed
+           GROUP BY work_id, field
+           HAVING COUNT(DISTINCT value) > 1
+              AND NOT EXISTS (
+                  SELECT 1 FROM observations o2 JOIN sources s2 ON s2.id = o2.source_id
+                  WHERE o2.work_id = observed.work_id AND o2.field = observed.field
+                    AND s2.type = 'human_resolution'
+              )
+           ORDER BY work_id, field LIMIT ?""",
+        [limit],
+    ).fetchall()
+
+    if not rows:
+        click.echo("\n  No unresolved conflicts. Nothing to triage.\n")
+        return
+
+    p = Path(yaml_path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    entries = yaml.safe_load(p.read_text()) if p.exists() else []
+    entries = entries or []
+
+    decided = 0
+    skipped = 0
+    for wid, field, blob in rows:
+        click.echo()
+        click.echo(f"  {wid}.{field}")
+        # Show context: title for the work
+        ctx = db.execute("SELECT title FROM works WHERE work_id = ?", [wid]).fetchone()
+        if ctx and ctx[0]:
+            click.echo(f"  Title: {ctx[0]}")
+        options: list[tuple[str, str]] = []  # (source, value)
+        for piece in (blob or "").split(";;"):
+            if "||" in piece:
+                src, val = piece.split("||", 1)
+                options.append((src, val))
+        for i, (src, val) in enumerate(options, start=1):
+            click.echo(f"    [{i}] {val}   ({src})")
+        click.echo("    [s] skip  [q] quit")
+
+        choice = click.prompt("Pick", type=str, default="s").strip().lower()
+        if choice == "q":
+            break
+        if choice == "s":
+            skipped += 1
+            continue
+        try:
+            n = int(choice)
+            if not 1 <= n <= len(options):
+                click.echo("  invalid; skipping.")
+                skipped += 1
+                continue
+        except ValueError:
+            click.echo("  invalid; skipping.")
+            skipped += 1
+            continue
+
+        chosen_src, chosen_val = options[n - 1]
+        reason = click.prompt("Reason (optional)", default="", show_default=False)
+        entries.append({
+            "work_id": wid, "field": field, "value": chosen_val,
+            "reason": reason or f"Picked {chosen_src} value via kg-inv triage.",
+            "decided_by": decided_by,
+            "decided_at": datetime.now(timezone.utc).date().isoformat(),
+        })
+        decided += 1
+
+    p.write_text(yaml.safe_dump(entries, sort_keys=False, default_flow_style=False))
+    click.echo()
+    click.echo(f"  Decided: {decided}   Skipped: {skipped}")
+    click.echo(f"  Wrote {yaml_path}.  Run `make consolidate report` to refresh master.csv.")
+
+
+@cli.command()
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def lint(db_path: str):
     """Flag data-quality issues without changing anything."""
