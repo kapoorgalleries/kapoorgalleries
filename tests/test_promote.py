@@ -18,6 +18,21 @@ def _seed(db, work_id, field, value, stype, observed_at="2026-01-01"):
     )])
 
 
+def test_resolve_dry_run_doesnt_write(tmp_path: Path):
+    yaml_path = tmp_path / "h.yaml"
+    runner = CliRunner()
+    result = runner.invoke(cli, [
+        "resolve", "KG-1", "classification", "Painting",
+        "--dry-run", "--by", "test",
+        "--file", str(yaml_path),
+    ])
+    assert result.exit_code == 0
+    assert "DRY RUN" in result.output
+    # File should not exist (or be empty if it did)
+    if yaml_path.exists():
+        assert not (yaml_path.read_text() or "").strip().startswith("- ")
+
+
 def test_promote_appends_human_resolution(tmp_path: Path):
     db_path = tmp_path / "t.db"
     db = init_db(db_path)
