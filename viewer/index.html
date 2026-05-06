@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kapoor Galleries — Inventory Viewer</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+         margin: 0; padding: 16px; font-size: 13px; color: #222; }
+  h1 { font-size: 18px; margin: 0 0 12px; }
+  .meta { color: #666; font-size: 12px; margin-bottom: 12px; }
+  .controls { margin-bottom: 12px; padding: 8px; background: #f4f4f4;
+              border-radius: 4px; }
+  input, select { padding: 4px 8px; margin-right: 8px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { padding: 4px 8px; text-align: left; border-bottom: 1px solid #eee;
+           vertical-align: top; }
+  th { background: #f4f4f4; cursor: pointer; user-select: none;
+       position: sticky; top: 0; }
+  th:hover { background: #ddd; }
+  tr:hover td { background: #fafafa; }
+  .conflict { background: #ffd6d6 !important; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .url { max-width: 200px; white-space: nowrap; overflow: hidden;
+         text-overflow: ellipsis; }
+  .badge { display: inline-block; padding: 1px 6px; border-radius: 3px;
+           font-size: 11px; background: #e0e0e0; }
+</style>
+</head>
+<body>
+<h1>Kapoor Galleries Inventory</h1>
+<div class="meta" id="meta">loading…</div>
+<div class="controls">
+  <input id="q" placeholder="filter (title, classification, medium…)" size="40">
+  <select id="cls">
+    <option value="">— all classifications —</option>
+  </select>
+  <label><input type="checkbox" id="conflictOnly"> conflicts only</label>
+  &nbsp; <label><input type="checkbox" id="artsyOnly"> Artsy-eligible only</label>
+</div>
+<table id="t">
+  <thead><tr></tr></thead>
+  <tbody></tbody>
+</table>
+
+<script>
+const COLS = [
+  ['work_id','KG-#'],['title','Title'],['classification','Class'],
+  ['medium','Medium'],['year','Year','num'],
+  ['height_in','H','num'],['width_in','W','num'],
+  ['price_usd','$','num'],['has_conflict','⚠']
+];
+
+let DATA = [];
+
+function render() {
+  const q = document.getElementById('q').value.toLowerCase();
+  const cls = document.getElementById('cls').value;
+  const conflictOnly = document.getElementById('conflictOnly').checked;
+  const artsyOnly = document.getElementById('artsyOnly').checked;
+
+  const filtered = DATA.filter(d => {
+    if (cls && d.classification !== cls) return false;
+    if (conflictOnly && !d.has_conflict) return false;
+    if (artsyOnly && !(d.title && d.classification && d.medium && d.primary_image_url))
+      return false;
+    if (q) {
+      const blob = (d.title + ' ' + d.medium + ' ' + d.classification + ' ' +
+                    d.work_id + ' ' + (d.materials||'') + ' ' + (d.year||''))
+                    .toLowerCase();
+      if (!blob.includes(q)) return false;
+    }
+    return true;
+  });
+
+  document.getElementById('meta').textContent =
+    `${filtered.length} of ${DATA.length} works displayed`;
+
+  const tb = document.querySelector('#t tbody');
+  tb.innerHTML = '';
+  for (const d of filtered.slice(0, 500)) {
+    const tr = document.createElement('tr');
+    if (d.has_conflict) tr.classList.add('conflict');
+    for (const [k, _, kind] of COLS) {
+      const td = document.createElement('td');
+      const v = d[k];
+      if (kind === 'num') td.classList.add('num');
+      if (k === 'has_conflict') td.textContent = v ? '⚠' : '';
+      else td.textContent = v == null ? '' : String(v).slice(0, 80);
+      tr.appendChild(td);
+    }
+    tb.appendChild(tr);
+  }
+}
+
+function buildHeader() {
+  const tr = document.querySelector('#t thead tr');
+  for (const [k, label] of COLS) {
+    const th = document.createElement('th');
+    th.textContent = label;
+    th.onclick = () => {
+      DATA.sort((a, b) => {
+        const av = a[k], bv = b[k];
+        if (av == null) return 1; if (bv == null) return -1;
+        if (typeof av === 'number') return av - bv;
+        return String(av).localeCompare(String(bv));
+      });
+      render();
+    };
+    tr.appendChild(th);
+  }
+}
+
+async function load() {
+  const url = new URLSearchParams(location.search).get('data') || '../data/master.json';
+  const r = await fetch(url);
+  DATA = await r.json();
+  buildHeader();
+  // Populate classification dropdown.
+  const set = new Set(DATA.map(d => d.classification).filter(Boolean));
+  const sel = document.getElementById('cls');
+  for (const c of [...set].sort()) {
+    const o = document.createElement('option');
+    o.value = c; o.textContent = c;
+    sel.appendChild(o);
+  }
+  document.getElementById('q').oninput = render;
+  document.getElementById('cls').onchange = render;
+  document.getElementById('conflictOnly').onchange = render;
+  document.getElementById('artsyOnly').onchange = render;
+  render();
+}
+load();
+</script>
+</body>
+</html>
