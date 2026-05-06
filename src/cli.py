@@ -375,6 +375,29 @@ def report(db_path: str):
 
 @cli.command()
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def overview(db_path: str):
+    """One-line summary suitable for chat/email status updates."""
+    db = dbmod.get_db(db_path)
+    total = db.execute("SELECT COUNT(*) FROM works").fetchone()[0] or 1
+    n_conflicts = db.execute("SELECT COUNT(*) FROM works WHERE has_conflict = 1").fetchone()[0]
+    artsy_ready = db.execute("""SELECT COUNT(*) FROM works
+        WHERE COALESCE(status,'active') = 'active'
+          AND title IS NOT NULL AND classification IS NOT NULL
+          AND medium IS NOT NULL AND primary_image_url IS NOT NULL""").fetchone()[0]
+    n_artist = db.execute(
+        "SELECT COUNT(*) FROM works WHERE artist IS NOT NULL"
+    ).fetchone()[0]
+    sources = db.execute("SELECT COUNT(*) FROM sources").fetchone()[0]
+    click.echo(
+        f"\n  {total} works · {artsy_ready} Artsy-eligible "
+        f"({round(100*artsy_ready/total)}%) · {n_artist} attributed "
+        f"({round(100*n_artist/total)}%) · {n_conflicts} conflicts · "
+        f"{sources} sources ingested.\n"
+    )
+
+
+@cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def stats(db_path: str):
     """Show one-screen inventory dashboard."""
     db = dbmod.get_db(db_path)
