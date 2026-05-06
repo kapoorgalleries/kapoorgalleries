@@ -222,27 +222,29 @@ function suggestResolution() {
     }
   }
 
+  // Build a pre-rendered command list (no client-side string juggling).
+  var commands = alts.map(function (a) {
+    return {
+      value: a.value, source: a.source,
+      cmd: 'python -m src.cli resolve ' + workId + ' ' + field
+         + ' "' + a.value.replace(/"/g, '\\"') + '"'
+         + ' --reason "..." --by your.email@kapoors.com',
+    };
+  });
+
   var html = '<style>body{font-family:Arial,sans-serif;padding:14px;font-size:13px}'
-    + 'pre{background:#f4f4f4;padding:8px;white-space:pre-wrap;border-radius:4px}'
-    + 'button{margin-top:6px;padding:6px 10px;cursor:pointer}</style>'
+    + 'pre{background:#f4f4f4;padding:8px;white-space:pre-wrap;border-radius:4px;font-size:11px}'
+    + 'button{margin-top:6px;padding:6px 10px;cursor:pointer}'
+    + '.alt{margin:8px 0;padding:8px;border:1px solid #eee;border-radius:4px}</style>'
     + '<h3>Resolve ' + workId + '.' + field + '</h3>'
     + '<p><b>Currently in master.csv:</b> <code>' + (current || '<i>(empty)</i>') + '</code></p>'
-    + '<p><b>Alternatives observed:</b></p><ul>';
-  alts.forEach(function (a) {
-    html += '<li><code>' + a.value + '</code> &mdash; <i>' + a.source + '</i>'
-        + ' <button onclick="pickValue(' + JSON.stringify(a.value) + ')">Use this</button></li>';
+    + '<p><b>Pick one of these and run the command in a terminal:</b></p>';
+  commands.forEach(function (c, i) {
+    var safeCmd = c.cmd.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+    html += '<div class="alt"><b>' + (c.value || '<i>(empty)</i>') + '</b>'
+        + ' &mdash; <i>' + c.source + '</i>'
+        + '<pre>' + safeCmd + '</pre></div>';
   });
-  html += '<li><i>or</i> <input id="custom" placeholder="custom value"> '
-        + '<button onclick="pickValue(document.getElementById(\'custom\').value)">Use custom</button></li></ul>'
-        + '<div id="cmd"></div>'
-        + '<script>function pickValue(v){'
-        + 'var cmd = "python -m src.cli resolve ' + workId + ' ' + field + ' \\\"" + v + "\\\""'
-        + ' + " --reason \\\"...\\\""'
-        + ' + " --by your.email@kapoors.com";'
-        + 'document.getElementById("cmd").innerHTML = '
-        + '"<p><b>Run this in your terminal:</b></p><pre>" + cmd + "</pre>"'
-        + ' + "<button onclick=\\\"navigator.clipboard.writeText(\'\" + cmd.replace(/\'/g, \\\"\\\\\\\\&apos;\\\") + \"\')\\\">Copy command</button>";'
-        + '}</script>';
 
   SpreadsheetApp.getUi().showSidebar(
     HtmlService.createHtmlOutput(html).setTitle('Resolve · ' + workId)
