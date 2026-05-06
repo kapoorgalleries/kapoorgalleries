@@ -45,10 +45,14 @@ sources:
 health: stats lint
 	@echo "==== source list ===="
 	@$(PY) -m src.cli source list || true
+	@echo "==== price distribution ===="
+	@$(PY) -m src.cli prices || true
 	@echo "==== conflicts (top 5) ===="
 	@$(PY) -m src.cli conflicts --limit 5 || true
 	@echo "==== artsy upload validation ===="
 	@$(PY) -m src.cli check-artsy || true
+	@echo "==== duplicate titles ===="
+	@$(PY) -m src.cli duplicate-titles --limit 5 || true
 	@echo "==== rule suggestions (top 5) ===="
 	@$(PY) -m src.cli suggest-rules --min-support 10 | head -10 || true
 
