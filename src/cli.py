@@ -399,8 +399,10 @@ def report(db_path: str):
 
 
 @cli.command()
+@click.option("--json", "as_json", is_flag=True, default=False,
+              help="Output JSON instead of the one-line text summary.")
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
-def overview(db_path: str):
+def overview(as_json: bool, db_path: str):
     """One-line summary suitable for chat/email status updates."""
     db = dbmod.get_db(db_path)
     total = db.execute("SELECT COUNT(*) FROM works").fetchone()[0] or 1
@@ -412,14 +414,26 @@ def overview(db_path: str):
     n_artist = db.execute(
         "SELECT COUNT(*) FROM works WHERE artist IS NOT NULL"
     ).fetchone()[0]
-    # Count distinct sources by name (re-runs accumulate rows in sources).
     sources = db.execute("SELECT COUNT(DISTINCT name) FROM sources").fetchone()[0]
-    click.echo(
-        f"\n  {total} works · {artsy_ready} Artsy-eligible "
-        f"({round(100*artsy_ready/total)}%) · {n_artist} attributed "
-        f"({round(100*n_artist/total)}%) · {n_conflicts} conflicts · "
-        f"{sources} sources ingested.\n"
-    )
+
+    if as_json:
+        import json
+        click.echo(json.dumps({
+            "works": total,
+            "artsy_eligible": artsy_ready,
+            "artsy_eligible_pct": round(100 * artsy_ready / total, 1),
+            "attributed": n_artist,
+            "attributed_pct": round(100 * n_artist / total, 1),
+            "conflicts": n_conflicts,
+            "sources": sources,
+        }))
+    else:
+        click.echo(
+            f"\n  {total} works · {artsy_ready} Artsy-eligible "
+            f"({round(100*artsy_ready/total)}%) · {n_artist} attributed "
+            f"({round(100*n_artist/total)}%) · {n_conflicts} conflicts · "
+            f"{sources} sources ingested.\n"
+        )
 
 
 @cli.command()
