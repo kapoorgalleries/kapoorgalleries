@@ -185,6 +185,38 @@ def test_stats_json_emits_valid_json(tmp_path: Path):
     assert "coverage" in payload
 
 
+def test_mediums_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["mediums", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_classifications_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["classifications", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_image_stats_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["image-stats", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_duplicate_titles_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["duplicate-titles", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
 def test_split_by_classification_writes_per_class_csvs(tmp_path: Path):
     db_path = tmp_path / "t.db"
     _populate(db_path)
