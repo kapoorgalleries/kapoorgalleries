@@ -1,0 +1,88 @@
+name: inventory
+
+# Auto-regenerate the inventory artifacts whenever code changes on a tracked
+# branch.  If `make all` produces a different `data/master.csv`,
+# `data/conflicts.csv`, `data/gaps.csv`, `data/artsy_upload.csv`, or
+# `reports/*.md`, this workflow commits the changes back to the same branch.
+#
+# `data/inventory.db` is a binary derived artifact — we *don't* commit it from
+# CI to avoid noisy diffs; rebuild locally with `make init && make ingest`.
+
+on:
+  push:
+    branches:
+      - main
+      - 'claude/**'
+    paths:
+      - 'src/**'
+      - 'catalog/**'
+      - 'data/raw/**'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - 'Makefile'
+      - '.github/workflows/inventory.yml'
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e '.[dev]'
+
+      - name: Test
+        run: pytest -q
+
+      - name: Build inventory artifacts
+        run: |
+          make init
+          make ingest
+          make consolidate
+          make report
+
+      - name: Show coverage report
+        run: cat reports/coverage_report.md
+
+      - name: Commit regenerated artifacts (push only)
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "kg-inventory-bot"
+          git config user.email "kg-inventory-bot@users.noreply.github.com"
+          git add -f data/master.csv data/master_long.csv data/conflicts.csv \
+                     data/gaps.csv data/artsy_upload.csv reports/ || true
+          if git diff --cached --quiet; then
+            echo "No artifact changes to commit."
+          else
+            git commit -m "chore: regenerate inventory artifacts [skip ci]"
+            git push
+          fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: inventory-${{ github.sha }}
+          path: |
+            data/master.csv
+            data/master_long.csv
+            data/conflicts.csv
+            data/gaps.csv
+            data/artsy_upload.csv
+            reports/
+            data/inventory.db
+          retention-days: 14
