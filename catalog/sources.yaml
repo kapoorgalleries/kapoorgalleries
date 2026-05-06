@@ -106,6 +106,11 @@
   drive_file_id: 1l3rWoPT534jnuVsnSmJ_qhli8x47-K3G
   local_path: data/raw/Inventory_for_2024_catalog.xlsx
   enabled: false
+  notes: |
+    27 KB.  Year-grouped layout: column A is section name (Portraits,
+    Sculpture, Decorative, ...), then sets of (year, title) columns for
+    2019/2020/2021/2022.  No KG-#, so values would need title-fuzzy-match
+    to existing master records.  Cached locally — parser TBD.
 
 # --- Email gap reports ---
 - name: Sarah Fenner @ Artsy gap reports
