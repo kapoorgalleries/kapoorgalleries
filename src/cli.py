@@ -42,7 +42,7 @@ def _load_ingester(type_: str):
         return None  # ingester not yet implemented
 
 
-__version__ = "0.2.0"
+__version__ = "0.4.0"
 
 
 @click.group()
