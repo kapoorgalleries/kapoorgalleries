@@ -28,6 +28,12 @@ on:
 permissions:
   contents: write
 
+# Only one active run per branch — cancel old in-progress runs when a new
+# commit lands.  Avoids the "two runs racing on the same artifacts" pattern.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
