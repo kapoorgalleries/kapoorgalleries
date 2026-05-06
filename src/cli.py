@@ -346,6 +346,69 @@ def conflicts(db_path: str, limit: int):
         click.echo()
 
 
+@cli.command("export-filtered")
+@click.option("--out", "out_path", required=True,
+              help="Path to write the filtered CSV (e.g. data/sculptures.csv).")
+@click.option("--classification", default=None,
+              help="exact match, e.g. 'Sculpture' or 'Painting'.")
+@click.option("--year-min", type=int, default=None)
+@click.option("--year-max", type=int, default=None)
+@click.option("--price-min", type=float, default=None)
+@click.option("--price-max", type=float, default=None)
+@click.option("--missing-only", default=None,
+              help="comma-separated fields; rows must have all of these missing.")
+@click.option("--has-image", is_flag=True, default=False,
+              help="restrict to rows with primary_image_url.")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def export_filtered(out_path: str, classification: str | None,
+                    year_min: int | None, year_max: int | None,
+                    price_min: float | None, price_max: float | None,
+                    missing_only: str | None, has_image: bool, db_path: str):
+    """Write a filtered subset of master.csv. Useful for batch uploads."""
+    db = dbmod.get_db(db_path)
+    where = []
+    params: list = []
+    if classification:
+        where.append("classification = ?")
+        params.append(classification)
+    if year_min is not None:
+        where.append("year >= ?")
+        params.append(year_min)
+    if year_max is not None:
+        where.append("year <= ?")
+        params.append(year_max)
+    if price_min is not None:
+        where.append("price_usd >= ?")
+        params.append(price_min)
+    if price_max is not None:
+        where.append("price_usd <= ?")
+        params.append(price_max)
+    if has_image:
+        where.append("primary_image_url IS NOT NULL")
+    if missing_only:
+        for f in missing_only.split(","):
+            where.append(f"{f.strip()} IS NULL")
+
+    sql = "SELECT * FROM works"
+    if where:
+        sql += " WHERE " + " AND ".join(where)
+    sql += " ORDER BY work_id"
+
+    rows = db.execute(sql, params).fetchall()
+    cols = [d[0] for d in db.execute("SELECT * FROM works LIMIT 0").description]
+
+    import csv
+    p = Path(out_path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(cols)
+        for row in rows:
+            w.writerow(row)
+
+    click.echo(f"\n  Wrote {len(rows)} rows to {out_path}.\n")
+
+
 @cli.command()
 @click.argument("query")
 @click.option("--limit", default=30, show_default=True)
