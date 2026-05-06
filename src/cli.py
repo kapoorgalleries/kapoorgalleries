@@ -267,10 +267,12 @@ def source_cmd(action: str, name: str | None, sources: str):
 @click.argument("value")
 @click.option("--reason", default="", help="Why this value is correct.")
 @click.option("--by", "decided_by", default="", help="Email of the person making the call.")
+@click.option("--dry-run", is_flag=True, default=False,
+              help="Print what would be appended without writing to disk.")
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 @click.option("--file", "yaml_path", default="data/human_resolutions.yaml", show_default=True)
 def resolve(work_id: str, field: str, value: str, reason: str, decided_by: str,
-            db_path: str, yaml_path: str):
+            dry_run: bool, db_path: str, yaml_path: str):
     """Record an authoritative human decision for one (work, field).
 
     Example:
@@ -285,18 +287,24 @@ def resolve(work_id: str, field: str, value: str, reason: str, decided_by: str,
     a full `make all`.
     """
     from datetime import datetime, timezone
-    p = Path(yaml_path)
-    p.parent.mkdir(parents=True, exist_ok=True)
-    entries = yaml.safe_load(p.read_text()) if p.exists() else []
-    entries = entries or []
-    entries.append({
+    new_entry = {
         "work_id": work_id,
         "field": field,
         "value": value,
         "reason": reason,
         "decided_by": decided_by,
         "decided_at": datetime.now(timezone.utc).date().isoformat(),
-    })
+    }
+    if dry_run:
+        click.echo("DRY RUN — would append the following YAML entry:\n")
+        click.echo(yaml.safe_dump([new_entry], sort_keys=False, default_flow_style=False))
+        return
+
+    p = Path(yaml_path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    entries = yaml.safe_load(p.read_text()) if p.exists() else []
+    entries = entries or []
+    entries.append(new_entry)
     p.write_text(yaml.safe_dump(entries, sort_keys=False, default_flow_style=False))
     click.echo(f"Appended to {yaml_path}: {work_id}.{field} = {value!r}")
 
