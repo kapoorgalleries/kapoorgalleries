@@ -293,6 +293,54 @@ def conflicts(db_path: str, limit: int):
 
 
 @cli.command()
+@click.argument("work_id")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def show(work_id: str, db_path: str):
+    """Show everything the system knows about one work (canonical + observations)."""
+    db = dbmod.get_db(db_path)
+    work = db.execute("SELECT * FROM works WHERE work_id = ?", [work_id]).fetchone()
+    if not work:
+        click.echo(f"No work found with id {work_id}.")
+        return
+    cols = [d[0] for d in db.execute("SELECT * FROM works LIMIT 0").description]
+    rec = dict(zip(cols, work))
+    click.echo(f"\n  {work_id}  {(rec.get('title') or '<untitled>')[:80]}")
+    click.echo("  " + "─" * 60)
+    fields = [f for f in cols if f not in
+              ("work_id", "has_conflict", "conflict_fields", "canonical_updated_at")]
+    for f in fields:
+        v = rec.get(f)
+        if v in (None, ""):
+            continue
+        click.echo(f"    {f:24s} {v}")
+    if rec.get("has_conflict"):
+        click.echo()
+        click.echo(f"  Conflicts: {rec.get('conflict_fields')}")
+    click.echo()
+    click.echo("  Observation history:")
+    for r in db.execute(
+        """SELECT o.field, o.value, s.type, o.observed_at, o.source_row_ref
+           FROM observations o JOIN sources s ON s.id = o.source_id
+           WHERE o.work_id = ? ORDER BY o.field, o.observed_at""",
+        [work_id],
+    ).fetchall():
+        ref = r[4] or ""
+        click.echo(f"    {r[0]:24s} {r[2]:18s} {(r[1] or '')[:60]}  ({ref[:30]})")
+    img = db.execute(
+        "SELECT bytes, is_placeholder, image_url FROM work_images WHERE work_id = ? ORDER BY id",
+        [work_id],
+    ).fetchall()
+    if img:
+        click.echo()
+        click.echo(f"  Images ({len(img)}):")
+        for r in img:
+            tag = "PLACEHOLDER" if r[1] else "real"
+            url = (r[2] or "")[:60]
+            click.echo(f"    {r[0]} bytes ({tag})  {url}")
+    click.echo()
+
+
+@cli.command()
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 @click.option("--max-missing", default=2, show_default=True,
               help="show works missing this many or fewer fields")
