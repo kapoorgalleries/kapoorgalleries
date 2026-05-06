@@ -437,8 +437,9 @@ def overview(as_json: bool, db_path: str):
 
 
 @cli.command()
+@click.option("--json", "as_json", is_flag=True, default=False)
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
-def stats(db_path: str):
+def stats(as_json: bool, db_path: str):
     """Show one-screen inventory dashboard."""
     db = dbmod.get_db(db_path)
     total = db.execute("SELECT COUNT(*) FROM works").fetchone()[0]
@@ -453,22 +454,41 @@ def stats(db_path: str):
           AND medium IS NOT NULL AND primary_image_url IS NOT NULL
     """).fetchone()[0]
     blocked = total - artsy_ready
+    coverage = {}
+    for f in ("title", "artist", "year", "classification", "medium", "materials",
+              "height_in", "width_in", "depth_in", "price_usd", "primary_image_url"):
+        n = db.execute(
+            f"SELECT COUNT(*) FROM works WHERE {f} IS NOT NULL AND CAST({f} AS TEXT) != ''"
+        ).fetchone()[0]
+        coverage[f] = n
+    sources_data = db.execute(
+        "SELECT name, type, row_count FROM sources ORDER BY name"
+    ).fetchall()
+
+    if as_json:
+        import json
+        click.echo(json.dumps({
+            "works": total,
+            "artsy_eligible": artsy_ready,
+            "blocked": blocked,
+            "conflicts": conflicts,
+            "coverage": coverage,
+            "sources": [{"name": r[0], "type": r[1], "rows": r[2]} for r in sources_data],
+        }, indent=2))
+        return
+
     click.echo(f"\n  Works:           {total}")
     click.echo(f"  Artsy-eligible:  {artsy_ready}")
     click.echo(f"  Blocked:         {blocked}")
     click.echo(f"  Conflicts:       {conflicts}")
     click.echo()
     click.echo("  Field coverage:")
-    for f in ("title", "artist", "year", "classification", "medium", "materials",
-              "height_in", "width_in", "depth_in", "price_usd", "primary_image_url"):
-        n = db.execute(
-            f"SELECT COUNT(*) FROM works WHERE {f} IS NOT NULL AND CAST({f} AS TEXT) != ''"
-        ).fetchone()[0]
+    for f, n in coverage.items():
         bar = "█" * int(round(n / total * 30))
         click.echo(f"    {f:20s} {bar:30s} {n:4d}/{total} ({round(100*n/total)}%)")
     click.echo()
     click.echo("  Sources ingested:")
-    for r in db.execute("SELECT name, type, row_count FROM sources ORDER BY name").fetchall():
+    for r in sources_data:
         click.echo(f"    {r[0][:50]:50s} {r[1]:20s} rows={r[2]}")
     click.echo()
 
