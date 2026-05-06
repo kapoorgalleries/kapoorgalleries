@@ -1116,6 +1116,17 @@ def lint(db_path: str):
     ).fetchall():
         findings.append(("warn", r[0], "title has leading/trailing whitespace"))
 
+    # Placeholder titles ("Need title", "Untitled", etc. en masse).
+    placeholders = db.execute(
+        """SELECT title, COUNT(*) FROM works
+           WHERE LOWER(TRIM(title)) IN ('need title', 'untitled', 'no title',
+                                         'tbd', 'placeholder')
+           GROUP BY LOWER(TRIM(title))"""
+    ).fetchall()
+    for title, n in placeholders:
+        if n >= 5:
+            findings.append(("warn", "—", f"{n} works share placeholder title {title!r} — fill in real titles"))
+
     # Active works without an image — break out into KG-# ranges so the
     # photography backlog is visible per cohort.
     no_img = db.execute(
