@@ -766,13 +766,24 @@ def lint(db_path: str):
     ).fetchall():
         findings.append(("warn", r[0], "title has leading/trailing whitespace"))
 
-    # Active works without an image.
-    n_no_image = db.execute(
-        """SELECT COUNT(*) FROM works
+    # Active works without an image — break out into KG-# ranges so the
+    # photography backlog is visible per cohort.
+    no_img = db.execute(
+        """SELECT work_id FROM works
            WHERE COALESCE(status, 'active') = 'active' AND primary_image_url IS NULL"""
-    ).fetchone()[0]
-    if n_no_image:
-        findings.append(("info", "—", f"{n_no_image} active works have no primary_image_url"))
+    ).fetchall()
+    if no_img:
+        from collections import Counter
+        buckets: Counter = Counter()
+        for (wid,) in no_img:
+            try:
+                n = int(wid.split("-")[1])
+                buckets[f"KG-{n//100:02d}xx"] += 1
+            except (IndexError, ValueError):
+                buckets["other"] += 1
+        findings.append(("info", "—", f"{len(no_img)} active works have no primary_image_url"))
+        for bucket, n in sorted(buckets.items()):
+            findings.append(("info", bucket, f"  {n} works in {bucket} range need photography"))
 
     # Active works with placeholder PNG only.
     for r in db.execute(
