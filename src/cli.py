@@ -12,7 +12,7 @@ from . import db as dbmod
 from . import consolidate as consolidate_mod
 from . import reports
 from .exporters import (
-    artsy_upload_csv, conflicts_csv, gaps_csv, master_csv,
+    artsy_upload_csv, conflicts_csv, gaps_csv, master_csv, master_json,
     primer_corrections_csv, provenance_csv,
 )
 
@@ -256,6 +256,7 @@ def report(db_path: str):
     na = artsy_upload_csv.export_artsy_upload(db, "data/artsy_upload.csv")
     np_ = provenance_csv.export_provenance(db, "data/master_provenance.csv")
     npc = primer_corrections_csv.export_primer_corrections(db, "data/primer_corrections.csv")
+    nj = master_json.export_master_json(db, "data/master.json")
     reports.coverage_report(db, "reports/coverage_report.md")
     reports.gaps_report(db, "reports/gaps_report.md")
     reports.provenance_report(db, "reports/provenance_report.md")
@@ -265,6 +266,7 @@ def report(db_path: str):
     click.echo(f"artsy_upload.csv: {na} rows")
     click.echo(f"master_provenance.csv: {np_} rows")
     click.echo(f"primer_corrections.csv: {npc} rows")
+    click.echo(f"master.json: {nj} works")
     click.echo("reports/*.md written")
 
 
@@ -437,6 +439,47 @@ def gaps(db_path: str, max_missing: int, limit: int):
     if n == 0:
         click.echo("  (none)")
     click.echo()
+
+
+@cli.command()
+@click.argument("work_id")
+@click.argument("field")
+@click.option("--by", "decided_by", default="auto-promoter", show_default=True)
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--file", "yaml_path", default="data/human_resolutions.yaml", show_default=True)
+def promote(work_id: str, field: str, decided_by: str, db_path: str, yaml_path: str):
+    """Promote the current canonical value to a permanent human_resolution.
+
+    Use when the auto_resolution rule's decision is correct and you want
+    to lock it in for this specific work — so the conflict disappears
+    even if the rule changes later.
+    """
+    db = dbmod.get_db(db_path)
+    row = db.execute(
+        f"SELECT {field} FROM works WHERE work_id = ?", [work_id]
+    ).fetchone()
+    if not row or row[0] is None:
+        raise click.ClickException(
+            f"No canonical value for {work_id}.{field}. Run `make all` first."
+        )
+    value = str(row[0])
+
+    p = Path(yaml_path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    entries = yaml.safe_load(p.read_text()) if p.exists() else []
+    entries = entries or []
+    from datetime import datetime, timezone
+    entries.append({
+        "work_id": work_id,
+        "field": field,
+        "value": value,
+        "reason": f"Promoted from auto/curator decision via `kg-inv promote`.",
+        "decided_by": decided_by,
+        "decided_at": datetime.now(timezone.utc).date().isoformat(),
+    })
+    p.write_text(yaml.safe_dump(entries, sort_keys=False, default_flow_style=False))
+    click.echo(f"Promoted {work_id}.{field} = {value!r} to human_resolution.")
+    click.echo("Run `make consolidate report` to refresh master.csv.")
 
 
 @cli.command()
