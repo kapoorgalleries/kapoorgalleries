@@ -566,5 +566,97 @@ def lint(db_path: str):
         click.echo()
 
 
+ARTSY_VALID_CLASSIFICATIONS = {
+    "Painting",
+    "Sculpture",
+    "Drawing, Collage or other Work on Paper",
+    "Print",
+    "Photograph",
+    "Video/Film/Animation",
+    "Performance Art",
+    "Installation",
+    "Design/Decorative Art",
+    "Textile Arts",
+    "Posters",
+    "Books and Portfolios",
+    "Other",
+    "Mixed Media",
+    "Jewelry",
+    "Reproduction",
+    "Ephemera or Merchandise",
+}
+
+
+@cli.command("check-artsy")
+@click.option("--file", "csv_path", default="data/artsy_upload.csv", show_default=True)
+def check_artsy(csv_path: str):
+    """Pre-flight validate the Artsy upload CSV against known Artsy rules."""
+    import csv
+    issues: list[tuple[str, str, str]] = []
+    p = Path(csv_path)
+    if not p.exists():
+        raise click.ClickException(f"{csv_path} doesn't exist. Run `make all` first.")
+    with p.open(newline="") as fh:
+        reader = csv.DictReader(fh)
+        # Strip column whitespace
+        reader.fieldnames = [(c or "").strip() for c in (reader.fieldnames or [])]
+        for i, row in enumerate(reader, start=2):
+            row = {k.strip(): (v or "").strip() for k, v in row.items()}
+            wid = row.get("Inventory ID (OPTIONAL)") or f"row{i}"
+
+            title = row.get("Title")
+            cls = row.get("Classification")
+            medium = row.get("Medium")
+            year = row.get("Year")
+            h = row.get("Height")
+            w = row.get("Width")
+            d = row.get("Depth")
+            price = row.get("Price")
+
+            if not title:
+                issues.append(("error", wid, "title is empty"))
+            if not cls:
+                issues.append(("error", wid, "classification is empty"))
+            elif cls not in ARTSY_VALID_CLASSIFICATIONS:
+                issues.append(("error", wid, f"classification {cls!r} not in Artsy's list"))
+            if not medium:
+                issues.append(("error", wid, "medium is empty"))
+
+            for label, v in (("year", year), ("height", h), ("width", w),
+                             ("depth", d), ("price", price)):
+                if not v:
+                    continue
+                try:
+                    f = float(v)
+                except ValueError:
+                    issues.append(("warn", wid, f"{label}={v!r} not numeric"))
+                    continue
+                if label == "year" and not (0 < f < 2200):
+                    issues.append(("warn", wid, f"year {f} implausible"))
+                if label in {"height", "width", "depth"} and f <= 0:
+                    issues.append(("warn", wid, f"{label} {f} ≤ 0"))
+                if label == "price" and f < 0:
+                    issues.append(("warn", wid, f"price {f} < 0"))
+
+    if not issues:
+        click.echo(f"\n  artsy_upload.csv: OK ({csv_path}).\n")
+        return
+
+    by_sev: dict[str, list] = {"error": [], "warn": []}
+    for sev, wid, msg in issues:
+        by_sev[sev].append((wid, msg))
+    click.echo()
+    for sev in ("error", "warn"):
+        rows = by_sev[sev]
+        if not rows:
+            continue
+        click.echo(f"  {sev}: {len(rows)} finding(s)")
+        for wid, msg in rows[:30]:
+            click.echo(f"    [{sev}] {wid:14s} {msg}")
+        if len(rows) > 30:
+            click.echo(f"    … and {len(rows)-30} more {sev}s")
+        click.echo()
+
+
 if __name__ == "__main__":
     cli()

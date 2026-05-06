@@ -25,9 +25,9 @@ CLASSIFICATION_MAP = {
     "decorative": "Design/Decorative Art",
     "textile": "Textile Arts",
     "manuscript": "Other",
-    "poster": "Poster",
-    "posters": "Poster",
-    "travel poster": "Poster",
+    "poster": "Posters",
+    "posters": "Posters",
+    "travel poster": "Posters",
     "thangka": "Painting",   # thangkas are paintings on cloth in Artsy taxonomy
     "photograph": "Photograph",
     "photo": "Photograph",
