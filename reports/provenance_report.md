@@ -26,6 +26,7 @@
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | signature | 20 |
 | auto_resolution_rules | classification | 355 |
 | auto_resolution_rules | medium | 159 |
+| auto_resolution_rules | artist | 21 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | title | 16 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | primary_image_source | 16 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | materials | 16 |
@@ -37,6 +38,7 @@
 |---|---:|
 | classification | 482 |
 | medium | 21 |
+| artist | 21 |
 | title | 3 |
 | year | 1 |
 | width_in | 1 |

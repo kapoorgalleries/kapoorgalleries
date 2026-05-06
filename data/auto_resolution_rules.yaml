@@ -92,6 +92,33 @@
     classification: Painting
   reason: "Works on cotton are categorized as Painting."
 
+# --- Consignment-tag artist values: clear them so they don't pollute artist ---
+# These are not real artists; they're consignment notes.  Setting artist to
+# null via a sentinel that normalize.normalize_artist filters out.
+- if:
+    artist_eq: Weiner Consignment
+  then:
+    artist: Unknown
+  reason: "Weiner is a consignor, not an artist; clear so artist field is empty."
+
+- if:
+    artist_eq: Wiener Consignment
+  then:
+    artist: Unknown
+  reason: "Wiener (typo of Weiner) is a consignor, not an artist."
+
+- if:
+    artist_eq: LaPuma Consignmnet
+  then:
+    artist: Unknown
+  reason: "LaPuma is a consignor (typo Consignmnet); not an artist."
+
+- if:
+    artist_eq: Unspecified Artist
+  then:
+    artist: Unknown
+  reason: "Unspecified Artist is a placeholder; clear it."
+
 # --- Travel posters / lithographic prints -> Drawing/Collage on Artsy ---
 - if:
     title_contains: "Visit India"
