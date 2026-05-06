@@ -46,11 +46,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e '.[dev]'
 
+      - name: Diagnose env
+        run: |
+          python --version
+          which python
+          which pytest || echo "(no pytest in path; will use python -m pytest)"
+          python -c "import src.cli; print('src.cli OK')"
+          ls -la data/raw/ 2>/dev/null | head -20
+
       - name: Test
-        run: pytest -q
+        run: |
+          python -m pytest -v --tb=short
 
       - name: Build inventory artifacts
         run: |
+          set -euo pipefail
           make init
           make ingest
           make consolidate
