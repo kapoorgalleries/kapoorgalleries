@@ -1,6 +1,6 @@
 # Artsy upload gaps
 
-- Works blocked from Artsy upload: **816**
+- Works blocked from Artsy upload: **815**
 
 ## What's missing most often
 
@@ -8,7 +8,7 @@
 |---|---:|
 | image | 774 |
 | medium | 195 |
-| classification | 185 |
+| classification | 171 |
 | title | 4 |
 
 ## Triage: closest to upload-ready first
@@ -45,13 +45,13 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1615 | 1: image | The Great Monkey Army Battles Indrajit (Leaf from the 'Secon | Attributed to First Generation after Nainsukh and Manaku |
 | KG-1616 | 1: image | Shurpanakha Complains that her Nose was Cut off by Lakshman | Attributed to First Generation after Nainsukh and Manaku |
 | KG-1620 | 1: image | Ganesha Enthroned | Attributed to First Generation after Nainsukh and Manaku |
-| KG-1625 | 1: classification | Shiva and Parvati (Uma Maheshvara) |  |
 | KG-1626 | 1: image | Vishnu |  |
 | KG-1631 | 1: image | Lalita Maha Tripura Sundari | Attributed to Sajnu |
 | KG-1650 | 1: classification | Makara Bangle (Makaranathi) |  |
 | KG-1651 | 1: classification | Drawing Water from a Well |  |
 | KG-1654 | 1: classification | Brahma |  |
 | KG-1657 | 1: image | Vajravarahi |  |
+| KG-1658 | 1: image | Buddha Shakyamuni |  |
 | KG-1661 | 1: classification | King Ralpachen |  |
 | KG-1664 | 1: classification | Arhat Bakula |  |
 | KG-1666 | 1: image | Bodhisattva |  |
@@ -64,9 +64,9 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1684 | 1: image | Rama and His Allies Take Counsel (Leaf from the ‘Second’ Gul | Attributed to First Generation after Nainsukh and Manaku |
 | KG-1688 | 1: image | Radha and Krishna Gaze Into a Mirror |  |
 | KG-1697 | 1: image | A carved sandstone Jina |  |
+| KG-1699 | 1: image | Ganesh |  |
 | KG-1700 | 1: image | A stone stele of Shiva and Parvati (Uma Maheshvara) |  |
 | KG-1701 | 1: image | A black stone stele of Vishnu |  |
-| KG-1702 | 1: image | A silver-inlaid bronze figure of Ganesha |  |
 
 ## Unresolved conflicts
 

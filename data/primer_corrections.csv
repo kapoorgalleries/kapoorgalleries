@@ -61,6 +61,10 @@ KG-1363,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-1367,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
 KG-1377,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1378,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
+KG-1384,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1385,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1386,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1387,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1388,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1400,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1401,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -224,6 +228,7 @@ KG-1619,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1620,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1622,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1624,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1625,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1626,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
 KG-1628,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1629,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -248,6 +253,7 @@ KG-1648,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1652,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1655,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
 KG-1657,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1658,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1659,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
 KG-1660,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1666,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
@@ -279,6 +285,7 @@ KG-1694,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-1695,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1697,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
 KG-1698,classification,,Sculpture,auto_resolution,Schist works are sculptures.
+KG-1699,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1703,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1704,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1707,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
@@ -328,6 +335,7 @@ KG-1786,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1789,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1793,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1796,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1810,classification,,Sculpture,auto_resolution,Terracotta works are sculptures.
 KG-1812,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1815,classification,tskali,Painting,auto_resolution,Works on cotton are categorized as Painting.
 KG-1819,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
@@ -336,6 +344,8 @@ KG-1823,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-1824,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1836,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1838,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1842,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
+KG-1843,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
 KG-1849,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1876,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1886,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -354,6 +364,7 @@ KG-1931,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1933,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1934,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1938,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1940,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1941,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1945,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1950,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
@@ -362,14 +373,18 @@ KG-1956,classification,,Sculpture,auto_resolution,Stone matrix materials are cat
 KG-1957,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
 KG-1959,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
 KG-1960,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1961,classification,,Sculpture,auto_resolution,Terracotta works are sculptures.
 KG-1963,classification,,Sculpture,auto_resolution,Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%).
 KG-1964,classification,,Sculpture,auto_resolution,Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%).
+KG-1965,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
 KG-1968,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1970,classification,,Sculpture,auto_resolution,Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%).
 KG-1974,classification,,Sculpture,auto_resolution,Schist works are sculptures.
+KG-1975,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1976,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
 KG-2002,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-2009,classification,,Sculpture,auto_resolution,Steles are sculptures (8/8 100%).
+KG-2037,classification,Design/Decorative Art,Sculpture,auto_resolution,Stone works are sculptures.
 KG-2039,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2040,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2041,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -453,6 +468,7 @@ KG-2179,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-2180,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2181,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2185,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2193,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
 KG-2194,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2195,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2196,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -484,6 +500,7 @@ KG-2259,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-2260,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2262,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2266,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2277,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-2278,classification,miniature,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2279,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2281,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -508,6 +525,7 @@ KG-2307,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-2309,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2315,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2323,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2324,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-2325,classification,paintings,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2326,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2336,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -542,3 +560,4 @@ KG-2441,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-2448,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2449,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2454,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2461,classification,,Sculpture,auto_resolution,Stone works are sculptures.

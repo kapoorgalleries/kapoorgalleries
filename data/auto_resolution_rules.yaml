@@ -104,6 +104,42 @@
     classification: Sculpture
   reason: "Steles are sculptures (8/8 100%)."
 
+- if:
+    title_contains: figure of
+  then:
+    classification: Sculpture
+  reason: "'Figure of' titles are sculptures (suggested by suggest-rules)."
+
+- if:
+    title_contains: torso
+  then:
+    classification: Sculpture
+  reason: "Torsos are sculptures."
+
+- if:
+    medium_contains: stone
+  then:
+    classification: Sculpture
+  reason: "Stone works are sculptures."
+
+- if:
+    medium_contains: terracotta
+  then:
+    classification: Sculpture
+  reason: "Terracotta works are sculptures."
+
+- if:
+    medium_contains: ivory
+  then:
+    classification: Sculpture
+  reason: "Ivory works are sculptures."
+
+- if:
+    medium_contains: jade
+  then:
+    classification: Design/Decorative Art
+  reason: "Jade works are decorative arts (Khanjars, etc.)."
+
 # --- decorative-arts keywords in title -> Design/Decorative Art ---
 - if:
     title_contains: khanjar
