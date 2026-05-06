@@ -312,6 +312,21 @@ def resolve(work_id: str, field: str, value: str, reason: str, decided_by: str,
         "decided_by": decided_by,
         "decided_at": datetime.now(timezone.utc).date().isoformat(),
     }
+    # Sanity-check the work_id exists in the current works table.
+    db = dbmod.get_db(db_path)
+    try:
+        existing = db.execute(
+            "SELECT 1 FROM works WHERE work_id = ?", [work_id]
+        ).fetchone()
+    except Exception:
+        existing = None
+    if not existing:
+        click.echo(
+            f"WARNING: {work_id} is not in works table. "
+            f"Run `make all` first, or proceed if you're seeding a new work.",
+            err=True,
+        )
+
     if dry_run:
         click.echo("DRY RUN — would append the following YAML entry:\n")
         click.echo(yaml.safe_dump([new_entry], sort_keys=False, default_flow_style=False))
