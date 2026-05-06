@@ -25,3 +25,19 @@ def test_init_db_resets_existing_db(tmp_path: Path):
     n_sources_after = db.execute("SELECT COUNT(*) FROM sources").fetchone()[0]
     assert n_after == 0
     assert n_sources_after == 0
+
+
+def test_init_db_creates_views(tmp_path: Path):
+    """Schema includes the v_conflicts view after init."""
+    db = init_db(tmp_path / "t.db")
+    rows = db.execute(
+        "SELECT name FROM sqlite_master WHERE type = 'view'"
+    ).fetchall()
+    assert any(r[0] == "v_conflicts" for r in rows)
+
+
+def test_init_db_idempotent(tmp_path: Path):
+    """Calling init_db twice in a row doesn't error."""
+    p = tmp_path / "t.db"
+    init_db(p)
+    init_db(p)  # Should drop+recreate cleanly
