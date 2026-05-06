@@ -439,6 +439,33 @@ def export_filtered(out_path: str, classification: str | None,
 
 
 @cli.command()
+@click.option("--limit", default=50, show_default=True)
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def artists(limit: int, db_path: str):
+    """List artists by work-count, descending."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """SELECT artist, COUNT(*) AS n FROM works
+           WHERE artist IS NOT NULL
+           GROUP BY artist
+           ORDER BY n DESC, artist
+           LIMIT ?""",
+        [limit],
+    ).fetchall()
+    if not rows:
+        click.echo("\n  no artists assigned yet.\n")
+        return
+    total_with_artist = db.execute(
+        "SELECT COUNT(*) FROM works WHERE artist IS NOT NULL"
+    ).fetchone()[0]
+    total = db.execute("SELECT COUNT(*) FROM works").fetchone()[0]
+    click.echo(f"\n  {total_with_artist}/{total} works have an artist assigned. Top {limit}:\n")
+    for artist, n in rows:
+        click.echo(f"  {n:4d}  {artist}")
+    click.echo()
+
+
+@cli.command()
 @click.argument("query")
 @click.option("--limit", default=30, show_default=True)
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
