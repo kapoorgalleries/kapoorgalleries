@@ -59,19 +59,20 @@ jobs:
       - name: Show coverage report
         run: cat reports/coverage_report.md
 
-      - name: Commit regenerated artifacts (push only)
+      # Don't auto-commit regenerated artifacts back to the branch.
+      #
+      # Reason: concurrent CI runs race to push, and the deterministic
+      # `extracted_at` timestamps in observations make every run produce a
+      # slightly different master.csv even when nothing meaningful changed —
+      # so auto-commits would create infinite churn even with [skip ci].
+      #
+      # Artifacts are still uploaded as workflow artifacts (next step) for
+      # debugging, and the team commits regenerated CSVs from local runs.
+      - name: Show post-build state
         if: github.event_name == 'push'
         run: |
-          git config user.name "kg-inventory-bot"
-          git config user.email "kg-inventory-bot@users.noreply.github.com"
-          git add -f data/master.csv data/master_long.csv data/conflicts.csv \
-                     data/gaps.csv data/artsy_upload.csv reports/ || true
-          if git diff --cached --quiet; then
-            echo "No artifact changes to commit."
-          else
-            git commit -m "chore: regenerate inventory artifacts [skip ci]"
-            git push
-          fi
+          echo "==== regenerated artifacts ===="
+          ls -la data/*.csv data/*.json reports/*.md 2>/dev/null || true
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
