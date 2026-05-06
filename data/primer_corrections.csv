@@ -355,7 +355,6 @@ KG-1480,classification,Other,"Drawing, Collage or other Work on Paper",auto_reso
 KG-1481,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1482,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1483,title,,Man and woman near fire,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-1483,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-1483,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-1483,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1483,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
@@ -2589,7 +2588,6 @@ KG-2150,width_in,,14.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2150,price_usd,,12000.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2150,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2151,title,,A Thangka of Palden Lhamo,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2151,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2151,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2151,medium,,Distemper on cloth,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2151,height_in,,16.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
@@ -2597,63 +2595,54 @@ KG-2151,width_in,,12.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2151,price_usd,,15000.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2151,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2152,title,,Lady holding a flower,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2152,artist,,Unknown,auto_resolution,"Weiner is a consignor, not an artist; clear so artist field is empty."
 KG-2152,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2152,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2152,height_in,,7.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2152,width_in,,4.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2152,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2153,title,,A Prince taking leave of his Lover,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2153,artist,,Unknown,auto_resolution,"Weiner is a consignor, not an artist; clear so artist field is empty."
 KG-2153,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2153,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2153,height_in,,9.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2153,width_in,,6.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2153,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2154,title,,Folio from the Bhagavata Purana: Krishna Slays the Demon Narakasura,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2154,artist,,Unknown,auto_resolution,"Weiner is a consignor, not an artist; clear so artist field is empty."
 KG-2154,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2154,medium,,Opaque water-based pigments heightened with gold on paper,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2154,height_in,,9.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2154,width_in,,12.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2154,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2155,title,,Matangi Seated on Shiva,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2155,artist,,Unknown,auto_resolution,"Weiner is a consignor, not an artist; clear so artist field is empty."
 KG-2155,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2155,medium,,opaque watercolor heightened with gold on paper,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2155,height_in,,12.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2155,width_in,,7.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2155,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2156,title,,Samdura Mantan,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2156,artist,,Unknown,auto_resolution,"Weiner is a consignor, not an artist; clear so artist field is empty."
 KG-2156,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2156,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2156,height_in,,4.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2156,width_in,,8.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2156,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2157,title,,Krishna steals the moon,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2157,artist,,Unknown,auto_resolution,"Weiner is a consignor, not an artist; clear so artist field is empty."
 KG-2157,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2157,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2157,height_in,,11.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2157,width_in,,7.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2157,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2158,title,,Snakes and ladders,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2158,artist,,Unknown,auto_resolution,"Wiener (typo of Weiner) is a consignor, not an artist."
 KG-2158,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2158,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2158,height_in,,31.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2158,width_in,,27.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2158,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2159,title,,Orissa Palm Leaf,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2159,artist,,Unknown,auto_resolution,"Weiner is a consignor, not an artist; clear so artist field is empty."
 KG-2159,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2159,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2159,height_in,,1.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2159,width_in,,16.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2159,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2160,title,,"Set of Sancai-glazed pottery figures of the Eight Immortels, Qing Dynasty",bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2160,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2160,classification,,Sculpture,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2160,medium,,Sancai glazed pottery,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2160,height_in,,6.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
@@ -2675,7 +2664,6 @@ KG-2162,depth_in,,5.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2162,price_usd,,7560.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2162,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2163,title,,Krishna Quells the Serpent Kaliya: Illustration from a Bhagavata Purana Series,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2163,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2163,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2163,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2163,height_in,,7.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
@@ -2689,30 +2677,25 @@ KG-2164,depth_in,,1.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2164,price_usd,,1000.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2164,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2165,title,,Bhairava ragini,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2165,artist,,Unknown,auto_resolution,"Weiner is a consignor, not an artist; clear so artist field is empty."
 KG-2165,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2165,medium,,opaque watercolor on paper,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2165,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2166,title,,Group of Thugs,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2166,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2166,classification,,Photograph,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2166,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2167,title,,Vajrasattva,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2167,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2167,classification,,Sculpture,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2167,medium,,Gilt-bronze,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2167,height_in,,23.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2167,price_usd,,615000.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2167,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2168,title,,Maitreya,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2168,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2168,classification,,Sculpture,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2168,medium,,gilt-copper alloy,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2168,height_in,,16.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2168,price_usd,,300000.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2168,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2169,title,,A Leaf from the Shahnameh,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2169,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2169,year,,1600,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2169,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2169,medium,,Gouache on paper,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
@@ -2721,19 +2704,16 @@ KG-2169,width_in,,14.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2169,price_usd,,175000.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2169,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2170,title,,Painting of a Copper-headed Trinket Snake (Coelognathus Radiatus),bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2170,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2170,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2170,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2170,height_in,,21.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2170,width_in,,17.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2170,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2171,title,,gift from Deepak,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2171,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2171,classification,,Painting,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2171,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2171,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2172,title,,The Wedding of Vishnu and Lakshmi,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2172,artist,,Unknown,auto_resolution,Unspecified Artist is a placeholder; clear it.
 KG-2172,height_in,,8.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2172,width_in,,11.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2172,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
@@ -3697,7 +3677,6 @@ KG-2344,medium,,Blue Grey Schist,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2344,height_in,,27.0,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2344,status,,active,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2345,title,,Chola Ganesha,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
-KG-2345,artist,,Unknown,auto_resolution,LaPuma is a consignor (typo Consignmnet); not an artist.
 KG-2345,year,,1200,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2345,classification,,Sculpture,bulk_upload_xlsx,(filled from bulk_upload_xlsx)
 KG-2345,medium,,Bronze,bulk_upload_xlsx,(filled from bulk_upload_xlsx)

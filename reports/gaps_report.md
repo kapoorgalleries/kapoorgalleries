@@ -35,7 +35,7 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1361 | 1: medium | Meenakshi Temple, Madurai, India |  |
 | KG-1363 | 1: medium | India, Air India |  |
 | KG-1367 | 1: medium | There is an Air about India, Air India |  |
-| KG-1483 | 1: image | Man and woman near fire | Unknown |
+| KG-1483 | 1: image | Man and woman near fire |  |
 | KG-1509 | 1: medium | Need title |  |
 | KG-1510 | 1: medium | Need title |  |
 | KG-1541 | 1: image | 6 Botanical Studies of Tree Branches and Fruit |  |

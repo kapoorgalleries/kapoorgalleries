@@ -29,7 +29,8 @@ from typing import Optional
 import sqlite_utils
 
 from .normalize import (
-    normalize_decimal, normalize_int, normalize_price, normalize_year,
+    normalize_artist, normalize_decimal, normalize_int, normalize_price,
+    normalize_year,
 )
 from .schema import CANONICAL_FIELDS
 
@@ -53,6 +54,9 @@ def _coerce(field: str, value: Optional[str]):
         return normalize_decimal(value) if field != "price_usd" else normalize_price(value)
     if field in INT_FIELDS:
         return normalize_year(value) if field == "year" else normalize_int(value)
+    if field == "artist":
+        # Filter out placeholders ("Unknown", "Unspecified Artist", etc.).
+        return normalize_artist(value)
     return value
 
 
