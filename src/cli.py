@@ -638,20 +638,35 @@ def split_by_classification(out_dir: str, db_path: str):
 @cli.command()
 @click.argument("query")
 @click.option("--limit", default=30, show_default=True)
+@click.option("--year-min", type=int, default=None,
+              help="optional: only show works with year >= this")
+@click.option("--year-max", type=int, default=None,
+              help="optional: only show works with year <= this")
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
-def search(query: str, limit: int, db_path: str):
-    """Substring search across title / medium / materials / provenance."""
+def search(query: str, limit: int, year_min: int | None,
+           year_max: int | None, db_path: str):
+    """Substring search across title / medium / materials / provenance.
+
+    Optional --year-min / --year-max narrow the time window.
+    """
     db = dbmod.get_db(db_path)
     pat = f"%{query}%"
+    where = (
+        "(title LIKE ? COLLATE NOCASE "
+        "OR medium LIKE ? COLLATE NOCASE "
+        "OR materials LIKE ? COLLATE NOCASE "
+        "OR provenance_text LIKE ? COLLATE NOCASE)"
+    )
+    params: list = [pat, pat, pat, pat]
+    if year_min is not None:
+        where += " AND year >= ?"; params.append(year_min)
+    if year_max is not None:
+        where += " AND year <= ?"; params.append(year_max)
+    params.append(limit)
     rows = db.execute(
-        """SELECT work_id, title, classification, medium, year
-           FROM works
-           WHERE title LIKE ? COLLATE NOCASE
-              OR medium LIKE ? COLLATE NOCASE
-              OR materials LIKE ? COLLATE NOCASE
-              OR provenance_text LIKE ? COLLATE NOCASE
-           ORDER BY work_id LIMIT ?""",
-        [pat, pat, pat, pat, limit],
+        f"""SELECT work_id, title, classification, medium, year
+            FROM works WHERE {where} ORDER BY work_id LIMIT ?""",
+        params,
     ).fetchall()
     if not rows:
         click.echo(f"\n  no matches for {query!r}.\n")
