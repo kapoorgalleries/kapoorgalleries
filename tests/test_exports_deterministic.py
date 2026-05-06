@@ -6,6 +6,7 @@ all caused spurious git diffs in the past.  This test pins them down.
 
 from pathlib import Path
 
+from src import reports
 from src.consolidate import consolidate
 from src.db import init_db, insert_observations, upsert_source
 from src.exporters import master_csv, master_json, provenance_csv
@@ -77,6 +78,18 @@ def test_provenance_csv_alt_values_sorted(tmp_path: Path):
             if alt_values and " || " in alt_values:
                 parts = alt_values.split(" || ")
                 assert parts == sorted(parts), f"alt_values not sorted: {parts}"
+
+
+def test_coverage_report_byte_identical_across_runs(tmp_path: Path):
+    """Earlier the report wrote per-run extracted_at timestamps, dirtying
+    git on every `make all`.  It now uses file_modified_at (file mtime,
+    stable across reruns) so two consecutive renders must match."""
+    db = _populate(tmp_path / "t.db")
+    a = tmp_path / "cov_a.md"
+    b = tmp_path / "cov_b.md"
+    reports.coverage_report(db, a)
+    reports.coverage_report(db, b)
+    assert a.read_bytes() == b.read_bytes()
 
 
 def test_conflicts_csv_preserves_comma_values(tmp_path: Path):

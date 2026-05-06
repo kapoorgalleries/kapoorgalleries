@@ -12,6 +12,9 @@ Major milestones since the initial commit (2026-05-06):
   was the consolidate-run timestamp, identical for every row, causing
   1,415-row diffs on every `make all` run.  Still in the SQLite `works`
   table for any consumer that needs it.
+- **`coverage_report.md` now shows file mtime instead of extraction
+  time** — same per-run-timestamp problem; report no longer drifts on
+  every `make all`.
 - **Sorted `master_provenance.csv` `alt_values`** — set iteration order
   isn't stable; same data was producing different orderings across runs.
 - **Fixed comma-splitting in three places** (kg-inv conflicts CLI,
@@ -23,8 +26,8 @@ Major milestones since the initial commit (2026-05-06):
 - **`kg-inv compare KG-X KG-Y`** — side-by-side work comparison, marks
   differing fields with ≠.  Useful for spotting duplicate-ID Primer
   bugs (e.g. KG-1312).
-- **5 new determinism + regression tests** pinning byte-equality of
-  exports and comma-value preservation.
+- **6 new determinism + regression tests** pinning byte-equality of
+  exports (CSV / JSON / coverage report) and comma-value preservation.
 
 ### 0.4 — bulk upload + data quality
 

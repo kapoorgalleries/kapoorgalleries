@@ -33,11 +33,11 @@
 
 ## Sources ingested
 
-| Source | Type | Rows | Extracted at |
+| Source | Type | Rows | Source modified |
 |---|---|---:|---|
-| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T07:35:18.807561+00:00 |
-| Kapoor Galleries - Bulk upload Template Artsy.xlsx | bulk_upload_xlsx | 1424 | 2026-05-06T07:35:19.096937+00:00 |
-| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T07:35:19.136849+00:00 |
-| Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T07:35:19.145027+00:00 |
-| human_resolutions | human_resolution |  | 2026-05-06T07:35:19.198141+00:00 |
-| auto_resolution_rules | auto_resolution | 40 | 2026-05-06T07:35:19.799822+00:00 |
+| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T05:14:42 |
+| Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T06:06:22 |
+| Kapoor Galleries - Bulk upload Template Artsy.xlsx | bulk_upload_xlsx | 1424 | 2026-05-06T06:29:00 |
+| auto_resolution_rules | auto_resolution | 40 | 2026-05-06T06:55:24 |
+| human_resolutions | human_resolution |  | 2026-05-06T06:24:50 |
+| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T05:50:35 |

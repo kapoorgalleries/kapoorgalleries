@@ -35,11 +35,17 @@ def coverage_report(db: sqlite_utils.Database, out_path: Path | str) -> Path:
         "",
         "## Sources ingested",
         "",
-        "| Source | Type | Rows | Extracted at |",
+        "| Source | Type | Rows | Source modified |",
         "|---|---|---:|---|",
     ]
-    for r in db.execute("SELECT name, type, row_count, extracted_at FROM sources ORDER BY extracted_at").fetchall():
-        lines.append(f"| {r[0]} | {r[1]} | {r[2] or ''} | {r[3]} |")
+    # file_modified_at is the source file's mtime (stable across reruns);
+    # extracted_at is a per-run timestamp and would dirty git on every
+    # `make all`.  Sort by name so order is also deterministic.
+    for r in db.execute(
+        "SELECT name, type, row_count, file_modified_at FROM sources ORDER BY name"
+    ).fetchall():
+        ts = (r[3] or "").split(".")[0]  # trim microseconds
+        lines.append(f"| {r[0]} | {r[1]} | {r[2] or ''} | {ts} |")
 
     out.write_text("\n".join(lines) + "\n")
     return out
