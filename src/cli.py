@@ -560,6 +560,41 @@ def whatsnew(limit: int, db_path: str):
 
 
 @cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def prices(db_path: str):
+    """Distribution of works by price band."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """SELECT
+             CASE
+               WHEN price_usd < 1000     THEN 'under $1k'
+               WHEN price_usd < 5000     THEN '$1k–$5k'
+               WHEN price_usd < 10000    THEN '$5k–$10k'
+               WHEN price_usd < 25000    THEN '$10k–$25k'
+               WHEN price_usd < 50000    THEN '$25k–$50k'
+               WHEN price_usd < 100000   THEN '$50k–$100k'
+               WHEN price_usd < 250000   THEN '$100k–$250k'
+               ELSE '$250k+'
+             END AS bucket,
+             COUNT(*) AS n,
+             SUM(price_usd) AS total
+           FROM works WHERE price_usd IS NOT NULL AND price_usd > 0
+           GROUP BY bucket
+           ORDER BY MIN(price_usd)"""
+    ).fetchall()
+    if not rows:
+        click.echo("\n  no priced works.\n")
+        return
+    n_total = sum(n for _, n, _ in rows)
+    sum_total = sum(t for _, _, t in rows)
+    click.echo(f"\n  {n_total} priced works · total ${sum_total:,.0f}\n")
+    for bucket, n, total in rows:
+        bar = "█" * int(round(n / n_total * 30))
+        click.echo(f"    {bucket:14s} {bar:30s} {n:4d}  ${total:>12,.0f}")
+    click.echo()
+
+
+@cli.command()
 @click.option("--limit", default=20, show_default=True)
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def years(limit: int, db_path: str):
