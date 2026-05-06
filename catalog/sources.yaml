@@ -54,6 +54,18 @@
     172MB. Likely the printed-Primer inventory book the gallery referred to as
     "primer pages". Page-stream the parser; never load the full PDF.
 
+- name: KG_Available Works_5-13-2025_1065.pdf
+  type: kg_inventory_pdf
+  drive_file_id: 1XDpGBR7V1DnjSkNkQOVcg-vRUXoJd59i
+  drive_file_path: shared with sanjay@kapoors.com by trivedi@kapoors.com
+  local_path: data/raw/KG_Available_Works_2025-05-13.pdf
+  notes: |
+    108MB. Primer "image/list" export of 1059 available works pulled by
+    Shruti Trivedi (trivedi@kapoors.com) on May 13 2025. The actual Primer
+    PDF the user described as "primer pages". Originally attached to Gmail
+    thread 196c67161fbd97f4 ("Primer Exports"), also in Drive.
+    Manual fetch: see tools/FETCH_PRIMER_PDFS.md.
+
 # --- Sub-inventories (custom ID schemes, fuzzy match by title to KG-#) ---
 - name: Graham Inventory - owned.pdf
   type: sub_inventory

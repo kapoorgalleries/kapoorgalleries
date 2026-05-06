@@ -91,10 +91,14 @@ On reload the sheet gains an **Inventory ▾** menu with **Refresh from repo**,
 
 ## Known limitations
 
-- No live Primer API; we depend on exports (CSV / printed PDF).
-- The 172MB `KG Inventory - 9-25-2025.pdf` must be page-streamed — never
-  load the full file into memory.
+- No live Primer API; we depend on exports (CSV / printed PDF). The two
+  Primer-page PDF exports we know about (May 2025, Sep 2025) are >100 MB
+  each and must be cached locally — see
+  [`tools/FETCH_PRIMER_PDFS.md`](tools/FETCH_PRIMER_PDFS.md).
 - Sub-inventory ingesters (Graham, Darion, Huc, Torr, European Sculpture,
   Textile Boxes) are stubs that need title-based fuzzy matching to KG-#.
-- Email gap-report parsing is heuristic; Sarah Fenner's blockers are in prose
-  and may need an LLM-assisted extraction step.
+- Email gap-report parsing is heuristic; refining it once we ingest a real
+  Sarah Fenner thread dump is a follow-up.
+- The `artist` field comes back at 0% coverage from Primer — every work is
+  recorded with `Unknown Artist`. These are assignable; once entered in
+  Primer (or supplied via a sub-inventory ingester) they'll flow through.
