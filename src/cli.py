@@ -681,6 +681,25 @@ def duplicate_titles(limit: int, db_path: str):
     click.echo()
 
 
+@cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def coverage(db_path: str):
+    """Per-field coverage summary (just the coverage table from stats)."""
+    db = dbmod.get_db(db_path)
+    total = db.execute("SELECT COUNT(*) FROM works").fetchone()[0] or 1
+    click.echo()
+    for f in ("title", "artist", "year", "classification", "medium", "materials",
+              "height_in", "width_in", "depth_in", "price_usd", "primary_image_url",
+              "provenance_text", "exhibitions", "publications", "signature",
+              "coa_status", "primer_uuid", "location"):
+        n = db.execute(
+            f"SELECT COUNT(*) FROM works WHERE {f} IS NOT NULL AND CAST({f} AS TEXT) != ''"
+        ).fetchone()[0]
+        bar = "█" * int(round(n / total * 30))
+        click.echo(f"  {f:24s} {bar:30s} {n:4d}/{total} ({round(100*n/total)}%)")
+    click.echo()
+
+
 @cli.command("image-stats")
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def image_stats(db_path: str):
