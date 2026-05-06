@@ -109,6 +109,26 @@ $ git commit -m "Add <source>, refresh artifacts" && git push
 CI will rerun `make all` and verify nothing broke. The Sheet picks up
 the new master via **Inventory ▾ → Refresh from repo**.
 
+## 5 · Backfill placeholder titles in Primer
+
+`kg-inv lint` and `kg-inv duplicate-titles` will surface clusters of
+works with placeholder titles like "Need title" or "Untitled":
+
+```
+$ kg-inv duplicate-titles --limit 5
+
+  39  Need title    (KG-1404, KG-1405, …)
+  14  Untitled       (KG-1180, KG-1233, …)
+   …
+```
+
+Workflow:
+
+1. Look up each KG-# in Primer.
+2. Provide a real title (use the catalog or print provenance for context).
+3. Re-export the bulk template from Primer, drop it in `data/raw/`,
+   and `make all`. The placeholder-title warnings should drop to 0.
+
 ## Common gotchas
 
 - **The 108 MB Primer PDF** can't be downloaded through the in-session
