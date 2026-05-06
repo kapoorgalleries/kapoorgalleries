@@ -592,26 +592,36 @@ def triage(decided_by: str, limit: int, db_path: str, yaml_path: str):
         decided_by = click.prompt("Your email", type=str)
 
     db = dbmod.get_db(db_path)
-    rows = db.execute(
-        """WITH observed AS (
-              SELECT o.work_id, o.field, o.value, s.type AS stype
-              FROM observations o JOIN sources s ON s.id = o.source_id
-              WHERE o.value IS NOT NULL AND o.value != ''
-                AND s.type NOT IN ('human_resolution','auto_resolution')
-           )
-           SELECT work_id, field,
-                  GROUP_CONCAT(DISTINCT stype || '||' || value, ';;')
-           FROM observed
-           GROUP BY work_id, field
-           HAVING COUNT(DISTINCT value) > 1
-              AND NOT EXISTS (
-                  SELECT 1 FROM observations o2 JOIN sources s2 ON s2.id = o2.source_id
-                  WHERE o2.work_id = observed.work_id AND o2.field = observed.field
-                    AND s2.type = 'human_resolution'
-              )
-           ORDER BY work_id, field LIMIT ?""",
-        [limit],
+    raw = db.execute(
+        """SELECT o.work_id, o.field, s.type, o.value
+           FROM observations o JOIN sources s ON s.id = o.source_id
+           WHERE o.value IS NOT NULL AND o.value != ''
+             AND s.type NOT IN ('human_resolution','auto_resolution')
+           ORDER BY o.work_id, o.field"""
     ).fetchall()
+
+    # Group (work, field) -> list of unique (source, value) pairs.
+    grouped: dict[tuple[str, str], list[tuple[str, str]]] = {}
+    for w, f, stype, val in raw:
+        pairs = grouped.setdefault((w, f), [])
+        if (stype, val) not in pairs:
+            pairs.append((stype, val))
+
+    # A real conflict has ≥ 2 distinct values among non-resolution sources.
+    rows = []
+    has_human = {
+        (w, f) for (w, f) in db.execute(
+            """SELECT DISTINCT o.work_id, o.field FROM observations o
+               JOIN sources s ON s.id = o.source_id
+               WHERE s.type = 'human_resolution'"""
+        ).fetchall()
+    }
+    for (w, f), pairs in grouped.items():
+        distinct_vals = {v for _, v in pairs}
+        if len(distinct_vals) > 1 and (w, f) not in has_human:
+            rows.append((w, f, pairs))
+    rows.sort(key=lambda r: (r[0], r[1]))
+    rows = rows[:limit]
 
     if not rows:
         click.echo("\n  No unresolved conflicts. Nothing to triage.\n")
@@ -624,18 +634,13 @@ def triage(decided_by: str, limit: int, db_path: str, yaml_path: str):
 
     decided = 0
     skipped = 0
-    for wid, field, blob in rows:
+    for wid, field, options in rows:
         click.echo()
         click.echo(f"  {wid}.{field}")
         # Show context: title for the work
         ctx = db.execute("SELECT title FROM works WHERE work_id = ?", [wid]).fetchone()
         if ctx and ctx[0]:
             click.echo(f"  Title: {ctx[0]}")
-        options: list[tuple[str, str]] = []  # (source, value)
-        for piece in (blob or "").split(";;"):
-            if "||" in piece:
-                src, val = piece.split("||", 1)
-                options.append((src, val))
         for i, (src, val) in enumerate(options, start=1):
             click.echo(f"    [{i}] {val}   ({src})")
         click.echo("    [s] skip  [q] quit")
