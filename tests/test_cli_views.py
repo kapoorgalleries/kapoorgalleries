@@ -154,6 +154,37 @@ def test_whatsnew_runs(tmp_path: Path):
     assert result.exit_code == 0, result.output
 
 
+def test_sample_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["sample", "--n", "1", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_overview_json_emits_valid_json(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["overview", "--json", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+    import json
+    payload = json.loads(result.output.strip().split("\n")[-1])
+    assert "works" in payload
+    assert "artsy_eligible" in payload
+
+
+def test_stats_json_emits_valid_json(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["stats", "--json", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+    import json
+    payload = json.loads(result.output)
+    assert "coverage" in payload
+
+
 def test_split_by_classification_writes_per_class_csvs(tmp_path: Path):
     db_path = tmp_path / "t.db"
     _populate(db_path)
