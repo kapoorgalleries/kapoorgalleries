@@ -22,6 +22,17 @@
     FileMaker `I_Iinfo::D__Height` namespace; multi-image rows belong to the
     previous KG-#.
 
+- name: Kapoor Galleries - Bulk upload Template Artsy.xlsx
+  type: bulk_upload_xlsx
+  drive_file_id: 1LkOpVoVaGuG3s1C6caJCo7zmyacGJDFA
+  drive_file_path: My Drive / Artsy bulk upload templates review / Kapoor Galleries - Bulk upload Template Artsy.xlsx
+  local_path: data/raw/Kapoor_Galleries_Bulk_upload_Template_Artsy.xlsx
+  notes: |
+    110 KB, 1425 rows.  Artsy's official column names with literal
+    newlines in headers.  Covers KG-1000..KG-2350+ (763 KG-#s NOT in
+    the Feb 2026 Artsy CSV).  This is the broader inventory snapshot
+    the gallery has prepared for upload.
+
 - name: Kapoor_Galleries_Artsy_Match_Workbook_completed_with_images.xlsx
   type: match_workbook
   drive_file_id: 1lUTRcjGczM0IuxmIYey4UqG5_hGgAvJW

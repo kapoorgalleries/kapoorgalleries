@@ -27,6 +27,7 @@ INGESTERS = {
     "email_gaps": ("src.ingest.email_gaps", "EmailGapsIngester"),
     "human_resolution": ("src.ingest.human_resolution", "HumanResolutionIngester"),
     "auto_resolution": ("src.ingest.auto_resolution", "AutoResolutionIngester"),
+    "bulk_upload_xlsx": ("src.ingest.bulk_upload_xlsx", "BulkUploadXlsxIngester"),
 }
 
 
