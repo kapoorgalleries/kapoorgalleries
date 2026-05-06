@@ -526,35 +526,44 @@ def stats(as_json: bool, db_path: str):
 def conflicts(db_path: str, limit: int):
     """List unresolved conflicts with values + sources, ready for `kg-inv resolve`."""
     db = dbmod.get_db(db_path)
-    rows = db.execute(
-        """WITH observed AS (
-              SELECT o.work_id, o.field, o.value, s.type AS stype
-              FROM observations o JOIN sources s ON s.id = o.source_id
-              WHERE o.value IS NOT NULL AND o.value != ''
-                AND s.type NOT IN ('human_resolution','auto_resolution')
-           )
-           SELECT o.work_id, o.field,
-                  GROUP_CONCAT(DISTINCT o.stype || '=' || o.value) AS sources
-           FROM observed o
-           GROUP BY o.work_id, o.field
-           HAVING COUNT(DISTINCT o.value) > 1
-              AND NOT EXISTS (
-                  SELECT 1 FROM observations o2 JOIN sources s2 ON s2.id = o2.source_id
-                  WHERE o2.work_id = o.work_id AND o2.field = o.field
-                    AND s2.type = 'human_resolution'
-              )
-           ORDER BY o.work_id, o.field
-           LIMIT ?""",
-        [limit],
+    # SQLite's GROUP_CONCAT uses comma by default and DISTINCT can't take a
+    # separator, so we aggregate in Python — values like "Drawing, Collage…"
+    # contain commas themselves and would otherwise split.
+    raw = db.execute(
+        """SELECT o.work_id, o.field, s.type AS stype, o.value
+           FROM observations o JOIN sources s ON s.id = o.source_id
+           WHERE o.value IS NOT NULL AND o.value != ''
+             AND s.type NOT IN ('human_resolution','auto_resolution')
+           ORDER BY o.work_id, o.field"""
     ).fetchall()
+    has_human = {
+        (w, f) for (w, f) in db.execute(
+            """SELECT DISTINCT o.work_id, o.field FROM observations o
+               JOIN sources s ON s.id = o.source_id
+               WHERE s.type = 'human_resolution'"""
+        ).fetchall()
+    }
+
+    grouped: dict[tuple[str, str], set[tuple[str, str]]] = {}
+    for w, f, stype, value in raw:
+        grouped.setdefault((w, f), set()).add((stype, value))
+
+    rows = []
+    for (w, f), pairs in grouped.items():
+        distinct_vals = {v for _, v in pairs}
+        if len(distinct_vals) > 1 and (w, f) not in has_human:
+            rows.append((w, f, sorted(pairs)))
+    rows.sort(key=lambda r: (r[0], r[1]))
+    rows = rows[:limit]
+
     if not rows:
         click.echo("No unresolved conflicts.")
         return
     click.echo(f"  {len(rows)} unresolved conflicts:\n")
-    for wid, field, srcs in rows:
+    for wid, field, pairs in rows:
         click.echo(f"  {wid}.{field}")
-        for s in srcs.split(","):
-            click.echo(f"      {s}")
+        for stype, value in pairs:
+            click.echo(f"      {stype}={value}")
         click.echo(f"      → resolve: kg-inv resolve {wid} {field} \"<value>\" --reason \"...\"")
         click.echo()
 

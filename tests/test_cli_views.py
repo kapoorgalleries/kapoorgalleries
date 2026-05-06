@@ -72,6 +72,25 @@ def test_compare_unknown_id(tmp_path: Path):
     assert "No work found" in result.output
 
 
+def test_conflicts_handles_comma_values(tmp_path: Path):
+    """Values containing commas (e.g. 'Drawing, Collage…') must not be split
+    by the conflicts listing — earlier code did GROUP_CONCAT on commas and
+    Python-side .split(',') corrupted multi-word categories."""
+    db_path = tmp_path / "t.db"
+    db = init_db(db_path)
+    _seed(db, "KG-99", "classification", "Painting", "artsy_csv")
+    _seed(db, "KG-99", "classification", "Drawing, Collage or other Work on Paper",
+          "bulk_upload_xlsx")
+    consolidate(db)
+    db.conn.close()
+
+    runner = CliRunner()
+    result = runner.invoke(cli, ["conflicts", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+    # The full comma-containing value must appear intact on a single line.
+    assert "bulk_upload_xlsx=Drawing, Collage or other Work on Paper" in result.output
+
+
 def test_stats_runs_clean(tmp_path: Path):
     db_path = tmp_path / "t.db"
     _populate(db_path)
