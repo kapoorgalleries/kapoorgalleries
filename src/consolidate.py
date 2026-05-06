@@ -39,9 +39,9 @@ PRIORITY_BANDS: tuple[set[str], ...] = (
     {"human_resolution"},
     {"auto_resolution"},
     {"match_workbook"},
-    {"artsy_csv", "primer_pdf", "primer_csv"},
+    {"artsy_csv", "primer_pdf", "primer_csv", "bulk_upload_xlsx"},
 )
-PRIMER_TYPES = {"artsy_csv", "primer_pdf", "primer_csv"}  # legacy alias for tests
+PRIMER_TYPES = {"artsy_csv", "primer_pdf", "primer_csv", "bulk_upload_xlsx"}  # alias
 
 NUMERIC_FIELDS = {"height_in", "width_in", "depth_in", "price_usd"}
 INT_FIELDS = {"year"}

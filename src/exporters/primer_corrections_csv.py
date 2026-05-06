@@ -26,7 +26,7 @@ from pathlib import Path
 import sqlite_utils
 
 
-PRIMER_TYPES = ("artsy_csv", "primer_pdf", "primer_csv")
+PRIMER_TYPES = ("artsy_csv", "primer_pdf", "primer_csv", "bulk_upload_xlsx")
 
 
 def export_primer_corrections(db: sqlite_utils.Database, out_path: Path | str) -> int:
