@@ -17,35 +17,43 @@ def export_conflicts(db: sqlite_utils.Database, out_path: Path | str) -> int:
     """
     out = Path(out_path)
     out.parent.mkdir(parents=True, exist_ok=True)
-    rows = db.execute(
-        """WITH observed AS (
-              SELECT o.work_id, o.field, o.value, s.type AS stype
-              FROM observations o JOIN sources s ON s.id = o.source_id
-              WHERE o.value IS NOT NULL AND o.value != ''
-                AND s.type NOT IN ('human_resolution','auto_resolution')
-           ),
-           agg AS (
-              SELECT work_id, field,
-                     COUNT(DISTINCT value) AS distinct_values,
-                     GROUP_CONCAT(DISTINCT value) AS values_seen,
-                     GROUP_CONCAT(DISTINCT stype) AS source_types
-              FROM observed
-              GROUP BY work_id, field
-              HAVING distinct_values > 1
-           )
-           SELECT a.work_id, a.field, a.distinct_values,
-                  REPLACE(a.values_seen, ',', ' || ') AS values_seen,
-                  a.source_types
-           FROM agg a
-           WHERE NOT EXISTS (
-              SELECT 1 FROM observations o2 JOIN sources s2 ON s2.id = o2.source_id
-              WHERE o2.work_id = a.work_id AND o2.field = a.field
-                AND s2.type = 'human_resolution'
-           )
-           ORDER BY a.work_id, a.field"""
+
+    # Pull raw observations and aggregate in Python — SQLite's GROUP_CONCAT
+    # uses comma as separator and DISTINCT can't take a custom one, so values
+    # like "Drawing, Collage or other Work on Paper" would split.
+    raw = db.execute(
+        """SELECT o.work_id, o.field, o.value, s.type AS stype
+           FROM observations o JOIN sources s ON s.id = o.source_id
+           WHERE o.value IS NOT NULL AND o.value != ''
+             AND s.type NOT IN ('human_resolution','auto_resolution')"""
     ).fetchall()
+    has_human = {
+        (w, f) for (w, f) in db.execute(
+            """SELECT DISTINCT o.work_id, o.field FROM observations o
+               JOIN sources s ON s.id = o.source_id
+               WHERE s.type = 'human_resolution'"""
+        ).fetchall()
+    }
+
+    by_field: dict[tuple[str, str], dict] = {}
+    for w, f, v, st in raw:
+        rec = by_field.setdefault((w, f), {"values": set(), "stypes": set()})
+        rec["values"].add(v)
+        rec["stypes"].add(st)
+
+    out_rows = []
+    for (w, f), rec in by_field.items():
+        if len(rec["values"]) < 2 or (w, f) in has_human:
+            continue
+        out_rows.append((
+            w, f, len(rec["values"]),
+            " || ".join(sorted(rec["values"])),
+            ",".join(sorted(rec["stypes"])),
+        ))
+    out_rows.sort(key=lambda r: (r[0], r[1]))
+
     with out.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["work_id", "field", "distinct_values", "values_seen", "source_types"])
-        w.writerows(rows)
-    return len(rows)
+        w.writerows(out_rows)
+    return len(out_rows)

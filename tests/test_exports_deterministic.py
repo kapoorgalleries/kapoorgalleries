@@ -77,3 +77,27 @@ def test_provenance_csv_alt_values_sorted(tmp_path: Path):
             if alt_values and " || " in alt_values:
                 parts = alt_values.split(" || ")
                 assert parts == sorted(parts), f"alt_values not sorted: {parts}"
+
+
+def test_conflicts_csv_preserves_comma_values(tmp_path: Path):
+    """Values like 'Drawing, Collage or other Work on Paper' contain commas.
+    The exporter must not split them into distinct entries — earlier
+    SQL-side GROUP_CONCAT did exactly that."""
+    from src.exporters import conflicts_csv as conflicts_csv_mod
+
+    db = init_db(tmp_path / "t.db")
+    _seed(db, "KG-X", "classification", "Painting", "artsy_csv")
+    _seed(db, "KG-X", "classification", "Drawing, Collage or other Work on Paper",
+          "bulk_upload_xlsx")
+    consolidate(db)
+
+    out = tmp_path / "c.csv"
+    conflicts_csv_mod.export_conflicts(db, out)
+    import csv as _csv
+    rows = list(_csv.reader(out.open()))
+    # Header + one conflict row.
+    assert len(rows) == 2
+    header, row = rows
+    assert int(row[header.index("distinct_values")]) == 2
+    # The full comma-containing classification must be present in values_seen.
+    assert "Drawing, Collage or other Work on Paper" in row[header.index("values_seen")]
