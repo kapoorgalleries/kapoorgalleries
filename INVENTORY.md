@@ -70,6 +70,16 @@ Drive / Gmail file ──► ingester ──► observations table (long format)
 | Real conflicts caught | 1 | **11** |
 | Primer corrections suggested | — | **529** |
 
+## First-time setup
+
+```bash
+pip install -e .
+```
+
+After this, `kg-inv` is on your PATH and the examples below work from
+any directory.  If you skip this step, run `python -m src.cli ...`
+from the repo root.
+
 ## CLI
 
 ```bash
