@@ -21,8 +21,11 @@ on:
       - 'pyproject.toml'
       - 'Makefile'
       - '.github/workflows/inventory.yml'
+  # Don't double-trigger on PR events; the push event already covers the
+  # branch.  Only run on PR when it's from a fork (push wouldn't fire there).
   pull_request:
     branches: [main]
+    types: [opened, ready_for_review]
   workflow_dispatch: {}
 
 permissions:
