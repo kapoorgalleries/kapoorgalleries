@@ -96,21 +96,23 @@ def ingest(db_path: str, sources: str):
     src_yaml = yaml.safe_load(Path(sources).read_text()) or []
     db = dbmod.init_db(db_path)
     total_obs = 0
-    skipped: list[str] = []
+    disabled: list[str] = []
+    missing_file: list[tuple[str, str]] = []  # (name, expected_path)
+    not_implemented: list[tuple[str, str]] = []  # (name, type)
     deferred = []  # auto_resolution etc. — run after all other sources
 
     for entry in src_yaml:
         if not entry.get("enabled", True):
-            skipped.append(f"{entry.get('name')} (disabled)")
+            disabled.append(entry.get("name", "?"))
             continue
         type_ = entry["type"]
         local = entry.get("local_path")
         cls = _load_ingester(type_)
         if cls is None:
-            skipped.append(f"{entry.get('name')} ({type_} ingester not implemented)")
+            not_implemented.append((entry.get("name", "?"), type_))
             continue
         if not local or not Path(local).exists():
-            skipped.append(f"{entry.get('name')} (no local file at {local})")
+            missing_file.append((entry.get("name", "?"), local or "(unset)"))
             continue
         if type_ == "auto_resolution":
             deferred.append((entry, cls, local))
@@ -134,10 +136,18 @@ def ingest(db_path: str, sources: str):
         click.echo(f"  {entry['name']} (deferred): {n} observations")
 
     click.echo(f"Inserted {total_obs} observations total.")
-    if skipped:
-        click.echo("Skipped:")
-        for s in skipped:
-            click.echo(f"  - {s}")
+    if missing_file:
+        click.echo("Missing local files (run the fetch script or place these manually):")
+        for name, path in missing_file:
+            click.echo(f"  - {name}  ⇐  {path}")
+    if not_implemented:
+        click.echo("No ingester implemented:")
+        for name, t in not_implemented:
+            click.echo(f"  - {name} ({t})")
+    if disabled:
+        click.echo(f"Disabled in sources.yaml ({len(disabled)}):")
+        for name in disabled:
+            click.echo(f"  - {name}")
 
 
 @cli.command()
