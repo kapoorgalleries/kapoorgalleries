@@ -573,6 +573,44 @@ def artists(limit: int, db_path: str):
     click.echo()
 
 
+@cli.command("split-by-classification")
+@click.option("--out-dir", default="data/by_classification", show_default=True)
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def split_by_classification(out_dir: str, db_path: str):
+    """Write one CSV per classification (Painting, Sculpture, ...).
+
+    Useful when uploading to Artsy in batches — each batch can be one
+    classification at a time.
+    """
+    import csv
+    db = dbmod.get_db(db_path)
+    cls_set = [r[0] for r in db.execute(
+        "SELECT DISTINCT classification FROM works WHERE classification IS NOT NULL"
+    ).fetchall()]
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    cols = [d[0] for d in db.execute("SELECT * FROM works LIMIT 0").description]
+    written = []
+    for cls in cls_set:
+        rows = db.execute(
+            f"SELECT {','.join(cols)} FROM works WHERE classification = ? ORDER BY work_id",
+            [cls],
+        ).fetchall()
+        # File-safe filename
+        safe = "".join(c if c.isalnum() else "_" for c in cls).strip("_")
+        p = out / f"{safe}.csv"
+        with p.open("w", newline="", encoding="utf-8") as fh:
+            w = csv.writer(fh)
+            w.writerow(cols)
+            for row in rows:
+                w.writerow(row)
+        written.append((p, len(rows)))
+    click.echo()
+    for p, n in written:
+        click.echo(f"  {n:5d}  {p}")
+    click.echo()
+
+
 @cli.command()
 @click.argument("query")
 @click.option("--limit", default=30, show_default=True)
