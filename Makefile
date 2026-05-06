@@ -32,8 +32,12 @@ test:
 # Read-only ops (after `make all`) — handy shortcuts.
 overview:
 	$(PY) -m src.cli overview
+overview-json:
+	$(PY) -m src.cli overview --json
 coverage:
 	$(PY) -m src.cli coverage
+stats-json:
+	$(PY) -m src.cli stats --json
 viewer:
 	@echo "Open viewer/index.html in your browser, or:"
 	@echo "  cd viewer && python3 -m http.server 8000"
