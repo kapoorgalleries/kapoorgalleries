@@ -23,6 +23,8 @@ report:
 all: init ingest consolidate report
 	@echo
 	@$(PY) -m src.cli overview
+	@echo
+	@$(PY) -m src.cli check-artsy
 
 test:
 	$(PY) -m pytest
