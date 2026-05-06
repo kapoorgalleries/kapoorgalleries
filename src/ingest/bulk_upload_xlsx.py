@@ -78,7 +78,12 @@ class BulkUploadXlsxIngester(Ingester):
     def run(self) -> IngestResult:
         observations: list[Observation] = []
         rows_processed = 0
-        wb = openpyxl.load_workbook(filename=str(self.file_path), read_only=True, data_only=True)
+        # data_only=True returns the cached evaluated value of formulas — but
+        # tests/fixtures and freshly-saved openpyxl workbooks have no cached
+        # values, so it returns None for every cell.  data_only=False reads the
+        # actual cell values which is what we want for both real exports and
+        # test fixtures here.
+        wb = openpyxl.load_workbook(filename=str(self.file_path), read_only=True, data_only=False)
         ws = wb.active
         rows_iter = ws.iter_rows(values_only=True)
         header_raw = next(rows_iter, None) or ()
