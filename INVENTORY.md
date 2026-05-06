@@ -62,13 +62,17 @@ Drive / Gmail file ──► ingester ──► observations table (long format)
 
 | Metric | Initial | Now |
 |---|---:|---:|
-| Works | 652 | **652** |
-| Sources ingested | 1 | **5** (Artsy CSV + Match Workbook + Image Dir + auto + human) |
-| Artsy-eligible rows | 420 | **568** (+148, 87% of inventory) |
-| classification coverage | 78.5% | **91%** |
-| medium coverage | 81.6% | **93%** |
-| Real conflicts caught | 1 | **11** |
-| Primer corrections suggested | — | **529** |
+| Works | 652 | **1,415** (+763 from bulk upload xlsx) |
+| Sources ingested | 1 | **6** (Artsy CSV + Bulk Upload + Match Workbook + Image Dir + auto + human) |
+| Artsy-eligible rows | 420 | **600** (+180) |
+| classification coverage | 78.5% | **88%** |
+| medium coverage | 81.6% | **86%** |
+| artist coverage | 0% | **9%** (128 actual artists) |
+| Real conflicts caught | 1 | **247** (real Primer drift) |
+| Primer corrections suggested | — | **543** |
+| CLI commands | — | **31** |
+| Tests | 12 | **54** |
+| Inventory value (priced) | — | **$23.9M** |
 
 ## First-time setup
 
