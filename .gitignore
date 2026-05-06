@@ -23,3 +23,6 @@ data/raw/*
 !data/raw/match_workbook_summary_kg1000_1099.xlsx
 # 27 KB year-grouped 2024 catalog — small enough to commit, parser TBD.
 !data/raw/Inventory_for_2024_catalog.xlsx
+# Small sample of Artsy First-100 PNGs (5 files, <50 KB total) for CI verification.
+!data/raw/artsy_first_100_pngs/
+!data/raw/artsy_first_100_pngs/*.png

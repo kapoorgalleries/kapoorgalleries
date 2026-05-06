@@ -35,7 +35,8 @@
 
 | Source | Type | Rows | Extracted at |
 |---|---|---:|---|
-| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T06:01:35.605289+00:00 |
-| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T06:01:35.728027+00:00 |
-| human_resolutions | human_resolution |  | 2026-05-06T06:01:35.813014+00:00 |
-| auto_resolution_rules | auto_resolution | 22 | 2026-05-06T06:01:35.967507+00:00 |
+| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T06:06:23.266292+00:00 |
+| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T06:06:23.380581+00:00 |
+| Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T06:06:23.392075+00:00 |
+| human_resolutions | human_resolution |  | 2026-05-06T06:06:23.461114+00:00 |
+| auto_resolution_rules | auto_resolution | 22 | 2026-05-06T06:06:23.610228+00:00 |
