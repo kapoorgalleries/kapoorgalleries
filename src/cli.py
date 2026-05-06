@@ -640,6 +640,32 @@ def whatsnew(limit: int, db_path: str):
     click.echo()
 
 
+@cli.command("duplicate-titles")
+@click.option("--limit", default=20, show_default=True)
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def duplicate_titles(limit: int, db_path: str):
+    """Find titles that appear on multiple KG-#s (potential dupes)."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """SELECT title, COUNT(*) AS n,
+                  GROUP_CONCAT(work_id, ', ') AS work_ids
+           FROM works
+           WHERE title IS NOT NULL AND title != ''
+           GROUP BY LOWER(TRIM(title))
+           HAVING n > 1
+           ORDER BY n DESC, title
+           LIMIT ?""",
+        [limit],
+    ).fetchall()
+    if not rows:
+        click.echo("\n  No duplicate titles.\n")
+        return
+    click.echo(f"\n  {len(rows)} duplicate titles:\n")
+    for title, n, ids in rows:
+        click.echo(f"  {n:3d}  {title[:60]:60s}  ({ids})")
+    click.echo()
+
+
 @cli.command()
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def prices(db_path: str):
