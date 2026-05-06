@@ -170,12 +170,21 @@ def batch_resolve(yaml_in: str, yaml_out: str):
 
 
 @cli.command("source")
-@click.argument("action", type=click.Choice(["list"]))
+@click.argument("action", type=click.Choice(["list", "enable", "disable"]))
+@click.argument("name", required=False)
 @click.option("--sources", default="catalog/sources.yaml", show_default=True)
-def source_cmd(action: str, sources: str):
-    """Manage sources.yaml from the CLI."""
+def source_cmd(action: str, name: str | None, sources: str):
+    """Manage sources.yaml from the CLI.
+
+    Examples:
+      kg-inv source list
+      kg-inv source enable "Graham Inventory - owned.pdf"
+      kg-inv source disable "Inventory for 2024 catalog.xlsx"
+    """
+    p = Path(sources)
+    entries = yaml.safe_load(p.read_text()) or []
+
     if action == "list":
-        entries = yaml.safe_load(Path(sources).read_text()) or []
         click.echo()
         for e in entries:
             enabled = e.get("enabled", True)
@@ -184,7 +193,28 @@ def source_cmd(action: str, sources: str):
             exists = "•" if local and Path(local).exists() else " "
             click.echo(f"  {tag} {exists}  {e.get('type','?'):20s}  {e.get('name','?')}")
         click.echo()
-        click.echo(f"  ✓=enabled  ✗=disabled  •=local file present")
+        click.echo("  ✓=enabled  ✗=disabled  •=local file present")
+        return
+
+    if not name:
+        raise click.ClickException("source enable/disable requires a name argument")
+
+    matched = [e for e in entries if (e.get("name") or "") == name]
+    if not matched:
+        # Allow substring match for convenience.
+        matched = [e for e in entries if name.lower() in (e.get("name") or "").lower()]
+    if not matched:
+        raise click.ClickException(f"No source matching {name!r}")
+    if len(matched) > 1:
+        raise click.ClickException(
+            f"{len(matched)} sources match {name!r}; be more specific:\n  "
+            + "\n  ".join((m.get('name') or '?') for m in matched)
+        )
+
+    target = matched[0]
+    target["enabled"] = (action == "enable")
+    p.write_text(yaml.safe_dump(entries, sort_keys=False, default_flow_style=False))
+    click.echo(f"{action}d: {target.get('name')}")
 
 
 @cli.command()
