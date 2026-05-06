@@ -962,9 +962,12 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
     # Tokenize titles to single-word keywords (length >= 4 to avoid noise).
     title_classes: dict[str, Counter] = defaultdict(Counter)
     medium_classes: dict[str, Counter] = defaultdict(Counter)
+    title_mediums: dict[str, Counter] = defaultdict(Counter)
     for title, medium, cls in rows:
         for tok in re.findall(r"[a-z]{4,}", (title or "").lower()):
             title_classes[tok][cls] += 1
+            if medium:
+                title_mediums[tok][medium] += 1
         for tok in re.findall(r"[a-z]{4,}", (medium or "").lower()):
             medium_classes[tok][cls] += 1
 
@@ -1000,6 +1003,22 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
         if purity >= min_purity:
             suggestions.append((purity, "medium_contains", token, cls, n,
                                 f"{n}/{total} works with medium containing {token!r}"))
+
+    # Also: where a title-keyword strongly predicts a specific medium, suggest
+    # a medium-fill rule.  (Example: 'khanjar' → "Jade-hilted dagger…")
+    for token, counter in title_mediums.items():
+        if token in existing_keywords:
+            continue
+        total = sum(counter.values())
+        if total < min_support:
+            continue
+        medium, n = counter.most_common(1)[0]
+        purity = n / total
+        if purity >= min_purity:
+            suggestions.append((
+                purity, "title_contains", token,
+                f"medium={medium}", n,
+                f"{n}/{total} works with title containing {token!r}"))
 
     suggestions.sort(key=lambda x: (-x[4], -x[0]))
     if not suggestions:
