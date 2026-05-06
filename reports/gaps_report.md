@@ -1,13 +1,13 @@
 # Artsy upload gaps
 
-- Works blocked from Artsy upload: **80**
+- Works blocked from Artsy upload: **78**
 
 ## What's missing most often
 
 | Missing field | Works |
 |---|---:|
 | classification | 57 |
-| medium | 39 |
+| medium | 37 |
 | image | 11 |
 | title | 1 |
 
@@ -35,8 +35,6 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1357 | 1: medium | Ajanta; 2500th Buddha Jayanti, India, The Land of Buddha |  |
 | KG-1360 | 1: medium | Golden Temple, Amritsar, India |  |
 | KG-1361 | 1: medium | Meenakshi Temple, Madurai, India |  |
-| KG-1363 | 1: medium | India, Air India |  |
-| KG-1367 | 1: medium | There is an Air about India, Air India |  |
 | KG-1376 | 1: classification | See India/Amber |  |
 | KG-1379 | 1: classification | See Ceylon |  |
 | KG-1380 | 1: medium | Simla, See India |  |
@@ -67,6 +65,8 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1669 | 1: classification | Hevajra |  |
 | KG-1672 | 1: image | The Celestial Musician, Narada |  |
 | KG-1674 | 1: image | Narasimha Disemboweling Hiranyakshapu |  |
+| KG-1688 | 1: image | Radha and Krishna Gaze Into a Mirror |  |
+| KG-1697 | 1: image | A carved sandstone Jina |  |
 
 ## Unresolved conflicts
 
