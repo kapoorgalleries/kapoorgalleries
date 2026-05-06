@@ -34,8 +34,11 @@ from pathlib import Path
 import sqlite_utils
 import yaml
 
-from ..schema import Observation
+from ..schema import CANONICAL_FIELDS, Observation
 from ._base import IngestResult, Ingester
+
+
+VALID_FIELDS = set(CANONICAL_FIELDS)
 
 
 def _get_observed(db: sqlite_utils.Database, work_id: str, field: str) -> str | None:
@@ -78,6 +81,14 @@ class AutoResolutionIngester(Ingester):
             reason = rule.get("reason", "")
             if not then:
                 continue
+            # Warn on typos in the 'then' field names.
+            for then_field in then.keys():
+                if then_field not in VALID_FIELDS:
+                    import warnings
+                    warnings.warn(
+                        f"{self.file_path}:rule#{rule_idx}: unknown field "
+                        f"{then_field!r} in 'then' (known: {sorted(VALID_FIELDS)})"
+                    )
 
             for w in work_ids:
                 if not _matches(self.db, w, cond):
