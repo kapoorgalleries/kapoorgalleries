@@ -112,6 +112,53 @@ def ingest(db_path: str, sources: str):
 
 
 @cli.command()
+@click.argument("yaml_in", type=click.Path(exists=True))
+@click.option("--file", "yaml_out", default="data/human_resolutions.yaml", show_default=True,
+              help="Append-target for human resolutions.")
+def batch_resolve(yaml_in: str, yaml_out: str):
+    """Append every entry from `yaml_in` to data/human_resolutions.yaml.
+
+    `yaml_in` should be a YAML list of objects, each with at minimum
+    {work_id, field, value} and optionally reason / decided_by /
+    decided_at.
+
+    Useful when a curator preps a batch of decisions offline.
+    """
+    incoming = yaml.safe_load(Path(yaml_in).read_text()) or []
+    target = Path(yaml_out)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    existing = yaml.safe_load(target.read_text()) if target.exists() else []
+    existing = existing or []
+    n = 0
+    for e in incoming:
+        if not (e.get("work_id") and e.get("field") and e.get("value") not in (None, "")):
+            continue
+        existing.append(e)
+        n += 1
+    target.write_text(yaml.safe_dump(existing, sort_keys=False, default_flow_style=False))
+    click.echo(f"Appended {n} resolutions from {yaml_in} to {yaml_out}")
+    click.echo("Run `make consolidate report` (or `make all`) to refresh master.csv.")
+
+
+@cli.command("source")
+@click.argument("action", type=click.Choice(["list"]))
+@click.option("--sources", default="catalog/sources.yaml", show_default=True)
+def source_cmd(action: str, sources: str):
+    """Manage sources.yaml from the CLI."""
+    if action == "list":
+        entries = yaml.safe_load(Path(sources).read_text()) or []
+        click.echo()
+        for e in entries:
+            enabled = e.get("enabled", True)
+            tag = "✓" if enabled else "✗"
+            local = e.get("local_path", "")
+            exists = "•" if local and Path(local).exists() else " "
+            click.echo(f"  {tag} {exists}  {e.get('type','?'):20s}  {e.get('name','?')}")
+        click.echo()
+        click.echo(f"  ✓=enabled  ✗=disabled  •=local file present")
+
+
+@cli.command()
 @click.argument("work_id")
 @click.argument("field")
 @click.argument("value")
