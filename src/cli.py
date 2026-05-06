@@ -513,6 +513,40 @@ def export_filtered(out_path: str, classification: str | None,
 
 
 @cli.command()
+@click.option("--limit", default=20, show_default=True)
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def years(limit: int, db_path: str):
+    """Distribution of works by year."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """SELECT
+             CASE
+               WHEN year < 1500 THEN 'pre-1500'
+               WHEN year < 1700 THEN '1500-1699'
+               WHEN year < 1800 THEN '1700-1799'
+               WHEN year < 1850 THEN '1800-1849'
+               WHEN year < 1900 THEN '1850-1899'
+               WHEN year < 1950 THEN '1900-1949'
+               WHEN year < 2000 THEN '1950-1999'
+               WHEN year >= 2000 THEN '2000+'
+             END AS bucket,
+             COUNT(*) AS n
+           FROM works WHERE year IS NOT NULL
+           GROUP BY bucket
+           ORDER BY MIN(year)"""
+    ).fetchall()
+    if not rows:
+        click.echo("\n  no year data.\n")
+        return
+    total = sum(n for _, n in rows)
+    click.echo(f"\n  {total} works with year populated:\n")
+    for bucket, n in rows:
+        bar = "█" * int(round(n / total * 30))
+        click.echo(f"    {bucket:12s} {bar:30s} {n}")
+    click.echo()
+
+
+@cli.command()
 @click.option("--limit", default=50, show_default=True)
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def artists(limit: int, db_path: str):
