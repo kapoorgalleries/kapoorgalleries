@@ -68,24 +68,27 @@ health: stats lint
 demo:
 	@echo "===== Kapoor Galleries · Inventory · guided tour ====="
 	@echo
-	@echo "===== make stats ====="
-	@$(PY) -m src.cli stats
-	@echo "===== make lint ====="
-	@$(PY) -m src.cli lint
-	@echo "===== make conflicts (top 5) ====="
+	@$(PY) -m src.cli overview
+	@echo "===== kg-inv coverage ====="
+	@$(PY) -m src.cli coverage
+	@echo "===== kg-inv classifications ====="
+	@$(PY) -m src.cli classifications
+	@echo "===== kg-inv prices ====="
+	@$(PY) -m src.cli prices
+	@echo "===== kg-inv conflicts (top 5) ====="
 	@$(PY) -m src.cli conflicts --limit 5
+	@echo "===== kg-inv lint ====="
+	@$(PY) -m src.cli lint
 	@echo "===== kg-inv show KG-1000 ====="
 	@$(PY) -m src.cli show KG-1000
-	@echo "===== kg-inv search 'khanjar' ====="
-	@$(PY) -m src.cli search khanjar
-	@echo "===== make check-artsy ====="
+	@echo "===== kg-inv check-artsy ====="
 	@$(PY) -m src.cli check-artsy
 	@echo
 	@echo "===== try interactively: ====="
-	@echo "  python -m src.cli triage"
-	@echo "  python -m src.cli resolve KG-1000 classification \"Drawing, …\" --by you@…"
-	@echo "  python -m src.cli suggest-rules"
-	@echo "  python -m src.cli export-filtered --classification Sculpture --out my.csv"
+	@echo "  kg-inv triage"
+	@echo "  kg-inv resolve KG-1000 classification \"Drawing, …\" --by you@…"
+	@echo "  kg-inv suggest-rules"
+	@echo "  kg-inv export-filtered --classification Sculpture --out my.csv"
 	@echo
 
 # Watch mode: rebuild on changes to rules / sources / data/raw/.
