@@ -1,13 +1,13 @@
 # Artsy upload gaps
 
-- Works blocked from Artsy upload: **84**
+- Works blocked from Artsy upload: **80**
 
 ## What's missing most often
 
 | Missing field | Works |
 |---|---:|
 | classification | 57 |
-| medium | 43 |
+| medium | 39 |
 | image | 11 |
 | title | 1 |
 
@@ -48,14 +48,10 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1395 | 1: classification | India–In War and Peace |  |
 | KG-1399 | 1: classification | Megha Raga |  |
 | KG-1407 | 1: medium | Illuminated Horoscope Manuscript |  |
-| KG-1408 | 1: medium | Book 2 |  |
-| KG-1409 | 1: medium | Book 3 |  |
 | KG-1509 | 1: medium | Need title |  |
 | KG-1510 | 1: medium | Need title |  |
-| KG-1513 | 1: medium | Thangka |  |
 | KG-1541 | 1: image | 6 Botanical Studies of Tree Branches and Fruit |  |
 | KG-1564 | 1: medium | 2 Leafs from a Jain Manuscript |  |
-| KG-1600 | 1: medium | Book of Company Period Architectural Drawings |  |
 | KG-1625 | 1: classification | Shiva and Parvati (Uma Maheshvara) |  |
 | KG-1645 | 1: classification | Bahubali |  |
 | KG-1647 | 1: classification | A Digambara Jina |  |
@@ -67,6 +63,10 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1659 | 1: classification | Crowned Buddha |  |
 | KG-1661 | 1: classification | King Ralpachen |  |
 | KG-1664 | 1: classification | Arhat Bakula |  |
+| KG-1667 | 1: classification | Vajrapani |  |
+| KG-1669 | 1: classification | Hevajra |  |
+| KG-1672 | 1: image | The Celestial Musician, Narada |  |
+| KG-1674 | 1: image | Narasimha Disemboweling Hiranyakshapu |  |
 
 ## Unresolved conflicts
 

@@ -26,7 +26,6 @@ KG-1014,materials,,Bronze with polychrome,match_workbook,(filled from match_work
 KG-1015,classification,Painting,"Drawing, Collage or other Work on Paper",match_workbook,(per match_workbook)
 KG-1015,materials,,Opaque watercolor heightened with gold on paper,match_workbook,(filled from match_workbook)
 KG-1016,materials,,Schist,match_workbook,(filled from match_workbook)
-KG-1019,classification,Arms,Design/Decorative Art,auto_resolution,Khanjars (jeweled daggers) are decorative arts on Artsy.
 KG-1019,medium,,Jade-hilted dagger with steel blade,auto_resolution,Khanjars are jade-hilted daggers with steel blades.
 KG-1020,classification,,Design/Decorative Art,auto_resolution,Khanjars (jeweled daggers) are decorative arts on Artsy.
 KG-1020,medium,,Jade-hilted dagger with steel blade,auto_resolution,Khanjars are jade-hilted daggers with steel blades.
@@ -49,7 +48,6 @@ KG-1064,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1065,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1067,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1068,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
-KG-1069,classification,Arms,Design/Decorative Art,auto_resolution,Shamshirs (Persian sabres) are decorative arts on Artsy.
 KG-1069,medium,,Watered-steel blade with carved hilt,auto_resolution,Shamshirs are curved watered-steel sabres.
 KG-1070,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1076,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -235,9 +233,7 @@ KG-1285,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-1286,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1287,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1288,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
-KG-1289,classification,Arms,Design/Decorative Art,auto_resolution,Talwars (curved swords) are decorative arts on Artsy.
 KG-1289,medium,,Watered steel; gold-koftgari hilt,auto_resolution,Talwars are typically gold-koftgari watered-steel sabres.
-KG-1290,classification,Arms,Design/Decorative Art,auto_resolution,Talwars (curved swords) are decorative arts on Artsy.
 KG-1290,medium,,Watered steel; gold-koftgari hilt,auto_resolution,Talwars are typically gold-koftgari watered-steel sabres.
 KG-1291,classification,,Sculpture,auto_resolution,Schist works are sculptures.
 KG-1292,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -270,7 +266,7 @@ KG-1337,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-1337,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1338,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1338,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1342,classification,poster,"Drawing, Collage or other Work on Paper",auto_resolution,Sabena India travel poster.
+KG-1342,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Sabena India travel poster.
 KG-1351,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1351,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1352,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
@@ -279,7 +275,7 @@ KG-1353,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-1353,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1354,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1354,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1355,classification,poster,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
+KG-1355,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1355,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1363,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
 KG-1367,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
@@ -287,14 +283,14 @@ KG-1377,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-1377,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1378,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1378,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1388,classification,poster,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
+KG-1388,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
 KG-1388,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1389,classification,poster,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
+KG-1389,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
 KG-1390,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
 KG-1391,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
 KG-1392,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
 KG-1393,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
-KG-1394,classification,poster,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
+KG-1394,classification,Poster,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
 KG-1396,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1397,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1398,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -305,6 +301,8 @@ KG-1403,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-1404,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1405,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1406,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1408,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-1409,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
 KG-1411,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1412,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1413,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -396,6 +394,7 @@ KG-1507,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1508,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1511,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1512,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1513,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1514,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1515,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1517,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -467,6 +466,7 @@ KG-1596,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1597,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1598,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1599,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1600,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
 KG-1601,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1602,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1603,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
