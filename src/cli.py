@@ -578,9 +578,9 @@ def artists(limit: int, db_path: str):
     db = dbmod.get_db(db_path)
     rows = db.execute(
         """SELECT artist, COUNT(*) AS n FROM works
-           WHERE artist IS NOT NULL
+           WHERE artist IS NOT NULL AND artist != ''
            GROUP BY artist
-           ORDER BY n DESC, artist
+           ORDER BY n DESC, LOWER(artist)
            LIMIT ?""",
         [limit],
     ).fetchall()
