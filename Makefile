@@ -30,6 +30,10 @@ test:
 # Read-only ops (after `make all`) — handy shortcuts.
 overview:
 	$(PY) -m src.cli overview
+viewer:
+	@echo "Open viewer/index.html in your browser, or:"
+	@echo "  cd viewer && python3 -m http.server 8000"
+	@echo "Then visit: http://localhost:8000"
 stats:
 	$(PY) -m src.cli stats
 lint:
