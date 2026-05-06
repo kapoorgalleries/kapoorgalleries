@@ -49,25 +49,27 @@ __version__ = "0.2.0"
 def cli():
     """Kapoor Galleries master inventory pipeline.
 
-    Common commands:
+    \b
+    Workflow shortcuts:
+      make all          re-ingest + consolidate + generate every artifact
+      make stats        one-screen dashboard
+      make health       full system diagnosis
+      make demo         guided tour
 
-      make all                   re-ingest, consolidate, generate every artifact
-      make stats                 one-screen dashboard
-      make health                full system diagnosis (stats + lint + checks)
-      make demo                  guided tour of features
-
-      kg-inv refresh             one-stop ingest + consolidate + report + lint
-      kg-inv triage              interactive conflict resolution
-      kg-inv resolve <kg> <f> <v>   record one human resolution
-      kg-inv promote <kg> <f>    lock in the current canonical value
-      kg-inv conflicts           list unresolved disagreements
-      kg-inv gaps --max-missing 1   punch list of nearly-ready works
-      kg-inv show <kg>           full per-work report
-      kg-inv search <text>       substring search
-      kg-inv export-filtered     write a filtered subset CSV
-      kg-inv suggest-rules       mine inventory for new auto-rule candidates
-      kg-inv lint                data-quality findings
-      kg-inv check-artsy         pre-flight Artsy upload validation
+    \b
+    Single commands (kg-inv ...):
+      refresh           ingest + consolidate + report + lint + check-artsy
+      triage            interactive conflict resolution
+      resolve <kg> <f> <v>  record one human resolution
+      promote <kg> <f>  lock in the current canonical value
+      conflicts         list unresolved disagreements
+      gaps              punch list of nearly-ready works
+      show <kg>         full per-work report
+      search <text>     substring search
+      export-filtered   write a filtered subset CSV
+      suggest-rules     mine inventory for new auto-rule candidates
+      lint              data-quality findings
+      check-artsy       pre-flight Artsy upload validation
     """
     pass
 
