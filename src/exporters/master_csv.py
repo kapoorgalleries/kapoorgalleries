@@ -13,7 +13,7 @@ import sqlite_utils
 
 from ..schema import CANONICAL_FIELDS
 
-EXTRA_COLS = ("has_conflict", "conflict_fields", "canonical_updated_at")
+EXTRA_COLS = ("has_conflict", "conflict_fields")
 
 
 def export_master_csv(db: sqlite_utils.Database, out_path: Path | str) -> int:

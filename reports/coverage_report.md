@@ -35,9 +35,9 @@
 
 | Source | Type | Rows | Extracted at |
 |---|---|---:|---|
-| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T06:55:30.708230+00:00 |
-| Kapoor Galleries - Bulk upload Template Artsy.xlsx | bulk_upload_xlsx | 1424 | 2026-05-06T06:55:30.998412+00:00 |
-| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T06:55:31.042349+00:00 |
-| Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T06:55:31.057684+00:00 |
-| human_resolutions | human_resolution |  | 2026-05-06T06:55:31.119103+00:00 |
-| auto_resolution_rules | auto_resolution | 40 | 2026-05-06T06:55:31.699749+00:00 |
+| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T07:32:51.829874+00:00 |
+| Kapoor Galleries - Bulk upload Template Artsy.xlsx | bulk_upload_xlsx | 1424 | 2026-05-06T07:32:52.134157+00:00 |
+| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T07:32:52.174400+00:00 |
+| Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T07:32:52.183318+00:00 |
+| human_resolutions | human_resolution |  | 2026-05-06T07:32:52.236312+00:00 |
+| auto_resolution_rules | auto_resolution | 40 | 2026-05-06T07:32:52.802389+00:00 |
