@@ -681,6 +681,31 @@ def duplicate_titles(limit: int, db_path: str):
     click.echo()
 
 
+@cli.command("image-stats")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def image_stats(db_path: str):
+    """Photography backlog broken out by classification."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """SELECT classification,
+                  COUNT(*) AS total,
+                  SUM(CASE WHEN primary_image_url IS NOT NULL THEN 1 ELSE 0 END) AS with_image
+           FROM works
+           WHERE classification IS NOT NULL
+           GROUP BY classification ORDER BY (total - with_image) DESC"""
+    ).fetchall()
+    if not rows:
+        click.echo("\n  no classification data.\n")
+        return
+    click.echo()
+    click.echo(f"  {'class':40s}  {'with':>5s}  {'total':>5s}  {'%':>4s}  {'gap':>5s}")
+    for cls, total, with_image in rows:
+        pct = round(100 * with_image / total)
+        gap = total - with_image
+        click.echo(f"  {(cls or '')[:40]:40s}  {with_image:5d}  {total:5d}  {pct:3d}%  {gap:5d}")
+    click.echo()
+
+
 @cli.command()
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def classifications(db_path: str):
