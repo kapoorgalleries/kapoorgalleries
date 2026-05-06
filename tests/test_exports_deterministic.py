@@ -1,0 +1,79 @@
+"""Generated artifacts should be byte-for-byte identical across consolidate runs.
+
+Set iteration order, dict insertion order, and now()-derived timestamps have
+all caused spurious git diffs in the past.  This test pins them down.
+"""
+
+from pathlib import Path
+
+from src.consolidate import consolidate
+from src.db import init_db, insert_observations, upsert_source
+from src.exporters import master_csv, master_json, provenance_csv
+from src.schema import Observation, SourceRecord
+
+
+def _seed(db, work_id, field, value, stype, observed_at="2026-01-01"):
+    sid = upsert_source(db, SourceRecord(name=f"t-{stype}", type=stype, extracted_at=observed_at))
+    insert_observations(db, sid, [Observation(
+        work_id=work_id, field=field, value=value, observed_at=observed_at,
+    )])
+
+
+def _populate(db_path: Path):
+    db = init_db(db_path)
+    # Two works with multiple alternative values, to exercise both
+    # canonical-pick stability and alternative-set sorting.
+    _seed(db, "KG-1", "title", "First Work", "artsy_csv")
+    _seed(db, "KG-1", "classification", "Posters", "artsy_csv")
+    _seed(db, "KG-1", "classification", "Print", "bulk_upload_xlsx")
+    _seed(db, "KG-2", "title", "Second Work", "artsy_csv")
+    _seed(db, "KG-2", "classification", "Sculpture", "artsy_csv")
+    consolidate(db)
+    return db
+
+
+def test_master_csv_byte_identical_across_runs(tmp_path: Path):
+    db = _populate(tmp_path / "t.db")
+    a = tmp_path / "a.csv"
+    b = tmp_path / "b.csv"
+    master_csv.export_master_csv(db, a)
+    master_csv.export_master_csv(db, b)
+    assert a.read_bytes() == b.read_bytes()
+
+
+def test_master_json_byte_identical_across_runs(tmp_path: Path):
+    db = _populate(tmp_path / "t.db")
+    a = tmp_path / "a.json"
+    b = tmp_path / "b.json"
+    master_json.export_master_json(db, a)
+    master_json.export_master_json(db, b)
+    assert a.read_bytes() == b.read_bytes()
+
+
+def test_master_csv_omits_canonical_updated_at(tmp_path: Path):
+    """It's the consolidate-run timestamp; identical for every row, only churn."""
+    db = _populate(tmp_path / "t.db")
+    out = tmp_path / "m.csv"
+    master_csv.export_master_csv(db, out)
+    header = out.read_text().splitlines()[0]
+    assert "canonical_updated_at" not in header
+
+
+def test_provenance_csv_alt_values_sorted(tmp_path: Path):
+    """alt_values must be sorted so set-iteration order doesn't leak into output."""
+    db = _populate(tmp_path / "t.db")
+    out = tmp_path / "p.csv"
+    provenance_csv.export_provenance(db, out)
+    text = out.read_text()
+    # KG-1 has classifications {'Posters', 'Print'}.  Whichever wins canonically,
+    # the alternative listing must be in sorted order ('Posters' < 'Print').
+    # We don't assert which is canonical — only that the alt list is sorted.
+    for line in text.splitlines():
+        if line.startswith("KG-1,classification,"):
+            # alternative_values is the 6th column (0-indexed 5).
+            cols = line.split(",")
+            # alt_count, alternative_values, alternative_sources are last 3.
+            alt_values = cols[-2]
+            if alt_values and " || " in alt_values:
+                parts = alt_values.split(" || ")
+                assert parts == sorted(parts), f"alt_values not sorted: {parts}"
