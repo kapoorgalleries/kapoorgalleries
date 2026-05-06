@@ -36,6 +36,8 @@ test:
 	$(PY) -m pytest
 
 # Read-only ops (after `make all`) — handy shortcuts.
+overview:
+	$(PY) -m src.cli overview
 stats:
 	$(PY) -m src.cli stats
 lint:
