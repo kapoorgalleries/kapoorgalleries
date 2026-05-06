@@ -658,6 +658,85 @@ def lint(db_path: str):
         click.echo()
 
 
+@cli.command("suggest-rules")
+@click.option("--min-support", default=5, show_default=True,
+              help="minimum number of matching works for a rule to be suggested")
+@click.option("--min-purity", default=0.9, show_default=True,
+              help="fraction of matches that share the candidate field-value (0..1)")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def suggest_rules(min_support: int, min_purity: float, db_path: str):
+    """Mine the existing inventory for new auto-resolution rule candidates.
+
+    For every (title-keyword, classification) pair, count: how often does
+    a title containing this keyword have *this* classification?  If the
+    count is >= min_support and the purity (matching/total) is >=
+    min_purity, suggest a rule.  Same for medium-keyword.
+    """
+    import re
+    from collections import Counter, defaultdict
+
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        "SELECT title, medium, classification FROM works WHERE classification IS NOT NULL"
+    ).fetchall()
+
+    # Tokenize titles to single-word keywords (length >= 4 to avoid noise).
+    title_classes: dict[str, Counter] = defaultdict(Counter)
+    medium_classes: dict[str, Counter] = defaultdict(Counter)
+    for title, medium, cls in rows:
+        for tok in re.findall(r"[a-z]{4,}", (title or "").lower()):
+            title_classes[tok][cls] += 1
+        for tok in re.findall(r"[a-z]{4,}", (medium or "").lower()):
+            medium_classes[tok][cls] += 1
+
+    # Skip tokens already covered by an existing rule.
+    rules_path = Path("data/auto_resolution_rules.yaml")
+    existing_keywords: set[str] = set()
+    if rules_path.exists():
+        for r in (yaml.safe_load(rules_path.read_text()) or []):
+            for k, v in (r.get("if") or {}).items():
+                if "_contains" in k and isinstance(v, str):
+                    existing_keywords.add(v.lower())
+
+    suggestions: list[tuple[float, str, str, str, int, str]] = []
+    for token, counter in title_classes.items():
+        if token in existing_keywords:
+            continue
+        total = sum(counter.values())
+        if total < min_support:
+            continue
+        cls, n = counter.most_common(1)[0]
+        purity = n / total
+        if purity >= min_purity:
+            suggestions.append((purity, "title_contains", token, cls, n,
+                                f"{n}/{total} works with title containing {token!r}"))
+    for token, counter in medium_classes.items():
+        if token in existing_keywords:
+            continue
+        total = sum(counter.values())
+        if total < min_support:
+            continue
+        cls, n = counter.most_common(1)[0]
+        purity = n / total
+        if purity >= min_purity:
+            suggestions.append((purity, "medium_contains", token, cls, n,
+                                f"{n}/{total} works with medium containing {token!r}"))
+
+    suggestions.sort(key=lambda x: (-x[4], -x[0]))
+    if not suggestions:
+        click.echo("\n  No new high-purity patterns found above the thresholds.\n")
+        return
+
+    click.echo(f"\n  {len(suggestions)} suggested rules (purity ≥ {min_purity:.0%}, support ≥ {min_support}):\n")
+    for purity, key, tok, cls, n, evidence in suggestions[:20]:
+        click.echo(f"  - if: {{ {key}: {tok} }}  =>  classification: {cls}  ({evidence}, purity {purity:.0%})")
+    if len(suggestions) > 20:
+        click.echo(f"  ... and {len(suggestions)-20} more")
+    click.echo()
+    click.echo("  Add the ones you trust to data/auto_resolution_rules.yaml and re-run `make all`.")
+    click.echo()
+
+
 ARTSY_VALID_CLASSIFICATIONS = {
     "Painting",
     "Sculpture",
