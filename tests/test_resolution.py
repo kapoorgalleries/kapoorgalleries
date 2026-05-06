@@ -106,6 +106,22 @@ def test_match_workbook_beats_primer(tmp_path: Path):
     assert row[0] == "Drawing"  # Match Workbook wins despite being older
 
 
+def test_human_resolution_warns_on_unknown_field(tmp_path: Path):
+    """Typos like 'classifcation' should produce a warning, not silently no-op."""
+    import warnings
+    yp = tmp_path / "h.yaml"
+    yp.write_text(yaml.safe_dump([{
+        "work_id": "KG-X", "field": "classifcation",  # typo
+        "value": "Drawing", "decided_by": "test", "decided_at": "2026-05-06",
+    }]))
+    with warnings.catch_warnings(record=True) as caught:
+        warnings.simplefilter("always")
+        res = HumanResolutionIngester(yp).run()
+    assert any("classifcation" in str(w.message) for w in caught)
+    # No observation emitted for the bad field.
+    assert all(o.field != "classifcation" for o in res.observations)
+
+
 def test_priority_human_beats_auto_beats_match_beats_primer(tmp_path: Path):
     """Verify the full priority cascade."""
     db = init_db(tmp_path / "t.db")
