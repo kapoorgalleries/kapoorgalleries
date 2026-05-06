@@ -767,6 +767,23 @@ def lint(db_path: str):
         click.echo()
 
 
+@cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--sources", default="catalog/sources.yaml", show_default=True)
+@click.pass_context
+def refresh(ctx, db_path: str, sources: str):
+    """One-stop: init-db + ingest + consolidate + report + lint + check-artsy."""
+    click.echo("\n  ┌── refresh ───────────────────────────────────────")
+    ctx.invoke(init_db_cmd, db_path=db_path)
+    ctx.invoke(ingest, db_path=db_path, sources=sources)
+    ctx.invoke(consolidate, db_path=db_path)
+    ctx.invoke(report, db_path=db_path)
+    click.echo("\n  ├── post-checks ──────────────────────────────────")
+    ctx.invoke(lint, db_path=db_path)
+    ctx.invoke(check_artsy)
+    click.echo("\n  └── refreshed.\n")
+
+
 @cli.command("suggest-rules")
 @click.option("--min-support", default=5, show_default=True,
               help="minimum number of matching works for a rule to be suggested")
