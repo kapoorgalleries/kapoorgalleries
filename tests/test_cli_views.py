@@ -231,6 +231,35 @@ def test_split_by_classification_writes_per_class_csvs(tmp_path: Path):
     assert len(files) >= 1
 
 
+def test_gaps_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["gaps", "--max-missing", "5",
+                                   "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_batch_resolve_appends_entries(tmp_path: Path):
+    """batch-resolve reads a YAML file and appends to human_resolutions.yaml."""
+    import yaml as _yaml
+    in_path = tmp_path / "in.yaml"
+    in_path.write_text(_yaml.safe_dump([
+        {"work_id": "KG-1", "field": "title", "value": "Test 1"},
+        {"work_id": "KG-2", "field": "title", "value": "Test 2"},
+    ]))
+    out_path = tmp_path / "human.yaml"
+
+    runner = CliRunner()
+    result = runner.invoke(cli, [
+        "batch-resolve", str(in_path), "--file", str(out_path),
+    ])
+    assert result.exit_code == 0, result.output
+    entries = _yaml.safe_load(out_path.read_text())
+    assert len(entries) == 2
+    assert entries[0]["work_id"] == "KG-1"
+
+
 def test_check_artsy_runs(tmp_path: Path):
     """check-artsy needs a real CSV file."""
     p = tmp_path / "upload.csv"
