@@ -169,6 +169,50 @@ def batch_resolve(yaml_in: str, yaml_out: str):
     click.echo("Run `make consolidate report` (or `make all`) to refresh master.csv.")
 
 
+@cli.command("inspect-source")
+@click.argument("source_name")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def inspect_source(source_name: str, db_path: str):
+    """Show what one source contributed: works, fields, conflict rate."""
+    db = dbmod.get_db(db_path)
+    src = db.execute(
+        "SELECT id, name, type, row_count FROM sources WHERE name LIKE ?",
+        [f"%{source_name}%"],
+    ).fetchone()
+    if not src:
+        click.echo(f"No source matching {source_name!r}.")
+        return
+    sid, sname, stype, rcount = src
+
+    n_obs = db.execute(
+        "SELECT COUNT(*) FROM observations WHERE source_id = ?", [sid]
+    ).fetchone()[0]
+    n_works = db.execute(
+        "SELECT COUNT(DISTINCT work_id) FROM observations WHERE source_id = ?", [sid]
+    ).fetchone()[0]
+    by_field = db.execute(
+        """SELECT field, COUNT(*) FROM observations WHERE source_id = ?
+           GROUP BY field ORDER BY 2 DESC""",
+        [sid],
+    ).fetchall()
+    n_chosen = db.execute(
+        """SELECT COUNT(*) FROM observations o
+           JOIN sources s ON s.id = o.source_id
+           WHERE s.id = ?
+             AND EXISTS (SELECT 1 FROM works w WHERE w.work_id = o.work_id)""",
+        [sid],
+    ).fetchone()[0]
+
+    click.echo(f"\n  {sname}")
+    click.echo(f"  type={stype}  source-rows={rcount}")
+    click.echo(f"  observations={n_obs}  works contributed-to={n_works}")
+    click.echo()
+    click.echo("  Fields contributed:")
+    for f, n in by_field:
+        click.echo(f"    {f:25s} {n}")
+    click.echo()
+
+
 @cli.command("source")
 @click.argument("action", type=click.Choice(["list", "enable", "disable"]))
 @click.argument("name", required=False)
