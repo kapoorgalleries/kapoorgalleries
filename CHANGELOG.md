@@ -1,10 +1,30 @@
 # Changelog
 
-## 0.4.0 — current branch · 100+ commits
+## 0.4.0 — current branch · 120+ commits
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,415 works · 600 Artsy-eligible (42%) · 128 attributed (9%) · 247 conflicts · 6 sources ingested · 54 tests · 31 CLI commands · CI green.
+> 1,415 works · 600 Artsy-eligible (42%) · 128 attributed (9%) · 247 conflicts · 6 sources ingested · 67 tests · 33 CLI commands · CI green.
+
+### 0.4.1 — output determinism & comma-value bug fixes
+
+- **Dropped `canonical_updated_at` from `master.csv` / `master.json`** — it
+  was the consolidate-run timestamp, identical for every row, causing
+  1,415-row diffs on every `make all` run.  Still in the SQLite `works`
+  table for any consumer that needs it.
+- **Sorted `master_provenance.csv` `alt_values`** — set iteration order
+  isn't stable; same data was producing different orderings across runs.
+- **Fixed comma-splitting in three places** (kg-inv conflicts CLI,
+  `data/conflicts.csv`, gaps_report.md "Unresolved conflicts" table):
+  values like "Drawing, Collage or other Work on Paper" were being
+  fragmented into apparent extra entries because SQLite's
+  `GROUP_CONCAT` uses comma as separator.  All replaced with
+  Python-side aggregation.
+- **`kg-inv compare KG-X KG-Y`** — side-by-side work comparison, marks
+  differing fields with ≠.  Useful for spotting duplicate-ID Primer
+  bugs (e.g. KG-1312).
+- **5 new determinism + regression tests** pinning byte-equality of
+  exports and comma-value preservation.
 
 ### 0.4 — bulk upload + data quality
 
