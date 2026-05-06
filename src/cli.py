@@ -214,5 +214,128 @@ def report(db_path: str):
     click.echo("reports/*.md written")
 
 
+@cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def stats(db_path: str):
+    """Show one-screen inventory dashboard."""
+    db = dbmod.get_db(db_path)
+    total = db.execute("SELECT COUNT(*) FROM works").fetchone()[0]
+    if total == 0:
+        click.echo("No works yet — run `make all`.")
+        return
+    conflicts = db.execute("SELECT COUNT(*) FROM works WHERE has_conflict = 1").fetchone()[0]
+    artsy_ready = db.execute("""
+        SELECT COUNT(*) FROM works
+        WHERE COALESCE(status,'active') = 'active'
+          AND title IS NOT NULL AND classification IS NOT NULL
+          AND medium IS NOT NULL AND primary_image_url IS NOT NULL
+    """).fetchone()[0]
+    blocked = total - artsy_ready
+    click.echo(f"\n  Works:           {total}")
+    click.echo(f"  Artsy-eligible:  {artsy_ready}")
+    click.echo(f"  Blocked:         {blocked}")
+    click.echo(f"  Conflicts:       {conflicts}")
+    click.echo()
+    click.echo("  Field coverage:")
+    for f in ("title", "artist", "year", "classification", "medium", "materials",
+              "height_in", "width_in", "depth_in", "price_usd", "primary_image_url"):
+        n = db.execute(
+            f"SELECT COUNT(*) FROM works WHERE {f} IS NOT NULL AND CAST({f} AS TEXT) != ''"
+        ).fetchone()[0]
+        bar = "█" * int(round(n / total * 30))
+        click.echo(f"    {f:20s} {bar:30s} {n:4d}/{total} ({round(100*n/total)}%)")
+    click.echo()
+    click.echo("  Sources ingested:")
+    for r in db.execute("SELECT name, type, row_count FROM sources ORDER BY name").fetchall():
+        click.echo(f"    {r[0][:50]:50s} {r[1]:20s} rows={r[2]}")
+    click.echo()
+
+
+@cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--limit", default=20, show_default=True)
+def conflicts(db_path: str, limit: int):
+    """List unresolved conflicts with values + sources, ready for `kg-inv resolve`."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """WITH observed AS (
+              SELECT o.work_id, o.field, o.value, s.type AS stype
+              FROM observations o JOIN sources s ON s.id = o.source_id
+              WHERE o.value IS NOT NULL AND o.value != ''
+                AND s.type NOT IN ('human_resolution','auto_resolution')
+           )
+           SELECT o.work_id, o.field,
+                  GROUP_CONCAT(DISTINCT o.stype || '=' || o.value) AS sources
+           FROM observed o
+           GROUP BY o.work_id, o.field
+           HAVING COUNT(DISTINCT o.value) > 1
+              AND NOT EXISTS (
+                  SELECT 1 FROM observations o2 JOIN sources s2 ON s2.id = o2.source_id
+                  WHERE o2.work_id = o.work_id AND o2.field = o.field
+                    AND s2.type = 'human_resolution'
+              )
+           ORDER BY o.work_id, o.field
+           LIMIT ?""",
+        [limit],
+    ).fetchall()
+    if not rows:
+        click.echo("No unresolved conflicts.")
+        return
+    click.echo(f"  {len(rows)} unresolved conflicts:\n")
+    for wid, field, srcs in rows:
+        click.echo(f"  {wid}.{field}")
+        for s in srcs.split(","):
+            click.echo(f"      {s}")
+        click.echo(f"      → resolve: kg-inv resolve {wid} {field} \"<value>\" --reason \"...\"")
+        click.echo()
+
+
+@cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--max-missing", default=2, show_default=True,
+              help="show works missing this many or fewer fields")
+@click.option("--limit", default=50, show_default=True)
+def gaps(db_path: str, max_missing: int, limit: int):
+    """List works closest to Artsy-upload-ready (missing few fields)."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """SELECT work_id, title, artist,
+                  (CASE WHEN title IS NULL THEN 1 ELSE 0 END
+                 + CASE WHEN classification IS NULL THEN 1 ELSE 0 END
+                 + CASE WHEN medium IS NULL THEN 1 ELSE 0 END
+                 + CASE WHEN primary_image_url IS NULL THEN 1 ELSE 0 END
+                 + CASE WHEN height_in IS NULL THEN 1 ELSE 0 END
+                 + CASE WHEN width_in IS NULL THEN 1 ELSE 0 END) AS missing,
+                  (CASE WHEN title IS NULL THEN 'title,' ELSE '' END
+                 || CASE WHEN classification IS NULL THEN 'classification,' ELSE '' END
+                 || CASE WHEN medium IS NULL THEN 'medium,' ELSE '' END
+                 || CASE WHEN primary_image_url IS NULL THEN 'image,' ELSE '' END
+                 || CASE WHEN height_in IS NULL THEN 'height,' ELSE '' END
+                 || CASE WHEN width_in IS NULL THEN 'width,' ELSE '' END) AS missing_fields
+           FROM works
+           WHERE (CASE WHEN title IS NULL THEN 1 ELSE 0 END
+                + CASE WHEN classification IS NULL THEN 1 ELSE 0 END
+                + CASE WHEN medium IS NULL THEN 1 ELSE 0 END
+                + CASE WHEN primary_image_url IS NULL THEN 1 ELSE 0 END
+                + CASE WHEN height_in IS NULL THEN 1 ELSE 0 END
+                + CASE WHEN width_in IS NULL THEN 1 ELSE 0 END) BETWEEN 1 AND ?
+           ORDER BY missing ASC, work_id
+           LIMIT ?""",
+        [max_missing, limit],
+    ).fetchall()
+    click.echo(f"\n  Works closest to upload-ready (missing ≤ {max_missing} fields):\n")
+    n = 0
+    for wid, title, artist, missing, mf in rows:
+        if missing == 0 or missing > max_missing:
+            continue
+        n += 1
+        mf_clean = mf.rstrip(",") or "—"
+        click.echo(f"  {wid}  ({missing} missing: {mf_clean})")
+        click.echo(f"      {(title or '')[:70]}")
+    if n == 0:
+        click.echo("  (none)")
+    click.echo()
+
+
 if __name__ == "__main__":
     cli()

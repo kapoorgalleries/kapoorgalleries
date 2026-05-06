@@ -1,67 +1,93 @@
 # Artsy upload gaps
 
-- Works blocked from Artsy upload: **232**
+- Works blocked from Artsy upload: **166**
 
 ## What's missing most often
 
 | Missing field | Works |
 |---|---:|
-| classification | 140 |
 | medium | 120 |
+| classification | 66 |
 | image | 11 |
 | title | 1 |
 
-## First 50 blocked works
+## Triage: closest to upload-ready first
 
-| KG-# | Title | Artist | Missing |
+Sorted by *number of missing fields ascending* — the smallest punch list at the top.
+
+| KG-# | Missing | Title | Artist |
 |---|---|---|---|
-| KG-1019 | Jade-hilted and gilt khanjar |  | medium |
-| KG-1020 | Jade-hilted and jeweled khanjar |  | classification,medium |
-| KG-1022 | Krishna Playing the Flute with Gopis |  | classification |
-| KG-1024 | Bon Thangka of Satrig Ersang |  | classification |
-| KG-1031 | Painted Saddle |  | classification |
-| KG-1032 | Panchamukhalinga |  | classification |
-| KG-1046 | Large pagoda of Tritchinapali |  | classification |
-| KG-1059 | Bas relief of the temple of Indra |  | classification |
-| KG-1069 | A Ram’s Head Shamshir |  | medium |
-| KG-1088 | A gray schist figure of Buddha |  | classification |
-| KG-1094 | Illustration from a Kama Sutra series |  | medium |
-| KG-1095 | Illustration from a Kama Sutra series |  | medium |
-| KG-1096 | Illustration from a Kama Sutra series |  | medium |
-| KG-1097 | Illustration from a Kama Sutra series |  | medium |
-| KG-1098 | Illustration from a Kama Sutra series |  | medium |
-| KG-1099 | Illustration from a Kama Sutra series |  | medium |
-| KG-1103 | Parashurama Rama with the Axe Slays the Many Armed King Karthavirya |  | classification |
-| KG-1104 | Shiva and Parvati on Mount Kailasa |  | classification |
-| KG-1109 | The Descent of the Holy Family from Kailasha |  | classification |
-| KG-1111 | Shiva, Parvati, and the Holy Family |  | medium |
-| KG-1112 | Holy Family |  | medium |
-| KG-1114 | Architrave |  | classification |
-| KG-1141 | Maharana Jawan Singh with Rawat Dule Singh and Sirdar Singh |  | classification |
-| KG-1159 | Hookah smoker |  | classification |
-| KG-1172 | Equestrian Portrait |  | medium |
-| KG-1178 | Sri Nathji |  | medium |
-| KG-1192 | A Visitor Kneeling in front of a Seated Ruler |  | classification |
-| KG-1202 | A Sikh Elder Holding Prayer Beads |  | classification,image |
-| KG-1213 | Mughal Portrait |  | classification |
-| KG-1214 | A Mendicant and his Wife |  | classification |
-| KG-1220 | Portrait of a Flower Lady Making Garland |  | medium |
-| KG-1222 | Company Portrait of a Princess |  | classification |
-| KG-1223 | Two Devotees |  | medium |
-| KG-1224 | Holy Man Praying |  | medium |
-| KG-1227 | Two Paintings Depicting Elephants with their Mahouts |  | classification |
-| KG-1240 |  |  | title |
-| KG-1241 | Rao Saseb Vijai Singh Ji |  | medium |
-| KG-1242 | Portrait |  | medium |
-| KG-1244 | Mirza Shah Rukh holding a Hunting Falcon |  | classification |
-| KG-1257 | A Mughal Nobleman |  | classification |
-| KG-1261 | Two Persian Line Drawings A) Female Musician B) Nobleman with His Pet |  | medium |
-| KG-1262 | Sad old guy |  | medium |
-| KG-1263 | Lovers |  | medium |
-| KG-1264 | A Seated Ruler in Court |  | classification |
-| KG-1265 | Portrait of a Couple |  | classification |
-| KG-1276 | Women in a Zenana |  | classification,medium |
-| KG-1283 | Portrait of Leila Begum Smoking Hookah |  | classification |
-| KG-1285 | Woman Holding a Lamp |  | classification |
-| KG-1289 | Talwar engraved with images of the ten avatars of Vishnu |  | medium |
-| KG-1290 | Koftgari talwar |  | medium |
+| KG-1019 | 1: medium | Jade-hilted and gilt khanjar |  |
+| KG-1020 | 1: medium | Jade-hilted and jeweled khanjar |  |
+| KG-1046 | 1: classification | Large pagoda of Tritchinapali |  |
+| KG-1059 | 1: classification | Bas relief of the temple of Indra |  |
+| KG-1069 | 1: medium | A Ram’s Head Shamshir |  |
+| KG-1094 | 1: medium | Illustration from a Kama Sutra series |  |
+| KG-1095 | 1: medium | Illustration from a Kama Sutra series |  |
+| KG-1096 | 1: medium | Illustration from a Kama Sutra series |  |
+| KG-1097 | 1: medium | Illustration from a Kama Sutra series |  |
+| KG-1098 | 1: medium | Illustration from a Kama Sutra series |  |
+| KG-1099 | 1: medium | Illustration from a Kama Sutra series |  |
+| KG-1111 | 1: medium | Shiva, Parvati, and the Holy Family |  |
+| KG-1112 | 1: medium | Holy Family |  |
+| KG-1172 | 1: medium | Equestrian Portrait |  |
+| KG-1178 | 1: medium | Sri Nathji |  |
+| KG-1202 | 1: image | A Sikh Elder Holding Prayer Beads |  |
+| KG-1220 | 1: medium | Portrait of a Flower Lady Making Garland |  |
+| KG-1223 | 1: medium | Two Devotees |  |
+| KG-1224 | 1: medium | Holy Man Praying |  |
+| KG-1240 | 1: title |  |  |
+| KG-1241 | 1: medium | Rao Saseb Vijai Singh Ji |  |
+| KG-1242 | 1: medium | Portrait |  |
+| KG-1261 | 1: medium | Two Persian Line Drawings A) Female Musician B) Nobleman wit |  |
+| KG-1262 | 1: medium | Sad old guy |  |
+| KG-1263 | 1: medium | Lovers |  |
+| KG-1289 | 1: medium | Talwar engraved with images of the ten avatars of Vishnu |  |
+| KG-1290 | 1: medium | Koftgari talwar |  |
+| KG-1328 | 1: classification | See India, Mysore |  |
+| KG-1336 | 1: medium | Car Festival at Puri, India |  |
+| KG-1337 | 1: classification | Visit India, Sanchi |  |
+| KG-1338 | 1: classification | Sanchi/Visit India |  |
+| KG-1340 | 1: classification | Banaras, India |  |
+| KG-1343 | 1: classification | India via Bank of America |  |
+| KG-1345 | 1: classification | India, Fly Qantas |  |
+| KG-1346 | 1: classification | Colorful Middle East |  |
+| KG-1348 | 1: medium | Darjeeling and Kanchanjunga |  |
+| KG-1349 | 1: classification | Banaras, See India |  |
+| KG-1350 | 1: classification | Banaras, See India |  |
+| KG-1351 | 1: medium | Udaipur, Visit India |  |
+| KG-1352 | 1: classification | Udaipur, Visit India |  |
+| KG-1355 | 1: medium | Visit India, Kashmir |  |
+| KG-1357 | 1: medium | Ajanta; 2500th Buddha Jayanti, India, The Land of Buddha |  |
+| KG-1360 | 1: medium | Golden Temple, Amritsar, India |  |
+| KG-1361 | 1: medium | Meenakshi Temple, Madurai, India |  |
+| KG-1376 | 1: classification | See India/Amber |  |
+| KG-1377 | 1: classification | Visit India/A Street by Moonlight |  |
+| KG-1378 | 1: classification | Mount Abu/Visit India |  |
+| KG-1379 | 1: classification | See Ceylon |  |
+| KG-1380 | 1: medium | Simla, See India |  |
+| KG-1381 | 1: medium | Indian State Railways, Kashmir |  |
+
+## Unresolved conflicts
+
+Each row blocks confidence in the canonical value.
+Resolve with: `python -m src.cli resolve <KG-#> <field> "<value>" --reason "..."`
+
+| KG-# | Field | Distinct values | Sources |
+|---|---|---|---|
+| KG-1000 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,match_workbook |
+| KG-1001 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,match_workbook |
+| KG-1002 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,match_workbook |
+| KG-1003 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,match_workbook |
+| KG-1004 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,match_workbook |
+| KG-1007 | classification | Object \| Sculpture | artsy_csv,match_workbook |
+| KG-1011 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,match_workbook |
+| KG-1012 | classification | Khanjar \| Design/Decorative Art | artsy_csv,match_workbook |
+| KG-1013 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,match_workbook |
+| KG-1015 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,match_workbook |
+| KG-1312 | height_in | 13.0 \| 9.0 | artsy_csv |
+| KG-1312 | medium | Ground mineral pigments on paper \| Opaque watercolor heightened with gold on paper | artsy_csv |
+| KG-1312 | price_usd | 50000.0 \| 26000.0 | artsy_csv |
+| KG-1312 | title | Battle between Banasura and Krishna \| Vasishtha Teaches Rama and Lakshmana | artsy_csv |
+| KG-1312 | width_in | 20.0 \| 14.0 | artsy_csv |
+| KG-1312 | year | 1775 \| 1700 | artsy_csv |

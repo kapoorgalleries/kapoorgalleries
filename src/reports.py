@@ -81,9 +81,57 @@ def gaps_report(db: sqlite_utils.Database, out_path: Path | str, top_n: int = 50
     for field, n in miss_counter.most_common():
         lines.append(f"| {field} | {n} |")
 
-    lines += ["", f"## First {top_n} blocked works", "", "| KG-# | Title | Artist | Missing |", "|---|---|---|---|"]
-    for wid, title, artist, missing in blocked[:top_n]:
-        lines.append(f"| {wid} | {(title or '')[:80]} | {artist or ''} | {missing} |")
+    # Prioritized triage: works missing only 1 field (closest to ready), then 2, etc.
+    triage = sorted(
+        [(wid, title, artist, missing) for wid, title, artist, missing in blocked],
+        key=lambda r: (len(r[3].split(",")) if r[3] else 0, r[0]),
+    )
+    lines += [
+        "",
+        "## Triage: closest to upload-ready first",
+        "",
+        "Sorted by *number of missing fields ascending* — the smallest punch list at the top.",
+        "",
+        "| KG-# | Missing | Title | Artist |",
+        "|---|---|---|---|",
+    ]
+    for wid, title, artist, missing in triage[:top_n]:
+        n_missing = len(missing.split(","))
+        lines.append(f"| {wid} | {n_missing}: {missing} | {(title or '')[:60]} | {artist or ''} |")
+
+    lines += [
+        "",
+        "## Unresolved conflicts",
+        "",
+        "Each row blocks confidence in the canonical value.",
+        "Resolve with: `python -m src.cli resolve <KG-#> <field> \"<value>\" --reason \"...\"`",
+        "",
+        "| KG-# | Field | Distinct values | Sources |",
+        "|---|---|---|---|",
+    ]
+    for r in db.execute(
+        """WITH observed AS (
+              SELECT o.work_id, o.field, o.value, s.type AS stype
+              FROM observations o JOIN sources s ON s.id = o.source_id
+              WHERE o.value IS NOT NULL AND o.value != ''
+                AND s.type NOT IN ('human_resolution','auto_resolution')
+           )
+           SELECT work_id, field,
+                  GROUP_CONCAT(DISTINCT value),
+                  GROUP_CONCAT(DISTINCT stype)
+           FROM observed
+           GROUP BY work_id, field
+           HAVING COUNT(DISTINCT value) > 1
+              AND NOT EXISTS (
+                  SELECT 1 FROM observations o2 JOIN sources s2 ON s2.id = o2.source_id
+                  WHERE o2.work_id = observed.work_id AND o2.field = observed.field
+                    AND s2.type = 'human_resolution'
+              )
+           ORDER BY work_id, field
+           LIMIT 30"""
+    ).fetchall():
+        vals = (r[2] or "").replace(",", " \\| ")
+        lines.append(f"| {r[0]} | {r[1]} | {vals} | {r[3]} |")
 
     out.write_text("\n".join(lines) + "\n")
     return out

@@ -13,6 +13,7 @@
 | Artsy_2-16-2026.csv | height_in | 104 |
 | Artsy_2-16-2026.csv | width_in | 97 |
 | Artsy_2-16-2026.csv | depth_in | 4 |
+| auto_resolution_rules | classification | 397 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | title | 16 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | primary_image_source | 16 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | materials | 16 |
@@ -22,7 +23,7 @@
 
 | Field | Works with conflict |
 |---|---:|
-| classification | 10 |
+| classification | 332 |
 | year | 1 |
 | width_in | 1 |
 | title | 1 |
