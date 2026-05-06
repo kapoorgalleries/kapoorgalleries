@@ -1,0 +1,28 @@
+# Per-(work_id, field) human decisions that override every other source.
+#
+# When the master sheet shows a conflict (red cell), inspect it, decide which
+# value is correct, and append a record here.  The next `make all` (or CI run)
+# rebuilds master.csv with the resolution applied and the conflict cleared.
+#
+# Use the CLI to append safely:
+#
+#   python -m src.cli resolve KG-1000 classification \
+#     "Drawing, Collage or other Work on Paper" \
+#     --reason "Opaque watercolor on paper; Artsy categorizes as Drawing." \
+#     --by sanjay@kapoors.com
+#
+# Schema (one entry per item):
+#   - work_id:    KG-####
+#     field:      <canonical field name>
+#     value:      <the correct value>
+#     reason:     <free text>
+#     decided_by: <email>
+#     decided_at: <ISO date or datetime>
+
+# Worked example (intentionally empty so the system is honest):
+# - work_id: KG-1000
+#   field: classification
+#   value: "Drawing, Collage or other Work on Paper"
+#   reason: "Opaque watercolor on paper."
+#   decided_by: sanjay@kapoors.com
+#   decided_at: 2026-05-06

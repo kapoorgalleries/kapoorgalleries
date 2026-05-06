@@ -1,0 +1,93 @@
+# Deterministic field-inference rules.
+#
+# Each rule says: "if a work's existing observations match `if`, then add an
+# observation for the field(s) in `then` with confidence='medium' and
+# source_type='auto_resolution'."  The consolidator places these BELOW
+# `human_resolution` but ABOVE `artsy_csv`/`primer_*` — so a rule fills a
+# Primer gap but a human override always wins.
+#
+# Pattern keys:
+#   <field>_contains: substring match (case-insensitive)
+#   <field>_eq:       exact match
+#   <field>_in:       value is in a list
+#   <field>_missing:  the field is null/empty (true) or populated (false)
+#
+# These are gallery conventions Sanjay confirmed: works on paper map to
+# Artsy's "Drawing/Collage", certain stone/metal materials are sculptures,
+# Khanjars/saddles/talwars are decorative arts.
+
+# --- works on paper -> Drawing/Collage classification ---
+- if:
+    medium_contains: paper
+  then:
+    classification: "Drawing, Collage or other Work on Paper"
+  reason: "Works on paper map to Artsy's Drawing/Collage category."
+
+# --- stone & cast-metal materials -> Sculpture ---
+- if:
+    medium_contains: sandstone
+  then:
+    classification: Sculpture
+  reason: "Stone matrix materials are categorized as Sculpture on Artsy."
+
+- if:
+    medium_contains: schist
+  then:
+    classification: Sculpture
+  reason: "Schist works are sculptures."
+
+- if:
+    medium_contains: bronze
+  then:
+    classification: Sculpture
+  reason: "Bronze cast works are sculptures."
+
+- if:
+    medium_contains: stucco
+  then:
+    classification: Sculpture
+  reason: "Stucco works are sculptures."
+
+- if:
+    medium_contains: gilt-bronze
+  then:
+    classification: Sculpture
+  reason: "Gilt-bronze cast works are sculptures."
+
+# --- decorative-arts keywords in title -> Design/Decorative Art ---
+- if:
+    title_contains: khanjar
+  then:
+    classification: Design/Decorative Art
+  reason: "Khanjars (jeweled daggers) are decorative arts on Artsy."
+
+- if:
+    title_contains: talwar
+  then:
+    classification: Design/Decorative Art
+  reason: "Talwars (curved swords) are decorative arts on Artsy."
+
+- if:
+    title_contains: shamshir
+  then:
+    classification: Design/Decorative Art
+  reason: "Shamshirs (Persian sabres) are decorative arts on Artsy."
+
+- if:
+    title_contains: saddle
+  then:
+    classification: Design/Decorative Art
+  reason: "Saddles are decorative arts on Artsy."
+
+# --- thangkas / textile / paper-mounted ground -> Painting (large) ---
+- if:
+    medium_contains: thangka
+  then:
+    classification: Painting
+  reason: "Thangkas hung on cloth are categorized as Painting."
+
+- if:
+    medium_contains: cotton
+  then:
+    classification: Painting
+  reason: "Works on cotton are categorized as Painting."

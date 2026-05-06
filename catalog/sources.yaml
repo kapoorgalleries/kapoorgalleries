@@ -116,3 +116,20 @@
   notes: |
     Run a Gmail MCP fetch into data/raw/email_gaps_sarah_fenner.json:
     one JSON object per thread {thread_id, snippet, full_text}.
+
+# --- Resolution layer (always run last) ---
+# Deterministic field-inference rules.  Below human, above Primer.
+- name: auto_resolution_rules
+  type: auto_resolution
+  local_path: data/auto_resolution_rules.yaml
+  notes: |
+    Rules-based: e.g. "medium contains paper -> classification=Drawing".
+    Edit data/auto_resolution_rules.yaml to add more rules.
+
+# Per-(work_id, field) human decisions.  Highest priority — always wins.
+- name: human_resolutions
+  type: human_resolution
+  local_path: data/human_resolutions.yaml
+  notes: |
+    Human conflict-resolution log.  Append with `python -m src.cli resolve`
+    or edit data/human_resolutions.yaml directly.

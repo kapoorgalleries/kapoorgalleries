@@ -1,14 +1,14 @@
 work_id,field,distinct_values,values_seen,source_types
-KG-1000,classification,2,"Painting || Drawing, Collage or other Work on Paper","artsy_csv,match_workbook"
-KG-1001,classification,2,"Painting || Drawing, Collage or other Work on Paper","artsy_csv,match_workbook"
-KG-1002,classification,2,"Painting || Drawing, Collage or other Work on Paper","artsy_csv,match_workbook"
-KG-1003,classification,2,"Painting || Drawing, Collage or other Work on Paper","artsy_csv,match_workbook"
-KG-1004,classification,2,"Painting || Drawing, Collage or other Work on Paper","artsy_csv,match_workbook"
+KG-1000,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,match_workbook"
+KG-1001,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,match_workbook"
+KG-1002,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,match_workbook"
+KG-1003,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,match_workbook"
+KG-1004,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,match_workbook"
 KG-1007,classification,2,Object || Sculpture,"artsy_csv,match_workbook"
-KG-1011,classification,2,"Painting || Drawing, Collage or other Work on Paper","artsy_csv,match_workbook"
+KG-1011,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,match_workbook"
 KG-1012,classification,2,Khanjar || Design/Decorative Art,"artsy_csv,match_workbook"
-KG-1013,classification,2,"Painting || Drawing, Collage or other Work on Paper","artsy_csv,match_workbook"
-KG-1015,classification,2,"Painting || Drawing, Collage or other Work on Paper","artsy_csv,match_workbook"
+KG-1013,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,match_workbook"
+KG-1015,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,match_workbook"
 KG-1312,height_in,2,13.0 || 9.0,artsy_csv
 KG-1312,medium,2,Ground mineral pigments on paper || Opaque watercolor heightened with gold on paper,artsy_csv
 KG-1312,price_usd,2,50000.0 || 26000.0,artsy_csv

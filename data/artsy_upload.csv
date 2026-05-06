@@ -1,239 +1,268 @@
 Inventory ID (OPTIONAL),Artist Name ,Title ,Year ,Price ,Medium ,Materials ,Height ,Width ,Depth,Certificate of Authenticity ,Signature ,Classification 
-KG-1000,Unknown Artist,A Guru and Student in the Wilderness,1850,,Opaque Watercolor on Paper,Opaque Watercolor on Paper,8.125,11.125,,,,Painting
-KG-1001,Unknown Artist,Composite Horse and Rider,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.5,6.0,,,,Painting
-KG-1002,Unknown Artist,Folio from an Usha-Aniruddha Series: Chitralekha Visits Aniruddha in Dwarka,1840,,Gouache and gold on paper,Gouache and gold on paper,9.0,12.0,,,,Painting
-KG-1003,Unknown Artist,Ganesha Enthroned,,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,10.75,11.0,,,,Painting
-KG-1004,Unknown Artist,Shiva and Parvati,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,10.0,,,,Painting
+KG-1000,Unknown Artist,A Guru and Student in the Wilderness,1850,,Opaque Watercolor on Paper,Opaque Watercolor on Paper,8.125,11.125,,,,"Drawing, Collage or other Work on Paper"
+KG-1001,Unknown Artist,Composite Horse and Rider,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.5,6.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1002,Unknown Artist,Folio from an Usha-Aniruddha Series: Chitralekha Visits Aniruddha in Dwarka,1840,,Gouache and gold on paper,Gouache and gold on paper,9.0,12.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1003,Unknown Artist,Ganesha Enthroned,,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,10.75,11.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1004,Unknown Artist,Shiva and Parvati,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,10.0,,,,"Drawing, Collage or other Work on Paper"
 KG-1006,Unknown Artist,A Buff Sandstone Torso of Vishnu,,,Sandstone,Sandstone,40.0,26.0,12.0,,,Sculpture
-KG-1007,Unknown Artist,A Stucco Hand of Buddha,,85000.0,Stucco,Stucco,20.0,9.0,8.0,,,Object
+KG-1007,Unknown Artist,A Stucco Hand of Buddha,,85000.0,Stucco,Stucco,20.0,9.0,8.0,,,Sculpture
 KG-1008,Unknown Artist,Head of a Bodhisattva - Gray Schist,,9000.0,Gray Schist,Gray Schist,10.0,,,,,Sculpture
 KG-1009,Unknown Artist,Frieze with three Boddhisattvas,,,Blue Grey Schist,Blue Grey Schist,12.0,18.0,4.0,,,Sculpture
 KG-1010,Unknown Artist,A gray schist relief of Panchika and Hariti,,,Schist,Schist,19.0,18.0,7.0,,,Sculpture
-KG-1011,Unknown Artist,A Great Indian Fruit Bat (Flying Fox),,350000.0,Watercolor on Whatman paper,Watercolor on Whatman paper,8.0,13.0,,,,Painting
-KG-1012,Unknown Artist,Jeweled Khanjar (dagger),,,Jade-hilted and jeweled,Jade-hilted and jeweled Khanjar,15.0,,,,,Khanjar
-KG-1013,Unknown Artist,Shishupal and his Retinue: Bhagavata Purana,1775,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,8.0,,,,Painting
+KG-1011,Unknown Artist,A Great Indian Fruit Bat (Flying Fox),,350000.0,Watercolor on Whatman paper,Watercolor on Whatman paper,8.0,13.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1012,Unknown Artist,Jeweled Khanjar (dagger),,,Jade-hilted and jeweled,Jade-hilted and jeweled Khanjar,15.0,,,,,Design/Decorative Art
+KG-1013,Unknown Artist,Shishupal and his Retinue: Bhagavata Purana,1775,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,8.0,,,,"Drawing, Collage or other Work on Paper"
 KG-1014,Unknown Artist,Mahakala Shadbhuja,,35000.0,Bronze with polychrome,Bronze with polychrome,6.0,,,,,Sculpture
-KG-1015,Unknown Artist,Krishna with sage Narada,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,9.0,,,,Painting
+KG-1015,Unknown Artist,Krishna with sage Narada,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,9.0,,,,"Drawing, Collage or other Work on Paper"
 KG-1016,Unknown Artist,A Gray Schist Figure of a Seated Bodhisattva,101,,Schist,Schist,,,,,,Sculpture
 KG-1017,Unknown Artist,Figure of a Standing Attendant,101,,Green Schist,Green Schist,19.75,,,,,Sculpture
-KG-1021,Unknown Artist,Bhim Singh with Attendants,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,9.0,,,,Painting
-KG-1023,Unknown Artist,Kakubha Ragini: Folio from a Ragamala Series,1780,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,4.0,,,,Painting
-KG-1025,Unknown Artist,Maharana Sarup Singh of Udaipur,1860,35000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,16.0,12.0,,,,Painting
-KG-1026,Unknown Artist,Maharana Ari Singh Riding in a Procession to Jagan Nath,1822,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,10.0,8.0,,,,Painting
-KG-1027,Unknown Artist,Portrait of a Maratha Nobleman,1701,35000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,13.0,9.0,,,,Painting
-KG-1028,Unknown Artist,Maharaja Umed Singh on a Palanquin,1720,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,9.0,13.0,,,,Painting
-KG-1029,Unknown Artist,Indian Noblemen Receiving British Royalty,1930,,drawing on paper,drawing on paper,17.0,12.0,,,,Painting
-KG-1030,Unknown Artist,Hunters Shooting Boar (Maharao Ram Singh II of Kotah & Maharao Ram Singh of Bundi),,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1021,Unknown Artist,Bhim Singh with Attendants,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1022,Unknown Artist,Krishna Playing the Flute with Gopis,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1023,Unknown Artist,Kakubha Ragini: Folio from a Ragamala Series,1780,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,4.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1024,Unknown Artist,Bon Thangka of Satrig Ersang,1801,,Gouache on cotton,Gouache on cotton,32.9,25.4,,,,Painting
+KG-1025,Unknown Artist,Maharana Sarup Singh of Udaipur,1860,35000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,16.0,12.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1026,Unknown Artist,Maharana Ari Singh Riding in a Procession to Jagan Nath,1822,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,10.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1027,Unknown Artist,Portrait of a Maratha Nobleman,1701,35000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,13.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1028,Unknown Artist,Maharaja Umed Singh on a Palanquin,1720,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,9.0,13.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1029,Unknown Artist,Indian Noblemen Receiving British Royalty,1930,,drawing on paper,drawing on paper,17.0,12.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1030,Unknown Artist,Hunters Shooting Boar (Maharao Ram Singh II of Kotah & Maharao Ram Singh of Bundi),,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1031,Unknown Artist,Painted Saddle,1401,28000.0,"Gilt and varnished wood and leather, with gilt-iron frames","Gilt and varnished wood and leather, with gilt-iron frames",,,,,,Design/Decorative Art
+KG-1032,Unknown Artist,Panchamukhalinga,1301,,Red Sandstone,Red Sandstone,,,,,,Sculpture
 KG-1033,Unknown Artist,Vajradhara (Large),1401,175000.0,Gilt-bronze,Gilt-bronze,,,,,,Sculpture
 KG-1034,Unknown Artist,Vajravarahi,1800,28000.0,Painted wood,Painted wood,,,,,,Sculpture
-KG-1038,Unknown Artist,Sambara and Rati,1780,5000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
-KG-1060,Unknown Artist,Krishna with Female Attendants,1601,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1038,Unknown Artist,Sambara and Rati,1780,5000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1060,Unknown Artist,Krishna with Female Attendants,1601,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1061,Unknown Artist,Yaksha,901,80000.0,Black basalt,Black basalt,,,,,,Sculpture
 KG-1062,Unknown Artist,Uma (Parvati),1001,120000.0,copper alloy,copper alloy,,,,,,Sculpture
-KG-1063,Unknown Artist,Radha seated with a confidant in a pavilion: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1064,Unknown Artist,An older Sakhi comforts a forlorn Radha: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1065,Unknown Artist,Krishna seated with Radha: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1063,Unknown Artist,Radha seated with a confidant in a pavilion: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1064,Unknown Artist,An older Sakhi comforts a forlorn Radha: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1065,Unknown Artist,Krishna seated with Radha: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1066,Unknown Artist,Rama,1401,50000.0,Brass,Brass,,,,,,Sculpture
-KG-1067,Unknown Artist,Aurangzeb in Court,1701,80000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1068,Unknown Artist,Baz Bahadur and Rupmati Riding at Night,1800,120000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1070,Unknown Artist,A Maiden Approaches a Nobleman,1740,80000.0,Ink drawing with opaque watercolor heightened with gold on paper,Ink drawing with opaque watercolor heightened with gold on paper,10.0,8.0,,,,Painting
+KG-1067,Unknown Artist,Aurangzeb in Court,1701,80000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1068,Unknown Artist,Baz Bahadur and Rupmati Riding at Night,1800,120000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1070,Unknown Artist,A Maiden Approaches a Nobleman,1740,80000.0,Ink drawing with opaque watercolor heightened with gold on paper,Ink drawing with opaque watercolor heightened with gold on paper,10.0,8.0,,,,"Drawing, Collage or other Work on Paper"
 KG-1071,Unknown Artist,Buddha Shakyamuni,1001,150000.0,Black basalt,Black basalt,,,,,,Sculpture
 KG-1072,Unknown Artist,Pietra-Dura inlaid marble games table,1801,80000.0,Marble,Marble,,,,,,Furniture
 KG-1073,Unknown Artist,Buddha Shakyamuni,601,60000.0,Bronze with copper inlay,Bronze with copper inlay,,,,,,Sculpture
 KG-1074,Unknown Artist,A Figure of Bodhisattva,801,12500.0,Bronze with silver and copper inlay,Bronze with silver and copper inlay,,,,,,Sculpture
 KG-1075,Unknown Artist,Five-pointed spear,1601,80000.0,Gold damascened iron,Gold damascened iron,,,,,,Arms
-KG-1076,Unknown Artist,Beauty of Radha,1680,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1077,Unknown Artist,A Prince with a Falcon,1701,80000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,5.0,,,,Painting
-KG-1078,Unknown Artist,A Raja and His Courtiers Playing Chaupar,1720,120000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,6.0,,,,Painting
+KG-1076,Unknown Artist,Beauty of Radha,1680,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1077,Unknown Artist,A Prince with a Falcon,1701,80000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,5.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1078,Unknown Artist,A Raja and His Courtiers Playing Chaupar,1720,120000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,6.0,,,,"Drawing, Collage or other Work on Paper"
 KG-1079,Unknown Artist,Head of a Bodhisattva,101,50000.0,Gray Schist,Gray Schist,,,,,,Sculpture
 KG-1080,Unknown Artist,A bronze figure of Sambandar,901,120000.0,Copper Alloy,Copper Alloy,,,,,,Sculpture
 KG-1081,Unknown Artist,Vajrasattva,1301,50000.0,bronze,bronze,,,,,,Sculpture
-KG-1082,Unknown Artist,Illustration to the Bhagavata Purana: Pradyumna Weds Rukmavati,1775,50000.0,Ground mineral pigments on paper,Ground mineral pigments on paper,,,,,,Painting
-KG-1083,Unknown Artist,Radha Watching the Approaching Storm,1830,32000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1082,Unknown Artist,Illustration to the Bhagavata Purana: Pradyumna Weds Rukmavati,1775,50000.0,Ground mineral pigments on paper,Ground mineral pigments on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1083,Unknown Artist,Radha Watching the Approaching Storm,1830,32000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1084,Unknown Artist,A black stone bust of Buddha,1001,150000.0,black stone,black stone,,,,,,Sculpture
 KG-1085,Unknown Artist,A sandstone chaturmukhi lingham,701,,Sandstone,Sandstone,,,,,,Sculpture
 KG-1086,Unknown Artist,Figures of Venugopala and Radha,1601,22000.0,Brass,Brass,,,,,,Sculpture
 KG-1087,Unknown Artist,Brahma,901,,Buff sandstone,Buff sandstone,30.0,,,,,Sculpture
+KG-1088,Unknown Artist,A gray schist figure of Buddha,101,,Schist,Schist,,,,,,Sculpture
 KG-1089,Unknown Artist,NOT IN KG COLLECTION Gray schist relief of an Elderly Ascetic with a Child,101,,Schist,Schist,,,,,,Sculpture
 KG-1090,Unknown Artist,A Gray Schist Torso of Maitreya,101,,Schist,Schist,,,,,,Sculpture
 KG-1091,Unknown Artist,Panchamukhalinga,1301,,Red Sandstone,Red Sandstone,,,,,,Sculpture
 KG-1092,Unknown Artist,Torso of Buddha,1501,,Sandstone,Sandstone,,,,,,Sculpture
 KG-1093,Unknown Artist,Krishna as Vishvarupa,,120000.0,Opaque watercolor on cloth,Opaque watercolor on cloth,56.0,36.0,,,,Thangka
-KG-1100,Unknown Artist,Rama and Sita Enthroned,1730,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,6.0,,,,Painting
-KG-1101,Unknown Artist,Vihit Hava: Illustration to a Rasikapriya Series,1830,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,8.0,,,,Painting
-KG-1102,Unknown Artist,Sidh Sen,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1105,Unknown Artist,Krishna adorns Radha with a Tilak,1800,12000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
-KG-1106,Unknown Artist,Kamrup and friends at sea from an Urdu version of the Qissa-i Kamrup va Kamlata,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1107,Unknown Artist,The Shipwreck of Kamrup's Vessel from an Urdu version of the Qissa-i Kamrup va Kamlata,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1108,Unknown Artist,Majnun in the Wilderness,1601,,Opaque watercolor on paper heightened with gold,Opaque watercolor on paper heightened with gold,,,,,,Painting
-KG-1110,Unknown Artist,A Prince and His Consort Strolling In a Garden,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1100,Unknown Artist,Rama and Sita Enthroned,1730,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,6.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1101,Unknown Artist,Vihit Hava: Illustration to a Rasikapriya Series,1830,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1102,Unknown Artist,Sidh Sen,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1103,Unknown Artist,Parashurama Rama with the Axe Slays the Many Armed King Karthavirya,1820,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1104,Unknown Artist,Shiva and Parvati on Mount Kailasa,1820,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1105,Unknown Artist,Krishna adorns Radha with a Tilak,1800,12000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1106,Unknown Artist,Kamrup and friends at sea from an Urdu version of the Qissa-i Kamrup va Kamlata,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1107,Unknown Artist,The Shipwreck of Kamrup's Vessel from an Urdu version of the Qissa-i Kamrup va Kamlata,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1108,Unknown Artist,Majnun in the Wilderness,1601,,Opaque watercolor on paper heightened with gold,Opaque watercolor on paper heightened with gold,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1109,Unknown Artist,The Descent of the Holy Family from Kailasha,1700,,Opaque watercolor on paper heightened with gold,Opaque watercolor on paper heightened with gold,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1110,Unknown Artist,A Prince and His Consort Strolling In a Garden,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1114,Unknown Artist,Architrave,1001,,Mottled pink sandstone,Mottled pink sandstone,,,,,,Sculpture
 KG-1115,Unknown Artist,A Mughal Officer,1701,,Ink on paper,Ink on paper,5.0,5.0,,,,"Drawing, Collage or other Work on Paper"
-KG-1116,Unknown Artist,Maharaja Vijay Singh,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,5.0,,,,Painting
-KG-1117,Unknown Artist,Prince Seated on a Yellow Carpet,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1118,Unknown Artist,Maharao Umed Singh I of Kotah,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1119,Unknown Artist,Rao Bishan Singh Watching an Elephant Fight,1804,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1120,Unknown Artist,Kumar Kishen Singh of Bundi Hunting,1720,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1121,Unknown Artist,Maharao Ram Singh of Bundi Holding a Blossom,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1122,Unknown Artist,Maharaja Ram Singh of Bundi,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,15.0,10.0,,,,Painting
-KG-1123,Unknown Artist,Maharao Ram Singh II of Kotah & Maharao Ram Singh of Bundi,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1124,Unknown Artist,Maharao Ram Singh II Taming a Black Buck,1880,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1125,Unknown Artist,Maharao Ram Singh of Bundi,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1126,Unknown Artist,Kunwar Jasodh Singh,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1127,Unknown Artist,Equestrian Portrait,1840,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1116,Unknown Artist,Maharaja Vijay Singh,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,5.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1117,Unknown Artist,Prince Seated on a Yellow Carpet,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1118,Unknown Artist,Maharao Umed Singh I of Kotah,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1119,Unknown Artist,Rao Bishan Singh Watching an Elephant Fight,1804,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1120,Unknown Artist,Kumar Kishen Singh of Bundi Hunting,1720,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1121,Unknown Artist,Maharao Ram Singh of Bundi Holding a Blossom,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1122,Unknown Artist,Maharaja Ram Singh of Bundi,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,15.0,10.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1123,Unknown Artist,Maharao Ram Singh II of Kotah & Maharao Ram Singh of Bundi,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1124,Unknown Artist,Maharao Ram Singh II Taming a Black Buck,1880,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1125,Unknown Artist,Maharao Ram Singh of Bundi,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1126,Unknown Artist,Kunwar Jasodh Singh,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1127,Unknown Artist,Equestrian Portrait,1840,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1128,Unknown Artist,A Hunting Party In Battle With a Tiger,1701,,Ink and gouache on paper,Ink and gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1129,Unknown Artist,European Lady Drinking Wine,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1130,Unknown Artist,"The Mughal Emperor Farrukhsiyar (reg. 1713-1719) Standing, Holding a Flower",1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1131,Unknown Artist,Maharaja Jagat Singh,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,10.0,6.0,,,,Painting
-KG-1132,Unknown Artist,Portrait of a Prince,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1133,Unknown Artist,Prince on Horse Back,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1134,Unknown Artist,Hunting Procession,,12000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1135,Unknown Artist,Maharaja Raj Singh of Sawar with his Children,1710,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,8.0,9.0,,,,Painting
-KG-1136,Unknown Artist,Raja Karan Singh (1621-1628),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,10.0,7.0,,,,Print
-KG-1137,Unknown Artist,Portrait of Maharana Jai Singh (1680-1698) of Mewar,1720,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1138,Unknown Artist,Maharana Sangram Singh II performing Puja before an image of Krishna,1720,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,21.0,16.0,,,,Painting
-KG-1139,Unknown Artist,Maharana Ari Singh (1762-1772) Smoking Hookah,1819,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,12.0,9.0,,,,Painting
-KG-1140,Unknown Artist,A Portrait of the Stallion Sitaraj (from stable of Ari Singh),1761,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1142,Unknown Artist,Maharana Bhim Singh Riding a Caparisoned Elephant,1820,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,11.0,8.0,,,,Painting
-KG-1143,Unknown Artist,Maharana Bhim Singh in a Durbar,1820,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,13.0,,,,Painting
-KG-1144,Unknown Artist,Maharana Bhim Singh (1778-1828) with a Lady and Child,1790,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1145,Unknown Artist,Maharaja Bhim Singh (1778-1828) on Horseback with an Attendant: Attributed to Bahgta Choka,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,12.0,9.0,,,,Painting
-KG-1146,Unknown Artist,Maharaja Fateh Singh of Udaipur,1900,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,17.0,12.0,,,,Painting
-KG-1147,Unknown Artist,Dauji II Throwing a Spear (as a Mounted Warrior),1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1148,Unknown Artist,Maharaja Surat Singh of Bikaner,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.7,6.0,,,,Painting
-KG-1149,Unknown Artist,Maharaja Jai Chand Ji at Leisure,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,8.0,,,,Painting
-KG-1150,Unknown Artist,Hookah Portrait,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,8.0,,,,Painting
-KG-1151,Unknown Artist,A Sisodian Nobleman (Rao Shri Rhoulmasi),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,4.0,,,,Painting
-KG-1152,Unknown Artist,Sisodian Warrior,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,12.0,8.0,,,,Painting
-KG-1153,Unknown Artist,Maharaja in a Durbar,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,14.0,9.0,,,,Painting
-KG-1154,Unknown Artist,Erotic scene depicting a European couple,1700,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,5.0,,,,Painting
-KG-1155,Unknown Artist,European Caricature,1850,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,9.0,12.0,,,,Painting
-KG-1156,Unknown Artist,Grey Beard Nobleman,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,,,,,Painting
-KG-1157,Unknown Artist,Nath Singh seated on a terrace with courtiers,1750,,Gouache heightened with gold and silver on paper,Gouache heightened with gold and silver on paper,,,,,,Painting
-KG-1158,Unknown Artist,Court scene,,,Gouache on paper,Gouache on paper,,,,,,Painting
-KG-1160,Unknown Artist,Ra Mal Deo (Maldev Rathore),1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1161,Unknown Artist,A Portrait of Rao Maldev Rathore,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1162,Unknown Artist,Maharaja Jaswant Singh on horseback,1840,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,10.0,8.0,,,,Painting
-KG-1163,Unknown Artist,Durgadas Rathore on Horseback,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1164,Unknown Artist,Maharaja Abhai Singh,1830,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,11.0,,,,Painting
-KG-1165,Unknown Artist,Maharaja Abhai Singh Receiving Thakur Bhandari Girdhar Das,1725,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,12.0,9.0,,,,Painting
-KG-1166,Unknown Artist,Maharaja Vijay Singh enthroned,1805,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,10.0,15.0,,,,Painting
-KG-1167,Unknown Artist,Maharaja Vijay Singh riding a horse,1701,,Tempera on paper,Tempera on paper,11.4,9.1,,,,Painting
-KG-1168,Unknown Artist,Portrait of Chapwat Biral Das Ji,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1169,Unknown Artist,Portrait of Faruq Shah,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1170,Unknown Artist,Raja Fateh Singh Riding to Battle,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1171,Unknown Artist,Raja on horseback,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1173,Unknown Artist,Equestrian Portrait,1800,,Tempera on paper,Tempera on paper,,,,,,Painting
-KG-1174,Unknown Artist,A Commemorative Portrait of Maharaja Rai Singh,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,5.0,4.0,,,,Painting
-KG-1175,Unknown Artist,A standing prince,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1176,Unknown Artist,Portrait of a Prince,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1177,Unknown Artist,Dancing Woman,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1179,Unknown Artist,A Maiden with an Open Book,1901,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1180,Unknown Artist,Untitled,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1181,Unknown Artist,Man Sniffing a Flower,1938,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1182,Unknown Artist,Portrait of a Seated Prince,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1183,Unknown Artist,Shri Shri Shri Haharj Harvansh Singh In Harem,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1184,Unknown Artist,Coronation of a Maharaja,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1185,Unknown Artist,Sansar Chand's Marriage Procession,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1186,Unknown Artist,Nobleman Paying Homage to Ganesha,1810,80000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1187,Unknown Artist,Seated Nobleman on a Terrace,1750,50000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,7.0,5.0,,,,Painting
-KG-1188,Unknown Artist,A seated portrait of Raja Abhiraj Singh Jaswal of Jaswan,1760,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1189,Unknown Artist,A Nobleman Holding a Hunting Falcon,1790,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1190,Unknown Artist,Raja Prakash Chand of Guler Smoking (Check inscription),1790,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1191,Unknown Artist,Portrait of Nobleman,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1193,Unknown Artist,A Shaivite Yogi Plucks a Veena,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1194,Unknown Artist,Portrait of a Minister,1750,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1195,Unknown Artist,Equestrian Portrait,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1196,Unknown Artist,Portrait of Maharajah Sidh Sen of Mandi,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,4.0,,,,Painting
-KG-1197,Unknown Artist,Prince Thata Singh in a Hunting Procession,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1198,Unknown Artist,Dev Singh of Mandi,1785,,Gouache heightend with gold on paper,Gouache heightend with gold on paper,,,,,,Painting
-KG-1199,Unknown Artist,Sidh Sen,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1200,Unknown Artist,Raja Shamsher Sen,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1201,Unknown Artist,Shri Mian Bhairva,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1203,Unknown Artist,Portrait of Mian Avalia,1740,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1204,Unknown Artist,Portrait of Tholu Sanyal,1740,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1205,Unknown Artist,Portrait of a Prince Smoking Hookah,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1206,Unknown Artist,Sikh School,1850,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,13.0,9.0,,,,Painting
-KG-1207,Unknown Artist,Maharaja Kailash Pal of Nurpur,1740,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,8.0,5.0,,,,Painting
-KG-1208,Unknown Artist,"Portrait of an Indian Saint (Jagata, father of Mian Fattu)",1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1209,Unknown Artist,Nobleman smoking hookah,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1210,Unknown Artist,Shah Jahan at a Jharokha Window,1701,50000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1211,Unknown Artist,Sayyid Hasan Ali Receives a Minister,1820,15000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1212,Unknown Artist,Nobleman smoking hookah,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,5.0,,,,Painting
-KG-1215,Unknown Artist,Vishnu devotee,1820,,Gouache on paper,Gouache on paper,,,,,,Painting
+KG-1129,Unknown Artist,European Lady Drinking Wine,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1130,Unknown Artist,"The Mughal Emperor Farrukhsiyar (reg. 1713-1719) Standing, Holding a Flower",1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1131,Unknown Artist,Maharaja Jagat Singh,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,10.0,6.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1132,Unknown Artist,Portrait of a Prince,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1133,Unknown Artist,Prince on Horse Back,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1134,Unknown Artist,Hunting Procession,,12000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1135,Unknown Artist,Maharaja Raj Singh of Sawar with his Children,1710,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,8.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1136,Unknown Artist,Raja Karan Singh (1621-1628),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,10.0,7.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1137,Unknown Artist,Portrait of Maharana Jai Singh (1680-1698) of Mewar,1720,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1138,Unknown Artist,Maharana Sangram Singh II performing Puja before an image of Krishna,1720,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,21.0,16.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1139,Unknown Artist,Maharana Ari Singh (1762-1772) Smoking Hookah,1819,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,12.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1140,Unknown Artist,A Portrait of the Stallion Sitaraj (from stable of Ari Singh),1761,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1141,Unknown Artist,Maharana Jawan Singh with Rawat Dule Singh and Sirdar Singh,1884,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1142,Unknown Artist,Maharana Bhim Singh Riding a Caparisoned Elephant,1820,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,11.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1143,Unknown Artist,Maharana Bhim Singh in a Durbar,1820,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,13.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1144,Unknown Artist,Maharana Bhim Singh (1778-1828) with a Lady and Child,1790,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1145,Unknown Artist,Maharaja Bhim Singh (1778-1828) on Horseback with an Attendant: Attributed to Bahgta Choka,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,12.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1146,Unknown Artist,Maharaja Fateh Singh of Udaipur,1900,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,17.0,12.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1147,Unknown Artist,Dauji II Throwing a Spear (as a Mounted Warrior),1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1148,Unknown Artist,Maharaja Surat Singh of Bikaner,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.7,6.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1149,Unknown Artist,Maharaja Jai Chand Ji at Leisure,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1150,Unknown Artist,Hookah Portrait,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1151,Unknown Artist,A Sisodian Nobleman (Rao Shri Rhoulmasi),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,4.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1152,Unknown Artist,Sisodian Warrior,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,12.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1153,Unknown Artist,Maharaja in a Durbar,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,14.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1154,Unknown Artist,Erotic scene depicting a European couple,1700,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,5.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1155,Unknown Artist,European Caricature,1850,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,9.0,12.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1156,Unknown Artist,Grey Beard Nobleman,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,,,,,"Drawing, Collage or other Work on Paper"
+KG-1157,Unknown Artist,Nath Singh seated on a terrace with courtiers,1750,,Gouache heightened with gold and silver on paper,Gouache heightened with gold and silver on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1158,Unknown Artist,Court scene,,,Gouache on paper,Gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1159,Unknown Artist,Hookah smoker,1800,,Ink and gouache on wasli paper,Ink and gouache on wasli paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1160,Unknown Artist,Ra Mal Deo (Maldev Rathore),1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1161,Unknown Artist,A Portrait of Rao Maldev Rathore,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1162,Unknown Artist,Maharaja Jaswant Singh on horseback,1840,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,10.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1163,Unknown Artist,Durgadas Rathore on Horseback,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1164,Unknown Artist,Maharaja Abhai Singh,1830,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,11.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1165,Unknown Artist,Maharaja Abhai Singh Receiving Thakur Bhandari Girdhar Das,1725,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,12.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1166,Unknown Artist,Maharaja Vijay Singh enthroned,1805,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,10.0,15.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1167,Unknown Artist,Maharaja Vijay Singh riding a horse,1701,,Tempera on paper,Tempera on paper,11.4,9.1,,,,"Drawing, Collage or other Work on Paper"
+KG-1168,Unknown Artist,Portrait of Chapwat Biral Das Ji,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1169,Unknown Artist,Portrait of Faruq Shah,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1170,Unknown Artist,Raja Fateh Singh Riding to Battle,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1171,Unknown Artist,Raja on horseback,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1173,Unknown Artist,Equestrian Portrait,1800,,Tempera on paper,Tempera on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1174,Unknown Artist,A Commemorative Portrait of Maharaja Rai Singh,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,5.0,4.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1175,Unknown Artist,A standing prince,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1176,Unknown Artist,Portrait of a Prince,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1177,Unknown Artist,Dancing Woman,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1179,Unknown Artist,A Maiden with an Open Book,1901,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1180,Unknown Artist,Untitled,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1181,Unknown Artist,Man Sniffing a Flower,1938,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1182,Unknown Artist,Portrait of a Seated Prince,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1183,Unknown Artist,Shri Shri Shri Haharj Harvansh Singh In Harem,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1184,Unknown Artist,Coronation of a Maharaja,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1185,Unknown Artist,Sansar Chand's Marriage Procession,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1186,Unknown Artist,Nobleman Paying Homage to Ganesha,1810,80000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1187,Unknown Artist,Seated Nobleman on a Terrace,1750,50000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,7.0,5.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1188,Unknown Artist,A seated portrait of Raja Abhiraj Singh Jaswal of Jaswan,1760,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1189,Unknown Artist,A Nobleman Holding a Hunting Falcon,1790,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1190,Unknown Artist,Raja Prakash Chand of Guler Smoking (Check inscription),1790,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1191,Unknown Artist,Portrait of Nobleman,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1192,Unknown Artist,A Visitor Kneeling in front of a Seated Ruler,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1193,Unknown Artist,A Shaivite Yogi Plucks a Veena,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1194,Unknown Artist,Portrait of a Minister,1750,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1195,Unknown Artist,Equestrian Portrait,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1196,Unknown Artist,Portrait of Maharajah Sidh Sen of Mandi,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,4.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1197,Unknown Artist,Prince Thata Singh in a Hunting Procession,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1198,Unknown Artist,Dev Singh of Mandi,1785,,Gouache heightend with gold on paper,Gouache heightend with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1199,Unknown Artist,Sidh Sen,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1200,Unknown Artist,Raja Shamsher Sen,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1201,Unknown Artist,Shri Mian Bhairva,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1203,Unknown Artist,Portrait of Mian Avalia,1740,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1204,Unknown Artist,Portrait of Tholu Sanyal,1740,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1205,Unknown Artist,Portrait of a Prince Smoking Hookah,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1206,Unknown Artist,Sikh School,1850,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,13.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1207,Unknown Artist,Maharaja Kailash Pal of Nurpur,1740,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,8.0,5.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1208,Unknown Artist,"Portrait of an Indian Saint (Jagata, father of Mian Fattu)",1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1209,Unknown Artist,Nobleman smoking hookah,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1210,Unknown Artist,Shah Jahan at a Jharokha Window,1701,50000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1211,Unknown Artist,Sayyid Hasan Ali Receives a Minister,1820,15000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1212,Unknown Artist,Nobleman smoking hookah,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,5.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1213,Unknown Artist,Mughal Portrait,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1214,Unknown Artist,A Mendicant and his Wife,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1215,Unknown Artist,Vishnu devotee,1820,,Gouache on paper,Gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1216,Unknown Artist,Costume Drawings: Four,1801,,Tempera on prepared paper,Tempera on prepared paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1217,Unknown Artist,A large and incomplete painting of a Durbar,1801,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
-KG-1218,Unknown Artist,Illustration of a Bladesmith,1801,38000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
+KG-1217,Unknown Artist,A large and incomplete painting of a Durbar,1801,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1218,Unknown Artist,Illustration of a Bladesmith,1801,38000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1219,Unknown Artist,A group of eight paintings of castes and people of India,1801,,Mica,Mica,,,,,,Painting
-KG-1221,Unknown Artist,Woman Praying,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1225,Unknown Artist,Portrait of an elephant,1701,15000.0,Pigments and gold on paper,Pigments and gold on paper,,,,,,Painting
-KG-1226,Unknown Artist,Tethered Elephant,1701,,Gouache on paper,Gouache on paper,5.0,8.0,,,,Painting
+KG-1221,Unknown Artist,Woman Praying,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1222,Unknown Artist,Company Portrait of a Princess,1801,,Gouache on paper,Gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1225,Unknown Artist,Portrait of an elephant,1701,15000.0,Pigments and gold on paper,Pigments and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1226,Unknown Artist,Tethered Elephant,1701,,Gouache on paper,Gouache on paper,5.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1227,Unknown Artist,Two Paintings Depicting Elephants with their Mahouts,1730,,Gouache on paper,Gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1228,Unknown Artist,Portrait of an Elephant,1801,,Ink and gouache,Ink and gouache,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1229,Unknown Artist,Maharaja Prithi Singh of Ratanpur in Procession,1790,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1230,Unknown Artist,Maharaja Prithi Singh,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,7.0,,,,Painting
-KG-1231,Unknown Artist,Maharaja Prithi Singh of Orcha seated with children,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,7.0,,,,Painting
+KG-1229,Unknown Artist,Maharaja Prithi Singh of Ratanpur in Procession,1790,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1230,Unknown Artist,Maharaja Prithi Singh,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,7.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1231,Unknown Artist,Maharaja Prithi Singh of Orcha seated with children,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,7.0,,,,"Drawing, Collage or other Work on Paper"
 KG-1232,Unknown Artist,Man pinching cherry,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1233,Unknown Artist,Untitled,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1234,Unknown Artist,Portrait of Bhup Singh,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1235,Unknown Artist,A Maharaja Admiring a Jewel,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1236,Unknown Artist,Nobleman on Horse,1901,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1237,Unknown Artist,Portrait of a Nobleman in Yellow Garb,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1238,Unknown Artist,Twins,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1233,Unknown Artist,Untitled,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1234,Unknown Artist,Portrait of Bhup Singh,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1235,Unknown Artist,A Maharaja Admiring a Jewel,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1236,Unknown Artist,Nobleman on Horse,1901,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1237,Unknown Artist,Portrait of a Nobleman in Yellow Garb,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1238,Unknown Artist,Twins,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1239,Unknown Artist,A Photograph of a Young Girl,1900,,Photographic print tip mounted on a buff page,Photographic print tip mounted on a buff page,,,,,,Photograph
-KG-1243,Unknown Artist,Raja Smoking Hookah,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1245,Unknown Artist,Nawab Jiwan Khan Holding a Falcon,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1246,Unknown Artist,Jahangir,1764,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1247,Unknown Artist,Shah Jahan,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1248,Unknown Artist,"A Princely Figure holding a Falcon, Seated by a Balcony Window",1701,,"gouache and gold paper, laid down on an album page with gilt-decorated borders, verso a study of a spray of flowers","gouache and gold paper, laid down on an album page with gilt-decorated borders, verso a study of a spray of flowers",,,,,,Painting
-KG-1249,Unknown Artist,A man seated on a terrace smoking a hookah,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1250,Unknown Artist,Khalifah Sayyid Ahmad Lies Dead,1831,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
+KG-1243,Unknown Artist,Raja Smoking Hookah,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1244,Unknown Artist,Mirza Shah Rukh holding a Hunting Falcon,1601,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1245,Unknown Artist,Nawab Jiwan Khan Holding a Falcon,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1246,Unknown Artist,Jahangir,1764,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1247,Unknown Artist,Shah Jahan,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1248,Unknown Artist,"A Princely Figure holding a Falcon, Seated by a Balcony Window",1701,,"gouache and gold paper, laid down on an album page with gilt-decorated borders, verso a study of a spray of flowers","gouache and gold paper, laid down on an album page with gilt-decorated borders, verso a study of a spray of flowers",,,,,,"Drawing, Collage or other Work on Paper"
+KG-1249,Unknown Artist,A man seated on a terrace smoking a hookah,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1250,Unknown Artist,Khalifah Sayyid Ahmad Lies Dead,1831,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1251,Unknown Artist,Portrait of a Nobleman,1701,,Ink on paper,Ink on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1252,Unknown Artist,A Prince Consulting with a Dervish,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1252,Unknown Artist,A Prince Consulting with a Dervish,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1253,Unknown Artist,Fakir Conversing with a Bird,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1254,Unknown Artist,Portrait with Putti,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1255,Unknown Artist,Muslim Darvesh (Mystic) Praying on a Terrace,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1256,Unknown Artist,A Distinguished Mughal Nobleman,1775,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1258,Unknown Artist,A Mughal Nobleman,1601,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,6.0,3.0,,,,Painting
-KG-1259,Unknown Artist,Horse and gazelles,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,13.1,9.25,,,,Painting
-KG-1260,Unknown Artist,Portrait of a Nobleman / Blossom and Sword,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1266,Unknown Artist,A Prince and His Courtiers,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,4.0,,,,Painting
-KG-1267,Unknown Artist,Shaivite Devotee playing the Veena,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
+KG-1254,Unknown Artist,Portrait with Putti,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1255,Unknown Artist,Muslim Darvesh (Mystic) Praying on a Terrace,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1256,Unknown Artist,A Distinguished Mughal Nobleman,1775,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1257,Unknown Artist,A Mughal Nobleman,1775,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1258,Unknown Artist,A Mughal Nobleman,1601,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,6.0,3.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1259,Unknown Artist,Horse and gazelles,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,13.1,9.25,,,,"Drawing, Collage or other Work on Paper"
+KG-1260,Unknown Artist,Portrait of a Nobleman / Blossom and Sword,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1264,Unknown Artist,A Seated Ruler in Court,1501,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1265,Unknown Artist,Portrait of a Couple,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1266,Unknown Artist,A Prince and His Courtiers,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,4.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1267,Unknown Artist,Shaivite Devotee playing the Veena,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1268,Unknown Artist,Man in Turban,1701,800.0,Tempera on card,Tempera on card,,,,,,Painting
-KG-1269,Unknown Artist,Ruler with Courtesans,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1270,Unknown Artist,Nobleman Smoking Hookah,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,11.0,7.0,,,,Painting
-KG-1271,Unknown Artist,Portrait of a Prince with a Purple Turban,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1272,Unknown Artist,Portrait of the Master Sufi Al-Shaykh Abd Al-Qadir Al-jaylani,1801,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1273,Unknown Artist,Portrait of Dara Shikoh,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1274,Unknown Artist,"A painting of a Mughal Durbar (Royal Court), with Aurangzeb imprisoning his father, Shah Jahan",1901,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,5.0,,,,Painting
-KG-1275,Unknown Artist,The Emperor Farrukh-Siyar,1770,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1277,Unknown Artist,Lady and her Lover,1901,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,4.0,9.0,,,,Painting
-KG-1278,Unknown Artist,Portrait of a Court Official,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,16.0,9.0,,,,Painting
-KG-1279,Unknown Artist,Emperor Aurungzeb leaving for the hunt,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1269,Unknown Artist,Ruler with Courtesans,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1270,Unknown Artist,Nobleman Smoking Hookah,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,11.0,7.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1271,Unknown Artist,Portrait of a Prince with a Purple Turban,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1272,Unknown Artist,Portrait of the Master Sufi Al-Shaykh Abd Al-Qadir Al-jaylani,1801,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1273,Unknown Artist,Portrait of Dara Shikoh,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1274,Unknown Artist,"A painting of a Mughal Durbar (Royal Court), with Aurangzeb imprisoning his father, Shah Jahan",1901,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,5.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1275,Unknown Artist,The Emperor Farrukh-Siyar,1770,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1277,Unknown Artist,Lady and her Lover,1901,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,4.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1278,Unknown Artist,Portrait of a Court Official,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,16.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1279,Unknown Artist,Emperor Aurungzeb leaving for the hunt,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1280,Unknown Artist,Drawing of a Persian Nobleman,1801,,ink on paper,ink on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1281,Unknown Artist,Lady with Prayer beads,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1282,Unknown Artist,A painting of a Mughal noble lady,1850,,Painting,Painting,19.5,14.5,,,,Painting
-KG-1284,Unknown Artist,Image of Courtesan named Tuti Twaife from Zardan,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1286,Unknown Artist,Lady Dancing to Music,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1287,Unknown Artist,Leg Arm Lady,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1288,Unknown Artist,Female Musician Playing the Lute,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1292,Unknown Artist,Three studies of quail,1800,22000.0,Watercolor on watermarked paper,Watercolor on watermarked paper,,,,,,Painting
-KG-1293,Unknown Artist,Three folios of flora and fauna from the Louisa Parlby Album,1795,,Watercolor on paper,Watercolor on paper,,,,,,Painting
-KG-1296,Unknown Artist,Two architectural drawings of the tombs of Shah Jahan and Mumtaz Mahal,1801,25000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
+KG-1283,Unknown Artist,Portrait of Leila Begum Smoking Hookah,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1284,Unknown Artist,Image of Courtesan named Tuti Twaife from Zardan,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1285,Unknown Artist,Woman Holding a Lamp,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1286,Unknown Artist,Lady Dancing to Music,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1287,Unknown Artist,Leg Arm Lady,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1288,Unknown Artist,Female Musician Playing the Lute,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1291,Unknown Artist,Gandharan Head,301,,Gray schist,Gray schist,,,,,,Sculpture
+KG-1292,Unknown Artist,Three studies of quail,1800,22000.0,Watercolor on watermarked paper,Watercolor on watermarked paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1293,Unknown Artist,Three folios of flora and fauna from the Louisa Parlby Album,1795,,Watercolor on paper,Watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1294,Unknown Artist,Six botanical paintings of fruit,1801,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1295,Unknown Artist,Tomb of Akbar the Great,1800,10000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1296,Unknown Artist,Two architectural drawings of the tombs of Shah Jahan and Mumtaz Mahal,1801,25000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1297,Unknown Artist,Three architectural drawings,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1298,Unknown Artist,Todi Ragini,1701,22000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1299,Unknown Artist,Todi Ragini,1701,4000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1300,Unknown Artist,Gujari Ragini,1701,4000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1298,Unknown Artist,Todi Ragini,1701,22000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1299,Unknown Artist,Todi Ragini,1701,4000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1300,Unknown Artist,Gujari Ragini,1701,4000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1301,Unknown Artist,Angels bring food to Ibrahim Adham at dawn,1750,48000.0,"Opaque watercolor heightened with gold on paper  
 Calligraphy panel on verso","Opaque watercolor heightened with gold on paper  
-Calligraphy panel on verso",,,,,,Painting
-KG-1303,Unknown Artist,Vishnu and Lakshmi astride Garuda,1701,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1304,Unknown Artist,Lakshmi-Narayana Enthroned,1845,50000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,8.0,,,,Painting
-KG-1307,Unknown Artist,A nayika preparing to meet her beloved,1801,30000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1308,Unknown Artist,A princess enjoying paan on a terrace,1790,25000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1309,Unknown Artist,Tilangi Ragini,1800,28000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1310,Unknown Artist,Srihathi Ragini,1800,28000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1312,Unknown Artist,Vasishtha Teaches Rama and Lakshmana,1700,26000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,14.0,,,,Painting
-KG-1314,Unknown Artist,Rishi Vishvamitra visits King Dasharatha,1701,26000.0,Oapque watercolor on paper,Oapque watercolor on paper,,,,,,Painting
-KG-1315,Unknown Artist,Inebriated Ascetics,1750,18000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
+Calligraphy panel on verso",,,,,,"Drawing, Collage or other Work on Paper"
+KG-1302,Unknown Artist,Angels dance and fly,1800,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1303,Unknown Artist,Vishnu and Lakshmi astride Garuda,1701,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1304,Unknown Artist,Lakshmi-Narayana Enthroned,1845,50000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1305,Unknown Artist,Vishnu reclining on Shesha,1801,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1306,Unknown Artist,Ruler and consort seated in a composite palanquin,1801,28000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1307,Unknown Artist,A nayika preparing to meet her beloved,1801,30000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1308,Unknown Artist,A princess enjoying paan on a terrace,1790,25000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1309,Unknown Artist,Tilangi Ragini,1800,28000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1310,Unknown Artist,Srihathi Ragini,1800,28000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1311,Unknown Artist,The Month of Pausha,1810,35000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1312,Unknown Artist,Vasishtha Teaches Rama and Lakshmana,1700,26000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,14.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1314,Unknown Artist,Rishi Vishvamitra visits King Dasharatha,1701,26000.0,Oapque watercolor on paper,Oapque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1315,Unknown Artist,Inebriated Ascetics,1750,18000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1316,Unknown Artist,"India, Kanchenjunga Near Darjeeling",1958,,Linen backed poster,Linen backed poster,,,,,,Poster
 KG-1317,Unknown Artist,"India, Kanchenjunga Near Darjeeling",1958,,Linen backed poster,Linen backed poster,,,,,,Poster
 KG-1318,Unknown Artist,"India, Kanchenjunga Near Darjeeling",1958,,Linen backed poster,Linen backed poster,,,,,,Poster
@@ -257,169 +286,208 @@ KG-1391,Unknown Artist,"Air India, Nandi (Fiji)",1964,,Poster,Poster,,,,,,Poster
 KG-1392,Unknown Artist,Air India/Rome,1971,,Poster,Poster,,,,,,Poster
 KG-1393,Unknown Artist,Air India/London,1971,,Poster,Poster,,,,,,Poster
 KG-1394,Unknown Artist,Air India/Tokyo,,,Poster,Poster,,,,,,poster
-KG-1396,Unknown Artist,Kali Trampling Shiva,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1397,Unknown Artist,Leaf from the Bhagavata Purana,1700,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1398,Unknown Artist,Krishna with Attendants,1820,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1404,Unknown Artist,Need title,,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1411,Unknown Artist,Prince Begs for Forgiveness,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1412,Unknown Artist,Desvarati Ragini,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1413,Unknown Artist,Two Ladies in a Courtyard,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1414,Unknown Artist,Deepak Ragini / Courting Scene,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1416,Unknown Artist,Ragini Ghandari (Set 7/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1417,Unknown Artist,Raga Valabha (Set 5/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1418,Unknown Artist,Ragini Shri Harshni (Set 2/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1419,Unknown Artist,Raga Panchak (Set 6/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1420,Unknown Artist,Raga Naboda (set 3/7),1819,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1421,Unknown Artist,Raga Kalyan (Set 1/6),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1422,Unknown Artist,Raga Bhohaul (Set 4/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1423,Unknown Artist,Leaf from a Ragamala,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1426,Unknown Artist,Dipak Raga: Illustration from a Ragamala Series,,,Gouache and gold on paper,Gouache and gold on paper,5.0,4.0,,,,Painting
-KG-1428,Unknown Artist,\[FAKE?\] A Prince on Horseback,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1396,Unknown Artist,Kali Trampling Shiva,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1397,Unknown Artist,Leaf from the Bhagavata Purana,1700,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1398,Unknown Artist,Krishna with Attendants,1820,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1404,Unknown Artist,Need title,,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1411,Unknown Artist,Prince Begs for Forgiveness,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1412,Unknown Artist,Desvarati Ragini,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1413,Unknown Artist,Two Ladies in a Courtyard,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1414,Unknown Artist,Deepak Ragini / Courting Scene,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1416,Unknown Artist,Ragini Ghandari (Set 7/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1417,Unknown Artist,Raga Valabha (Set 5/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1418,Unknown Artist,Ragini Shri Harshni (Set 2/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1419,Unknown Artist,Raga Panchak (Set 6/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1420,Unknown Artist,Raga Naboda (set 3/7),1819,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1421,Unknown Artist,Raga Kalyan (Set 1/6),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1422,Unknown Artist,Raga Bhohaul (Set 4/7),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1423,Unknown Artist,Leaf from a Ragamala,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1426,Unknown Artist,Dipak Raga: Illustration from a Ragamala Series,,,Gouache and gold on paper,Gouache and gold on paper,5.0,4.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1428,Unknown Artist,\[FAKE?\] A Prince on Horseback,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1432,Unknown Artist,Rama and Lakshmana in the Wilderness (style II),1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1433,Unknown Artist,The Demons Chanda and Manda in a Palace,1790,,Ink with gouache on paper,Ink with gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1434,Unknown Artist,Durga Battling the Demon Army,1790,,Ink on paper,Ink on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1435,Unknown Artist,Shiva and Parvati with a Goddess,1801,,Ink on paper,Ink on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1436,Unknown Artist,Preparatory Sketch for a Radha-Krishna Scene,,,Ink and light gouache,Ink and light gouache,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1437,Unknown Artist,Persian Diptych: Sultan Receiving Mullahs and Calligraphy Page,1401,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1438,Unknown Artist,Leaf from the Shahnameh,1601,,opaque watercolor on paper,opaque watercolor on paper,,,,,,Painting
-KG-1439,Unknown Artist,Tahmina Displays her Strength,1401,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1441,Unknown Artist,Man Attacked by a Bear,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1442,Unknown Artist,Decorative Cranes,1901,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1443,Unknown Artist,Calligraphy Page,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Other
-KG-1445,Unknown Artist,Rustam Demanding Surrender,1501,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1446,Unknown Artist,The Last Wishes of Danali,1501,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1448,Unknown Artist,A Prince Being Entertained by Musicians,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
+KG-1437,Unknown Artist,Persian Diptych: Sultan Receiving Mullahs and Calligraphy Page,1401,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1438,Unknown Artist,Leaf from the Shahnameh,1601,,opaque watercolor on paper,opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1439,Unknown Artist,Tahmina Displays her Strength,1401,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1441,Unknown Artist,Man Attacked by a Bear,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1442,Unknown Artist,Decorative Cranes,1901,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1443,Unknown Artist,Calligraphy Page,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1444,Unknown Artist,Two Persian Paintings,1901,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1445,Unknown Artist,Rustam Demanding Surrender,1501,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1446,Unknown Artist,The Last Wishes of Danali,1501,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1447,Unknown Artist,Death of a First Child,1801,,guache on paper,guache on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1448,Unknown Artist,A Prince Being Entertained by Musicians,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1449,Unknown Artist,Persian Calligraphy with Later Illustration of a Man,801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1451,Unknown Artist,Unidentified Mewari Painting,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1455,Unknown Artist,Portrait of a Lady,1900,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1456,Unknown Artist,Indra's Approach on Airavata,1850,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1458,Unknown Artist,A Nayika Holding Flowers,1801,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
-KG-1459,Unknown Artist,Odia Manuscript Page,1701,,Ink on paper,Ink on paper,,,,,,Other
-KG-1460,Unknown Artist,Monkey Men Fighting,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1461,Unknown Artist,Hanuman,1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1463,Unknown Artist,Double Sided Manuscript,1701,,Gouache and gold on paper,Gouache and gold on paper,5.5,8.0,,,,Painting
-KG-1464,Unknown Artist,Two Ladies Visiting a Priest,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1465,Unknown Artist,Rama and Sita,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1466,Unknown Artist,Radha Adoring an Image of Krishna,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1467,Unknown Artist,Attendant Applying Henna to the Foot of a Maiden,1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1468,Unknown Artist,Mother and Child,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1470,Unknown Artist,Two Illustrations from the Nala Damayanti,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1471,Unknown Artist,Yashoda and Krishna,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1472,Unknown Artist,Double Sided Illustration,1801,,Gouache on paper,Gouache on paper,,,,,,Painting
-KG-1473,Unknown Artist,Two Manuscript Fragments,,,Gouache on paper,Gouache on paper,,,,,,Other
-KG-1474,Unknown Artist,Royal Couple with Mucisians,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1477,Unknown Artist,Ragini Kanada: From a Ragamala Series,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1478,Unknown Artist,Ladies in a Zenana,1701,,"Gouache heightened with gold on paper, edged with brocaded silk.","Gouache heightened with gold on paper, edged with brocaded silk.",,,,,,Painting
-KG-1479,Unknown Artist,A Maiden and Sakhi in a Courtyard,1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1480,Unknown Artist,Double Sided Manuscript (with snake),1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Other
-KG-1481,Unknown Artist,Lovers in a Garden,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1482,Unknown Artist,Two Ladies Worshipping a Shiva Linga,1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1484,Unknown Artist,An Illustration to the Rasikapriya of Keshavdas,1645,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,,,,,,Painting
-KG-1488,Unknown Artist,Sri Raga: Illustration from a Ragamala Series,,,Watercolor on paper,Watercolor on paper,,,,,,Painting
-KG-1490,Unknown Artist,Mahishasura Enthroned: Folio from a Devi Mahatmya Series,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1451,Unknown Artist,Unidentified Mewari Painting,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1455,Unknown Artist,Portrait of a Lady,1900,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1456,Unknown Artist,Indra's Approach on Airavata,1850,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1458,Unknown Artist,A Nayika Holding Flowers,1801,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1459,Unknown Artist,Odia Manuscript Page,1701,,Ink on paper,Ink on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1460,Unknown Artist,Monkey Men Fighting,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1461,Unknown Artist,Hanuman,1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1463,Unknown Artist,Double Sided Manuscript,1701,,Gouache and gold on paper,Gouache and gold on paper,5.5,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1464,Unknown Artist,Two Ladies Visiting a Priest,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1465,Unknown Artist,Rama and Sita,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1466,Unknown Artist,Radha Adoring an Image of Krishna,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1467,Unknown Artist,Attendant Applying Henna to the Foot of a Maiden,1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1468,Unknown Artist,Mother and Child,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1469,Unknown Artist,Ganesh with attendants,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1470,Unknown Artist,Two Illustrations from the Nala Damayanti,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1471,Unknown Artist,Yashoda and Krishna,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1472,Unknown Artist,Double Sided Illustration,1801,,Gouache on paper,Gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1473,Unknown Artist,Two Manuscript Fragments,,,Gouache on paper,Gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1474,Unknown Artist,Royal Couple with Mucisians,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1477,Unknown Artist,Ragini Kanada: From a Ragamala Series,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1478,Unknown Artist,Ladies in a Zenana,1701,,"Gouache heightened with gold on paper, edged with brocaded silk.","Gouache heightened with gold on paper, edged with brocaded silk.",,,,,,"Drawing, Collage or other Work on Paper"
+KG-1479,Unknown Artist,A Maiden and Sakhi in a Courtyard,1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1480,Unknown Artist,Double Sided Manuscript (with snake),1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1481,Unknown Artist,Lovers in a Garden,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1482,Unknown Artist,Two Ladies Worshipping a Shiva Linga,1701,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1484,Unknown Artist,An Illustration to the Rasikapriya of Keshavdas,1645,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1488,Unknown Artist,Sri Raga: Illustration from a Ragamala Series,,,Watercolor on paper,Watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1490,Unknown Artist,Mahishasura Enthroned: Folio from a Devi Mahatmya Series,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1492,Unknown Artist,"Brahma, Shiva, and Vishnu",1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1493,Unknown Artist,Virabhadra Nayika,1900,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1495,Unknown Artist,A Prince and Princess on a Terrace,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1496,Unknown Artist,Sohni Swimming Across the River to Meet Her Lover Mahiwal,1880,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1498,Unknown Artist,Desvarari Ragini,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
+KG-1495,Unknown Artist,A Prince and Princess on a Terrace,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1496,Unknown Artist,Sohni Swimming Across the River to Meet Her Lover Mahiwal,1880,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1498,Unknown Artist,Desvarari Ragini,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1499,Unknown Artist,A Prince with his Consort on a Terrace,1701,,Gouache and gold on paper,Gouache and gold on paper,9.0,6.0,,,,"Drawing, Collage or other Work on Paper"
 KG-1500,Unknown Artist,Krishna and Gopis with Sacred Cow,1800,,Tempera on card laid down,Tempera on card laid down,6.7,9.4,,,,Painting
-KG-1507,Unknown Artist,Krishna and Yashoda,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1514,Unknown Artist,Mahakalika,1820,,Gouache and gold on paper,Gouache and gold on paper,,,,,,Painting
-KG-1515,Unknown Artist,An illustration from a Kirata Arjuniya series,1820,60000.0,Opaque watercolor on paper,Opaque watercolor on paper,13.0,18.0,,,,Painting
-KG-1517,Unknown Artist,Composite Beast,1850,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1518,Unknown Artist,Two Women View Themselves in a Mirror,1750,,gouache painting on paper,gouache painting on paper,,,,,,Painting
-KG-1519,Unknown Artist,Archer Shooting a Bird in a Tree,1701,,gouache painting on paper,gouache painting on paper,,,,,,Painting
-KG-1520,Unknown Artist,Princess Strolling Across a Palace Terrace at Night,1701,50000.0,gouache painting on paper,gouache painting on paper,,,,,,Painting
-KG-1523,Unknown Artist,Kali,1801,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
-KG-1524,Unknown Artist,A Lonely Nayika,1901,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
-KG-1526,Unknown Artist,Leaf from a Ragamala: Vairati Ragini,1701,28000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1527,Unknown Artist,Leaf from a Ragamala,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1528,Unknown Artist,Vishnu Reclining on Sheesha with his wife Lakshmi,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,6.0,9.0,,,,Painting
-KG-1529,Unknown Artist,Group of 3 Malwa Paintings,1656,,Opaque watercolor on prepared paper,Opaque watercolor on prepared paper,,,,,,Painting
-KG-1533,Unknown Artist,2 Fragments of a Cosmological Diagram,1850,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
-KG-1537,Unknown Artist,Krishna Battling the Horse Demon Keshi,1850,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1542,Unknown Artist,Dhanasri Ragini,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1543,Unknown Artist,Mythological Figure with a Ruler,1601,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1545,Unknown Artist,Holy Family,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1546,Unknown Artist,A Leaf from a Ragini: Inscribed Nand Dasi (Yogini),1601,,Gouache with gold on paper,Gouache with gold on paper,,,,,,Painting
-KG-1549,Unknown Artist,Krishna Slaying Arishta,1800,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,3.0,7.0,,,,Painting
-KG-1550,Unknown Artist,A Leaf from a Ragamala,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1551,Unknown Artist,Dhanasri,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1553,Unknown Artist,Saraswati,1801,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,,,,,,Painting
-KG-1555,Unknown Artist,Shiva Panchanana and Parvati,1801,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,,,,,,Painting
+KG-1507,Unknown Artist,Krishna and Yashoda,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1508,Unknown Artist,Warriors on Camels,1801,,Ink on paper,Ink on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1511,Unknown Artist,The Goddess Chinnamasta,1840,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1514,Unknown Artist,Mahakalika,1820,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1515,Unknown Artist,An illustration from a Kirata Arjuniya series,1820,60000.0,Opaque watercolor on paper,Opaque watercolor on paper,13.0,18.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1517,Unknown Artist,Composite Beast,1850,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1518,Unknown Artist,Two Women View Themselves in a Mirror,1750,,gouache painting on paper,gouache painting on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1519,Unknown Artist,Archer Shooting a Bird in a Tree,1701,,gouache painting on paper,gouache painting on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1520,Unknown Artist,Princess Strolling Across a Palace Terrace at Night,1701,50000.0,gouache painting on paper,gouache painting on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1522,Unknown Artist,Varaha,1801,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1523,Unknown Artist,Kali,1801,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1524,Unknown Artist,A Lonely Nayika,1901,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1526,Unknown Artist,Leaf from a Ragamala: Vairati Ragini,1701,28000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1527,Unknown Artist,Leaf from a Ragamala,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1528,Unknown Artist,Vishnu Reclining on Sheesha with his wife Lakshmi,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,6.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1529,Unknown Artist,Group of 3 Malwa Paintings,1656,,Opaque watercolor on prepared paper,Opaque watercolor on prepared paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1533,Unknown Artist,2 Fragments of a Cosmological Diagram,1850,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1537,Unknown Artist,Krishna Battling the Horse Demon Keshi,1850,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1538,Unknown Artist,Maharaja Ari Singh of Mewar / A Groom Rides an Elephant Masked Stallion,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1542,Unknown Artist,Dhanasri Ragini,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1543,Unknown Artist,Mythological Figure with a Ruler,1601,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1544,Unknown Artist,2 Double Sided Illustrations,,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1545,Unknown Artist,Holy Family,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1546,Unknown Artist,A Leaf from a Ragini: Inscribed Nand Dasi (Yogini),1601,,Gouache with gold on paper,Gouache with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1549,Unknown Artist,Krishna Slaying Arishta,1800,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,3.0,7.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1550,Unknown Artist,A Leaf from a Ragamala,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1551,Unknown Artist,Dhanasri,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1552,Unknown Artist,Narasimha Disembauming Hiranyakashipu,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1553,Unknown Artist,Saraswati,1801,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1554,Unknown Artist,Karthikeyi,1801,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1555,Unknown Artist,Shiva Panchanana and Parvati,1801,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1556,Unknown Artist,Gathering of Rishis,1710,,"Opaque watercolor heightened with gold on paper  
+Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format.","Opaque watercolor heightened with gold on paper  
+Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format.",,,,,,"Drawing, Collage or other Work on Paper"
 KG-1557,Unknown Artist,"Nayika Bhed, Mugdha: Navala Vadhu (The Newly Wedded)",1810,8000.0,Opaque watercolor heightened with gold on wasli,Opaque watercolor heightened with gold on wasli,,,,,,Painting
-KG-1558,Unknown Artist,Krishna Saves the Unconscious Gopas,1693,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1559,Unknown Artist,Yasodha with Krishna and Nandlal,1801,12000.0,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,8.0,13.0,,,,Painting
+KG-1558,Unknown Artist,Krishna Saves the Unconscious Gopas,1693,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1559,Unknown Artist,Yasodha with Krishna and Nandlal,1801,12000.0,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,8.0,13.0,,,,"Drawing, Collage or other Work on Paper"
 KG-1560,Unknown Artist,Watercolor of a Fortress,1901,,watercolor,watercolor,,,,,,Painting
-KG-1561,Unknown Artist,Desakh Ragini,1701,,Opaque watercolor heightened gold on paper,Opaque watercolor heightened gold on paper,,,,,,Painting
-KG-1562,Unknown Artist,Rama and Lakshmana meet with Sugriva,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1566,Unknown Artist,The Goddess Mahagauri Astride White Bull,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1567,Unknown Artist,Light skin man,1830,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1568,Unknown Artist,Ruler in a Garden,1501,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1570,Unknown Artist,Nymph Rambha cursed by Vishvamitra,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1572,Unknown Artist,Vishnu on a Lotus,1720,,Opaque watercolor heightened gold on paper,Opaque watercolor heightened gold on paper,6.5,4.75,,,,Painting
+KG-1561,Unknown Artist,Desakh Ragini,1701,,Opaque watercolor heightened gold on paper,Opaque watercolor heightened gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1562,Unknown Artist,Rama and Lakshmana meet with Sugriva,1800,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1565,Unknown Artist,Trayodashi,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1566,Unknown Artist,The Goddess Mahagauri Astride White Bull,1800,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1567,Unknown Artist,Light skin man,1830,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1568,Unknown Artist,Ruler in a Garden,1501,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1570,Unknown Artist,Nymph Rambha cursed by Vishvamitra,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1571,Unknown Artist,Leaf from the Madhvalnal Kamakandala,1801,,Opaque watercolors heightened with gold on paper,Opaque watercolors heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1572,Unknown Artist,Vishnu on a Lotus,1720,,Opaque watercolor heightened gold on paper,Opaque watercolor heightened gold on paper,6.5,4.75,,,,"Drawing, Collage or other Work on Paper"
 KG-1573,Unknown Artist,A Group of Photos Depicting India,1929,,"Each photograph stamped on verso: H.R. Ferger, Jhansi, U.P.","Each photograph stamped on verso: H.R. Ferger, Jhansi, U.P.",,,,,,Photograph
 KG-1574,Unknown Artist,Elephant in landscape,1701,,Gouache on paper,Gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1576,Unknown Artist,"Surah Al-A’raf from a Quran Manuscript, Verses 147–150 (Recto), 150–154 (Verso)",1501,,Gouache and ink on paper,Gouache and ink on paper,14.0,10.5,,,,Painting
-KG-1578,Unknown Artist,Shiva Under the Influence of Bhang,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,7.0,,,,Painting
-KG-1579,Unknown Artist,Trishala's Fourteen Auspicious Dreams Foretelling the Birth of Mahavira: Folio from a Jain Kalpa-sutra Manuscript,1501,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Other
-KG-1580,Unknown Artist,The Mi'raj: The Miraculous Night Journey of Muhammad,1850,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1581,Unknown Artist,A Leaf from the Krishna Sudama,1801,15000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,7.75,10.0,,,,Painting
-KG-1582,Unknown Artist,Rupmati and Baz Bahadur on Horseback,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1575,Unknown Artist,Running Elephant,1701,,Gouache on paper,Gouache on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1576,Unknown Artist,"Surah Al-A’raf from a Quran Manuscript, Verses 147–150 (Recto), 150–154 (Verso)",1501,,Gouache and ink on paper,Gouache and ink on paper,14.0,10.5,,,,"Drawing, Collage or other Work on Paper"
+KG-1578,Unknown Artist,Shiva Under the Influence of Bhang,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,7.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1579,Unknown Artist,Trishala's Fourteen Auspicious Dreams Foretelling the Birth of Mahavira: Folio from a Jain Kalpa-sutra Manuscript,1501,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1580,Unknown Artist,The Mi'raj: The Miraculous Night Journey of Muhammad,1850,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1581,Unknown Artist,A Leaf from the Krishna Sudama,1801,15000.0,Gouache heightened with gold on paper,Gouache heightened with gold on paper,7.75,10.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1582,Unknown Artist,Rupmati and Baz Bahadur on Horseback,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1583,Unknown Artist,Maharaja with Two Courtesans,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1585,Unknown Artist,A Double-Sided Album Page: The Taj Mahal and a Bird of Prey,1800,,"Opaque pigments heightened with  
 gold on paper","Opaque pigments heightened with  
-gold on paper",,,,,,Painting
-KG-1586,Unknown Artist,Parshuram Incarnation Of Vishnu,1700,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,11.0,8.0,,,,Painting
-KG-1587,Unknown Artist,An Illustration from the Polier Album: A Raja in a Garden,1801,28000.0,Watercolor on paper,Watercolor on paper,,,,,,Painting
-KG-1588,Unknown Artist,A Maiden Being Presented to a Prince,1701,,"Opaque watercolor heightened with gold on paper, laid down on card, narrow gold borders; verso with Devangari inscription.","Opaque watercolor heightened with gold on paper, laid down on card, narrow gold borders; verso with Devangari inscription.",,,,,,Painting
-KG-1589,Unknown Artist,The Birth of Mahavira: Folio from a Jain Kalpa-sutra Manuscript,1401,,"Ink, opaque colors and gold on paper","Ink, opaque colors and gold on paper",,,,,,Other
-KG-1590,Unknown Artist,Nayika removes jewelry by moonlight,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,5.5,,,,Painting
-KG-1592,Unknown Artist,Devi and demon army,1701,,Opaque watercolor on paper,Opaque watercolor on paper,7.5,5.5,,,,Painting
-KG-1594,Unknown Artist,Krishna and ladies,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,7.0,6.0,,,,Painting
+gold on paper",,,,,,"Drawing, Collage or other Work on Paper"
+KG-1586,Unknown Artist,Parshuram Incarnation Of Vishnu,1700,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,11.0,8.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1587,Unknown Artist,An Illustration from the Polier Album: A Raja in a Garden,1801,28000.0,Watercolor on paper,Watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1588,Unknown Artist,A Maiden Being Presented to a Prince,1701,,"Opaque watercolor heightened with gold on paper, laid down on card, narrow gold borders; verso with Devangari inscription.","Opaque watercolor heightened with gold on paper, laid down on card, narrow gold borders; verso with Devangari inscription.",,,,,,"Drawing, Collage or other Work on Paper"
+KG-1589,Unknown Artist,The Birth of Mahavira: Folio from a Jain Kalpa-sutra Manuscript,1401,,"Ink, opaque colors and gold on paper","Ink, opaque colors and gold on paper",,,,,,"Drawing, Collage or other Work on Paper"
+KG-1590,Unknown Artist,Nayika removes jewelry by moonlight,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.0,5.5,,,,"Drawing, Collage or other Work on Paper"
+KG-1591,Unknown Artist,Nayika with grooming handmaid,1701,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1592,Unknown Artist,Devi and demon army,1701,,Opaque watercolor on paper,Opaque watercolor on paper,7.5,5.5,,,,"Drawing, Collage or other Work on Paper"
+KG-1593,Unknown Artist,Two princesses on horses,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1594,Unknown Artist,Krishna and ladies,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,7.0,6.0,,,,"Drawing, Collage or other Work on Paper"
 KG-1595,Unknown Artist,Camel with Trainer,1601,,Pencil on paper,Pencil on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1596,Unknown Artist,The Sufi mystic Rabia Basri fed by angels in the wilderness,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,Painting
-KG-1597,Unknown Artist,Portrait of a European lady,1750,,"Gouache on paper mounted on an album page, painted cotton margin","Gouache on paper mounted on an album page, painted cotton margin",,,,,,Painting
-KG-1602,Unknown Artist,Europeans with stag and lion,1501,,Drawing with gouache and gold on paper,Drawing with gouache and gold on paper,,,,,,Painting
-KG-1603,Unknown Artist,Saundarya: A Lady at her Toilette,1810,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1596,Unknown Artist,The Sufi mystic Rabia Basri fed by angels in the wilderness,1701,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1597,Unknown Artist,Portrait of a European lady,1750,,"Gouache on paper mounted on an album page, painted cotton margin","Gouache on paper mounted on an album page, painted cotton margin",,,,,,"Drawing, Collage or other Work on Paper"
+KG-1598,Unknown Artist,Centaur archer,1801,,Ink on paper mounted on an album page,Ink on paper mounted on an album page,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1599,Unknown Artist,Battle of the demon and the dragon,1801,,Gouache heightened with gold on paper,Gouache heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1602,Unknown Artist,Europeans with stag and lion,1501,,Drawing with gouache and gold on paper,Drawing with gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1603,Unknown Artist,Saundarya: A Lady at her Toilette,1810,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1611,Unknown Artist,Kusha Giving Consult to His Progeny,1810,,ink on paper,ink on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1614,Unknown Artist,A Leaf from the Devi Mahatmya: Homage of the Gods,1775,,ink on paper,ink on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1618,Unknown Artist,An Indo-Persian Illuminated Miniature,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1619,Unknown Artist,A Falconer Safavid,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1617,Unknown Artist,An Indian Miniature of the Madonna and Child with Angels,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1618,Unknown Artist,An Indo-Persian Illuminated Miniature,1701,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1619,Unknown Artist,A Falconer Safavid,1601,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1621,Unknown Artist,Ganesha,1001,80000.0,Gray basalt,Gray basalt,,,,,,Sculpture
+KG-1622,Unknown Artist,Illustration to the Jayadeva Gita Govinda,1714,25000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1623,Unknown Artist,"Krishna, the butter thief",1201,,Copper alloy,Copper alloy,4.0,,,,,Sculpture
-KG-1624,Unknown Artist,Shiva and Parvati,1780,8000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1624,Unknown Artist,Shiva and Parvati,1780,8000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1627,Unknown Artist,Matrika Lotus Mandala,1501,12000.0,Copper alloy,Copper alloy,,,,,,Sculpture
-KG-1628,Unknown Artist,Illustration to the Devi Mahatmya: Kali Withdraws from Vishnu,1800,15000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,7.0,,,,Painting
-KG-1629,Unknown Artist,Kali Trampling Shiva,1701,26000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,4.0,,,,Painting
-KG-1630,Unknown Artist,Chinnamasta,1701,25000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,4.0,,,,Painting
-KG-1632,Unknown Artist,Krishna and Radha at a Jharokha window: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1633,Unknown Artist,Krishna Enthroned: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1634,Unknown Artist,Krishna conversing with a Sakhi: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,6.0,,,,Painting
-KG-1635,Unknown Artist,A Nayika Writing a Note,1810,12000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1636,Unknown Artist,Maiden with Mirror,1810,8000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1637,Unknown Artist,Radha Watching a Storm,1824,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1638,Unknown Artist,Illustration to the Lanka Kana of the Ramayana: The Awakening of the Giant Kumbhakarna,1801,12000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1639,Unknown Artist,Illustration from the Ramayana,1701,25000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1628,Unknown Artist,Illustration to the Devi Mahatmya: Kali Withdraws from Vishnu,1800,15000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,7.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1629,Unknown Artist,Kali Trampling Shiva,1701,26000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,4.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1630,Unknown Artist,Chinnamasta,1701,25000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,4.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1632,Unknown Artist,Krishna and Radha at a Jharokha window: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1633,Unknown Artist,Krishna Enthroned: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1634,Unknown Artist,Krishna conversing with a Sakhi: Illustration to a Rasikapriya Series,1820,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,9.0,6.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1635,Unknown Artist,A Nayika Writing a Note,1810,12000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1636,Unknown Artist,Maiden with Mirror,1810,8000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1637,Unknown Artist,Radha Watching a Storm,1824,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1638,Unknown Artist,Illustration to the Lanka Kana of the Ramayana: The Awakening of the Giant Kumbhakarna,1801,12000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1639,Unknown Artist,Illustration from the Ramayana,1701,25000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1640,Unknown Artist,Illustration from the Ramayana: Sita in Ravana's Palace (Scene 99),1701,25000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1641,Unknown Artist,Rama,1401,50000.0,Brass,Brass,,,,,,Sculpture
-KG-1643,Unknown Artist,The Boar,1720,30000.0,Opaque pigments on paper,Opaque pigments on paper,,,,,,Painting
-KG-1648,Unknown Artist,Abhisandhita Nayika,1801,30000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1642,Unknown Artist,Four Cats,1720,15000.0,Opaque pigments on paper,Opaque pigments on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1643,Unknown Artist,The Boar,1720,30000.0,Opaque pigments on paper,Opaque pigments on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1644,Unknown Artist,Lord Kubera,1720,12000.0,Opaque pigments on paper,Opaque pigments on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1646,Unknown Artist,Leaf from a Panch Kalyanaka of Rishabhanatha series: Prince Shreyans Achieves Jati-smaran Gyan,1720,18000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1648,Unknown Artist,Abhisandhita Nayika,1801,30000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1649,Unknown Artist,Dancing Ganesha,901,60000.0,Sandstone,Sandstone,,,,,,Sculpture
-KG-1652,Unknown Artist,Women in the Zenana,1601,35000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
+KG-1652,Unknown Artist,Women in the Zenana,1601,35000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1653,Unknown Artist,Taj Mahal No. 1,1931,6000.0,Woodblock in colors,Woodblock in colors,,,,,,Print
 KG-1656,Unknown Artist,Standing Figure of Tara,801,250000.0,Copper alloy with silver inlay,Copper alloy with silver inlay,,,,,,Sculpture
+KG-1660,Unknown Artist,Ganesha,1101,18000.0,Bronze,Bronze,,,,,,Sculpture
 KG-1662,Unknown Artist,Arhat Nagasena,1701,160000.0,Distemper on cloth,Distemper on cloth,,,,,,Thangka
 KG-1663,Unknown Artist,Konchog Bang,1701,96000.0,Distemper on cloth,Distemper on cloth,,,,,,Thangka
 KG-1665,Unknown Artist,Arhat Nagasena,1701,220000.0,Distemper on cloth,Distemper on cloth,,,,,,Thangka
+KG-1668,Unknown Artist,Green Tara (Syamatara),1301,,Gilt-bronze with semi-precious inlaid stones,Gilt-bronze with semi-precious inlaid stones,,,,,,Sculpture
 KG-1670,Unknown Artist,Chakrasamvara and Vajrayogini,1401,350000.0,Gilt copper,Gilt copper,,,,,,Sculpture
-KG-1671,Unknown Artist,Brahma with Devotees,1630,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1673,Unknown Artist,A Maharishi on a Terrace,1700,35000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1675,Unknown Artist,Narasimha Disemboweling Hiranyakashipu,1601,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1676,Unknown Artist,A leaf from a Panchatantra Series (or ‘Panchakhyana’ Series),1725,22000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1677,Unknown Artist,Nat Ragini,1725,28000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1679,Unknown Artist,Rama and Lakshmana,1730,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1683,Unknown Artist,A portrait of a woman with a cat,1701,6000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,4.0,,,,Painting
-KG-1685,Unknown Artist,Leaf 21 from the Devi Mahatmya: Homage of the Gods,1790,80000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1686,Unknown Artist,Shiva and Parvati,1830,22000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1687,Unknown Artist,An Illustration to the Devi Mahatmya: The Demon Army,1820,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1689,Unknown Artist,A leaf from the Devi Mahatmya: Homage of the Gods,1850,15000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1691,Unknown Artist,An equestrian portrait of Maharana Bhim Singh of Mewar,1801,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,Painting
-KG-1692,Unknown Artist,Two Paithan Paintings Illustrating the Ramayana,1801,6000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
+KG-1671,Unknown Artist,Brahma with Devotees,1630,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1673,Unknown Artist,A Maharishi on a Terrace,1700,35000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1675,Unknown Artist,Narasimha Disemboweling Hiranyakashipu,1601,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1676,Unknown Artist,A leaf from a Panchatantra Series (or ‘Panchakhyana’ Series),1725,22000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1677,Unknown Artist,Nat Ragini,1725,28000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1678,Unknown Artist,The goddess Lakshmi,1701,12000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1679,Unknown Artist,Rama and Lakshmana,1730,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1682,Unknown Artist,"Shiva as Tripurantaka, The Destroyer of Tripura",1750,80000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,7.0,9.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1683,Unknown Artist,A portrait of a woman with a cat,1701,6000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,4.0,,,,"Drawing, Collage or other Work on Paper"
+KG-1685,Unknown Artist,Leaf 21 from the Devi Mahatmya: Homage of the Gods,1790,80000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1686,Unknown Artist,Shiva and Parvati,1830,22000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1687,Unknown Artist,An Illustration to the Devi Mahatmya: The Demon Army,1820,18000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1689,Unknown Artist,A leaf from the Devi Mahatmya: Homage of the Gods,1850,15000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1690,Unknown Artist,Ganesha,1801,,Opaque watercolor heightened with silver and gold on paper,Opaque watercolor heightened with silver and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1691,Unknown Artist,An equestrian portrait of Maharana Bhim Singh of Mewar,1801,60000.0,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1692,Unknown Artist,Two Paithan Paintings Illustrating the Ramayana,1801,6000.0,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1693,Unknown Artist,Interior of I’timad ad-Daulahs Tomb,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1694,Unknown Artist,China Building Opposite Agra,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
+KG-1695,Unknown Artist,Dome at the Tomb of Akbar,1801,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1696,Unknown Artist,A small reflief of Hariti,101,8000.0,Grey Schist,Grey Schist,,,,,,Sculpture
+KG-1698,Unknown Artist,Buddha Shakyamuni,901,80000.0,Black Schist,Black Schist,,,,,,Sculpture

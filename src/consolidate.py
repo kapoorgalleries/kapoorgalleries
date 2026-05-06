@@ -1,14 +1,24 @@
 """Build the canonical ``works`` table from raw observations.
 
-Source priority for choosing the canonical value of a field:
+Source priority for choosing the canonical value of a field (highest first):
 
-1. Anything from a Primer-derived source (`type` starts with ``primer_`` or
-   ``artsy_csv``, since the Artsy CSV is itself a Primer dump).
-2. Otherwise, the most recent observation by ``observed_at``.
+1. ``human_resolution`` — explicit human decision in
+   ``data/human_resolutions.yaml``. Always wins.
+2. ``auto_resolution`` — rules-based inference from
+   ``data/auto_resolution_rules.yaml`` (e.g. "medium contains paper →
+   classification = Drawing"). Fills gaps but loses to a human.
+3. ``match_workbook`` — the curator-built Artsy Match Workbook, which is
+   tighter on classification/materials than Primer.
+4. Primer-derived (``artsy_csv``, ``primer_pdf``, ``primer_csv``) — the
+   primary system of record.
+5. Otherwise, most recent observation by ``observed_at``.
 
 We never silently merge: if more than one *distinct* value exists for a
 (work_id, field) we set ``has_conflict = 1`` and list the offending fields in
 ``conflict_fields`` so the Apps Script can paint them red.
+
+A field with a ``human_resolution`` observation is never marked as
+conflicting — the human has spoken.
 """
 
 from __future__ import annotations
@@ -23,7 +33,14 @@ from .normalize import (
 )
 from .schema import CANONICAL_FIELDS
 
-PRIMER_TYPES = {"artsy_csv", "primer_pdf", "primer_csv"}
+# Priority bands, highest wins. Within a band, most-recent observation wins.
+PRIORITY_BANDS: tuple[set[str], ...] = (
+    {"human_resolution"},
+    {"auto_resolution"},
+    {"match_workbook"},
+    {"artsy_csv", "primer_pdf", "primer_csv"},
+)
+PRIMER_TYPES = {"artsy_csv", "primer_pdf", "primer_csv"}  # legacy alias for tests
 
 NUMERIC_FIELDS = {"height_in", "width_in", "depth_in", "price_usd"}
 INT_FIELDS = {"year"}
@@ -40,13 +57,23 @@ def _coerce(field: str, value: Optional[str]):
 
 
 def _pick_canonical(rows: list[tuple[str, str, str]]) -> Optional[str]:
-    """rows = [(value, source_type, observed_at), ...] all for one (work, field)."""
+    """rows = [(value, source_type, observed_at), ...] all for one (work, field).
+
+    Walks ``PRIORITY_BANDS`` top to bottom, returning the most-recent value
+    from the highest-priority band that has any observation.  Falls back to
+    "globally most recent" if no band matches.
+    """
     if not rows:
         return None
-    primer_rows = [r for r in rows if r[1] in PRIMER_TYPES]
-    pool = primer_rows if primer_rows else rows
-    pool_sorted = sorted(pool, key=lambda r: r[2], reverse=True)
-    return pool_sorted[0][0]
+    for band in PRIORITY_BANDS:
+        in_band = [r for r in rows if r[1] in band]
+        if in_band:
+            return sorted(in_band, key=lambda r: r[2], reverse=True)[0][0]
+    return sorted(rows, key=lambda r: r[2], reverse=True)[0][0]
+
+
+def _has_human_resolution(rows: list[tuple[str, str, str]]) -> bool:
+    return any(r[1] == "human_resolution" for r in rows)
 
 
 def consolidate(db: sqlite_utils.Database) -> dict:
@@ -76,8 +103,15 @@ def consolidate(db: sqlite_utils.Database) -> dict:
         conflict_fields: list[str] = []
         for field in CANONICAL_FIELDS:
             rows = by_field.get(field, [])
-            distinct_vals = {r[0] for r in rows}
-            if len(distinct_vals) > 1:
+            # Conflict detection only considers OBSERVATION sources.  Resolution
+            # sources (human/auto) are decisions, not disagreements — they pick
+            # a winner, they don't create one.
+            observed_vals = {
+                r[0] for r in rows
+                if r[1] not in ("human_resolution", "auto_resolution")
+            }
+            # A human resolution closes the conflict outright.
+            if len(observed_vals) > 1 and not _has_human_resolution(rows):
                 conflict_fields.append(field)
             chosen = _pick_canonical(rows)
             canonical[field] = _coerce(field, chosen)

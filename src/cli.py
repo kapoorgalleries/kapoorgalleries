@@ -22,6 +22,8 @@ INGESTERS = {
     "sub_inventory": ("src.ingest.sub_inventory", "SubInventoryIngester"),
     "kg_inventory_pdf": ("src.ingest.kg_inventory_pdf", "KGInventoryPdfIngester"),
     "email_gaps": ("src.ingest.email_gaps", "EmailGapsIngester"),
+    "human_resolution": ("src.ingest.human_resolution", "HumanResolutionIngester"),
+    "auto_resolution": ("src.ingest.auto_resolution", "AutoResolutionIngester"),
 }
 
 
@@ -53,11 +55,18 @@ def init_db_cmd(db_path: str):
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 @click.option("--sources", default="catalog/sources.yaml", show_default=True)
 def ingest(db_path: str, sources: str):
-    """Run every enabled ingester listed in catalog/sources.yaml."""
+    """Run every enabled ingester listed in catalog/sources.yaml.
+
+    auto_resolution is special: it runs LAST and reads from the DB rather
+    than from the file system, so its observations layer on top of every
+    other source.
+    """
     src_yaml = yaml.safe_load(Path(sources).read_text()) or []
     db = dbmod.init_db(db_path)
     total_obs = 0
     skipped: list[str] = []
+    deferred = []  # auto_resolution etc. — run after all other sources
+
     for entry in src_yaml:
         if not entry.get("enabled", True):
             skipped.append(f"{entry.get('name')} (disabled)")
@@ -71,6 +80,9 @@ def ingest(db_path: str, sources: str):
         if not local or not Path(local).exists():
             skipped.append(f"{entry.get('name')} (no local file at {local})")
             continue
+        if type_ == "auto_resolution":
+            deferred.append((entry, cls, local))
+            continue
         ingester = cls(local, drive_file_id=entry.get("drive_file_id"))
         result = ingester.run()
         result.source.name = entry.get("name") or result.source.name
@@ -79,11 +91,77 @@ def ingest(db_path: str, sources: str):
         m = dbmod.insert_images(db, sid, result.images)
         total_obs += n
         click.echo(f"  {entry['name']}: {n} observations, {m} images")
+
+    for entry, cls, local in deferred:
+        ingester = cls(local, drive_file_id=entry.get("drive_file_id"), db=db)
+        result = ingester.run()
+        result.source.name = entry.get("name") or result.source.name
+        sid = dbmod.upsert_source(db, result.source)
+        n = dbmod.insert_observations(db, sid, result.observations)
+        total_obs += n
+        click.echo(f"  {entry['name']} (deferred): {n} observations")
+
     click.echo(f"Inserted {total_obs} observations total.")
     if skipped:
         click.echo("Skipped:")
         for s in skipped:
             click.echo(f"  - {s}")
+
+
+@cli.command()
+@click.argument("work_id")
+@click.argument("field")
+@click.argument("value")
+@click.option("--reason", default="", help="Why this value is correct.")
+@click.option("--by", "decided_by", default="", help="Email of the person making the call.")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--file", "yaml_path", default="data/human_resolutions.yaml", show_default=True)
+def resolve(work_id: str, field: str, value: str, reason: str, decided_by: str,
+            db_path: str, yaml_path: str):
+    """Record an authoritative human decision for one (work, field).
+
+    Example:
+
+      python -m src.cli resolve KG-1000 classification \\
+        "Drawing, Collage or other Work on Paper" \\
+        --reason "Opaque watercolor on paper." \\
+        --by sanjay@kapoors.com
+
+    Appends to data/human_resolutions.yaml and immediately re-runs the
+    human_resolution ingester so the master.csv reflects the change without
+    a full `make all`.
+    """
+    from datetime import datetime, timezone
+    p = Path(yaml_path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    entries = yaml.safe_load(p.read_text()) if p.exists() else []
+    entries = entries or []
+    entries.append({
+        "work_id": work_id,
+        "field": field,
+        "value": value,
+        "reason": reason,
+        "decided_by": decided_by,
+        "decided_at": datetime.now(timezone.utc).date().isoformat(),
+    })
+    p.write_text(yaml.safe_dump(entries, sort_keys=False, default_flow_style=False))
+    click.echo(f"Appended to {yaml_path}: {work_id}.{field} = {value!r}")
+
+    # Re-ingest just this source so the change shows up immediately.
+    from src.ingest.human_resolution import HumanResolutionIngester
+    db = dbmod.init_db(db_path)
+    # Drop any prior observations from this source so we don't keep stale rows.
+    db.conn.execute(
+        """DELETE FROM observations WHERE source_id IN
+           (SELECT id FROM sources WHERE type = 'human_resolution')"""
+    )
+    db.conn.execute("DELETE FROM sources WHERE type = 'human_resolution'")
+    db.conn.commit()
+    result = HumanResolutionIngester(p).run()
+    sid = dbmod.upsert_source(db, result.source)
+    n = dbmod.insert_observations(db, sid, result.observations)
+    click.echo(f"Re-ingested {n} human resolutions.")
+    click.echo("Run `make consolidate report` to refresh master.csv.")
 
 
 @cli.command("ingest-one")
