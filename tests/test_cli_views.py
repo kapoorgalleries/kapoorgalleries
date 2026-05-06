@@ -93,3 +93,46 @@ def test_suggest_rules_runs_without_error(tmp_path: Path):
         "--min-support", "1", "--min-purity", "0.5",
     ])
     assert result.exit_code == 0, result.output
+
+
+def test_years_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    # Set a year so the histogram has a bucket.
+    db = init_db(db_path)
+    _seed(db, "KG-1", "year", "1850", "artsy_csv")
+    consolidate(db)
+    db.conn.close()
+
+    runner = CliRunner()
+    result = runner.invoke(cli, ["years", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_artists_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["artists", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_inspect_source_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["inspect-source", "test-artsy_csv",
+                                   "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_check_artsy_runs(tmp_path: Path):
+    """check-artsy needs a real CSV file."""
+    p = tmp_path / "upload.csv"
+    p.write_text(
+        '"Inventory ID (OPTIONAL)","Artist Name ","Title ","Year ","Price ","Medium ","Materials ","Height ","Width ",Depth,"Certificate of Authenticity ","Signature ","Classification "\n'
+        'KG-1,Unknown,A test,1850,,Watercolor,Watercolor,8,10,,,,Painting\n'
+    )
+    runner = CliRunner()
+    result = runner.invoke(cli, ["check-artsy", "--file", str(p)])
+    assert result.exit_code == 0, result.output
