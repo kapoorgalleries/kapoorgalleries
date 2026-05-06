@@ -54,11 +54,13 @@ def export_provenance(db: sqlite_utils.Database, out_path: Path | str) -> int:
             chosen_tuple = next(t for t in obs if t[0] == chosen_value)
             chosen_src = chosen_tuple[1]
             alts = [t for t in obs if t[0] != chosen_value]
-            alt_values = list({t[0] for t in alts})
-            alt_sources = list({t[1] for t in alts})
+            # Sort for deterministic output (set iteration order isn't stable
+            # across runs, which created spurious git diffs).
+            alt_values = sorted({t[0] for t in alts})
+            alt_sources = sorted({t[1] for t in alts})
             writer.writerow([
                 w, f, chosen_value, chosen_src,
-                len(alt_values), " || ".join(alt_values), ",".join(sorted(alt_sources)),
+                len(alt_values), " || ".join(alt_values), ",".join(alt_sources),
             ])
             n += 1
     return n

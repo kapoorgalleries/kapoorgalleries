@@ -141,7 +141,7 @@ KG-1011,width_in,13.0,artsy_csv,0,,
 KG-1012,classification,Design/Decorative Art,bulk_upload_xlsx,1,Khanjar,artsy_csv
 KG-1012,height_in,15.0,artsy_csv,0,,
 KG-1012,materials,Jade-hilted and jeweled Khanjar,match_workbook,0,,
-KG-1012,medium,Jade-hilted dagger with steel blade,auto_resolution,2,Jade-hilted and jeweled Khanjar || Jade-hilted and jeweled,"artsy_csv,bulk_upload_xlsx"
+KG-1012,medium,Jade-hilted dagger with steel blade,auto_resolution,2,Jade-hilted and jeweled || Jade-hilted and jeweled Khanjar,"artsy_csv,bulk_upload_xlsx"
 KG-1012,primary_image_source,Copy of 240130_KapoorGalleries_3D_ContactSheet.pdf p.3,match_workbook,0,,
 KG-1012,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/011c1356-2b84-4b21-bbfb-79fc2e9e53d1/Jeweled%20Dagger%20D.jpg?Expires=1802811609&Signature=Y1mpcI74yLmr1wmkTfTz7n9ukZ4LtNBH1A3iK~owYn8982b9EtaxffyAzcpj3IdVgD8-uudhmx6~nyspxl35oJbkA9oKMqlN1sgkQ97AmCsa22nQ64hSPbDCyfpzhDZi9xPEomrpymkXFhqZ6Ti-eDwCSY2Bt6zCnVabJsN~2drxfrr9otSlJKMGDOijMR63P6xwv5RpTAfvbMghkMtaD11GbLr30Q58vhZ6tvs1xK1NUcIt6Lsbjyr4cmgKuWSsbq~oDL2R5ob9T8SyxLM2v15A0o5fnrrvCtqMcOYzc1djn~b-V-hohUW3IPmTtXXsSZHeeOd7LmMqf7wYf8yJ-A__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1012,primer_uuid,011c1356-2b84-4b21-bbfb-79fc2e9e53d1,artsy_csv,0,,
