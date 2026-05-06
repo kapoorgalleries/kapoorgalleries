@@ -126,6 +126,48 @@ def test_inspect_source_runs(tmp_path: Path):
     assert result.exit_code == 0, result.output
 
 
+def test_prices_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    db = init_db(db_path)
+    _seed(db, "KG-1", "price_usd", "12000", "artsy_csv")
+    consolidate(db)
+    db.conn.close()
+    runner = CliRunner()
+    result = runner.invoke(cli, ["prices", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_overview_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["overview", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_whatsnew_runs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["whatsnew", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+
+
+def test_split_by_classification_writes_per_class_csvs(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    out = tmp_path / "byc"
+    runner = CliRunner()
+    result = runner.invoke(cli, [
+        "split-by-classification", "--out-dir", str(out),
+        "--db", str(db_path),
+    ])
+    assert result.exit_code == 0, result.output
+    files = list(out.glob("*.csv"))
+    assert len(files) >= 1
+
+
 def test_check_artsy_runs(tmp_path: Path):
     """check-artsy needs a real CSV file."""
     p = tmp_path / "upload.csv"
