@@ -596,6 +596,28 @@ def export_filtered(out_path: str, classification: str | None,
 
 
 @cli.command()
+@click.option("--n", default=5, show_default=True, help="number of works to sample")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def sample(n: int, db_path: str):
+    """Random sample of works for spot-checking."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """SELECT work_id, title, classification, year, primary_image_url
+           FROM works ORDER BY RANDOM() LIMIT ?""", [n]
+    ).fetchall()
+    if not rows:
+        click.echo("\n  no works.\n")
+        return
+    click.echo(f"\n  random {len(rows)} works:\n")
+    for wid, title, cls, year, img in rows:
+        img_tag = "✓" if img else " "
+        click.echo(f"  {wid}  {(year or '____')!s:5} {img_tag}  "
+                   f"{(cls or '')[:25]:25s}  {(title or '')[:60]}")
+    click.echo("\n  ✓=has image")
+    click.echo()
+
+
+@cli.command()
 @click.option("--limit", default=20, show_default=True)
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def whatsnew(limit: int, db_path: str):
