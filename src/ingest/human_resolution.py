@@ -27,8 +27,11 @@ from pathlib import Path
 
 import yaml
 
-from ..schema import Observation
+from ..schema import CANONICAL_FIELDS, Observation
 from ._base import IngestResult, Ingester
+
+
+VALID_FIELDS = set(CANONICAL_FIELDS)
 
 
 class HumanResolutionIngester(Ingester):
@@ -47,6 +50,14 @@ class HumanResolutionIngester(Ingester):
             field = e.get("field")
             value = e.get("value")
             if not work_id or not field or value in (None, ""):
+                continue
+            if field not in VALID_FIELDS:
+                # Surface typos loudly so they don't silently no-op.
+                import warnings
+                warnings.warn(
+                    f"{self.file_path}:{i}: unknown field {field!r} "
+                    f"(known fields: {sorted(VALID_FIELDS)})"
+                )
                 continue
             decided_at = e.get("decided_at") or datetime.now(timezone.utc).isoformat()
             ref = (
