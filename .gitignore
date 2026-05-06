@@ -19,3 +19,5 @@ data/raw/*
 # Keep the 1 MB Artsy CSV committed so CI can rebuild master.csv on every push.
 !data/raw/Artsy_2-16-2026.csv
 !data/raw/.gitkeep
+# Small Match Workbook fixture (KG-1000..KG-1015) for CI verification.
+!data/raw/match_workbook_summary_kg1000_1099.xlsx
