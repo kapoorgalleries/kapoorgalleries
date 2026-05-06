@@ -82,6 +82,20 @@ demo:
 	@echo "  python -m src.cli export-filtered --classification Sculpture --out my.csv"
 	@echo
 
+# Watch mode: rebuild on changes to rules / sources / data/raw/.
+# Requires `inotifywait` (apt: inotify-tools).
+watch:
+	@command -v inotifywait >/dev/null || { \
+	  echo "inotify-tools not installed.  Run: sudo apt install inotify-tools"; exit 1; }
+	@echo "watching data/auto_resolution_rules.yaml, data/human_resolutions.yaml, catalog/sources.yaml, data/raw/ ..."
+	@while true; do \
+	  $(MAKE) all; \
+	  echo; echo "Waiting for changes (Ctrl+C to stop)..."; \
+	  inotifywait -qr -e modify -e create -e delete \
+	    data/auto_resolution_rules.yaml data/human_resolutions.yaml \
+	    catalog/sources.yaml data/raw/ src/ 2>/dev/null; \
+	done
+
 clean:
 	rm -f data/inventory.db data/master.csv data/master_long.csv data/conflicts.csv data/gaps.csv data/artsy_upload.csv
 	rm -f reports/*.md
