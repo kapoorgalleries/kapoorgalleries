@@ -51,6 +51,27 @@ def test_show_displays_canonical_values(tmp_path: Path):
     assert "Sculpture" in result.output
 
 
+def test_compare_marks_differences_and_matches(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["compare", "KG-1", "KG-2", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+    # Differing classifications → at least one ≠ row.
+    assert "≠" in result.output
+    # Both works show up in the header.
+    assert "KG-1" in result.output and "KG-2" in result.output
+
+
+def test_compare_unknown_id(tmp_path: Path):
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    runner = CliRunner()
+    result = runner.invoke(cli, ["compare", "KG-1", "KG-NOPE", "--db", str(db_path)])
+    assert result.exit_code == 0, result.output
+    assert "No work found" in result.output
+
+
 def test_stats_runs_clean(tmp_path: Path):
     db_path = tmp_path / "t.db"
     _populate(db_path)

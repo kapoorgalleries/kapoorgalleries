@@ -1012,6 +1012,41 @@ def show(work_id: str, db_path: str):
 
 
 @cli.command()
+@click.argument("work_id_a")
+@click.argument("work_id_b")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def compare(work_id_a: str, work_id_b: str, db_path: str):
+    """Side-by-side comparison of two works. Useful for spotting duplicate-ID
+    bugs (e.g. the KG-1312 case where Primer minted two works under the same
+    number)."""
+    db = dbmod.get_db(db_path)
+    cols = [d[0] for d in db.execute("SELECT * FROM works LIMIT 0").description]
+    rows = {}
+    for wid in (work_id_a, work_id_b):
+        r = db.execute("SELECT * FROM works WHERE work_id = ?", [wid]).fetchone()
+        if not r:
+            click.echo(f"No work found with id {wid}.")
+            return
+        rows[wid] = dict(zip(cols, r))
+
+    skip = {"work_id", "has_conflict", "conflict_fields", "canonical_updated_at"}
+    fields = [c for c in cols if c not in skip]
+    click.echo()
+    click.echo(f"  {'field':24s} {work_id_a:38s} {work_id_b}")
+    click.echo("  " + "─" * 100)
+    for f in fields:
+        a = rows[work_id_a].get(f)
+        b = rows[work_id_b].get(f)
+        if a in (None, "") and b in (None, ""):
+            continue
+        marker = "  " if a == b else "≠ "
+        a_str = ("" if a in (None, "") else str(a))[:38]
+        b_str = ("" if b in (None, "") else str(b))[:38]
+        click.echo(f"  {marker}{f:22s} {a_str:38s} {b_str}")
+    click.echo()
+
+
+@cli.command()
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 @click.option("--max-missing", default=2, show_default=True,
               help="show works missing this many or fewer fields")
