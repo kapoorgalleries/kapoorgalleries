@@ -41,8 +41,34 @@ def _load_ingester(type_: str):
         return None  # ingester not yet implemented
 
 
+__version__ = "0.2.0"
+
+
 @click.group()
+@click.version_option(version=__version__, prog_name="kg-inv")
 def cli():
+    """Kapoor Galleries master inventory pipeline.
+
+    Common commands:
+
+      make all                   re-ingest, consolidate, generate every artifact
+      make stats                 one-screen dashboard
+      make health                full system diagnosis (stats + lint + checks)
+      make demo                  guided tour of features
+
+      kg-inv refresh             one-stop ingest + consolidate + report + lint
+      kg-inv triage              interactive conflict resolution
+      kg-inv resolve <kg> <f> <v>   record one human resolution
+      kg-inv promote <kg> <f>    lock in the current canonical value
+      kg-inv conflicts           list unresolved disagreements
+      kg-inv gaps --max-missing 1   punch list of nearly-ready works
+      kg-inv show <kg>           full per-work report
+      kg-inv search <text>       substring search
+      kg-inv export-filtered     write a filtered subset CSV
+      kg-inv suggest-rules       mine inventory for new auto-rule candidates
+      kg-inv lint                data-quality findings
+      kg-inv check-artsy         pre-flight Artsy upload validation
+    """
     pass
 
 

@@ -1,6 +1,6 @@
 [project]
 name = "kapoorgalleries-inventory"
-version = "0.1.0"
+version = "0.2.0"
 description = "Master inventory pipeline for Kapoor Galleries: ingest Primer / Artsy / catalog / sub-inventory sources into a single canonical record with full provenance."
 requires-python = ">=3.11"
 dependencies = [
