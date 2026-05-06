@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased (claude/gallery-inventory-system-phuSJ branch · 100+ commits)
+## 0.4.0 — current branch · 100+ commits
 
 Major milestones since the initial commit (2026-05-06):
 
