@@ -16,11 +16,14 @@ on:
     paths:
       - 'src/**'
       - 'catalog/**'
-      - 'data/raw/**'
+      - 'data/**'
       - 'tests/**'
       - 'pyproject.toml'
       - 'Makefile'
       - '.github/workflows/inventory.yml'
+      - 'CHANGELOG.md'
+      - 'INVENTORY.md'
+      - 'OPERATIONS.md'
   # Don't double-trigger on PR events; the push event already covers the
   # branch.  Only run on PR when it's from a fork (push wouldn't fire there).
   pull_request:
