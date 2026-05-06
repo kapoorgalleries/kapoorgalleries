@@ -539,6 +539,29 @@ def export_filtered(out_path: str, classification: str | None,
 @cli.command()
 @click.option("--limit", default=20, show_default=True)
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def whatsnew(limit: int, db_path: str):
+    """Show works whose canonical record was last updated most recently."""
+    db = dbmod.get_db(db_path)
+    rows = db.execute(
+        """SELECT work_id, title, classification, canonical_updated_at
+           FROM works WHERE canonical_updated_at IS NOT NULL
+           ORDER BY canonical_updated_at DESC, work_id
+           LIMIT ?""",
+        [limit],
+    ).fetchall()
+    if not rows:
+        click.echo("\n  no works yet.\n")
+        return
+    click.echo(f"\n  {limit} most-recently-touched works:\n")
+    for wid, title, cls, updated in rows:
+        cls_short = (cls or "")[:30]
+        click.echo(f"  {wid}  {updated[:19]}  {cls_short:30s} {(title or '')[:50]}")
+    click.echo()
+
+
+@cli.command()
+@click.option("--limit", default=20, show_default=True)
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def years(limit: int, db_path: str):
     """Distribution of works by year."""
     db = dbmod.get_db(db_path)
