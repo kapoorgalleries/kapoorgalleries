@@ -24,7 +24,7 @@
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | artist | 149 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | depth_in | 23 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | signature | 20 |
-| auto_resolution_rules | classification | 368 |
+| auto_resolution_rules | classification | 355 |
 | auto_resolution_rules | medium | 159 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | title | 16 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | primary_image_source | 16 |
@@ -35,7 +35,7 @@
 
 | Field | Works with conflict |
 |---|---:|
-| classification | 496 |
+| classification | 482 |
 | medium | 21 |
 | title | 3 |
 | year | 1 |

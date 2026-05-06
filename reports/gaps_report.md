@@ -80,7 +80,6 @@ Resolve with: `python -m src.cli resolve <KG-#> <field> "<value>" --reason "..."
 | KG-1002 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,bulk_upload_xlsx,match_workbook |
 | KG-1003 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,bulk_upload_xlsx,match_workbook |
 | KG-1004 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,bulk_upload_xlsx,match_workbook |
-| KG-1007 | classification | Object \| Sculpture | artsy_csv,bulk_upload_xlsx,match_workbook |
 | KG-1011 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,bulk_upload_xlsx,match_workbook |
 | KG-1012 | classification | Khanjar \| Design/Decorative Art | artsy_csv,bulk_upload_xlsx,match_workbook |
 | KG-1012 | medium | Jade-hilted and jeweled \| Jade-hilted and jeweled Khanjar | artsy_csv,bulk_upload_xlsx |
@@ -105,3 +104,4 @@ Resolve with: `python -m src.cli resolve <KG-#> <field> "<value>" --reason "..."
 | KG-1078 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,bulk_upload_xlsx |
 | KG-1093 | medium | Opaque watercolor on cloth \| Thangka -Opaque watercolor on cloth | artsy_csv,bulk_upload_xlsx |
 | KG-1100 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,bulk_upload_xlsx |
+| KG-1101 | classification | Painting \| Drawing \|  Collage or other Work on Paper | artsy_csv,bulk_upload_xlsx |

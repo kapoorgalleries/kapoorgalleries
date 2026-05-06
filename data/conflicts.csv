@@ -4,7 +4,6 @@ KG-1001,classification,2,Painting || Drawing ||  Collage or other Work on Paper,
 KG-1002,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,bulk_upload_xlsx,match_workbook"
 KG-1003,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,bulk_upload_xlsx,match_workbook"
 KG-1004,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,bulk_upload_xlsx,match_workbook"
-KG-1007,classification,2,Object || Sculpture,"artsy_csv,bulk_upload_xlsx,match_workbook"
 KG-1011,classification,2,Painting || Drawing ||  Collage or other Work on Paper,"artsy_csv,bulk_upload_xlsx,match_workbook"
 KG-1012,classification,2,Khanjar || Design/Decorative Art,"artsy_csv,bulk_upload_xlsx,match_workbook"
 KG-1012,medium,2,Jade-hilted and jeweled || Jade-hilted and jeweled Khanjar,"artsy_csv,bulk_upload_xlsx"

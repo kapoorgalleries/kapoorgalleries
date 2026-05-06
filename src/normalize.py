@@ -36,6 +36,19 @@ CLASSIFICATION_MAP = {
     "arms": "Design/Decorative Art",
     "weapon": "Design/Decorative Art",
     "furniture": "Design/Decorative Art",
+    "object": "Sculpture",
+    "manuscript cover": "Books and Portfolios",
+    "book": "Books and Portfolios",
+    "books and portfolios": "Books and Portfolios",
+    "coin": "Other",
+    "etching": "Print",
+    "engraving": "Print",
+    "vinyl record": "Other",
+    "map": "Print",
+    "cloth": "Painting",
+    "paper": "Drawing, Collage or other Work on Paper",
+    "helmet": "Design/Decorative Art",
+    "gate": "Design/Decorative Art",
 }
 
 
