@@ -387,7 +387,8 @@ def overview(db_path: str):
     n_artist = db.execute(
         "SELECT COUNT(*) FROM works WHERE artist IS NOT NULL"
     ).fetchone()[0]
-    sources = db.execute("SELECT COUNT(*) FROM sources").fetchone()[0]
+    # Count distinct sources by name (re-runs accumulate rows in sources).
+    sources = db.execute("SELECT COUNT(DISTINCT name) FROM sources").fetchone()[0]
     click.echo(
         f"\n  {total} works · {artsy_ready} Artsy-eligible "
         f"({round(100*artsy_ready/total)}%) · {n_artist} attributed "
