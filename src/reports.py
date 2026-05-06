@@ -109,29 +109,35 @@ def gaps_report(db: sqlite_utils.Database, out_path: Path | str, top_n: int = 50
         "| KG-# | Field | Distinct values | Sources |",
         "|---|---|---|---|",
     ]
-    for r in db.execute(
-        """WITH observed AS (
-              SELECT o.work_id, o.field, o.value, s.type AS stype
-              FROM observations o JOIN sources s ON s.id = o.source_id
-              WHERE o.value IS NOT NULL AND o.value != ''
-                AND s.type NOT IN ('human_resolution','auto_resolution')
-           )
-           SELECT work_id, field,
-                  GROUP_CONCAT(DISTINCT value),
-                  GROUP_CONCAT(DISTINCT stype)
-           FROM observed
-           GROUP BY work_id, field
-           HAVING COUNT(DISTINCT value) > 1
-              AND NOT EXISTS (
-                  SELECT 1 FROM observations o2 JOIN sources s2 ON s2.id = o2.source_id
-                  WHERE o2.work_id = observed.work_id AND o2.field = observed.field
-                    AND s2.type = 'human_resolution'
-              )
-           ORDER BY work_id, field
-           LIMIT 30"""
-    ).fetchall():
-        vals = (r[2] or "").replace(",", " \\| ")
-        lines.append(f"| {r[0]} | {r[1]} | {vals} | {r[3]} |")
+    # Aggregate Python-side — values like "Drawing, Collage or other Work on
+    # Paper" contain commas that would be split by SQL-level GROUP_CONCAT.
+    raw = db.execute(
+        """SELECT o.work_id, o.field, o.value, s.type AS stype
+           FROM observations o JOIN sources s ON s.id = o.source_id
+           WHERE o.value IS NOT NULL AND o.value != ''
+             AND s.type NOT IN ('human_resolution','auto_resolution')"""
+    ).fetchall()
+    has_human = {
+        (w, f) for (w, f) in db.execute(
+            """SELECT DISTINCT o.work_id, o.field FROM observations o
+               JOIN sources s ON s.id = o.source_id
+               WHERE s.type = 'human_resolution'"""
+        ).fetchall()
+    }
+    by_wf: dict[tuple[str, str], dict] = {}
+    for w, f, v, st in raw:
+        rec = by_wf.setdefault((w, f), {"values": set(), "stypes": set()})
+        rec["values"].add(v)
+        rec["stypes"].add(st)
+    conflicts_rows = sorted(
+        (w, f, sorted(rec["values"]), sorted(rec["stypes"]))
+        for (w, f), rec in by_wf.items()
+        if len(rec["values"]) > 1 and (w, f) not in has_human
+    )[:30]
+    for w, f, vals, stypes in conflicts_rows:
+        # Pipe-escape values for the markdown table.
+        vals_str = " \\| ".join(v.replace("|", "\\|") for v in vals)
+        lines.append(f"| {w} | {f} | {vals_str} | {','.join(stypes)} |")
 
     out.write_text("\n".join(lines) + "\n")
     return out
