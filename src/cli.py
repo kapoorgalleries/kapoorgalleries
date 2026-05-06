@@ -439,5 +439,89 @@ def gaps(db_path: str, max_missing: int, limit: int):
     click.echo()
 
 
+@cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def lint(db_path: str):
+    """Flag data-quality issues without changing anything."""
+    db = dbmod.get_db(db_path)
+    findings: list[tuple[str, str, str]] = []  # (severity, work_id, message)
+
+    # Implausibly old years.
+    for r in db.execute(
+        "SELECT work_id, year FROM works WHERE year IS NOT NULL AND year < 100"
+    ).fetchall():
+        findings.append(("error", r[0], f"year {r[1]} looks wrong (< 100)"))
+
+    # Implausibly large dimensions (>200 inches = 5+ metres).
+    for r in db.execute(
+        """SELECT work_id, height_in, width_in FROM works
+           WHERE (height_in IS NOT NULL AND height_in > 200)
+              OR (width_in IS NOT NULL AND width_in > 200)"""
+    ).fetchall():
+        findings.append(("warn", r[0], f"large dimensions h={r[1]} w={r[2]} (>200 in)"))
+
+    # Trailing whitespace in titles.
+    for r in db.execute(
+        "SELECT work_id, title FROM works WHERE title IS NOT NULL AND title != TRIM(title)"
+    ).fetchall():
+        findings.append(("warn", r[0], "title has leading/trailing whitespace"))
+
+    # Active works without an image.
+    n_no_image = db.execute(
+        """SELECT COUNT(*) FROM works
+           WHERE COALESCE(status, 'active') = 'active' AND primary_image_url IS NULL"""
+    ).fetchone()[0]
+    if n_no_image:
+        findings.append(("info", "—", f"{n_no_image} active works have no primary_image_url"))
+
+    # Active works with placeholder PNG only.
+    for r in db.execute(
+        """SELECT DISTINCT i.work_id FROM work_images i
+           JOIN works w ON w.work_id = i.work_id
+           WHERE i.is_placeholder = 1
+             AND COALESCE(w.status, 'active') = 'active'
+             AND NOT EXISTS (
+               SELECT 1 FROM work_images i2
+               WHERE i2.work_id = i.work_id AND i2.is_placeholder = 0
+             )"""
+    ).fetchall():
+        findings.append(("warn", r[0], "active work has only placeholder image"))
+
+    # Duplicate primer_uuid (a KG-# being recorded as the same Primer record twice).
+    for r in db.execute(
+        """SELECT primer_uuid, GROUP_CONCAT(work_id) FROM works
+           WHERE primer_uuid IS NOT NULL
+           GROUP BY primer_uuid HAVING COUNT(DISTINCT work_id) > 1"""
+    ).fetchall():
+        findings.append(("error", r[1], f"primer_uuid {r[0]} maps to >1 KG-# ({r[1]})"))
+
+    # Inconsistent classification capitalization across the inventory.
+    cls_variants = db.execute(
+        """SELECT classification, COUNT(*) FROM works
+           WHERE classification IS NOT NULL GROUP BY classification ORDER BY 2 DESC"""
+    ).fetchall()
+    if len({c[0].lower() for c in cls_variants}) < len(cls_variants):
+        findings.append(("info", "—", "classification has case-only variants — consider normalizing"))
+
+    if not findings:
+        click.echo("\n  no issues found.\n")
+        return
+
+    by_sev: dict[str, list] = {"error": [], "warn": [], "info": []}
+    for sev, wid, msg in findings:
+        by_sev[sev].append((wid, msg))
+    click.echo()
+    for sev in ("error", "warn", "info"):
+        rows = by_sev[sev]
+        if not rows:
+            continue
+        click.echo(f"  {sev}: {len(rows)} finding(s)")
+        for wid, msg in rows[:20]:
+            click.echo(f"    [{sev:5s}] {wid:14s} {msg}")
+        if len(rows) > 20:
+            click.echo(f"    … and {len(rows) - 20} more {sev}s")
+        click.echo()
+
+
 if __name__ == "__main__":
     cli()
