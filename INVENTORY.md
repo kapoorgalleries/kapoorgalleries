@@ -73,15 +73,33 @@ Drive / Gmail file ──► ingester ──► observations table (long format)
 ## CLI
 
 ```bash
+# Workflow shortcuts (Makefile)
 make all                    # init + ingest + consolidate + report
-kg-inv stats                # one-screen dashboard
-kg-inv conflicts            # list unresolved conflicts with resolve hints
-kg-inv gaps --max-missing 1 # punch list of works closest to upload-ready
+make stats                  # one-screen dashboard
+make health                 # full system diagnosis
+make demo                   # guided tour of features
+
+# Single commands (kg-inv ...)
+kg-inv refresh              # ingest + consolidate + report + lint + check-artsy
+kg-inv triage               # interactive conflict resolution
+kg-inv resolve <kg> <f> <v> # record one human resolution
+kg-inv promote <kg> <f>     # lock in current canonical value
+kg-inv batch-resolve <yaml> # bulk-apply pre-prepared resolutions
+
+# Read-only views
+kg-inv stats                # dashboard with progress bars
+kg-inv conflicts            # list unresolved disagreements
+kg-inv gaps --max-missing 1 # punch list of nearly-ready works
 kg-inv show KG-1312         # everything we know about one work
-kg-inv resolve KG-1000 classification \
-    "Drawing, Collage or other Work on Paper" \
-    --reason "Opaque watercolor on paper." \
-    --by sanjay@kapoors.com
+kg-inv search "Krishna"     # substring search across fields
+kg-inv artists              # roster sorted by work-count
+kg-inv lint                 # data-quality findings
+kg-inv check-artsy          # pre-flight Artsy upload validation
+kg-inv inspect-source <s>   # what one source contributed
+kg-inv source list          # registry status
+kg-inv source enable/disable <name>  # toggle from CLI
+kg-inv suggest-rules        # mine inventory for new rule candidates
+kg-inv export-filtered      # write a filtered subset CSV
 ```
 
 ## Adding a new source
