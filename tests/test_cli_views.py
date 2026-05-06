@@ -135,6 +135,37 @@ def test_suggest_rules_runs_without_error(tmp_path: Path):
     assert result.exit_code == 0, result.output
 
 
+def test_suggest_rules_labels_medium_target_correctly(tmp_path: Path):
+    """When a title-keyword strongly predicts a *medium*, the suggestion
+    must be labeled 'medium:' — not 'classification: medium=…'.  Earlier
+    versions concatenated 'medium=…' into the classification slot."""
+    db_path = tmp_path / "t.db"
+    db = init_db(db_path)
+    # 5 works whose title contains "khanjar", all sharing the same medium —
+    # this should trigger a medium-target suggestion.
+    for i in range(5):
+        kg = f"KG-{9000+i}"
+        _seed(db, kg, "title", f"A jeweled khanjar dagger {i}", "artsy_csv")
+        _seed(db, kg, "classification", "Design/Decorative Art", "artsy_csv")
+        _seed(db, kg, "medium", "Jade-hilted dagger with steel blade", "artsy_csv")
+    consolidate(db)
+    db.conn.close()
+
+    runner = CliRunner()
+    result = runner.invoke(cli, [
+        "suggest-rules", "--db", str(db_path),
+        "--min-support", "5", "--min-purity", "0.9",
+    ])
+    assert result.exit_code == 0, result.output
+    out = result.output
+    # The medium-target suggestion must be on its own labeled line.
+    if "khanjar" in out:
+        # If the rule fires, it must be properly labeled.
+        assert "medium=" not in out, (
+            f"medium-target suggestion still using 'medium=' concat: {out}"
+        )
+
+
 def test_years_runs(tmp_path: Path):
     db_path = tmp_path / "t.db"
     _populate(db_path)

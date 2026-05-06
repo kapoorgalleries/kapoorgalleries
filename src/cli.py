@@ -1456,7 +1456,9 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
                 if "_contains" in k and isinstance(v, str):
                     existing_keywords.add(v.lower())
 
-    suggestions: list[tuple[float, str, str, str, int, str]] = []
+    # Each suggestion: (purity, condition_key, condition_token,
+    #                   target_field, target_value, support, evidence)
+    suggestions: list[tuple[float, str, str, str, str, int, str]] = []
     for token, counter in title_classes.items():
         if token in existing_keywords:
             continue
@@ -1466,7 +1468,8 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
         cls, n = counter.most_common(1)[0]
         purity = n / total
         if purity >= min_purity:
-            suggestions.append((purity, "title_contains", token, cls, n,
+            suggestions.append((purity, "title_contains", token,
+                                "classification", cls, n,
                                 f"{n}/{total} works with title containing {token!r}"))
     for token, counter in medium_classes.items():
         if token in existing_keywords:
@@ -1477,7 +1480,8 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
         cls, n = counter.most_common(1)[0]
         purity = n / total
         if purity >= min_purity:
-            suggestions.append((purity, "medium_contains", token, cls, n,
+            suggestions.append((purity, "medium_contains", token,
+                                "classification", cls, n,
                                 f"{n}/{total} works with medium containing {token!r}"))
 
     # Also: where a title-keyword strongly predicts a specific medium, suggest
@@ -1491,19 +1495,21 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
         medium, n = counter.most_common(1)[0]
         purity = n / total
         if purity >= min_purity:
-            suggestions.append((
-                purity, "title_contains", token,
-                f"medium={medium}", n,
-                f"{n}/{total} works with title containing {token!r}"))
+            suggestions.append((purity, "title_contains", token,
+                                "medium", medium, n,
+                                f"{n}/{total} works with title containing {token!r}"))
 
-    suggestions.sort(key=lambda x: (-x[4], -x[0]))
+    suggestions.sort(key=lambda x: (-x[5], -x[0]))
     if not suggestions:
         click.echo("\n  No new high-purity patterns found above the thresholds.\n")
         return
 
     click.echo(f"\n  {len(suggestions)} suggested rules (purity ≥ {min_purity:.0%}, support ≥ {min_support}):\n")
-    for purity, key, tok, cls, n, evidence in suggestions[:20]:
-        click.echo(f"  - if: {{ {key}: {tok} }}  =>  classification: {cls}  ({evidence}, purity {purity:.0%})")
+    for purity, key, tok, target_field, target_value, n, evidence in suggestions[:20]:
+        click.echo(
+            f"  - if: {{ {key}: {tok} }}  =>  {target_field}: {target_value}  "
+            f"({evidence}, purity {purity:.0%})"
+        )
     if len(suggestions) > 20:
         click.echo(f"  ... and {len(suggestions)-20} more")
     click.echo()
