@@ -1540,7 +1540,10 @@ def check_artsy(csv_path: str):
                     issues.append(("warn", wid, f"price {f} < 0"))
 
     if not issues:
-        click.echo(f"\n  artsy_upload.csv: OK ({csv_path}).\n")
+        # Count rows for the OK message.
+        with p.open(newline="") as fh:
+            n_rows = sum(1 for _ in csv.reader(fh)) - 1
+        click.echo(f"\n  artsy_upload.csv: OK ({n_rows} rows in {csv_path}).\n")
         return
 
     by_sev: dict[str, list] = {"error": [], "warn": []}
