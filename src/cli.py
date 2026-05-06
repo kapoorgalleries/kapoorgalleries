@@ -803,6 +803,18 @@ def lint(db_path: str):
     if len({c[0].lower() for c in cls_variants}) < len(cls_variants):
         findings.append(("info", "—", "classification has case-only variants — consider normalizing"))
 
+    # Suspicious artist values that look like consignment/workshop tags.
+    for r in db.execute(
+        """SELECT work_id, artist FROM works
+           WHERE artist IS NOT NULL
+             AND (LOWER(artist) LIKE '%consignment%'
+               OR LOWER(artist) LIKE '%consignmnet%'
+               OR LOWER(artist) LIKE '%unspecified%'
+               OR LOWER(artist) = 'unknown'
+               OR LOWER(artist) = 'unknown artist')"""
+    ).fetchall():
+        findings.append(("warn", r[0], f"suspicious artist value {r[1]!r} — likely belongs in another field"))
+
     if not findings:
         click.echo("\n  no issues found.\n")
         return
