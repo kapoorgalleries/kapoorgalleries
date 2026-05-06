@@ -44,6 +44,19 @@ conflicts:
 	$(PY) -m src.cli conflicts
 gaps:
 	$(PY) -m src.cli gaps --max-missing 1
+sources:
+	$(PY) -m src.cli source list
+
+# Full system health snapshot.
+health: stats lint
+	@echo "==== source list ===="
+	@$(PY) -m src.cli source list || true
+	@echo "==== conflicts (top 5) ===="
+	@$(PY) -m src.cli conflicts --limit 5 || true
+	@echo "==== artsy upload validation ===="
+	@$(PY) -m src.cli check-artsy || true
+	@echo "==== rule suggestions (top 5) ===="
+	@$(PY) -m src.cli suggest-rules --min-support 10 | head -10 || true
 
 clean:
 	rm -f data/inventory.db data/master.csv data/master_long.csv data/conflicts.csv data/gaps.csv data/artsy_upload.csv
