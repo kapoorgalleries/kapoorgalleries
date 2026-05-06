@@ -58,6 +58,30 @@ health: stats lint
 	@echo "==== rule suggestions (top 5) ===="
 	@$(PY) -m src.cli suggest-rules --min-support 10 | head -10 || true
 
+# Guided tour of the system's main features.  Read-only: doesn't modify data.
+demo:
+	@echo "===== Kapoor Galleries · Inventory · guided tour ====="
+	@echo
+	@echo "===== make stats ====="
+	@$(PY) -m src.cli stats
+	@echo "===== make lint ====="
+	@$(PY) -m src.cli lint
+	@echo "===== make conflicts (top 5) ====="
+	@$(PY) -m src.cli conflicts --limit 5
+	@echo "===== kg-inv show KG-1000 ====="
+	@$(PY) -m src.cli show KG-1000
+	@echo "===== kg-inv search 'khanjar' ====="
+	@$(PY) -m src.cli search khanjar
+	@echo "===== make check-artsy ====="
+	@$(PY) -m src.cli check-artsy
+	@echo
+	@echo "===== try interactively: ====="
+	@echo "  python -m src.cli triage"
+	@echo "  python -m src.cli resolve KG-1000 classification \"Drawing, …\" --by you@…"
+	@echo "  python -m src.cli suggest-rules"
+	@echo "  python -m src.cli export-filtered --classification Sculpture --out my.csv"
+	@echo
+
 clean:
 	rm -f data/inventory.db data/master.csv data/master_long.csv data/conflicts.csv data/gaps.csv data/artsy_upload.csv
 	rm -f reports/*.md
