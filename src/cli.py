@@ -347,6 +347,35 @@ def conflicts(db_path: str, limit: int):
 
 
 @cli.command()
+@click.argument("query")
+@click.option("--limit", default=30, show_default=True)
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def search(query: str, limit: int, db_path: str):
+    """Substring search across title / medium / materials / provenance."""
+    db = dbmod.get_db(db_path)
+    pat = f"%{query}%"
+    rows = db.execute(
+        """SELECT work_id, title, classification, medium, year
+           FROM works
+           WHERE title LIKE ? COLLATE NOCASE
+              OR medium LIKE ? COLLATE NOCASE
+              OR materials LIKE ? COLLATE NOCASE
+              OR provenance_text LIKE ? COLLATE NOCASE
+           ORDER BY work_id LIMIT ?""",
+        [pat, pat, pat, pat, limit],
+    ).fetchall()
+    if not rows:
+        click.echo(f"\n  no matches for {query!r}.\n")
+        return
+    click.echo(f"\n  {len(rows)} match{'es' if len(rows) > 1 else ''} for {query!r}:\n")
+    for wid, title, cls, medium, year in rows:
+        cls_short = (cls or "")[:30]
+        medium_short = (medium or "")[:40]
+        click.echo(f"  {wid}  {(year or '')!s:5} {cls_short:30s} {(title or '')[:50]}")
+    click.echo()
+
+
+@cli.command()
 @click.argument("work_id")
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 def show(work_id: str, db_path: str):
