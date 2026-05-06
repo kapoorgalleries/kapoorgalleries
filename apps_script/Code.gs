@@ -27,12 +27,65 @@ function onOpen() {
     .createMenu('Inventory')
     .addItem('Refresh from repo', 'refreshFromRepo')
     .addItem('Show stats', 'showStats')
+    .addItem('Show price distribution', 'showPriceDistribution')
     .addItem('Highlight conflicts', 'highlightConflicts')
     .addSeparator()
     .addItem('Inspect selected work', 'showGapsForSelectedWork')
     .addItem('Suggest resolution for selected cell', 'suggestResolution')
     .addItem('Open Drive folder for KG-#', 'openDriveForSelectedWork')
     .addToUi();
+}
+
+function showPriceDistribution() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName(MASTER_SHEET);
+  if (!sheet) { SpreadsheetApp.getUi().alert('Refresh first.'); return; }
+  var data = sheet.getDataRange().getValues();
+  if (data.length < 2) return;
+  var header = data[0];
+  var priceCol = header.indexOf('price_usd');
+  if (priceCol < 0) { SpreadsheetApp.getUi().alert('No price_usd column.'); return; }
+
+  var bands = [
+    { label: 'under $1k', max: 1000, n: 0, total: 0 },
+    { label: '$1k–$5k',    max: 5000, n: 0, total: 0 },
+    { label: '$5k–$10k',   max: 10000, n: 0, total: 0 },
+    { label: '$10k–$25k',  max: 25000, n: 0, total: 0 },
+    { label: '$25k–$50k',  max: 50000, n: 0, total: 0 },
+    { label: '$50k–$100k', max: 100000, n: 0, total: 0 },
+    { label: '$100k–$250k', max: 250000, n: 0, total: 0 },
+    { label: '$250k+',      max: Infinity, n: 0, total: 0 },
+  ];
+  for (var r = 1; r < data.length; r++) {
+    var p = parseFloat(data[r][priceCol]);
+    if (!p || p <= 0) continue;
+    for (var i = 0; i < bands.length; i++) {
+      if (p < bands[i].max) {
+        bands[i].n++;
+        bands[i].total += p;
+        break;
+      }
+    }
+  }
+  var totalN = bands.reduce(function(s, b) { return s + b.n; }, 0);
+  var totalSum = bands.reduce(function(s, b) { return s + b.total; }, 0);
+  var html = '<style>body{font-family:Arial,sans-serif;padding:14px}'
+    + 'table{border-collapse:collapse;width:100%;font-size:12px}'
+    + 'td,th{padding:3px 6px;text-align:left}.bar{background:#1976d2;height:8px;border-radius:4px}</style>'
+    + '<h3>' + totalN + ' priced works · $' + Math.round(totalSum).toLocaleString() + '</h3>'
+    + '<table><tr><th>band</th><th>count</th><th>%</th><th>total</th></tr>';
+  for (var j = 0; j < bands.length; j++) {
+    var b = bands[j];
+    if (b.n === 0) continue;
+    var pct = Math.round(100 * b.n / totalN);
+    html += '<tr><td>' + b.label + '</td><td>' + b.n
+        + '</td><td><div class="bar" style="width:' + pct + '%"></div> ' + pct + '%</td>'
+        + '<td>$' + Math.round(b.total).toLocaleString() + '</td></tr>';
+  }
+  html += '</table>';
+  SpreadsheetApp.getUi().showSidebar(
+    HtmlService.createHtmlOutput(html).setTitle('Inventory · prices')
+  );
 }
 
 function refreshFromRepo() {
