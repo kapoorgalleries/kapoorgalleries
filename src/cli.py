@@ -336,6 +336,18 @@ def resolve(work_id: str, field: str, value: str, reason: str, decided_by: str,
     p.parent.mkdir(parents=True, exist_ok=True)
     entries = yaml.safe_load(p.read_text()) if p.exists() else []
     entries = entries or []
+    # Warn (don't fail) if there's already an entry for this (work, field).
+    dupe = next(
+        (e for e in entries if e.get("work_id") == work_id and e.get("field") == field),
+        None,
+    )
+    if dupe:
+        click.echo(
+            f"NOTE: an existing resolution for {work_id}.{field} = "
+            f"{dupe.get('value')!r} is already in {yaml_path}. "
+            f"Appending the new value; the most-recent wins at consolidate time.",
+            err=True,
+        )
     entries.append(new_entry)
     p.write_text(yaml.safe_dump(entries, sort_keys=False, default_flow_style=False))
     click.echo(f"Appended to {yaml_path}: {work_id}.{field} = {value!r}")
