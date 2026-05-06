@@ -92,3 +92,30 @@ def test_auto_resolution_does_not_inflate_conflict_count(tmp_path: Path):
     assert row[0] == "Drawing, Collage or other Work on Paper"
     # Only one observed value (Painting); auto-resolution overrode it.
     assert row[1] == 0
+
+
+def test_match_workbook_beats_primer(tmp_path: Path):
+    """Match Workbook is in priority band 3, beats artsy_csv (band 4)."""
+    db = init_db(tmp_path / "t.db")
+    _seed_observation(db, "KG-X", "classification", "Painting", "artsy_csv", "2026-04-01")
+    _seed_observation(db, "KG-X", "classification", "Drawing", "match_workbook", "2026-01-01")
+    consolidate(db)
+    row = db.execute(
+        "SELECT classification FROM works WHERE work_id='KG-X'"
+    ).fetchone()
+    assert row[0] == "Drawing"  # Match Workbook wins despite being older
+
+
+def test_priority_human_beats_auto_beats_match_beats_primer(tmp_path: Path):
+    """Verify the full priority cascade."""
+    db = init_db(tmp_path / "t.db")
+    _seed_observation(db, "KG-Y", "classification", "Painting", "artsy_csv")
+    _seed_observation(db, "KG-Y", "classification", "Drawing", "match_workbook")
+    _seed_observation(db, "KG-Y", "classification", "Sculpture", "auto_resolution")
+    _seed_observation(db, "KG-Y", "classification", "Print", "human_resolution")
+    consolidate(db)
+    row = db.execute(
+        "SELECT classification, has_conflict FROM works WHERE work_id='KG-Y'"
+    ).fetchone()
+    assert row[0] == "Print"  # Human always wins
+    assert row[1] == 0  # Human resolution closes the conflict
