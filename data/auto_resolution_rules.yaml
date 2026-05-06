@@ -54,6 +54,56 @@
     classification: Sculpture
   reason: "Gilt-bronze cast works are sculptures."
 
+- if:
+    medium_contains: copper
+  then:
+    classification: Sculpture
+  reason: "Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%)."
+
+- if:
+    medium_contains: brass
+  then:
+    classification: Sculpture
+  reason: "Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%)."
+
+- if:
+    medium_contains: alloy
+  then:
+    classification: Sculpture
+  reason: "Cast-alloy works are sculptures (suggested by kg-inv suggest-rules: 18/18 100%)."
+
+# --- Medium-keyword classifications mined by suggest-rules ---
+- if:
+    medium_contains: photograph
+  then:
+    classification: Photograph
+  reason: "Works with photograph in medium are Photographs (20/20 100%)."
+
+- if:
+    medium_contains: woodblock
+  then:
+    classification: Print
+  reason: "Woodblock prints (17/17 100%)."
+
+- if:
+    medium_contains: lithographic
+  then:
+    classification: "Drawing, Collage or other Work on Paper"
+  reason: "Lithographic prints on paper (12/12 100%)."
+
+# --- Title-keyword classifications for sculptures ---
+- if:
+    title_contains: bodhisattva
+  then:
+    classification: Sculpture
+  reason: "Bodhisattva figures are sculptures (10/10 100%)."
+
+- if:
+    title_contains: stele
+  then:
+    classification: Sculpture
+  reason: "Steles are sculptures (8/8 100%)."
+
 # --- decorative-arts keywords in title -> Design/Decorative Art ---
 - if:
     title_contains: khanjar

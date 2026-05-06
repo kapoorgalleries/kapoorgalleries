@@ -24,7 +24,7 @@
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | artist | 149 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | depth_in | 23 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | signature | 20 |
-| auto_resolution_rules | classification | 355 |
+| auto_resolution_rules | classification | 378 |
 | auto_resolution_rules | medium | 159 |
 | auto_resolution_rules | artist | 21 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | title | 16 |
