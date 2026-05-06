@@ -234,10 +234,27 @@ def source_cmd(action: str, name: str | None, sources: str):
             enabled = e.get("enabled", True)
             tag = "✓" if enabled else "✗"
             local = e.get("local_path", "")
-            exists = "•" if local and Path(local).exists() else " "
-            click.echo(f"  {tag} {exists}  {e.get('type','?'):20s}  {e.get('name','?')}")
+            local_path = Path(local) if local else None
+            if local_path and local_path.exists():
+                if local_path.is_file():
+                    sz = local_path.stat().st_size
+                    if sz >= 1024 * 1024:
+                        size_str = f"{sz/1024/1024:.1f}M"
+                    elif sz >= 1024:
+                        size_str = f"{sz/1024:.0f}K"
+                    else:
+                        size_str = f"{sz}B"
+                else:
+                    n = sum(1 for _ in local_path.iterdir())
+                    size_str = f"{n} files"
+            else:
+                size_str = "—"
+            click.echo(
+                f"  {tag} {size_str:>9}  {e.get('type','?'):20s}  "
+                f"{e.get('name','?')}"
+            )
         click.echo()
-        click.echo("  ✓=enabled  ✗=disabled  •=local file present")
+        click.echo("  ✓=enabled  ✗=disabled  size shows local file presence")
         return
 
     if not name:
