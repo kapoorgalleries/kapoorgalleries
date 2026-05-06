@@ -22,21 +22,39 @@ from ..normalize import (
 from ..schema import Observation
 from ._base import IngestResult, Ingester
 
+# Artsy's bulk upload template has an unusual column convention:
+#   "Medium"     => Artsy classification taxonomy (e.g. "Drawing, Collage…")
+#   "Materials"  => the actual medium description (e.g. "Opaque watercolor…")
+# So we route the columns as Primer expects, not as the literal labels imply.
 COLUMN_MAP = {
     "Inventory ID (OPTIONAL)": "_id",
     "Artist Name": "artist",
     "Title": "title",
     "Year": "year",
     "Price": "price_usd",
-    "Medium": "medium",
-    "Materials": "materials",
+    "Medium": "classification",     # not a typo: Artsy's "Medium" = our classification
+    "Materials": "medium",          # and Artsy's "Materials" = our medium
     "Height": "height_in",
     "Width": "width_in",
     "Depth": "depth_in",
     "Certificate of Authenticity": "coa_status",
     "Signature": "signature",
-    "Classification": "classification",
+    "Classification": "_artsy_classification",  # often empty in the export
 }
+
+def _decimal_with_comma_recovery(value):
+    """Excel often parses '11,125' (= 11 + 1/8 in.) as integer 11125.
+
+    Recover by dividing by 1000 when the value is implausibly large for a
+    physical artwork dimension AND the recovered value is plausible.
+    """
+    f = normalize_decimal(value)
+    if f is None:
+        return None
+    if f > 200 and 0.05 < (f / 1000) < 200:
+        return f / 1000
+    return f
+
 
 NORMALIZERS = {
     "artist": normalize_artist,
@@ -45,12 +63,12 @@ NORMALIZERS = {
     "price_usd": normalize_price,
     "classification": normalize_classification,
     "medium": clean,
-    "materials": clean,
-    "height_in": normalize_decimal,
-    "width_in": normalize_decimal,
-    "depth_in": normalize_decimal,
+    "height_in": _decimal_with_comma_recovery,
+    "width_in": _decimal_with_comma_recovery,
+    "depth_in": _decimal_with_comma_recovery,
     "coa_status": clean,
     "signature": clean,
+    "_artsy_classification": clean,  # ignored — kept for completeness
 }
 
 
@@ -86,7 +104,7 @@ class BulkUploadXlsxIngester(Ingester):
             seen.add(kg)
             ref = f"row={r_i}"
             for field, ix in idx.items():
-                if field == "_id":
+                if field.startswith("_"):
                     continue
                 raw = row[ix]
                 if raw is None:

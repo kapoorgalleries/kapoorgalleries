@@ -1,7 +1,7 @@
 # Inventory coverage
 
 - Total works: **1415**
-- Works with at least one conflict: **476**
+- Works with at least one conflict: **248**
 
 ## Field-level coverage
 
@@ -11,9 +11,9 @@
 | artist | 149 | 10.5% |
 | year | 892 | 63.0% |
 | period_school_region | 0 | 0.0% |
-| classification | 638 | 45.1% |
-| medium | 1164 | 82.3% |
-| materials | 1076 | 76.0% |
+| classification | 1216 | 85.9% |
+| medium | 1220 | 86.2% |
+| materials | 16 | 1.1% |
 | height_in | 416 | 29.4% |
 | width_in | 363 | 25.7% |
 | depth_in | 23 | 1.6% |
@@ -35,9 +35,9 @@
 
 | Source | Type | Rows | Extracted at |
 |---|---|---:|---|
-| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T06:30:16.602114+00:00 |
-| Kapoor Galleries - Bulk upload Template Artsy.xlsx | bulk_upload_xlsx | 1424 | 2026-05-06T06:30:16.883755+00:00 |
-| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T06:30:16.927638+00:00 |
-| Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T06:30:16.943625+00:00 |
-| human_resolutions | human_resolution |  | 2026-05-06T06:30:17.000838+00:00 |
-| auto_resolution_rules | auto_resolution | 22 | 2026-05-06T06:30:17.318062+00:00 |
+| Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T06:32:11.292937+00:00 |
+| Kapoor Galleries - Bulk upload Template Artsy.xlsx | bulk_upload_xlsx | 1424 | 2026-05-06T06:32:11.599972+00:00 |
+| match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T06:32:11.647508+00:00 |
+| Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T06:32:11.660597+00:00 |
+| human_resolutions | human_resolution |  | 2026-05-06T06:32:11.719807+00:00 |
+| auto_resolution_rules | auto_resolution | 22 | 2026-05-06T06:32:12.049055+00:00 |
