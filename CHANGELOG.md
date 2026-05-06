@@ -1,8 +1,10 @@
 # Changelog
 
-## Unreleased (claude/gallery-inventory-system-phuSJ branch)
+## Unreleased (claude/gallery-inventory-system-phuSJ branch · 100+ commits)
 
 Major milestones since the initial commit (2026-05-06):
+
+> 1,415 works · 600 Artsy-eligible (42%) · 128 attributed (9%) · 247 conflicts · 6 sources ingested · 54 tests · 31 CLI commands · CI green.
 
 ### 0.4 — bulk upload + data quality
 
