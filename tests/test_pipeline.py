@@ -5,15 +5,21 @@ This is slower than the unit tests (~5s) but covers the cross-cutting
 behaviour (every ingester runs, schema priority, conflicts detection).
 """
 
+import sys
 from pathlib import Path
 
 import subprocess
 
 
 REPO = Path(__file__).resolve().parents[1]
+PY = sys.executable  # use the same interpreter that pytest is running under
 
 
 def _run(cmd: list[str]) -> subprocess.CompletedProcess:
+    # Replace any leading "python3" with the actual interpreter so the
+    # subprocess inherits the venv / installed package.
+    if cmd and cmd[0] == "python3":
+        cmd = [PY] + cmd[1:]
     return subprocess.run(cmd, cwd=REPO, capture_output=True, text=True, timeout=120)
 
 
