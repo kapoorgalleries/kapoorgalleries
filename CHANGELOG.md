@@ -4,7 +4,31 @@
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,415 works · 600 Artsy-eligible (42%) · 128 attributed (9%) · 247 conflicts · 6 sources ingested · 70 tests · 34 CLI commands · CI green.
+> 1,520 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 247 conflicts · 7 sources ingested · 73 tests · 36 CLI commands · CI green.
+
+### 0.4.2 — Graham sub-inventory + curator tooling
+
+- **Graham Inventory ingester** (105 owned-collection works) — first
+  enabled sub-inventory, ~50 KB PDF committed for CI rebuilds.  Parser
+  is conservative on artist/title splitting (combined-string title)
+  but extracts year reliably (42 of 105).
+- **`kg-inv timeline`** — append-only `data/history.csv` snapshot of
+  overview metrics (works, eligible, attributed, conflicts).  Same-day
+  re-runs replace, don't accumulate.
+- **`kg-inv audit-rules`** — DEAD/SUSPECT/OK status per auto-resolution
+  rule, based on actual firing counts and curator overrides in the
+  human_resolutions layer.  Currently 11 of 40 rules DEAD in this
+  inventory — candidates for pruning.
+- **`kg-inv check-artsy` strengthened** — placeholder-title detection
+  ("Untitled", "Need title"), oversize-dimension warnings (>200 in),
+  excessively-long titles.  Caught 24 placeholder titles in the
+  current upload-ready set.
+- **Apps Script "Show timeline"** — pulls `history.csv` and renders a
+  per-day table with green/red deltas, so curators see progress
+  without leaving the Sheet.
+- **`Inventory_for_2024_catalog.xlsx` reclassified as `reference`**
+  (not inventory) — it's a curatorial brainstorm document with 170
+  untethered title strings, no KG-# / artist / medium.
 
 ### 0.4.1 — output determinism & comma-value bug fixes
 
