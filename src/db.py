@@ -22,16 +22,16 @@ def init_db(path: Path | str = DB_PATH) -> sqlite_utils.Database:
     """Create or RESET the schema.
 
     Drops the existing data tables (observations, sources, works,
-    work_images, v_conflicts) before re-creating, so that re-running
-    `make ingest` doesn't accumulate stale source rows from prior runs.
+    work_images) before re-creating, so that re-running `make ingest`
+    doesn't accumulate stale source rows from prior runs.  Also drops
+    the legacy v_conflicts view if present (removed in 0.4.1; counted
+    resolution-layer values as conflicts).
     """
     db = get_db(path)
     # Order matters: drop dependent objects first.
-    for tbl in ("v_conflicts", "work_images", "works", "observations", "sources"):
-        try:
-            db.execute(f"DROP TABLE IF EXISTS {tbl};")
-        except Exception:
-            db.execute(f"DROP VIEW IF EXISTS {tbl};")
+    db.execute("DROP VIEW IF EXISTS v_conflicts;")
+    for tbl in ("work_images", "works", "observations", "sources"):
+        db.execute(f"DROP TABLE IF EXISTS {tbl};")
     for stmt in [s.strip() for s in DDL.split(";") if s.strip()]:
         db.execute(stmt + ";")
     db.conn.commit()

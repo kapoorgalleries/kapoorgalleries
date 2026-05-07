@@ -169,9 +169,6 @@ def provenance_report(db: sqlite_utils.Database, out_path: Path | str) -> Path:
     # Mirror the gaps-report logic: a "conflict" is a real disagreement
     # among observation sources, ignoring (a) resolution-layer values
     # and (b) any (work, field) where a human resolution exists.
-    # v_conflicts counts everything, which inflates the totals (e.g.
-    # auto_resolution introducing classification: Sculpture against
-    # Primer's Painting would show as a conflict).
     raw = db.execute(
         """SELECT o.work_id, o.field, o.value
            FROM observations o JOIN sources s ON s.id = o.source_id

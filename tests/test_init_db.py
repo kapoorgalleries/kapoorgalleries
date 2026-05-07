@@ -27,13 +27,25 @@ def test_init_db_resets_existing_db(tmp_path: Path):
     assert n_sources_after == 0
 
 
-def test_init_db_creates_views(tmp_path: Path):
-    """Schema includes the v_conflicts view after init."""
-    db = init_db(tmp_path / "t.db")
-    rows = db.execute(
+def test_init_db_drops_legacy_v_conflicts_view(tmp_path: Path):
+    """v_conflicts was removed in 0.4.1 (over-counted conflicts).
+    init_db must drop it on existing DBs that still have it so the
+    schema is clean — leaving it would cause confusion if anyone
+    queried it expecting current numbers."""
+    p = tmp_path / "t.db"
+    db = init_db(p)
+    # Manually re-create the legacy view to simulate an upgraded DB
+    db.execute(
+        "CREATE VIEW v_conflicts AS SELECT work_id, field FROM observations"
+    )
+    db.conn.commit()
+    db.conn.close()
+
+    db = init_db(p)
+    views = [r[0] for r in db.execute(
         "SELECT name FROM sqlite_master WHERE type = 'view'"
-    ).fetchall()
-    assert any(r[0] == "v_conflicts" for r in rows)
+    ).fetchall()]
+    assert "v_conflicts" not in views
 
 
 def test_init_db_idempotent(tmp_path: Path):

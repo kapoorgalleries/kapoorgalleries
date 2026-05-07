@@ -112,17 +112,13 @@ CREATE TABLE IF NOT EXISTS work_images (
     source_id INTEGER REFERENCES sources(id)
 );
 CREATE INDEX IF NOT EXISTS ix_img_work ON work_images(work_id);
-
-DROP VIEW IF EXISTS v_conflicts;
-CREATE VIEW v_conflicts AS
-SELECT work_id,
-       field,
-       COUNT(DISTINCT value) AS distinct_values,
-       GROUP_CONCAT(value, ' || ') AS values_seen
-FROM (SELECT DISTINCT work_id, field, value FROM observations WHERE value IS NOT NULL AND value != '')
-GROUP BY work_id, field
-HAVING distinct_values > 1;
 """
+
+# Note: a SQL view named `v_conflicts` lived here through 0.4.0.  It
+# aggregated distinct values per (work, field) but had no awareness of
+# the resolution layer, so an auto-rule overriding Primer's value
+# registered as a phantom conflict.  Removed in 0.4.1; reports now
+# compute conflicts in Python with resolution-source exclusion.
 
 
 class Observation(BaseModel):
