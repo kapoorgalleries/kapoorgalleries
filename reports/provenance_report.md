@@ -17,6 +17,11 @@
 | Graham Inventory - owned.pdf | external_id_system | 105 |
 | Graham Inventory - owned.pdf | external_id | 105 |
 | Graham Inventory - owned.pdf | year | 42 |
+| July 2022 Textile Boxes Inventory.docx | title | 6 |
+| July 2022 Textile Boxes Inventory.docx | external_id_system | 6 |
+| July 2022 Textile Boxes Inventory.docx | external_id | 6 |
+| July 2022 Textile Boxes Inventory.docx | classification | 6 |
+| July 2022 Textile Boxes Inventory.docx | provenance_text | 4 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | status | 1415 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | title | 1411 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | classification | 1106 |

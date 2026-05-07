@@ -110,10 +110,16 @@
   enabled: false
 
 - name: July 2022 Textile Boxes Inventory.docx
-  type: sub_inventory
+  type: textile_boxes
   drive_file_id: 1SRs4jmAFSB0brRy_5WPAhkBALX8cWrRA
   local_path: data/raw/Textile_Boxes_2022-07.docx
-  enabled: false
+  enabled: true
+  notes: |
+    Word doc with a "Box N: <topic>" hierarchy.  Items inside boxes
+    don't have unique IDs ("2 men's coats, early 20th C"), so the
+    unit of identity is the BOX.  Each box becomes one record with
+    classification=Textile Arts and provenance_text containing the
+    full description.
 
 # --- Catalog production (year-based) ---
 - name: Inventory for 2024 catalog.xlsx

@@ -14860,6 +14860,22 @@
     "has_conflict": 0
   },
   {
+    "work_id": "UNRESOLVED-31b7b70887",
+    "title": "Box 1: see hand-written notes",
+    "classification": "Textile Arts",
+    "external_id": "Box-1",
+    "external_id_system": "Textile Boxes 2022-07",
+    "has_conflict": 0
+  },
+  {
+    "work_id": "UNRESOLVED-31bfdb6891",
+    "title": "Box 6: Malian Hunter’s Shirts",
+    "classification": "Textile Arts",
+    "external_id": "Box-6",
+    "external_id_system": "Textile Boxes 2022-07",
+    "has_conflict": 0
+  },
+  {
     "work_id": "UNRESOLVED-32866b0e64",
     "title": "Moigniez, Jules Pair of Hares",
     "year": 1880,
@@ -14887,6 +14903,15 @@
     "title": "Fratin, Christopher Tiger and Ostrich",
     "external_id": "G41078",
     "external_id_system": "Graham Inventory owned",
+    "has_conflict": 0
+  },
+  {
+    "work_id": "UNRESOLVED-3fc6a61a52",
+    "title": "Box 4: Central Asia, Guatemala, Africa, South Sumatra",
+    "classification": "Textile Arts",
+    "provenance_text": "Central Asia: 2 pieces\nUzbek Suzani, very large, used as screen (~50in x 180in)\nIkat coat: loaned to Mpls Inst of Arts ~1980 for display in Ikat show\nGuatemala:3 pieces\nTzute from Quezaltanango\nCeremonial huipile from San Mateo Ixtatlan, Huehuetenango, ~1960 (no picture)\nPanel (no picture)\nAfrica: 5 pieces\nNigeria: 1 panel; 1 adire cloth (no picture)\nBurkina Faso indigo skirt (no picture)\nGhana/Togo\nAshanti chief’s wrap, 1st half 20th C, (~80in x 240in)\nEwe, 1st half 20th C (~80in x 125in)\nChief’s wrap, early 20th C; illustrated in Gillow’s African Textiles: Color and Creativity across a Continent (possibly fig 25)\nSouth Sumatria: 1 lampung",
+    "external_id": "Box-4",
+    "external_id_system": "Textile Boxes 2022-07",
     "has_conflict": 0
   },
   {
@@ -14970,6 +14995,15 @@
     "year": 1870,
     "external_id": "G80016",
     "external_id_system": "Graham Inventory owned",
+    "has_conflict": 0
+  },
+  {
+    "work_id": "UNRESOLVED-5afc5baf22",
+    "title": "Box 2: Central Asia",
+    "classification": "Textile Arts",
+    "provenance_text": "Afghanistan: 2 men’s coats, early 20th C\nPurple and black stripe on velvet\nBlue, yellow, white stripe\nUzbekistan: 6 pieces\n1 Perenje, green embroidered, ikat interior trim\n1 Atlas silk coat, ikat stripes, gold embroidery\n4 Ikat chapans",
+    "external_id": "Box-2",
+    "external_id_system": "Textile Boxes 2022-07",
     "has_conflict": 0
   },
   {
@@ -15158,6 +15192,24 @@
     "title": "Berge, Edward Henry Portrait of the Black Children",
     "external_id": "G41120",
     "external_id_system": "Graham Inventory owned",
+    "has_conflict": 0
+  },
+  {
+    "work_id": "UNRESOLVED-9165f4ce9b",
+    "title": "Box 5: (never opened)",
+    "classification": "Textile Arts",
+    "provenance_text": "Egyptian decorative textile, early 20th C\nUzbek Ikat Chapan",
+    "external_id": "Box-5",
+    "external_id_system": "Textile Boxes 2022-07",
+    "has_conflict": 0
+  },
+  {
+    "work_id": "UNRESOLVED-9233f715a0",
+    "title": "Box 3: Central Asia, Ottoman, Iran",
+    "classification": "Textile Arts",
+    "provenance_text": "Afghanistan: 3 shawls, 1 large (100inches long) with beaded ends\nUzbekistan: 5 pieces\n2 ikat panels\n1 Suzani door surround, embroidery on black velvet\n1 panel, pink and green embroidery on black velvet (? Origin)\nUzbek/Ottoman panel, red and gold on indigo\nOttoman: 5 pieces/panels\n2 gold embroidery on red\n1 bedspread, gold on fuschia\n1 square panel, gold and black and red\n1 runner, gold and black and red\nIran: 1 stamped/printed panel",
+    "external_id": "Box-3",
+    "external_id_system": "Textile Boxes 2022-07",
     "has_conflict": 0
   },
   {

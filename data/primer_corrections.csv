@@ -622,6 +622,14 @@ UNRESOLVED-2fc46ce490,external_id_system,,Graham Inventory owned,sub_inventory,(
 UNRESOLVED-31292b9ca7,title,,"Barye, Antoine-Louis Cheval Turc No 3",sub_inventory,(filled from sub_inventory)
 UNRESOLVED-31292b9ca7,external_id,,G80000,sub_inventory,(filled from sub_inventory)
 UNRESOLVED-31292b9ca7,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-31b7b70887,title,,Box 1: see hand-written notes,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31b7b70887,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31b7b70887,external_id,,Box-1,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31b7b70887,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31bfdb6891,title,,Box 6: Malian Hunter’s Shirts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31bfdb6891,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31bfdb6891,external_id,,Box-6,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31bfdb6891,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
 UNRESOLVED-32866b0e64,title,,"Moigniez, Jules Pair of Hares",sub_inventory,(filled from sub_inventory)
 UNRESOLVED-32866b0e64,year,,1880,sub_inventory,(filled from sub_inventory)
 UNRESOLVED-32866b0e64,external_id,,G41134,sub_inventory,(filled from sub_inventory)
@@ -636,6 +644,25 @@ UNRESOLVED-3e7949c7a2,external_id_system,,Graham Inventory owned,sub_inventory,(
 UNRESOLVED-3eb4283e5d,title,,"Fratin, Christopher Tiger and Ostrich",sub_inventory,(filled from sub_inventory)
 UNRESOLVED-3eb4283e5d,external_id,,G41078,sub_inventory,(filled from sub_inventory)
 UNRESOLVED-3eb4283e5d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3fc6a61a52,title,,"Box 4: Central Asia, Guatemala, Africa, South Sumatra",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-3fc6a61a52,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-3fc6a61a52,provenance_text,,"Central Asia: 2 pieces
+Uzbek Suzani, very large, used as screen (~50in x 180in)
+Ikat coat: loaned to Mpls Inst of Arts ~1980 for display in Ikat show
+Guatemala:3 pieces
+Tzute from Quezaltanango
+Ceremonial huipile from San Mateo Ixtatlan, Huehuetenango, ~1960 (no picture)
+Panel (no picture)
+Africa: 5 pieces
+Nigeria: 1 panel; 1 adire cloth (no picture)
+Burkina Faso indigo skirt (no picture)
+Ghana/Togo
+Ashanti chief’s wrap, 1st half 20th C, (~80in x 240in)
+Ewe, 1st half 20th C (~80in x 125in)
+Chief’s wrap, early 20th C; illustrated in Gillow’s African Textiles: Color and Creativity across a Continent (possibly fig 25)
+South Sumatria: 1 lampung",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-3fc6a61a52,external_id,,Box-4,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-3fc6a61a52,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
 UNRESOLVED-4023d55da8,title,,"West, Benjamin Coll. Belasarius as a Blind Beggar",sub_inventory,(filled from sub_inventory)
 UNRESOLVED-4023d55da8,external_id,,G40870,sub_inventory,(filled from sub_inventory)
 UNRESOLVED-4023d55da8,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
@@ -675,6 +702,17 @@ UNRESOLVED-5a75924b80,title,,"Mozier, Joseph Springtime",sub_inventory,(filled f
 UNRESOLVED-5a75924b80,year,,1870,sub_inventory,(filled from sub_inventory)
 UNRESOLVED-5a75924b80,external_id,,G80016,sub_inventory,(filled from sub_inventory)
 UNRESOLVED-5a75924b80,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5afc5baf22,title,,Box 2: Central Asia,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5afc5baf22,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5afc5baf22,provenance_text,,"Afghanistan: 2 men’s coats, early 20th C
+Purple and black stripe on velvet
+Blue, yellow, white stripe
+Uzbekistan: 6 pieces
+1 Perenje, green embroidered, ikat interior trim
+1 Atlas silk coat, ikat stripes, gold embroidery
+4 Ikat chapans",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5afc5baf22,external_id,,Box-2,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5afc5baf22,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
 UNRESOLVED-5d049caa47,title,,"Bluemner, Oscar Willet Street, Bloomfield",sub_inventory,(filled from sub_inventory)
 UNRESOLVED-5d049caa47,external_id,,G40309,sub_inventory,(filled from sub_inventory)
 UNRESOLVED-5d049caa47,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
@@ -763,6 +801,28 @@ UNRESOLVED-8ca8694a1e,external_id_system,,Graham Inventory owned,sub_inventory,(
 UNRESOLVED-9116526edf,title,,"Berge, Edward Henry Portrait of the Black Children",sub_inventory,(filled from sub_inventory)
 UNRESOLVED-9116526edf,external_id,,G41120,sub_inventory,(filled from sub_inventory)
 UNRESOLVED-9116526edf,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9165f4ce9b,title,,Box 5: (never opened),textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9165f4ce9b,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9165f4ce9b,provenance_text,,"Egyptian decorative textile, early 20th C
+Uzbek Ikat Chapan",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9165f4ce9b,external_id,,Box-5,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9165f4ce9b,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,title,,"Box 3: Central Asia, Ottoman, Iran",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,provenance_text,,"Afghanistan: 3 shawls, 1 large (100inches long) with beaded ends
+Uzbekistan: 5 pieces
+2 ikat panels
+1 Suzani door surround, embroidery on black velvet
+1 panel, pink and green embroidery on black velvet (? Origin)
+Uzbek/Ottoman panel, red and gold on indigo
+Ottoman: 5 pieces/panels
+2 gold embroidery on red
+1 bedspread, gold on fuschia
+1 square panel, gold and black and red
+1 runner, gold and black and red
+Iran: 1 stamped/printed panel",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,external_id,,Box-3,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
 UNRESOLVED-965a0010d8,title,,"Shinn, Everett Sketch: Reclining Man",sub_inventory,(filled from sub_inventory)
 UNRESOLVED-965a0010d8,external_id,,G40821,sub_inventory,(filled from sub_inventory)
 UNRESOLVED-965a0010d8,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)

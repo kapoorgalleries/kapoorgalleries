@@ -23,6 +23,7 @@ INGESTERS = {
     "image_dir": ("src.ingest.image_dir", "ImageDirIngester"),
     "price_list_pdf": ("src.ingest.price_list_pdf", "PriceListPdfIngester"),
     "sub_inventory": ("src.ingest.sub_inventory", "SubInventoryIngester"),
+    "textile_boxes": ("src.ingest.textile_boxes", "TextileBoxesIngester"),
     "kg_inventory_pdf": ("src.ingest.kg_inventory_pdf", "KGInventoryPdfIngester"),
     "email_gaps": ("src.ingest.email_gaps", "EmailGapsIngester"),
     "human_resolution": ("src.ingest.human_resolution", "HumanResolutionIngester"),
@@ -683,6 +684,111 @@ def whatsnew(limit: int, db_path: str):
     for wid, title, cls, updated in rows:
         cls_short = (cls or "")[:30]
         click.echo(f"  {wid}  {updated[:19]}  {cls_short:30s} {(title or '')[:50]}")
+    click.echo()
+
+
+@cli.command("match-external")
+@click.option("--system", "ext_system", required=True,
+              help="external_id_system to match (e.g. 'Graham Inventory owned').")
+@click.option("--threshold", default=80, show_default=True,
+              help="rapidfuzz token-set ratio (0..100) cutoff for candidate matches.")
+@click.option("--limit", default=30, show_default=True)
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+def match_external(ext_system: str, threshold: int, limit: int, db_path: str):
+    """Suggest KG-# matches for sub-inventory entries by fuzzy title.
+
+    Reads UNRESOLVED works whose external_id_system matches `--system`,
+    fuzzy-matches each title against every KG-# title, and reports the
+    top candidate per external entry.  Useful for linking
+    Graham/Darion/Huc/etc. records to their KG-# counterparts —
+    output is advisory; the curator decides what to promote.
+
+    Add high-confidence pairs to data/human_resolutions.yaml as
+    `external_id` resolutions on the relevant KG-#.
+    """
+    try:
+        from rapidfuzz import fuzz
+    except ImportError:
+        raise click.ClickException("rapidfuzz not installed (pip install rapidfuzz)")
+
+    db = dbmod.get_db(db_path)
+    # External entries (UNRESOLVED works under this system).
+    ext_works = db.execute(
+        """SELECT DISTINCT o.work_id FROM observations o
+           WHERE o.field = 'external_id_system' AND o.value = ?""",
+        [ext_system],
+    ).fetchall()
+    if not ext_works:
+        click.echo(f"No works found with external_id_system = {ext_system!r}.")
+        return
+
+    def _value(wid: str, field: str) -> str | None:
+        r = db.execute(
+            """SELECT value FROM observations
+               WHERE work_id = ? AND field = ?
+               ORDER BY observed_at DESC LIMIT 1""",
+            [wid, field],
+        ).fetchone()
+        return r[0] if r else None
+
+    # Only match against actual KG-# works — UNRESOLVED-* entries are
+    # often the external ones themselves and would all self-match.
+    kg_titles = db.execute(
+        """SELECT work_id, title FROM works
+           WHERE title IS NOT NULL AND work_id LIKE 'KG-%'"""
+    ).fetchall()
+
+    # Skip KG titles that are too short / too generic to anchor a real
+    # match — they'd always token-set-match against any external entry
+    # containing the word.  "Untitled" / "Portrait" alone aren't a
+    # match signal.
+    GENERIC = {"untitled", "portrait", "landscape", "study", "sketch",
+               "elephant", "mother and child", "head", "figure"}
+
+    candidates: list[tuple[int, str, str, str, str]] = []
+    for (wid,) in ext_works:
+        ext_title = _value(wid, "title")
+        ext_id = _value(wid, "external_id") or "?"
+        if not ext_title:
+            continue
+        best_score = -1
+        best_kg = None
+        best_kg_title = None
+        for kg_id, kg_title in kg_titles:
+            kg_lower = kg_title.lower().strip()
+            if kg_lower in GENERIC or len(kg_lower.split()) < 2:
+                continue
+            # token_set_ratio is too generous when one string is a
+            # subset of the other; combine with partial_ratio so a
+            # 2-word KG title hidden inside a 7-word external string
+            # doesn't ace 100.
+            ts = fuzz.token_set_ratio(ext_title.lower(), kg_lower)
+            pr = fuzz.partial_ratio(ext_title.lower(), kg_lower)
+            score = (ts + pr) // 2
+            if score > best_score:
+                best_score = score
+                best_kg = kg_id
+                best_kg_title = kg_title
+        if best_score >= threshold:
+            candidates.append((best_score, ext_id, ext_title, best_kg or "", best_kg_title or ""))
+
+    candidates.sort(key=lambda r: -r[0])
+    click.echo()
+    if not candidates:
+        click.echo(f"  No candidates above threshold {threshold} for {ext_system!r}.")
+        click.echo()
+        return
+    click.echo(f"  {len(candidates)} candidate match(es) above {threshold}:\n")
+    click.echo(f"  {'score':>5}  {'ext_id':<12}{'ext_title':<55}{'KG-#':<10}KG title")
+    for score, ext_id, ext_title, kg_id, kg_title in candidates[:limit]:
+        click.echo(
+            f"  {score:>5}  {ext_id:<12}{(ext_title or '')[:54]:<55}{kg_id:<10}{kg_title or ''}"
+        )
+    if len(candidates) > limit:
+        click.echo(f"  ... and {len(candidates) - limit} more")
+    click.echo()
+    click.echo(f"  Review then add high-confidence matches to "
+               f"data/human_resolutions.yaml as external_id resolutions.")
     click.echo()
 
 

@@ -376,6 +376,55 @@ def test_timeline_show_prints_history(tmp_path: Path):
     assert "1400" in r.output
 
 
+def test_match_external_finds_strong_match_skips_generic(tmp_path: Path):
+    """Cross-reference should match a distinctive title across systems
+    but skip generic KG titles like 'Untitled' that would falsely
+    match every external entry."""
+    db_path = tmp_path / "t.db"
+    db = init_db(db_path)
+    # KG-1 has a generic title; KG-2 has a specific one.
+    sid_kg = upsert_source(db, SourceRecord(
+        name="t-artsy", type="artsy_csv", extracted_at="2026-01-01"))
+    insert_observations(db, sid_kg, [
+        Observation(work_id="KG-1", field="title", value="Untitled",
+                    observed_at="2026-01-01"),
+        Observation(work_id="KG-2", field="title",
+                    value="Krishna Slaying the Demon Naraka",
+                    observed_at="2026-01-01"),
+    ])
+    # External entry should match KG-2 (distinctive) but not KG-1.
+    sid_ext = upsert_source(db, SourceRecord(
+        name="t-sub", type="sub_inventory", extracted_at="2026-01-01"))
+    insert_observations(db, sid_ext, [
+        Observation(work_id="UNRESOLVED-x", field="title",
+                    value="Untitled", observed_at="2026-01-01"),
+        Observation(work_id="UNRESOLVED-x", field="external_id",
+                    value="X-1", observed_at="2026-01-01"),
+        Observation(work_id="UNRESOLVED-x", field="external_id_system",
+                    value="TestColl", observed_at="2026-01-01"),
+        Observation(work_id="UNRESOLVED-y", field="title",
+                    value="Krishna Slaying the Demon Naraka, c. 1800",
+                    observed_at="2026-01-01"),
+        Observation(work_id="UNRESOLVED-y", field="external_id",
+                    value="X-2", observed_at="2026-01-01"),
+        Observation(work_id="UNRESOLVED-y", field="external_id_system",
+                    value="TestColl", observed_at="2026-01-01"),
+    ])
+    consolidate(db)
+    db.conn.close()
+
+    runner = CliRunner()
+    r = runner.invoke(cli, [
+        "match-external", "--system", "TestColl", "--db", str(db_path),
+        "--threshold", "80",
+    ])
+    assert r.exit_code == 0, r.output
+    # Must NOT have suggested KG-1 (generic 'Untitled') for X-1.
+    assert "X-1" not in r.output or "KG-1" not in r.output
+    # Must have matched X-2 to KG-2.
+    assert "X-2" in r.output and "KG-2" in r.output
+
+
 def test_audit_rules_marks_dead_and_ok(tmp_path: Path):
     """Rule firing on no works should be DEAD; rule firing without
     any human override should be OK."""

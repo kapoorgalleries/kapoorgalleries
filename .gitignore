@@ -30,3 +30,5 @@ data/raw/*
 !data/raw/Kapoor_Galleries_Bulk_upload_Template_Artsy.xlsx
 # 49 KB Graham sub-inventory PDF (~105 owned works) — committed for CI.
 !data/raw/Graham_Inventory_owned.pdf
+# 197 KB Textile Boxes Word doc (6 boxes) — committed for CI.
+!data/raw/Textile_Boxes_2022-07.docx
