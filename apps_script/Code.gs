@@ -28,12 +28,63 @@ function onOpen() {
     .addItem('Refresh from repo', 'refreshFromRepo')
     .addItem('Show stats', 'showStats')
     .addItem('Show price distribution', 'showPriceDistribution')
+    .addItem('Show timeline (history.csv)', 'showTimeline')
     .addItem('Highlight conflicts', 'highlightConflicts')
     .addSeparator()
     .addItem('Inspect selected work', 'showGapsForSelectedWork')
     .addItem('Suggest resolution for selected cell', 'suggestResolution')
     .addItem('Open Drive folder for KG-#', 'openDriveForSelectedWork')
     .addToUi();
+}
+
+// Pulls data/history.csv from the repo and shows the trend in a sidebar.
+// Writes a quick-glance table; deltas are calculated against the row before.
+function showTimeline() {
+  var url = MASTER_CSV_URL.replace(/master\.csv$/, 'history.csv');
+  var resp = UrlFetchApp.fetch(url, {muteHttpExceptions: true});
+  if (resp.getResponseCode() !== 200) {
+    SpreadsheetApp.getUi().alert(
+      'history.csv not found at ' + url + '.\n' +
+      'Run `kg-inv timeline` locally and push to populate.'
+    );
+    return;
+  }
+  var rows = Utilities.parseCsv(resp.getContentText());
+  if (rows.length < 2) {
+    SpreadsheetApp.getUi().alert('history.csv has no data rows yet.');
+    return;
+  }
+  var header = rows[0];
+  var idx = {};
+  header.forEach(function (h, i) { idx[h] = i; });
+
+  function delta(curr, prev, col) {
+    if (!prev) return '';
+    var d = parseInt(curr[idx[col]], 10) - parseInt(prev[idx[col]], 10);
+    if (isNaN(d) || d === 0) return '';
+    return ' <span style="color:' + (d > 0 ? '#080' : '#a00') + '">'
+      + (d > 0 ? '+' : '') + d + '</span>';
+  }
+
+  var html = '<style>body{font-family:Arial,sans-serif;padding:14px;font-size:13px}'
+    + 'table{border-collapse:collapse;width:100%}'
+    + 'th,td{padding:6px 10px;border-bottom:1px solid #eee;text-align:right}'
+    + 'th:first-child,td:first-child{text-align:left}</style>'
+    + '<h3>Inventory timeline</h3>'
+    + '<table><tr><th>Date</th><th>Works</th><th>Eligible</th>'
+    + '<th>Attributed</th><th>Conflicts</th></tr>';
+  for (var i = 1; i < rows.length; i++) {
+    var prev = i > 1 ? rows[i-1] : null;
+    html += '<tr><td>' + rows[i][idx['date']] + '</td>'
+      + '<td>' + rows[i][idx['works']] + delta(rows[i], prev, 'works') + '</td>'
+      + '<td>' + rows[i][idx['artsy_eligible']] + delta(rows[i], prev, 'artsy_eligible') + '</td>'
+      + '<td>' + rows[i][idx['attributed']] + delta(rows[i], prev, 'attributed') + '</td>'
+      + '<td>' + rows[i][idx['conflicts']] + delta(rows[i], prev, 'conflicts') + '</td></tr>';
+  }
+  html += '</table>';
+  SpreadsheetApp.getUi().showSidebar(
+    HtmlService.createHtmlOutput(html).setTitle('Inventory timeline')
+  );
 }
 
 function showPriceDistribution() {
