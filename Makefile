@@ -1,4 +1,6 @@
-.PHONY: init ingest consolidate report all clean test stats lint conflicts gaps
+.PHONY: init ingest ingest-one consolidate report all clean test stats lint \
+        conflicts gaps overview overview-json coverage stats-json sources \
+        viewer health demo watch
 
 PY ?= python3
 
@@ -110,5 +112,8 @@ watch:
 	done
 
 clean:
-	rm -f data/inventory.db data/master.csv data/master_long.csv data/conflicts.csv data/gaps.csv data/artsy_upload.csv
+	rm -f data/inventory.db
+	rm -f data/master.csv data/master.json data/master_provenance.csv
+	rm -f data/conflicts.csv data/gaps.csv data/artsy_upload.csv
+	rm -f data/primer_corrections.csv
 	rm -f reports/*.md
