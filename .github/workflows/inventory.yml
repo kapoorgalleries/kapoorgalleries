@@ -102,10 +102,12 @@ jobs:
           name: inventory-${{ github.sha }}
           path: |
             data/master.csv
-            data/master_long.csv
+            data/master.json
+            data/master_provenance.csv
             data/conflicts.csv
             data/gaps.csv
             data/artsy_upload.csv
+            data/primer_corrections.csv
             reports/
             data/inventory.db
           retention-days: 14
