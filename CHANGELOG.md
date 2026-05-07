@@ -4,7 +4,28 @@
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,520 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 247 conflicts · 7 sources ingested · 73 tests · 36 CLI commands · CI green.
+> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 257 conflicts · 9 sources ingested · 76 tests · 37 CLI commands · CI green.
+
+### 0.4.3 — Himalayas price list + cross-reference + Textile Boxes
+
+- **Art of the Himalayas price list** (12 KG-# linked thangkas) —
+  first price-list source with direct KG-# linkage; pulls price,
+  dimensions, provenance, exhibition into the master record.  Two
+  works added below the previous KG-1000 floor (KG-0012, KG-0906)
+  that no other source carried.
+- **Textile Boxes ingester** — 6-box hierarchy from the docx;
+  classification=Textile Arts, provenance_text=full description.
+- **`kg-inv match-external`** — fuzzy-match sub-inventory entries
+  against KG-# titles; filters out generic KG titles ("Untitled",
+  "Portrait") that would attract false positives, combines
+  token_set + partial_ratio for stricter matching.
+- **Mixed-fraction dim parser fixes** — `normalize_decimal('29 1/4')`
+  was parsing as 291.0 (space-strip-then-regex bug); now handles
+  ASCII fractions, unicode vulgar fractions (¼ ½ ¾ ⅛ ⅜ ⅝ ⅞), and
+  unicode fraction-slash (U+2044) correctly.
+- **Surfaced 10 new real conflicts** between the Himalayas and bulk
+  upload sources — price disagreements (KG-1813 $24k vs $38k,
+  KG-2106 $30k vs $80k), title strip vs full-version differences.
 
 ### 0.4.2 — Graham sub-inventory + curator tooling
 
