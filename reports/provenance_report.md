@@ -36,11 +36,10 @@
 
 | Field | Works with conflict |
 |---|---:|
-| classification | 486 |
-| medium | 21 |
-| artist | 21 |
+| classification | 243 |
+| medium | 7 |
 | title | 3 |
-| year | 1 |
-| width_in | 1 |
-| price_usd | 1 |
 | height_in | 1 |
+| price_usd | 1 |
+| width_in | 1 |
+| year | 1 |

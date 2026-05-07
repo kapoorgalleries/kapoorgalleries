@@ -15,6 +15,12 @@ Major milestones since the initial commit (2026-05-06):
 - **`coverage_report.md` now shows file mtime instead of extraction
   time** — same per-run-timestamp problem; report no longer drifts on
   every `make all`.
+- **`provenance_report.md` "Conflict counts per field" no longer
+  inflated by resolution sources** — was reading from the
+  `v_conflicts` view, which counted auto-resolution overrides as
+  conflicts against Primer.  Numbers now match `data/conflicts.csv`
+  exactly (was: classification 486 / medium 21 / artist 21 / …;
+  now: classification 243 / medium 7 / no phantom artist column).
 - **Sorted `master_provenance.csv` `alt_values`** — set iteration order
   isn't stable; same data was producing different orderings across runs.
 - **Fixed comma-splitting in three places** (kg-inv conflicts CLI,
@@ -26,8 +32,9 @@ Major milestones since the initial commit (2026-05-06):
 - **`kg-inv compare KG-X KG-Y`** — side-by-side work comparison, marks
   differing fields with ≠.  Useful for spotting duplicate-ID Primer
   bugs (e.g. KG-1312).
-- **6 new determinism + regression tests** pinning byte-equality of
-  exports (CSV / JSON / coverage report) and comma-value preservation.
+- **7 new determinism + regression tests** pinning byte-equality of
+  exports (CSV / JSON / coverage report), comma-value preservation,
+  and resolution-source exclusion from conflict counts.
 
 ### 0.4 — bulk upload + data quality
 

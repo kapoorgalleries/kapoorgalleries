@@ -92,6 +92,30 @@ def test_coverage_report_byte_identical_across_runs(tmp_path: Path):
     assert a.read_bytes() == b.read_bytes()
 
 
+def test_provenance_report_excludes_resolution_sources_from_conflict_counts(tmp_path: Path):
+    """A value supplied by an auto/human resolution must not count as a
+    conflict against an observation source — otherwise the report
+    over-counts and disagrees with data/conflicts.csv."""
+    db = init_db(tmp_path / "t.db")
+    # Real disagreement between two observation sources → should count.
+    _seed(db, "KG-A", "classification", "Painting", "artsy_csv")
+    _seed(db, "KG-A", "classification", "Drawing", "bulk_upload_xlsx")
+    # Auto-resolution overrides Primer's classification → must NOT count.
+    _seed(db, "KG-B", "classification", "Painting", "artsy_csv")
+    _seed(db, "KG-B", "classification", "Sculpture", "auto_resolution")
+    consolidate(db)
+
+    out = tmp_path / "prov.md"
+    reports.provenance_report(db, out)
+    text = out.read_text()
+    # Pull out just the conflict-count section so we don't accidentally
+    # match the upstream per-source provenance table.
+    section = text.split("## Conflict counts per field", 1)[1]
+    assert "| classification | 1 |" in section
+    # KG-B's resolution-vs-source split must not have inflated the count.
+    assert "| classification | 2 |" not in section
+
+
 def test_conflicts_csv_preserves_comma_values(tmp_path: Path):
     """Values like 'Drawing, Collage or other Work on Paper' contain commas.
     The exporter must not split them into distinct entries — earlier

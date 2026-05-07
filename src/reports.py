@@ -166,10 +166,34 @@ def provenance_report(db: sqlite_utils.Database, out_path: Path | str) -> Path:
         lines.append(f"| {r[0]} | {r[1]} | {r[2]} |")
 
     lines += ["", "## Conflict counts per field", "", "| Field | Works with conflict |", "|---|---:|"]
-    for r in db.execute(
-        "SELECT field, COUNT(DISTINCT work_id) FROM v_conflicts GROUP BY field ORDER BY 2 DESC"
-    ).fetchall():
-        lines.append(f"| {r[0]} | {r[1]} |")
+    # Mirror the gaps-report logic: a "conflict" is a real disagreement
+    # among observation sources, ignoring (a) resolution-layer values
+    # and (b) any (work, field) where a human resolution exists.
+    # v_conflicts counts everything, which inflates the totals (e.g.
+    # auto_resolution introducing classification: Sculpture against
+    # Primer's Painting would show as a conflict).
+    raw = db.execute(
+        """SELECT o.work_id, o.field, o.value
+           FROM observations o JOIN sources s ON s.id = o.source_id
+           WHERE o.value IS NOT NULL AND o.value != ''
+             AND s.type NOT IN ('human_resolution','auto_resolution')"""
+    ).fetchall()
+    has_human = {
+        (w, f) for (w, f) in db.execute(
+            """SELECT DISTINCT o.work_id, o.field FROM observations o
+               JOIN sources s ON s.id = o.source_id
+               WHERE s.type = 'human_resolution'"""
+        ).fetchall()
+    }
+    by_field: dict[str, set] = {}
+    seen: dict[tuple[str, str], set] = {}
+    for w, f, v in raw:
+        seen.setdefault((w, f), set()).add(v)
+    for (w, f), vals in seen.items():
+        if len(vals) > 1 and (w, f) not in has_human:
+            by_field.setdefault(f, set()).add(w)
+    for field, works in sorted(by_field.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+        lines.append(f"| {field} | {len(works)} |")
 
     out.write_text("\n".join(lines) + "\n")
     return out
