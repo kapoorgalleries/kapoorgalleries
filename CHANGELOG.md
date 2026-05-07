@@ -4,7 +4,7 @@
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,415 works · 600 Artsy-eligible (42%) · 128 attributed (9%) · 247 conflicts · 6 sources ingested · 67 tests · 33 CLI commands · CI green.
+> 1,415 works · 600 Artsy-eligible (42%) · 128 attributed (9%) · 247 conflicts · 6 sources ingested · 70 tests · 34 CLI commands · CI green.
 
 ### 0.4.1 — output determinism & comma-value bug fixes
 
