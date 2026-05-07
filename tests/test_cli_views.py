@@ -341,3 +341,83 @@ def test_check_artsy_runs(tmp_path: Path):
     runner = CliRunner()
     result = runner.invoke(cli, ["check-artsy", "--file", str(p)])
     assert result.exit_code == 0, result.output
+
+
+def test_timeline_appends_and_dedups_same_day(tmp_path: Path):
+    """timeline should append one row per day; running it twice the
+    same day must replace, not duplicate."""
+    db_path = tmp_path / "t.db"
+    _populate(db_path)
+    out = tmp_path / "history.csv"
+    runner = CliRunner()
+    r1 = runner.invoke(cli, ["timeline", "--db", str(db_path), "--out", str(out)])
+    assert r1.exit_code == 0, r1.output
+    r2 = runner.invoke(cli, ["timeline", "--db", str(db_path), "--out", str(out)])
+    assert r2.exit_code == 0, r2.output
+
+    lines = out.read_text().splitlines()
+    # Header + exactly one data row.
+    assert len(lines) == 2
+    assert lines[0].startswith("date,")
+    cols = lines[1].split(",")
+    # works = 2, attributed = 0 (no artist seeded).
+    assert cols[1] == "2"
+    assert cols[3] == "0"
+
+
+def test_timeline_show_prints_history(tmp_path: Path):
+    out = tmp_path / "history.csv"
+    out.write_text("date,works,artsy_eligible,attributed,conflicts,sources\n"
+                   "2026-05-01,1400,580,120,250,5\n")
+    runner = CliRunner()
+    r = runner.invoke(cli, ["timeline", "--show", "--out", str(out)])
+    assert r.exit_code == 0, r.output
+    assert "2026-05-01" in r.output
+    assert "1400" in r.output
+
+
+def test_audit_rules_marks_dead_and_ok(tmp_path: Path):
+    """Rule firing on no works should be DEAD; rule firing without
+    any human override should be OK."""
+    db_path = tmp_path / "t.db"
+    db = init_db(db_path)
+    # Seed one work with medium=paper so rule #1 (paper -> Drawing) fires.
+    sid_obs = upsert_source(db, SourceRecord(
+        name="t-artsy", type="artsy_csv", extracted_at="2026-01-01",
+    ))
+    insert_observations(db, sid_obs, [Observation(
+        work_id="KG-1", field="medium", value="ink on paper",
+        observed_at="2026-01-01",
+    )])
+    # Seed an auto_resolution observation that *did* fire for KG-1
+    # (rule=1) — and one that did NOT fire on any work (rule=999).
+    sid_auto = upsert_source(db, SourceRecord(
+        name="t-auto", type="auto_resolution", extracted_at="2026-01-01",
+    ))
+    insert_observations(db, sid_auto, [Observation(
+        work_id="KG-1", field="classification",
+        value="Drawing, Collage or other Work on Paper",
+        source_row_ref="rule=1;reason=paper",
+        observed_at="2026-01-01",
+    )])
+    consolidate(db)
+    db.conn.close()
+
+    rules = tmp_path / "rules.yaml"
+    rules.write_text(
+        "- if: { medium_contains: paper }\n"
+        "  then: { classification: 'Drawing, Collage or other Work on Paper' }\n"
+        "- if: { medium_contains: nonsense_token }\n"
+        "  then: { classification: Sculpture }\n"
+    )
+
+    runner = CliRunner()
+    r = runner.invoke(cli, [
+        "audit-rules", "--db", str(db_path), "--rules", str(rules),
+    ])
+    assert r.exit_code == 0, r.output
+    # First rule fired, second didn't.
+    assert "OK" in r.output
+    assert "DEAD" in r.output
+    # Summary line includes both counts.
+    assert "DEAD: 1" in r.output

@@ -28,3 +28,5 @@ data/raw/*
 !data/raw/artsy_first_100_pngs/*.png
 # 110 KB Artsy Bulk Upload Template (1,415 KG-#s) — committed for CI.
 !data/raw/Kapoor_Galleries_Bulk_upload_Template_Artsy.xlsx
+# 49 KB Graham sub-inventory PDF (~105 owned works) — committed for CI.
+!data/raw/Graham_Inventory_owned.pdf

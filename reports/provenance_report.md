@@ -13,6 +13,10 @@
 | Artsy_2-16-2026.csv | height_in | 104 |
 | Artsy_2-16-2026.csv | width_in | 97 |
 | Artsy_2-16-2026.csv | depth_in | 4 |
+| Graham Inventory - owned.pdf | title | 105 |
+| Graham Inventory - owned.pdf | external_id_system | 105 |
+| Graham Inventory - owned.pdf | external_id | 105 |
+| Graham Inventory - owned.pdf | year | 42 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | status | 1415 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | title | 1411 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | classification | 1106 |
@@ -24,7 +28,7 @@
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | artist | 149 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | depth_in | 23 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | signature | 20 |
-| auto_resolution_rules | classification | 417 |
+| auto_resolution_rules | classification | 418 |
 | auto_resolution_rules | medium | 159 |
 | auto_resolution_rules | artist | 21 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | title | 16 |

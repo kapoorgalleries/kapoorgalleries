@@ -16,8 +16,19 @@ from ..normalize import normalize_title
 from ..schema import Observation
 from ._base import IngestResult, Ingester
 
-# Most sub-inventories number entries 1., 2., 3. or "No. 12" or "001."
+# Numeric-prefix style: "1. Title", "001) Title", "No. 12 Title".
 ENTRY_RE = re.compile(r"^(?:No\.?\s*)?(\d{1,4})[.)]\s+(.+)$")
+
+# Letter-prefix-id style (Graham, Darion, Huc): "G40502 Akeley, Clar E. Stung, 1914".
+# We capture the id and the full remainder; splitting "artist, title" reliably
+# would need a per-collection name dictionary, so for now we emit the
+# combined string as a single low-confidence `title` and leave artist
+# extraction to a future pass.
+LETTER_ID_RE = re.compile(r"^([A-Z]\d{4,6})\s+(.+)$")
+# Trailing year — "Title, 1914" or "Title, c. 1875" or "Title, c. 1930-31".
+YEAR_RE = re.compile(r",\s*(?:c\.?\s*)?(\d{4})(?:-\d+)?\s*$")
+HEADER_TOKENS = {"inventory", "page", "media", "location", "partners",
+                 "% owned", "gallery cost"}
 
 
 class SubInventoryIngester(Ingester):
@@ -32,13 +43,36 @@ class SubInventoryIngester(Ingester):
                 n_pages += 1
                 text = page.extract_text() or ""
                 for line in text.splitlines():
-                    m = ENTRY_RE.match(line.strip())
-                    if not m:
+                    line = line.strip()
+                    if not line:
                         continue
-                    extid = m.group(1).strip()
-                    title = normalize_title(m.group(2))
+                    if line.lower() in HEADER_TOKENS:
+                        continue
+                    extid: str | None = None
+                    title: str | None = None
+
+                    m = LETTER_ID_RE.match(line)
+                    if m:
+                        extid = m.group(1)
+                        title = m.group(2)
+                    else:
+                        m = ENTRY_RE.match(line)
+                        if m:
+                            extid = m.group(1)
+                            title = m.group(2)
+                    if not extid or not title:
+                        continue
+                    title = normalize_title(title)
                     if not title:
                         continue
+
+                    # Pull a trailing year out of the title if present.
+                    year: str | None = None
+                    ym = YEAR_RE.search(title)
+                    if ym:
+                        year = ym.group(1)
+                        title = title[: ym.start()].strip().rstrip(",").strip()
+
                     work_id = unresolved_id(collection, extid, title)
                     ref = f"page={page_no}"
                     observations.append(Observation(
@@ -53,6 +87,11 @@ class SubInventoryIngester(Ingester):
                         work_id=work_id, field="external_id_system", value=collection,
                         source_row_ref=ref, confidence="high",
                     ))
+                    if year:
+                        observations.append(Observation(
+                            work_id=work_id, field="year", value=year,
+                            source_row_ref=ref, confidence="medium",
+                        ))
         return IngestResult(
             source=self._make_source(row_count=n_pages),
             observations=observations,

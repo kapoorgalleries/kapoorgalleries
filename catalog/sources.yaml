@@ -90,8 +90,12 @@
   type: sub_inventory
   drive_file_id: 1wSKFu8AX633cIocDvYQB9VwB4m0TEZ4o
   local_path: data/raw/Graham_Inventory_owned.pdf
-  enabled: false  # parser stub only
-  notes: Graham collection, owned works.
+  enabled: true
+  notes: |
+    Graham collection (Akeley, Barye, Bluemner, etc.).  ~105 entries.
+    Format: "<id> Lastname, Firstname Title, year".  We extract id +
+    combined-name-and-title + year; reliable artist/title splitting
+    needs per-collection name dictionary, deferred.
 
 - name: Darion Inventory Book.pdf
   type: sub_inventory
@@ -113,15 +117,20 @@
 
 # --- Catalog production (year-based) ---
 - name: Inventory for 2024 catalog.xlsx
-  type: catalog_inventory_xlsx
+  type: reference
   drive_file_id: 1l3rWoPT534jnuVsnSmJ_qhli8x47-K3G
   local_path: data/raw/Inventory_for_2024_catalog.xlsx
   enabled: false
   notes: |
-    27 KB.  Year-grouped layout: column A is section name (Portraits,
-    Sculpture, Decorative, ...), then sets of (year, title) columns for
-    2019/2020/2021/2022.  No KG-#, so values would need title-fuzzy-match
-    to existing master records.  Cached locally — parser TBD.
+    27 KB.  Despite the filename, this is a curatorial brainstorm for
+    the 2024 catalog, NOT an inventory source.  Single sheet with
+    "Portraits" header and ~170 candidate titles bucketed under the
+    year of the previous catalog they appeared in (2019-2022).  No
+    KG-#, no artist, no medium, no dimensions.  Ingesting these as
+    observations would just emit ~170 untethered title strings with
+    no field linkages.  Reclassified as `reference` and left disabled.
+    Real catalog-source ingestion will come from year-based catalog
+    PDFs (Phase E in the original plan).
 
 # --- Email gap reports ---
 - name: Sarah Fenner @ Artsy gap reports

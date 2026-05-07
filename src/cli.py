@@ -1067,6 +1067,72 @@ def compare(work_id_a: str, work_id_b: str, db_path: str):
 
 @cli.command()
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--out", "out_path", default="data/history.csv", show_default=True,
+              help="Append-only history of overview metrics.")
+@click.option("--show", is_flag=True, default=False,
+              help="Print recorded history without appending.")
+def timeline(db_path: str, out_path: str, show: bool):
+    """Snapshot overview metrics to data/history.csv (append-only).
+
+    Run after `make all` to log how the numbers move week over week:
+    works, Artsy-eligible, attributed, conflicts.  One row per call;
+    same-day re-runs are deduped (the latest call for a given date
+    wins).
+    """
+    import csv as _csv
+    from datetime import datetime as _dt
+    out = Path(out_path)
+
+    if show:
+        if not out.exists():
+            click.echo("(no history yet — run `kg-inv timeline` first)")
+            return
+        for line in out.read_text().splitlines():
+            click.echo("  " + line)
+        return
+
+    db = dbmod.get_db(db_path)
+    total = db.execute("SELECT COUNT(*) FROM works").fetchone()[0]
+    if total == 0:
+        click.echo("No works yet — run `make all` first.")
+        return
+    conflicts = db.execute("SELECT COUNT(*) FROM works WHERE has_conflict = 1").fetchone()[0]
+    artsy_ready = db.execute("""SELECT COUNT(*) FROM works
+        WHERE COALESCE(status,'active') = 'active'
+          AND title IS NOT NULL AND classification IS NOT NULL
+          AND medium IS NOT NULL AND primary_image_url IS NOT NULL""").fetchone()[0]
+    attributed = db.execute(
+        "SELECT COUNT(*) FROM works WHERE artist IS NOT NULL"
+    ).fetchone()[0]
+    sources = db.execute("SELECT COUNT(DISTINCT name) FROM sources").fetchone()[0]
+
+    today = _dt.utcnow().strftime("%Y-%m-%d")
+    new_row = [today, total, artsy_ready, attributed, conflicts, sources]
+    header = ["date", "works", "artsy_eligible", "attributed",
+              "conflicts", "sources"]
+
+    rows: list[list] = []
+    if out.exists():
+        with out.open() as fh:
+            reader = _csv.reader(fh)
+            existing_header = next(reader, None)
+            if existing_header == header:
+                # Drop any prior row from today — same-day re-runs replace,
+                # don't accumulate.
+                rows = [r for r in reader if r and r[0] != today]
+    rows.append([str(c) for c in new_row])
+
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with out.open("w", newline="") as fh:
+        w = _csv.writer(fh)
+        w.writerow(header)
+        w.writerows(rows)
+    click.echo(f"  Logged {today}: {total} works · {artsy_ready} eligible · "
+               f"{attributed} attributed · {conflicts} conflicts → {out}")
+
+
+@cli.command()
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 @click.option("--max-missing", default=2, show_default=True,
               help="show works missing this many or fewer fields")
 @click.option("--limit", default=50, show_default=True)
@@ -1423,6 +1489,91 @@ def refresh(ctx, db_path: str, sources: str, commit: bool):
     click.echo("\n  └── refreshed.\n")
 
 
+@cli.command("audit-rules")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--rules", "rules_path", default="data/auto_resolution_rules.yaml",
+              show_default=True)
+def audit_rules(db_path: str, rules_path: str):
+    """Show how each auto-rule is performing in the current DB.
+
+    For each rule, reports:
+      • applied — number of works the rule fired on
+      • overridden — works where a human_resolution disagreed with the
+        rule's `then:` value (suggests the rule is too broad)
+      • status — DEAD (zero matches) / SUSPECT (any overrides) / OK
+
+    Use this to prune rules that no longer fire (data has shifted) or
+    that the curator routinely overrides (rule needs tightening).
+    """
+    db = dbmod.get_db(db_path)
+    rules = yaml.safe_load(Path(rules_path).read_text()) or []
+
+    # Count rule firings by parsing source_row_ref of auto_resolution
+    # observations: format 'rule=N;reason=...'.
+    fired_counts: dict[int, int] = {}
+    fired_works: dict[int, set[str]] = {}
+    rule_target: dict[int, tuple[str, str]] = {}  # rule_idx -> (field, value)
+    for w, f, v, ref in db.execute(
+        """SELECT o.work_id, o.field, o.value, o.source_row_ref
+           FROM observations o JOIN sources s ON s.id = o.source_id
+           WHERE s.type = 'auto_resolution'"""
+    ).fetchall():
+        if not ref or not ref.startswith("rule="):
+            continue
+        try:
+            rule_idx = int(ref.split(";", 1)[0].split("=", 1)[1])
+        except (IndexError, ValueError):
+            continue
+        fired_counts[rule_idx] = fired_counts.get(rule_idx, 0) + 1
+        fired_works.setdefault(rule_idx, set()).add(w)
+        rule_target.setdefault(rule_idx, (f, v))
+
+    # Find (work, field) where a human resolution disagrees with the
+    # rule's value — suggests the rule is too aggressive.
+    human_values: dict[tuple[str, str], str] = {}
+    for w, f, v in db.execute(
+        """SELECT o.work_id, o.field, o.value FROM observations o
+           JOIN sources s ON s.id = o.source_id
+           WHERE s.type = 'human_resolution'"""
+    ).fetchall():
+        human_values[(w, f)] = v
+
+    rows = []
+    for i, rule in enumerate(rules, start=1):
+        applied = fired_counts.get(i, 0)
+        target_field, target_value = rule_target.get(i, ("?", "?"))
+        overrides = sum(
+            1 for w in fired_works.get(i, set())
+            if (w, target_field) in human_values
+            and human_values[(w, target_field)] != target_value
+        )
+        if applied == 0:
+            status = "DEAD"
+        elif overrides > 0:
+            status = "SUSPECT"
+        else:
+            status = "OK"
+        cond = rule.get("if", {})
+        cond_str = ", ".join(f"{k}: {v}" for k, v in cond.items())[:50]
+        then = rule.get("then", {})
+        then_str = ", ".join(f"{k}={v}" for k, v in then.items())[:40]
+        rows.append((i, status, applied, overrides, cond_str, then_str))
+
+    click.echo()
+    click.echo(f"  {'Rule':<5}{'Status':<8}{'Applied':>8}{'Override':>10}  if  =>  then")
+    for i, status, applied, overrides, cond, then in rows:
+        click.echo(
+            f"  #{i:<4}{status:<8}{applied:>8}{overrides:>10}  "
+            f"{cond}  =>  {then}"
+        )
+    click.echo()
+    n_dead = sum(1 for r in rows if r[1] == "DEAD")
+    n_suspect = sum(1 for r in rows if r[1] == "SUSPECT")
+    click.echo(f"  Total rules: {len(rows)} · "
+               f"DEAD: {n_dead} (consider removing) · "
+               f"SUSPECT: {n_suspect} (curator overrides — review)")
+
+
 @cli.command("suggest-rules")
 @click.option("--min-support", default=5, show_default=True,
               help="minimum number of matching works for a rule to be suggested")
@@ -1576,6 +1727,18 @@ def check_artsy(csv_path: str):
 
             if not title:
                 issues.append(("error", wid, "title is empty"))
+            else:
+                # Placeholder titles slip through too easily — flag them
+                # so the curator catches them before Artsy does.
+                if title.strip().lower() in {
+                    "need title", "untitled", "no title", "tbd",
+                    "placeholder", "(no title)",
+                }:
+                    issues.append(("warn", wid,
+                        f"title {title!r} looks like a placeholder"))
+                if len(title) > 500:
+                    issues.append(("warn", wid,
+                        f"title is {len(title)} chars — Artsy may truncate"))
             if not cls:
                 issues.append(("error", wid, "classification is empty"))
             elif cls not in ARTSY_VALID_CLASSIFICATIONS:
@@ -1592,10 +1755,17 @@ def check_artsy(csv_path: str):
                 except ValueError:
                     issues.append(("warn", wid, f"{label}={v!r} not numeric"))
                     continue
-                if label == "year" and not (0 < f < 2200):
+                # Artsy accepts negative years (BCE) but anything before
+                # ~3000 BCE is implausible for our inventory.
+                if label == "year" and not (-3000 < f < 2200):
                     issues.append(("warn", wid, f"year {f} implausible"))
                 if label in {"height", "width", "depth"} and f <= 0:
                     issues.append(("warn", wid, f"{label} {f} ≤ 0"))
+                # Dimensions over 200 inches (5 metres) are unusual —
+                # surface them so the curator can confirm vs. typo.
+                if label in {"height", "width", "depth"} and f > 200:
+                    issues.append(("warn", wid,
+                        f"{label} {f} > 200 in (verify, possible typo)"))
                 if label == "price" and f < 0:
                     issues.append(("warn", wid, f"price {f} < 0"))
 
