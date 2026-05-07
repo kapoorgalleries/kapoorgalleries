@@ -14,12 +14,12 @@ punch list**.
 ```
 src/                 ETL: ingesters → consolidate → exporters → reports
 catalog/sources.yaml Source registry: every Drive file the pipeline ingests
-data/                inventory.db, master.csv, conflicts.csv, gaps.csv,
-                     artsy_upload.csv, master_provenance.csv,
+data/                inventory.db, master.csv, master.json, conflicts.csv,
+                     gaps.csv, artsy_upload.csv, master_provenance.csv,
                      primer_corrections.csv, raw/  (auto-rebuilt by CI)
 reports/             markdown coverage / gaps / provenance reports
 apps_script/         Code.gs that lives inside the master Sheet
-tests/               23 passing pytest tests
+tests/               70 passing pytest tests
 .github/workflows/   inventory.yml: auto-rebuild on every push
 tools/               operator runbooks (e.g. fetching the 108 MB Primer PDF)
 ```
