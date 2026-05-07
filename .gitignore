@@ -32,3 +32,5 @@ data/raw/*
 !data/raw/Graham_Inventory_owned.pdf
 # 197 KB Textile Boxes Word doc (6 boxes) — committed for CI.
 !data/raw/Textile_Boxes_2022-07.docx
+# 6.4 MB Himalayas price list (12 KG-#s with prices + dims) — committed for CI.
+!data/raw/KG_Art_of_the_Himalayas_Price_List.pdf

@@ -57,6 +57,17 @@
   notes: |
     76 PNGs. Many are tiny (<1KB) placeholders — flag with is_placeholder.
 
+- name: KG_Art of the Himalayas Price List.pdf
+  type: price_list_pdf
+  drive_file_id: 1OzJtFN8YSSCpJ9VCWW1j4TLtHknWyXf2
+  local_path: data/raw/KG_Art_of_the_Himalayas_Price_List.pdf
+  enabled: true
+  notes: |
+    6.4 MB, 6 pages, 12 thangkas with KG-#s, dimensions, prices,
+    provenance, exhibition history.  First price-list source with
+    direct KG-# linkage (most price lists drop the inventory number).
+    Format: "<num>. KG-#### $price" entry header.
+
 - name: KG_The Blossom & the Sword Price List.pdf
   type: price_list_pdf
   drive_file_id: 1fEPjP_BkU4NQeV3aSFCN28k1YOYDqe7R

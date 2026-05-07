@@ -75,6 +75,13 @@ def normalize_decimal(value: Optional[str]) -> Optional[float]:
     if s is None:
         return None
     s = s.replace(",", ".")
+    # Mixed imperial fractions ("29 1/4", "8 1/2") need their internal
+    # space preserved — strip-then-regex would parse "29 1/4" as 291.
+    # Also handle unicode fraction-slash ⁄ (U+2044) and vulgar fractions.
+    if "/" in s or "⁄" in s or any(uc in s for uc in "¼½¾⅛⅜⅝⅞"):
+        out = _parse_imperial_dim(s)
+        if out is not None:
+            return out
     s = s.replace(" ", "")
     m = re.match(r"^(-?\d+(?:\.\d+)?)", s)
     if not m:
@@ -90,6 +97,14 @@ def _parse_imperial_dim(s: str) -> Optional[float]:
     if not s:
         return None
     s = s.lower().replace("in.", "").replace('"', "").strip()
+    # Normalize unicode fraction-slash (U+2044) to ASCII slash so the
+    # regex below catches "1⁄2" as well as "1/2".
+    s = s.replace("⁄", "/")
+    # Vulgar-fraction code points → ASCII so DIM_FRACTIONS hits.
+    for uc, ascii_ in (("¼","1/4"),("½","1/2"),("¾","3/4"),
+                       ("⅛","1/8"),("⅜","3/8"),("⅝","5/8"),("⅞","7/8")):
+        s = s.replace(uc, " " + ascii_)
+    s = " ".join(s.split())  # collapse the extra spaces we just inserted
     m = re.match(r"^(\d+)\s+(\d+/\d+)$", s)
     if m:
         whole = int(m.group(1))
@@ -98,6 +113,10 @@ def _parse_imperial_dim(s: str) -> Optional[float]:
     m = re.match(r"^(\d+/\d+)$", s)
     if m:
         return DIM_FRACTIONS.get(m.group(1), None)
+    # Fallback: bare integer.
+    m = re.match(r"^(\d+)$", s)
+    if m:
+        return float(m.group(1))
     return None
 
 

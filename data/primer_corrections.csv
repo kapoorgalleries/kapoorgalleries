@@ -1,4 +1,16 @@
 work_id,field,current_in_primer,should_be,evidence_source,reason
+KG-0012,title,,"A Thangka of Palden Lhamo, 19th century",price_list_pdf,(filled from price_list_pdf)
+KG-0012,height_in,,16.75,price_list_pdf,(filled from price_list_pdf)
+KG-0012,width_in,,12.75,price_list_pdf,(filled from price_list_pdf)
+KG-0012,price_usd,,28000.0,price_list_pdf,(filled from price_list_pdf)
+KG-0012,provenance_text,,"Provenance: The Estate of Dr. Joseph W. Foxell Jr., New Jersey Thence by descent to the current owner",price_list_pdf,(filled from price_list_pdf)
+KG-0012,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-0906,title,,Abhayakaragupta,price_list_pdf,(filled from price_list_pdf)
+KG-0906,height_in,,39.5,price_list_pdf,(filled from price_list_pdf)
+KG-0906,width_in,,23.5,price_list_pdf,(filled from price_list_pdf)
+KG-0906,price_usd,,80000.0,price_list_pdf,(filled from price_list_pdf)
+KG-0906,provenance_text,,"Provenance: Private New York collection, acquired in the 1960s, by repute. Thence by descent. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
+KG-0906,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-1000,materials,,Opaque Watercolor on Paper,match_workbook,(filled from match_workbook)
 KG-1001,materials,,Opaque watercolor heightened with gold on paper,match_workbook,(filled from match_workbook)
 KG-1002,materials,,Gouache and gold on paper,match_workbook,(filled from match_workbook)
@@ -295,8 +307,16 @@ KG-1712,classification,,Sculpture,auto_resolution,Bronze cast works are sculptur
 KG-1721,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1723,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
 KG-1725,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1737,height_in,,24.0,price_list_pdf,(filled from price_list_pdf)
+KG-1737,width_in,,15.0,price_list_pdf,(filled from price_list_pdf)
+KG-1737,provenance_text,,Provenance: Collection of late John Walden (1925-2013).,price_list_pdf,(filled from price_list_pdf)
+KG-1737,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-1738,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1739,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1741,height_in,,29.25,price_list_pdf,(filled from price_list_pdf)
+KG-1741,width_in,,20.0,price_list_pdf,(filled from price_list_pdf)
+KG-1741,provenance_text,,Provenance: From a Private Italian Collection.,price_list_pdf,(filled from price_list_pdf)
+KG-1741,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-1745,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1747,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1749,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -337,6 +357,18 @@ KG-1793,classification,,Sculpture,auto_resolution,Bronze cast works are sculptur
 KG-1796,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1810,classification,,Sculpture,auto_resolution,Terracotta works are sculptures.
 KG-1812,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1812,height_in,,42.5,price_list_pdf,(filled from price_list_pdf)
+KG-1812,width_in,,27.75,price_list_pdf,(filled from price_list_pdf)
+KG-1812,provenance_text,,"Provenance: East coast collection, acquired in the 1970s. Sotheby's New York, 12 June 2020, lot 899.",price_list_pdf,(filled from price_list_pdf)
+KG-1812,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-1813,height_in,,34.5,price_list_pdf,(filled from price_list_pdf)
+KG-1813,width_in,,23.5,price_list_pdf,(filled from price_list_pdf)
+KG-1813,provenance_text,,"Provenance: Southern Alleghenies Museum of Art (SAMA). Exhibited: ""Mirrors of the Heart-Mind"" at SAMA in 1988. Published: Himalayan Art Resources (himalayanart.org), item no. 90527. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
+KG-1813,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-1814,height_in,,25.5,price_list_pdf,(filled from price_list_pdf)
+KG-1814,width_in,,20.0,price_list_pdf,(filled from price_list_pdf)
+KG-1814,provenance_text,,"Provenance: Southern Alleghenies Museum of Art (SAMA). www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
+KG-1814,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-1815,classification,tskali,Painting,auto_resolution,Works on cotton are categorized as Painting.
 KG-1819,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1820,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
@@ -422,6 +454,8 @@ KG-2100,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-2102,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2105,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2106,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2106,provenance_text,,Provenance: Property from the José M. Neistein Collection.,price_list_pdf,(filled from price_list_pdf)
+KG-2106,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2108,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2109,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2111,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -468,6 +502,7 @@ KG-2179,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-2180,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2181,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2185,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2188,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2193,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
 KG-2194,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2195,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -481,6 +516,7 @@ KG-2213,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-2214,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2215,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2216,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2224,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2227,classification,Design/Decorative Art,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-2228,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2229,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -536,6 +572,7 @@ KG-2349,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-2350,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2364,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2365,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2375,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2379,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2383,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2384,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -549,6 +586,8 @@ KG-2391,classification,Other,"Drawing, Collage or other Work on Paper",auto_reso
 KG-2392,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2393,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2394,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2395,price_usd,,80000.0,price_list_pdf,(filled from price_list_pdf)
+KG-2395,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2397,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2398,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2399,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.

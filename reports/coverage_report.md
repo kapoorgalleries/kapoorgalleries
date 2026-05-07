@@ -1,26 +1,26 @@
 # Inventory coverage
 
-- Total works: **1526**
-- Works with at least one conflict: **247**
+- Total works: **1528**
+- Works with at least one conflict: **257**
 
 ## Field-level coverage
 
 | Field | Populated | % |
 |---|---:|---:|
-| title | 1522 | 99.7% |
+| title | 1524 | 99.7% |
 | artist | 128 | 8.4% |
-| year | 934 | 61.2% |
+| year | 934 | 61.1% |
 | period_school_region | 0 | 0.0% |
-| classification | 1251 | 82.0% |
-| medium | 1220 | 79.9% |
+| classification | 1251 | 81.9% |
+| medium | 1220 | 79.8% |
 | materials | 16 | 1.0% |
-| height_in | 416 | 27.3% |
-| width_in | 363 | 23.8% |
+| height_in | 423 | 27.7% |
+| width_in | 370 | 24.2% |
 | depth_in | 23 | 1.5% |
-| price_usd | 390 | 25.6% |
-| status | 1415 | 92.7% |
-| provenance_text | 4 | 0.3% |
-| exhibitions | 0 | 0.0% |
+| price_usd | 393 | 25.7% |
+| status | 1415 | 92.6% |
+| provenance_text | 12 | 0.8% |
+| exhibitions | 12 | 0.8% |
 | publications | 0 | 0.0% |
 | signature | 20 | 1.3% |
 | coa_status | 0 | 0.0% |
@@ -38,6 +38,7 @@
 | Artsy_2-16-2026.csv | artsy_csv | 1823 | 2026-05-06T05:14:42 |
 | Graham Inventory - owned.pdf | sub_inventory | 15 | 2026-05-07T13:56:06 |
 | July 2022 Textile Boxes Inventory.docx | textile_boxes | 6 | 2026-05-07T14:07:10 |
+| KG_Art of the Himalayas Price List.pdf | price_list_pdf | 6 | 2026-05-07T14:26:58 |
 | Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T06:06:22 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | bulk_upload_xlsx | 1424 | 2026-05-06T06:29:00 |
 | auto_resolution_rules | auto_resolution | 40 | 2026-05-06T06:55:24 |

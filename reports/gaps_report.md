@@ -1,14 +1,14 @@
 # Artsy upload gaps
 
-- Works blocked from Artsy upload: **926**
+- Works blocked from Artsy upload: **928**
 
 ## What's missing most often
 
 | Missing field | Works |
 |---|---:|
-| image | 885 |
-| medium | 306 |
-| classification | 275 |
+| image | 887 |
+| medium | 308 |
+| classification | 277 |
 | title | 4 |
 
 ## Triage: closest to upload-ready first

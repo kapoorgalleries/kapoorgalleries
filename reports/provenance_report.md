@@ -22,6 +22,12 @@
 | July 2022 Textile Boxes Inventory.docx | external_id | 6 |
 | July 2022 Textile Boxes Inventory.docx | classification | 6 |
 | July 2022 Textile Boxes Inventory.docx | provenance_text | 4 |
+| KG_Art of the Himalayas Price List.pdf | width_in | 12 |
+| KG_Art of the Himalayas Price List.pdf | title | 12 |
+| KG_Art of the Himalayas Price List.pdf | price_usd | 12 |
+| KG_Art of the Himalayas Price List.pdf | height_in | 12 |
+| KG_Art of the Himalayas Price List.pdf | exhibitions | 12 |
+| KG_Art of the Himalayas Price List.pdf | provenance_text | 8 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | status | 1415 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | title | 1411 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | classification | 1106 |
@@ -46,9 +52,9 @@
 | Field | Works with conflict |
 |---|---:|
 | classification | 243 |
+| title | 13 |
 | medium | 7 |
-| title | 3 |
-| height_in | 1 |
-| price_usd | 1 |
-| width_in | 1 |
+| price_usd | 6 |
+| width_in | 4 |
+| height_in | 3 |
 | year | 1 |

@@ -1,5 +1,25 @@
 [
   {
+    "work_id": "KG-0012",
+    "title": "A Thangka of Palden Lhamo, 19th century",
+    "height_in": 16.75,
+    "width_in": 12.75,
+    "price_usd": 28000.0,
+    "provenance_text": "Provenance: The Estate of Dr. Joseph W. Foxell Jr., New Jersey Thence by descent to the current owner",
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 0
+  },
+  {
+    "work_id": "KG-0906",
+    "title": "Abhayakaragupta",
+    "height_in": 39.5,
+    "width_in": 23.5,
+    "price_usd": 80000.0,
+    "provenance_text": "Provenance: Private New York collection, acquired in the 1960s, by repute. Thence by descent. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 0
+  },
+  {
     "work_id": "KG-1000",
     "title": "A Guru and Student in the Wilderness",
     "year": 1850,
@@ -8342,9 +8362,14 @@
     "year": 1701,
     "classification": "Painting",
     "medium": "Ground mineral pigments and gold on cloth",
+    "height_in": 24.0,
+    "width_in": 15.0,
     "price_usd": 30000.0,
     "status": "active",
-    "has_conflict": 0
+    "provenance_text": "Provenance: Collection of late John Walden (1925-2013).",
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title"
   },
   {
     "work_id": "KG-1738",
@@ -8377,9 +8402,14 @@
     "year": 1801,
     "classification": "Painting",
     "medium": "Ground mineral pigments on cloth",
+    "height_in": 29.25,
+    "width_in": 20.0,
     "price_usd": 30000.0,
     "status": "active",
-    "has_conflict": 0
+    "provenance_text": "Provenance: From a Private Italian Collection.",
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title"
   },
   {
     "work_id": "KG-1742",
@@ -9029,9 +9059,14 @@
     "year": 1701,
     "classification": "Painting",
     "medium": "Opaque watercolor on paper",
+    "height_in": 42.5,
+    "width_in": 27.75,
     "price_usd": 15000.0,
     "status": "active",
-    "has_conflict": 0
+    "provenance_text": "Provenance: East coast collection, acquired in the 1970s. Sotheby's New York, 12 June 2020, lot 899.",
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title"
   },
   {
     "work_id": "KG-1813",
@@ -9039,9 +9074,14 @@
     "year": 1801,
     "classification": "Painting",
     "medium": "gouache on cotton",
+    "height_in": 34.5,
+    "width_in": 23.5,
     "price_usd": 24000.0,
     "status": "active",
-    "has_conflict": 0
+    "provenance_text": "Provenance: Southern Alleghenies Museum of Art (SAMA). Exhibited: \"Mirrors of the Heart-Mind\" at SAMA in 1988. Published: Himalayan Art Resources (himalayanart.org), item no. 90527. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title,price_usd"
   },
   {
     "work_id": "KG-1814",
@@ -9049,9 +9089,14 @@
     "year": 1701,
     "classification": "Painting",
     "medium": "gouache on cotton",
+    "height_in": 25.5,
+    "width_in": 20.0,
     "price_usd": 24000.0,
     "status": "active",
-    "has_conflict": 0
+    "provenance_text": "Provenance: Southern Alleghenies Museum of Art (SAMA). www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title,price_usd"
   },
   {
     "work_id": "KG-1815",
@@ -11271,7 +11316,10 @@
     "width_in": 39.0,
     "price_usd": 30000.0,
     "status": "active",
-    "has_conflict": 0
+    "provenance_text": "Provenance: Property from the José M. Neistein Collection.",
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title,height_in,width_in,price_usd"
   },
   {
     "work_id": "KG-2107",
@@ -12064,7 +12112,9 @@
     "width_in": 17.25,
     "price_usd": 44000.0,
     "status": "active",
-    "has_conflict": 0
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title"
   },
   {
     "work_id": "KG-2190",
@@ -12421,7 +12471,9 @@
     "width_in": 18.0,
     "price_usd": 38000.0,
     "status": "active",
-    "has_conflict": 0
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title,width_in,price_usd"
   },
   {
     "work_id": "KG-2225",
@@ -13818,7 +13870,9 @@
     "width_in": 13.0,
     "price_usd": 18000.0,
     "status": "active",
-    "has_conflict": 0
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title,height_in,width_in,price_usd"
   },
   {
     "work_id": "KG-2376",
@@ -14008,8 +14062,11 @@
     "medium": "Ground mineral pigments on cotton",
     "height_in": 32.0,
     "width_in": 20.0,
+    "price_usd": 80000.0,
     "status": "active",
-    "has_conflict": 0
+    "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+    "has_conflict": 1,
+    "conflict_fields": "title"
   },
   {
     "work_id": "KG-2396",
