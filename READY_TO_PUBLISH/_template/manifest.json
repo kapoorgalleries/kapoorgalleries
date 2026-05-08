@@ -1,0 +1,10 @@
+{
+  "file": "document.pdf",
+  "title": "Replace with the publication title",
+  "description": "One- or two-sentence description shown on the Issuu listing.",
+  "access": "PUBLIC",
+  "publish": false,
+  "downloadable": false,
+  "preview": false,
+  "originalPublishDate": "2026-01-15"
+}
