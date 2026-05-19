@@ -1,0 +1,6 @@
+# Source PDFs are too large for git; fetched per-machine via scripts/fetch_pdfs.sh
+READY_TO_PUBLISH/*/document.pdf
+READY_TO_PUBLISH/*/*.pdf
+
+# Per-machine upload state
+READY_TO_PUBLISH/*/.uploaded
