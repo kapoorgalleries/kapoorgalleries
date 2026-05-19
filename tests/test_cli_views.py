@@ -488,6 +488,45 @@ def test_audit_rules_distinguishes_dead_redundant_and_ok(tmp_path: Path):
     assert "REDUNDANT: 1" in r.output
 
 
+def test_conflict_patterns_groups_recurring_pairs(tmp_path: Path):
+    """Two works each disagreeing on classification with the same pair
+    of values from the same pair of sources should collapse to ONE
+    pattern with count=2 — that's the whole point of the command."""
+    db_path = tmp_path / "t.db"
+    db = init_db(db_path)
+    sid_a = upsert_source(db, SourceRecord(
+        name="t-artsy", type="artsy_csv", extracted_at="2026-01-01"))
+    sid_b = upsert_source(db, SourceRecord(
+        name="t-bulk", type="bulk_upload_xlsx", extracted_at="2026-01-02"))
+    # Two works, same disagreement pattern.
+    for wid in ("KG-1", "KG-2"):
+        insert_observations(db, sid_a, [Observation(
+            work_id=wid, field="classification", value="Painting",
+            observed_at="2026-01-01")])
+        insert_observations(db, sid_b, [Observation(
+            work_id=wid, field="classification",
+            value="Drawing, Collage or other Work on Paper",
+            observed_at="2026-01-02")])
+    # A third work with a DIFFERENT pattern — should be its own bucket.
+    insert_observations(db, sid_a, [Observation(
+        work_id="KG-3", field="medium", value="bronze",
+        observed_at="2026-01-01")])
+    insert_observations(db, sid_b, [Observation(
+        work_id="KG-3", field="medium", value="copper alloy",
+        observed_at="2026-01-02")])
+    consolidate(db)
+    db.conn.close()
+
+    runner = CliRunner()
+    r = runner.invoke(cli, ["conflict-patterns", "--db", str(db_path)])
+    assert r.exit_code == 0, r.output
+    # Two distinct patterns expected.
+    assert "2 of 2 distinct conflict patterns" in r.output
+    # The pair should show "2 works" — both KG-1 and KG-2.
+    assert "2 works · classification" in r.output
+    assert "1 works · medium" in r.output
+
+
 def test_suggest_rules_skips_stopwords_and_placeholders(tmp_path: Path):
     """suggest-rules should NOT propose rules anchored on medium-
     descriptor words ('gold', 'with', 'paper') or on placeholder titles

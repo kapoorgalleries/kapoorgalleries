@@ -579,6 +579,68 @@ def conflicts(db_path: str, limit: int):
         click.echo()
 
 
+@cli.command("conflict-patterns")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--limit", default=15, show_default=True)
+def conflict_patterns(db_path: str, limit: int):
+    """Show the top systematic disagreement patterns across conflicts.
+
+    A high-frequency pair (e.g. 211 works with "Drawing, Collage" vs
+    "Painting") signals a source-mapping issue rather than per-work
+    data error — and is a candidate for one batch resolution that
+    settles them all at once rather than 211 individual triages.
+
+    For each pattern shows: count · field · the two values · which
+    sources held each value.
+    """
+    db = dbmod.get_db(db_path)
+    # Pull all observation pairs that participated in a conflict
+    # (i.e. work,field has 2+ distinct non-resolution values).
+    raw = db.execute(
+        """SELECT o.work_id, o.field, o.value, s.type
+           FROM observations o JOIN sources s ON s.id = o.source_id
+           WHERE o.value IS NOT NULL AND o.value != ''
+             AND s.type NOT IN ('human_resolution','auto_resolution')"""
+    ).fetchall()
+    # Group by (work, field): {(value, source_type)} set.
+    from collections import defaultdict, Counter
+    by_wf: dict[tuple[str, str], set] = defaultdict(set)
+    for w, f, v, st in raw:
+        by_wf[(w, f)].add((v, st))
+
+    # For each conflicted (work, field), record the canonical
+    # disagreement pattern: (field, sorted-values-tuple, sorted-sources-tuple).
+    patterns: Counter = Counter()
+    examples: dict[tuple, str] = {}
+    for (w, f), pairs in by_wf.items():
+        values = sorted({p[0] for p in pairs})
+        if len(values) < 2:
+            continue
+        sources = sorted({p[1] for p in pairs})
+        key = (f, tuple(values), tuple(sources))
+        patterns[key] += 1
+        examples.setdefault(key, w)
+
+    if not patterns:
+        click.echo("\n  No conflicts found.\n")
+        return
+
+    click.echo()
+    click.echo(f"  Top {min(limit, len(patterns))} of {len(patterns)} "
+               f"distinct conflict patterns:")
+    click.echo()
+    for (field, values, sources), n in patterns.most_common(limit):
+        click.echo(f"  {n:4d} works · {field}")
+        for v in values:
+            click.echo(f"         '{v[:80]}'")
+        click.echo(f"         sources: {', '.join(sources)}")
+        click.echo(f"         example: {examples[(field, values, sources)]}")
+        click.echo()
+    if len(patterns) > limit:
+        click.echo(f"  … and {len(patterns) - limit} more patterns.")
+        click.echo()
+
+
 @cli.command("export-filtered")
 @click.option("--out", "out_path", required=True,
               help="Path to write the filtered CSV (e.g. data/sculptures.csv).")
