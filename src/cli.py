@@ -1602,20 +1602,26 @@ def refresh(ctx, db_path: str, sources: str, commit: bool):
 def audit_rules(db_path: str, rules_path: str):
     """Show how each auto-rule is performing in the current DB.
 
-    For each rule, reports:
-      • applied — number of works the rule fired on
-      • overridden — works where a human_resolution disagreed with the
-        rule's `then:` value (suggests the rule is too broad)
-      • status — DEAD (zero matches) / SUSPECT (any overrides) / OK
+    Status is split between "the rule emitted an observation" and "the
+    rule's if-condition matched works":
 
-    Use this to prune rules that no longer fire (data has shifted) or
-    that the curator routinely overrides (rule needs tightening).
+      • OK         — rule fired on works that lacked the target value
+      • REDUNDANT  — if-condition matches works, but they already have
+                     the rule's target value (Primer/sources got it
+                     right; rule still useful as a safety net)
+      • DEAD       — zero works match the if-condition (genuinely
+                     unused; consider removing)
+      • SUSPECT    — fired, but a human resolution disagrees
+
+    Use this to spot rules that are genuinely unused (DEAD) vs. ones
+    that just don't have new work to do (REDUNDANT — keep).
     """
+    from .ingest.auto_resolution import _matches as _rule_matches
+
     db = dbmod.get_db(db_path)
     rules = yaml.safe_load(Path(rules_path).read_text()) or []
 
-    # Count rule firings by parsing source_row_ref of auto_resolution
-    # observations: format 'rule=N;reason=...'.
+    # Count rule firings via source_row_ref of auto_resolution obs.
     fired_counts: dict[int, int] = {}
     fired_works: dict[int, set[str]] = {}
     rule_target: dict[int, tuple[str, str]] = {}  # rule_idx -> (field, value)
@@ -1634,8 +1640,7 @@ def audit_rules(db_path: str, rules_path: str):
         fired_works.setdefault(rule_idx, set()).add(w)
         rule_target.setdefault(rule_idx, (f, v))
 
-    # Find (work, field) where a human resolution disagrees with the
-    # rule's value — suggests the rule is too aggressive.
+    # Human-resolution overrides.
     human_values: dict[tuple[str, str], str] = {}
     for w, f, v in db.execute(
         """SELECT o.work_id, o.field, o.value FROM observations o
@@ -1644,40 +1649,71 @@ def audit_rules(db_path: str, rules_path: str):
     ).fetchall():
         human_values[(w, f)] = v
 
+    # For redundancy detection: evaluate each rule's if-condition
+    # against every work, count matches even when no observation
+    # was emitted (because Primer already had the target value).
+    all_work_ids = [r[0] for r in db.execute(
+        "SELECT DISTINCT work_id FROM observations"
+    ).fetchall()]
+
     rows = []
     for i, rule in enumerate(rules, start=1):
         applied = fired_counts.get(i, 0)
-        target_field, target_value = rule_target.get(i, ("?", "?"))
+        cond = rule.get("if", {})
+        then = rule.get("then", {})
+
+        # Target field/value: prefer the actual fired observations,
+        # else fall back to the rule's `then:` (first key).
+        if i in rule_target:
+            target_field, target_value = rule_target[i]
+        elif then:
+            target_field = next(iter(then.keys()))
+            target_value = str(then[target_field])
+        else:
+            target_field, target_value = "?", "?"
+
+        # Count would-match works (uses the same matcher the ingester does).
+        would_match = sum(
+            1 for w in all_work_ids if _rule_matches(db, w, cond)
+        ) if cond else 0
+
         overrides = sum(
             1 for w in fired_works.get(i, set())
             if (w, target_field) in human_values
             and human_values[(w, target_field)] != target_value
         )
-        if applied == 0:
-            status = "DEAD"
-        elif overrides > 0:
-            status = "SUSPECT"
+
+        if applied > 0:
+            status = "SUSPECT" if overrides > 0 else "OK"
+        elif would_match > 0:
+            status = "REDUNDANT"
         else:
-            status = "OK"
-        cond = rule.get("if", {})
+            status = "DEAD"
+
         cond_str = ", ".join(f"{k}: {v}" for k, v in cond.items())[:50]
-        then = rule.get("then", {})
         then_str = ", ".join(f"{k}={v}" for k, v in then.items())[:40]
-        rows.append((i, status, applied, overrides, cond_str, then_str))
+        rows.append((i, status, applied, would_match, overrides, cond_str, then_str))
 
     click.echo()
-    click.echo(f"  {'Rule':<5}{'Status':<8}{'Applied':>8}{'Override':>10}  if  =>  then")
-    for i, status, applied, overrides, cond, then in rows:
+    click.echo(
+        f"  {'Rule':<5}{'Status':<10}{'Applied':>8}{'Matches':>9}{'Override':>10}  "
+        f"if  =>  then"
+    )
+    for i, status, applied, would_match, overrides, cond, then in rows:
         click.echo(
-            f"  #{i:<4}{status:<8}{applied:>8}{overrides:>10}  "
+            f"  #{i:<4}{status:<10}{applied:>8}{would_match:>9}{overrides:>10}  "
             f"{cond}  =>  {then}"
         )
     click.echo()
     n_dead = sum(1 for r in rows if r[1] == "DEAD")
+    n_redundant = sum(1 for r in rows if r[1] == "REDUNDANT")
     n_suspect = sum(1 for r in rows if r[1] == "SUSPECT")
-    click.echo(f"  Total rules: {len(rows)} · "
-               f"DEAD: {n_dead} (consider removing) · "
-               f"SUSPECT: {n_suspect} (curator overrides — review)")
+    click.echo(
+        f"  Total rules: {len(rows)} · "
+        f"DEAD: {n_dead} (no matching works — consider removing) · "
+        f"REDUNDANT: {n_redundant} (matches works that already have the value — safety net) · "
+        f"SUSPECT: {n_suspect} (curator overrides — review)"
+    )
 
 
 @cli.command("suggest-rules")

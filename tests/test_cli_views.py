@@ -425,21 +425,34 @@ def test_match_external_finds_strong_match_skips_generic(tmp_path: Path):
     assert "X-2" in r.output and "KG-2" in r.output
 
 
-def test_audit_rules_marks_dead_and_ok(tmp_path: Path):
-    """Rule firing on no works should be DEAD; rule firing without
-    any human override should be OK."""
+def test_audit_rules_distinguishes_dead_redundant_and_ok(tmp_path: Path):
+    """Three categories should be possible from one input:
+      - OK: rule fired (emitted an observation)
+      - REDUNDANT: if-condition matches works that already have the
+        target value (so the rule emits nothing, but it's not dead)
+      - DEAD: if-condition matches zero works
+    """
     db_path = tmp_path / "t.db"
     db = init_db(db_path)
-    # Seed one work with medium=paper so rule #1 (paper -> Drawing) fires.
+
+    # Setup: 3 works
+    #   KG-1: medium=paper, no classification yet — rule fires.
+    #   KG-2: medium=bronze, classification=Sculpture already — REDUNDANT.
+    #   KG-3: medium=cotton — no rule will match.
     sid_obs = upsert_source(db, SourceRecord(
         name="t-artsy", type="artsy_csv", extracted_at="2026-01-01",
     ))
-    insert_observations(db, sid_obs, [Observation(
-        work_id="KG-1", field="medium", value="ink on paper",
-        observed_at="2026-01-01",
-    )])
-    # Seed an auto_resolution observation that *did* fire for KG-1
-    # (rule=1) — and one that did NOT fire on any work (rule=999).
+    insert_observations(db, sid_obs, [
+        Observation(work_id="KG-1", field="medium", value="ink on paper",
+                    observed_at="2026-01-01"),
+        Observation(work_id="KG-2", field="medium", value="bronze",
+                    observed_at="2026-01-01"),
+        Observation(work_id="KG-2", field="classification", value="Sculpture",
+                    observed_at="2026-01-01"),
+        Observation(work_id="KG-3", field="medium", value="cotton",
+                    observed_at="2026-01-01"),
+    ])
+    # The paper rule fires on KG-1.
     sid_auto = upsert_source(db, SourceRecord(
         name="t-auto", type="auto_resolution", extracted_at="2026-01-01",
     ))
@@ -456,6 +469,8 @@ def test_audit_rules_marks_dead_and_ok(tmp_path: Path):
     rules.write_text(
         "- if: { medium_contains: paper }\n"
         "  then: { classification: 'Drawing, Collage or other Work on Paper' }\n"
+        "- if: { medium_contains: bronze }\n"
+        "  then: { classification: Sculpture }\n"
         "- if: { medium_contains: nonsense_token }\n"
         "  then: { classification: Sculpture }\n"
     )
@@ -465,8 +480,9 @@ def test_audit_rules_marks_dead_and_ok(tmp_path: Path):
         "audit-rules", "--db", str(db_path), "--rules", str(rules),
     ])
     assert r.exit_code == 0, r.output
-    # First rule fired, second didn't.
     assert "OK" in r.output
+    assert "REDUNDANT" in r.output
     assert "DEAD" in r.output
-    # Summary line includes both counts.
+    # One of each.
     assert "DEAD: 1" in r.output
+    assert "REDUNDANT: 1" in r.output
