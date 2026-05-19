@@ -486,3 +486,57 @@ def test_audit_rules_distinguishes_dead_redundant_and_ok(tmp_path: Path):
     # One of each.
     assert "DEAD: 1" in r.output
     assert "REDUNDANT: 1" in r.output
+
+
+def test_suggest_rules_skips_stopwords_and_placeholders(tmp_path: Path):
+    """suggest-rules should NOT propose rules anchored on medium-
+    descriptor words ('gold', 'with', 'paper') or on placeholder titles
+    ('Need title' / 'Untitled') — those are noise patterns, not real
+    inferential signal."""
+    db_path = tmp_path / "t.db"
+    db = init_db(db_path)
+    sid = upsert_source(db, SourceRecord(
+        name="t-artsy", type="artsy_csv", extracted_at="2026-01-01",
+    ))
+    obs = []
+    # 6 placeholder-title works all sharing the same medium —
+    # would generate a "title_contains: need" rule if we didn't filter.
+    for i in range(6):
+        wid = f"KG-{1000+i}"
+        obs.extend([
+            Observation(work_id=wid, field="title", value="Need title",
+                        observed_at="2026-01-01"),
+            Observation(work_id=wid, field="medium",
+                        value="Opaque watercolor on paper",
+                        observed_at="2026-01-01"),
+            Observation(work_id=wid, field="classification", value="Painting",
+                        observed_at="2026-01-01"),
+        ])
+    # Also seed 6 works that legitimately share a distinctive title token.
+    for i in range(6):
+        wid = f"KG-{2000+i}"
+        obs.extend([
+            Observation(work_id=wid, field="title",
+                        value=f"Krishna fluteplayer #{i}",
+                        observed_at="2026-01-01"),
+            Observation(work_id=wid, field="medium",
+                        value="Gold on red ground",
+                        observed_at="2026-01-01"),
+            Observation(work_id=wid, field="classification",
+                        value="Painting", observed_at="2026-01-01"),
+        ])
+    insert_observations(db, sid, obs)
+    consolidate(db)
+    db.conn.close()
+
+    runner = CliRunner()
+    r = runner.invoke(cli, ["suggest-rules", "--db", str(db_path),
+                            "--min-support", "5"])
+    assert r.exit_code == 0, r.output
+    # 'need' / 'title' (placeholder cluster) must NOT be suggested.
+    assert "title_contains: need" not in r.output
+    assert "title_contains: title" not in r.output
+    # 'gold' (stopword medium descriptor) must NOT be suggested.
+    assert "medium_contains: gold" not in r.output
+    # The distinctive 'fluteplayer' SHOULD be suggested.
+    assert "fluteplayer" in r.output

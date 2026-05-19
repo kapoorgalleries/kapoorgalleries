@@ -1735,18 +1735,29 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
 
     db = dbmod.get_db(db_path)
     rows = db.execute(
-        "SELECT title, medium, classification FROM works WHERE classification IS NOT NULL"
+        "SELECT work_id, title, medium, classification FROM works WHERE classification IS NOT NULL"
     ).fetchall()
 
     # Tokenize titles to single-word keywords (length >= 4 to avoid noise).
     title_classes: dict[str, Counter] = defaultdict(Counter)
     medium_classes: dict[str, Counter] = defaultdict(Counter)
     title_mediums: dict[str, Counter] = defaultdict(Counter)
-    for title, medium, cls in rows:
-        for tok in re.findall(r"[a-z]{4,}", (title or "").lower()):
-            title_classes[tok][cls] += 1
-            if medium:
-                title_mediums[tok][medium] += 1
+    # Identify placeholder-title works first so title-token counters skip them.
+    placeholder_titles = {
+        "need title", "untitled", "no title", "tbd", "placeholder", "(no title)",
+    }
+    placeholder_work_ids = {
+        r[0] for r in rows if (r[1] or "").strip().lower() in placeholder_titles
+    }
+    for wid, title, medium, cls in rows:
+        is_placeholder = wid in placeholder_work_ids
+        if not is_placeholder:
+            for tok in re.findall(r"[a-z]{4,}", (title or "").lower()):
+                title_classes[tok][cls] += 1
+                if medium:
+                    title_mediums[tok][medium] += 1
+        # Medium tokens are always indexed — medium isn't a placeholder
+        # field even if title is.
         for tok in re.findall(r"[a-z]{4,}", (medium or "").lower()):
             medium_classes[tok][cls] += 1
 
@@ -1759,11 +1770,31 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
                 if "_contains" in k and isinstance(v, str):
                     existing_keywords.add(v.lower())
 
+    # Noise words: common English / common medium descriptors that
+    # produce high-purity "rules" with no inferential value.  These
+    # would all suggest things like "if medium contains 'with' then
+    # classification = Drawing" — true but useless.
+    STOPWORDS = {
+        # English filler
+        "with", "and", "the", "from", "for", "this", "that", "into",
+        # Medium descriptors
+        "gold", "silver", "ink", "paint", "paper", "cloth", "wood",
+        "metal", "stone", "ground", "mineral", "pigment", "pigments",
+        "opaque", "watercolor", "gouache", "heightened", "prepared",
+        # Numbers / units written long
+        "century", "circa",
+        # Placeholder text that bunches works (e.g. "Need title" → suggests
+        # "if title contains 'need'…" which is just a placeholder-cluster artifact)
+        "need", "title", "untitled",
+    }
+
+    # (placeholder_work_ids already computed above from the row loop)
+
     # Each suggestion: (purity, condition_key, condition_token,
     #                   target_field, target_value, support, evidence)
     suggestions: list[tuple[float, str, str, str, str, int, str]] = []
     for token, counter in title_classes.items():
-        if token in existing_keywords:
+        if token in existing_keywords or token in STOPWORDS:
             continue
         total = sum(counter.values())
         if total < min_support:
@@ -1775,7 +1806,7 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
                                 "classification", cls, n,
                                 f"{n}/{total} works with title containing {token!r}"))
     for token, counter in medium_classes.items():
-        if token in existing_keywords:
+        if token in existing_keywords or token in STOPWORDS:
             continue
         total = sum(counter.values())
         if total < min_support:
@@ -1790,7 +1821,7 @@ def suggest_rules(min_support: int, min_purity: float, db_path: str):
     # Also: where a title-keyword strongly predicts a specific medium, suggest
     # a medium-fill rule.  (Example: 'khanjar' → "Jade-hilted dagger…")
     for token, counter in title_mediums.items():
-        if token in existing_keywords:
+        if token in existing_keywords or token in STOPWORDS:
             continue
         total = sum(counter.values())
         if total < min_support:
