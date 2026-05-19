@@ -159,6 +159,40 @@
     Run a Gmail MCP fetch into data/raw/email_gaps_sarah_fenner.json:
     one JSON object per thread {thread_id, snippet, full_text}.
 
+# --- Artsy follow-on batch uploads (Sarah Fenner curated) ---
+# Sheets owned by sarah.fenner@artsymail.com or sanjay@kapoors.com.  These
+# are smaller batches that landed AFTER the initial 1,415-row
+# Bulk_upload_Template Artsy.  No KG-#s on entries — rich Artsy-format
+# metadata (year, dimensions, price, provenance, published, exhibited,
+# materials).  Would emit UNRESOLVED-* observations, then `kg-inv
+# match-external` can suggest KG-# matches by title.
+# Format: section dividers (SCULPTURE/ OBJECT, MANUSCRIPT, PAINTING,
+# SUMMER EXHIB., Photos Needed) followed by rows.  Header row is row 2,
+# row 1 is the literal string "Published" then nothing else.
+# Deferred: needs a new `artsy_batch_csv` ingester variant — the
+# existing artsy_csv parser expects FileMaker `::` columns.
+- name: Artsy 7/25 Batch Upload
+  type: artsy_batch_csv
+  drive_file_id: 1xnK16RxE-6YJpmMwLJZYBI8g3DPjVCviwsXizgwNIMw
+  drive_export_mime: text/csv
+  local_path: data/raw/Artsy_7_25_Batch_Upload.csv
+  enabled: false
+  notes: "~80 works, ~28 KB CSV. Mixed sections: paintings, manuscripts, jewelry, sculpture."
+- name: Artsy 9/25 Batch Upload
+  type: artsy_batch_csv
+  drive_file_id: 1axNhsUHkyahuMS1jze7wZh_2tBGGa2VOnH8xmzReXVs
+  drive_export_mime: text/csv
+  local_path: data/raw/Artsy_9_25_Batch_Upload.csv
+  enabled: false
+  notes: "3 KB CSV — small follow-on batch."
+- name: Artsy Travel Posters Upload
+  type: artsy_batch_csv
+  drive_file_id: 11HoiM0XqSfyZZBlnQCMNgJk0HwAfy4y8fOzELfiEgAA
+  drive_export_mime: text/csv
+  local_path: data/raw/Artsy_Travel_Posters_Upload.csv
+  enabled: false
+  notes: "15 KB CSV — travel-poster classification batch."
+
 # --- Resolution layer (always run last) ---
 # Deterministic field-inference rules.  Below human, above Primer.
 - name: auto_resolution_rules
