@@ -3,6 +3,7 @@
   "title": "Replace with the publication title",
   "description": "One- or two-sentence description shown on the Issuu listing.",
   "access": "PUBLIC",
+  "type": "editorial",
   "publish": false,
   "downloadable": false,
   "preview": false,

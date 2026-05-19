@@ -40,6 +40,7 @@ publish=$(jq -r '.publish // false'             "$manifest")
 orig_date=$(jq -r '.originalPublishDate // ""'  "$manifest")
 downloadable=$(jq -r '.downloadable // false'   "$manifest")
 preview=$(jq -r '.preview // false'             "$manifest")
+pub_type=$(jq -r '.type // "editorial"'         "$manifest")
 
 [[ -n "$title"  && "$title"  != "null" ]] || die "manifest missing 'title'"
 [[ -n "$file"   && "$file"   != "null" ]] || die "manifest missing 'file'"
@@ -57,20 +58,23 @@ if [[ "$DRY_RUN" == "1" ]]; then
   exit 0
 fi
 
+# Per Issuu v2 docs: when uploading the file via a separate PATCH (rather than
+# providing fileUrl up front), the draft creation body omits confirmCopyright
+# and fileUrl. confirmCopyright is sent with the upload PATCH instead.
 draft_body=$(jq -n \
   --arg title "$title" \
   --arg desc "$desc" \
   --arg access "$access" \
+  --arg pub_type "$pub_type" \
   --arg orig_date "$orig_date" \
   --argjson downloadable "$downloadable" \
   --argjson preview "$preview" \
   '{
-    confirmCopyrightOwnership: true,
     info: ({
-      file: 0,
       title: $title,
       description: $desc,
       access: $access,
+      type: $pub_type,
       showDetectedLinks: true,
       downloadable: $downloadable,
       preview: $preview
@@ -90,6 +94,7 @@ log "draft slug: $slug"
 log "uploading file..."
 upload_resp=$(curl -sS --fail-with-body -X PATCH "$ISSUU_API/drafts/$slug/upload" \
   -H "Authorization: Bearer $ISSUU_API_TOKEN" \
+  -F "confirmCopyright=true" \
   -F "file=@$file_path") || die "file upload failed: $upload_resp"
 log "upload accepted"
 
