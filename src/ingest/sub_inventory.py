@@ -16,8 +16,12 @@ from ..normalize import normalize_title
 from ..schema import Observation
 from ._base import IngestResult, Ingester
 
-# Numeric-prefix style: "1. Title", "001) Title", "No. 12 Title".
-ENTRY_RE = re.compile(r"^(?:No\.?\s*)?(\d{1,4})[.)]\s+(.+)$")
+# Numeric-prefix style: "1) Title", "001) Title", "No. 12) Title".
+# We require `)` rather than `.` because real inventory entries use ")"
+# (e.g. Darion: "74) Persian. ..."), while ".N" is more often a plate
+# caption / footnote / list-of-figures reference and produces noise
+# when treated as an inventory line.
+ENTRY_RE = re.compile(r"^(?:No\.?\s*)?(\d{1,4})\)\s+(.+)$")
 
 # Letter-prefix-id style (Graham, Darion, Huc): "G40502 Akeley, Clar E. Stung, 1914".
 # We capture the id and the full remainder; splitting "artist, title" reliably
