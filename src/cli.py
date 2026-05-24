@@ -579,6 +579,106 @@ def conflicts(db_path: str, limit: int):
         click.echo()
 
 
+@cli.command("resolve-pattern")
+@click.option("--field", required=True, help="Conflicted field, e.g. 'classification'.")
+@click.option("--values", required=True,
+              help="The exact disagreement, '||'-joined, e.g. "
+                   "'Drawing, Collage or other Work on Paper || Painting'.")
+@click.option("--prefer", required=True,
+              help="Which of the values to record as canonical.")
+@click.option("--by", "decided_by", required=True,
+              help="Curator email — recorded in human_resolutions.yaml.")
+@click.option("--reason", default="batch pattern-resolution",
+              show_default=True)
+@click.option("--dry-run", is_flag=True, default=False,
+              help="Report what would be resolved without writing.")
+@click.option("--db", "db_path", default="data/inventory.db", show_default=True)
+@click.option("--file", "yaml_path", default="data/human_resolutions.yaml",
+              show_default=True)
+def resolve_pattern(field: str, values: str, prefer: str, decided_by: str,
+                    reason: str, dry_run: bool, db_path: str, yaml_path: str):
+    """Settle every work currently matching one disagreement pattern.
+
+    Use after `kg-inv conflict-patterns` to act on a systematic
+    disagreement in one shot, instead of 200+ individual triage prompts.
+
+    Example: 203 works disagree "Drawing, Collage… vs Painting" between
+    artsy_csv and bulk_upload_xlsx (the latter has Artsy's friendlier
+    classification).  To accept bulk_upload's value across the board:
+
+      kg-inv resolve-pattern \\
+        --field classification \\
+        --values 'Drawing, Collage or other Work on Paper || Painting' \\
+        --prefer 'Drawing, Collage or other Work on Paper' \\
+        --by you@kapoors.com
+    """
+    expected = sorted(v.strip() for v in values.split("||"))
+    if prefer not in expected:
+        raise click.ClickException(
+            f"--prefer {prefer!r} is not one of --values {expected!r}."
+        )
+
+    db = dbmod.get_db(db_path)
+    raw = db.execute(
+        """SELECT o.work_id, o.value
+           FROM observations o JOIN sources s ON s.id = o.source_id
+           WHERE o.field = ?
+             AND o.value IS NOT NULL AND o.value != ''
+             AND s.type NOT IN ('human_resolution','auto_resolution')""",
+        [field],
+    ).fetchall()
+    from collections import defaultdict
+    by_work: dict[str, set] = defaultdict(set)
+    for w, v in raw:
+        by_work[w].add(v)
+    has_human = {
+        w for (w,) in db.execute(
+            """SELECT DISTINCT o.work_id FROM observations o
+               JOIN sources s ON s.id = o.source_id
+               WHERE s.type = 'human_resolution' AND o.field = ?""",
+            [field],
+        ).fetchall()
+    }
+    targets = sorted(
+        w for w, vs in by_work.items()
+        if sorted(vs) == expected and w not in has_human
+    )
+
+    click.echo()
+    click.echo(f"  Field:    {field}")
+    click.echo(f"  Values:   {' || '.join(expected)}")
+    click.echo(f"  Prefer:   {prefer}")
+    click.echo(f"  Matching works: {len(targets)} "
+               f"(of which already have human resolution: skipped)")
+    if not targets:
+        click.echo("  Nothing to do.\n")
+        return
+    if dry_run:
+        click.echo("  (dry run — no changes written)")
+        click.echo(f"  Examples: {', '.join(targets[:8])}"
+                   f"{'…' if len(targets) > 8 else ''}\n")
+        return
+
+    from datetime import datetime, timezone
+    p = Path(yaml_path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    entries = yaml.safe_load(p.read_text()) if p.exists() else []
+    entries = entries or []
+    today = datetime.now(timezone.utc).date().isoformat()
+    for w in targets:
+        entries.append({
+            "work_id": w,
+            "field": field,
+            "value": prefer,
+            "reason": reason,
+            "decided_by": decided_by,
+            "decided_at": today,
+        })
+    p.write_text(yaml.safe_dump(entries, sort_keys=False, default_flow_style=False))
+    click.echo(f"  Wrote {len(targets)} resolutions to {yaml_path}.")
+    click.echo("  Run `make consolidate report` to refresh master.csv.\n")
+
+
 @cli.command("conflict-patterns")
 @click.option("--db", "db_path", default="data/inventory.db", show_default=True)
 @click.option("--limit", default=15, show_default=True)

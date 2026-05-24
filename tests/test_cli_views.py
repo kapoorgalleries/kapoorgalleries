@@ -488,6 +488,86 @@ def test_audit_rules_distinguishes_dead_redundant_and_ok(tmp_path: Path):
     assert "REDUNDANT: 1" in r.output
 
 
+def test_resolve_pattern_writes_one_entry_per_matching_work(tmp_path: Path):
+    """resolve-pattern should match every work whose disagreement
+    matches --values exactly, skip works that already have a human
+    resolution on that field, and refuse --dry-run writes."""
+    import yaml as _yaml
+    db_path = tmp_path / "t.db"
+    db = init_db(db_path)
+    sid_a = upsert_source(db, SourceRecord(
+        name="t-a", type="artsy_csv", extracted_at="2026-01-01"))
+    sid_b = upsert_source(db, SourceRecord(
+        name="t-b", type="bulk_upload_xlsx", extracted_at="2026-01-02"))
+    # 3 works disagree A/B, 1 work doesn't (only A), 1 work has the
+    # disagreement but already a human resolution.
+    for wid in ("KG-1", "KG-2", "KG-3", "KG-with-human"):
+        insert_observations(db, sid_a, [Observation(
+            work_id=wid, field="classification", value="Painting",
+            observed_at="2026-01-01")])
+        insert_observations(db, sid_b, [Observation(
+            work_id=wid, field="classification",
+            value="Drawing, Collage or other Work on Paper",
+            observed_at="2026-01-02")])
+    insert_observations(db, sid_a, [Observation(
+        work_id="KG-only-a", field="classification", value="Painting",
+        observed_at="2026-01-01")])
+    sid_h = upsert_source(db, SourceRecord(
+        name="t-h", type="human_resolution", extracted_at="2026-01-03"))
+    insert_observations(db, sid_h, [Observation(
+        work_id="KG-with-human", field="classification", value="Painting",
+        observed_at="2026-01-03")])
+    consolidate(db)
+    db.conn.close()
+
+    out = tmp_path / "human_resolutions.yaml"
+    runner = CliRunner()
+
+    # Dry run first — should report 3 matching works, no file written.
+    r = runner.invoke(cli, [
+        "resolve-pattern", "--db", str(db_path), "--file", str(out),
+        "--field", "classification",
+        "--values", "Drawing, Collage or other Work on Paper || Painting",
+        "--prefer", "Drawing, Collage or other Work on Paper",
+        "--by", "test@example.com", "--dry-run",
+    ])
+    assert r.exit_code == 0, r.output
+    assert "3 (of which" in r.output
+    assert not out.exists()
+
+    # Real run.
+    r = runner.invoke(cli, [
+        "resolve-pattern", "--db", str(db_path), "--file", str(out),
+        "--field", "classification",
+        "--values", "Drawing, Collage or other Work on Paper || Painting",
+        "--prefer", "Drawing, Collage or other Work on Paper",
+        "--by", "test@example.com",
+    ])
+    assert r.exit_code == 0, r.output
+    entries = _yaml.safe_load(out.read_text())
+    assert len(entries) == 3
+    wids = sorted(e["work_id"] for e in entries)
+    assert wids == ["KG-1", "KG-2", "KG-3"]
+    # All record the preferred value, and the curator email + reason.
+    assert all(e["value"] == "Drawing, Collage or other Work on Paper"
+               for e in entries)
+    assert all(e["decided_by"] == "test@example.com" for e in entries)
+
+
+def test_resolve_pattern_rejects_prefer_not_in_values(tmp_path: Path):
+    """--prefer must be one of the --values options."""
+    runner = CliRunner()
+    r = runner.invoke(cli, [
+        "resolve-pattern",
+        "--field", "classification",
+        "--values", "A || B",
+        "--prefer", "C",  # not in {A, B}
+        "--by", "x@y",
+    ])
+    assert r.exit_code != 0
+    assert "not one of" in r.output
+
+
 def test_conflict_patterns_groups_recurring_pairs(tmp_path: Path):
     """Two works each disagreeing on classification with the same pair
     of values from the same pair of sources should collapse to ONE
