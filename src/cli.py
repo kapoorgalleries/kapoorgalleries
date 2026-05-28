@@ -702,10 +702,23 @@ def conflict_patterns(db_path: str, limit: int):
            WHERE o.value IS NOT NULL AND o.value != ''
              AND s.type NOT IN ('human_resolution','auto_resolution')"""
     ).fetchall()
+    # (work, field) pairs already settled by a human resolution — these
+    # are no longer conflicts, so exclude them (mirrors conflicts.csv /
+    # gaps_report logic, and keeps this command accurate after a
+    # `kg-inv resolve-pattern` run).
+    has_human = {
+        (w, f) for (w, f) in db.execute(
+            """SELECT DISTINCT o.work_id, o.field FROM observations o
+               JOIN sources s ON s.id = o.source_id
+               WHERE s.type = 'human_resolution'"""
+        ).fetchall()
+    }
     # Group by (work, field): {(value, source_type)} set.
     from collections import defaultdict, Counter
     by_wf: dict[tuple[str, str], set] = defaultdict(set)
     for w, f, v, st in raw:
+        if (w, f) in has_human:
+            continue
         by_wf[(w, f)].add((v, st))
 
     # For each conflicted (work, field), record the canonical

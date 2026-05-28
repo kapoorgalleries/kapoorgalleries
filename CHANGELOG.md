@@ -4,7 +4,29 @@
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 257 conflicts · 9 sources ingested · 76 tests · 37 CLI commands · CI green.
+> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 49 conflicts · 9 sources ingested · 83 tests · 42 CLI commands · CI green.
+
+### 0.4.4 — conflict-pattern tooling + first bulk resolution
+
+- **`kg-inv conflict-patterns`** — collapses the conflict list into
+  distinct disagreement patterns.  Revealed that 211 of 257 conflicts
+  were a single pattern: works-on-paper classified "Painting" in
+  `artsy_csv` (Primer's internal value) vs "Drawing, Collage or other
+  Work on Paper" in `bulk_upload_xlsx` (the Artsy-correct value).
+- **`kg-inv resolve-pattern`** — settles every work matching one
+  pattern in a single command (with `--dry-run`, `--prefer`
+  validation, and human-resolution skip-guard).
+- **Applied the 211-work resolution** — verified all 211 have a
+  paper/wasli medium, so "Drawing, Collage or other Work on Paper" is
+  unambiguously the Artsy classification.  **Conflicts dropped
+  257 → 49.**  Recorded in `data/human_resolutions.yaml`, attributed
+  to sanjay@kapoors.com.
+- **`audit-rules` REDUNDANT status** — distinguishes genuinely-unused
+  rules (DEAD: 1) from safety-net rules matching already-correct works
+  (REDUNDANT: 10).  Was previously over-reporting 11 as DEAD.
+- **`suggest-rules` noise filter** — drops stopword medium-descriptors
+  (gold/paper/with) and placeholder-title clusters (Need title /
+  Untitled); 77 → 66 actionable candidates.
 
 ### 0.4.3 — Himalayas price list + cross-reference + Textile Boxes
 

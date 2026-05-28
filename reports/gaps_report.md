@@ -75,33 +75,35 @@ Resolve with: `python -m src.cli resolve <KG-#> <field> "<value>" --reason "..."
 
 | KG-# | Field | Distinct values | Sources |
 |---|---|---|---|
-| KG-1000 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx,match_workbook |
-| KG-1001 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx,match_workbook |
-| KG-1002 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx,match_workbook |
-| KG-1003 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx,match_workbook |
-| KG-1004 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx,match_workbook |
-| KG-1011 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx,match_workbook |
 | KG-1012 | classification | Design/Decorative Art \| Khanjar | artsy_csv,bulk_upload_xlsx,match_workbook |
 | KG-1012 | medium | Jade-hilted and jeweled \| Jade-hilted and jeweled Khanjar | artsy_csv,bulk_upload_xlsx |
-| KG-1013 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx,match_workbook |
-| KG-1015 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx,match_workbook |
-| KG-1023 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1025 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1026 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1027 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1028 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1029 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1030 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1060 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1063 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1064 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1065 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1067 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1068 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1070 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1076 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1077 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1078 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
 | KG-1093 | medium | Opaque watercolor on cloth \| Thangka -Opaque watercolor on cloth | artsy_csv,bulk_upload_xlsx |
-| KG-1100 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
-| KG-1101 | classification | Drawing, Collage or other Work on Paper \| Painting | artsy_csv,bulk_upload_xlsx |
+| KG-1301 | medium | Opaque watercolor heightened with gold on paper
+ Calligraphy panel on verso \| Opaque watercolor heightened with gold on paper  
+Calligraphy panel on verso | artsy_csv,bulk_upload_xlsx |
+| KG-1312 | height_in | 13.0 \| 9.0 | artsy_csv,bulk_upload_xlsx |
+| KG-1312 | medium | Ground mineral pigments on paper \| Opaque watercolor heightened with gold on paper | artsy_csv,bulk_upload_xlsx |
+| KG-1312 | price_usd | 26000.0 \| 50000.0 | artsy_csv,bulk_upload_xlsx |
+| KG-1312 | title | Battle between Banasura and Krishna \| Vasishtha Teaches Rama and Lakshmana | artsy_csv,bulk_upload_xlsx |
+| KG-1312 | width_in | 14.0 \| 20.0 | artsy_csv,bulk_upload_xlsx |
+| KG-1312 | year | 1700 \| 1775 | artsy_csv,bulk_upload_xlsx |
+| KG-1316 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1317 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1318 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1319 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1320 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1321 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1327 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1329 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1334 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1335 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1341 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1342 | classification | Posters \| Print | artsy_csv,bulk_upload_xlsx |
+| KG-1344 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1347 | classification | Posters \| Print | artsy_csv,bulk_upload_xlsx |
+| KG-1348 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1351 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1355 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1357 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1380 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1381 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |

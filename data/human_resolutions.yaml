@@ -1,32 +1,1899 @@
-# Per-(work_id, field) human decisions that override every other source.
-#
-# When the master sheet shows a conflict (red cell), inspect it, decide which
-# value is correct, and append a record here.  The next `make all` (or CI run)
-# rebuilds master.csv with the resolution applied and the conflict cleared.
-#
-# Use the CLI to append safely:
-#
-#   python -m src.cli resolve KG-1000 classification \
-#     "Drawing, Collage or other Work on Paper" \
-#     --reason "Opaque watercolor on paper; Artsy categorizes as Drawing." \
-#     --by sanjay@kapoors.com
-#
-# Or interactively:
-#
-#   python -m src.cli triage
-#
-# Schema (one entry per item):
-#   - work_id:    KG-####
-#     field:      <canonical field name>
-#     value:      <the correct value>
-#     reason:     <free text>
-#     decided_by: <email>
-#     decided_at: <ISO date or datetime>
-
-# Worked example (intentionally empty so the system is honest):
-# - work_id: KG-1000
-#   field: classification
-#   value: "Drawing, Collage or other Work on Paper"
-#   reason: "Opaque watercolor on paper."
-#   decided_by: sanjay@kapoors.com
-#   decided_at: 2026-05-06
+- work_id: KG-1000
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1001
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1002
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1003
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1004
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1011
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1013
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1015
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1023
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1025
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1026
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1027
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1028
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1029
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1030
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1060
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1063
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1064
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1065
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1067
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1068
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1070
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1076
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1077
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1078
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1100
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1101
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1102
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1105
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1106
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1107
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1108
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1110
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1116
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1117
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1118
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1119
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1120
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1121
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1122
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1123
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1124
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1125
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1126
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1127
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1129
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1130
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1131
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1132
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1133
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1134
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1135
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1137
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1138
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1139
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1140
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1142
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1143
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1144
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1145
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1146
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1147
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1148
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1149
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1150
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1151
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1152
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1153
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1154
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1155
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1156
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1157
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1158
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1160
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1161
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1162
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1163
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1164
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1165
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1166
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1167
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1168
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1169
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1170
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1171
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1173
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1174
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1175
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1176
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1177
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1179
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1180
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1181
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1182
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1183
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1184
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1185
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1186
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1187
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1188
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1189
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1190
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1191
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1193
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1194
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1195
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1196
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1197
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1198
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1199
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1200
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1201
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1203
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1204
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1205
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1206
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1207
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1208
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1209
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1210
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1211
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1212
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1215
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1217
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1218
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1221
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1225
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1226
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1229
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1230
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1231
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1233
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1234
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1235
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1236
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1237
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1238
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1243
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1245
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1246
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1247
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1249
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1250
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1252
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1254
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1255
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1256
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1258
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1259
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1260
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1266
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1267
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1269
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1270
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1271
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1272
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1273
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1274
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1275
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1277
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1278
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1279
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1284
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1286
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1287
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1288
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1292
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1293
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1296
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1298
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1299
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1300
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1301
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1303
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1304
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1307
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1308
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1309
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1310
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1312
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1314
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1315
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1396
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1397
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1398
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1404
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1411
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1412
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1413
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1414
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1416
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1417
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1418
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1419
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1420
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1421
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1422
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1423
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1426
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1428
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1437
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1438
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1439
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1441
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1442
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1445
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1446
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1448
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1451
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1455
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'
+- work_id: KG-1456
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: Works on paper (Indian/Persian miniatures, ragamala folios) are Artsy "Drawing,
+    Collage or other Work on Paper", not "Painting". artsy_csv held Primer internal
+    value; bulk_upload_xlsx has the Artsy-correct one. All 211 verified medium contains
+    paper/wasli.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-05-28'

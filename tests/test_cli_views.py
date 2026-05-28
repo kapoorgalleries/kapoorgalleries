@@ -607,6 +607,42 @@ def test_conflict_patterns_groups_recurring_pairs(tmp_path: Path):
     assert "1 works · medium" in r.output
 
 
+def test_conflict_patterns_excludes_human_resolved(tmp_path: Path):
+    """Once a (work, field) has a human resolution it is no longer a
+    conflict — conflict-patterns must drop it, so the command stays
+    accurate after a resolve-pattern run."""
+    db_path = tmp_path / "t.db"
+    db = init_db(db_path)
+    sid_a = upsert_source(db, SourceRecord(
+        name="t-a", type="artsy_csv", extracted_at="2026-01-01"))
+    sid_b = upsert_source(db, SourceRecord(
+        name="t-b", type="bulk_upload_xlsx", extracted_at="2026-01-02"))
+    for wid in ("KG-1", "KG-2"):
+        insert_observations(db, sid_a, [Observation(
+            work_id=wid, field="classification", value="Painting",
+            observed_at="2026-01-01")])
+        insert_observations(db, sid_b, [Observation(
+            work_id=wid, field="classification",
+            value="Drawing, Collage or other Work on Paper",
+            observed_at="2026-01-02")])
+    # Resolve KG-1 only.
+    sid_h = upsert_source(db, SourceRecord(
+        name="t-h", type="human_resolution", extracted_at="2026-01-03"))
+    insert_observations(db, sid_h, [Observation(
+        work_id="KG-1", field="classification",
+        value="Drawing, Collage or other Work on Paper",
+        observed_at="2026-01-03")])
+    consolidate(db)
+    db.conn.close()
+
+    runner = CliRunner()
+    r = runner.invoke(cli, ["conflict-patterns", "--db", str(db_path)])
+    assert r.exit_code == 0, r.output
+    # Only KG-2 still in conflict → one pattern, one work.
+    assert "1 of 1 distinct conflict patterns" in r.output
+    assert "1 works · classification" in r.output
+
+
 def test_suggest_rules_skips_stopwords_and_placeholders(tmp_path: Path):
     """suggest-rules should NOT propose rules anchored on medium-
     descriptor words ('gold', 'with', 'paper') or on placeholder titles
