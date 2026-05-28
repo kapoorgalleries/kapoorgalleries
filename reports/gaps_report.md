@@ -87,23 +87,27 @@ Calligraphy panel on verso | artsy_csv,bulk_upload_xlsx |
 | KG-1312 | title | Battle between Banasura and Krishna \| Vasishtha Teaches Rama and Lakshmana | artsy_csv,bulk_upload_xlsx |
 | KG-1312 | width_in | 14.0 \| 20.0 | artsy_csv,bulk_upload_xlsx |
 | KG-1312 | year | 1700 \| 1775 | artsy_csv,bulk_upload_xlsx |
-| KG-1316 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1317 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1318 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1319 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1320 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1321 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1327 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1329 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1334 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1335 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1341 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
 | KG-1342 | classification | Posters \| Print | artsy_csv,bulk_upload_xlsx |
-| KG-1344 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
 | KG-1347 | classification | Posters \| Print | artsy_csv,bulk_upload_xlsx |
-| KG-1348 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1351 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1355 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1357 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1380 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
-| KG-1381 | classification | Drawing, Collage or other Work on Paper \| Posters | artsy_csv,bulk_upload_xlsx |
+| KG-1382 | classification | Posters \| Print | artsy_csv,bulk_upload_xlsx |
+| KG-1387 | classification | Posters \| Print | artsy_csv,bulk_upload_xlsx |
+| KG-1407 | classification | Drawing, Collage or other Work on Paper \| Other | artsy_csv,bulk_upload_xlsx |
+| KG-1428 | title | [FAKE?] A Prince on Horseback \| \[FAKE?\] A Prince on Horseback | artsy_csv,bulk_upload_xlsx |
+| KG-1443 | classification | Drawing, Collage or other Work on Paper \| Other | artsy_csv,bulk_upload_xlsx |
+| KG-1443 | medium | Gouache and gold on paper \| Gouache and gold on paper, Manuscript | artsy_csv,bulk_upload_xlsx |
+| KG-1501 | title | [FAKE] Krishna and Ladies \| \[FAKE\] Krishna and Ladies | artsy_csv,bulk_upload_xlsx |
+| KG-1556 | medium | Opaque watercolor heightened with gold on paper
+ Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format. \| Opaque watercolor heightened with gold on paper  
+Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format. | artsy_csv,bulk_upload_xlsx |
+| KG-1585 | medium | Opaque pigments heightened with
+ gold on paper \| Opaque pigments heightened with  
+gold on paper | artsy_csv,bulk_upload_xlsx |
+| KG-1737 | title | Shakyamuni \| Shakyamuni, 18th century | bulk_upload_xlsx,price_list_pdf |
+| KG-1741 | title | Vajrapani, Hayagriva, Garuda combined \| Vajrapani, Hayagriva, Garuda combined, | bulk_upload_xlsx,price_list_pdf |
+| KG-1812 | title | A Mandala Depicting Vajrabhairava \| A Mandala Depicting Vajrabhairava, | bulk_upload_xlsx,price_list_pdf |
+| KG-1813 | price_usd | 24000.0 \| 38000.0 | bulk_upload_xlsx,price_list_pdf |
+| KG-1813 | title | Large Thangka White Tara Tibetan \| Large Thangka White Tara Tibetan, 19th | bulk_upload_xlsx,price_list_pdf |
+| KG-1814 | price_usd | 24000.0 \| 28000.0 | bulk_upload_xlsx,price_list_pdf |
+| KG-1814 | title | Dipankara Buddha with Arhats Deities \| Dipankara Buddha with Arhats Deities Thangka | bulk_upload_xlsx,price_list_pdf |
+| KG-2106 | height_in | 27.0 \| 27.125 | bulk_upload_xlsx,price_list_pdf |
+| KG-2106 | price_usd | 30000.0 \| 80000.0 | bulk_upload_xlsx,price_list_pdf |

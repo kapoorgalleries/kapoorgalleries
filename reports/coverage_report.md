@@ -1,7 +1,7 @@
 # Inventory coverage
 
 - Total works: **1528**
-- Works with at least one conflict: **49**
+- Works with at least one conflict: **24**
 
 ## Field-level coverage
 
@@ -41,6 +41,6 @@
 | KG_Art of the Himalayas Price List.pdf | price_list_pdf | 6 | 2026-05-07T14:26:58 |
 | Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T06:06:22 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | bulk_upload_xlsx | 1424 | 2026-05-06T06:29:00 |
-| auto_resolution_rules | auto_resolution | 40 | 2026-05-06T06:55:24 |
-| human_resolutions | human_resolution | 211 | 2026-05-28T19:47:05 |
+| auto_resolution_rules | auto_resolution | 40 | 2026-05-28T19:54:36 |
+| human_resolutions | human_resolution | 236 | 2026-05-28T19:54:43 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T05:50:35 |

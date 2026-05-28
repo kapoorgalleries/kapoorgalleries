@@ -57,27 +57,57 @@ KG-1312,medium,Opaque watercolor heightened with gold on paper,Ground mineral pi
 KG-1312,height_in,9.0,13.0,bulk_upload_xlsx,(per bulk_upload_xlsx)
 KG-1312,width_in,14.0,20.0,bulk_upload_xlsx,(per bulk_upload_xlsx)
 KG-1312,price_usd,26000.0,50000.0,bulk_upload_xlsx,(per bulk_upload_xlsx)
-KG-1319,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1329,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1337,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1338,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1342,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Sabena India travel poster.
-KG-1351,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1352,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1353,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1353,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1354,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1354,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1355,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1363,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
-KG-1367,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
-KG-1377,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
-KG-1378,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
+KG-1316,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1317,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1318,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1319,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1319,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1320,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1321,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1327,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1329,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1329,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1334,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1335,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1337,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1337,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1338,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1338,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1341,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1342,classification,Print,Posters,auto_resolution,Sabena India travel poster.
+KG-1344,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1348,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1351,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1351,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1352,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1352,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1353,classification,,Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1353,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1354,classification,,Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1354,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1355,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1355,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1357,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1363,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1367,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1377,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1377,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1378,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1378,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1380,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1381,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
 KG-1384,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1385,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1386,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1387,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
-KG-1388,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters are lithographic prints on paper.
+KG-1388,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1388,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1389,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1390,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1391,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1392,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1393,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1394,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
 KG-1400,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1401,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1402,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -541,12 +571,12 @@ KG-2278,classification,miniature,"Drawing, Collage or other Work on Paper",auto_
 KG-2279,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2281,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2282,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
-KG-2283,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
-KG-2284,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
-KG-2285,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
-KG-2286,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
-KG-2287,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
-KG-2288,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
+KG-2283,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-2284,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-2285,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-2286,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-2287,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-2288,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
 KG-2289,classification,miniature,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2290,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2291,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -554,8 +584,8 @@ KG-2294,classification,paintings,"Drawing, Collage or other Work on Paper",auto_
 KG-2295,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2297,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2298,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
-KG-2299,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
-KG-2300,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Air India advertising posters are works on paper.
+KG-2299,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-2300,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
 KG-2303,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2307,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2309,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.

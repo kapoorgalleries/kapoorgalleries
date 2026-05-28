@@ -205,31 +205,35 @@
     artist: Unknown
   reason: "Unspecified Artist is a placeholder; clear it."
 
-# --- Travel posters / lithographic prints -> Drawing/Collage on Artsy ---
+# --- Travel / advertising posters -> Posters on Artsy ---
+# Curator decision (2026-05-28): vintage travel & airline posters go in
+# Artsy's dedicated "Posters" category, not the broad "Drawing, Collage
+# or other Work on Paper" bucket.  (Earlier rules mapped them to
+# Drawing/Collage; reversed per owner.)
 - if:
     title_contains: "Visit India"
   then:
-    classification: "Drawing, Collage or other Work on Paper"
+    classification: "Posters"
     medium: "Lithographic print on paper"
-  reason: "Visit-India travel posters are lithographic prints on paper."
+  reason: "Visit-India travel posters belong in Artsy's Posters category."
 
 - if:
     title_contains: "travel poster"
   then:
-    classification: "Drawing, Collage or other Work on Paper"
-  reason: "Travel posters are works on paper."
+    classification: "Posters"
+  reason: "Travel posters belong in Artsy's Posters category."
 
 - if:
     title_contains: "Sabena"
   then:
-    classification: "Drawing, Collage or other Work on Paper"
+    classification: "Posters"
   reason: "Sabena India travel poster."
 
 - if:
     title_contains: "Air India"
   then:
-    classification: "Drawing, Collage or other Work on Paper"
-  reason: "Air India advertising posters are works on paper."
+    classification: "Posters"
+  reason: "Air India advertising posters belong in Artsy's Posters category."
 
 # --- Talwars / shamshirs without explicit medium -> steel/iron weapon medium ---
 - if:

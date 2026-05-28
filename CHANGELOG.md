@@ -4,7 +4,20 @@
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 49 conflicts · 9 sources ingested · 83 tests · 42 CLI commands · CI green.
+> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 24 conflicts · 9 sources ingested · 83 tests · 42 CLI commands · CI green.
+
+### 0.4.5 — travel posters reclassified to "Posters"
+
+- **25 vintage travel/advertising posters** (Visit Kashmir, SwissAir to
+  India, Air India, etc.) were split between `artsy_csv` = "Posters"
+  and `bulk_upload_xlsx` = "Drawing, Collage or other Work on Paper".
+  Per owner decision, these belong in Artsy's dedicated **Posters**
+  category.  Resolved all 25 and **reversed the 4 travel-poster
+  auto-rules** (Visit India / travel poster / Sabena / Air India) that
+  had previously mapped to Drawing/Collage.
+- **Conflicts dropped 49 → 24.**  Remaining conflicts are now a long
+  tail of ≤4-work patterns needing per-case judgment, not systematic
+  source-mapping drift.
 
 ### 0.4.4 — conflict-pattern tooling + first bulk resolution
 

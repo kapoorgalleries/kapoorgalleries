@@ -2372,42 +2372,42 @@ KG-1315,primer_uuid,4070e830-07f7-423b-99bc-b8b4c4242115,artsy_csv,0,,
 KG-1315,status,active,artsy_csv,0,,
 KG-1315,title,Inebriated Ascetics,artsy_csv,0,,
 KG-1315,year,1750,artsy_csv,0,,
-KG-1316,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1316,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1316,medium,Linen backed poster,artsy_csv,0,,
 KG-1316,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/f6ce9d1b-1fe8-4fc7-aa4f-5c64e5d28d2e/Copy%20of%20Kanchenjunga.jpg?Expires=1802811832&Signature=dd-AilvMk0mzFKFbRJZY-XZIMJd5dX8g4wj6lsWgmk-ZRC0lcwmmojELMsCzqT4kgMeG8bMd6ujepQmqZZelNJpT-gz4PQg0wY5EXe1y57G8m6c09Akqzww7Q1kM4eEDsYtOiyoxIsRvlp3x5kzHhPolJfuIC4Fl0eUnNR2G2br-HlQZMYbXMaFwFk7ar8DuUcMDBu9BlH-gSwLHdFN36JD6BYSC9llOIWSBHpkspGLNjpIGbY-VF~WJEztFnPVBae9pvYiaNBWYIW7ZMst1S6H1KcD4Sq5iC8E0fQ-Ihiev5dp5BiY~soU9MAPbHcSKe1OWawUFrBJeFGNU0wG3vQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1316,primer_uuid,f6ce9d1b-1fe8-4fc7-aa4f-5c64e5d28d2e,artsy_csv,0,,
 KG-1316,status,active,artsy_csv,0,,
 KG-1316,title,"India, Kanchenjunga Near Darjeeling",artsy_csv,0,,
 KG-1316,year,1958,artsy_csv,0,,
-KG-1317,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1317,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1317,medium,Linen backed poster,artsy_csv,0,,
 KG-1317,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/001cc875-2282-454e-8031-cb920f7fc574/Copy%20of%20Kanchenjunga.jpg?Expires=1802811832&Signature=XKlmBTEPZ0yBxyrsg-QXoQOwAenLPgJVpuTbgpC1BeA3krErZMzgfPodXFohMjiTE0vuXfXQLJGP4Ywt8SaEzLQFCeDFECKK1XFZekDykvKN0n2PK95l05WD6nAW~a1LUzl7JM0~c3zqEZV9Ugle11N9x2oLCnHVyYUIs38MAnRIBuw8QjmzEY-oXgfsIPJPS~ptitdKPC7RCexC6dQb68zRPkX2AfAlSr0FJleimDitesaoB9DpuiJ2ySXj5GqeyA04yoT27zRKJhrO-3Bqf0JbjCC9TfqQyuej4qvNHprHJffG3fcZK9p0hOLuywL9FCkzc2EV7l1nkwbZ6qXXyw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1317,primer_uuid,001cc875-2282-454e-8031-cb920f7fc574,artsy_csv,0,,
 KG-1317,status,active,artsy_csv,0,,
 KG-1317,title,"India, Kanchenjunga Near Darjeeling",artsy_csv,0,,
 KG-1317,year,1958,artsy_csv,0,,
-KG-1318,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1318,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1318,medium,Linen backed poster,artsy_csv,0,,
 KG-1318,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/d62eff33-3675-40fb-b3dd-2ca1fbc26cf5/Copy%20of%20Kanchenjunga.jpg?Expires=1802811833&Signature=Rxdesbx6WJ29gIT0ZaO9Jd0m7i3tWZmj6V07GgZfk12UyDK3bSnzI0W~lIkjhpEwOJKIIA6VmcKGOR~vNT8eHPrKXqQ9VUNOOUXOKjUfcz02mDXbHB9DONHmVG975u6yu7V49r3Xjyh~6R8XkVXY-NUVjItGQGS5SnnMGfHthMc~o7jhPHyjm3DOyDzlkdwxxcjSm3KCv7ihu6pcqomzCTi3JZyWnzr5zEXx9RFi1Yjby8ulHuR8dyYoUX72j6Hu0JsWu76dWn1PJtsm2HwJQS9JESpJhTC9oGf9mEVhgLUDcqkw4TZv1bVjioIAeyyTCttekgXcGY45WjBnHqaTHQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1318,primer_uuid,d62eff33-3675-40fb-b3dd-2ca1fbc26cf5,artsy_csv,0,,
 KG-1318,status,active,artsy_csv,0,,
 KG-1318,title,"India, Kanchenjunga Near Darjeeling",artsy_csv,0,,
 KG-1318,year,1958,artsy_csv,0,,
-KG-1319,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1319,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1319,medium,Lithographic print on paper,auto_resolution,1,Linen backed poster,"artsy_csv,bulk_upload_xlsx"
 KG-1319,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/faa8ffcd-04da-4cb0-a513-2e9a931cb2af/Screen%20Shot%202023-07-07%20at%2011.09.54%20AM.jpg?Expires=1802811910&Signature=XxycSLqy-Eu2F84Tdic8R1xVHLqseWxeOA2rhOjpK06nasaXq5sxhljJC1PF~CBNhSZ7N-fzx0knjCn8OzZCN7A6eazK~DyUTcoSbRfImzKWZnUsoUtN4hBAwDRqI12WhjdKAiR-GdG5-euny8giY10~K1paqI1vkFdCWDcDj3lq~xPXjE1yKu~161a23h1XB02XwcfqdgRHh4E7Y8f4ztrpl5cATX1DY0OturAaX5-eyXkLM5caVl20osFYqxbfepq4~JS67Nh1ldc6zkJli-Yu11n3wX13CtXj1yFnAN~nfTP2vGi6vRQQYItom6AUrCXkgU4T6CkW5hE~OgUyuQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1319,primer_uuid,faa8ffcd-04da-4cb0-a513-2e9a931cb2af,artsy_csv,0,,
 KG-1319,status,active,artsy_csv,0,,
 KG-1319,title,"Taj Mahal, Visit India",artsy_csv,0,,
 KG-1319,year,1950,artsy_csv,0,,
-KG-1320,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1320,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1320,medium,Linen backed poster,artsy_csv,0,,
 KG-1320,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/55bad07b-cba2-4754-872d-2094b71d7449/Copy%20of%20Kashmir.jpg?Expires=1802811833&Signature=NDsURCKNEJmvqYaIlSTEmtMGY8deyvm1G0FNVY1rcCumgJWJgxrxalZKepDis2KQyXRbw9zN1eIU4BP2KRwCvBt67F2OWbEmFE-VfqvSA8tLeeDQKbRHErkqRSALUe-k34xO5d7y6Da5PM2BOlmM1qSK9mN~QjkZk~O89~xv58zQdxrSGQX9t7kNaHmcOWOrgQcUilugsXkBOaVzMJ~halWwvL3644Zi5WD-Ih6KJTTzd8HtEu7XfE1iJBL-Jyk2DR4meO8Oq-NheQNlt53HyAzGf~XEz4yBqwgDjvwMYz8a8VgADB7dVt-hBitYscIuioFlVGjI~HvE2bvtk02Ccg__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1320,primer_uuid,55bad07b-cba2-4754-872d-2094b71d7449,artsy_csv,0,,
 KG-1320,status,active,artsy_csv,0,,
 KG-1320,title,Visit Kashmir,artsy_csv,0,,
 KG-1320,year,1949,artsy_csv,0,,
-KG-1321,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1321,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1321,medium,Linen backed poster,artsy_csv,0,,
 KG-1321,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/404a25b6-5c86-407c-ac2d-a1f842bdc4da/Screen%20Shot%202023-07-07%20at%2011.12.55%20AM.jpg?Expires=1802811910&Signature=BngR1ugSbMLoHgTczzUJpoery5ehlhguByLrbmq0nb7~vQVWBEF5r13zRRQjrU70XMDks3DUqbgkfcaRt1D1JSRpvRejKnRyqG4BRzosoaCWZn78sBhGnD0lMFBKADbUbql98H6GBJ1J0JhKLZIfiysG-O2kz0M3M3IwQCpx97IgnaLk2cqUEuV3XZuSk8nLbhoRpB8L9DGrmYaj98CM8vJaKTLMNW7xISlwQCGlNi3~aaCvzSx24NA5BiR0ngYyp69rDNhzFhAgceUz8H8Bc9pdSOTIIf6ChRqt0w4i~BPReTgXuuD5DxSqkCDj2pq--WpXtjhXPFhveV3WX94zXw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1321,primer_uuid,404a25b6-5c86-407c-ac2d-a1f842bdc4da,artsy_csv,0,,
@@ -2443,7 +2443,7 @@ KG-1326,medium,Linen backed poster,bulk_upload_xlsx,0,,
 KG-1326,status,active,bulk_upload_xlsx,0,,
 KG-1326,title,Fly TWA - India,bulk_upload_xlsx,0,,
 KG-1326,year,1960,bulk_upload_xlsx,0,,
-KG-1327,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1327,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1327,medium,Linen backed poster,artsy_csv,0,,
 KG-1327,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/61b6c892-9a02-4ec4-a3f0-4886df758837/Copy%20of%20Mysore.jpg?Expires=1802811838&Signature=JQvMxLkG0n49f1OBi0Pc8hnFr5q06dlZ2gj8litjWM8KF7usqMTwJBvAh1ZCD-UaoBGcMI4SX-3hYt7EyNDxN7FGvNJpIdbYr-efwOKyY29V81T~oFSaO2JbnFy0xq8Gp~6NUR0S7G-XqDxzO69zJa5au7JYTBJVjlc7TykGXO4~Shxphh4pM-bSS-tl2GDyW~q2KKkb0m~fXsikg0HSlczS2c-zI5EY8JOXm3NfHciN34cRzG2J0NRqMmSA8DumucAS-e4nnvPlCK97~s09EfgMVN6-d~hND9FzRuEb4J0tzUwgSRAzAvN-a~gSJJKLgX45uxcalyKNFTYP75n6Gg__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1327,primer_uuid,61b6c892-9a02-4ec4-a3f0-4886df758837,artsy_csv,0,,
@@ -2457,7 +2457,7 @@ KG-1328,primer_uuid,8b9cd02e-fbac-41b3-bd94-7307df6c02f9,artsy_csv,0,,
 KG-1328,status,active,artsy_csv,0,,
 KG-1328,title,"See India, Mysore",artsy_csv,0,,
 KG-1328,year,1954,artsy_csv,0,,
-KG-1329,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1329,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1329,medium,Lithographic print on paper,auto_resolution,1,Linen backed poster,"artsy_csv,bulk_upload_xlsx"
 KG-1329,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/3cdde950-f623-4b87-92bc-e11b78759132/Screen%20Shot%202023-07-07%20at%2011.13.38%20AM.jpg?Expires=1802811910&Signature=ctBe0h3Ex36nDvwlB4RpGwkPp~vdH-u4P5L5o66w79vlYSP3gaeL8p1nyPTkXrlhbzpl72KniyzCK4Jn2kq3cowDiFnkUA9qlBsQgeRYvpkVbVxNn8eu0d6gU3UrIgnOHg29fALZJeAu-NAqEq0VglvGQ248LFy1q1wfw6kBnjmlpARuittS~NSaN3JLYxwgHZkNlN8h~aYYzxudNXucOCTQKQarNoZQUGhx16AjYbf2LlB0Zn4JqU3cXQLpS1irSAxHTklnYMmAlMG~YSJzZya6UD14kpjoPn0SEa6-xUxUv5ZRWOTENAZFiJ1ebILokBIysF-0tk69ihh2BAViOg__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1329,primer_uuid,3cdde950-f623-4b87-92bc-e11b78759132,artsy_csv,0,,
@@ -2484,14 +2484,14 @@ KG-1333,medium,Linen backed poster,bulk_upload_xlsx,0,,
 KG-1333,status,active,bulk_upload_xlsx,0,,
 KG-1333,title,India by SAS (Duplicate),bulk_upload_xlsx,0,,
 KG-1333,year,1955,bulk_upload_xlsx,0,,
-KG-1334,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1334,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1334,medium,Linen backed poster,artsy_csv,0,,
 KG-1334,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/d63ec291-0436-450b-86a3-5fba66fe566d/Copy%20of%20AmenitiesForTourists.jpg?Expires=1802811842&Signature=u8ESrYEIL5rIJCEpUD1FIes2dp7ECz9oUoxtFBV3~ZfyzDEQvbxl2A-XfMsjfK9ASHItLtA6~KzO-JS~EwaAC4gO3XJ1c6L-oIAvtcAt7azQucJuY75ADnBON6hyEtPqaTnYE1fs1II8dXnRChVgeZ9Tqglqb4fBDGn6oqREQd3aNuBQHUJ1b0j~uLNoi6H3FnajgcVByo6ttDa38SB9mR4H39JWzmof-wK8ExzOhGe8ZMSNz5kI-xTj3yEnDHpWrzJ8ukXNm4lx64LpNfP23k3Sf2Umyh4~Z5D3JK8fmj5dui0WmbQIYdPEKNtyH1Hosz0pKR~iObENFbOXyXvW~g__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1334,primer_uuid,d63ec291-0436-450b-86a3-5fba66fe566d,artsy_csv,0,,
 KG-1334,status,active,artsy_csv,0,,
 KG-1334,title,Visit Kashmir: Amenities for Tourists Now Available,artsy_csv,0,,
 KG-1334,year,1949,artsy_csv,0,,
-KG-1335,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1335,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1335,medium,Linen backed poster,artsy_csv,0,,
 KG-1335,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/e88d5097-ca6d-4eab-9b2d-85641afc506d/Copy%20of%20CarFestival.jpg?Expires=1802811885&Signature=Uh-7a9RoFVuPOrezC47aQPVD3qeZ9OzjDDJ0FfiWDUw8zmTmN3b1kUHlw0bjzQpAbs1fyEwuBJ37~w-bAf20o1HhjTGhNTmTFn9QQR59a6bBLEjAbTjdKUrJNVp-wkAtYjSdIK--Nl9yoWZXV6uR~ZQiIhqU69dT77z8hAWhOdnwcto3nMl4vSO87Sbv6b6Hw1wJmK2UJ~aFbMtp6iwTGWmP0HC00y1Luw8qMTHAzAWFSyBBW~y-EweDQQ~eSJ2U8AQSTzgi6ETbyeokntRUoyJ7q4II~LkI58TKw891M-WCt1ZFFJHJRWuHUgSLUfVLeVDdFoiXBNT-9OEiw8rTYw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1335,primer_uuid,e88d5097-ca6d-4eab-9b2d-85641afc506d,artsy_csv,0,,
@@ -2503,14 +2503,14 @@ KG-1336,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i
 KG-1336,primer_uuid,d9806e1d-1555-47e4-a804-4267cd357b8a,artsy_csv,0,,
 KG-1336,status,active,artsy_csv,0,,
 KG-1336,title,"Car Festival at Puri, India",artsy_csv,0,,
-KG-1337,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,0,,
+KG-1337,classification,Posters,auto_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1337,medium,Lithographic print on paper,auto_resolution,1,Linen backed poster,"artsy_csv,bulk_upload_xlsx"
 KG-1337,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/f41dd2b9-35e3-496e-b76e-13f3efea0fd1/5024-300DPI.jpg?Expires=1802811886&Signature=C1ATJL3vT-rwynHa-gaIxUJYnOi~XP2R1gHYcN-YRcIbuDLJYwOa~A5wCEjmlzaAXPI~2n7DpO-TWN7U3LaiFOAKPfvvRihq94znGE2zd1iLFnm46ygdfjUct5mxVQGnPuwCYtgUB7f4FuaqK5fNtWpW7YH8y43u9eD6CUYCQdOklZGnwdsuJuL912ChkchEWVyesmBJ-DczfTJrpCoI6IQ1LIe2YLq-U047rTB1K3T~TA-oocaMqg6FyZ94f94hnrMJwe7LM6uO7Gb6m5arvQ6BWOyaNrTSr~Yjpv4I6Y5iM57qmOtBQkgrKYBGITkENM8vzIMbMdJhEOrHw-~VMw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1337,primer_uuid,f41dd2b9-35e3-496e-b76e-13f3efea0fd1,artsy_csv,0,,
 KG-1337,status,active,artsy_csv,0,,
 KG-1337,title,"Visit India, Sanchi",artsy_csv,0,,
 KG-1337,year,1950,artsy_csv,0,,
-KG-1338,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,0,,
+KG-1338,classification,Posters,auto_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1338,medium,Lithographic print on paper,auto_resolution,1,Linen-backed poster,"artsy_csv,bulk_upload_xlsx"
 KG-1338,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/ed32850e-b624-41a3-9cff-33883845f129/5024-300DPI.jpg?Expires=1802811887&Signature=EPoXl4UMVFAt2jNAynI3yir00n~7S~uX6meH8oSGFGPMQGOAhk90ZFzmCSIWieh8FkeEWpsDIhX~sOjRYFMMZ~-oE4P-vYz2IUiLJVmXbYJjLeNU8Jq69TNyD-0E3W0samwHMLuEDoOKqUhGljWtDrkPC62zRvLsGe3z7OkJTCizh0ivjpo5IRrSsV9a~eOq8BlyugfQ4LeE4e3X-fsNE12dog2aYIYKovEt5-XXYGwgzfrAEanBnVSPo0B8vLycFbhVsFFeEsuNEqnstdZVg20jhwmUV1VJRQRYxnuJKu8iDbdMXWunJVKAoD56VWxJJ5PV4QoE7SC36G8KNza4oA__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1338,primer_uuid,ed32850e-b624-41a3-9cff-33883845f129,artsy_csv,0,,
@@ -2528,14 +2528,14 @@ KG-1340,primer_uuid,36cedb3d-417b-45e6-8a61-831cec0d10c7,artsy_csv,0,,
 KG-1340,status,active,artsy_csv,0,,
 KG-1340,title,"Banaras, India",artsy_csv,0,,
 KG-1340,year,1957,artsy_csv,0,,
-KG-1341,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1341,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1341,medium,Linen backed poster,artsy_csv,0,,
 KG-1341,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/6ceb2012-4b6a-4fd4-8a9d-ddc9bb66e9e8/12426-300DPI.jpg?Expires=1802811888&Signature=Bteee533TITU8lFn9u5Mo~IxLxlYwS1QBlBMygPrbqXpfvEizJ2QLONMBOzwc2qwlsxVDqa~1ms2CLYLz5o85FD2K~0RlVkabZ4HMxgYhbUbXosZU2op~OUM7o8uLEAdH0-XsWdIMzElql~FBdvMUvgrsm6heYCxYAe-9uAwradivZs-btZMy9ASyxRV86lZ8nL3Z4CHMh3~Npq8EX-owvffS6ZpPxq730HZLHqW2HJhciapB6XKI-cypUKHodnGlWpmmwpQ37FUlqkSVrDQXcSXRpLiHW2QkJcj7yjHVFStS3xTqYIZi0J-HPotuoHQwXLncqNew9Lw2aTbVbyTRw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1341,primer_uuid,6ceb2012-4b6a-4fd4-8a9d-ddc9bb66e9e8,artsy_csv,0,,
 KG-1341,status,active,artsy_csv,0,,
 KG-1341,title,SwissAir to India,artsy_csv,0,,
 KG-1341,year,1958,artsy_csv,0,,
-KG-1342,classification,"Drawing, Collage or other Work on Paper",auto_resolution,2,Posters || Print,"artsy_csv,bulk_upload_xlsx"
+KG-1342,classification,Posters,artsy_csv,1,Print,bulk_upload_xlsx
 KG-1342,medium,Linen backed offset color lithograph,artsy_csv,0,,
 KG-1342,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/dd84c442-658d-42ca-aa6d-f6e6e42efd6d/Copy%20of%20Sabena.jpg?Expires=1802811888&Signature=bn6mJ389m0q7P4TjWn9xM9cAOxY64YZhZ8aZSoNroyyUfWKms7oloaIkTTuWHIV2K1lbNmbXzOXMZczmEWZlx5SUSBaVB62P4Q-kzyRzIgd59Pm~cWJirJvtu3OquXHFe-wuusk3wspTTfe1o6lFpoXv-i4I4a9tYwLMLqz0p3hZBz44kfWzfjsw02pOqQJc5A75Csxvk1qqNnLZXsgxO7Bep3hASeFcX17sFtZZYckGU0vURvsXwRx1ZCFxwh6g28WULF6KIbQlFHCxn24K0AoDJYFoRiTKsqqWlvAMX0s81sImp1lDwbVrisczqCrlDxCs8eBkrOfveYxkgdMVig__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1342,primer_uuid,dd84c442-658d-42ca-aa6d-f6e6e42efd6d,artsy_csv,0,,
@@ -2549,7 +2549,7 @@ KG-1343,primer_uuid,b26978be-b169-48b0-93fc-6a261f582fc7,artsy_csv,0,,
 KG-1343,status,active,artsy_csv,0,,
 KG-1343,title,India via Bank of America,artsy_csv,0,,
 KG-1343,year,1950,artsy_csv,0,,
-KG-1344,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1344,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1344,medium,Linen backed poster,artsy_csv,0,,
 KG-1344,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/3956783d-35d8-4fe5-a1ae-f3bae282b50a/93_154_1.jpg?Expires=1802811889&Signature=TuotXPVU7K5tfSXVxxLcKSXR3mY49FIqTbPMyvQxhWsIzDhGGsUvh7wEewaXPwp~OwxurW2dXCzjTqVAh5wMSWVQ5SQOiGXCH00PupuabquW7L4vTZOjw0SaS98Eo7xgI2CpJoKuaZYcVzL~mGIGqN6YJcDpDySm3XSxt5pwuhbTpmtNSl0nO3flK0OHPt86qPDEmZGsvdn1T9NK1SHVjdhxtwOdWG6KepFie7DDKFFbmEtAzsGzJnWN6gdCHdSppudnLs-jl1M6uGOBLvN7OgGk79vPr5y5lJ1is-Y5x0amOh25ImEJXEf4jnmvK1nvWfv2QHETmXl-W-JHR2XDUw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1344,primer_uuid,3956783d-35d8-4fe5-a1ae-f3bae282b50a,artsy_csv,0,,
@@ -2576,7 +2576,7 @@ KG-1347,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i
 KG-1347,primer_uuid,b8b4bfdd-13a6-4d6b-8666-79727c835af1,artsy_csv,0,,
 KG-1347,status,active,artsy_csv,0,,
 KG-1347,title,"Kashmir, India",artsy_csv,0,,
-KG-1348,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1348,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1348,medium,Poster,bulk_upload_xlsx,0,,
 KG-1348,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/fbf537ce-d7db-4d18-9f7e-a560f9bd758b/Screen%20Shot%202023-07-07%20at%2011.05.13%20AM.jpg?Expires=1802811910&Signature=aq7gqu3WcUj8wJr4hhFn9YD7j6r0NYUx0DSSuPSRIpCj99aJBf3sbEEFoOcCd4xt1Nf03bvpzW0sErU3UipJK5iR2C5kdNLR7oAP6RnBFAAbSuvw~Tb1pt-VLMlXry4hykrnvkb6sO~7HwveVcF7vrGMForjEj3n6qFwyJvjZ627LOjyE85ppe8QkxR8EaaUQsHlrZoeYxajqnWSoFaoaM47YBOOwQtX3IzYU96T-Y2EvitTUvubi7UMy45jhQztpd6lpuaq3~rsnaIWlAUH8G6ysvbepAoSu7y0MqtT3bicMeod51TGsJGTMDdO0s-1qJvbEjWwQ4aWwmbiAmv~zQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1348,primer_uuid,fbf537ce-d7db-4d18-9f7e-a560f9bd758b,artsy_csv,0,,
@@ -2596,33 +2596,33 @@ KG-1350,primer_uuid,ebd1b5e2-835f-4656-951f-bad29f5bc245,artsy_csv,0,,
 KG-1350,status,active,artsy_csv,0,,
 KG-1350,title,"Banaras, See India",artsy_csv,0,,
 KG-1350,year,1954,artsy_csv,0,,
-KG-1351,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1351,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1351,medium,Lithographic print on paper,auto_resolution,1,Poster,bulk_upload_xlsx
 KG-1351,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/05d1b536-a8be-461b-99d1-6d27fd46038e/Screen%20Shot%202023-07-07%20at%2011.22.06%20AM.jpg?Expires=1802811911&Signature=gA2vJd5wE1XCbUfYj69Zuo6Neudsrc5oCDj-HKcJXpfq0eiKWX~lc6CuM8i1q5a~M~qGQkH8TZQWs4MJU~u~XKIj~oPgLKJ5mWEiTyCNN5XjUhAxhCfZcm9OfcbKWqeuNKIMszSj97G~WbTnFJey7eL4TEYKCghmR~PT8kpkPWzIFf6kzh8xHSdwYCXJi4HCvp0F3IK5XxkKahh8KYFl7nyM8q8a5Z4DzeiOkZSn4UAYTKDMXa6t5oHwcmYMPgHEukx4NnQqKBg-lTpx20N-G~rkcc5Pv-GQd7rzVT4YljqSttKAfQfzVfToQqx8G5QSWJaPCX9TO2YGg4-EujOWBQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1351,primer_uuid,05d1b536-a8be-461b-99d1-6d27fd46038e,artsy_csv,0,,
 KG-1351,status,active,artsy_csv,0,,
 KG-1351,title,"Udaipur, Visit India",artsy_csv,0,,
 KG-1351,year,1954,artsy_csv,0,,
-KG-1352,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,0,,
+KG-1352,classification,Posters,auto_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1352,medium,Lithographic print on paper,auto_resolution,1,Poster,"artsy_csv,bulk_upload_xlsx"
 KG-1352,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/74aaa18a-3e50-4a41-b4cb-e01749793d15/Screen%20Shot%202023-07-07%20at%2011.22.06%20AM.jpg?Expires=1802811911&Signature=XK9pU5-VpZ3ddRjrpKaOhw7a6mYY8zMRtqdvFUdn9gO6N5Bfl073Ya3h~YaRzlLrVo0rhJ1rKoRwmD0y8N-boJLVyzQ1fBVKEaHpfCrBXUR9jsyPSQOfw1~lxOsK7dN4pKooxyVuxJu-bxCEDkkwbOIF6OHAwNIZcNkkzAA6d6iTCidS-QHRR27I2iom23OndLtI87qxcSCZdcY0bw~ysZn7TZtehHAoMzZVvveV7jozx7z95mOeJh9e-jk7l3iu-AZd2vXFKdfdaBAcTr3cbuHqogx8EbtZPLNP2YEdOCaLfsctNOsDVNnSVHdnXVSMowvIyrB1ZhFw6BPKEnJAGw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1352,primer_uuid,74aaa18a-3e50-4a41-b4cb-e01749793d15,artsy_csv,0,,
 KG-1352,status,active,artsy_csv,0,,
 KG-1352,title,"Udaipur, Visit India",artsy_csv,0,,
 KG-1352,year,1954,artsy_csv,0,,
-KG-1353,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-1353,classification,Posters,auto_resolution,0,,
 KG-1353,medium,Lithographic print on paper,auto_resolution,0,,
 KG-1353,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/664eccdf-7e08-4e94-a84d-bb5396547020/Screen%20Shot%202023-07-07%20at%2011.29.51%20AM.jpg?Expires=1802811911&Signature=FrQNdEAypamczFJMDczFSDngvVDFxYLZ0xDuoYRS6CdkInP8gqAqIGlTNeFTseQH4vvl3yL7FpiKkcME4TEjU-pHYEZVEZ~4QPQ2-Bt7moN5-6bQetx83-LFmrRtNHHSSqO6qpAfA9RHVsLxjguwMamaAnjaevIp4f5YrZktawTFNeBw9atpQeNd38role6eahgfQIPP0IpEyU~1okzx3MypmB45P3emRNFR3jh8xOsve57R3T6iGDBkb4dzJS86qDTFWVUkC3NRKCjRuEHCSfxdoBJBAyOzV-woZp~iS0Kxy94eeHaUN8PvALp7ZgTzrTth2Oux7yHLzml9rl2o1A__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1353,primer_uuid,664eccdf-7e08-4e94-a84d-bb5396547020,artsy_csv,0,,
 KG-1353,status,active,artsy_csv,0,,
 KG-1353,title,"Budh Gaya, Visit India",artsy_csv,0,,
-KG-1354,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-1354,classification,Posters,auto_resolution,0,,
 KG-1354,medium,Lithographic print on paper,auto_resolution,0,,
 KG-1354,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/08b51928-0ec3-40f5-8a2b-be3321f79540/201124_KapoorGalleries_0045.jpg?Expires=1802811752&Signature=NEpGUu-mw1FcpJX1b7bfmPzZKbxqFaDBTPfG4~BqoLp~n8czUEtdrBLG9imG2EHWwsrSXUgwTU2XsH2rl1OaDzWOBPcr5YAWmrepP7n83th4tfoeR7Y4sNyEikpp9LFLWfaRIEmZo0SVe9l4KNd-gfyVueCeMYzbaW12Xq3AAuwLJ1jc7EyN4C-MzIPeg5jhKFrhu3ujp3dkCWyHkZk-6hp9riFyQ8k41OPNJ3r7u6ecBFEK2ipiCHEsW8RyRYtn2TeQb5dAbyYNqbmaG4w-zXjUtc13MKhqF-hX0C2C5FSHW34dfA2Z7VLOVVnHx5uHgofW70w4rN5jrEyO-dMWAw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1354,primer_uuid,08b51928-0ec3-40f5-8a2b-be3321f79540,artsy_csv,0,,
 KG-1354,status,active,artsy_csv,0,,
 KG-1354,title,Visit India,artsy_csv,0,,
-KG-1355,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1355,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1355,medium,Lithographic print on paper,auto_resolution,1,Poster,bulk_upload_xlsx
 KG-1355,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/084bd542-e0aa-47d9-8637-f27bfe7da080/Screen%20Shot%202023-07-07%20at%2011.34.42%20AM.jpg?Expires=1802811911&Signature=oKxuazRJLZ-cfyLrbMs21FbN8R0aHeerR037liy1SVyDoaPBAuyASxTNajlr9x9EjZmFrm0W76SIipICGGjGXEB1il36sTHWMrn1GUO33i2Nys7FaqyJmC8Y11swMHLWZp7XHyCAer2HD1v28KICI~RNw0wGQzRHzeOANKlXCOiYLZx4Xt6pzMPCc2tn3qUFmBsNpsggIC1XLQWNAGX~1FUqPh4KcqHwz5S~PXHOMAI5AYCw8rP~9VLQAZiZ5xbido~AQBOJxA1eKAgHZ5JkXvJLaZOgAW3V1ZPtPyvi~HfN6f4ADB3q73NqdG5iuHyRpvCu8VXWddT1G7wYNx9AtA__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1355,primer_uuid,084bd542-e0aa-47d9-8637-f27bfe7da080,artsy_csv,0,,
@@ -2632,7 +2632,7 @@ KG-1356,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i
 KG-1356,primer_uuid,1ca8e141-69d3-4706-b7ee-85673ae89151,artsy_csv,0,,
 KG-1356,status,active,artsy_csv,0,,
 KG-1356,title,Kashmir Calling,artsy_csv,0,,
-KG-1357,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1357,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1357,medium,Travel Poster,bulk_upload_xlsx,0,,
 KG-1357,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/b9973c98-7914-4bcc-a35f-86251f6939c1/201124_KapoorGalleries_0042.jpg?Expires=1802811801&Signature=n4UYik8SmPQ2bZYlUBjW0e2vtPYRh9ldyzY7P4wX7xjEhovIR0SlFwN-S2WEzIEs6bEwHbNEp8nWskBkOiHqj7GUwKuRokALM6r2fbGBMO7RT-BqgOonk-z0Nf9EB6~scZERp~KQK5MTsoxBetjE9HF9znJYLbgojmchWl8y7xU-d5lPqR5dvuMP8dm98AY53uQXyMDO7FFYRMUoVtyjKkhyqnNMAE~IiaeC9oD8g8tG4CoFcGC2ram5a2NmrdPeg6iLunSa8pQTHjoCZ3wd7NVfjNqwmRyba1Sh3NJigsMbLRgNHk4v0S7uLllh9mpwrUvw9oTxCJrYwoiFvhpc3w__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1357,primer_uuid,b9973c98-7914-4bcc-a35f-86251f6939c1,artsy_csv,0,,
@@ -2661,7 +2661,7 @@ KG-1362,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i
 KG-1362,primer_uuid,5da70b97-6054-4471-80f7-782c3326bac1,artsy_csv,0,,
 KG-1362,status,active,artsy_csv,0,,
 KG-1362,title,"Fly Japan Air Lines, Taj Mahal, Agra, India, New Delhi",artsy_csv,0,,
-KG-1363,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-1363,classification,Posters,auto_resolution,0,,
 KG-1363,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/789e6210-bb5b-40a7-99ca-6c88878ef9b4/201124_KapoorGalleries_0034.jpg?Expires=1802811752&Signature=k8-BDsFPNqEo96KL6MXV~4lFm3-owvC-STLQrVqzSpuDPvL~AQ5nVB8temPQO3QBDKPMQxBsYsED~UkSTazu05S-LsLGW~Irmu~EcmVIC~hkXeYofH40vKs9mimo9lwJDvWbQ4BPFQq2X1u89yvFaki6IbKNAOv58ILisQLJVrB~dasnC2CpJK8PiAjj7ET4UCHjy8MuGfeSzdG9jfz6VZbpHwoxpe6UydRw3ua2dZcfYOvKGwJnMKk6TRkhBxKqivpKkEdGQtUtn-7V0ZxvZAo2ZIuK4~WKYWIScSooT96Ao5g7MkORODGK9efZfie1vAVG6Fcy1Lr9Njoykj4XfQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1363,primer_uuid,789e6210-bb5b-40a7-99ca-6c88878ef9b4,artsy_csv,0,,
 KG-1363,status,active,artsy_csv,0,,
@@ -2678,7 +2678,7 @@ KG-1366,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i
 KG-1366,primer_uuid,798a1cf9-36a2-44c5-a7e2-d480d805ec7f,artsy_csv,0,,
 KG-1366,status,active,artsy_csv,0,,
 KG-1366,title,"Germany, Frankfurt, Air-India",artsy_csv,0,,
-KG-1367,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-1367,classification,Posters,auto_resolution,0,,
 KG-1367,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/04193628-6c74-4102-baa3-ca65b9b21c53/Screen%20Shot%202023-07-07%20at%2011.59.51%20AM.jpg?Expires=1802811913&Signature=cSEVQSerM6jgbfXEoplry-zTUOlRyR8CTHUyk~l7-ZBiXCQG9zi~kJ0LNnTLTD6V1xECXYC1sZKgrrtXvDtCQMAHKIegni5aVAzlC1ov2SIBG6a7vh8hGsfcJaVTiuXj~JSMfZ1pGQKxuJ6TiETgUk1N50w4zozxX1ohSHnZvaaCRwwcfZQ~Zzkf2u7w6MJbZyI05OIUAZlQcInk7qlNTGocgaPnBBv0aw3RLxgCcFPt6wEJKvxgx~HPDhH54REMHXCyr9jixgr42ykWC3ERc13Tr81z2tUcE9blBqMnTh223IZfK2Nhq~J2yMbfJMYO0kCSiGwgSW~ulTeyv4gSaQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1367,primer_uuid,04193628-6c74-4102-baa3-ca65b9b21c53,artsy_csv,0,,
 KG-1367,status,active,artsy_csv,0,,
@@ -2724,14 +2724,14 @@ KG-1376,primer_uuid,525c8186-bfdf-4d69-b015-6916937590fe,artsy_csv,0,,
 KG-1376,status,active,artsy_csv,0,,
 KG-1376,title,See India/Amber,artsy_csv,0,,
 KG-1376,year,1930,artsy_csv,0,,
-KG-1377,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,0,,
+KG-1377,classification,Posters,auto_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1377,medium,Lithographic print on paper,auto_resolution,1,Linen-backed poster,"artsy_csv,bulk_upload_xlsx"
 KG-1377,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/f444bf54-a912-4f24-a508-4a8c150f4140/Visit%20India%2C%20a%20Street%20by%20Moonlight.jpg?Expires=1802811895&Signature=nbdgr226e80SrRJ4P9yQBy5ha4uQjb~6uJ37fRes~0IfWO7AqaKw3eiw0t6Fj7TITVr24birS99FNQTGmih0uWkbFOiPAmBnQHbmzfpaXrTUmSiJOaUkT8QWMbaOEdOMqgmwU7SqMw6zB0yLHC-74njltRruhkZNdmt0sT9tXXHff1FPXaWduq2YdHH412KmIlJARlcAIrKC5snhZqAkoohtXndTSBslKo6k~mYOTCZm2wf57CpvC8K4866DrUFuyd1loDSANgYuCKjSbOH8nTbfLAJkS~hyNmhR8RnzG~TlfJl7dqTVlM2u~a~QVsuh9JgqO2c5VcLhR5SZ0w3tUw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1377,primer_uuid,f444bf54-a912-4f24-a508-4a8c150f4140,artsy_csv,0,,
 KG-1377,status,active,artsy_csv,0,,
 KG-1377,title,Visit India/A Street by Moonlight,artsy_csv,0,,
 KG-1377,year,1925,artsy_csv,0,,
-KG-1378,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,0,,
+KG-1378,classification,Posters,auto_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1378,medium,Lithographic print on paper,auto_resolution,1,Linen-backed poster,"artsy_csv,bulk_upload_xlsx"
 KG-1378,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/ddaf19c9-5145-4e49-af89-ca0b3b26f7da/Mount%20Abu%2C%20Visit%20India.jpg?Expires=1802811895&Signature=AoxkphLilThyDVKY82pnmqNIO~XgxfybYpZ44SkPrqdy8GITO2yYxJMvHI0oh6Hesoagj00CtI2cYV2ZG8SyaMQFxa0y1RsJ4kxWMTyjo~1B8xZAotJHxJbf6TlzeK8dwA1o~YiAOOrXb9SeMaihGKH6tm0xEYjPU4EPmKA~9BLg8xCiIVNcA84keNWZorYdGDV9toCXbf~IMNcRsgq7YXXwQlmRgmIrkNxy10r2th89RE5Vm7Yg5reKOiNzsQ7HyEvAalrH~rnWsDg6aBQaX7kCQTV1w0zKs75I4jc7gv6fZGb~~G~feJpSno1oqlBsOepGuy7tW4y-YXCJn7bFnA__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1378,primer_uuid,ddaf19c9-5145-4e49-af89-ca0b3b26f7da,artsy_csv,0,,
@@ -2745,13 +2745,13 @@ KG-1379,primer_uuid,b4bd3099-f13f-42f1-9aee-16798d3afbe2,artsy_csv,0,,
 KG-1379,status,active,artsy_csv,0,,
 KG-1379,title,See Ceylon,artsy_csv,0,,
 KG-1379,year,1948,artsy_csv,0,,
-KG-1380,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1380,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1380,medium,Poster,bulk_upload_xlsx,0,,
 KG-1380,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/48267824-24b1-4b26-bd75-3e73ccb2423d/Screen%20Shot%202023-07-06%20at%2012.48.01%20PM.jpg?Expires=1802811896&Signature=ShhmC56Ic2T2pHiSAPS8fiAG05GILCxMHf1PO2SsyuM74r5XvbvyiS74jSpGJQQsYqAZDr~U3REZrMWj5wl3c4sJa08f8dlPE83tKDn-8P0GB0nusaqxYrcpXWtU05rdbb1zip18yR5Z80hdkwrK45swzrs0TcwipiUXo3aOkzSkLcHTJGDeNwDwjaSvOKxcFGuLEAqa5bo6GFcfcPNYrl20SY~kZjh2E7mSXeQ1FcjBUjAalGgqYXxSn2CN~itQSKd~cCHackfZVNCIbLfthwyingMQVo7krACa6Oe6tYxos832KKA17K~HDy2p3DVSh7TVXZVaZ3FcN6t0YoGKdQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1380,primer_uuid,48267824-24b1-4b26-bd75-3e73ccb2423d,artsy_csv,0,,
 KG-1380,status,active,artsy_csv,0,,
 KG-1380,title,"Simla, See India",artsy_csv,0,,
-KG-1381,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1381,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1381,medium,Poster,bulk_upload_xlsx,0,,
 KG-1381,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/6e03e0c3-2485-4a7d-9259-3fdb74ce44f9/593577_view%2003_02.jpg?Expires=1802811896&Signature=LK94TVyOSnvmWLa4WbAYqMqR3RywgIFfJZip9AvRjytRBaqsf6hbA1VxSiNRdll6BOZQTUl~tqPW89dNElniMp3k90RvgraI9hmJVBMtJiCITB~UNYy0grw0rZCCoHramhqvFYEimgof0JwJlBmw~GG414EAeSjFgsLCfyzNdSZH9r-Tjzu-IrivWXmhBExts4ApMWwWtKp~ykfJwCpFnhWqA1Aawr5rptJa8Que9X3Gt3hOv5wR3sOja4F0qzBOvTzUlZ-rMx9DMehlt1LRaFqcahkeq07fuhBeYUy0RkTePvexeRvNzDnY4mTe5pFKQ1~O8BIVi-j2Ap2L1tYwuQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1381,primer_uuid,6e03e0c3-2485-4a7d-9259-3fdb74ce44f9,artsy_csv,0,,
@@ -2799,49 +2799,49 @@ KG-1387,primer_uuid,50c30231-4ebf-469f-b111-e9d75787f79c,artsy_csv,0,,
 KG-1387,status,active,artsy_csv,0,,
 KG-1387,title,Fly Jet to India / Pan American World Airways,artsy_csv,0,,
 KG-1387,year,1950,artsy_csv,0,,
-KG-1388,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1388,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1388,medium,Lithographic print on paper,auto_resolution,1,Poster,"artsy_csv,bulk_upload_xlsx"
 KG-1388,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/0aebafff-0909-460a-9ff9-191a06f71884/Screen%20Shot%202023-07-07%20at%2010.41.54%20AM.jpg?Expires=1802811909&Signature=hNrMXlD9ZphYql6gexWoCEupyWI6PIaofmYDnyu3srCrejdxVxw2UYZLza6HU7iHG1GJ2hcUTyS0s7Wk~413P7cZhY9JonQJ2jTpzpQxaVbLAld2Ntl5zMcV5~JtK4tk3hjOTWH1VqAQMukCaceesCO6-wk3BjFw-mH-xj5g-CSIqb9cQpnNDWgiAqJKgnN1YRkpPbTMO-jlF~FTLh5mmIRmMEAJeWoA0W8GYAH0RiVwTXCTdVEh2Yhm3zAv35QhYy~3Gu95hXUuQIBptTg32xRan6vyN5-6UdD2hVUMfVNxlE97Coz4y14VXI79bkLbXFdkK~owdAqFnE9OuYEczw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1388,primer_uuid,0aebafff-0909-460a-9ff9-191a06f71884,artsy_csv,0,,
 KG-1388,status,active,artsy_csv,0,,
 KG-1388,title,"Visit India, Hindu Temple",artsy_csv,0,,
 KG-1388,year,1953,artsy_csv,0,,
-KG-1389,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1389,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1389,medium,Poster,artsy_csv,0,,
 KG-1389,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/c3a0c29e-ce43-4968-a405-ccc117ab2cff/There%20is%20an%20Air%20About%20India%20.jpg?Expires=1802812078&Signature=y8ZsGOH6GrkwDJ-Vo3BIcZrvHQOLwejStEceSk-eQ392qwiTk7R0UWygtMEU58w~M95VmQ2ajl84lgHIFUKjn4t-HaWKJYIHhZOafmOkGSTcaL9AHaKa4NEk83jDYOS0PQGhDL8SH3MXIlfE39OkfUmtYELMsMLMtx7vMEiQ~xBq7xxkGpcYYaMsD7J59LrV99pp4rTdmkV1w7ZhM9-TzbvkZZwkEe-E7WMrMawu3pFOfWMChw1eeE0BfC-BGQkUfqhay7~MPJIUniIyfjN80ucc41NwT58LfvF4OcT44oUh3Fj0J0r7JhW50~~T7kmWr5Z48Tbjcux1MstHaq5T3w__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1389,primer_uuid,c3a0c29e-ce43-4968-a405-ccc117ab2cff,artsy_csv,0,,
 KG-1389,status,active,artsy_csv,0,,
 KG-1389,title,"Air India, there is an air about India",artsy_csv,0,,
 KG-1389,year,1968,artsy_csv,0,,
-KG-1390,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1390,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1390,medium,Poster,artsy_csv,0,,
 KG-1390,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/8d1795c0-b537-4e5b-9dc8-7590179a287b/Screen%20Shot%202023-07-07%20at%2010.50.23%20AM.jpg?Expires=1802811909&Signature=YP6b-MVeJXzoUIAwo1iymNJ-OoDlO~r221TG~kDG6ThwMWsle7nrU36olj98sKCuTzDEGag~qI97kyVmqkSPnN2PUh57wrWSO4jZomsua7g3xZYV~GyjiJs8WDklcvzXQ95U~wXOoYqkAImC2S8PrL8~LJ~SfZgN~2ZynGEOS9hDpyKOexrhHr8nD9v7XeDZSlmuCSSlBXiVf1LgEJ7ckpKeoOeC6TZ4nZ9EZsYGRZqWx4A0fqioJflEcYpacH1Xjpemp8p6BrP~xYYjxK7UzrNssJWg~YM9UZOqDvpwH1COLsVxDU6GB7967tnnNvrJMR7jVb9xYhf-JqXAo3sPvw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1390,primer_uuid,8d1795c0-b537-4e5b-9dc8-7590179a287b,artsy_csv,0,,
 KG-1390,status,active,artsy_csv,0,,
 KG-1390,title,"Air India, India",artsy_csv,0,,
 KG-1390,year,1964,artsy_csv,0,,
-KG-1391,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1391,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1391,medium,Poster,artsy_csv,0,,
 KG-1391,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/809273b5-b8d0-4066-82b1-808df6de88d4/Screen%20Shot%202023-07-07%20at%2010.52.24%20AM.jpg?Expires=1802811909&Signature=eZq5bAx9116HSCwTCGykK~bR2nkuhDEgjzu3viOUygqJIpqYgXS7eY0TShiyWKjIb2qL17edy2l~Wf49SXShZMmzm0mSY-Qp-yo~rjSTx-I271xbyXlJr4PBnQOTwONc8p0qGuwbWymqagkUNM~kgXeY~rYXvLqrcY5QQEcGufU4O6amIGUzWPWsM~1P2jO0M3FqtoU2vBW1jTVVZ1KKLvsJ34e5uAINhxGM0dqygOUomxCMbH9DmQ1X3lTqdXRwuwPrqk9oyB3WTcOG5i3WQjf-Ca8pSnPjNjoR0RzYxInZcs74PhByyLwFIMZVDrnE7ViH~UKrhCicsCE-g8qenA__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1391,primer_uuid,809273b5-b8d0-4066-82b1-808df6de88d4,artsy_csv,0,,
 KG-1391,status,active,artsy_csv,0,,
 KG-1391,title,"Air India, Nandi (Fiji)",artsy_csv,0,,
 KG-1391,year,1964,artsy_csv,0,,
-KG-1392,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1392,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1392,medium,Poster,artsy_csv,0,,
 KG-1392,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/ae6a0664-2e52-4861-a98f-4b8b1bb75d66/109_139_1.jpg?Expires=1802811909&Signature=TiRIOp9XCDyHU7hudk6s0LUshcs-4ukIJ2j4pNMev48nxinl16zq0zkObAawSZIbgWw9SveG2UXISG9Ioq76MWUFN9Fmp11Y8s5UBB9HoMI24BiorJLSZNXf2etIDDIGufk0PSUptitOVVMWZ99u0XB4nBV9KKZgh80htKnBtVoxRAu7sn0bUiCvC~~2CXaPr4RB0-Ip78VxxpAfE88ZKGMi~naad4gvvUDn4k66FqX-r4kXoiV9nTrzCC1nHsNOGSE2czZM0kI~moGx4bVUJcJoGpoGwhVJskqC~iUsA3C1p-lqCHxtXAgZiw4XRNqPijGFuKDpxNjM9gdvTV3sug__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1392,primer_uuid,ae6a0664-2e52-4861-a98f-4b8b1bb75d66,artsy_csv,0,,
 KG-1392,status,active,artsy_csv,0,,
 KG-1392,title,Air India/Rome,artsy_csv,0,,
 KG-1392,year,1971,artsy_csv,0,,
-KG-1393,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1393,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1393,medium,Poster,artsy_csv,0,,
 KG-1393,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/bbdca0ff-848e-4de5-8271-f70cdd9494bc/109_140_1.jpg?Expires=1802811909&Signature=N6TGPM-wsr8xp5gwebdfs~WQs7Ew3cURDsiGFnI3nuSK8rrIc~WBdbBw68aq2FSsFnY90yEBIf4mspX3buiZhA1608qXkOOAodOBmdnBL1OMVHxzPsik94wj3pNqQHveDBkkWz5vM~4QG515hNXL34kWLKyXMVtHjcZbgQG3we~GXKAZ9HeprCFX9DlvsBdp4SY99huJUGd1Yw52W6e9BrSWsPTmjCaK3uoO~HZ0Z9n9a7nZwem1XO~p2iBFPbEVqlvWDlHaysiPBddzTzNSVZQ5m-RaXObWR8WO0UFK-tXG1ilpKzD9ZhkyBZ3YRHEypeWgueF2sYxVk5SfTMsgIQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1393,primer_uuid,bbdca0ff-848e-4de5-8271-f70cdd9494bc,artsy_csv,0,,
 KG-1393,status,active,artsy_csv,0,,
 KG-1393,title,Air India/London,artsy_csv,0,,
 KG-1393,year,1971,artsy_csv,0,,
-KG-1394,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1394,classification,Posters,human_resolution,1,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx
 KG-1394,medium,Poster,artsy_csv,0,,
 KG-1394,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/1af4e5d0-0a09-4d59-83f0-7f92662c46f6/Screen%20Shot%202023-07-07%20at%2010.57.30%20AM.jpg?Expires=1802811909&Signature=NcsK30BGesaO9YCpRvPU9PwvmjWJvK-3u6Xo~DzqkTqVxZexUJ2RxTbmUmowxx-mkiRjJBFLoGixu0P3ro1jg2dhBuAdZlYYNvEJyFS0UpjZRIH1LLOQseNmYXk-w-VgVM23ZEoZzH19kBbX~gPGeT88IAzSCuhC4KUYtLOnn-ztHHMW-VfPZweLMLOJkvYoiWXI0ckghxtb~NfkGJfnX~pr5uCxwSLwV-IosborV7Am7pg0Hl3wUJiSKzQBH9xsR3SKS9rfJSGmSLmLMpv5xtFYZVMMZHzHdk1ntGkR6mrWqyqE9Ny-Xr7nq0jpVJgqvpkznwxiDL0ZCMRU-a873w__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1394,primer_uuid,1af4e5d0-0a09-4d59-83f0-7f92662c46f6,artsy_csv,0,,
@@ -7830,32 +7830,32 @@ KG-2282,status,active,bulk_upload_xlsx,0,,
 KG-2282,title,Raja Watching Elephant Fight,bulk_upload_xlsx,0,,
 KG-2282,width_in,9.0,bulk_upload_xlsx,0,,
 KG-2282,year,1830,bulk_upload_xlsx,0,,
-KG-2283,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-2283,classification,Posters,auto_resolution,0,,
 KG-2283,status,active,bulk_upload_xlsx,0,,
 KG-2283,title,Air India Postcards - Cairo & Moscow,bulk_upload_xlsx,0,,
-KG-2284,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-2284,classification,Posters,auto_resolution,0,,
 KG-2284,height_in,4.0,bulk_upload_xlsx,0,,
 KG-2284,status,active,bulk_upload_xlsx,0,,
 KG-2284,title,Air India 3.31.1993 Ticket BOM - LDN,bulk_upload_xlsx,0,,
 KG-2284,width_in,9.0,bulk_upload_xlsx,0,,
-KG-2285,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-2285,classification,Posters,auto_resolution,0,,
 KG-2285,height_in,9.0,bulk_upload_xlsx,0,,
 KG-2285,status,active,bulk_upload_xlsx,0,,
 KG-2285,title,Air India Timetable June 1962,bulk_upload_xlsx,0,,
 KG-2285,width_in,4.0,bulk_upload_xlsx,0,,
 KG-2285,year,1962,bulk_upload_xlsx,0,,
-KG-2286,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-2286,classification,Posters,auto_resolution,0,,
 KG-2286,height_in,9.0,bulk_upload_xlsx,0,,
 KG-2286,status,active,bulk_upload_xlsx,0,,
 KG-2286,title,"Air India Timetable June 15 - October 31, 1970",bulk_upload_xlsx,0,,
 KG-2286,width_in,4.0,bulk_upload_xlsx,0,,
 KG-2286,year,1970,bulk_upload_xlsx,0,,
-KG-2287,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-2287,classification,Posters,auto_resolution,0,,
 KG-2287,height_in,9.0,bulk_upload_xlsx,0,,
 KG-2287,status,active,bulk_upload_xlsx,0,,
 KG-2287,title,"Air India Timetable April 1 - August 31, 1979",bulk_upload_xlsx,0,,
 KG-2287,width_in,4.0,bulk_upload_xlsx,0,,
-KG-2288,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-2288,classification,Posters,auto_resolution,0,,
 KG-2288,height_in,9.0,bulk_upload_xlsx,0,,
 KG-2288,status,active,bulk_upload_xlsx,0,,
 KG-2288,title,"Air India Timetable April 1, 1976",bulk_upload_xlsx,0,,
@@ -7920,12 +7920,12 @@ KG-2298,medium,Red Sandstone,bulk_upload_xlsx,0,,
 KG-2298,price_usd,25000.0,bulk_upload_xlsx,0,,
 KG-2298,status,active,bulk_upload_xlsx,0,,
 KG-2298,title,Red Sandstone Vishnu,bulk_upload_xlsx,0,,
-KG-2299,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-2299,classification,Posters,auto_resolution,0,,
 KG-2299,height_in,11.0,bulk_upload_xlsx,0,,
 KG-2299,status,active,bulk_upload_xlsx,0,,
 KG-2299,title,Air India Boeing 707 Special Flight In Flight Menu,bulk_upload_xlsx,0,,
 KG-2299,width_in,7.0,bulk_upload_xlsx,0,,
-KG-2300,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
+KG-2300,classification,Posters,auto_resolution,0,,
 KG-2300,height_in,10.0,bulk_upload_xlsx,0,,
 KG-2300,status,active,bulk_upload_xlsx,0,,
 KG-2300,title,Air India Safety Instructions Pamphlet,bulk_upload_xlsx,0,,
