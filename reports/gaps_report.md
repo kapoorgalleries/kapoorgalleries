@@ -78,9 +78,6 @@ Resolve with: `python -m src.cli resolve <KG-#> <field> "<value>" --reason "..."
 | KG-1012 | classification | Design/Decorative Art \| Khanjar | artsy_csv,bulk_upload_xlsx,match_workbook |
 | KG-1012 | medium | Jade-hilted and jeweled \| Jade-hilted and jeweled Khanjar | artsy_csv,bulk_upload_xlsx |
 | KG-1093 | medium | Opaque watercolor on cloth \| Thangka -Opaque watercolor on cloth | artsy_csv,bulk_upload_xlsx |
-| KG-1301 | medium | Opaque watercolor heightened with gold on paper
- Calligraphy panel on verso \| Opaque watercolor heightened with gold on paper  
-Calligraphy panel on verso | artsy_csv,bulk_upload_xlsx |
 | KG-1312 | height_in | 13.0 \| 9.0 | artsy_csv,bulk_upload_xlsx |
 | KG-1312 | medium | Ground mineral pigments on paper \| Opaque watercolor heightened with gold on paper | artsy_csv,bulk_upload_xlsx |
 | KG-1312 | price_usd | 26000.0 \| 50000.0 | artsy_csv,bulk_upload_xlsx |
@@ -92,22 +89,19 @@ Calligraphy panel on verso | artsy_csv,bulk_upload_xlsx |
 | KG-1382 | classification | Posters \| Print | artsy_csv,bulk_upload_xlsx |
 | KG-1387 | classification | Posters \| Print | artsy_csv,bulk_upload_xlsx |
 | KG-1407 | classification | Drawing, Collage or other Work on Paper \| Other | artsy_csv,bulk_upload_xlsx |
-| KG-1428 | title | [FAKE?] A Prince on Horseback \| \[FAKE?\] A Prince on Horseback | artsy_csv,bulk_upload_xlsx |
 | KG-1443 | classification | Drawing, Collage or other Work on Paper \| Other | artsy_csv,bulk_upload_xlsx |
 | KG-1443 | medium | Gouache and gold on paper \| Gouache and gold on paper, Manuscript | artsy_csv,bulk_upload_xlsx |
-| KG-1501 | title | [FAKE] Krishna and Ladies \| \[FAKE\] Krishna and Ladies | artsy_csv,bulk_upload_xlsx |
-| KG-1556 | medium | Opaque watercolor heightened with gold on paper
- Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format. \| Opaque watercolor heightened with gold on paper  
-Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format. | artsy_csv,bulk_upload_xlsx |
-| KG-1585 | medium | Opaque pigments heightened with
- gold on paper \| Opaque pigments heightened with  
-gold on paper | artsy_csv,bulk_upload_xlsx |
 | KG-1737 | title | Shakyamuni \| Shakyamuni, 18th century | bulk_upload_xlsx,price_list_pdf |
-| KG-1741 | title | Vajrapani, Hayagriva, Garuda combined \| Vajrapani, Hayagriva, Garuda combined, | bulk_upload_xlsx,price_list_pdf |
-| KG-1812 | title | A Mandala Depicting Vajrabhairava \| A Mandala Depicting Vajrabhairava, | bulk_upload_xlsx,price_list_pdf |
 | KG-1813 | price_usd | 24000.0 \| 38000.0 | bulk_upload_xlsx,price_list_pdf |
 | KG-1813 | title | Large Thangka White Tara Tibetan \| Large Thangka White Tara Tibetan, 19th | bulk_upload_xlsx,price_list_pdf |
 | KG-1814 | price_usd | 24000.0 \| 28000.0 | bulk_upload_xlsx,price_list_pdf |
 | KG-1814 | title | Dipankara Buddha with Arhats Deities \| Dipankara Buddha with Arhats Deities Thangka | bulk_upload_xlsx,price_list_pdf |
 | KG-2106 | height_in | 27.0 \| 27.125 | bulk_upload_xlsx,price_list_pdf |
 | KG-2106 | price_usd | 30000.0 \| 80000.0 | bulk_upload_xlsx,price_list_pdf |
+| KG-2106 | title | Tibetan Thangka depicting Saddha \| Tibetan Thangka depicting Saddha (Milarepa) | bulk_upload_xlsx,price_list_pdf |
+| KG-2106 | width_in | 39.0 \| 39.5 | bulk_upload_xlsx,price_list_pdf |
+| KG-2188 | title | Arhat/Sthavira (Buddhist Elder) \| Arhat/Sthavira (Buddhist Elder), 1600-1699 | bulk_upload_xlsx,price_list_pdf |
+| KG-2224 | price_usd | 38000.0 \| 48000.0 | bulk_upload_xlsx,price_list_pdf |
+| KG-2224 | title | Thangka Of Two Trailokyavijaya Mandalas \| Thangka Of Two Trailokyavijaya Mandalas with Ganapathi | bulk_upload_xlsx,price_list_pdf |
+| KG-2224 | width_in | 18.0 \| 18.25 | bulk_upload_xlsx,price_list_pdf |
+| KG-2375 | height_in | 19.0 \| 19.5 | bulk_upload_xlsx,price_list_pdf |

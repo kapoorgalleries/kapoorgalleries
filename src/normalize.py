@@ -58,6 +58,14 @@ def clean(value: Optional[str]) -> Optional[str]:
     s = str(value).strip()
     if not s or s.lower() in {"nan", "none", "null", "n/a", "unknown"}:
         return None
+    # Unescape FileMaker/markdown-style bracket escapes ("\[FAKE\]" -> "[FAKE]").
+    # Primer's Artsy CSV export escapes square brackets; the bulk-upload xlsx
+    # does not, so the same title showed up as a spurious conflict.
+    s = s.replace("\\[", "[").replace("\\]", "]")
+    # Normalize spacing around internal newlines — sources disagree on whether
+    # the spaces sit before or after the line break ("paper  \nInscribed" vs
+    # "paper\n Inscribed"), which also produced spurious medium conflicts.
+    s = re.sub(r"[ \t]*\n[ \t]*", "\n", s)
     return s
 
 
@@ -157,5 +165,5 @@ def normalize_title(value: Optional[str]) -> Optional[str]:
     s = clean(value)
     if not s:
         return None
-    s = re.sub(r"\s+", " ", s).strip(" .")
+    s = re.sub(r"\s+", " ", s).strip(" .,")
     return s

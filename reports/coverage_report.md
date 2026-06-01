@@ -1,7 +1,7 @@
 # Inventory coverage
 
 - Total works: **1528**
-- Works with at least one conflict: **24**
+- Works with at least one conflict: **17**
 
 ## Field-level coverage
 

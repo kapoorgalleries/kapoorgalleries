@@ -2256,8 +2256,7 @@ KG-1300,title,Gujari Ragini,artsy_csv,0,,
 KG-1300,year,1701,artsy_csv,0,,
 KG-1301,classification,"Drawing, Collage or other Work on Paper",human_resolution,1,Painting,artsy_csv
 KG-1301,medium,"Opaque watercolor heightened with gold on paper
- Calligraphy panel on verso",bulk_upload_xlsx,1,"Opaque watercolor heightened with gold on paper  
-Calligraphy panel on verso",artsy_csv
+Calligraphy panel on verso",artsy_csv,0,,
 KG-1301,price_usd,48000.0,artsy_csv,0,,
 KG-1301,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/16b7c40e-cd08-4a5f-8ff3-2382d2c2efa9/Angels%20bring%20food%20to%20Ibrahim%20Adham%20at%20dawn%20crop.jpg?Expires=1802811920&Signature=Yj3~UxJGzomsvyG2i2sXy0RQ4uj6AiUXeqsecQkM~qE4lcvlXgWnzKrLwcr9PnbwK2X3T5AxFqBd99KeOT6dkwy9kfu34xWvXjTSzMPjITSfOvokXXiziSyasUemmfox-A0si5IW9sB2fNVx2cQFytIFndXtkxWVGIPwuksB9-zcd5o2ngEJdRWq9y4DflhkhyuKEp556khSHm6vfrGGmn-xX~P8fhV5nPJbTje69xJ9d6iK1uXXw0GwLdKYhJYYe1IOJzTXbiukWh03GSagDk4ZgpOTx2fyS2WThZWFqmd6yPNhnWX~QZXMQLD85qlZrtL4Is4Yb3fbfPPN8ljsRg__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1301,primer_uuid,16b7c40e-cd08-4a5f-8ff3-2382d2c2efa9,artsy_csv,0,,
@@ -3075,7 +3074,7 @@ KG-1428,medium,Opaque watercolor heightened with gold on paper,artsy_csv,0,,
 KG-1428,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/0ba131a3-1f51-4f3c-ab4d-0f5f9cb5d736/img410.jpg?Expires=1802811948&Signature=DLg9KSnLZHLzMRbKpNdlDYm-fJDAtQvaV0kNTQNvJp0W7l8jkI7vEsHV-eooHsBPQAbj7i2PalpKBIARIdG8eFP~TumFBn4GyXpw74DAsp3jQpwfa3~u~vRmSx~4eFrUSg~UcTGtn3m5lFAXZizQv1Hpe55-NahzHa72c-CjBrCyhCCdowowF8I6cLBReAtHnTPp9BPabni1~wE0e5BtyV2M575GV9H9tup2sCjLkBZ-4GKolSxcQiKQV9Yby9DGZ6nCi2Y4ObGKA-wIUMNnR4De2jUj20SR9AJptn-aPMkmhZXBn2LscR2yGuKWU6egLl5gpRIVQTSxqiXcVMgSKQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1428,primer_uuid,0ba131a3-1f51-4f3c-ab4d-0f5f9cb5d736,artsy_csv,0,,
 KG-1428,status,active,artsy_csv,0,,
-KG-1428,title,[FAKE?] A Prince on Horseback,bulk_upload_xlsx,1,\[FAKE?\] A Prince on Horseback,artsy_csv
+KG-1428,title,[FAKE?] A Prince on Horseback,artsy_csv,0,,
 KG-1428,year,1801,artsy_csv,0,,
 KG-1429,classification,Painting,artsy_csv,0,,
 KG-1429,medium,Opaque watercolor on paper,auto_resolution,0,,
@@ -3582,7 +3581,7 @@ KG-1501,medium,Opaque watercolor on paper,auto_resolution,0,,
 KG-1501,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/b14dfb93-a177-4eb5-b3b9-e932442f40f0/CC291-5_2.jpg?Expires=1802811827&Signature=yoxo-OhUnJ60UIHRAblXgbDk-YUVgO89A4KKOL8N5UtokEj-ue6-VtuHPGYyVWayqrqkoJt7oL1Oz0Um2nwM5wK6dCGVV5ynAAU6GxXG2zgRevgGhBOdaZfbXrOCTVZ6Cl7Y1pEmTpuPu3wa0V3prtRF95QHjvMKb~hNblzM~gFMQOVPWIEtvAwexCVN-tw3fDtZwhfnDzOkoPYp3pwP4vK66UUtKHeqp6WC3LTSAfDHHcUYK8xA2186RdGcKR2HR0d2nNmR2Yadsp3IvMv5PMLKlMZHWcTCrj7MTIxMz4n2I6o7gwW-~NiWPJ27nPiPTrZ1s6EHo2dF68LbbLJ8AQ__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1501,primer_uuid,b14dfb93-a177-4eb5-b3b9-e932442f40f0,artsy_csv,0,,
 KG-1501,status,active,artsy_csv,0,,
-KG-1501,title,[FAKE] Krishna and Ladies,bulk_upload_xlsx,1,\[FAKE\] Krishna and Ladies,artsy_csv
+KG-1501,title,[FAKE] Krishna and Ladies,artsy_csv,0,,
 KG-1501,width_in,9.0,artsy_csv,0,,
 KG-1501,year,1775,artsy_csv,0,,
 KG-1502,classification,Painting,artsy_csv,0,,
@@ -3945,8 +3944,7 @@ KG-1555,title,Shiva Panchanana and Parvati,artsy_csv,0,,
 KG-1555,year,1801,artsy_csv,0,,
 KG-1556,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
 KG-1556,medium,"Opaque watercolor heightened with gold on paper
- Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format.",bulk_upload_xlsx,1,"Opaque watercolor heightened with gold on paper  
-Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format.",artsy_csv
+Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format.",artsy_csv,0,,
 KG-1556,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/63adc370-41b4-4f1e-adb8-96d2d19af626/DSC_5164.jpg?Expires=1802811782&Signature=a6pMYGrzJ9izWANRxhzYe48TzJ-a8vpxdBxBT1G1px0bLQRsH~9JlMXpRVXkutV7FBk3NhoMgQY9dT-oYy3NZSSXAcEe9u2jegaZGLzXm-CWnSG9tvYH29GRCVEz7PY8SFQFkJ867BNinV1rEk5P7uNLXCycCRhAupE2ENBmip1-1lJY1kAux6dMCQIS~pxsBq9Pv10R8BQ7M4BTQH9DnPHWO9PoAW2hqTk-fyX41u0u2ovHrx2gITvLjtRHwOmTOKxA4m4TpYRRBZN-mQzf-c8LM~ay3s5SXrIqsBOr4Xd8mYdAmkGxaHc3k3C~JYC7B4XKeCiyJSxyxAnPtYyLUA__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1556,primer_uuid,63adc370-41b4-4f1e-adb8-96d2d19af626,artsy_csv,0,,
 KG-1556,status,active,artsy_csv,0,,
@@ -4159,8 +4157,7 @@ KG-1584,title,Drawing of an Assembly,artsy_csv,0,,
 KG-1584,year,1801,artsy_csv,0,,
 KG-1585,classification,"Drawing, Collage or other Work on Paper",auto_resolution,1,Painting,"artsy_csv,bulk_upload_xlsx"
 KG-1585,medium,"Opaque pigments heightened with
- gold on paper",bulk_upload_xlsx,1,"Opaque pigments heightened with  
-gold on paper",artsy_csv
+gold on paper",artsy_csv,0,,
 KG-1585,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/c29f38f2-e04d-4acc-be54-fec1c9cfcb8f/A%20Double-Sided%20Album%20Page_Stitched%20BirdofPrey.jpg?Expires=1802811903&Signature=UQAtU3u-drnhqEYHYpxYyaGIZtkpuJgT6BVxp4TR2pKJExehFgUwy-U4ErOu34SEo7dIhxAneIjjpGbnAV5cXmfCqaClmdcSbRwNdUCnIKx0aEAX4tThxyleLZVeyytMHVaddVhqdtT6uZT5eve42UtJwT9qckEnLFhMcXDSVSVEu5NYc-aIQiNSlll7R1oW2zTYUZsxp-C64aVBI8NBPkA3wdoXhJyY2cQliGSgxDk20mIL8niWxdK0Z0t16sfXJy5-fLn0UBmWcsnSVeu-U3TT1IqARb9yoCPlCowLZzSh1D4AuetsiaM4d4GWkns-tM3vi6QdNPugg7yjbNv~Bw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1585,primer_uuid,c29f38f2-e04d-4acc-be54-fec1c9cfcb8f,artsy_csv,0,,
 KG-1585,status,active,artsy_csv,0,,
@@ -5234,7 +5231,7 @@ KG-1741,medium,Ground mineral pigments on cloth,bulk_upload_xlsx,0,,
 KG-1741,price_usd,30000.0,bulk_upload_xlsx,0,,
 KG-1741,provenance_text,Provenance: From a Private Italian Collection.,price_list_pdf,0,,
 KG-1741,status,active,bulk_upload_xlsx,0,,
-KG-1741,title,"Vajrapani, Hayagriva, Garuda combined",bulk_upload_xlsx,1,"Vajrapani, Hayagriva, Garuda combined,",price_list_pdf
+KG-1741,title,"Vajrapani, Hayagriva, Garuda combined",bulk_upload_xlsx,0,,
 KG-1741,width_in,20.0,price_list_pdf,0,,
 KG-1741,year,1801,bulk_upload_xlsx,0,,
 KG-1742,classification,Sculpture,bulk_upload_xlsx,0,,
@@ -5614,7 +5611,7 @@ KG-1812,medium,Opaque watercolor on paper,auto_resolution,0,,
 KG-1812,price_usd,15000.0,bulk_upload_xlsx,0,,
 KG-1812,provenance_text,"Provenance: East coast collection, acquired in the 1970s. Sotheby's New York, 12 June 2020, lot 899.",price_list_pdf,0,,
 KG-1812,status,active,bulk_upload_xlsx,0,,
-KG-1812,title,A Mandala Depicting Vajrabhairava,bulk_upload_xlsx,1,"A Mandala Depicting Vajrabhairava,",price_list_pdf
+KG-1812,title,A Mandala Depicting Vajrabhairava,bulk_upload_xlsx,0,,
 KG-1812,width_in,27.75,price_list_pdf,0,,
 KG-1812,year,1701,bulk_upload_xlsx,0,,
 KG-1813,classification,Painting,bulk_upload_xlsx,0,,
@@ -5954,7 +5951,7 @@ KG-1892,title,Laying animal,bulk_upload_xlsx,0,,
 KG-1893,classification,"Drawing, Collage or other Work on Paper",auto_resolution,0,,
 KG-1893,medium,watercolor on paper,bulk_upload_xlsx,0,,
 KG-1893,status,active,bulk_upload_xlsx,0,,
-KG-1893,title,"Girl and Bird,",bulk_upload_xlsx,0,,
+KG-1893,title,Girl and Bird,bulk_upload_xlsx,0,,
 KG-1894,status,active,bulk_upload_xlsx,0,,
 KG-1894,title,A SHIMOSAKA NAGINATA IN FINE CLOISONNE-ENAMEL MOUNTS,bulk_upload_xlsx,0,,
 KG-1894,year,1336,bulk_upload_xlsx,0,,

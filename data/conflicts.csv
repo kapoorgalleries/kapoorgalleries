@@ -2,9 +2,6 @@ work_id,field,distinct_values,values_seen,source_types
 KG-1012,classification,2,Design/Decorative Art || Khanjar,"artsy_csv,bulk_upload_xlsx,match_workbook"
 KG-1012,medium,2,Jade-hilted and jeweled || Jade-hilted and jeweled Khanjar,"artsy_csv,bulk_upload_xlsx"
 KG-1093,medium,2,Opaque watercolor on cloth || Thangka -Opaque watercolor on cloth,"artsy_csv,bulk_upload_xlsx"
-KG-1301,medium,2,"Opaque watercolor heightened with gold on paper
- Calligraphy panel on verso || Opaque watercolor heightened with gold on paper  
-Calligraphy panel on verso","artsy_csv,bulk_upload_xlsx"
 KG-1312,height_in,2,13.0 || 9.0,"artsy_csv,bulk_upload_xlsx"
 KG-1312,medium,2,Ground mineral pigments on paper || Opaque watercolor heightened with gold on paper,"artsy_csv,bulk_upload_xlsx"
 KG-1312,price_usd,2,26000.0 || 50000.0,"artsy_csv,bulk_upload_xlsx"
@@ -16,19 +13,9 @@ KG-1347,classification,2,Posters || Print,"artsy_csv,bulk_upload_xlsx"
 KG-1382,classification,2,Posters || Print,"artsy_csv,bulk_upload_xlsx"
 KG-1387,classification,2,Posters || Print,"artsy_csv,bulk_upload_xlsx"
 KG-1407,classification,2,"Drawing, Collage or other Work on Paper || Other","artsy_csv,bulk_upload_xlsx"
-KG-1428,title,2,[FAKE?] A Prince on Horseback || \[FAKE?\] A Prince on Horseback,"artsy_csv,bulk_upload_xlsx"
 KG-1443,classification,2,"Drawing, Collage or other Work on Paper || Other","artsy_csv,bulk_upload_xlsx"
 KG-1443,medium,2,"Gouache and gold on paper || Gouache and gold on paper, Manuscript","artsy_csv,bulk_upload_xlsx"
-KG-1501,title,2,[FAKE] Krishna and Ladies || \[FAKE\] Krishna and Ladies,"artsy_csv,bulk_upload_xlsx"
-KG-1556,medium,2,"Opaque watercolor heightened with gold on paper
- Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format. || Opaque watercolor heightened with gold on paper  
-Inscribed: Two lines of black ink Devanagari script in the yellow panel at top – the invocation begins: Rama / Bala / … In pothi (horizontal) format.","artsy_csv,bulk_upload_xlsx"
-KG-1585,medium,2,"Opaque pigments heightened with
- gold on paper || Opaque pigments heightened with  
-gold on paper","artsy_csv,bulk_upload_xlsx"
 KG-1737,title,2,"Shakyamuni || Shakyamuni, 18th century","bulk_upload_xlsx,price_list_pdf"
-KG-1741,title,2,"Vajrapani, Hayagriva, Garuda combined || Vajrapani, Hayagriva, Garuda combined,","bulk_upload_xlsx,price_list_pdf"
-KG-1812,title,2,"A Mandala Depicting Vajrabhairava || A Mandala Depicting Vajrabhairava,","bulk_upload_xlsx,price_list_pdf"
 KG-1813,price_usd,2,24000.0 || 38000.0,"bulk_upload_xlsx,price_list_pdf"
 KG-1813,title,2,"Large Thangka White Tara Tibetan || Large Thangka White Tara Tibetan, 19th","bulk_upload_xlsx,price_list_pdf"
 KG-1814,price_usd,2,24000.0 || 28000.0,"bulk_upload_xlsx,price_list_pdf"

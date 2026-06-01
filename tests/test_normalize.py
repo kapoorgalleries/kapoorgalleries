@@ -46,3 +46,24 @@ def test_normalize_classification_maps():
 
 def test_normalize_title_collapses_whitespace():
     assert normalize_title("  Hello   World .") == "Hello World"
+
+
+def test_normalize_title_strips_trailing_comma():
+    # price_list_pdf and bulk_upload disagreed only on a trailing comma.
+    assert normalize_title("Vajrapani, Hayagriva, Garuda combined,") == \
+        "Vajrapani, Hayagriva, Garuda combined"
+
+
+def test_clean_unescapes_bracket_artifacts():
+    # Primer's Artsy CSV escapes square brackets; bulk-upload doesn't.
+    assert clean(r"\[FAKE\] Krishna and Ladies") == "[FAKE] Krishna and Ladies"
+    assert normalize_title(r"\[FAKE?\] A Prince on Horseback") == \
+        "[FAKE?] A Prince on Horseback"
+
+
+def test_clean_normalizes_space_around_newline():
+    # Two sources placed the spaces differently around the line break;
+    # both should normalize to the same string so they stop conflicting.
+    a = clean("Opaque watercolor on paper  \nCalligraphy panel on verso")
+    b = clean("Opaque watercolor on paper\n Calligraphy panel on verso")
+    assert a == b == "Opaque watercolor on paper\nCalligraphy panel on verso"

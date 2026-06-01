@@ -4,7 +4,22 @@
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 24 conflicts · 9 sources ingested · 83 tests · 42 CLI commands · CI green.
+> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 17 conflicts · 9 sources ingested · 86 tests · 42 CLI commands · CI green.
+
+### 0.4.6 — normalization fixes clear cosmetic conflicts
+
+- **Unescape FileMaker bracket artifacts** — Primer's Artsy CSV exports
+  `\[FAKE\]` while the bulk-upload xlsx has `[FAKE]`; `clean()` now
+  unescapes, so they stop registering as title conflicts.
+- **Normalize spacing around newlines** — `"paper  \nInscribed"` vs
+  `"paper\n Inscribed"` were flagged as medium conflicts though
+  identical; `clean()` collapses the spacing.
+- **Strip trailing commas from titles** — `normalize_title` now strips
+  a trailing comma (price-list vs bulk-upload disagreed only on that).
+- **Conflicts dropped 24 → 17.**  The remaining 17 are genuine: the
+  KG-1312 duplicate-ID Primer bug, 4 Posters-vs-Print works, and a
+  handful of real price/dimension disagreements between the Himalayas
+  price list and the bulk upload.
 
 ### 0.4.5 — travel posters reclassified to "Posters"
 

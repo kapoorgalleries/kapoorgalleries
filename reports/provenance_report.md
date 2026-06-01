@@ -52,10 +52,10 @@
 
 | Field | Works with conflict |
 |---|---:|
-| title | 13 |
+| title | 9 |
 | classification | 7 |
-| medium | 7 |
 | price_usd | 6 |
+| medium | 4 |
 | width_in | 4 |
 | height_in | 3 |
 | year | 1 |
