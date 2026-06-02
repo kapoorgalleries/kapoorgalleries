@@ -172,6 +172,16 @@
     classification: Painting
   reason: "Thangkas hung on cloth are categorized as Painting."
 
+# "on cloth" (not bare "cloth") so we don't catch "Clay, hair, cloth"
+# (a comma-separated material list for a sculpture).  Catches the
+# Tibetan-thangka cohort: "Distemper on cloth", "Mineral pigment(s)
+# on cloth", "Opaque watercolor on cloth", etc.
+- if:
+    medium_contains: "on cloth"
+  then:
+    classification: Painting
+  reason: "Pigment-on-cloth works (thangkas) are Painting on Artsy."
+
 - if:
     medium_contains: cotton
   then:

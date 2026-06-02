@@ -1,14 +1,14 @@
 # Artsy upload gaps
 
-- Works blocked from Artsy upload: **928**
+- Works blocked from Artsy upload: **913**
 
 ## What's missing most often
 
 | Missing field | Works |
 |---|---:|
 | image | 887 |
-| medium | 308 |
-| classification | 277 |
+| medium | 300 |
+| classification | 266 |
 | title | 4 |
 
 ## Triage: closest to upload-ready first
@@ -24,22 +24,14 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1037 | 1: image | Illustration to the ‘Large’ Guler-Basohli Bhagavata Purana:  | Attributed to First Generation after Nainsukh and Manaku |
 | KG-1202 | 1: image | A Sikh Elder Holding Prayer Beads |  |
 | KG-1240 | 1: title |  |  |
-| KG-1241 | 1: medium | Rao Saseb Vijai Singh Ji |  |
-| KG-1242 | 1: medium | Portrait |  |
 | KG-1323 | 1: image | Fly TWA – The Orient | David Klein |
 | KG-1324 | 1: image | India, Fly TWA | David Klein |
 | KG-1325 | 1: image | Fly TWA - India | David Klein |
 | KG-1326 | 1: image | Fly TWA - India | David Klein |
-| KG-1336 | 1: medium | Car Festival at Puri, India |  |
-| KG-1360 | 1: medium | Golden Temple, Amritsar, India |  |
-| KG-1361 | 1: medium | Meenakshi Temple, Madurai, India |  |
-| KG-1363 | 1: medium | India, Air India |  |
-| KG-1367 | 1: medium | There is an Air about India, Air India |  |
 | KG-1483 | 1: image | Man and woman near fire |  |
 | KG-1509 | 1: medium | Need title |  |
 | KG-1510 | 1: medium | Need title |  |
 | KG-1541 | 1: image | 6 Botanical Studies of Tree Branches and Fruit |  |
-| KG-1564 | 1: medium | 2 Leafs from a Jain Manuscript |  |
 | KG-1577 | 1: image | Radha Berates Krishna for Going with Other Women | Attributed to Manaku |
 | KG-1610 | 1: image | Figures seated in conversation | Attributed to Manaku |
 | KG-1615 | 1: image | The Great Monkey Army Battles Indrajit (Leaf from the 'Secon | Attributed to First Generation after Nainsukh and Manaku |
@@ -47,16 +39,9 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1620 | 1: image | Ganesha Enthroned | Attributed to First Generation after Nainsukh and Manaku |
 | KG-1626 | 1: image | Vishnu |  |
 | KG-1631 | 1: image | Lalita Maha Tripura Sundari | Attributed to Sajnu |
-| KG-1650 | 1: classification | Makara Bangle (Makaranathi) |  |
-| KG-1651 | 1: classification | Drawing Water from a Well |  |
-| KG-1654 | 1: classification | Brahma |  |
 | KG-1657 | 1: image | Vajravarahi |  |
 | KG-1658 | 1: image | Buddha Shakyamuni |  |
-| KG-1661 | 1: classification | King Ralpachen |  |
-| KG-1664 | 1: classification | Arhat Bakula |  |
 | KG-1666 | 1: image | Bodhisattva |  |
-| KG-1667 | 1: classification | Vajrapani |  |
-| KG-1669 | 1: classification | Hevajra |  |
 | KG-1672 | 1: image | The Celestial Musician, Narada |  |
 | KG-1674 | 1: image | Narasimha Disemboweling Hiranyakshapu |  |
 | KG-1680 | 1: image | Chinnamasta | Nainsukh |
@@ -67,6 +52,21 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1699 | 1: image | Ganesh |  |
 | KG-1700 | 1: image | A stone stele of Shiva and Parvati (Uma Maheshvara) |  |
 | KG-1701 | 1: image | A black stone stele of Vishnu |  |
+| KG-1702 | 1: image | A silver-inlaid bronze figure of Ganesha |  |
+| KG-1703 | 1: image | A bronze figure of a female retinue figure |  |
+| KG-1704 | 1: image | A bronze figure of Manjushri or Avalokiteshvara |  |
+| KG-1705 | 1: image | A bronze figure of Skanda |  |
+| KG-1707 | 1: image | A bronze figure of the goddess Meenakshi |  |
+| KG-1708 | 1: image | A bronze figure of Parvati |  |
+| KG-1709 | 1: image | A bronze figure of Durga |  |
+| KG-1710 | 1: image | Shrine of Tirthankara Anantanatha |  |
+| KG-1711 | 1: image | A bronze figure of Ganesha |  |
+| KG-1712 | 1: image | A gilt-bronze figure of Nandi |  |
+| KG-1713 | 1: image | A gilt-bronze figure of Kala Bhairava |  |
+| KG-1714 | 1: image | A silver figure of Vajrapani |  |
+| KG-1715 | 1: image | Buddha Shakyamuni and the Thirty-five Buddhas of Confession |  |
+| KG-1716 | 1: image | A bronze figure of Kala Jambhala |  |
+| KG-1717 | 1: image | Magzor Gyelmo |  |
 
 ## Unresolved conflicts
 

@@ -2226,3 +2226,71 @@
     clean medium string.
   decided_by: sanjay@kapoors.com
   decided_at: '2026-06-02'
+- work_id: KG-1650
+  field: classification
+  value: Jewelry
+  reason: Makara Bangle in gold and rubies; Jewelry is the Artsy category.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1651
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: "Ink & gouache heightened with gold \u2014 work on paper."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1654
+  field: classification
+  value: Sculpture
+  reason: "Brahma in marble \u2014 Sculpture."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1241
+  field: medium
+  value: Gelatin silver print
+  reason: Late 19th/early 20th c. royal portrait photograph; gelatin silver is the
+    period standard.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1242
+  field: medium
+  value: Gelatin silver print
+  reason: Late 19th/early 20th c. portrait photograph.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1336
+  field: medium
+  value: Linen backed color lithograph
+  reason: "Vintage travel poster \u2014 matches the rest of the Visit-India / SwissAir\
+    \ cohort."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1363
+  field: medium
+  value: Linen backed color lithograph
+  reason: "Air India poster \u2014 matches the cohort."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1367
+  field: medium
+  value: Linen backed color lithograph
+  reason: "Air India poster \u2014 matches the cohort."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1360
+  field: medium
+  value: Color lithograph on paper
+  reason: Period print of Indian temple subject.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1361
+  field: medium
+  value: Color lithograph on paper
+  reason: Period print of Indian temple subject.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1564
+  field: medium
+  value: Ink and opaque colors on paper
+  reason: "Jain manuscript leaves \u2014 standard Western Indian medium."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'

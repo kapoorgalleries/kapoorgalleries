@@ -45,6 +45,8 @@ KG-1178,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-1220,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1223,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1224,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1241,medium,,Gelatin silver print,human_resolution,Late 19th/early 20th c. royal portrait photograph; gelatin silver is the period standard.
+KG-1242,medium,,Gelatin silver print,human_resolution,Late 19th/early 20th c. portrait photograph.
 KG-1248,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1261,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
 KG-1262,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
@@ -69,6 +71,7 @@ KG-1329,classification,"Drawing, Collage or other Work on Paper",Posters,auto_re
 KG-1329,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1334,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
 KG-1335,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1336,medium,,Linen backed color lithograph,human_resolution,Vintage travel poster — matches the rest of the Visit-India / SwissAir cohort.
 KG-1337,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1337,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1338,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
@@ -89,8 +92,14 @@ KG-1354,medium,,Lithographic print on paper,auto_resolution,Visit-India travel p
 KG-1355,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1355,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1357,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1360,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1360,medium,,Color lithograph on paper,human_resolution,Period print of Indian temple subject.
+KG-1361,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1361,medium,,Color lithograph on paper,human_resolution,Period print of Indian temple subject.
 KG-1363,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1363,medium,,Linen backed color lithograph,human_resolution,Air India poster — matches the cohort.
 KG-1367,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1367,medium,,Linen backed color lithograph,human_resolution,Air India poster — matches the cohort.
 KG-1377,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1377,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1378,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
@@ -223,6 +232,8 @@ KG-1559,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1561,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1562,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1563,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1564,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1564,medium,,Ink and opaque colors on paper,human_resolution,Jain manuscript leaves — standard Western Indian medium.
 KG-1565,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1566,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1567,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -295,14 +306,21 @@ KG-1645,classification,,Sculpture,auto_resolution,Brass works are sculptures (su
 KG-1646,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1647,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
 KG-1648,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1650,classification,,Jewelry,human_resolution,Makara Bangle in gold and rubies; Jewelry is the Artsy category.
+KG-1651,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Ink & gouache heightened with gold — work on paper.
 KG-1652,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1654,classification,,Sculpture,human_resolution,Brahma in marble — Sculpture.
 KG-1655,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
 KG-1657,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1658,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1659,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
 KG-1660,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1661,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-1664,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
 KG-1666,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1667,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
 KG-1668,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1669,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
 KG-1671,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1672,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1673,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -337,6 +355,8 @@ KG-1707,classification,,Sculpture,auto_resolution,Bronze cast works are sculptur
 KG-1709,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1711,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1712,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1715,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-1717,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
 KG-1721,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1723,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
 KG-1725,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
@@ -413,6 +433,7 @@ KG-1838,classification,,Sculpture,auto_resolution,Bronze cast works are sculptur
 KG-1842,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
 KG-1843,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
 KG-1849,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1874,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
 KG-1876,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1886,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1891,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -567,6 +588,7 @@ KG-2252,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-2253,classification,,Sculpture,auto_resolution,Schist works are sculptures.
 KG-2254,classification,,Sculpture,auto_resolution,Schist works are sculptures.
 KG-2255,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2256,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
 KG-2257,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-2259,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2260,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
