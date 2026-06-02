@@ -4,9 +4,30 @@
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,528 works (1,417 active + 111 external) · **637 Artsy-eligible (45%)** · **621 photo-away** · 128 attributed (9%) · 6 conflicts · 9 sources · **88 tests** · 42 CLI commands · CI green.
+> 1,528 works (1,417 active + 111 external) · **624 Artsy-eligible & import-ready (44%)** · **621 photo-away** · 128 attributed (9%) · 6 conflicts · 9 sources · **89 tests** · 42 CLI commands · CI green.
 >
-> Combined ready-or-photo-away: **1,258 of 1,417 active works (89%)**.
+> Combined ready-or-photo-away: **1,245 of 1,417 active works (88%)**.
+
+### 0.4.11 — Artsy upload pre-flight hardening
+
+- **`artsy_upload.csv` headers now byte-for-byte match the official
+  Artsy template** (literal embedded newlines: `"Title\n"`,
+  `"Inventory ID \n (OPTIONAL)"`).  The export previously used tidied
+  trailing-space headers that Artsy's column-matching importer would
+  have failed to map.  Verified equal to
+  `data/raw/Kapoor_Galleries_Bulk_upload_Template_Artsy.xlsx`.
+- **'Untitled' vs 'Need title' distinction** made consistent across
+  check-artsy, the upload exporter, and lint via a shared
+  `normalize.INTERNAL_PLACEHOLDER_TITLES` constant.  'Untitled' is a
+  valid art title (kept); internal placeholders error and are held
+  back from the upload CSV.  Eligible count is now an honest **624**
+  (was 637 before holding back 13 'Need title' works).
+- **check-artsy column reader** collapses internal whitespace so it
+  parses the newline headers and reports the real KG-# (was silently
+  falling back to "row5").
+- **Full pre-flight audit** of the 624-row export: 0 invalid
+  classifications, 0 bad years (range 101–1971), 0 non-numeric or
+  out-of-range dimensions/prices.  Import-ready.
 
 ### 0.4.10 — photography punch list
 
