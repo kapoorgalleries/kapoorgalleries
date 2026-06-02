@@ -97,7 +97,7 @@ def test_stats_runs_clean(tmp_path: Path):
     runner = CliRunner()
     result = runner.invoke(cli, ["stats", "--db", str(db_path)])
     assert result.exit_code == 0, result.output
-    assert "Works:" in result.output
+    assert "Works (total):" in result.output
 
 
 def test_lint_runs_clean(tmp_path: Path):

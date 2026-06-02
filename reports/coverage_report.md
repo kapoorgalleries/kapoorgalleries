@@ -18,7 +18,7 @@
 | width_in | 370 | 24.2% |
 | depth_in | 23 | 1.5% |
 | price_usd | 393 | 25.7% |
-| status | 1415 | 92.6% |
+| status | 1526 | 99.9% |
 | provenance_text | 12 | 0.8% |
 | exhibitions | 12 | 0.8% |
 | publications | 0 | 0.0% |

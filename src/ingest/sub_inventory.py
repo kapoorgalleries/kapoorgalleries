@@ -91,6 +91,14 @@ class SubInventoryIngester(Ingester):
                         work_id=work_id, field="external_id_system", value=collection,
                         source_row_ref=ref, confidence="high",
                     ))
+                    # Sub-inventory works are external records (someone else's
+                    # collection), not Kapoor's active Artsy upload candidates.
+                    # Stamp `status='external'` so they don't pollute
+                    # eligibility / coverage stats.
+                    observations.append(Observation(
+                        work_id=work_id, field="status", value="external",
+                        source_row_ref=ref, confidence="high",
+                    ))
                     if year:
                         observations.append(Observation(
                             work_id=work_id, field="year", value=year,

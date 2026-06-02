@@ -444,6 +444,13 @@ def overview(as_json: bool, db_path: str):
     """One-line summary suitable for chat/email status updates."""
     db = dbmod.get_db(db_path)
     total = db.execute("SELECT COUNT(*) FROM works").fetchone()[0] or 1
+    # `active` is the right denominator for eligibility: external
+    # sub-inventory records (Graham etc.) aren't Kapoor's own Artsy
+    # candidates, so excluding them isn't deflating progress, it's
+    # measuring the actual queue.
+    active = db.execute(
+        "SELECT COUNT(*) FROM works WHERE COALESCE(status,'active')='active'"
+    ).fetchone()[0] or 1
     n_conflicts = db.execute("SELECT COUNT(*) FROM works WHERE has_conflict = 1").fetchone()[0]
     artsy_ready = db.execute("""SELECT COUNT(*) FROM works
         WHERE COALESCE(status,'active') = 'active'
@@ -458,19 +465,20 @@ def overview(as_json: bool, db_path: str):
         import json
         click.echo(json.dumps({
             "works": total,
+            "active": active,
             "artsy_eligible": artsy_ready,
-            "artsy_eligible_pct": round(100 * artsy_ready / total, 1),
+            "artsy_eligible_pct": round(100 * artsy_ready / active, 1),
             "attributed": n_artist,
-            "attributed_pct": round(100 * n_artist / total, 1),
+            "attributed_pct": round(100 * n_artist / active, 1),
             "conflicts": n_conflicts,
             "sources": sources,
         }))
     else:
         click.echo(
-            f"\n  {total} works · {artsy_ready} Artsy-eligible "
-            f"({round(100*artsy_ready/total)}%) · {n_artist} attributed "
-            f"({round(100*n_artist/total)}%) · {n_conflicts} conflicts · "
-            f"{sources} sources ingested.\n"
+            f"\n  {total} works ({active} active) · "
+            f"{artsy_ready} Artsy-eligible ({round(100*artsy_ready/active)}%) · "
+            f"{n_artist} attributed ({round(100*n_artist/active)}%) · "
+            f"{n_conflicts} conflicts · {sources} sources ingested.\n"
         )
 
 
@@ -484,6 +492,9 @@ def stats(as_json: bool, db_path: str):
     if total == 0:
         click.echo("No works yet — run `make all`.")
         return
+    active = db.execute(
+        "SELECT COUNT(*) FROM works WHERE COALESCE(status,'active')='active'"
+    ).fetchone()[0]
     conflicts = db.execute("SELECT COUNT(*) FROM works WHERE has_conflict = 1").fetchone()[0]
     artsy_ready = db.execute("""
         SELECT COUNT(*) FROM works
@@ -491,7 +502,10 @@ def stats(as_json: bool, db_path: str):
           AND title IS NOT NULL AND classification IS NOT NULL
           AND medium IS NOT NULL AND primary_image_url IS NOT NULL
     """).fetchone()[0]
-    blocked = total - artsy_ready
+    # Blocked = active works that aren't yet eligible.  External
+    # sub-inventory records (Graham etc.) are excluded from both — they
+    # aren't candidates for Kapoor's Artsy upload.
+    blocked = active - artsy_ready
     coverage = {}
     for f in ("title", "artist", "year", "classification", "medium", "materials",
               "height_in", "width_in", "depth_in", "price_usd", "primary_image_url"):
@@ -507,6 +521,7 @@ def stats(as_json: bool, db_path: str):
         import json
         click.echo(json.dumps({
             "works": total,
+            "active": active,
             "artsy_eligible": artsy_ready,
             "blocked": blocked,
             "conflicts": conflicts,
@@ -515,7 +530,10 @@ def stats(as_json: bool, db_path: str):
         }, indent=2))
         return
 
-    click.echo(f"\n  Works:           {total}")
+    external = total - active
+    click.echo(f"\n  Works (total):   {total}"
+               f"{f'  ({external} external sub-inventory)' if external else ''}")
+    click.echo(f"  Active:          {active}")
     click.echo(f"  Artsy-eligible:  {artsy_ready}")
     click.echo(f"  Blocked:         {blocked}")
     click.echo(f"  Conflicts:       {conflicts}")

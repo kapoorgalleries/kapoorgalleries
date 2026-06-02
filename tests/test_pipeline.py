@@ -42,10 +42,10 @@ def test_full_pipeline_produces_canonical_artifacts(tmp_path: Path):
 
     p = _run(["python3", "-m", "src.cli", "stats", "--db", str(db)])
     assert p.returncode == 0, p.stderr
-    assert "Works:" in p.stdout
-    # Sanity: the bulk upload xlsx pulls 1400+ works
-    assert any(line.strip().startswith("Works:") and int(line.strip().split()[1]) >= 600
-               for line in p.stdout.splitlines() if "Works:" in line)
+    # Stats prints "Works (total):" then "Active:" — sanity-check on total.
+    assert "Works (total):" in p.stdout, p.stdout
+    total_line = next(l for l in p.stdout.splitlines() if "Works (total):" in l)
+    assert int(total_line.split(":")[1].split()[0]) >= 600
 
 
 def test_pytest_finds_all_test_modules():

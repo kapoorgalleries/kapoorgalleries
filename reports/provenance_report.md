@@ -14,10 +14,12 @@
 | Artsy_2-16-2026.csv | width_in | 97 |
 | Artsy_2-16-2026.csv | depth_in | 4 |
 | Graham Inventory - owned.pdf | title | 105 |
+| Graham Inventory - owned.pdf | status | 105 |
 | Graham Inventory - owned.pdf | external_id_system | 105 |
 | Graham Inventory - owned.pdf | external_id | 105 |
 | Graham Inventory - owned.pdf | year | 42 |
 | July 2022 Textile Boxes Inventory.docx | title | 6 |
+| July 2022 Textile Boxes Inventory.docx | status | 6 |
 | July 2022 Textile Boxes Inventory.docx | external_id_system | 6 |
 | July 2022 Textile Boxes Inventory.docx | external_id | 6 |
 | July 2022 Textile Boxes Inventory.docx | classification | 6 |

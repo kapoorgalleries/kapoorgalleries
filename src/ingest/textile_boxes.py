@@ -80,6 +80,11 @@ class TextileBoxesIngester(Ingester):
                 work_id=work_id, field="external_id_system", value=collection,
                 source_row_ref=ref, confidence="high",
             ))
+            # Textile boxes are storage records, not Kapoor active works.
+            observations.append(Observation(
+                work_id=work_id, field="status", value="external",
+                source_row_ref=ref, confidence="high",
+            ))
             if contents:
                 observations.append(Observation(
                     work_id=work_id, field="provenance_text",
