@@ -492,11 +492,20 @@ KG-1823,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-1824,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1836,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-1838,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
-KG-1842,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
-KG-1843,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
+KG-1841,medium,,Parcel-gilt bronze,human_resolution,Title medium hint: Tibetan parcel-gilt seated lama.
+KG-1842,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1842,medium,,Bronze,human_resolution,Title medium hint: bronze figure.
+KG-1843,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1843,medium,,Bronze,human_resolution,Title medium hint: bronze figure of Vajrabhairava.
 KG-1844,classification,,Design/Decorative Art,human_resolution,Title hint: Tibetan gau (amulet box).
 KG-1844,medium,,Silver filigree set with turquoise,human_resolution,Title hint: Tibetan gau (amulet box).
 KG-1849,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1851,medium,,Gilt bronze,human_resolution,Title medium hint: gilt-bronze Tara.
+KG-1852,medium,,Gold,human_resolution,Title medium hint: gold figure.
+KG-1853,medium,,Gold,human_resolution,Title medium hint: gold figure.
+KG-1855,medium,,Gold,human_resolution,Title medium hint: gold figure.
+KG-1857,medium,,Gold,human_resolution,Title medium hint: gold object.
+KG-1858,medium,,Gold,human_resolution,Title medium hint: gold figure.
 KG-1861,classification,,Sculpture,human_resolution,Title hint: title-medium hint.
 KG-1861,medium,,Gilt copper alloy,human_resolution,Title hint: title-medium hint.
 KG-1863,classification,,Painting,human_resolution,Title hint: thangka form.
@@ -545,8 +554,17 @@ KG-1970,classification,,Sculpture,auto_resolution,Brass works are sculptures (su
 KG-1974,classification,,Sculpture,auto_resolution,Schist works are sculptures.
 KG-1975,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1976,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1997,medium,,Bronze,human_resolution,Title medium hint: bronze group.
+KG-2001,medium,,Bronze,human_resolution,Title medium hint: bronze figure of Surya.
 KG-2002,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-2008,medium,,Ivory,human_resolution,Title medium hint: erotic ivory.
 KG-2009,classification,,Sculpture,auto_resolution,Steles are sculptures (8/8 100%).
+KG-2009,medium,,Stone,human_resolution,Title medium hint: stone stele.
+KG-2010,medium,,Silver- and copper-inlaid bronze,human_resolution,Title medium hint: silver/copper-inlaid Manjushri.
+KG-2019,medium,,Watered steel,human_resolution,Decorative art (Sword) — period material.
+KG-2023,medium,,Watered steel,human_resolution,Decorative art (Knife tip) — period material.
+KG-2031,medium,,Gold,human_resolution,Title medium hint: gold object.
+KG-2032,medium,,Bronze,human_resolution,Title medium hint: bronze figure.
 KG-2034,classification,,Textile Arts,human_resolution,Title hint: Kashmir pashmina shawl.
 KG-2034,medium,,Pashmina wool,human_resolution,Title hint: Kashmir pashmina shawl.
 KG-2037,classification,Design/Decorative Art,Sculpture,auto_resolution,Stone works are sculptures.
@@ -557,9 +575,14 @@ KG-2042,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-2043,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2044,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2045,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2049,medium,,Bronze,human_resolution,Title medium hint: bronze stupa.
+KG-2050,medium,,Bronze,human_resolution,Title medium hint: bronze phurba.
 KG-2051,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2052,medium,,Gilt bronze,human_resolution,Title medium hint: Sino-Tibetan gilt-bronze Green Tara.
 KG-2055,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2059,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2060,medium,,"Gilt bronze and silver, stone-inlaid",human_resolution,Title medium hint: kapala skull cup.
+KG-2063,medium,,Bronze,human_resolution,Title medium hint: Nepalese bronze Yamantaka.
 KG-2067,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2068,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2069,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -600,6 +623,8 @@ KG-2106,provenance_text,,Provenance: Property from the José M. Neistein Collect
 KG-2106,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2108,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2109,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2110,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2110,medium,,Etching on paper,human_resolution,Print classification + title hint (etching/aquatint).
 KG-2111,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2114,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Indian miniature (title says so).
 KG-2114,medium,,Opaque watercolor on paper,human_resolution,Title hint: Indian miniature (title says so).
@@ -636,6 +661,7 @@ KG-2158,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-2159,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2163,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2165,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2166,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
 KG-2169,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2170,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2171,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -670,6 +696,7 @@ KG-2215,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-2216,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2219,classification,,Print,human_resolution,Title hint: Daniell-style architectural view.
 KG-2219,medium,,Aquatint with brown wash,human_resolution,Title hint: Daniell-style architectural view.
+KG-2222,medium,,Lithograph plates bound in book,human_resolution,Illustrated book — appropriate medium for the book/portfolio category.
 KG-2224,title,Thangka Of Two Trailokyavijaya Mandalas with Ganapathi,Thangka Of Two Trailokyavijaya Mandalas,price_list_pdf,(per price_list_pdf)
 KG-2224,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2227,classification,Design/Decorative Art,Sculpture,auto_resolution,Bronze cast works are sculptures.
@@ -677,6 +704,8 @@ KG-2228,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-2229,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2230,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2234,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2235,medium,,Color illustrations bound in book,human_resolution,Illustrated book — appropriate medium for the book/portfolio category.
+KG-2237,medium,,Hand-colored aquatint with stipple,human_resolution,Print classification + title hint (etching/aquatint).
 KG-2239,classification,Tibet,Design/Decorative Art,auto_resolution,Saddles are decorative arts on Artsy.
 KG-2248,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2249,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -737,13 +766,19 @@ KG-2299,medium,,Printed menu card,human_resolution,"Air India in-flight menu —
 KG-2300,classification,,Ephemera or Merchandise,human_resolution,"Air India safety pamphlet — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
 KG-2300,medium,,Printed pamphlet,human_resolution,"Air India safety pamphlet — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
 KG-2303,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2304,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2305,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
 KG-2307,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2309,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2315,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2317,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2318,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
 KG-2323,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2324,classification,,Sculpture,auto_resolution,Stone works are sculptures.
 KG-2325,classification,paintings,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2326,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2327,classification,Books and Portfolios,Photograph,auto_resolution,Works with photograph in medium are Photographs (20/20 100%).
+KG-2327,medium,,Photographic prints bound in album,human_resolution,Illustrated book — appropriate medium for the book/portfolio category.
 KG-2336,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2346,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2347,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -754,6 +789,7 @@ KG-2351,classification,,Jewelry,human_resolution,Title hint: rose-cut diamond.
 KG-2351,medium,,Diamond,human_resolution,Title hint: rose-cut diamond.
 KG-2353,classification,,Jewelry,human_resolution,Title hint: ring (gold + sapphire).
 KG-2353,medium,,Gold and sapphire,human_resolution,Title hint: ring (gold + sapphire).
+KG-2359,medium,,Iron with lacquer (akoda nari kabuto),human_resolution,Decorative art (Helmet) — period material.
 KG-2364,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2365,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2375,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
@@ -778,6 +814,8 @@ KG-2397,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-2398,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2399,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2400,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2411,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2412,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
 KG-2435,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2436,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2437,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.

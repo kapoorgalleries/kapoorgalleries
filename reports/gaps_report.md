@@ -7,8 +7,8 @@
 | Missing field | Works |
 |---|---:|
 | image | 887 |
-| medium | 232 |
 | classification | 206 |
+| medium | 196 |
 | title | 4 |
 
 ## Triage: closest to upload-ready first

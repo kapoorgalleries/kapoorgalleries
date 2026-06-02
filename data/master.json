@@ -9161,6 +9161,7 @@
     "work_id": "KG-1841",
     "title": "A Tibetan Parcel-gilt figure of a Seated Lama",
     "classification": "Sculpture",
+    "medium": "Parcel-gilt bronze",
     "price_usd": 4000.0,
     "status": "active",
     "has_conflict": 0
@@ -9170,6 +9171,7 @@
     "title": "A bronze figure of a deity",
     "year": 1901,
     "classification": "Sculpture",
+    "medium": "Bronze",
     "status": "active",
     "has_conflict": 0
   },
@@ -9177,6 +9179,7 @@
     "work_id": "KG-1843",
     "title": "A bronze figure of Vajrabhairava",
     "classification": "Sculpture",
+    "medium": "Bronze",
     "status": "active",
     "has_conflict": 0
   },
@@ -9233,6 +9236,7 @@
     "work_id": "KG-1851",
     "title": "A gilt-bronze figure of Tara",
     "classification": "Sculpture",
+    "medium": "Gilt bronze",
     "status": "active",
     "has_conflict": 0
   },
@@ -9240,6 +9244,7 @@
     "work_id": "KG-1852",
     "title": "Gold statue of man with many heads",
     "classification": "Sculpture",
+    "medium": "Gold",
     "status": "active",
     "has_conflict": 0
   },
@@ -9247,6 +9252,7 @@
     "work_id": "KG-1853",
     "title": "Gold statue with animal head dancing",
     "classification": "Sculpture",
+    "medium": "Gold",
     "status": "active",
     "has_conflict": 0
   },
@@ -9261,6 +9267,7 @@
     "work_id": "KG-1855",
     "title": "Gold statue with many arms",
     "classification": "Sculpture",
+    "medium": "Gold",
     "status": "active",
     "has_conflict": 0
   },
@@ -9275,6 +9282,7 @@
     "work_id": "KG-1857",
     "title": "Gold bell shaped object",
     "classification": "Sculpture",
+    "medium": "Gold",
     "status": "active",
     "has_conflict": 0
   },
@@ -9282,6 +9290,7 @@
     "work_id": "KG-1858",
     "title": "Gold statue many arms and heads (w/ base)",
     "classification": "Sculpture",
+    "medium": "Gold",
     "status": "active",
     "has_conflict": 0
   },
@@ -10277,6 +10286,7 @@
     "work_id": "KG-1997",
     "title": "A bronze group of Brahma, Vishnu, Shiva, and Parvati",
     "classification": "Sculpture",
+    "medium": "Bronze",
     "status": "active",
     "has_conflict": 0
   },
@@ -10310,6 +10320,7 @@
     "work_id": "KG-2001",
     "title": "A bronze figure of Surya",
     "classification": "Sculpture",
+    "medium": "Bronze",
     "status": "active",
     "has_conflict": 0
   },
@@ -10350,6 +10361,7 @@
     "work_id": "KG-2008",
     "title": "Erotic Ivory",
     "classification": "Sculpture",
+    "medium": "Ivory",
     "status": "active",
     "has_conflict": 0
   },
@@ -10357,6 +10369,7 @@
     "work_id": "KG-2009",
     "title": "A small stone stele of Padmapani",
     "classification": "Sculpture",
+    "medium": "Stone",
     "status": "active",
     "has_conflict": 0
   },
@@ -10364,6 +10377,7 @@
     "work_id": "KG-2010",
     "title": "A silver- and copper-inlaid figure of Manjsuhri",
     "classification": "Sculpture",
+    "medium": "Silver- and copper-inlaid bronze",
     "status": "active",
     "has_conflict": 0
   },
@@ -10428,6 +10442,7 @@
     "work_id": "KG-2019",
     "title": "Sword",
     "classification": "Design/Decorative Art",
+    "medium": "Watered steel",
     "status": "active",
     "has_conflict": 0
   },
@@ -10456,6 +10471,7 @@
     "work_id": "KG-2023",
     "title": "Knife tip",
     "classification": "Design/Decorative Art",
+    "medium": "Watered steel",
     "status": "active",
     "has_conflict": 0
   },
@@ -10516,6 +10532,7 @@
     "work_id": "KG-2031",
     "title": "Gold base with heart shape",
     "classification": "Sculpture",
+    "medium": "Gold",
     "status": "active",
     "has_conflict": 0
   },
@@ -10523,6 +10540,7 @@
     "work_id": "KG-2032",
     "title": "Bronze lady statue",
     "classification": "Sculpture",
+    "medium": "Bronze",
     "status": "active",
     "has_conflict": 0
   },
@@ -10680,6 +10698,7 @@
     "work_id": "KG-2049",
     "title": "Bronze Stupa",
     "classification": "Sculpture",
+    "medium": "Bronze",
     "price_usd": 6048.0,
     "status": "active",
     "has_conflict": 0
@@ -10688,6 +10707,7 @@
     "work_id": "KG-2050",
     "title": "Bronze Phurba",
     "classification": "Sculpture",
+    "medium": "Bronze",
     "status": "active",
     "has_conflict": 0
   },
@@ -10706,6 +10726,7 @@
     "work_id": "KG-2052",
     "title": "A Sino-Tibetan Gilt-bronze Figure of Green Tara",
     "classification": "Sculpture",
+    "medium": "Gilt bronze",
     "height_in": 7.0,
     "price_usd": 12000.0,
     "status": "active",
@@ -10778,6 +10799,7 @@
     "work_id": "KG-2060",
     "title": "A Tibetan Semi-precious Stone Inlaid Gilt Bronze and Silver Skull Cup, Kapala",
     "classification": "Sculpture",
+    "medium": "Gilt bronze and silver, stone-inlaid",
     "height_in": 5.0,
     "price_usd": 2000.0,
     "status": "active",
@@ -10806,6 +10828,7 @@
     "work_id": "KG-2063",
     "title": "A Small Nepalese Bronze Figure of Yamantaka",
     "classification": "Sculpture",
+    "medium": "Bronze",
     "height_in": 4.0,
     "price_usd": 1500.0,
     "status": "active",
@@ -11209,7 +11232,8 @@
   {
     "work_id": "KG-2110",
     "title": "46 Etchings of India",
-    "classification": "Print",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Etching on paper",
     "height_in": 4.0,
     "width_in": 6.0,
     "status": "active",
@@ -11763,6 +11787,7 @@
     "work_id": "KG-2166",
     "title": "Group of Thugs",
     "classification": "Photograph",
+    "medium": "Gelatin silver print",
     "status": "active",
     "has_conflict": 0
   },
@@ -12313,6 +12338,7 @@
     "work_id": "KG-2222",
     "title": "Illustrations of the Botany and Other Branches of the Natural History of the Himalayan Mountains and of the Flora of Cashmere. Volumes I-II",
     "classification": "Books and Portfolios",
+    "medium": "Lithograph plates bound in book",
     "height_in": 14.0,
     "width_in": 10.0,
     "status": "active",
@@ -12452,6 +12478,7 @@
     "title": "Sixteen Illustrations to Rudyard Kipling's Jungle Book",
     "year": 1903,
     "classification": "Books and Portfolios",
+    "medium": "Color illustrations bound in book",
     "status": "active",
     "has_conflict": 0
   },
@@ -12471,6 +12498,7 @@
     "work_id": "KG-2237",
     "title": "Colonel Mordaunts Cock Match at Lucknow [Key Image]",
     "classification": "Print",
+    "medium": "Hand-colored aquatint with stipple",
     "height_in": 13.7,
     "width_in": 9.25,
     "price_usd": 6000.0,
@@ -13109,6 +13137,7 @@
     "work_id": "KG-2304",
     "title": "Grandpa Siple",
     "classification": "Photograph",
+    "medium": "Gelatin silver print",
     "status": "active",
     "has_conflict": 0
   },
@@ -13116,6 +13145,7 @@
     "work_id": "KG-2305",
     "title": "Indian man photo (large scale)",
     "classification": "Photograph",
+    "medium": "Gelatin silver print",
     "status": "active",
     "has_conflict": 0
   },
@@ -13244,6 +13274,7 @@
     "work_id": "KG-2317",
     "title": "Gobardhun - Upper Portion of the Palace",
     "classification": "Photograph",
+    "medium": "Gelatin silver print",
     "status": "active",
     "has_conflict": 0
   },
@@ -13251,6 +13282,7 @@
     "work_id": "KG-2318",
     "title": "Marble Tomb of Sheik Selin Christi",
     "classification": "Photograph",
+    "medium": "Gelatin silver print",
     "status": "active",
     "has_conflict": 0
   },
@@ -13333,7 +13365,8 @@
   {
     "work_id": "KG-2327",
     "title": "India, Nepal, Kashmir & Afghanistan Album",
-    "classification": "Books and Portfolios",
+    "classification": "Photograph",
+    "medium": "Photographic prints bound in album",
     "price_usd": 60000.0,
     "status": "active",
     "has_conflict": 0
@@ -13603,6 +13636,7 @@
     "work_id": "KG-2359",
     "title": "A fine akoda nari kabuto (Helmet)",
     "classification": "Design/Decorative Art",
+    "medium": "Iron with lacquer (akoda nari kabuto)",
     "height_in": 5.0,
     "width_in": 7.5,
     "status": "active",
@@ -14114,6 +14148,7 @@
     "artist": "Raja Lala Deen Dayal",
     "year": 1882,
     "classification": "Photograph",
+    "medium": "Gelatin silver print",
     "height_in": 15.0,
     "width_in": 17.0,
     "status": "active",
@@ -14124,6 +14159,7 @@
     "title": "Water Palace at Deegh",
     "artist": "Raja Lala Deen Dayal",
     "classification": "Photograph",
+    "medium": "Gelatin silver print",
     "height_in": 21.0,
     "width_in": 25.0,
     "status": "active",
