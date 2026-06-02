@@ -7,8 +7,8 @@
 | Missing field | Works |
 |---|---:|
 | image | 887 |
-| medium | 270 |
-| classification | 244 |
+| medium | 232 |
+| classification | 206 |
 | title | 4 |
 
 ## Triage: closest to upload-ready first
@@ -17,6 +17,7 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 
 | KG-# | Missing | Title | Artist |
 |---|---|---|---|
+| KG-0012 | 1: image | A Thangka of Palden Lhamo, 19th century |  |
 | KG-1005 | 1: image | Untitled (Woman Standing) | Jamini Roy |
 | KG-1018 | 1: image | Indian clay figures | Jadunath Pal |
 | KG-1035 | 1: image | Thomas Daniell and Robert Havell - 3 engravings | Thomas Daniell |
@@ -28,6 +29,7 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1324 | 1: image | India, Fly TWA | David Klein |
 | KG-1325 | 1: image | Fly TWA - India | David Klein |
 | KG-1326 | 1: image | Fly TWA - India | David Klein |
+| KG-1365 | 1: image | India, Air France | Georges Mathieu |
 | KG-1483 | 1: image | Man and woman near fire |  |
 | KG-1509 | 1: medium | Need title |  |
 | KG-1510 | 1: medium | Need title |  |
@@ -65,8 +67,6 @@ Sorted by *number of missing fields ascending* — the smallest punch list at th
 | KG-1713 | 1: image | A gilt-bronze figure of Kala Bhairava |  |
 | KG-1714 | 1: image | A silver figure of Vajrapani |  |
 | KG-1715 | 1: image | Buddha Shakyamuni and the Thirty-five Buddhas of Confession |  |
-| KG-1716 | 1: image | A bronze figure of Kala Jambhala |  |
-| KG-1717 | 1: image | Magzor Gyelmo |  |
 
 ## Unresolved conflicts
 

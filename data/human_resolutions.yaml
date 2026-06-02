@@ -2714,3 +2714,459 @@
     \ a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
   decided_by: sanjay@kapoors.com
   decided_at: '2026-06-02'
+- work_id: KG-1729
+  field: classification
+  value: Sculpture
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1729
+  field: medium
+  value: Silver
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1735
+  field: classification
+  value: Sculpture
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1735
+  field: medium
+  value: Wood
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1861
+  field: classification
+  value: Sculpture
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1861
+  field: medium
+  value: Gilt copper alloy
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1946
+  field: classification
+  value: Sculpture
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1946
+  field: medium
+  value: Sandstone
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1955
+  field: classification
+  value: Sculpture
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1955
+  field: medium
+  value: Sandstone
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2210
+  field: classification
+  value: Sculpture
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2210
+  field: medium
+  value: Bronze
+  reason: 'Title hint: title-medium hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1734
+  field: classification
+  value: Sculpture
+  reason: 'Title hint: Pala Style hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1734
+  field: medium
+  value: Copper alloy
+  reason: 'Title hint: Pala Style hint.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-0012
+  field: classification
+  value: Painting
+  reason: 'Title hint: thangka form.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-0012
+  field: medium
+  value: Ground mineral pigments on cloth
+  reason: 'Title hint: thangka form.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1736
+  field: classification
+  value: Painting
+  reason: 'Title hint: mandala thangka.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1736
+  field: medium
+  value: Ground mineral pigments on cloth
+  reason: 'Title hint: mandala thangka.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1863
+  field: classification
+  value: Painting
+  reason: 'Title hint: thangka form.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1863
+  field: medium
+  value: Ground mineral pigments on cloth
+  reason: 'Title hint: thangka form.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1865
+  field: classification
+  value: Painting
+  reason: 'Title hint: mandala thangka.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1865
+  field: medium
+  value: Ground mineral pigments on cloth
+  reason: 'Title hint: mandala thangka.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1746
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Krishna Sudama folio.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1746
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Krishna Sudama folio.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1752
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1752
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1763
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1763
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2078
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2078
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2079
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2079
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2103
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Krishna Sudama series.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2103
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Krishna Sudama series.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2114
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Indian miniature (title says so).'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2114
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Indian miniature (title says so).'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2172
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2172
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2186
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Indian miniature portrait.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2186
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Indian miniature portrait.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2208
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Ramayana folio (title says PAINTING but Artsy bucket).'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2208
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Ramayana folio (title says PAINTING but Artsy bucket).'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2265
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2265
+  field: medium
+  value: Opaque watercolor on paper
+  reason: 'Title hint: Indian miniature.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2280
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: sketch form.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2280
+  field: medium
+  value: Ink on paper
+  reason: 'Title hint: sketch form.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2082
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: manuscript folio.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2082
+  field: medium
+  value: Ink and opaque colors on paper
+  reason: 'Title hint: manuscript folio.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2264
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Islamic calligraphic text.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2264
+  field: medium
+  value: Ink on paper
+  reason: 'Title hint: Islamic calligraphic text.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2396
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Title hint: Jain Kalpa-sutra folio.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2396
+  field: medium
+  value: Ink and opaque colors on paper
+  reason: 'Title hint: Jain Kalpa-sutra folio.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2219
+  field: classification
+  value: Print
+  reason: 'Title hint: Daniell-style architectural view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2219
+  field: medium
+  value: Aquatint with brown wash
+  reason: 'Title hint: Daniell-style architectural view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2272
+  field: classification
+  value: Print
+  reason: 'Title hint: Daniell-style architectural view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2272
+  field: medium
+  value: Aquatint with brown wash
+  reason: 'Title hint: Daniell-style architectural view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2273
+  field: classification
+  value: Print
+  reason: 'Title hint: Daniell-style Tank Square view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2273
+  field: medium
+  value: Aquatint with brown wash
+  reason: 'Title hint: Daniell-style Tank Square view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2274
+  field: classification
+  value: Print
+  reason: 'Title hint: Daniell-style Tank Square view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2274
+  field: medium
+  value: Aquatint with brown wash
+  reason: 'Title hint: Daniell-style Tank Square view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2275
+  field: classification
+  value: Print
+  reason: 'Title hint: Daniell-style Town Hall view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2275
+  field: medium
+  value: Aquatint with brown wash
+  reason: 'Title hint: Daniell-style Town Hall view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2276
+  field: classification
+  value: Print
+  reason: 'Title hint: Daniell-style Esplanade view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2276
+  field: medium
+  value: Aquatint with brown wash
+  reason: 'Title hint: Daniell-style Esplanade view.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1365
+  field: classification
+  value: Posters
+  reason: 'Title hint: Air France travel poster.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1365
+  field: medium
+  value: Color lithograph on paper
+  reason: 'Title hint: Air France travel poster.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2351
+  field: classification
+  value: Jewelry
+  reason: 'Title hint: rose-cut diamond.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2351
+  field: medium
+  value: Diamond
+  reason: 'Title hint: rose-cut diamond.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2353
+  field: classification
+  value: Jewelry
+  reason: 'Title hint: ring (gold + sapphire).'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2353
+  field: medium
+  value: Gold and sapphire
+  reason: 'Title hint: ring (gold + sapphire).'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2034
+  field: classification
+  value: Textile Arts
+  reason: 'Title hint: Kashmir pashmina shawl.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2034
+  field: medium
+  value: Pashmina wool
+  reason: 'Title hint: Kashmir pashmina shawl.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1894
+  field: classification
+  value: Design/Decorative Art
+  reason: "Title hint: Japanese polearm + cloisonn\xE9."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1894
+  field: medium
+  value: "Watered steel blade with cloisonn\xE9 enamel mounts"
+  reason: "Title hint: Japanese polearm + cloisonn\xE9."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1844
+  field: classification
+  value: Design/Decorative Art
+  reason: 'Title hint: Tibetan gau (amulet box).'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1844
+  field: medium
+  value: Silver filigree set with turquoise
+  reason: 'Title hint: Tibetan gau (amulet box).'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'

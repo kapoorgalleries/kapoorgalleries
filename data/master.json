@@ -2,6 +2,8 @@
   {
     "work_id": "KG-0012",
     "title": "A Thangka of Palden Lhamo, 19th century",
+    "classification": "Painting",
+    "medium": "Ground mineral pigments on cloth",
     "height_in": 16.75,
     "width_in": 12.75,
     "price_usd": 28000.0,
@@ -4126,6 +4128,8 @@
     "work_id": "KG-1365",
     "title": "India, Air France",
     "artist": "Georges Mathieu",
+    "classification": "Posters",
+    "medium": "Color lithograph on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -8110,6 +8114,8 @@
   {
     "work_id": "KG-1729",
     "title": "Silver Padmapani",
+    "classification": "Sculpture",
+    "medium": "Silver",
     "price_usd": 80000.0,
     "status": "active",
     "has_conflict": 0
@@ -8153,6 +8159,8 @@
   {
     "work_id": "KG-1734",
     "title": "Dombini [Dakini, Pala Style (Vajrayogini)]",
+    "classification": "Sculpture",
+    "medium": "Copper alloy",
     "price_usd": 40000.0,
     "status": "active",
     "has_conflict": 0
@@ -8160,6 +8168,8 @@
   {
     "work_id": "KG-1735",
     "title": "Wood Indra",
+    "classification": "Sculpture",
+    "medium": "Wood",
     "price_usd": 95000.0,
     "status": "active",
     "has_conflict": 0
@@ -8167,6 +8177,8 @@
   {
     "work_id": "KG-1736",
     "title": "56 Divinities, Pancaraksa Devi mandala",
+    "classification": "Painting",
+    "medium": "Ground mineral pigments on cloth",
     "price_usd": 400000.0,
     "status": "active",
     "has_conflict": 0
@@ -8262,6 +8274,8 @@
   {
     "work_id": "KG-1746",
     "title": "A Leaf from the Krishna Sudama COPY",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -8316,6 +8330,8 @@
     "title": "The Kurma Avatar: Samudra Manthan (The Churning of the Ocean)",
     "artist": "Attributed to Manaku",
     "year": 1735,
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -8405,6 +8421,8 @@
     "work_id": "KG-1763",
     "title": "The Asuras Madhu and Kaitabha Attack Brahma",
     "year": 1765,
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "price_usd": 20000.0,
     "status": "active",
     "has_conflict": 0
@@ -9166,6 +9184,8 @@
     "work_id": "KG-1844",
     "title": "A turquoise and filigree gau",
     "year": 1901,
+    "classification": "Design/Decorative Art",
+    "medium": "Silver filigree set with turquoise",
     "status": "active",
     "has_conflict": 0
   },
@@ -9283,6 +9303,8 @@
     "work_id": "KG-1861",
     "title": "A gilt copper alloy shrine to dancing Ganesha",
     "year": 969,
+    "classification": "Sculpture",
+    "medium": "Gilt copper alloy",
     "status": "active",
     "has_conflict": 0
   },
@@ -9298,6 +9320,8 @@
     "work_id": "KG-1863",
     "title": "Tibetan Thangka of Seated Buddha",
     "year": 1701,
+    "classification": "Painting",
+    "medium": "Ground mineral pigments on cloth",
     "status": "active",
     "has_conflict": 0
   },
@@ -9314,6 +9338,8 @@
     "work_id": "KG-1865",
     "title": "A Bhagavani Sitatapatra Mandala",
     "year": 1535,
+    "classification": "Painting",
+    "medium": "Ground mineral pigments on cloth",
     "status": "active",
     "has_conflict": 0
   },
@@ -9529,6 +9555,8 @@
     "work_id": "KG-1894",
     "title": "A SHIMOSAKA NAGINATA IN FINE CLOISONNE-ENAMEL MOUNTS",
     "year": 1336,
+    "classification": "Design/Decorative Art",
+    "medium": "Watered steel blade with cloisonné enamel mounts",
     "status": "active",
     "has_conflict": 0
   },
@@ -9831,6 +9859,8 @@
     "work_id": "KG-1946",
     "title": "A sandstone head of Muchalinda",
     "year": 1101,
+    "classification": "Sculpture",
+    "medium": "Sandstone",
     "status": "active",
     "has_conflict": 0
   },
@@ -9905,6 +9935,8 @@
     "work_id": "KG-1955",
     "title": "A sandstone relief of a Nagaraja couple",
     "year": 501,
+    "classification": "Sculpture",
+    "medium": "Sandstone",
     "status": "active",
     "has_conflict": 0
   },
@@ -10505,6 +10537,8 @@
   {
     "work_id": "KG-2034",
     "title": "Pashmina shawl",
+    "classification": "Textile Arts",
+    "medium": "Pashmina wool",
     "status": "active",
     "has_conflict": 0
   },
@@ -10886,12 +10920,16 @@
   {
     "work_id": "KG-2078",
     "title": "Maiden Seated on a Carpet Under an Orange Roof",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "status": "active",
     "has_conflict": 0
   },
   {
     "work_id": "KG-2079",
     "title": "Woman on Swing",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -10914,6 +10952,8 @@
   {
     "work_id": "KG-2082",
     "title": "Unidentified Manuscript",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Ink and opaque colors on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -11100,6 +11140,8 @@
   {
     "work_id": "KG-2103",
     "title": "Krishna Sudama series",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -11204,6 +11246,8 @@
   {
     "work_id": "KG-2114",
     "title": "An Indian Miniature Painting depicting Krishna with Gopis",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -11775,6 +11819,8 @@
   {
     "work_id": "KG-2172",
     "title": "The Wedding of Vishnu and Lakshmi",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "height_in": 8.0,
     "width_in": 11.0,
     "status": "active",
@@ -11906,6 +11952,8 @@
   {
     "work_id": "KG-2186",
     "title": "Portrait of a Nobleman",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -12116,6 +12164,8 @@
   {
     "work_id": "KG-2208",
     "title": "A PAINTING FROM A RAMAYANA SERIES: RAMA, SITA AND LAKSHMANA ARRIVE AT THEIR CHARIOT",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "height_in": 7.0,
     "width_in": 11.0,
     "price_usd": 6000.0,
@@ -12135,6 +12185,8 @@
   {
     "work_id": "KG-2210",
     "title": "A BRONZE KADAMPA STUPA",
+    "classification": "Sculpture",
+    "medium": "Bronze",
     "height_in": 5.0,
     "status": "active",
     "has_conflict": 0
@@ -12229,6 +12281,8 @@
     "work_id": "KG-2219",
     "title": "A Choutry, Or Place of Worship",
     "year": 1802,
+    "classification": "Print",
+    "medium": "Aquatint with brown wash",
     "height_in": 15.0,
     "width_in": 18.0,
     "status": "active",
@@ -12670,12 +12724,16 @@
   {
     "work_id": "KG-2264",
     "title": "Islamic Text",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Ink on paper",
     "status": "active",
     "has_conflict": 0
   },
   {
     "work_id": "KG-2265",
     "title": "Prince at a Terrace",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Opaque watercolor on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -12734,6 +12792,8 @@
     "work_id": "KG-2272",
     "title": "The Baolee at Ramnagur",
     "year": 1803,
+    "classification": "Print",
+    "medium": "Aquatint with brown wash",
     "height_in": 16.0,
     "width_in": 24.0,
     "status": "active",
@@ -12743,6 +12803,8 @@
     "work_id": "KG-2273",
     "title": "A View of the Scotch Church from the Gate of Tank Square",
     "year": 1825,
+    "classification": "Print",
+    "medium": "Aquatint with brown wash",
     "height_in": 10.0,
     "width_in": 16.0,
     "status": "active",
@@ -12752,6 +12814,8 @@
     "work_id": "KG-2274",
     "title": "A View of the Tank Square from the West",
     "year": 1824,
+    "classification": "Print",
+    "medium": "Aquatint with brown wash",
     "height_in": 10.0,
     "width_in": 16.0,
     "status": "active",
@@ -12761,6 +12825,8 @@
     "work_id": "KG-2275",
     "title": "A View of the Town Hall",
     "year": 1825,
+    "classification": "Print",
+    "medium": "Aquatint with brown wash",
     "height_in": 10.0,
     "width_in": 16.0,
     "status": "active",
@@ -12770,6 +12836,8 @@
     "work_id": "KG-2276",
     "title": "A View from the Esplanade Row from Chouringee Road",
     "year": 1824,
+    "classification": "Print",
+    "medium": "Aquatint with brown wash",
     "height_in": 10.0,
     "width_in": 16.0,
     "status": "active",
@@ -12808,6 +12876,8 @@
   {
     "work_id": "KG-2280",
     "title": "Majnun Sketch",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Ink on paper",
     "status": "active",
     "has_conflict": 0
   },
@@ -13481,6 +13551,8 @@
     "work_id": "KG-2351",
     "title": "Rose cut diamond with faceted pavilion",
     "year": 1850,
+    "classification": "Jewelry",
+    "medium": "Diamond",
     "status": "active",
     "has_conflict": 0
   },
@@ -13494,6 +13566,8 @@
   {
     "work_id": "KG-2353",
     "title": "Gold and Sapphire Ring",
+    "classification": "Jewelry",
+    "medium": "Gold and sapphire",
     "status": "active",
     "has_conflict": 0
   },
@@ -13891,6 +13965,8 @@
   {
     "work_id": "KG-2396",
     "title": "Unknown Scene: Folio from a Jain Kalpa-sutra Manuscript",
+    "classification": "Drawing, Collage or other Work on Paper",
+    "medium": "Ink and opaque colors on paper",
     "status": "active",
     "has_conflict": 0
   },

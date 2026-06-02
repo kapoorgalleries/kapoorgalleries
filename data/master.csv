@@ -1,5 +1,5 @@
 work_id,title,artist,year,period_school_region,classification,medium,materials,height_in,width_in,depth_in,price_usd,status,provenance_text,exhibitions,publications,signature,coa_status,primary_image_url,primer_uuid,location,external_id,external_id_system,artsy_eligibility,has_conflict,conflict_fields,title_conflict,artist_conflict,year_conflict,period_school_region_conflict,classification_conflict,medium_conflict,materials_conflict,height_in_conflict,width_in_conflict,depth_in_conflict,price_usd_conflict,status_conflict,provenance_text_conflict,exhibitions_conflict,publications_conflict,signature_conflict,coa_status_conflict,primary_image_url_conflict,primer_uuid_conflict,location_conflict,external_id_conflict,external_id_system_conflict,artsy_eligibility_conflict
-KG-0012,"A Thangka of Palden Lhamo, 19th century",,,,,,,16.75,12.75,,28000.0,,"Provenance: The Estate of Dr. Joseph W. Foxell Jr., New Jersey Thence by descent to the current owner",KG_Art_of_the_Himalayas_Price_List,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-0012,"A Thangka of Palden Lhamo, 19th century",,,,Painting,Ground mineral pigments on cloth,,16.75,12.75,,28000.0,,"Provenance: The Estate of Dr. Joseph W. Foxell Jr., New Jersey Thence by descent to the current owner",KG_Art_of_the_Himalayas_Price_List,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-0906,Abhayakaragupta,,,,,,,39.5,23.5,,80000.0,,"Provenance: Private New York collection, acquired in the 1960s, by repute. Thence by descent. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",KG_Art_of_the_Himalayas_Price_List,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1000,A Guru and Student in the Wilderness,,1850,,"Drawing, Collage or other Work on Paper",Opaque Watercolor on Paper,Opaque Watercolor on Paper,8.125,11.125,,,active,,,,No signature,,https://data-us-east-1.primerws.com/kapoor_galleries/i/f575dde4-60fb-41d0-a6ef-22eb4e85379e/Guru%20and%20Student%20A.jpg?Expires=1802811607&Signature=uBUDfWqaW4t7wZY~od1~QAIofBS3qXTzPOW5W7c595HhPYT4jk3j2xv~YboNuSk7YnfzlfTmLS1L7p-tR-Eh991AaGbIIa0M1zv47q8vh~ybm0sLheweehCAcGuLcVA1LDaJwOlTxEpEUNxT-5Fcon6AsjoORABR61P6A6nZuo~hKblC7RMpTp1Zr6zOnjjA33zXDMfw0CRsJ~j8EoLcjsiHAikXvEDh-X8FYUoJ0akZPKR5RPXY2renXla098kLp1H3OQH2141K0xCMBthwbUq8FSGyb4vf7bX~Yz6OsWOeikZgH4I-tvLco21bAQx9Ls4b3bBVif6buWUb0MynQA__&Key-Pair-Id=K2SVGVHI7PEVAH,f575dde4-60fb-41d0-a6ef-22eb4e85379e,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1001,Composite Horse and Rider,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.5,6.0,,,active,,,,No signature,,https://data-us-east-1.primerws.com/kapoor_galleries/i/e862814f-2953-4634-b38a-1c614c951a15/Scan%202%202.jpg?Expires=1802811607&Signature=ICD3laKeos2INyr440wTcZNr9BzUzcL1FCuCidqKXOMIe7DZO7or0JOs8Sdp0C6l4X5yzi2dbh2yAn0jBdmsqvpbVBlkp2jTChh3pYMS9zqU1l2Jkq2XnR8mtYCeKya4tVxWNydv2ERJhCBwDS9yHs0UUE9PbgW4VRWWUlNk~Is3gOZYpf9wgr0mz1m1UISG7V6wiIzcQtEp~zhfm-kKy-svfMqCVtyW4hXg-sfsAWLo1TSeH69bh6vE4DppbdM6--rGE1MjT2iabjtsgUoea2Das7aIh7jOZr54ZnUOAwiY5AaP2oMKwg78IQV5Ym4m27NlNFjawWpDnvbeLKMlzA__&Key-Pair-Id=K2SVGVHI7PEVAH,e862814f-2953-4634-b38a-1c614c951a15,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -362,7 +362,7 @@ KG-1361,"Meenakshi Temple, Madurai, India",,,,"Drawing, Collage or other Work on
 KG-1362,"Fly Japan Air Lines, Taj Mahal, Agra, India, New Delhi",,,,Posters,Color lithograph on paper,,,,,,active,,,,,,https://data-us-east-1.primerws.com/kapoor_galleries/i/5da70b97-6054-4471-80f7-782c3326bac1/201124_KapoorGalleries_0035.jpg?Expires=1802811752&Signature=ciDKamaGRg7exGW0KEhI8R9fVm2lYF7TdeXuW0KxNFAReWhfEL4B8F9-3D4ksHgMO7VQeZ3fA6zNc0l-j7z6L6rDM2gJzoxUxKXL-1GC9mx210Wh5Q9zt4Gg3gKIHZ8auqQ2MuiLIE6TB459BHYynFbdsC3D1ztvthuiT2LLLYWI-NE6r9ZI09os~cLYifmu259fGT8311ky9R9Q4eMJrcgF4jd-AHWyD72wXfJp6fNI7Ohs8AayOPIbTastQg9MpArevyWpzTXWC4DeBw-WG3FMomiyLxpqNl0hUByMx~ywNw3UEU1W2ni2pI02hn2dR4l1aN48jiRqB2MPNw0AAw__&Key-Pair-Id=K2SVGVHI7PEVAH,5da70b97-6054-4471-80f7-782c3326bac1,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1363,"India, Air India",,1971,,Posters,Linen backed color lithograph,,,,,,active,,,,,,https://data-us-east-1.primerws.com/kapoor_galleries/i/789e6210-bb5b-40a7-99ca-6c88878ef9b4/201124_KapoorGalleries_0034.jpg?Expires=1802811752&Signature=k8-BDsFPNqEo96KL6MXV~4lFm3-owvC-STLQrVqzSpuDPvL~AQ5nVB8temPQO3QBDKPMQxBsYsED~UkSTazu05S-LsLGW~Irmu~EcmVIC~hkXeYofH40vKs9mimo9lwJDvWbQ4BPFQq2X1u89yvFaki6IbKNAOv58ILisQLJVrB~dasnC2CpJK8PiAjj7ET4UCHjy8MuGfeSzdG9jfz6VZbpHwoxpe6UydRw3ua2dZcfYOvKGwJnMKk6TRkhBxKqivpKkEdGQtUtn-7V0ZxvZAo2ZIuK4~WKYWIScSooT96Ao5g7MkORODGK9efZfie1vAVG6Fcy1Lr9Njoykj4XfQ__&Key-Pair-Id=K2SVGVHI7PEVAH,789e6210-bb5b-40a7-99ca-6c88878ef9b4,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1364,"Fly Japan Air Lines, Calcutta, Ancient Hindu Temple, Konarak, India",,,,Posters,Color lithograph on paper,,,,,,active,,,,,,https://data-us-east-1.primerws.com/kapoor_galleries/i/3c05f5b9-0097-45d1-98f6-fd30d2bf1d9b/201124_KapoorGalleries_0033.jpg?Expires=1802811753&Signature=QVyoQygWSxgA-IrALHFzfaQ-a88BWq2PkArW57ldpqKjxUaqWtYGBh4rp-99aOrHDOxXCUguH1dQtRubnCQpVaw9QcugXW49IqxT8SCnmFJycDlm14FMWCaH0YgFo2guFPwmoalFgvRtWoavAUTUGs-X~g9XF9Te8VdfZdyYlAKrbAYFsufz23Ig~LRlYTqkFxw~MAMQKANoMs~Gezo8sS8rqrDFsXA99XKTeQXtHzFaCLE8UKxKStOo-dS0tw2jNrTO2163LOyDnN~Zsq3tUQn1YiOzBM99433eBxv9lVHtmTfjwwX7TUtw51fW6x49i7BCHgTQI0Y2YsCOElRUvQ__&Key-Pair-Id=K2SVGVHI7PEVAH,3c05f5b9-0097-45d1-98f6-fd30d2bf1d9b,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1365,"India, Air France",Georges Mathieu,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1365,"India, Air France",Georges Mathieu,,,Posters,Color lithograph on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1366,"Germany, Frankfurt, Air-India",,,,Posters,Color lithograph on paper,,,,,,active,,,,,,https://data-us-east-1.primerws.com/kapoor_galleries/i/798a1cf9-36a2-44c5-a7e2-d480d805ec7f/Screen%20Shot%202023-07-07%20at%2011.58.28%20AM.jpg?Expires=1802811913&Signature=LfMfeh6E8m0IyrdCaooKxlXAtkIAvUkl-AA7nlNccbQoAMWyDetijyNCMcmbVvY9A~O0Ya-06qxPa2LO3SPdrY65M0bG1KRfhpxIxoCBRB5s6N7JY6excCsAFRsB3adMklGPoj8BnlAMXxrOAaLBzb75ScEr9F~Yn-b55xcSEGCrmZ2NDvBw89GYSAW9GWi33mMoDcLFAeLAzlzK~uM79fLnjX2FdOG0oVfsVRWgfNOcwOVQ8zwB2kyqDo4dJil9-3oP7VNRljyZwtphGLaX4rLAuM0Tu~K2iHiPz-IFzqUu514XUsyZ5DgGcqew034m4nZRDRnjVjhCaNT~ywTC2Q__&Key-Pair-Id=K2SVGVHI7PEVAH,798a1cf9-36a2-44c5-a7e2-d480d805ec7f,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1367,"There is an Air about India, Air India",,,,Posters,Linen backed color lithograph,,,,,,active,,,,,,https://data-us-east-1.primerws.com/kapoor_galleries/i/04193628-6c74-4102-baa3-ca65b9b21c53/Screen%20Shot%202023-07-07%20at%2011.59.51%20AM.jpg?Expires=1802811913&Signature=cSEVQSerM6jgbfXEoplry-zTUOlRyR8CTHUyk~l7-ZBiXCQG9zi~kJ0LNnTLTD6V1xECXYC1sZKgrrtXvDtCQMAHKIegni5aVAzlC1ov2SIBG6a7vh8hGsfcJaVTiuXj~JSMfZ1pGQKxuJ6TiETgUk1N50w4zozxX1ohSHnZvaaCRwwcfZQ~Zzkf2u7w6MJbZyI05OIUAZlQcInk7qlNTGocgaPnBBv0aw3RLxgCcFPt6wEJKvxgx~HPDhH54REMHXCyr9jixgr42ykWC3ERc13Tr81z2tUcE9blBqMnTh223IZfK2Nhq~J2yMbfJMYO0kCSiGwgSW~ulTeyv4gSaQ__&Key-Pair-Id=K2SVGVHI7PEVAH,04193628-6c74-4102-baa3-ca65b9b21c53,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1368,Air-India offers you the Heart of Europe,,,,Posters,Color lithograph on paper,,,,,,active,,,,,,https://data-us-east-1.primerws.com/kapoor_galleries/i/fdf70e98-cf22-4185-a8ea-130b54ea6fb9/Screen%20Shot%202023-07-07%20at%2012.01.13%20PM.jpg?Expires=1802811913&Signature=denmjl6CfjdnGdhP4McAIBsZTQHi7Xb1YDAzSy7VV119ufrPExcQAGPYjbIxuqykSHZ6jlH0vQGjkjf66XgbSG8lf01cMQjLacdXo-0bLdHKvpg87LZcZJn~8cu8vBSpPhLEMaNXrfZJ0HN4MbrZRluitdAw30YQCrZTNiEvlM725ONaxlADXIoBRajYqa7KheYqQ140fkfdks1lqxw4mO-w8~JgF9wEcwt~Sx3VvXgrual0MD2uRleFvtmjFfXM-wsjv3AV2wEoAwaFSiOay71XdQ5JEnKfCiaPGizrlj93QVc9oV0lECtF5LwokCZVCwKBpMo5VOSKKDt5aAGv0Q__&Key-Pair-Id=K2SVGVHI7PEVAH,fdf70e98-cf22-4185-a8ea-130b54ea6fb9,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -727,14 +727,14 @@ KG-1725,Amitayus,,1501,,Sculpture,Gilt Bronze,,,,,40000.0,active,,,,,,,,,,,,0,,0
 KG-1726,Vajradhara (small),,,,,,,,,,30000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1727,Maitreya,,1301,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1728,Prajnaparamita,,1501,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1729,Silver Padmapani,,,,,,,,,,80000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1729,Silver Padmapani,,,,Sculpture,Silver,,,,,80000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1730,Yama Dharmaraja,,1701,,Sculpture,Bronze,,,,,75000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1731,Vajravarahi,,,,,,,,,,60000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1732,A Sino-Tibetan Gilt-bronze Figure of Avalokiteshvara,,1701,,Sculpture,Gilt-Bronze,,,,,25000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1733,Pala Padmapani,,,,Sculpture,Bronze,,,,,80000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1734,"Dombini [Dakini, Pala Style (Vajrayogini)]",,,,,,,,,,40000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1735,Wood Indra,,,,,,,,,,95000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1736,"56 Divinities, Pancaraksa Devi mandala",,,,,,,,,,400000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1734,"Dombini [Dakini, Pala Style (Vajrayogini)]",,,,Sculpture,Copper alloy,,,,,40000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1735,Wood Indra,,,,Sculpture,Wood,,,,,95000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1736,"56 Divinities, Pancaraksa Devi mandala",,,,Painting,Ground mineral pigments on cloth,,,,,400000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1737,Shakyamuni,,1701,,Painting,Ground mineral pigments and gold on cloth,,24.0,15.0,,30000.0,active,Provenance: Collection of late John Walden (1925-2013).,KG_Art_of_the_Himalayas_Price_List,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1738,The Elder Arhat Kanakavatsa,,,,"Drawing, Collage or other Work on Paper",Ground mineral pigments on paper,,,,,220000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1739,Chakrasamvara and Consort,,,,"Drawing, Collage or other Work on Paper",Ground mineral pigments on paper,,,,,50000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -744,13 +744,13 @@ KG-1742,Figure of Nandi,,1101,,Sculpture,Sandstone,,,,,16000.0,active,,,,,,,,,,,
 KG-1743,Saraswati,,,,,,,,,,50000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1744,Shiva Nataraja,,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1745,Illustration to Gita Govinda: Radha Vents her Frustrations,Attributed to First Generation after Nainsukh,1775,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,,,,,500000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1746,A Leaf from the Krishna Sudama COPY,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1746,A Leaf from the Krishna Sudama COPY,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1747,Rathore Hunting a Lion / Maharana Ari Singh Hunting,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1748,"Two preparatory drawings, depicting an extensive battle scene, and a ploughing contest, probably scenes from the Mahabharata",,1701,,"Drawing, Collage or other Work on Paper","Pen and ink on paper, numerous inscriptions in nagari script",,,,,3000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1749,An illustration to a Mahabharata Series: Vidura confers with Dhritharashatra,,1820,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1750,Vidura confers with Dhritharashtra Attributed to Purkhu,,,,Painting,Opaque watercolor on paper,,,,,50000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1751,The Story of Creation,,1740,,"Drawing, Collage or other Work on Paper",Gouache and gold on paper,,,,,250000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1752,The Kurma Avatar: Samudra Manthan (The Churning of the Ocean),Attributed to Manaku,1735,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1752,The Kurma Avatar: Samudra Manthan (The Churning of the Ocean),Attributed to Manaku,1735,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1753,"Vamana, the Dwarf Incarnation of Vishnu",,1750,,Painting,Opaque watercolor on paper,,6.0,9.0,,275000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1756,Madonna and Child,,1700,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1757,Drunken Prince Led to Bed,,,,"Drawing, Collage or other Work on Paper",Gouache heightened with gold on paper,,,,,40000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -759,7 +759,7 @@ KG-1759,The Pandavas and Krishna Bathe in the Jamuna,,1750,,"Drawing, Collage or
 KG-1760,Krishna Slaying the Bull Demon (Arishtasura),,1701,,"Drawing, Collage or other Work on Paper",Opaque pigments and gold on paper,,6.0,10.0,,90000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1761,Blind Mans Buff,,1775,,Painting,Opaque watercolor on paper,,,,,50000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1762,Leaf from the Devi Mahatmya: Durga in a Battle Against Nishumbha,,1820,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,,,,,15000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1763,The Asuras Madhu and Kaitabha Attack Brahma,,1765,,,,,,,,20000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1763,The Asuras Madhu and Kaitabha Attack Brahma,,1765,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,,,,20000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1764,The Beauty of Ambika,,1810,,"Drawing, Collage or other Work on Paper",Gouache heightened with gold on paper,,,,,30000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1765,An Illustration to the Markandeya Purana: Ambika Reduces Dhumralochana to Ashes,,1825,,"Drawing, Collage or other Work on Paper",Gouache heightened with gold on paper,,,,,25000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1766,The Goddess Kali,Attributed to Sajnu,1810,,"Drawing, Collage or other Work on Paper",Opaque watercolors heightened with gold on paper,,,,,50000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -839,7 +839,7 @@ KG-1840,Manjugosha,,1701,,Sculpture,Gilt bronze,,,,,,active,,,,,,,,,,,,0,,0,0,0,
 KG-1841,A Tibetan Parcel-gilt figure of a Seated Lama,,,,Sculpture,,,,,,4000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1842,A bronze figure of a deity,,1901,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1843,A bronze figure of Vajrabhairava,,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1844,A turquoise and filigree gau,,1901,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1844,A turquoise and filigree gau,,1901,,Design/Decorative Art,Silver filigree set with turquoise,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1845,Vajrayogini,,,,Sculpture,gilt-bronze,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1846,A bronze stele of a deity,,1701,,Sculpture,bronze,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1847,Laughing Buddha,,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -855,11 +855,11 @@ KG-1857,Gold bell shaped object,,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,
 KG-1858,Gold statue many arms and heads (w/ base),,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1859,Large statue with many arms legs heads,,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1860,Sitting man with hand raised,,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1861,A gilt copper alloy shrine to dancing Ganesha,,969,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1861,A gilt copper alloy shrine to dancing Ganesha,,969,,Sculpture,Gilt copper alloy,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1862,Pair of Mounted Butter Lamps,,1701,,,Gilt silver and jewel,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1863,Tibetan Thangka of Seated Buddha,,1701,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1863,Tibetan Thangka of Seated Buddha,,1701,,Painting,Ground mineral pigments on cloth,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1864,Bodhisattva,,901,,Sculpture,Copper alloy,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1865,A Bhagavani Sitatapatra Mandala,,1535,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1865,A Bhagavani Sitatapatra Mandala,,1535,,Painting,Ground mineral pigments on cloth,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1866,Framed collection of four large Tibetan carved bone apron ornaments,,,,Sculpture,Bone,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1867,Framed collection of seventeen small Tibetan carved bone apron ornaments,,,,Sculpture,Bone,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1868,A Nepalese carved wood mask of Bhairava,,1401,,Sculpture,"Wood, traces of pigment",,,,,8000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -885,7 +885,7 @@ KG-1890,Teamwork Builds Ships,,1918,,,Linen backed poster,,,,,,active,,,,,,,,,,,
 KG-1891,Jelly Fish,Krishna Reddy,1958,,"Drawing, Collage or other Work on Paper",Mixed color intaglio on wove paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1892,Laying animal,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1893,Girl and Bird,,,,"Drawing, Collage or other Work on Paper",watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1894,A SHIMOSAKA NAGINATA IN FINE CLOISONNE-ENAMEL MOUNTS,,1336,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1894,A SHIMOSAKA NAGINATA IN FINE CLOISONNE-ENAMEL MOUNTS,,1336,,Design/Decorative Art,Watered steel blade with cloisonné enamel mounts,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1896,Polygonal Blue and White Porcelain Bowl,,1750,,"Drawing, Collage or other Work on Paper",Gouache on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1908,View taken in Fort Madhoureh,"Thomas Daniell (British, 1749–1840) and his nephew, William Daniell (British, 1769–1837)",,,,Aquatint with brown wash,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1910,Series of engravings/prints,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -919,7 +919,7 @@ KG-1941,Figurine of Parvati,,901,,Sculpture,Bronze,,,,,,active,,,,,,,,,,,,0,,0,0
 KG-1942,Marble Nandi,,1800,,,Marble,,,,,6000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1944,Elephant,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1945,A Bronze Figure of Krishna,,1401,,Sculpture,Bronze,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1946,A sandstone head of Muchalinda,,1101,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1946,A sandstone head of Muchalinda,,1101,,Sculpture,Sandstone,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1947,Yamani,,501,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1948,Anglo Indian inlaid hardwood box,,1801,,Sculpture,"teakwood with bone and ebony inlay, brass mounts,",,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1949,Elephant Shaped Sprinkler for Holi,,1801,,Sculpture,Brass,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -928,7 +928,7 @@ KG-1951,Large Anglo-Indian Inlaid Box,,1801,,Sculpture,Inlaid wood,,,,,,active,,
 KG-1952,Ceremonial Shield,,1900,,Sculpture,brass,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1953,Pambadam Ear Ornaments,,1900,,,gold sheet over a resin core,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1954,Repousse Indian Bowl,,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-1955,A sandstone relief of a Nagaraja couple,,501,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-1955,A sandstone relief of a Nagaraja couple,,501,,Sculpture,Sandstone,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1956,A Mathuran pillar,,,,Sculpture,Sandstone,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1957,A Mathuran pillar,,,,Sculpture,Sandstone,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-1958,Red Sandstone Stele of a Four-Armed Deity,,901,,Sculpture,Sandstone,,,,,15000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1003,7 +1003,7 @@ KG-2030,The child Jesus as ‘Savior of the World’,,1701,,Sculpture,ivory,,,,,
 KG-2031,Gold base with heart shape,,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2032,Bronze lady statue,,,,Sculpture,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2033,Amulet,,1701,,,,,,,,60000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2034,Pashmina shawl,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2034,Pashmina shawl,,,,Textile Arts,Pashmina wool,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2035,Vishnu and Garuda,,1201,,Sculpture,Bronze,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2036,A Singhalese Silver Kastane Hilt,,1701,,Sculpture,Silver,,,,,3500.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2037,Saber hilt,,1800,,Sculpture,Engraved silver with red stone and gold application,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1046,11 +1046,11 @@ KG-2074,Equestrian Scene,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,
 KG-2075,Maharaja Dhiraj Singh Hunting Boar,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2076,Need title,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2077,Man attacked by Bear,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2078,Maiden Seated on a Carpet Under an Orange Roof,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2079,Woman on Swing,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2078,Maiden Seated on a Carpet Under an Orange Roof,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2079,Woman on Swing,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2080,Leaf from a Ragini,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2081,Courting Scene,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2082,Unidentified Manuscript,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2082,Unidentified Manuscript,,,,"Drawing, Collage or other Work on Paper",Ink and opaque colors on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2083,Noblewomen Visiting a Shaivite Shrine,,,,Painting,Opaque watercolor on paper,,9.0,6.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2084,Portrait of Ganesha,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2085,Double-sided page of a book,,,,Other,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1070,7 +1070,7 @@ KG-2099,Figure of Jambhala,,,,Sculpture,Bronze,,4.0,,,,active,,,,,,,,,,,,0,,0,0,
 KG-2100,Album of Company School Paintings and 19th c. Ephemera,,,,Painting,Opaque watercolor on paper,,6.0,7.0,1.0,26000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2101,"A pair of carved, silvered and painted wood figures of Rampant Horses",,,,Sculpture,"Wood, silver, paint",,33.0,,,35000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2102,"Leaf from the Bhagavata Purana: The Story of Creation Varaha, the Boar Incarnation of Vishnu Appears before Brahma, Manu, and Satarupa",Attributed to Manaku,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2103,Krishna Sudama series,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2103,Krishna Sudama series,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2104,NEED TITLE,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2105,Hunting Party,,,,"Drawing, Collage or other Work on Paper",Gouache ink & gilt on paper,,34.0,25.5,,80000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2106,Tibetan Thangka depicting Saddha,,,,Painting,Opaque watercolor on paper,,27.0,39.0,,30000.0,active,Provenance: Property from the José M. Neistein Collection.,KG_Art_of_the_Himalayas_Price_List,,,,,,,,,,1,"height_in,width_in,price_usd",0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1081,7 +1081,7 @@ KG-2110,46 Etchings of India,,,,Print,,,4.0,6.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0
 KG-2111,A Painting of a Royal Hunt,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,,9.0,5.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2112,Tibetan Ewer,,,,Sculpture,Silver-gilt and mixed metal,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2113,Figure of Amoghapasha,,,,Sculpture,Gilt-copper,,3.0,,,4480.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2114,An Indian Miniature Painting depicting Krishna with Gopis,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2114,An Indian Miniature Painting depicting Krishna with Gopis,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2115,Two women,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,,11.0,8.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2116,"Portrait of two men (Akbar), one seated",,,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2117,Tibetan Thangka,,,,Painting,Opaque watercolor on paper,,18.5,14.5,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1139,7 +1139,7 @@ KG-2168,Maitreya,,,,Sculpture,gilt-copper alloy,,16.0,,,300000.0,active,,,,,,,,,
 KG-2169,A Leaf from the Shahnameh,,1600,,"Drawing, Collage or other Work on Paper",Gouache on paper,,17.7,14.0,,175000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2170,Painting of a Copper-headed Trinket Snake (Coelognathus Radiatus),,,,Painting,Opaque watercolor on paper,,21.0,17.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2171,gift from Deepak,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2172,The Wedding of Vishnu and Lakshmi,,,,,,,8.0,11.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2172,The Wedding of Vishnu and Lakshmi,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,8.0,11.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2173,Maha Akshobhya,,,,Sculpture,Gilt copper alloy,,8.85,,,60000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2174,Buddha Shakyamuni,,,,Sculpture,Gilt copper alloy,,,,,90000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2175,Kedara Ragini,,,,Painting,Opaque pigments on wasli heightened with gold,,7.0,5.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1153,7 +1153,7 @@ KG-2182,,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 KG-2183,,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2184,La Poupee,Gustave Loiseau,,,Painting,Oil on canvas,,22.0,17.0,,10000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2185,"Portrait of Shitab Rai, Naib Diwan of Bihar",,1770,,"Drawing, Collage or other Work on Paper",Opaque pigments with gold on paper,,9.5,6.7,,18000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2186,Portrait of a Nobleman,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2186,Portrait of a Nobleman,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2187,Album of Early 19th Century Photographs,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2188,Arhat/Sthavira (Buddhist Elder),,1600,,Painting,"Ground mineral pigment, red background on cotton",,23.625,17.25,,44000.0,active,,KG_Art_of_the_Himalayas_Price_List,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2190,A Gilt-Wooden Manuscript Cover,,1450,,Books and Portfolios,gilt-wood,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1173,9 +1173,9 @@ KG-2203,"Ellora, cave temple no.3 (Erora daisango kutsuin)",Hiroshi Yoshida,1932
 KG-2204,Snake charmers (Hebizukai),Hiroshi Yoshida,1932,,Print,Woodblock print,,1.112,1.534,,15000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2206,Caravan from Afghanistan: moonlit night,Hiroshi Yoshida,1932,,Print,Woodblock print,,10.0,15.0,,15000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2207,A Portrait of Raja,,,,,"INDIA, RAJASTHAN, MEWAR OR KOTAH",,,,,3000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2208,"A PAINTING FROM A RAMAYANA SERIES: RAMA, SITA AND LAKSHMANA ARRIVE AT THEIR CHARIOT",,,,,,,7.0,11.0,,6000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2208,"A PAINTING FROM A RAMAYANA SERIES: RAMA, SITA AND LAKSHMANA ARRIVE AT THEIR CHARIOT",,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,7.0,11.0,,6000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2209,Four Hand Colored Aquatints,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2210,A BRONZE KADAMPA STUPA,,,,,,,5.0,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2210,A BRONZE KADAMPA STUPA,,,,Sculpture,Bronze,,5.0,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2211,Vaishnav Temple Doors,,1950,,Design/Decorative Art,"Teak with repousse silver, remnants of polychrome",,86.0,59.0,28.0,120000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2212,Uvaria Tomentosa [Pl.35] William Roxburgh,,,,"Drawing, Collage or other Work on Paper","Engraving, coloured by hand on paper",,21.0,15.0,,6000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2213,Grislea Tomentosa [Pl. 31] William Roxburgh,,,,"Drawing, Collage or other Work on Paper","Engraving, coloured by hand on paper",,21.0,15.0,,6000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1184,7 +1184,7 @@ KG-2215,Ardisia Solanacea [Shoebutton Ardisia or Marlberry] [Pl. 27] William Rox
 KG-2216,Bassia Latifolia [Broad-leaved Mahua or Mowha] [Pl. 19] William Roxburgh,,,,"Drawing, Collage or other Work on Paper","Engraving, coloured by hand on paper",,21.0,15.0,,6000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2217,Indigo Factory,,,,,Chromolithograph,,9.0,13.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2218,Caves of Ajanta - Buddhist,,,,,Chromolithograph,,13.0,19.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2219,"A Choutry, Or Place of Worship",,1802,,,,,15.0,18.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2219,"A Choutry, Or Place of Worship",,1802,,Print,Aquatint with brown wash,,15.0,18.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2220,Osbeckia Angustifolia [Pl. 251],,,,Painting,"Hand-coloured lithograph by M. Gauci, printed by Engelmann & Co.",,18.0,9.0,,6000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2221,"Wanderings of a Pilgrim, in Search of the Picturesque, During Four-and-Twenty Years in the East with Revelations of Life in the Zenana. Illustrated with Sketches from Nature. Volumes I and II",,,,Books and Portfolios,"50 lithograph plates, 20 of which are hand-colored, 1 heightened with gold.",,11.0,7.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2222,Illustrations of the Botany and Other Branches of the Natural History of the Himalayan Mountains and of the Flora of Cashmere. Volumes I-II,,,,Books and Portfolios,,,14.0,10.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1229,22 +1229,22 @@ KG-2260,Uma Maheshvara Enthroned,,1800,,"Drawing, Collage or other Work on Paper
 KG-2261,Parajnaparamita Manuscripts,,,,Other,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2262,Untitled,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2263,Chinese Bird Painting,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2264,Islamic Text,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2265,Prince at a Terrace,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2264,Islamic Text,,,,"Drawing, Collage or other Work on Paper",Ink on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2265,Prince at a Terrace,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2266,Portrait of a Chinese Opium Boat,,,,Painting,Opaque watercolor on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2267,"""Mother always, (from Tales of Amnesia)""",Chitra Ganesh,2002,,,Digital C-print,,23.0,20.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2268,Jacqueline Kennedy Trip to India,,1962,,Photograph,photograph,,8.0,10.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2269,Crowds Gather - Jacqueline Kennedy Trip to India,,1962,,Photograph,Photograph,,8.0,10.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2271,"The Writers’ Buildings, Calcutta",,1798,,,aquatint and engraving,,16.0,24.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2272,The Baolee at Ramnagur,,1803,,,,,16.0,24.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2273,A View of the Scotch Church from the Gate of Tank Square,,1825,,,,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2274,A View of the Tank Square from the West,,1824,,,,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2275,A View of the Town Hall,,1825,,,,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2276,A View from the Esplanade Row from Chouringee Road,,1824,,,,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2272,The Baolee at Ramnagur,,1803,,Print,Aquatint with brown wash,,16.0,24.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2273,A View of the Scotch Church from the Gate of Tank Square,,1825,,Print,Aquatint with brown wash,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2274,A View of the Tank Square from the West,,1824,,Print,Aquatint with brown wash,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2275,A View of the Town Hall,,1825,,Print,Aquatint with brown wash,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2276,A View from the Esplanade Row from Chouringee Road,,1824,,Print,Aquatint with brown wash,,10.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2277,Akshobhya Buddha - (Peaceful Appearance),,,,Sculpture,"Metal, Mercuric Gild, Precious Stone, Stone Inset: Coral, Turquoise",,8.0,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2278,Brahma and Saraswati on a Lotus,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on prepared paper,,7.0,6.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2279,Epic Battle Scene: Ganesha and Kartikeya in War,,1800,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,,11.0,16.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2280,Majnun Sketch,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2280,Majnun Sketch,,,,"Drawing, Collage or other Work on Paper",Ink on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2281,Samudra Manthan: Kurma Avatar,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,,8.0,4.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2282,Raja Watching Elephant Fight,,1830,,"Drawing, Collage or other Work on Paper",opaque watercolor heightened with gold on paper,,12.0,9.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2283,Air India Postcards - Cairo & Moscow,,,,Ephemera or Merchandise,Set of printed postcards,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1311,9 +1311,9 @@ KG-2347,Seated Royal Figure with Attendants,,,,"Drawing, Collage or other Work o
 KG-2348,Rama’s Procession Led by Hanuman,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on prepared paper,,9.0,11.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2349,Two Lovers in Bed,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on prepared paper,,6.0,8.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2350,Ragini Patmanjari: Illustration from a Ragamala Series,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor on prepared paper,,7.0,10.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2351,Rose cut diamond with faceted pavilion,,1850,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2351,Rose cut diamond with faceted pavilion,,1850,,Jewelry,Diamond,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2352,"Flower Brooch, Tiffany and co",,,,,Diamonds and platinum,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2353,Gold and Sapphire Ring,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2353,Gold and Sapphire Ring,,,,Jewelry,Gold and sapphire,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2354,Flower Ring,,,,,"Diamonds, enamel, and gold",,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2355,Gold and Diamond Ring,,,,,Diamond and gold,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2356,Diamond Point Cut Ring,,,,,"Gold, enamel, diamond",,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1353,7 +1353,7 @@ KG-2392,Manuscript Leaf: Khamsa (Five Tales) of Nizami,,,,"Drawing, Collage or o
 KG-2393,Jain Kalpa-sutra Manuscript,,,,"Drawing, Collage or other Work on Paper",ink and watercolor on paper,,4.0,10.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2394,"Surah At-Tawbah from a Quran Manuscript, Verses 112–120 (Recto), 120–129 (Verso)",,,,"Drawing, Collage or other Work on Paper","Ink, watercolor on prepared paper",,9.0,6.0,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2395,Green Tara,,,,Painting,Ground mineral pigments on cotton,,32.0,20.0,,80000.0,active,,KG_Art_of_the_Himalayas_Price_List,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-KG-2396,Unknown Scene: Folio from a Jain Kalpa-sutra Manuscript,,,,,,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+KG-2396,Unknown Scene: Folio from a Jain Kalpa-sutra Manuscript,,,,"Drawing, Collage or other Work on Paper",Ink and opaque colors on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2397,The Twenty Tirthankaras: Folio from a Jain Kalpa-sutra Manuscript,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2398,Mahavira Plucks Out His Hair: Folio from a Jain Kalpa-sutra Manuscript,,,,"Drawing, Collage or other Work on Paper",Opaque watercolor heightened with gold on paper,,,,,,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 KG-2399,Hanuman in the Presence of Rama and Sita,Attributed to Manaku,,,"Drawing, Collage or other Work on Paper",opaque watercolor heightened with gold on paper,,7.0,10.0,,150000.0,active,,,,,,,,,,,,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
