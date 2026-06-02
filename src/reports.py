@@ -51,6 +51,118 @@ def coverage_report(db: sqlite_utils.Database, out_path: Path | str) -> Path:
     return out
 
 
+def photo_queue_report(
+    db: sqlite_utils.Database,
+    out_md: Path | str,
+    out_csv: Path | str,
+) -> tuple[Path, int]:
+    """Photography punch list: every active work that only needs a photo
+    to be Artsy-eligible (or that needs a photo + small metadata fills
+    we can call out alongside).
+
+    Output:
+      - reports/photo_queue.md — grouped by classification, sorted by
+        KG-#, with title + medium + year so the photographer can
+        identify the work in storage.
+      - data/photo_queue.csv — one row per work for spreadsheet
+        check-off.
+    """
+    md_path = Path(out_md)
+    csv_path = Path(out_csv)
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+
+    rows = db.execute(
+        """SELECT work_id, title, classification, medium, year, price_usd
+           FROM works
+           WHERE COALESCE(status,'active') = 'active'
+             AND primary_image_url IS NULL
+             AND title IS NOT NULL AND title != ''
+           ORDER BY classification, work_id"""
+    ).fetchall()
+
+    # Bucket: ready-when-photographed vs needs-other-fields-too.
+    ready_when_photographed = []
+    still_needs_metadata = []
+    for r in rows:
+        wid, title, cls, med, yr, price = r
+        if cls and med:
+            ready_when_photographed.append(r)
+        else:
+            still_needs_metadata.append(r)
+
+    # CSV: flat punch list (any photo-blocked work) for spreadsheet use.
+    import csv as _csv
+    with csv_path.open("w", newline="") as fh:
+        w = _csv.writer(fh)
+        w.writerow([
+            "work_id", "title", "classification", "medium", "year",
+            "price_usd", "ready_when_photographed",
+        ])
+        for wid, title, cls, med, yr, price in rows:
+            w.writerow([
+                wid, title, cls or "", med or "",
+                yr or "", price or "",
+                "yes" if (cls and med) else "no",
+            ])
+
+    # Markdown: focused on the high-yield "ready when photographed" set.
+    n = len(ready_when_photographed)
+    lines = [
+        "# Photography punch list",
+        "",
+        f"**{n} active works become Artsy-eligible the moment they're "
+        f"photographed.**  All have title + classification + medium "
+        f"already, so a single image upload pushes each one over the line.",
+        "",
+        f"Plus **{len(still_needs_metadata)} more** that need a photo and "
+        f"some metadata; listed at the end for completeness.",
+        "",
+        "Source: `data/photo_queue.csv` (spreadsheet for shoot-day check-off).",
+        "",
+        "---",
+        "",
+    ]
+
+    # Group ready_when_photographed by classification.
+    by_cls: dict[str, list] = {}
+    for r in ready_when_photographed:
+        by_cls.setdefault(r[2] or "Unknown", []).append(r)
+    for cls in sorted(by_cls):
+        works = by_cls[cls]
+        lines.append(f"## {cls} ({len(works)})")
+        lines.append("")
+        lines.append("| KG-# | Title | Medium | Year |")
+        lines.append("|---|---|---|---:|")
+        for wid, title, _cls, med, yr, _price in works:
+            t = (title or "")[:60]
+            m = (med or "")[:40]
+            lines.append(f"| {wid} | {t} | {m} | {yr or ''} |")
+        lines.append("")
+
+    if still_needs_metadata:
+        lines.append("---")
+        lines.append("")
+        lines.append(f"## Still needs metadata as well ({len(still_needs_metadata)})")
+        lines.append("")
+        lines.append("These need a photo AND one or more of classification/medium "
+                     "before they're Artsy-ready.  Surface for curator review.")
+        lines.append("")
+        lines.append("| KG-# | Title | Missing |")
+        lines.append("|---|---|---|")
+        for wid, title, cls, med, _yr, _price in still_needs_metadata[:80]:
+            missing = []
+            if not cls: missing.append("classification")
+            if not med: missing.append("medium")
+            lines.append(f"| {wid} | {(title or '')[:60]} | {', '.join(missing)} |")
+        if len(still_needs_metadata) > 80:
+            lines.append(f"| … | _and {len(still_needs_metadata) - 80} more_ | |")
+        lines.append("")
+
+    md_path.write_text("\n".join(lines) + "\n")
+    return md_path, n
+
+
 def gaps_report(db: sqlite_utils.Database, out_path: Path | str, top_n: int = 50) -> Path:
     out = Path(out_path)
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -149,6 +261,118 @@ def gaps_report(db: sqlite_utils.Database, out_path: Path | str, top_n: int = 50
     return out
 
 
+def photo_queue_report(
+    db: sqlite_utils.Database,
+    out_md: Path | str,
+    out_csv: Path | str,
+) -> tuple[Path, int]:
+    """Photography punch list: every active work that only needs a photo
+    to be Artsy-eligible (or that needs a photo + small metadata fills
+    we can call out alongside).
+
+    Output:
+      - reports/photo_queue.md — grouped by classification, sorted by
+        KG-#, with title + medium + year so the photographer can
+        identify the work in storage.
+      - data/photo_queue.csv — one row per work for spreadsheet
+        check-off.
+    """
+    md_path = Path(out_md)
+    csv_path = Path(out_csv)
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+
+    rows = db.execute(
+        """SELECT work_id, title, classification, medium, year, price_usd
+           FROM works
+           WHERE COALESCE(status,'active') = 'active'
+             AND primary_image_url IS NULL
+             AND title IS NOT NULL AND title != ''
+           ORDER BY classification, work_id"""
+    ).fetchall()
+
+    # Bucket: ready-when-photographed vs needs-other-fields-too.
+    ready_when_photographed = []
+    still_needs_metadata = []
+    for r in rows:
+        wid, title, cls, med, yr, price = r
+        if cls and med:
+            ready_when_photographed.append(r)
+        else:
+            still_needs_metadata.append(r)
+
+    # CSV: flat punch list (any photo-blocked work) for spreadsheet use.
+    import csv as _csv
+    with csv_path.open("w", newline="") as fh:
+        w = _csv.writer(fh)
+        w.writerow([
+            "work_id", "title", "classification", "medium", "year",
+            "price_usd", "ready_when_photographed",
+        ])
+        for wid, title, cls, med, yr, price in rows:
+            w.writerow([
+                wid, title, cls or "", med or "",
+                yr or "", price or "",
+                "yes" if (cls and med) else "no",
+            ])
+
+    # Markdown: focused on the high-yield "ready when photographed" set.
+    n = len(ready_when_photographed)
+    lines = [
+        "# Photography punch list",
+        "",
+        f"**{n} active works become Artsy-eligible the moment they're "
+        f"photographed.**  All have title + classification + medium "
+        f"already, so a single image upload pushes each one over the line.",
+        "",
+        f"Plus **{len(still_needs_metadata)} more** that need a photo and "
+        f"some metadata; listed at the end for completeness.",
+        "",
+        "Source: `data/photo_queue.csv` (spreadsheet for shoot-day check-off).",
+        "",
+        "---",
+        "",
+    ]
+
+    # Group ready_when_photographed by classification.
+    by_cls: dict[str, list] = {}
+    for r in ready_when_photographed:
+        by_cls.setdefault(r[2] or "Unknown", []).append(r)
+    for cls in sorted(by_cls):
+        works = by_cls[cls]
+        lines.append(f"## {cls} ({len(works)})")
+        lines.append("")
+        lines.append("| KG-# | Title | Medium | Year |")
+        lines.append("|---|---|---|---:|")
+        for wid, title, _cls, med, yr, _price in works:
+            t = (title or "")[:60]
+            m = (med or "")[:40]
+            lines.append(f"| {wid} | {t} | {m} | {yr or ''} |")
+        lines.append("")
+
+    if still_needs_metadata:
+        lines.append("---")
+        lines.append("")
+        lines.append(f"## Still needs metadata as well ({len(still_needs_metadata)})")
+        lines.append("")
+        lines.append("These need a photo AND one or more of classification/medium "
+                     "before they're Artsy-ready.  Surface for curator review.")
+        lines.append("")
+        lines.append("| KG-# | Title | Missing |")
+        lines.append("|---|---|---|")
+        for wid, title, cls, med, _yr, _price in still_needs_metadata[:80]:
+            missing = []
+            if not cls: missing.append("classification")
+            if not med: missing.append("medium")
+            lines.append(f"| {wid} | {(title or '')[:60]} | {', '.join(missing)} |")
+        if len(still_needs_metadata) > 80:
+            lines.append(f"| … | _and {len(still_needs_metadata) - 80} more_ | |")
+        lines.append("")
+
+    md_path.write_text("\n".join(lines) + "\n")
+    return md_path, n
+
+
 def provenance_report(db: sqlite_utils.Database, out_path: Path | str) -> Path:
     out = Path(out_path)
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -194,3 +418,115 @@ def provenance_report(db: sqlite_utils.Database, out_path: Path | str) -> Path:
 
     out.write_text("\n".join(lines) + "\n")
     return out
+
+
+def photo_queue_report(
+    db: sqlite_utils.Database,
+    out_md: Path | str,
+    out_csv: Path | str,
+) -> tuple[Path, int]:
+    """Photography punch list: every active work that only needs a photo
+    to be Artsy-eligible (or that needs a photo + small metadata fills
+    we can call out alongside).
+
+    Output:
+      - reports/photo_queue.md — grouped by classification, sorted by
+        KG-#, with title + medium + year so the photographer can
+        identify the work in storage.
+      - data/photo_queue.csv — one row per work for spreadsheet
+        check-off.
+    """
+    md_path = Path(out_md)
+    csv_path = Path(out_csv)
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+
+    rows = db.execute(
+        """SELECT work_id, title, classification, medium, year, price_usd
+           FROM works
+           WHERE COALESCE(status,'active') = 'active'
+             AND primary_image_url IS NULL
+             AND title IS NOT NULL AND title != ''
+           ORDER BY classification, work_id"""
+    ).fetchall()
+
+    # Bucket: ready-when-photographed vs needs-other-fields-too.
+    ready_when_photographed = []
+    still_needs_metadata = []
+    for r in rows:
+        wid, title, cls, med, yr, price = r
+        if cls and med:
+            ready_when_photographed.append(r)
+        else:
+            still_needs_metadata.append(r)
+
+    # CSV: flat punch list (any photo-blocked work) for spreadsheet use.
+    import csv as _csv
+    with csv_path.open("w", newline="") as fh:
+        w = _csv.writer(fh)
+        w.writerow([
+            "work_id", "title", "classification", "medium", "year",
+            "price_usd", "ready_when_photographed",
+        ])
+        for wid, title, cls, med, yr, price in rows:
+            w.writerow([
+                wid, title, cls or "", med or "",
+                yr or "", price or "",
+                "yes" if (cls and med) else "no",
+            ])
+
+    # Markdown: focused on the high-yield "ready when photographed" set.
+    n = len(ready_when_photographed)
+    lines = [
+        "# Photography punch list",
+        "",
+        f"**{n} active works become Artsy-eligible the moment they're "
+        f"photographed.**  All have title + classification + medium "
+        f"already, so a single image upload pushes each one over the line.",
+        "",
+        f"Plus **{len(still_needs_metadata)} more** that need a photo and "
+        f"some metadata; listed at the end for completeness.",
+        "",
+        "Source: `data/photo_queue.csv` (spreadsheet for shoot-day check-off).",
+        "",
+        "---",
+        "",
+    ]
+
+    # Group ready_when_photographed by classification.
+    by_cls: dict[str, list] = {}
+    for r in ready_when_photographed:
+        by_cls.setdefault(r[2] or "Unknown", []).append(r)
+    for cls in sorted(by_cls):
+        works = by_cls[cls]
+        lines.append(f"## {cls} ({len(works)})")
+        lines.append("")
+        lines.append("| KG-# | Title | Medium | Year |")
+        lines.append("|---|---|---|---:|")
+        for wid, title, _cls, med, yr, _price in works:
+            t = (title or "")[:60]
+            m = (med or "")[:40]
+            lines.append(f"| {wid} | {t} | {m} | {yr or ''} |")
+        lines.append("")
+
+    if still_needs_metadata:
+        lines.append("---")
+        lines.append("")
+        lines.append(f"## Still needs metadata as well ({len(still_needs_metadata)})")
+        lines.append("")
+        lines.append("These need a photo AND one or more of classification/medium "
+                     "before they're Artsy-ready.  Surface for curator review.")
+        lines.append("")
+        lines.append("| KG-# | Title | Missing |")
+        lines.append("|---|---|---|")
+        for wid, title, cls, med, _yr, _price in still_needs_metadata[:80]:
+            missing = []
+            if not cls: missing.append("classification")
+            if not med: missing.append("medium")
+            lines.append(f"| {wid} | {(title or '')[:60]} | {', '.join(missing)} |")
+        if len(still_needs_metadata) > 80:
+            lines.append(f"| … | _and {len(still_needs_metadata) - 80} more_ | |")
+        lines.append("")
+
+    md_path.write_text("\n".join(lines) + "\n")
+    return md_path, n

@@ -426,6 +426,9 @@ def report(db_path: str):
     reports.coverage_report(db, "reports/coverage_report.md")
     reports.gaps_report(db, "reports/gaps_report.md")
     reports.provenance_report(db, "reports/provenance_report.md")
+    _, n_photo_ready = reports.photo_queue_report(
+        db, "reports/photo_queue.md", "data/photo_queue.csv",
+    )
     click.echo(f"master.csv: {n} rows")
     click.echo(f"conflicts.csv: {nc} rows")
     click.echo(f"gaps.csv: {ng} rows")
@@ -433,6 +436,7 @@ def report(db_path: str):
     click.echo(f"master_provenance.csv: {np_} rows")
     click.echo(f"primer_corrections.csv: {npc} rows")
     click.echo(f"master.json: {nj} works")
+    click.echo(f"photo_queue.csv: {n_photo_ready} works ready-when-photographed")
     click.echo("reports/*.md written")
 
 

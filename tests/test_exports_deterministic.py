@@ -116,6 +116,46 @@ def test_provenance_report_excludes_resolution_sources_from_conflict_counts(tmp_
     assert "| classification | 2 |" not in section
 
 
+def test_photo_queue_splits_ready_vs_needs_metadata(tmp_path: Path):
+    """photo_queue_report buckets photo-blocked works into:
+      - ready_when_photographed (has cls + medium) → in the headline count
+      - still_needs_metadata    (lacks cls or medium) → listed but excluded
+    External (sub-inventory) works should not appear at all.
+    """
+    db = init_db(tmp_path / "t.db")
+    # Ready: has title + cls + medium, no image
+    _seed(db, "KG-ready", "title", "Ready Buddha", "artsy_csv")
+    _seed(db, "KG-ready", "classification", "Sculpture", "artsy_csv")
+    _seed(db, "KG-ready", "medium", "Bronze", "artsy_csv")
+    # Needs metadata: has title + image-missing, lacks medium
+    _seed(db, "KG-needs", "title", "Half-ready Buddha", "artsy_csv")
+    _seed(db, "KG-needs", "classification", "Sculpture", "artsy_csv")
+    # Already eligible: has image — should be excluded
+    _seed(db, "KG-eligible", "title", "Already photographed", "artsy_csv")
+    _seed(db, "KG-eligible", "classification", "Sculpture", "artsy_csv")
+    _seed(db, "KG-eligible", "medium", "Bronze", "artsy_csv")
+    _seed(db, "KG-eligible", "primary_image_url", "http://x/y.jpg", "artsy_csv")
+    # External sub-inventory — should never appear
+    _seed(db, "UNRESOLVED-ext", "title", "External record", "sub_inventory")
+    _seed(db, "UNRESOLVED-ext", "status", "external", "sub_inventory")
+    consolidate(db)
+
+    md_path = tmp_path / "pq.md"
+    csv_path = tmp_path / "pq.csv"
+    _, n_ready = reports.photo_queue_report(db, md_path, csv_path)
+    text = md_path.read_text()
+
+    assert n_ready == 1
+    assert "1 active works become Artsy-eligible" in text
+    assert "KG-ready" in text
+    # The metadata-needing work is listed but not in the headline count.
+    assert "KG-needs" in text
+    assert "Still needs metadata" in text
+    # Already-eligible and external must NOT appear.
+    assert "KG-eligible" not in text
+    assert "UNRESOLVED-ext" not in text
+
+
 def test_conflicts_csv_preserves_comma_values(tmp_path: Path):
     """Values like 'Drawing, Collage or other Work on Paper' contain commas.
     The exporter must not split them into distinct entries — earlier
