@@ -459,7 +459,9 @@ def overview(as_json: bool, db_path: str):
     artsy_ready = db.execute("""SELECT COUNT(*) FROM works
         WHERE COALESCE(status,'active') = 'active'
           AND title IS NOT NULL AND classification IS NOT NULL
-          AND medium IS NOT NULL AND primary_image_url IS NOT NULL""").fetchone()[0]
+          AND medium IS NOT NULL AND primary_image_url IS NOT NULL
+          AND LOWER(TRIM(title)) NOT IN
+              ('need title','no title','tbd','placeholder','(no title)','untitled?')""").fetchone()[0]
     n_artist = db.execute(
         "SELECT COUNT(*) FROM works WHERE artist IS NOT NULL"
     ).fetchone()[0]
@@ -505,6 +507,8 @@ def stats(as_json: bool, db_path: str):
         WHERE COALESCE(status,'active') = 'active'
           AND title IS NOT NULL AND classification IS NOT NULL
           AND medium IS NOT NULL AND primary_image_url IS NOT NULL
+          AND LOWER(TRIM(title)) NOT IN
+              ('need title','no title','tbd','placeholder','(no title)','untitled?')
     """).fetchone()[0]
     # Blocked = active works that aren't yet eligible.  External
     # sub-inventory records (Graham etc.) are excluded from both — they
@@ -1403,7 +1407,9 @@ def timeline(db_path: str, out_path: str, show: bool):
     artsy_ready = db.execute("""SELECT COUNT(*) FROM works
         WHERE COALESCE(status,'active') = 'active'
           AND title IS NOT NULL AND classification IS NOT NULL
-          AND medium IS NOT NULL AND primary_image_url IS NOT NULL""").fetchone()[0]
+          AND medium IS NOT NULL AND primary_image_url IS NOT NULL
+          AND LOWER(TRIM(title)) NOT IN
+              ('need title','no title','tbd','placeholder','(no title)','untitled?')""").fetchone()[0]
     attributed = db.execute(
         "SELECT COUNT(*) FROM works WHERE artist IS NOT NULL"
     ).fetchone()[0]
@@ -2098,14 +2104,17 @@ def check_artsy(csv_path: str):
             if not title:
                 issues.append(("error", wid, "title is empty"))
             else:
-                # Placeholder titles slip through too easily — flag them
-                # so the curator catches them before Artsy does.
-                if title.strip().lower() in {
-                    "need title", "untitled", "no title", "tbd",
-                    "placeholder", "(no title)",
-                }:
-                    issues.append(("warn", wid,
-                        f"title {title!r} looks like a placeholder"))
+                tl = title.strip().lower()
+                # Internal placeholders that must NEVER reach Artsy — hard
+                # error, the gallery has to supply a real title (or decide
+                # the work is genuinely Untitled).
+                if tl in {"need title", "no title", "tbd", "placeholder",
+                          "(no title)", "untitled?"}:
+                    issues.append(("error", wid,
+                        f"title {title!r} is an internal placeholder — "
+                        f"supply a real title or set it to 'Untitled'"))
+                # "Untitled" is a legitimate art title (many works genuinely
+                # are); Artsy accepts it.  Don't flag it as a problem.
                 if len(title) > 500:
                     issues.append(("warn", wid,
                         f"title is {len(title)} chars — Artsy may truncate"))

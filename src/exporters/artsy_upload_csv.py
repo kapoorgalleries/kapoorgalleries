@@ -1,7 +1,8 @@
 """Build the Artsy bulk-upload CSV (only Artsy-eligible rows).
 
 Eligibility: status='active' AND title/classification/medium/primary_image_url
-are all populated. Output columns match the Artsy template exactly.
+are all populated AND the title is not an internal placeholder. Output
+columns match the Artsy template exactly.
 """
 
 from __future__ import annotations
@@ -10,6 +11,12 @@ import csv
 from pathlib import Path
 
 import sqlite_utils
+
+# Internal placeholders that must never reach Artsy.  "Untitled" is NOT
+# here — it's a legitimate art title that Artsy accepts.
+PLACEHOLDER_TITLES = {
+    "need title", "no title", "tbd", "placeholder", "(no title)", "untitled?",
+}
 
 ARTSY_HEADER = [
     "Inventory ID (OPTIONAL)",
@@ -42,6 +49,11 @@ def export_artsy_upload(db: sqlite_utils.Database, out_path: Path | str) -> int:
              AND primary_image_url IS NOT NULL
            ORDER BY work_id"""
     ).fetchall()
+    # Hold back works whose "title" is an internal placeholder — they'd
+    # publish e.g. the literal string "Need title" to Artsy.  They're
+    # surfaced by `kg-inv check-artsy` and need a real title first.
+    rows = [r for r in rows
+            if (r[2] or "").strip().lower() not in PLACEHOLDER_TITLES]
     with out.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(ARTSY_HEADER)

@@ -343,6 +343,28 @@ def test_check_artsy_runs(tmp_path: Path):
     assert result.exit_code == 0, result.output
 
 
+def test_check_artsy_distinguishes_untitled_from_need_title(tmp_path: Path):
+    """'Untitled' is a valid art title (no flag); 'Need title' is an
+    internal placeholder that must error before reaching Artsy."""
+    p = tmp_path / "upload.csv"
+    header = ('"Inventory ID (OPTIONAL)","Artist Name ","Title ","Year ",'
+              '"Price ","Medium ","Materials ","Height ","Width ",Depth,'
+              '"Certificate of Authenticity ","Signature ","Classification "\n')
+    p.write_text(
+        header +
+        'KG-ok,Unknown,Untitled,1850,,Watercolor,,8,10,,,,Painting\n'
+        'KG-bad,Unknown,Need title,1850,,Watercolor,,8,10,,,,Painting\n'
+    )
+    runner = CliRunner()
+    result = runner.invoke(cli, ["check-artsy", "--file", str(p)])
+    assert result.exit_code == 0, result.output
+    # The placeholder is a hard error...
+    assert "KG-bad" in result.output
+    assert "internal placeholder" in result.output
+    # ...and 'Untitled' is NOT flagged.
+    assert "KG-ok" not in result.output
+
+
 def test_timeline_appends_and_dedups_same_day(tmp_path: Path):
     """timeline should append one row per day; running it twice the
     same day must replace, not duplicate."""
