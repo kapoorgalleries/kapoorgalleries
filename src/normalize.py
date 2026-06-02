@@ -10,6 +10,14 @@ from __future__ import annotations
 import re
 from typing import Optional
 
+# Internal placeholder titles that must never reach Artsy.  "Untitled" is
+# deliberately NOT here — it's a legitimate art title that Artsy accepts.
+# Shared by check-artsy, the artsy_upload exporter, and lint so the three
+# never drift apart.
+INTERNAL_PLACEHOLDER_TITLES = frozenset({
+    "need title", "no title", "tbd", "placeholder", "(no title)", "untitled?",
+})
+
 DIM_FRACTIONS = {
     "1/8": 0.125, "1/4": 0.25, "3/8": 0.375, "1/2": 0.5,
     "5/8": 0.625, "3/4": 0.75, "7/8": 0.875, "1/3": 0.333, "2/3": 0.667,

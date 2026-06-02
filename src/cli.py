@@ -15,6 +15,7 @@ from .exporters import (
     artsy_upload_csv, conflicts_csv, gaps_csv, master_csv, master_json,
     primer_corrections_csv, provenance_csv,
 )
+from .normalize import INTERNAL_PLACEHOLDER_TITLES
 
 INGESTERS = {
     "artsy_csv": ("src.ingest.artsy_csv", "ArtsyCsvIngester"),
@@ -1665,11 +1666,16 @@ def lint(db_path: str):
         findings.append(("warn", r[0], "title has leading/trailing whitespace"))
 
     # Placeholder titles ("Need title", "Untitled", etc. en masse).
+    # Internal placeholder titles that must be replaced before upload.
+    # "Untitled" is deliberately excluded — it's a valid art title that
+    # Artsy accepts (shared set in normalize.INTERNAL_PLACEHOLDER_TITLES,
+    # consistent with check-artsy and artsy_upload_csv).
+    _ph = ",".join("?" * len(INTERNAL_PLACEHOLDER_TITLES))
     placeholders = db.execute(
-        """SELECT title, COUNT(*) FROM works
-           WHERE LOWER(TRIM(title)) IN ('need title', 'untitled', 'no title',
-                                         'tbd', 'placeholder')
-           GROUP BY LOWER(TRIM(title))"""
+        f"""SELECT title, COUNT(*) FROM works
+           WHERE LOWER(TRIM(title)) IN ({_ph})
+           GROUP BY LOWER(TRIM(title))""",
+        sorted(INTERNAL_PLACEHOLDER_TITLES),
     ).fetchall()
     for title, n in placeholders:
         if n >= 5:
@@ -2108,8 +2114,7 @@ def check_artsy(csv_path: str):
                 # Internal placeholders that must NEVER reach Artsy — hard
                 # error, the gallery has to supply a real title (or decide
                 # the work is genuinely Untitled).
-                if tl in {"need title", "no title", "tbd", "placeholder",
-                          "(no title)", "untitled?"}:
+                if tl in INTERNAL_PLACEHOLDER_TITLES:
                     issues.append(("error", wid,
                         f"title {title!r} is an internal placeholder — "
                         f"supply a real title or set it to 'Untitled'"))

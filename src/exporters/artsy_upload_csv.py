@@ -12,11 +12,7 @@ from pathlib import Path
 
 import sqlite_utils
 
-# Internal placeholders that must never reach Artsy.  "Untitled" is NOT
-# here — it's a legitimate art title that Artsy accepts.
-PLACEHOLDER_TITLES = {
-    "need title", "no title", "tbd", "placeholder", "(no title)", "untitled?",
-}
+from ..normalize import INTERNAL_PLACEHOLDER_TITLES
 
 ARTSY_HEADER = [
     "Inventory ID (OPTIONAL)",
@@ -53,7 +49,7 @@ def export_artsy_upload(db: sqlite_utils.Database, out_path: Path | str) -> int:
     # publish e.g. the literal string "Need title" to Artsy.  They're
     # surfaced by `kg-inv check-artsy` and need a real title first.
     rows = [r for r in rows
-            if (r[2] or "").strip().lower() not in PLACEHOLDER_TITLES]
+            if (r[2] or "").strip().lower() not in INTERNAL_PLACEHOLDER_TITLES]
     with out.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(ARTSY_HEADER)
