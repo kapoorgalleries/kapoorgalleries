@@ -217,11 +217,12 @@
 
 # --- Travel / advertising posters -> Posters on Artsy ---
 # Curator decision (2026-05-28): vintage travel & airline posters go in
-# Artsy's dedicated "Posters" category, not the broad "Drawing, Collage
-# or other Work on Paper" bucket.  (Earlier rules mapped them to
-# Drawing/Collage; reversed per owner.)
+# Artsy's dedicated "Posters" category.  Each rule excludes airline
+# ephemera (tickets, timetables, postcards, menus, pamphlets) which
+# share the same brand prefix but aren't posters.
 - if:
     title_contains: "Visit India"
+    title_excludes: ["ticket", "timetable", "postcard", "menu", "pamphlet", "brochure"]
   then:
     classification: "Posters"
     medium: "Lithographic print on paper"
@@ -235,15 +236,18 @@
 
 - if:
     title_contains: "Sabena"
+    title_excludes: ["ticket", "timetable", "postcard", "menu", "pamphlet", "brochure"]
   then:
     classification: "Posters"
   reason: "Sabena India travel poster."
 
 - if:
     title_contains: "Air India"
+    title_excludes: ["ticket", "timetable", "postcard", "menu", "pamphlet", "brochure",
+                     "safety", "in flight", "in-flight"]
   then:
     classification: "Posters"
-  reason: "Air India advertising posters belong in Artsy's Posters category."
+  reason: "Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets)."
 
 # --- Talwars / shamshirs without explicit medium -> steel/iron weapon medium ---
 - if:

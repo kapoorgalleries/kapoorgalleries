@@ -51,6 +51,8 @@ KG-1248,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1261,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
 KG-1262,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
 KG-1263,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-1276,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1276,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
 KG-1289,medium,,Watered steel; gold-koftgari hilt,auto_resolution,Talwars are typically gold-koftgari watered-steel sabres.
 KG-1290,medium,,Watered steel; gold-koftgari hilt,auto_resolution,Talwars are typically gold-koftgari watered-steel sabres.
 KG-1312,title,Vasishtha Teaches Rama and Lakshmana,Battle between Banasura and Krishna,bulk_upload_xlsx,(per bulk_upload_xlsx)
@@ -76,6 +78,8 @@ KG-1337,classification,"Drawing, Collage or other Work on Paper",Posters,auto_re
 KG-1337,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1338,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1338,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1339,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1339,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
 KG-1341,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
 KG-1342,classification,Print,Posters,auto_resolution,Sabena India travel poster.
 KG-1344,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
@@ -91,15 +95,41 @@ KG-1354,classification,,Posters,auto_resolution,Visit-India travel posters belon
 KG-1354,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1355,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1355,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1356,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1356,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
 KG-1357,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1358,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1358,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1359,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1359,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
 KG-1360,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1360,medium,,Color lithograph on paper,human_resolution,Period print of Indian temple subject.
 KG-1361,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1361,medium,,Color lithograph on paper,human_resolution,Period print of Indian temple subject.
-KG-1363,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1362,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1362,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1363,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
 KG-1363,medium,,Linen backed color lithograph,human_resolution,Air India poster — matches the cohort.
-KG-1367,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1364,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1364,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1366,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1366,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1367,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
 KG-1367,medium,,Linen backed color lithograph,human_resolution,Air India poster — matches the cohort.
+KG-1368,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1368,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1369,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1369,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1370,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1370,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1371,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1371,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1372,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1372,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1373,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1373,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1374,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1374,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
 KG-1377,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1377,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1378,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
@@ -113,12 +143,12 @@ KG-1386,classification,Print,Sculpture,auto_resolution,Stone works are sculpture
 KG-1387,classification,Print,Posters,artsy_csv,(per artsy_csv)
 KG-1388,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1388,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
-KG-1389,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-1390,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-1391,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-1392,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-1393,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-1394,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-1389,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1390,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1391,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1392,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1393,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1394,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
 KG-1400,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1401,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1402,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -127,6 +157,8 @@ KG-1405,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-1406,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1415,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1424,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1425,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1425,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
 KG-1427,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1429,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1430,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -200,10 +232,16 @@ KG-1521,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-1522,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1523,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1524,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1525,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1525,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
 KG-1526,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1527,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1528,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1529,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1530,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1530,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1531,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1531,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
 KG-1532,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1533,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1534,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -219,6 +257,8 @@ KG-1544,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-1545,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1546,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1547,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1548,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1548,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
 KG-1549,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1550,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1551,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -238,6 +278,8 @@ KG-1565,classification,,"Drawing, Collage or other Work on Paper",auto_resolutio
 KG-1566,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1567,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1568,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1569,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1569,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
 KG-1570,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1571,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1572,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -250,6 +292,8 @@ KG-1580,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1581,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1582,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1583,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1584,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1584,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
 KG-1585,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1586,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1587,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -599,12 +643,18 @@ KG-2278,classification,miniature,"Drawing, Collage or other Work on Paper",auto_
 KG-2279,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2281,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2282,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
-KG-2283,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-2284,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-2285,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-2286,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-2287,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-2288,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-2283,classification,,Ephemera or Merchandise,human_resolution,"Air India postcard set — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2283,medium,,Set of printed postcards,human_resolution,"Air India postcard set — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2284,classification,,Ephemera or Merchandise,human_resolution,"Air India airline ticket — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2284,medium,,Printed airline ticket,human_resolution,"Air India airline ticket — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2285,classification,,Ephemera or Merchandise,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2285,medium,,Printed booklet,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2286,classification,,Ephemera or Merchandise,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2286,medium,,Printed booklet,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2287,classification,,Ephemera or Merchandise,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2287,medium,,Printed booklet,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2288,classification,,Ephemera or Merchandise,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2288,medium,,Printed booklet,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
 KG-2289,classification,miniature,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2290,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2291,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -612,8 +662,10 @@ KG-2294,classification,paintings,"Drawing, Collage or other Work on Paper",auto_
 KG-2295,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2297,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2298,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
-KG-2299,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
-KG-2300,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
+KG-2299,classification,,Ephemera or Merchandise,human_resolution,"Air India in-flight menu — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2299,medium,,Printed menu card,human_resolution,"Air India in-flight menu — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2300,classification,,Ephemera or Merchandise,human_resolution,"Air India safety pamphlet — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2300,medium,,Printed pamphlet,human_resolution,"Air India safety pamphlet — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
 KG-2303,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2307,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2309,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.

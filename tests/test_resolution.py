@@ -68,6 +68,33 @@ def test_auto_resolution_fills_gap_without_creating_a_conflict(tmp_path: Path):
     assert row[1] == 0
 
 
+def test_auto_resolution_title_excludes_skips_ephemera(tmp_path: Path):
+    """`title_excludes: [<token>, ...]` lets a `title_contains` rule
+    skip false-positive cohorts.  The Air India rule should hit posters
+    but not tickets/timetables/menus."""
+    db = init_db(tmp_path / "t.db")
+    _seed_observation(db, "KG-poster", "title", "Air India Around the World", "artsy_csv")
+    _seed_observation(db, "KG-ticket", "title", "Air India 3.31.1993 Ticket BOM - LDN", "artsy_csv")
+    _seed_observation(db, "KG-menu",   "title", "Air India Boeing 707 In Flight Menu", "artsy_csv")
+
+    rp = tmp_path / "rules.yaml"
+    rp.write_text(yaml.safe_dump([
+        {"if": {"title_contains": "Air India",
+                "title_excludes": ["ticket", "menu", "timetable"]},
+         "then": {"classification": "Posters"},
+         "reason": "Air India posters only"},
+    ]))
+    res = AutoResolutionIngester(rp, db=db).run()
+    sid = upsert_source(db, res.source)
+    insert_observations(db, sid, res.observations)
+    consolidate(db)
+
+    fired_works = {o.work_id for o in res.observations}
+    assert "KG-poster" in fired_works
+    assert "KG-ticket" not in fired_works
+    assert "KG-menu" not in fired_works
+
+
 def test_auto_resolution_does_not_inflate_conflict_count(tmp_path: Path):
     """Primer says X, auto-resolution says Y: the underlying observed sources
     only have one value, so no conflict — auto_resolution is a *resolution*,

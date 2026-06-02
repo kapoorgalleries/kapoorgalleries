@@ -116,11 +116,20 @@ class AutoResolutionIngester(Ingester):
 def _matches(db: sqlite_utils.Database, work_id: str, cond: dict) -> bool:
     """Evaluate the `if:` clause for one work."""
     for key, expected in cond.items():
-        # Patterns: <field>_contains, <field>_eq, <field>_in
+        # Patterns: <field>_contains, <field>_excludes, <field>_eq, <field>_in
         if key.endswith("_contains"):
             field = key[: -len("_contains")]
             actual = (_get_observed(db, work_id, field) or "").lower()
             if str(expected).lower() not in actual:
+                return False
+        elif key.endswith("_excludes"):
+            # Negation: rule matches only when actual does NOT contain
+            # any of the listed tokens.  Lets a "title contains 'Air
+            # India'" rule skip "Air India Timetable" / "...Postcards".
+            field = key[: -len("_excludes")]
+            actual = (_get_observed(db, work_id, field) or "").lower()
+            tokens = expected if isinstance(expected, list) else [expected]
+            if any(str(t).lower() in actual for t in tokens):
                 return False
         elif key.endswith("_eq"):
             field = key[: -len("_eq")]
