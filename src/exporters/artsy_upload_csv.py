@@ -14,20 +14,25 @@ import sqlite_utils
 
 from ..normalize import INTERNAL_PLACEHOLDER_TITLES
 
+# EXACT headers from the official Artsy bulk-upload template
+# (data/raw/Kapoor_Galleries_Bulk_upload_Template_Artsy.xlsx), including
+# the literal newlines Artsy embeds.  Artsy's importer matches columns by
+# header string, so these must be byte-for-byte identical to the template
+# or the columns won't map.  Do not "tidy" the \n into spaces.
 ARTSY_HEADER = [
-    "Inventory ID (OPTIONAL)",
-    "Artist Name ",
-    "Title ",
-    "Year ",
-    "Price ",
-    "Medium ",
-    "Materials ",
-    "Height ",
-    "Width ",
+    "Inventory ID \n (OPTIONAL)",
+    "Artist Name\n",
+    "Title\n",
+    "Year\n",
+    "Price\n",
+    "Medium\n",
+    "Materials\n",
+    "Height\n",
+    "Width\n",
     "Depth",
-    "Certificate of Authenticity ",
-    "Signature ",
-    "Classification ",
+    "Certificate of Authenticity\n",
+    "Signature\n",
+    "Classification\n",
 ]
 
 

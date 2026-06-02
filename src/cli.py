@@ -2090,12 +2090,18 @@ def check_artsy(csv_path: str):
     p = Path(csv_path)
     if not p.exists():
         raise click.ClickException(f"{csv_path} doesn't exist. Run `make all` first.")
+    def _norm_key(k: str) -> str:
+        # Artsy's template headers contain internal newlines
+        # ("Inventory ID \n (OPTIONAL)", "Title\n").  Collapse all
+        # whitespace runs to a single space and strip, so lookups by the
+        # clean name work regardless of the raw header form.
+        import re as _re
+        return _re.sub(r"\s+", " ", (k or "")).strip()
+
     with p.open(newline="") as fh:
         reader = csv.DictReader(fh)
-        # Strip column whitespace
-        reader.fieldnames = [(c or "").strip() for c in (reader.fieldnames or [])]
         for i, row in enumerate(reader, start=2):
-            row = {k.strip(): (v or "").strip() for k, v in row.items()}
+            row = {_norm_key(k): (v or "").strip() for k, v in row.items()}
             wid = row.get("Inventory ID (OPTIONAL)") or f"row{i}"
 
             title = row.get("Title")

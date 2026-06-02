@@ -1,4 +1,16 @@
-Inventory ID (OPTIONAL),Artist Name ,Title ,Year ,Price ,Medium ,Materials ,Height ,Width ,Depth,Certificate of Authenticity ,Signature ,Classification 
+"Inventory ID 
+ (OPTIONAL)","Artist Name
+","Title
+","Year
+","Price
+","Medium
+","Materials
+","Height
+","Width
+",Depth,"Certificate of Authenticity
+","Signature
+","Classification
+"
 KG-1000,Unknown Artist,A Guru and Student in the Wilderness,1850,,Opaque Watercolor on Paper,Opaque Watercolor on Paper,8.125,11.125,,,No signature,"Drawing, Collage or other Work on Paper"
 KG-1001,Unknown Artist,Composite Horse and Rider,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,8.5,6.0,,,No signature,"Drawing, Collage or other Work on Paper"
 KG-1002,Unknown Artist,Folio from an Usha-Aniruddha Series: Chitralekha Visits Aniruddha in Dwarka,1840,,Gouache and gold on paper,Gouache and gold on paper,9.0,12.0,,,No signature,"Drawing, Collage or other Work on Paper"
