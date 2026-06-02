@@ -10,7 +10,7 @@ KG-1008,Unknown Artist,Head of a Bodhisattva - Gray Schist,,9000.0,Gray Schist,G
 KG-1009,Unknown Artist,Frieze with three Boddhisattvas,,,Blue Grey Schist,Blue Grey Schist,12.0,18.0,4.0,,No signature,Sculpture
 KG-1010,Unknown Artist,A gray schist relief of Panchika and Hariti,,,Schist,Schist,19.0,18.0,7.0,,No signature,Sculpture
 KG-1011,Unknown Artist,A Great Indian Fruit Bat (Flying Fox),,350000.0,Watercolor on Whatman paper,Watercolor on Whatman paper,8.0,13.0,,,No signature,"Drawing, Collage or other Work on Paper"
-KG-1012,Unknown Artist,Jeweled Khanjar (dagger),,,Jade-hilted dagger with steel blade,Jade-hilted and jeweled Khanjar,15.0,,,,No signature,Design/Decorative Art
+KG-1012,Unknown Artist,Jeweled Khanjar (dagger),,,Jade-hilted and jeweled Khanjar,Jade-hilted and jeweled Khanjar,15.0,,,,No signature,Design/Decorative Art
 KG-1013,Unknown Artist,Shishupal and his Retinue: Bhagavata Purana,1775,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,11.0,8.0,,,No signature,"Drawing, Collage or other Work on Paper"
 KG-1014,Unknown Artist,Mahakala Shadbhuja,,35000.0,Bronze with polychrome,Bronze with polychrome,6.0,,,,No signature,Sculpture
 KG-1015,Unknown Artist,Krishna with sage Narada,,,Opaque watercolor heightened with gold on paper,Opaque watercolor heightened with gold on paper,6.0,9.0,,,No signature,"Drawing, Collage or other Work on Paper"
@@ -68,7 +68,7 @@ KG-1089,Unknown Artist,NOT IN KG COLLECTION Gray schist relief of an Elderly Asc
 KG-1090,Unknown Artist,A Gray Schist Torso of Maitreya,101,,Schist,Schist,,,,,,Sculpture
 KG-1091,Unknown Artist,Panchamukhalinga,1301,,Red Sandstone,Red Sandstone,,,,,,Sculpture
 KG-1092,Unknown Artist,Torso of Buddha,1501,,Sandstone,Sandstone,,,,,,Sculpture
-KG-1093,Unknown Artist,Krishna as Vishvarupa,,120000.0,Thangka -Opaque watercolor on cloth,Thangka -Opaque watercolor on cloth,56.0,36.0,,,,Painting
+KG-1093,Unknown Artist,Krishna as Vishvarupa,,120000.0,Opaque watercolor on cloth,Opaque watercolor on cloth,56.0,36.0,,,,Painting
 KG-1094,Unknown Artist,Illustration from a Kama Sutra series,,,Illustration,Illustration,,,,,,Painting
 KG-1095,Unknown Artist,Illustration from a Kama Sutra series,,,Illustration,Illustration,,,,,,Painting
 KG-1096,Unknown Artist,Illustration from a Kama Sutra series,,,Illustration,Illustration,,,,,,Painting
@@ -306,7 +306,7 @@ KG-1343,Unknown Artist,India via Bank of America,1950,,Linen backed poster,Linen
 KG-1344,Unknown Artist,India via Bank of America,1950,,Linen backed poster,Linen backed poster,,,,,,Posters
 KG-1345,Unknown Artist,"India, Fly Qantas",1965,,Linen backed poster,Linen backed poster,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1346,Unknown Artist,Colorful Middle East,1960,,Linen backed poster,Linen backed poster,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1347,Unknown Artist,"Kashmir, India",,,"Offset a Litho Works, Bombay 27.","Offset a Litho Works, Bombay 27.",,,,,,Print
+KG-1347,Unknown Artist,"Kashmir, India",,,"Offset a Litho Works, Bombay 27.","Offset a Litho Works, Bombay 27.",,,,,,Posters
 KG-1348,Unknown Artist,Darjeeling and Kanchanjunga,,,Poster,Poster,,,,,,Posters
 KG-1349,Unknown Artist,"Banaras, See India",1954,,Poster,Poster,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1350,Unknown Artist,"Banaras, See India",1954,,Poster,Poster,,,,,,"Drawing, Collage or other Work on Paper"
@@ -322,12 +322,12 @@ KG-1378,Unknown Artist,Mount Abu/Visit India,1950,,Lithographic print on paper,L
 KG-1379,Unknown Artist,See Ceylon,1948,,Linen-backed poster,Linen-backed poster,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1380,Unknown Artist,"Simla, See India",,,Poster,Poster,,,,,,Posters
 KG-1381,Unknown Artist,"Indian State Railways, Kashmir",1930,,Poster,Poster,,,,,,Posters
-KG-1382,Unknown Artist,Simla,1930,,Color lithograph,Color lithograph,,,,,,Print
+KG-1382,Unknown Artist,Simla,1930,,Color lithograph,Color lithograph,,,,,,Posters
 KG-1383,Unknown Artist,Kashmir / Indian Railways,,,Linen backed color lithograph,Linen backed color lithograph,,,,,,Print
 KG-1384,Unknown Artist,Kashmir,1930,,Linen backed color stone lithograph,Linen backed color stone lithograph,,,,,,Sculpture
 KG-1385,Unknown Artist,"East Indian Railway, Banaras",1938,,Linen backed color stone lithograph,Linen backed color stone lithograph,,,,,,Sculpture
 KG-1386,Unknown Artist,India / The Wonderful Land,1958,,Linen backed color stone lithograph,Linen backed color stone lithograph,,,,,,Sculpture
-KG-1387,Unknown Artist,Fly Jet to India / Pan American World Airways,1950,,Linen backed color stone lithograph,Linen backed color stone lithograph,,,,,,Sculpture
+KG-1387,Unknown Artist,Fly Jet to India / Pan American World Airways,1950,,Linen backed color stone lithograph,Linen backed color stone lithograph,,,,,,Posters
 KG-1388,Unknown Artist,"Visit India, Hindu Temple",1953,,Lithographic print on paper,Lithographic print on paper,,,,,,Posters
 KG-1389,Unknown Artist,"Air India, there is an air about India",1968,,Poster,Poster,,,,,,Posters
 KG-1390,Unknown Artist,"Air India, India",1964,,Poster,Poster,,,,,,Posters
@@ -382,7 +382,7 @@ KG-1439,Unknown Artist,Tahmina Displays her Strength,1401,,Gouache and gold on p
 KG-1440,Unknown Artist,Slaughter of a Brahman Bull,1501,,Opaque watercolor on paper,Opaque watercolor on paper,,,,,,Painting
 KG-1441,Unknown Artist,Man Attacked by a Bear,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1442,Unknown Artist,Decorative Cranes,1901,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
-KG-1443,Unknown Artist,Calligraphy Page,1801,,"Gouache and gold on paper, Manuscript","Gouache and gold on paper, Manuscript",,,,,,"Drawing, Collage or other Work on Paper"
+KG-1443,Unknown Artist,Calligraphy Page,1801,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1444,Unknown Artist,Two Persian Paintings,1901,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1445,Unknown Artist,Rustam Demanding Surrender,1501,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"
 KG-1446,Unknown Artist,The Last Wishes of Danali,1501,,Gouache and gold on paper,Gouache and gold on paper,,,,,,"Drawing, Collage or other Work on Paper"

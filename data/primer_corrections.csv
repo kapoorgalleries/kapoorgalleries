@@ -22,7 +22,6 @@ KG-1008,materials,,Gray Schist,match_workbook,(filled from match_workbook)
 KG-1009,materials,,Blue Grey Schist,match_workbook,(filled from match_workbook)
 KG-1010,materials,,Schist,match_workbook,(filled from match_workbook)
 KG-1011,materials,,Watercolor on Whatman paper,match_workbook,(filled from match_workbook)
-KG-1012,medium,Jade-hilted and jeweled Khanjar,Jade-hilted dagger with steel blade,auto_resolution,Khanjars are jade-hilted daggers with steel blades.
 KG-1012,materials,,Jade-hilted and jeweled Khanjar,match_workbook,(filled from match_workbook)
 KG-1013,materials,,Opaque watercolor heightened with gold on paper,match_workbook,(filled from match_workbook)
 KG-1014,materials,,Bronze with polychrome,match_workbook,(filled from match_workbook)
@@ -37,6 +36,7 @@ KG-1038,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-1069,medium,A Ram’s Head Shamshir,Watered-steel blade with carved hilt,auto_resolution,Shamshirs are curved watered-steel sabres.
 KG-1082,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-1083,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1093,medium,Thangka -Opaque watercolor on cloth,Opaque watercolor on cloth,artsy_csv,(per artsy_csv)
 KG-1111,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1112,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1136,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -76,6 +76,7 @@ KG-1338,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,V
 KG-1341,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
 KG-1342,classification,Print,Posters,auto_resolution,Sabena India travel poster.
 KG-1344,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1347,classification,Print,Posters,artsy_csv,(per artsy_csv)
 KG-1348,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
 KG-1351,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1351,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
@@ -96,10 +97,11 @@ KG-1378,classification,"Drawing, Collage or other Work on Paper",Posters,auto_re
 KG-1378,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1380,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
 KG-1381,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1382,classification,Print,Posters,artsy_csv,(per artsy_csv)
 KG-1384,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1385,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
 KG-1386,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
-KG-1387,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1387,classification,Print,Posters,artsy_csv,(per artsy_csv)
 KG-1388,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1388,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
 KG-1389,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category.
@@ -121,6 +123,7 @@ KG-1429,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings
 KG-1430,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1431,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1440,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1443,medium,"Gouache and gold on paper, Manuscript",Gouache and gold on paper,artsy_csv,(per artsy_csv)
 KG-1450,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1452,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-1453,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
@@ -395,6 +398,7 @@ KG-1813,height_in,,34.5,price_list_pdf,(filled from price_list_pdf)
 KG-1813,width_in,,23.5,price_list_pdf,(filled from price_list_pdf)
 KG-1813,provenance_text,,"Provenance: Southern Alleghenies Museum of Art (SAMA). Exhibited: ""Mirrors of the Heart-Mind"" at SAMA in 1988. Published: Himalayan Art Resources (himalayanart.org), item no. 90527. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
 KG-1813,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-1814,title,Dipankara Buddha with Arhats Deities Thangka,Dipankara Buddha with Arhats Deities,price_list_pdf,(per price_list_pdf)
 KG-1814,height_in,,25.5,price_list_pdf,(filled from price_list_pdf)
 KG-1814,width_in,,20.0,price_list_pdf,(filled from price_list_pdf)
 KG-1814,provenance_text,,"Provenance: Southern Alleghenies Museum of Art (SAMA). www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
@@ -483,6 +487,7 @@ KG-2098,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-2100,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2102,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2105,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2106,title,Tibetan Thangka depicting Saddha (Milarepa),Tibetan Thangka depicting Saddha,price_list_pdf,(per price_list_pdf)
 KG-2106,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2106,provenance_text,,Provenance: Property from the José M. Neistein Collection.,price_list_pdf,(filled from price_list_pdf)
 KG-2106,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
@@ -546,6 +551,7 @@ KG-2213,classification,Painting,"Drawing, Collage or other Work on Paper",auto_r
 KG-2214,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2215,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2216,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2224,title,Thangka Of Two Trailokyavijaya Mandalas with Ganapathi,Thangka Of Two Trailokyavijaya Mandalas,price_list_pdf,(per price_list_pdf)
 KG-2224,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2227,classification,Design/Decorative Art,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-2228,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.

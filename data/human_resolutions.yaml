@@ -2097,3 +2097,132 @@
     decision 2026-05-28; artsy_csv (Primer) had the correct value.
   decided_by: sanjay@kapoors.com
   decided_at: '2026-05-28'
+- work_id: KG-1342
+  field: classification
+  value: Posters
+  reason: "Airline/travel posters (Sabena, Pan Am, Kashmir, Simla) \u2014 same category\
+    \ as the 25 already resolved 2026-05-28. Lithographic medium but functionally\
+    \ and on Artsy these are Posters, not generic Prints."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1347
+  field: classification
+  value: Posters
+  reason: "Airline/travel posters (Sabena, Pan Am, Kashmir, Simla) \u2014 same category\
+    \ as the 25 already resolved 2026-05-28. Lithographic medium but functionally\
+    \ and on Artsy these are Posters, not generic Prints."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1382
+  field: classification
+  value: Posters
+  reason: "Airline/travel posters (Sabena, Pan Am, Kashmir, Simla) \u2014 same category\
+    \ as the 25 already resolved 2026-05-28. Lithographic medium but functionally\
+    \ and on Artsy these are Posters, not generic Prints."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1387
+  field: classification
+  value: Posters
+  reason: "Airline/travel posters (Sabena, Pan Am, Kashmir, Simla) \u2014 same category\
+    \ as the 25 already resolved 2026-05-28. Lithographic medium but functionally\
+    \ and on Artsy these are Posters, not generic Prints."
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1407
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Illuminated manuscripts: 21 of 38 manuscripts already classified as Drawing/Collage;
+    using plurality for consistency.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1443
+  field: classification
+  value: Drawing, Collage or other Work on Paper
+  reason: 'Illuminated manuscripts: 21 of 38 manuscripts already classified as Drawing/Collage;
+    using plurality for consistency.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1012
+  field: classification
+  value: Design/Decorative Art
+  reason: match_workbook used "Khanjar" (object type, not a valid Artsy classification).
+    artsy_csv + bulk_upload both say Design/Decorative Art.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1012
+  field: medium
+  value: Jade-hilted and jeweled Khanjar
+  reason: Bulk_upload had the complete medium string; artsy_csv was truncated.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1093
+  field: medium
+  value: Opaque watercolor on cloth
+  reason: Thangka form is captured by classification=Painting; medium string stays
+    clean.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1737
+  field: title
+  value: Shakyamuni
+  reason: Himalayas price list appended century/date to title; the bare title belongs
+    in `title`, century in `year`.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1813
+  field: title
+  value: Large Thangka White Tara Tibetan
+  reason: Himalayas price list appended century/date to title; the bare title belongs
+    in `title`, century in `year`.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1814
+  field: title
+  value: Dipankara Buddha with Arhats Deities
+  reason: Himalayas price list appended century/date to title; the bare title belongs
+    in `title`, century in `year`.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2106
+  field: title
+  value: Tibetan Thangka depicting Saddha
+  reason: Himalayas price list appended century/date to title; the bare title belongs
+    in `title`, century in `year`.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2188
+  field: title
+  value: Arhat/Sthavira (Buddhist Elder)
+  reason: Himalayas price list appended century/date to title; the bare title belongs
+    in `title`, century in `year`.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2224
+  field: title
+  value: Thangka Of Two Trailokyavijaya Mandalas
+  reason: Himalayas price list appended century/date to title; the bare title belongs
+    in `title`, century in `year`.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2375
+  field: title
+  value: White Tara
+  reason: Himalayas price list appended century/date to title; the bare title belongs
+    in `title`, century in `year`.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-2395
+  field: title
+  value: Green Tara
+  reason: Himalayas price list appended century/date to title; the bare title belongs
+    in `title`, century in `year`.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'
+- work_id: KG-1443
+  field: medium
+  value: Gouache and gold on paper
+  reason: Bulk_upload redundantly suffixed 'Manuscript' (form is captured by classification);
+    clean medium string.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-02'

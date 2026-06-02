@@ -199,15 +199,14 @@
     "work_id": "KG-1012",
     "title": "Jeweled Khanjar (dagger)",
     "classification": "Design/Decorative Art",
-    "medium": "Jade-hilted dagger with steel blade",
+    "medium": "Jade-hilted and jeweled Khanjar",
     "materials": "Jade-hilted and jeweled Khanjar",
     "height_in": 15.0,
     "status": "active",
     "signature": "No signature",
     "primary_image_url": "https://data-us-east-1.primerws.com/kapoor_galleries/i/011c1356-2b84-4b21-bbfb-79fc2e9e53d1/Jeweled%20Dagger%20D.jpg?Expires=1802811609&Signature=Y1mpcI74yLmr1wmkTfTz7n9ukZ4LtNBH1A3iK~owYn8982b9EtaxffyAzcpj3IdVgD8-uudhmx6~nyspxl35oJbkA9oKMqlN1sgkQ97AmCsa22nQ64hSPbDCyfpzhDZi9xPEomrpymkXFhqZ6Ti-eDwCSY2Bt6zCnVabJsN~2drxfrr9otSlJKMGDOijMR63P6xwv5RpTAfvbMghkMtaD11GbLr30Q58vhZ6tvs1xK1NUcIt6Lsbjyr4cmgKuWSsbq~oDL2R5ob9T8SyxLM2v15A0o5fnrrvCtqMcOYzc1djn~b-V-hohUW3IPmTtXXsSZHeeOd7LmMqf7wYf8yJ-A__&Key-Pair-Id=K2SVGVHI7PEVAH",
     "primer_uuid": "011c1356-2b84-4b21-bbfb-79fc2e9e53d1",
-    "has_conflict": 1,
-    "conflict_fields": "classification,medium"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-1013",
@@ -1082,15 +1081,14 @@
     "work_id": "KG-1093",
     "title": "Krishna as Vishvarupa",
     "classification": "Painting",
-    "medium": "Thangka -Opaque watercolor on cloth",
+    "medium": "Opaque watercolor on cloth",
     "height_in": 56.0,
     "width_in": 36.0,
     "price_usd": 120000.0,
     "status": "active",
     "primary_image_url": "https://data-us-east-1.primerws.com/kapoor_galleries/i/3ca46540-4e8e-465b-902c-03b7912bf203/Picchvai_T34_large.jpg?Expires=1802811923&Signature=BgquddgGZ6EOIf7CW6L8u5EpXdjjceGfWdNW~WiWVUAmscLIJayUaiXTBuwwLA8ZkfArzfBHmzKRdaZ3kbnu2~J8tk7mo8pODQ4K4g7Jbi274xH~5SFnM4JVLb3qowhqLY1Bm8bxrdkBacBaRlj9kG3sigy1WPxQVx4lWxNE17MilliO-lO4bdXkixvxY~lEcJUDao77Bds7zgegIfFoB5LrZcIfFUOKMhwmXOwZMRieggzwnzcwm7XhLj0UInjOmdj-XzLgTqjjTCqnys-ks2iHgAqFTP8F1Ec4UbVaQiD~18Gz7VMaMolWrS6hQxDB7Ed0yTS~jcfhNBqwc2txBg__&Key-Pair-Id=K2SVGVHI7PEVAH",
     "primer_uuid": "3ca46540-4e8e-465b-902c-03b7912bf203",
-    "has_conflict": 1,
-    "conflict_fields": "medium"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-1094",
@@ -3885,8 +3883,7 @@
     "status": "active",
     "primary_image_url": "https://data-us-east-1.primerws.com/kapoor_galleries/i/dd84c442-658d-42ca-aa6d-f6e6e42efd6d/Copy%20of%20Sabena.jpg?Expires=1802811888&Signature=bn6mJ389m0q7P4TjWn9xM9cAOxY64YZhZ8aZSoNroyyUfWKms7oloaIkTTuWHIV2K1lbNmbXzOXMZczmEWZlx5SUSBaVB62P4Q-kzyRzIgd59Pm~cWJirJvtu3OquXHFe-wuusk3wspTTfe1o6lFpoXv-i4I4a9tYwLMLqz0p3hZBz44kfWzfjsw02pOqQJc5A75Csxvk1qqNnLZXsgxO7Bep3hASeFcX17sFtZZYckGU0vURvsXwRx1ZCFxwh6g28WULF6KIbQlFHCxn24K0AoDJYFoRiTKsqqWlvAMX0s81sImp1lDwbVrisczqCrlDxCs8eBkrOfveYxkgdMVig__&Key-Pair-Id=K2SVGVHI7PEVAH",
     "primer_uuid": "dd84c442-658d-42ca-aa6d-f6e6e42efd6d",
-    "has_conflict": 1,
-    "conflict_fields": "classification"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-1343",
@@ -3935,13 +3932,12 @@
   {
     "work_id": "KG-1347",
     "title": "Kashmir, India",
-    "classification": "Print",
+    "classification": "Posters",
     "medium": "Offset a Litho Works, Bombay 27.",
     "status": "active",
     "primary_image_url": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b8b4bfdd-13a6-4d6b-8666-79727c835af1/Screen%20Shot%202023-07-07%20at%2011.02.11%20AM.jpg?Expires=1802811909&Signature=wjFxijnDYlXeym76j1yqJy3lknocD98vbkOH3umMYn5djovqVugiLoZklx2Q2-Z4hOzKJwhOfNo-GToThvoGJbcWEKeCKcwyP8GSDssSJdOIQzC1Z4JpAomp~EFTvIicjHnBU5M6Dy6cLnJrvwurSM3JRBJyYxthzdM4dEl4tywsFq~zsQrSV5A82adF4Q6zVCifyeIVIhhLUIXImAR-w9JhNHC8H6OwOvjXb6aUh3GunJ5zMVEAnTr-RobVyto45spn6uag0eqaC619sHSxk1FdL1cfvOujCSepcGkBLN4hVYg5i3bduoki9UGcwYvk8ICaw5KmAYr5hwBa4Ao-2g__&Key-Pair-Id=K2SVGVHI7PEVAH",
     "primer_uuid": "b8b4bfdd-13a6-4d6b-8666-79727c835af1",
-    "has_conflict": 1,
-    "conflict_fields": "classification"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-1348",
@@ -4265,13 +4261,12 @@
     "work_id": "KG-1382",
     "title": "Simla",
     "year": 1930,
-    "classification": "Print",
+    "classification": "Posters",
     "medium": "Color lithograph",
     "status": "active",
     "primary_image_url": "https://data-us-east-1.primerws.com/kapoor_galleries/i/587dd01c-c355-493b-8aba-d24a6d755b7a/93_152_1%20%5B1%5D.jpg?Expires=1802811896&Signature=aXt9xNh1TJgTzeCNag3pdGIUCS~7aPPT-oHv2Jz2V7w61ZshpMXGIXaW23Y45d1c1uigluJPFFCpWY-rtIKxqqy~H3LzgBpx1F9CF0Guzn0dhg3nU6vxhEEpva-wbaYbnV4eiK43N2Cu4wCsvSKc8uG0MyJi9GkYV5rlX8ah8vCqGtDQ~gH~17PKH-bc~TkZ0r1eMrv229CTcRAUxpbSt-rOFM22VDSDTmbRJNVx4EQ4NkK3Ec186JmmVfyerN3PnAUjEBP1Vjq0ELY3V9pmnbXArEQFpr8BG1OMT~ZO6fwW7jgQS3VVS7CpOmUSrbLEv7MpflTJ-nPVAcgUE~uCMg__&Key-Pair-Id=K2SVGVHI7PEVAH",
     "primer_uuid": "587dd01c-c355-493b-8aba-d24a6d755b7a",
-    "has_conflict": 1,
-    "conflict_fields": "classification"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-1383",
@@ -4320,13 +4315,12 @@
     "work_id": "KG-1387",
     "title": "Fly Jet to India / Pan American World Airways",
     "year": 1950,
-    "classification": "Sculpture",
+    "classification": "Posters",
     "medium": "Linen backed color stone lithograph",
     "status": "active",
     "primary_image_url": "https://data-us-east-1.primerws.com/kapoor_galleries/i/50c30231-4ebf-469f-b111-e9d75787f79c/93_153_1.jpg?Expires=1802811908&Signature=lRATTQvF0w0CcDFphzsNtBTJiMTMQRsVFnydHVJfs34xnOzzjMIpCrHMeXx6rCB4b2CKtmma3HWyu-oWc-L1VAoVsXRkennV-nOHK1g~ihjDWavZSIGQ~-s9ZPNGM-CG4lIjBV-PKVu9WMF~ybc3zBEOXCdoLMqwa7oZKFTkA2L-eZV~xH6IFMJ4DK076SU6HjWU66VABWzzKWxQhiyUas~07TjC9hQdqLgcBHnU1O7oOPBRH2d-ImMHz3jLFwmTYMTfjfmhjKtQ7jCpZjUZkz7s4uIQGU3mZhcx6dBFdL5cIROvqdDCINOHwqM1WpkYaoaLyhZuLpDHjuj~5iQH3w__&Key-Pair-Id=K2SVGVHI7PEVAH",
     "primer_uuid": "50c30231-4ebf-469f-b111-e9d75787f79c",
-    "has_conflict": 1,
-    "conflict_fields": "classification"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-1388",
@@ -4539,8 +4533,7 @@
     "status": "active",
     "primary_image_url": "https://data-us-east-1.primerws.com/kapoor_galleries/i/229330f6-2e08-45e5-be5d-e0e161dd8cc9/Screenshot%202023-07-03%20at%2011.23.25%20AM.jpg?Expires=1802811858&Signature=AgOU9MTXeWAq5bJq4IK8v91urh2qhUvuubhSdm7BTdbiS5v28NEqDLxpHk93xPbUqsWGqpLI9NCGOSG-QxKoV~8xAvbO73mUGCUcBzBYmDwl1u4jG4NqKUJMmXhCoaW0uFyvvxkYWqWG0abFSKYB4vtq~VdkBAuPA6GEc5c5LIx1E048TMsnuo0SgpB5eSqNIUAdG1vxConZMTspeI~rxsfJK9sgnnSkutT4GCYVpgWgEqyH2CbsGyVOb8F5BODwf7Qnh9cnKCH6s0o7QuxeASTLVu5MECFM9axLhpm67mNAA2wp-i0vwChnL~BjR0N0AgLF1ioZ6Rg96YbE1MKGmw__&Key-Pair-Id=K2SVGVHI7PEVAH",
     "primer_uuid": "229330f6-2e08-45e5-be5d-e0e161dd8cc9",
-    "has_conflict": 1,
-    "conflict_fields": "classification"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-1408",
@@ -4926,12 +4919,11 @@
     "title": "Calligraphy Page",
     "year": 1801,
     "classification": "Drawing, Collage or other Work on Paper",
-    "medium": "Gouache and gold on paper, Manuscript",
+    "medium": "Gouache and gold on paper",
     "status": "active",
     "primary_image_url": "https://data-us-east-1.primerws.com/kapoor_galleries/i/3e9571d2-8258-4d35-a1f6-52821afc08d7/img599.jpg?Expires=1802811651&Signature=pdiQr3paf8LmF~D7kLA65o5tdiNR~3JWsMtT-JC9KzsQYchrAetVCDy2Gfo5AT3qgWBfZu1pXiG-uxiwM-uxAm-QuaOEgmVgsNiTFsmECAm7RN4I0CJJMe3T72dL7BDxL7gpbsUu2NS6bIN~v2HEH4VcxgMzQWRl15n2gdn~eXBVJH4Wc3n6FUWkfjoLWJUvURmEN9f84kwT4qNT24D2MzT12OhZra0uxD~xjDx9ljCX9COIUPWTmjjcbxdUHlJihpkkliosdfbvVlFhgr2kkQcdtXkoFWD831LGwMQtjCfjlMuU5m6uBACFFPqRc7drZlxcD8aWNN1MrjCfxkbBDA__&Key-Pair-Id=K2SVGVHI7PEVAH",
     "primer_uuid": "3e9571d2-8258-4d35-a1f6-52821afc08d7",
-    "has_conflict": 1,
-    "conflict_fields": "classification,medium"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-1444",
@@ -8130,8 +8122,7 @@
     "status": "active",
     "provenance_text": "Provenance: Collection of late John Walden (1925-2013).",
     "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
-    "has_conflict": 1,
-    "conflict_fields": "title"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-1738",
@@ -8841,11 +8832,11 @@
     "provenance_text": "Provenance: Southern Alleghenies Museum of Art (SAMA). Exhibited: \"Mirrors of the Heart-Mind\" at SAMA in 1988. Published: Himalayan Art Resources (himalayanart.org), item no. 90527. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",
     "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
     "has_conflict": 1,
-    "conflict_fields": "title,price_usd"
+    "conflict_fields": "price_usd"
   },
   {
     "work_id": "KG-1814",
-    "title": "Dipankara Buddha with Arhats Deities Thangka",
+    "title": "Dipankara Buddha with Arhats Deities",
     "year": 1701,
     "classification": "Painting",
     "medium": "gouache on cotton",
@@ -8856,7 +8847,7 @@
     "provenance_text": "Provenance: Southern Alleghenies Museum of Art (SAMA). www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",
     "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
     "has_conflict": 1,
-    "conflict_fields": "title,price_usd"
+    "conflict_fields": "price_usd"
   },
   {
     "work_id": "KG-1815",
@@ -11069,7 +11060,7 @@
   },
   {
     "work_id": "KG-2106",
-    "title": "Tibetan Thangka depicting Saddha (Milarepa)",
+    "title": "Tibetan Thangka depicting Saddha",
     "classification": "Painting",
     "medium": "Opaque watercolor on paper",
     "height_in": 27.0,
@@ -11079,7 +11070,7 @@
     "provenance_text": "Provenance: Property from the José M. Neistein Collection.",
     "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
     "has_conflict": 1,
-    "conflict_fields": "title,height_in,width_in,price_usd"
+    "conflict_fields": "height_in,width_in,price_usd"
   },
   {
     "work_id": "KG-2107",
@@ -11873,8 +11864,7 @@
     "price_usd": 44000.0,
     "status": "active",
     "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
-    "has_conflict": 1,
-    "conflict_fields": "title"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-2190",
@@ -12224,7 +12214,7 @@
   },
   {
     "work_id": "KG-2224",
-    "title": "Thangka Of Two Trailokyavijaya Mandalas with Ganapathi",
+    "title": "Thangka Of Two Trailokyavijaya Mandalas",
     "classification": "Painting",
     "medium": "Ground mineral pigments on cotton",
     "height_in": 34.0,
@@ -12233,7 +12223,7 @@
     "status": "active",
     "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
     "has_conflict": 1,
-    "conflict_fields": "title,width_in,price_usd"
+    "conflict_fields": "width_in,price_usd"
   },
   {
     "work_id": "KG-2225",
@@ -13632,7 +13622,7 @@
     "status": "active",
     "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
     "has_conflict": 1,
-    "conflict_fields": "title,height_in,width_in,price_usd"
+    "conflict_fields": "height_in,width_in,price_usd"
   },
   {
     "work_id": "KG-2376",
@@ -13825,8 +13815,7 @@
     "price_usd": 80000.0,
     "status": "active",
     "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
-    "has_conflict": 1,
-    "conflict_fields": "title"
+    "has_conflict": 0
   },
   {
     "work_id": "KG-2396",

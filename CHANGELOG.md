@@ -4,7 +4,39 @@
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 17 conflicts · 9 sources ingested · 86 tests · 42 CLI commands · CI green.
+> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 6 conflicts · 9 sources ingested · 86 tests · 42 CLI commands · CI green.
+
+### 0.4.7 — long-tail conflict cleanup → 6 irreducible conflicts
+
+- **4 more travel posters → "Posters"** (Sabena, Pan Am, Kashmir, Simla)
+  matching the 25 already resolved.  17 → 13.
+- **2 illuminated manuscripts → "Drawing, Collage or other Work on
+  Paper"** (consistent with the plurality of 21 of 38 other
+  manuscripts in the inventory).
+- **KG-1012 Khanjar** — `match_workbook` recorded `classification =
+  "Khanjar"` (not a valid Artsy category; it's the object type).
+  Resolved to `Design/Decorative Art`.  Medium also expanded to the
+  full string from `bulk_upload`.
+- **KG-1093 thangka medium** — dropped redundant "Thangka -" prefix
+  since the form is captured by `classification = Painting`.
+- **8 Himalayas-vs-bulk title prefixes** — `price_list_pdf` appended
+  "..., 18th century" / "..., 1600-1699" to titles; resolved to the
+  bare bulk-upload title (century belongs in `year`, not `title`).
+- **KG-1443 manuscript medium** — dropped redundant ", Manuscript"
+  suffix.
+
+**Conflicts: 17 → 6.**  The remaining 6 are genuinely irreducible:
+- `KG-1312` (6 field conflicts) — the known duplicate-ID Primer bug:
+  two physically different works ("Battle between Banasura and
+  Krishna" 1700 vs "Vasishtha Teaches Rama and Lakshmana" 1775) share
+  one KG-#.  Needs Primer-side renumbering, not a resolution-layer
+  pick.
+- `KG-1813 / 1814 / 2106 / 2224 / 2375` — real price/dimension
+  disagreements between the Himalayas price list and the bulk upload
+  for the same physical work (e.g. KG-2106 \$30k vs \$80k).  Need
+  physical verification, not a guess.
+
+**Session total**: conflicts 257 → 6 (97.7% reduction).
 
 ### 0.4.6 — normalization fixes clear cosmetic conflicts
 

@@ -42,7 +42,9 @@
 | auto_resolution_rules | classification | 434 |
 | auto_resolution_rules | medium | 159 |
 | auto_resolution_rules | artist | 21 |
-| human_resolutions | classification | 236 |
+| human_resolutions | classification | 243 |
+| human_resolutions | title | 8 |
+| human_resolutions | medium | 3 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | title | 16 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | primary_image_source | 16 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | materials | 16 |
@@ -52,10 +54,9 @@
 
 | Field | Works with conflict |
 |---|---:|
-| title | 9 |
-| classification | 7 |
 | price_usd | 6 |
-| medium | 4 |
 | width_in | 4 |
 | height_in | 3 |
+| medium | 1 |
+| title | 1 |
 | year | 1 |

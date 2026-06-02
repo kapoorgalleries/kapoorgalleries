@@ -150,10 +150,10 @@ KG-1011,signature,No signature,bulk_upload_xlsx,0,,
 KG-1011,status,active,artsy_csv,0,,
 KG-1011,title,A Great Indian Fruit Bat (Flying Fox),artsy_csv,0,,
 KG-1011,width_in,13.0,artsy_csv,0,,
-KG-1012,classification,Design/Decorative Art,bulk_upload_xlsx,1,Khanjar,artsy_csv
+KG-1012,classification,Design/Decorative Art,human_resolution,1,Khanjar,artsy_csv
 KG-1012,height_in,15.0,artsy_csv,0,,
 KG-1012,materials,Jade-hilted and jeweled Khanjar,match_workbook,0,,
-KG-1012,medium,Jade-hilted dagger with steel blade,auto_resolution,2,Jade-hilted and jeweled || Jade-hilted and jeweled Khanjar,"artsy_csv,bulk_upload_xlsx"
+KG-1012,medium,Jade-hilted and jeweled Khanjar,human_resolution,2,Jade-hilted and jeweled || Jade-hilted dagger with steel blade,"artsy_csv,auto_resolution"
 KG-1012,primary_image_source,Copy of 240130_KapoorGalleries_3D_ContactSheet.pdf p.3,match_workbook,0,,
 KG-1012,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/011c1356-2b84-4b21-bbfb-79fc2e9e53d1/Jeweled%20Dagger%20D.jpg?Expires=1802811609&Signature=Y1mpcI74yLmr1wmkTfTz7n9ukZ4LtNBH1A3iK~owYn8982b9EtaxffyAzcpj3IdVgD8-uudhmx6~nyspxl35oJbkA9oKMqlN1sgkQ97AmCsa22nQ64hSPbDCyfpzhDZi9xPEomrpymkXFhqZ6Ti-eDwCSY2Bt6zCnVabJsN~2drxfrr9otSlJKMGDOijMR63P6xwv5RpTAfvbMghkMtaD11GbLr30Q58vhZ6tvs1xK1NUcIt6Lsbjyr4cmgKuWSsbq~oDL2R5ob9T8SyxLM2v15A0o5fnrrvCtqMcOYzc1djn~b-V-hohUW3IPmTtXXsSZHeeOd7LmMqf7wYf8yJ-A__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1012,primer_uuid,011c1356-2b84-4b21-bbfb-79fc2e9e53d1,artsy_csv,0,,
@@ -727,7 +727,7 @@ KG-1092,title,Torso of Buddha,artsy_csv,0,,
 KG-1092,year,1501,artsy_csv,0,,
 KG-1093,classification,Painting,artsy_csv,0,,
 KG-1093,height_in,56.0,artsy_csv,0,,
-KG-1093,medium,Thangka -Opaque watercolor on cloth,bulk_upload_xlsx,1,Opaque watercolor on cloth,artsy_csv
+KG-1093,medium,Opaque watercolor on cloth,human_resolution,1,Thangka -Opaque watercolor on cloth,bulk_upload_xlsx
 KG-1093,price_usd,120000.0,artsy_csv,0,,
 KG-1093,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/3ca46540-4e8e-465b-902c-03b7912bf203/Picchvai_T34_large.jpg?Expires=1802811923&Signature=BgquddgGZ6EOIf7CW6L8u5EpXdjjceGfWdNW~WiWVUAmscLIJayUaiXTBuwwLA8ZkfArzfBHmzKRdaZ3kbnu2~J8tk7mo8pODQ4K4g7Jbi274xH~5SFnM4JVLb3qowhqLY1Bm8bxrdkBacBaRlj9kG3sigy1WPxQVx4lWxNE17MilliO-lO4bdXkixvxY~lEcJUDao77Bds7zgegIfFoB5LrZcIfFUOKMhwmXOwZMRieggzwnzcwm7XhLj0UInjOmdj-XzLgTqjjTCqnys-ks2iHgAqFTP8F1Ec4UbVaQiD~18Gz7VMaMolWrS6hQxDB7Ed0yTS~jcfhNBqwc2txBg__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1093,primer_uuid,3ca46540-4e8e-465b-902c-03b7912bf203,artsy_csv,0,,
@@ -2534,7 +2534,7 @@ KG-1341,primer_uuid,6ceb2012-4b6a-4fd4-8a9d-ddc9bb66e9e8,artsy_csv,0,,
 KG-1341,status,active,artsy_csv,0,,
 KG-1341,title,SwissAir to India,artsy_csv,0,,
 KG-1341,year,1958,artsy_csv,0,,
-KG-1342,classification,Posters,artsy_csv,1,Print,bulk_upload_xlsx
+KG-1342,classification,Posters,human_resolution,1,Print,bulk_upload_xlsx
 KG-1342,medium,Linen backed offset color lithograph,artsy_csv,0,,
 KG-1342,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/dd84c442-658d-42ca-aa6d-f6e6e42efd6d/Copy%20of%20Sabena.jpg?Expires=1802811888&Signature=bn6mJ389m0q7P4TjWn9xM9cAOxY64YZhZ8aZSoNroyyUfWKms7oloaIkTTuWHIV2K1lbNmbXzOXMZczmEWZlx5SUSBaVB62P4Q-kzyRzIgd59Pm~cWJirJvtu3OquXHFe-wuusk3wspTTfe1o6lFpoXv-i4I4a9tYwLMLqz0p3hZBz44kfWzfjsw02pOqQJc5A75Csxvk1qqNnLZXsgxO7Bep3hASeFcX17sFtZZYckGU0vURvsXwRx1ZCFxwh6g28WULF6KIbQlFHCxn24K0AoDJYFoRiTKsqqWlvAMX0s81sImp1lDwbVrisczqCrlDxCs8eBkrOfveYxkgdMVig__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1342,primer_uuid,dd84c442-658d-42ca-aa6d-f6e6e42efd6d,artsy_csv,0,,
@@ -2569,7 +2569,7 @@ KG-1346,primer_uuid,05aa4f8c-87ba-4e97-8c53-3d49b1f807d5,artsy_csv,0,,
 KG-1346,status,active,artsy_csv,0,,
 KG-1346,title,Colorful Middle East,artsy_csv,0,,
 KG-1346,year,1960,artsy_csv,0,,
-KG-1347,classification,Print,bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1347,classification,Posters,human_resolution,1,Print,bulk_upload_xlsx
 KG-1347,medium,"Offset a Litho Works, Bombay 27.",artsy_csv,0,,
 KG-1347,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/b8b4bfdd-13a6-4d6b-8666-79727c835af1/Screen%20Shot%202023-07-07%20at%2011.02.11%20AM.jpg?Expires=1802811909&Signature=wjFxijnDYlXeym76j1yqJy3lknocD98vbkOH3umMYn5djovqVugiLoZklx2Q2-Z4hOzKJwhOfNo-GToThvoGJbcWEKeCKcwyP8GSDssSJdOIQzC1Z4JpAomp~EFTvIicjHnBU5M6Dy6cLnJrvwurSM3JRBJyYxthzdM4dEl4tywsFq~zsQrSV5A82adF4Q6zVCifyeIVIhhLUIXImAR-w9JhNHC8H6OwOvjXb6aUh3GunJ5zMVEAnTr-RobVyto45spn6uag0eqaC619sHSxk1FdL1cfvOujCSepcGkBLN4hVYg5i3bduoki9UGcwYvk8ICaw5KmAYr5hwBa4Ao-2g__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1347,primer_uuid,b8b4bfdd-13a6-4d6b-8666-79727c835af1,artsy_csv,0,,
@@ -2757,7 +2757,7 @@ KG-1381,primer_uuid,6e03e0c3-2485-4a7d-9259-3fdb74ce44f9,artsy_csv,0,,
 KG-1381,status,active,artsy_csv,0,,
 KG-1381,title,"Indian State Railways, Kashmir",artsy_csv,0,,
 KG-1381,year,1930,artsy_csv,0,,
-KG-1382,classification,Print,bulk_upload_xlsx,1,Posters,artsy_csv
+KG-1382,classification,Posters,human_resolution,1,Print,bulk_upload_xlsx
 KG-1382,medium,Color lithograph,artsy_csv,0,,
 KG-1382,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/587dd01c-c355-493b-8aba-d24a6d755b7a/93_152_1%20%5B1%5D.jpg?Expires=1802811896&Signature=aXt9xNh1TJgTzeCNag3pdGIUCS~7aPPT-oHv2Jz2V7w61ZshpMXGIXaW23Y45d1c1uigluJPFFCpWY-rtIKxqqy~H3LzgBpx1F9CF0Guzn0dhg3nU6vxhEEpva-wbaYbnV4eiK43N2Cu4wCsvSKc8uG0MyJi9GkYV5rlX8ah8vCqGtDQ~gH~17PKH-bc~TkZ0r1eMrv229CTcRAUxpbSt-rOFM22VDSDTmbRJNVx4EQ4NkK3Ec186JmmVfyerN3PnAUjEBP1Vjq0ELY3V9pmnbXArEQFpr8BG1OMT~ZO6fwW7jgQS3VVS7CpOmUSrbLEv7MpflTJ-nPVAcgUE~uCMg__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1382,primer_uuid,587dd01c-c355-493b-8aba-d24a6d755b7a,artsy_csv,0,,
@@ -2791,7 +2791,7 @@ KG-1386,primer_uuid,53b2bc37-d541-46bf-adb2-1d128ef611ba,artsy_csv,0,,
 KG-1386,status,active,artsy_csv,0,,
 KG-1386,title,India / The Wonderful Land,artsy_csv,0,,
 KG-1386,year,1958,artsy_csv,0,,
-KG-1387,classification,Sculpture,auto_resolution,2,Posters || Print,"artsy_csv,bulk_upload_xlsx"
+KG-1387,classification,Posters,human_resolution,2,Print || Sculpture,"auto_resolution,bulk_upload_xlsx"
 KG-1387,medium,Linen backed color stone lithograph,artsy_csv,0,,
 KG-1387,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/50c30231-4ebf-469f-b111-e9d75787f79c/93_153_1.jpg?Expires=1802811908&Signature=lRATTQvF0w0CcDFphzsNtBTJiMTMQRsVFnydHVJfs34xnOzzjMIpCrHMeXx6rCB4b2CKtmma3HWyu-oWc-L1VAoVsXRkennV-nOHK1g~ihjDWavZSIGQ~-s9ZPNGM-CG4lIjBV-PKVu9WMF~ybc3zBEOXCdoLMqwa7oZKFTkA2L-eZV~xH6IFMJ4DK076SU6HjWU66VABWzzKWxQhiyUas~07TjC9hQdqLgcBHnU1O7oOPBRH2d-ImMHz3jLFwmTYMTfjfmhjKtQ7jCpZjUZkz7s4uIQGU3mZhcx6dBFdL5cIROvqdDCINOHwqM1WpkYaoaLyhZuLpDHjuj~5iQH3w__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1387,primer_uuid,50c30231-4ebf-469f-b111-e9d75787f79c,artsy_csv,0,,
@@ -2923,7 +2923,7 @@ KG-1406,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i
 KG-1406,primer_uuid,5d40eaa3-7e6a-4d83-baba-d153495a0214,artsy_csv,0,,
 KG-1406,status,active,artsy_csv,0,,
 KG-1406,title,Untitled,artsy_csv,0,,
-KG-1407,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Other,artsy_csv
+KG-1407,classification,"Drawing, Collage or other Work on Paper",human_resolution,1,Other,artsy_csv
 KG-1407,medium,Manuscript,bulk_upload_xlsx,0,,
 KG-1407,price_usd,10080.0,artsy_csv,0,,
 KG-1407,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/229330f6-2e08-45e5-be5d-e0e161dd8cc9/Screenshot%202023-07-03%20at%2011.23.25%20AM.jpg?Expires=1802811858&Signature=AgOU9MTXeWAq5bJq4IK8v91urh2qhUvuubhSdm7BTdbiS5v28NEqDLxpHk93xPbUqsWGqpLI9NCGOSG-QxKoV~8xAvbO73mUGCUcBzBYmDwl1u4jG4NqKUJMmXhCoaW0uFyvvxkYWqWG0abFSKYB4vtq~VdkBAuPA6GEc5c5LIx1E048TMsnuo0SgpB5eSqNIUAdG1vxConZMTspeI~rxsfJK9sgnnSkutT4GCYVpgWgEqyH2CbsGyVOb8F5BODwf7Qnh9cnKCH6s0o7QuxeASTLVu5MECFM9axLhpm67mNAA2wp-i0vwChnL~BjR0N0AgLF1ioZ6Rg96YbE1MKGmw__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
@@ -3170,8 +3170,8 @@ KG-1442,primer_uuid,9450b4ef-dbbf-4bd2-bf94-76073db78ed3,artsy_csv,0,,
 KG-1442,status,active,artsy_csv,0,,
 KG-1442,title,Decorative Cranes,artsy_csv,0,,
 KG-1442,year,1901,artsy_csv,0,,
-KG-1443,classification,"Drawing, Collage or other Work on Paper",bulk_upload_xlsx,1,Other,artsy_csv
-KG-1443,medium,"Gouache and gold on paper, Manuscript",bulk_upload_xlsx,1,Gouache and gold on paper,artsy_csv
+KG-1443,classification,"Drawing, Collage or other Work on Paper",human_resolution,1,Other,artsy_csv
+KG-1443,medium,Gouache and gold on paper,human_resolution,1,"Gouache and gold on paper, Manuscript",bulk_upload_xlsx
 KG-1443,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/3e9571d2-8258-4d35-a1f6-52821afc08d7/img599.jpg?Expires=1802811651&Signature=pdiQr3paf8LmF~D7kLA65o5tdiNR~3JWsMtT-JC9KzsQYchrAetVCDy2Gfo5AT3qgWBfZu1pXiG-uxiwM-uxAm-QuaOEgmVgsNiTFsmECAm7RN4I0CJJMe3T72dL7BDxL7gpbsUu2NS6bIN~v2HEH4VcxgMzQWRl15n2gdn~eXBVJH4Wc3n6FUWkfjoLWJUvURmEN9f84kwT4qNT24D2MzT12OhZra0uxD~xjDx9ljCX9COIUPWTmjjcbxdUHlJihpkkliosdfbvVlFhgr2kkQcdtXkoFWD831LGwMQtjCfjlMuU5m6uBACFFPqRc7drZlxcD8aWNN1MrjCfxkbBDA__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1443,primer_uuid,3e9571d2-8258-4d35-a1f6-52821afc08d7,artsy_csv,0,,
 KG-1443,status,active,artsy_csv,0,,
@@ -5208,7 +5208,7 @@ KG-1737,medium,Ground mineral pigments and gold on cloth,bulk_upload_xlsx,0,,
 KG-1737,price_usd,30000.0,bulk_upload_xlsx,0,,
 KG-1737,provenance_text,Provenance: Collection of late John Walden (1925-2013).,price_list_pdf,0,,
 KG-1737,status,active,bulk_upload_xlsx,0,,
-KG-1737,title,Shakyamuni,bulk_upload_xlsx,1,"Shakyamuni, 18th century",price_list_pdf
+KG-1737,title,Shakyamuni,human_resolution,1,"Shakyamuni, 18th century",price_list_pdf
 KG-1737,width_in,15.0,price_list_pdf,0,,
 KG-1737,year,1701,bulk_upload_xlsx,0,,
 KG-1738,classification,"Drawing, Collage or other Work on Paper",auto_resolution,1,Painting,bulk_upload_xlsx
@@ -5621,7 +5621,7 @@ KG-1813,medium,gouache on cotton,bulk_upload_xlsx,0,,
 KG-1813,price_usd,24000.0,bulk_upload_xlsx,1,38000.0,price_list_pdf
 KG-1813,provenance_text,"Provenance: Southern Alleghenies Museum of Art (SAMA). Exhibited: ""Mirrors of the Heart-Mind"" at SAMA in 1988. Published: Himalayan Art Resources (himalayanart.org), item no. 90527. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,0,,
 KG-1813,status,active,bulk_upload_xlsx,0,,
-KG-1813,title,Large Thangka White Tara Tibetan,bulk_upload_xlsx,1,"Large Thangka White Tara Tibetan, 19th",price_list_pdf
+KG-1813,title,Large Thangka White Tara Tibetan,human_resolution,1,"Large Thangka White Tara Tibetan, 19th",price_list_pdf
 KG-1813,width_in,23.5,price_list_pdf,0,,
 KG-1813,year,1801,bulk_upload_xlsx,0,,
 KG-1814,classification,Painting,bulk_upload_xlsx,0,,
@@ -5631,7 +5631,7 @@ KG-1814,medium,gouache on cotton,bulk_upload_xlsx,0,,
 KG-1814,price_usd,24000.0,bulk_upload_xlsx,1,28000.0,price_list_pdf
 KG-1814,provenance_text,"Provenance: Southern Alleghenies Museum of Art (SAMA). www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,0,,
 KG-1814,status,active,bulk_upload_xlsx,0,,
-KG-1814,title,Dipankara Buddha with Arhats Deities Thangka,bulk_upload_xlsx,1,Dipankara Buddha with Arhats Deities,price_list_pdf
+KG-1814,title,Dipankara Buddha with Arhats Deities,human_resolution,1,Dipankara Buddha with Arhats Deities Thangka,bulk_upload_xlsx
 KG-1814,width_in,20.0,price_list_pdf,0,,
 KG-1814,year,1701,bulk_upload_xlsx,0,,
 KG-1815,classification,Painting,auto_resolution,1,tskali,bulk_upload_xlsx
@@ -6802,7 +6802,7 @@ KG-2106,medium,Opaque watercolor on paper,auto_resolution,0,,
 KG-2106,price_usd,30000.0,bulk_upload_xlsx,1,80000.0,price_list_pdf
 KG-2106,provenance_text,Provenance: Property from the José M. Neistein Collection.,price_list_pdf,0,,
 KG-2106,status,active,bulk_upload_xlsx,0,,
-KG-2106,title,Tibetan Thangka depicting Saddha (Milarepa),bulk_upload_xlsx,1,Tibetan Thangka depicting Saddha,price_list_pdf
+KG-2106,title,Tibetan Thangka depicting Saddha,human_resolution,1,Tibetan Thangka depicting Saddha (Milarepa),bulk_upload_xlsx
 KG-2106,width_in,39.0,bulk_upload_xlsx,1,39.5,price_list_pdf
 KG-2107,classification,Photograph,bulk_upload_xlsx,0,,
 KG-2107,height_in,47.0,bulk_upload_xlsx,0,,
@@ -7286,7 +7286,7 @@ KG-2188,height_in,23.625,bulk_upload_xlsx,0,,
 KG-2188,medium,"Ground mineral pigment, red background on cotton",bulk_upload_xlsx,0,,
 KG-2188,price_usd,44000.0,bulk_upload_xlsx,0,,
 KG-2188,status,active,bulk_upload_xlsx,0,,
-KG-2188,title,Arhat/Sthavira (Buddhist Elder),bulk_upload_xlsx,1,"Arhat/Sthavira (Buddhist Elder), 1600-1699",price_list_pdf
+KG-2188,title,Arhat/Sthavira (Buddhist Elder),human_resolution,1,"Arhat/Sthavira (Buddhist Elder), 1600-1699",price_list_pdf
 KG-2188,width_in,17.25,bulk_upload_xlsx,0,,
 KG-2188,year,1600,bulk_upload_xlsx,0,,
 KG-2190,classification,Books and Portfolios,bulk_upload_xlsx,0,,
@@ -7509,7 +7509,7 @@ KG-2224,height_in,34.0,bulk_upload_xlsx,0,,
 KG-2224,medium,Ground mineral pigments on cotton,bulk_upload_xlsx,0,,
 KG-2224,price_usd,38000.0,bulk_upload_xlsx,1,48000.0,price_list_pdf
 KG-2224,status,active,bulk_upload_xlsx,0,,
-KG-2224,title,Thangka Of Two Trailokyavijaya Mandalas with Ganapathi,bulk_upload_xlsx,1,Thangka Of Two Trailokyavijaya Mandalas,price_list_pdf
+KG-2224,title,Thangka Of Two Trailokyavijaya Mandalas,human_resolution,1,Thangka Of Two Trailokyavijaya Mandalas with Ganapathi,bulk_upload_xlsx
 KG-2224,width_in,18.0,bulk_upload_xlsx,1,18.25,price_list_pdf
 KG-2225,status,active,bulk_upload_xlsx,0,,
 KG-2225,title,Dutch Nobleman,bulk_upload_xlsx,0,,
@@ -8332,7 +8332,7 @@ KG-2375,height_in,19.0,bulk_upload_xlsx,1,19.5,price_list_pdf
 KG-2375,medium,Ground mineral pigments on cloth,bulk_upload_xlsx,0,,
 KG-2375,price_usd,18000.0,bulk_upload_xlsx,1,25000.0,price_list_pdf
 KG-2375,status,active,bulk_upload_xlsx,0,,
-KG-2375,title,White Tara,bulk_upload_xlsx,1,"White Tara, circa 18th century",price_list_pdf
+KG-2375,title,White Tara,human_resolution,1,"White Tara, circa 18th century",price_list_pdf
 KG-2375,width_in,13.0,bulk_upload_xlsx,1,13.75,price_list_pdf
 KG-2376,artist,Thompson B. Jerome,bulk_upload_xlsx,0,,
 KG-2376,classification,Painting,bulk_upload_xlsx,0,,
@@ -8449,7 +8449,7 @@ KG-2395,height_in,32.0,bulk_upload_xlsx,0,,
 KG-2395,medium,Ground mineral pigments on cotton,bulk_upload_xlsx,0,,
 KG-2395,price_usd,80000.0,price_list_pdf,0,,
 KG-2395,status,active,bulk_upload_xlsx,0,,
-KG-2395,title,Green Tara,bulk_upload_xlsx,1,"Green Tara, 19th century",price_list_pdf
+KG-2395,title,Green Tara,human_resolution,1,"Green Tara, 19th century",price_list_pdf
 KG-2395,width_in,20.0,bulk_upload_xlsx,0,,
 KG-2396,status,active,bulk_upload_xlsx,0,,
 KG-2396,title,Unknown Scene: Folio from a Jain Kalpa-sutra Manuscript,bulk_upload_xlsx,0,,
