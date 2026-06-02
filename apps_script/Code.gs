@@ -29,12 +29,74 @@ function onOpen() {
     .addItem('Show stats', 'showStats')
     .addItem('Show price distribution', 'showPriceDistribution')
     .addItem('Show timeline (history.csv)', 'showTimeline')
+    .addItem('Show photo queue', 'showPhotoQueue')
     .addItem('Highlight conflicts', 'highlightConflicts')
     .addSeparator()
     .addItem('Inspect selected work', 'showGapsForSelectedWork')
     .addItem('Suggest resolution for selected cell', 'suggestResolution')
     .addItem('Open Drive folder for KG-#', 'openDriveForSelectedWork')
     .addToUi();
+}
+
+// Pulls data/photo_queue.csv from the repo and shows the
+// "ready when photographed" punch list grouped by classification
+// in a sidebar — same data as reports/photo_queue.md.
+function showPhotoQueue() {
+  var url = MASTER_CSV_URL.replace(/master\.csv$/, 'photo_queue.csv');
+  var resp = UrlFetchApp.fetch(url, {muteHttpExceptions: true});
+  if (resp.getResponseCode() !== 200) {
+    SpreadsheetApp.getUi().alert(
+      'photo_queue.csv not found at ' + url + '.\n' +
+      'Run `make all` locally and push to populate.'
+    );
+    return;
+  }
+  var rows = Utilities.parseCsv(resp.getContentText());
+  if (rows.length < 2) { SpreadsheetApp.getUi().alert('photo_queue.csv is empty.'); return; }
+  var header = rows[0];
+  var idx = {};
+  header.forEach(function (h, i) { idx[h] = i; });
+
+  // Bucket by classification, ready-when-photographed only.
+  var byCls = {};
+  var nNeedsMeta = 0;
+  for (var i = 1; i < rows.length; i++) {
+    var r = rows[i];
+    if (r[idx['ready_when_photographed']] !== 'yes') { nNeedsMeta++; continue; }
+    var cls = r[idx['classification']] || 'Unknown';
+    (byCls[cls] = byCls[cls] || []).push(r);
+  }
+  var clsNames = Object.keys(byCls).sort();
+  var nReady = clsNames.reduce(function (s, c) { return s + byCls[c].length; }, 0);
+
+  var html =
+    '<style>body{font-family:Arial,sans-serif;padding:14px;font-size:12px}' +
+    'h2{margin:14px 0 4px;font-size:14px;color:#444}' +
+    'h3{margin:18px 0 4px;font-size:13px;color:#222;border-bottom:1px solid #eee;padding-bottom:2px}' +
+    'table{border-collapse:collapse;width:100%}' +
+    'th,td{padding:3px 6px;border-bottom:1px solid #f3f3f3;text-align:left;vertical-align:top}' +
+    'th{background:#fafafa;color:#555}' +
+    'td.r{text-align:right;color:#888}' +
+    '.meta{color:#888;margin-bottom:10px}</style>' +
+    '<h2>Photography punch list</h2>' +
+    '<div class="meta"><b>' + nReady + '</b> works become Artsy-eligible the moment they\'re photographed. ' +
+    '<br>Plus <b>' + nNeedsMeta + '</b> more need a photo + metadata fill (see reports/photo_queue.md).</div>';
+  clsNames.forEach(function (cls) {
+    var works = byCls[cls];
+    html += '<h3>' + cls + ' (' + works.length + ')</h3>';
+    html += '<table><tr><th>KG-#</th><th>Title</th><th>Medium</th><th>Year</th></tr>';
+    works.forEach(function (r) {
+      var t = (r[idx['title']] || '').slice(0, 55);
+      var m = (r[idx['medium']] || '').slice(0, 32);
+      html += '<tr><td>' + r[idx['work_id']] + '</td><td>' + t +
+              '</td><td>' + m + '</td><td class="r">' +
+              (r[idx['year']] || '') + '</td></tr>';
+    });
+    html += '</table>';
+  });
+  SpreadsheetApp.getUi().showSidebar(
+    HtmlService.createHtmlOutput(html).setTitle('Photo queue · ' + nReady + ' ready')
+  );
 }
 
 // Pulls data/history.csv from the repo and shows the trend in a sidebar.

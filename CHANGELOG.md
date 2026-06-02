@@ -4,7 +4,64 @@
 
 Major milestones since the initial commit (2026-05-06):
 
-> 1,528 works · 600 Artsy-eligible (39%) · 128 attributed (8%) · 6 conflicts · 9 sources ingested · 86 tests · 42 CLI commands · CI green.
+> 1,528 works (1,417 active + 111 external) · **637 Artsy-eligible (45%)** · **621 photo-away** · 128 attributed (9%) · 6 conflicts · 9 sources · **88 tests** · 42 CLI commands · CI green.
+>
+> Combined ready-or-photo-away: **1,258 of 1,417 active works (89%)**.
+
+### 0.4.10 — photography punch list
+
+- **`reports/photo_queue.md` + `data/photo_queue.csv`** emitted by
+  `make report`.  Markdown is grouped by classification (Sculpture 224,
+  Drawing/Collage 191, Painting 117, Photograph 27, Print 26, …) with
+  KG-# / title / medium / year so a photographer can find each work
+  in storage.  CSV is one row per work with a
+  `ready_when_photographed` boolean for shoot-day check-off.
+- **Apps Script "Show photo queue"** menu item renders the same data
+  in a sidebar in the master Sheet (pulls `photo_queue.csv` via
+  UrlFetchApp, buckets by classification).
+- Filtering excludes external sub-inventory records (status='external')
+  and works that already have a primary image, so the count is honest.
+
+### 0.4.9 — 36 derivable mediums (only-need-image: 585 → 621)
+
+For 36 of the 89 works missing only `medium` and image, the title or
+classification gave unambiguous medium:
+- 21 sculptures with explicit material in title (bronze, gold, gilt-
+  bronze, stone, ivory, sandstone, etc.).
+- 7 photographs (19th/early-20th c. Indian subjects) → gelatin silver
+  print (period default).
+- 3 illustrated books (Royle's Himalayan botany, Kipling Jungle Book,
+  period photo albums) → "Lithograph plates bound in book" /
+  "Photographic prints bound in album".
+- 2 prints: KG-2110 "46 Etchings of India" (etching) and KG-2237
+  Mordaunt's Cock Match (hand-coloured aquatint with stipple).
+- 3 decorative arts: 2 watered-steel swords/knives, 1 Japanese
+  akoda nari kabuto (iron with lacquer).
+
+### 0.4.8 — push 22 nearly-ready works, fix Air India over-firing
+
+- **Resolved 22 nearly-ready works** (44 field resolutions): 14 more
+  travel/airline posters (Kashmir Calling, Pan Am India, TWA India,
+  Fly Japan Air Lines, etc.), 8 Indian miniatures / manuscript folios.
+- **Caught the Air India auto-rule over-firing on 8 ephemera works**
+  (postcards / tickets / timetables / in-flight menus / safety
+  pamphlets are NOT travel posters).  Reclassified each as
+  "Ephemera or Merchandise".
+- **Added `_excludes` pattern to the auto_resolution matcher** — lets
+  a `title_contains` rule skip false-positive cohorts.  Tightened
+  Visit India / Air India / Sabena rules with
+  `title_excludes: ["ticket","timetable","postcard","menu","pamphlet",
+                    "brochure","safety","in flight"]`.
+- **Sub-inventory works stamped `status='external'`** — Graham/
+  Textile-Boxes entries no longer pollute the eligibility denominator.
+  Honest active-works percentage is now 45% instead of a diluted 42%.
+- **38 image-only-blocked works classified** from title hints
+  (sandstone heads, Pala bronzes, Tibetan thangkas, Indian miniatures,
+  Daniell Calcutta views as aquatints, Air France travel poster,
+  pashmina shawl, Japanese cloisonné polearm, gau amulet box, etc.).
+  "Only-need-image" cohort 547 → 585.
+- **17 nearly-ready works pushed over the line** via per-work medium /
+  classification fills.  Artsy-eligible 600 → 615 (subsequently 637).
 
 ### 0.4.7 — long-tail conflict cleanup → 6 irreducible conflicts
 
