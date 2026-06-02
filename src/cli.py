@@ -2083,10 +2083,13 @@ ARTSY_VALID_CLASSIFICATIONS = {
 
 @cli.command("check-artsy")
 @click.option("--file", "csv_path", default="data/artsy_upload.csv", show_default=True)
-def check_artsy(csv_path: str):
+@click.option("--strict", is_flag=True, default=False,
+              help="Exit non-zero if any errors are found (for CI gating).")
+def check_artsy(csv_path: str, strict: bool):
     """Pre-flight validate the Artsy upload CSV against known Artsy rules."""
     import csv
     issues: list[tuple[str, str, str]] = []
+    seen_ids: dict[str, int] = {}  # KG-# -> first row it appeared on
     p = Path(csv_path)
     if not p.exists():
         raise click.ClickException(f"{csv_path} doesn't exist. Run `make all` first.")
@@ -2100,9 +2103,28 @@ def check_artsy(csv_path: str):
 
     with p.open(newline="") as fh:
         reader = csv.DictReader(fh)
+        # Header sanity: the four fields Artsy maps strictly must be present
+        # (under their normalized names).
+        norm_headers = {_norm_key(c) for c in (reader.fieldnames or [])}
+        for required_col in ("Inventory ID (OPTIONAL)", "Title", "Medium",
+                             "Classification"):
+            if required_col not in norm_headers:
+                issues.append(("error", "—",
+                    f"missing expected column {required_col!r} "
+                    f"(headers don't match the Artsy template)"))
         for i, row in enumerate(reader, start=2):
             row = {_norm_key(k): (v or "").strip() for k, v in row.items()}
             wid = row.get("Inventory ID (OPTIONAL)") or f"row{i}"
+
+            # Duplicate Inventory ID — Artsy keys on this; two rows with the
+            # same KG-# collide on import (the KG-1312 duplicate-ID bug
+            # would surface here if both halves ever became eligible).
+            if wid.startswith("KG-"):
+                if wid in seen_ids:
+                    issues.append(("error", wid,
+                        f"duplicate Inventory ID (also on row {seen_ids[wid]})"))
+                else:
+                    seen_ids[wid] = i
 
             title = row.get("Title")
             cls = row.get("Classification")
@@ -2180,6 +2202,11 @@ def check_artsy(csv_path: str):
         if len(rows) > 30:
             click.echo(f"    … and {len(rows)-30} more {sev}s")
         click.echo()
+
+    # In strict mode (CI), any error fails the command so a bad upload
+    # CSV can't slip through a green build.  Warnings never fail.
+    if strict and by_sev["error"]:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

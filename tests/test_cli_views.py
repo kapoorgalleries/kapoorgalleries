@@ -365,6 +365,44 @@ def test_check_artsy_distinguishes_untitled_from_need_title(tmp_path: Path):
     assert "KG-ok" not in result.output
 
 
+def test_check_artsy_detects_duplicate_ids_and_strict_exit(tmp_path: Path):
+    """Two rows with the same Inventory ID is an error; --strict makes
+    the command exit non-zero so CI can gate on it."""
+    p = tmp_path / "upload.csv"
+    header = ('"Inventory ID (OPTIONAL)","Artist Name ","Title ","Year ",'
+              '"Price ","Medium ","Materials ","Height ","Width ",Depth,'
+              '"Certificate of Authenticity ","Signature ","Classification "\n')
+    p.write_text(
+        header +
+        'KG-1,Unknown,First,1850,,Watercolor,,8,10,,,,Painting\n'
+        'KG-1,Unknown,Second,1850,,Watercolor,,8,10,,,,Painting\n'
+    )
+    runner = CliRunner()
+    # Non-strict: reports the error but exits 0.
+    r1 = runner.invoke(cli, ["check-artsy", "--file", str(p)])
+    assert r1.exit_code == 0, r1.output
+    assert "duplicate Inventory ID" in r1.output
+    # Strict: same error, but exits non-zero.
+    r2 = runner.invoke(cli, ["check-artsy", "--file", str(p), "--strict"])
+    assert r2.exit_code != 0
+    assert "duplicate Inventory ID" in r2.output
+
+
+def test_check_artsy_strict_passes_clean_file(tmp_path: Path):
+    """--strict must exit 0 when there are no errors (CI green path)."""
+    p = tmp_path / "upload.csv"
+    header = ('"Inventory ID (OPTIONAL)","Artist Name ","Title ","Year ",'
+              '"Price ","Medium ","Materials ","Height ","Width ",Depth,'
+              '"Certificate of Authenticity ","Signature ","Classification "\n')
+    p.write_text(
+        header +
+        'KG-1,Unknown,A Real Title,1850,,Watercolor,,8,10,,,,Painting\n'
+    )
+    runner = CliRunner()
+    r = runner.invoke(cli, ["check-artsy", "--file", str(p), "--strict"])
+    assert r.exit_code == 0, r.output
+
+
 def test_timeline_appends_and_dedups_same_day(tmp_path: Path):
     """timeline should append one row per day; running it twice the
     same day must replace, not duplicate."""

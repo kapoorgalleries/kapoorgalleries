@@ -78,6 +78,9 @@ jobs:
           make consolidate
           make report
 
+      - name: Pre-flight validate Artsy upload CSV (strict)
+        run: python -m src.cli check-artsy --strict
+
       - name: Show coverage report
         run: cat reports/coverage_report.md
 
