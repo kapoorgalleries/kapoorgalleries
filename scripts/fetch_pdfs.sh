@@ -45,7 +45,17 @@ for d in "$publish_dir"/*/; do
 
   echo "$name: fetching $drive_id -> $file"
   if gdown "$drive_id" -O "$file_path"; then
-    fetched+=("$name")
+    # gdown can exit 0 while writing an HTML "permission"/quota page instead of
+    # the file (e.g. the Drive file isn't shared "Anyone with the link", or the
+    # host can't reach drive.google.com). Verify we actually got a PDF.
+    if [[ "$(head -c 5 "$file_path" 2>/dev/null)" == "%PDF-" ]]; then
+      fetched+=("$name")
+    else
+      echo "  downloaded content is not a PDF (likely a Drive permission/error page)"
+      echo "  -> confirm the file is shared 'Anyone with the link' and reachable"
+      rm -f "$file_path"
+      failed+=("$name (not a PDF)")
+    fi
   else
     echo "  FAILED"
     rm -f "$file_path"
