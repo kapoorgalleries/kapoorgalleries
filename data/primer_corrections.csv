@@ -63,6 +63,7 @@ KG-1312,medium,Opaque watercolor heightened with gold on paper,Ground mineral pi
 KG-1312,height_in,9.0,13.0,bulk_upload_xlsx,(per bulk_upload_xlsx)
 KG-1312,width_in,14.0,20.0,bulk_upload_xlsx,(per bulk_upload_xlsx)
 KG-1312,price_usd,26000.0,50000.0,bulk_upload_xlsx,(per bulk_upload_xlsx)
+KG-1312,status,active,needs_renumbering,human_resolution,"Primer has two physically different works under this KG-#: 'Battle between Banasura and Krishna' (1700, $26k, 13x14) AND 'Vasishtha Teaches Rama and Lakshmana' (1775, $50k, 9x20). Held back from Artsy upload until Primer assigns one of them a new KG-#."
 KG-1316,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
 KG-1317,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
 KG-1318,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
@@ -478,11 +479,13 @@ KG-1812,provenance_text,,"Provenance: East coast collection, acquired in the 197
 KG-1812,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-1813,height_in,,34.5,price_list_pdf,(filled from price_list_pdf)
 KG-1813,width_in,,23.5,price_list_pdf,(filled from price_list_pdf)
+KG-1813,price_usd,24000.0,38000.0,price_list_pdf,(per price_list_pdf)
 KG-1813,provenance_text,,"Provenance: Southern Alleghenies Museum of Art (SAMA). Exhibited: ""Mirrors of the Heart-Mind"" at SAMA in 1988. Published: Himalayan Art Resources (himalayanart.org), item no. 90527. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
 KG-1813,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-1814,title,Dipankara Buddha with Arhats Deities Thangka,Dipankara Buddha with Arhats Deities,price_list_pdf,(per price_list_pdf)
 KG-1814,height_in,,25.5,price_list_pdf,(filled from price_list_pdf)
 KG-1814,width_in,,20.0,price_list_pdf,(filled from price_list_pdf)
+KG-1814,price_usd,24000.0,28000.0,price_list_pdf,(per price_list_pdf)
 KG-1814,provenance_text,,"Provenance: Southern Alleghenies Museum of Art (SAMA). www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
 KG-1814,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-1815,classification,tskali,Painting,auto_resolution,Works on cotton are categorized as Painting.
@@ -619,6 +622,9 @@ KG-2103,medium,,Opaque watercolor on paper,human_resolution,Title hint: Krishna 
 KG-2105,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2106,title,Tibetan Thangka depicting Saddha (Milarepa),Tibetan Thangka depicting Saddha,price_list_pdf,(per price_list_pdf)
 KG-2106,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2106,height_in,27.0,27.125,price_list_pdf,(per price_list_pdf)
+KG-2106,width_in,39.0,39.5,price_list_pdf,(per price_list_pdf)
+KG-2106,price_usd,30000.0,80000.0,price_list_pdf,(per price_list_pdf)
 KG-2106,provenance_text,,Provenance: Property from the José M. Neistein Collection.,price_list_pdf,(filled from price_list_pdf)
 KG-2106,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2108,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -698,6 +704,8 @@ KG-2219,classification,,Print,human_resolution,Title hint: Daniell-style archite
 KG-2219,medium,,Aquatint with brown wash,human_resolution,Title hint: Daniell-style architectural view.
 KG-2222,medium,,Lithograph plates bound in book,human_resolution,Illustrated book — appropriate medium for the book/portfolio category.
 KG-2224,title,Thangka Of Two Trailokyavijaya Mandalas with Ganapathi,Thangka Of Two Trailokyavijaya Mandalas,price_list_pdf,(per price_list_pdf)
+KG-2224,width_in,18.0,18.25,price_list_pdf,(per price_list_pdf)
+KG-2224,price_usd,38000.0,48000.0,price_list_pdf,(per price_list_pdf)
 KG-2224,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2227,classification,Design/Decorative Art,Sculpture,auto_resolution,Bronze cast works are sculptures.
 KG-2228,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
@@ -792,6 +800,9 @@ KG-2353,medium,,Gold and sapphire,human_resolution,Title hint: ring (gold + sapp
 KG-2359,medium,,Iron with lacquer (akoda nari kabuto),human_resolution,Decorative art (Helmet) — period material.
 KG-2364,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
 KG-2365,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2375,height_in,19.0,19.5,price_list_pdf,(per price_list_pdf)
+KG-2375,width_in,13.0,13.75,price_list_pdf,(per price_list_pdf)
+KG-2375,price_usd,18000.0,25000.0,price_list_pdf,(per price_list_pdf)
 KG-2375,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
 KG-2379,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
 KG-2383,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.

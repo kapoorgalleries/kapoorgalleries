@@ -2357,7 +2357,7 @@ KG-1312,medium,Ground mineral pigments on paper,artsy_csv,1,Opaque watercolor he
 KG-1312,price_usd,50000.0,artsy_csv,1,26000.0,artsy_csv
 KG-1312,primary_image_url,https://data-us-east-1.primerws.com/kapoor_galleries/i/3bb6e0e3-4d4c-4938-beb6-3a4d0a06bd8f/220128_KapoorGalleries_0271-Pano-Edit.jpg?Expires=1802811824&Signature=kchccC246HCDIuO3Fsv5-AzJMPtopdoB7F96w3a01rpgfVfll-cWNIxMDzNjlqq98IX4zjpQdrHeD~wgrgdSH3NmvhdcjRClugIfCl-PkIiWwmwyQbrvTwoq2iEWjwko8lRwh~AziJSUmy9-lcZp3NF5B1z4UdjEutwFRVsL2gzYjKhBtNCBkW-63yjKzFY0TffVOWbdvjcWQpNmc~NFip6TlZAaINltD~Q3rtB~Jxu3ped~CIjNE4LyOYpLn61wI7-Vt45GsIkz5YqrJALB6vnlqGRarUPWpt-YbsjJtST5pEwv7pWScImLqNZbnfn2qf7oR9NdgFuL-szZu-i5-g__&Key-Pair-Id=K2SVGVHI7PEVAH,artsy_csv,0,,
 KG-1312,primer_uuid,3bb6e0e3-4d4c-4938-beb6-3a4d0a06bd8f,artsy_csv,0,,
-KG-1312,status,active,artsy_csv,0,,
+KG-1312,status,needs_renumbering,human_resolution,1,active,"artsy_csv,bulk_upload_xlsx"
 KG-1312,title,Battle between Banasura and Krishna,artsy_csv,1,Vasishtha Teaches Rama and Lakshmana,artsy_csv
 KG-1312,width_in,20.0,artsy_csv,1,14.0,artsy_csv
 KG-1312,year,1775,artsy_csv,1,1700,artsy_csv
@@ -5697,7 +5697,7 @@ KG-1813,classification,Painting,bulk_upload_xlsx,0,,
 KG-1813,exhibitions,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,0,,
 KG-1813,height_in,34.5,price_list_pdf,0,,
 KG-1813,medium,gouache on cotton,bulk_upload_xlsx,0,,
-KG-1813,price_usd,24000.0,bulk_upload_xlsx,1,38000.0,price_list_pdf
+KG-1813,price_usd,38000.0,human_resolution,1,24000.0,bulk_upload_xlsx
 KG-1813,provenance_text,"Provenance: Southern Alleghenies Museum of Art (SAMA). Exhibited: ""Mirrors of the Heart-Mind"" at SAMA in 1988. Published: Himalayan Art Resources (himalayanart.org), item no. 90527. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,0,,
 KG-1813,status,active,bulk_upload_xlsx,0,,
 KG-1813,title,Large Thangka White Tara Tibetan,human_resolution,1,"Large Thangka White Tara Tibetan, 19th",price_list_pdf
@@ -5707,7 +5707,7 @@ KG-1814,classification,Painting,bulk_upload_xlsx,0,,
 KG-1814,exhibitions,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,0,,
 KG-1814,height_in,25.5,price_list_pdf,0,,
 KG-1814,medium,gouache on cotton,bulk_upload_xlsx,0,,
-KG-1814,price_usd,24000.0,bulk_upload_xlsx,1,28000.0,price_list_pdf
+KG-1814,price_usd,28000.0,human_resolution,1,24000.0,bulk_upload_xlsx
 KG-1814,provenance_text,"Provenance: Southern Alleghenies Museum of Art (SAMA). www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,0,,
 KG-1814,status,active,bulk_upload_xlsx,0,,
 KG-1814,title,Dipankara Buddha with Arhats Deities,human_resolution,1,Dipankara Buddha with Arhats Deities Thangka,bulk_upload_xlsx
@@ -6924,13 +6924,13 @@ KG-2105,title,Hunting Party,bulk_upload_xlsx,0,,
 KG-2105,width_in,25.5,bulk_upload_xlsx,0,,
 KG-2106,classification,Painting,bulk_upload_xlsx,0,,
 KG-2106,exhibitions,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,0,,
-KG-2106,height_in,27.0,bulk_upload_xlsx,1,27.125,price_list_pdf
+KG-2106,height_in,27.125,human_resolution,1,27.0,bulk_upload_xlsx
 KG-2106,medium,Opaque watercolor on paper,auto_resolution,0,,
-KG-2106,price_usd,30000.0,bulk_upload_xlsx,1,80000.0,price_list_pdf
+KG-2106,price_usd,80000.0,human_resolution,1,30000.0,bulk_upload_xlsx
 KG-2106,provenance_text,Provenance: Property from the José M. Neistein Collection.,price_list_pdf,0,,
 KG-2106,status,active,bulk_upload_xlsx,0,,
 KG-2106,title,Tibetan Thangka depicting Saddha,human_resolution,1,Tibetan Thangka depicting Saddha (Milarepa),bulk_upload_xlsx
-KG-2106,width_in,39.0,bulk_upload_xlsx,1,39.5,price_list_pdf
+KG-2106,width_in,39.5,human_resolution,1,39.0,bulk_upload_xlsx
 KG-2107,classification,Photograph,bulk_upload_xlsx,0,,
 KG-2107,height_in,47.0,bulk_upload_xlsx,0,,
 KG-2107,medium,Hand colored silver gelatin photograph,bulk_upload_xlsx,0,,
@@ -7649,10 +7649,10 @@ KG-2224,classification,Painting,bulk_upload_xlsx,0,,
 KG-2224,exhibitions,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,0,,
 KG-2224,height_in,34.0,bulk_upload_xlsx,0,,
 KG-2224,medium,Ground mineral pigments on cotton,bulk_upload_xlsx,0,,
-KG-2224,price_usd,38000.0,bulk_upload_xlsx,1,48000.0,price_list_pdf
+KG-2224,price_usd,48000.0,human_resolution,1,38000.0,bulk_upload_xlsx
 KG-2224,status,active,bulk_upload_xlsx,0,,
 KG-2224,title,Thangka Of Two Trailokyavijaya Mandalas,human_resolution,1,Thangka Of Two Trailokyavijaya Mandalas with Ganapathi,bulk_upload_xlsx
-KG-2224,width_in,18.0,bulk_upload_xlsx,1,18.25,price_list_pdf
+KG-2224,width_in,18.25,human_resolution,1,18.0,bulk_upload_xlsx
 KG-2225,status,active,bulk_upload_xlsx,0,,
 KG-2225,title,Dutch Nobleman,bulk_upload_xlsx,0,,
 KG-2226,depth_in,0.478,bulk_upload_xlsx,0,,
@@ -8507,12 +8507,12 @@ KG-2374,title,Figures and Cattle on a Track Overlooking the Sea,bulk_upload_xlsx
 KG-2374,width_in,18.0,bulk_upload_xlsx,0,,
 KG-2375,classification,Painting,bulk_upload_xlsx,0,,
 KG-2375,exhibitions,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,0,,
-KG-2375,height_in,19.0,bulk_upload_xlsx,1,19.5,price_list_pdf
+KG-2375,height_in,19.5,human_resolution,1,19.0,bulk_upload_xlsx
 KG-2375,medium,Ground mineral pigments on cloth,bulk_upload_xlsx,0,,
-KG-2375,price_usd,18000.0,bulk_upload_xlsx,1,25000.0,price_list_pdf
+KG-2375,price_usd,25000.0,human_resolution,1,18000.0,bulk_upload_xlsx
 KG-2375,status,active,bulk_upload_xlsx,0,,
 KG-2375,title,White Tara,human_resolution,1,"White Tara, circa 18th century",price_list_pdf
-KG-2375,width_in,13.0,bulk_upload_xlsx,1,13.75,price_list_pdf
+KG-2375,width_in,13.75,human_resolution,1,13.0,bulk_upload_xlsx
 KG-2376,artist,Thompson B. Jerome,bulk_upload_xlsx,0,,
 KG-2376,classification,Painting,bulk_upload_xlsx,0,,
 KG-2376,height_in,8.0,bulk_upload_xlsx,0,,

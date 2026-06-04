@@ -1,7 +1,7 @@
 # Inventory coverage
 
 - Total works: **1528**
-- Works with at least one conflict: **6**
+- Works with at least one conflict: **1**
 
 ## Field-level coverage
 
@@ -42,5 +42,5 @@
 | Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099) | image_dir | 5 | 2026-05-06T06:06:22 |
 | Kapoor Galleries - Bulk upload Template Artsy.xlsx | bulk_upload_xlsx | 1424 | 2026-05-06T06:29:00 |
 | auto_resolution_rules | auto_resolution | 41 | 2026-06-02T03:08:12 |
-| human_resolutions | human_resolution | 437 | 2026-06-02T06:30:43 |
+| human_resolutions | human_resolution | 448 | 2026-06-04T02:25:07 |
 | match_workbook_summary_kg1000_1099 (partial fixture) | match_workbook | 16 | 2026-05-06T05:50:35 |

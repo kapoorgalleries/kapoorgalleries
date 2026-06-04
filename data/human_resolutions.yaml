@@ -3386,3 +3386,92 @@
   reason: "Decorative art (Helmet) \u2014 period material."
   decided_by: sanjay@kapoors.com
   decided_at: '2026-06-02'
+- work_id: KG-1813
+  field: price_usd
+  value: '38000.0'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-1814
+  field: price_usd
+  value: '28000.0'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-2106
+  field: price_usd
+  value: '80000.0'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-2106
+  field: height_in
+  value: '27.125'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-2106
+  field: width_in
+  value: '39.5'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-2224
+  field: price_usd
+  value: '48000.0'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-2224
+  field: width_in
+  value: '18.25'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-2375
+  field: price_usd
+  value: '25000.0'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-2375
+  field: height_in
+  value: '19.5'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-2375
+  field: width_in
+  value: '13.75'
+  reason: Himalayas price list (hand-curated for that show) is more trustworthy than
+    the broader bulk_upload xlsx for the works in that show.  Resolved per sanjay@kapoors.com
+    2026-06-02.
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'
+- work_id: KG-1312
+  field: status
+  value: needs_renumbering
+  reason: 'Primer has two physically different works under this KG-#: ''Battle between
+    Banasura and Krishna'' (1700, $26k, 13x14) AND ''Vasishtha Teaches Rama and Lakshmana''
+    (1775, $50k, 9x20). Held back from Artsy upload until Primer assigns one of them
+    a new KG-#.'
+  decided_by: sanjay@kapoors.com
+  decided_at: '2026-06-04'

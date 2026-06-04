@@ -81,13 +81,3 @@ Resolve with: `python -m src.cli resolve <KG-#> <field> "<value>" --reason "..."
 | KG-1312 | title | Battle between Banasura and Krishna \| Vasishtha Teaches Rama and Lakshmana | artsy_csv,bulk_upload_xlsx |
 | KG-1312 | width_in | 14.0 \| 20.0 | artsy_csv,bulk_upload_xlsx |
 | KG-1312 | year | 1700 \| 1775 | artsy_csv,bulk_upload_xlsx |
-| KG-1813 | price_usd | 24000.0 \| 38000.0 | bulk_upload_xlsx,price_list_pdf |
-| KG-1814 | price_usd | 24000.0 \| 28000.0 | bulk_upload_xlsx,price_list_pdf |
-| KG-2106 | height_in | 27.0 \| 27.125 | bulk_upload_xlsx,price_list_pdf |
-| KG-2106 | price_usd | 30000.0 \| 80000.0 | bulk_upload_xlsx,price_list_pdf |
-| KG-2106 | width_in | 39.0 \| 39.5 | bulk_upload_xlsx,price_list_pdf |
-| KG-2224 | price_usd | 38000.0 \| 48000.0 | bulk_upload_xlsx,price_list_pdf |
-| KG-2224 | width_in | 18.0 \| 18.25 | bulk_upload_xlsx,price_list_pdf |
-| KG-2375 | height_in | 19.0 \| 19.5 | bulk_upload_xlsx,price_list_pdf |
-| KG-2375 | price_usd | 18000.0 \| 25000.0 | bulk_upload_xlsx,price_list_pdf |
-| KG-2375 | width_in | 13.0 \| 13.75 | bulk_upload_xlsx,price_list_pdf |
