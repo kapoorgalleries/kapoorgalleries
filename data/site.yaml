@@ -1,0 +1,76 @@
+# Site-wide metadata for the public-facing Kapoor Galleries website.
+#
+# Emits ``data/site.json`` — a single document consumed by the SPA at
+# build time to populate footer, header, contact page, structured data
+# (JSON-LD for SEO), and the Inquire form's mailto.  Curator-edited
+# in this YAML; nothing else writes it.
+#
+# Edit and re-run ``make report`` (or ``python -m src.cli export-site``).
+
+gallery:
+  name:          "Kapoor Galleries"
+  legal_name:    "Kapoor Galleries Inc."
+  tagline:       "Indian, Himalayan, and Southeast Asian Art"
+  established:   1973
+  description: >
+    Kapoor Galleries Inc. is a third-generation art gallery based in
+    New York City, specializing in the fine art of South Asia and the
+    Himalayas — from Gandharan sculpture through Mughal manuscript
+    illustration to 19th-century Pahari painting and Tibetan thangka
+    art.  We work with private collectors and major museums worldwide.
+
+contact:
+  email_general:    "info@kapoorgalleries.com"
+  email_inquiries:  "info@kapoorgalleries.com"
+  email_press:      "info@kapoorgalleries.com"
+  phone_us:         "+1 (212) 888-2257"
+  wechat:           "Vajrapani90"
+
+address:
+  street:        "34 East 67th Street"
+  street_2:      ""
+  city:          "New York"
+  state:         "NY"
+  postal_code:   "10065"
+  country:       "USA"
+  country_code:  "US"
+  # Used for the JSON-LD PostalAddress + a Google Maps embed.
+  lat:           40.7677
+  lng:           -73.9667
+
+hours:
+  - { day: "Monday",    opens: "10:00", closes: "18:00", note: "" }
+  - { day: "Tuesday",   opens: "10:00", closes: "18:00", note: "" }
+  - { day: "Wednesday", opens: "10:00", closes: "18:00", note: "" }
+  - { day: "Thursday",  opens: "10:00", closes: "18:00", note: "" }
+  - { day: "Friday",    opens: "10:00", closes: "18:00", note: "" }
+  - { day: "Saturday",  opens: "10:00", closes: "18:00", note: "" }
+  - { day: "Sunday",    opens: "",      closes: "",      note: "Closed (by appointment)" }
+
+social:
+  instagram: "kapoorgalleriesinc"
+  twitter:   ""
+  facebook:  ""
+  academia:  "https://soas-uk.academia.edu/KapoorGalleries"
+
+memberships:
+  - "Asia Week New York"
+  - "AADLA (Art and Antique Dealers League of America)"
+  - "CINOA (Confédération Internationale des Négociants en Œuvres d'Art)"
+  - "ISA (International Society of Appraisers)"
+
+team:
+  - name:  "Sanjay Kapoor"
+    role:  "Principal"
+    email: "sanjay@kapoors.com"
+  - name:  "Ramesh Kapoor"
+    role:  "Founder"
+    email: ""
+
+# Drives the homepage navigation order.
+nav:
+  - { label: "Works",       url: "/works" }
+  - { label: "Collections", url: "/collections" }
+  - { label: "Masterworks", url: "/masterworks" }
+  - { label: "About",       url: "/about" }
+  - { label: "Contact",     url: "/contact" }

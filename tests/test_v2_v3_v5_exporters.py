@@ -539,6 +539,52 @@ def test_collections_seed_titles_fuzzy_match(tmp_path: Path):
     assert len(matched) == 2
 
 
+def test_collections_emit_hero_image_from_first_imaged_member(tmp_path: Path):
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        # No image -> shouldn't be hero source.
+        _make_work("KG-1", "Untitled A", ["tibetan"], primary=None),
+        # Has image -> becomes hero.
+        _make_work("KG-2", "Bronze Vajra", ["tibetan"],
+                   primary="https://cdn/x.jpg"),
+    ])
+    cfg = tmp_path / "coll.yaml"
+    cfg.write_text(
+        "collections:\n"
+        "  - slug: himalayan\n"
+        "    title: Himalayan\n"
+        "    include_tags: [tibetan]\n"
+    )
+    out, _ = collections_json.export_collections(
+        config_yaml=cfg, feed_path=feed_path,
+        out_path=tmp_path / "collections.json",
+    )
+    feed = json.loads(out.read_text())
+    coll = feed["collections"][0]
+    assert coll["hero_image"] == "https://cdn/x.jpg"
+
+
+def test_collections_curator_hero_overrides_auto(tmp_path: Path):
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        _make_work("KG-1", "X", ["t"], primary="https://cdn/auto.jpg"),
+    ])
+    cfg = tmp_path / "coll.yaml"
+    cfg.write_text(
+        "collections:\n"
+        "  - slug: c\n"
+        "    title: C\n"
+        "    hero_image_url: https://cdn/curator.jpg\n"
+        "    include_tags: [t]\n"
+    )
+    out, _ = collections_json.export_collections(
+        config_yaml=cfg, feed_path=feed_path,
+        out_path=tmp_path / "collections.json",
+    )
+    feed = json.loads(out.read_text())
+    assert feed["collections"][0]["hero_image"] == "https://cdn/curator.jpg"
+
+
 def test_collections_no_op_when_config_missing(tmp_path: Path):
     feed_path = tmp_path / "feed.json"
     _write_feed(feed_path, [

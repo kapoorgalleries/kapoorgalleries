@@ -14,7 +14,7 @@ from . import reports
 from .exporters import (
     artsy_upload_csv, collections_json, conflicts_csv, enrichment, gaps_csv,
     image_map, master_csv, master_json, masterworks_json,
-    primer_corrections_csv, provenance_csv, website_inventory,
+    primer_corrections_csv, provenance_csv, site_json, website_inventory,
 )
 from .normalize import INTERNAL_PLACEHOLDER_TITLES
 
@@ -462,6 +462,11 @@ def report(db_path: str):
         else "data/website_inventory.json",
         out_path="data/collections.json",
     )
+    # Site-wide metadata (no-op if data/site.yaml absent).
+    _, site_ok = site_json.export_site(
+        config_yaml="data/site.yaml",
+        out_path="data/site.json",
+    )
     click.echo(f"master.csv: {n} rows")
     click.echo(f"conflicts.csv: {nc} rows")
     click.echo(f"gaps.csv: {ng} rows")
@@ -484,6 +489,8 @@ def report(db_path: str):
         click.echo(f"masterworks.json: {n_mw} masterworks")
     if n_coll:
         click.echo(f"collections.json: {n_coll} populated collection page(s)")
+    if site_ok:
+        click.echo("site.json: gallery metadata + JSON-LD")
     click.echo("reports/*.md written")
 
 
@@ -947,6 +954,20 @@ def apply_image_map_cmd(map_csv: str, feed_path: str, init: bool):
     stats = image_map.apply_image_map(map_csv=map_csv, feed_path=feed_path)
     for k, v in stats.items():
         click.echo(f"  {k:20s} {v}")
+
+
+@cli.command("export-site")
+@click.option("--config", "config_yaml", default="data/site.yaml",
+              show_default=True)
+@click.option("--out", "out_path", default="data/site.json",
+              show_default=True)
+def export_site_cmd(config_yaml: str, out_path: str):
+    """Emit data/site.json — gallery metadata + JSON-LD for the
+    website's footer, header, contact page, and SEO markup."""
+    out, ok = site_json.export_site(
+        config_yaml=config_yaml, out_path=out_path,
+    )
+    click.echo(f"  Wrote {out} (ok={ok}).")
 
 
 @cli.command("export-collections")

@@ -329,7 +329,31 @@ export const load = async ({ params, fetch }) => {
 };
 ```
 
-## 13 · Year fallback (`era_display`)
+## 13 · Site metadata (`data/site.json`)
+
+A single JSON document the SPA can fetch at build time for
+gallery name, address, hours, contact, social, memberships,
+navigation, and a pre-built JSON-LD `ArtGallery` block for SEO.
+
+```ts
+import site from "./site.json" assert { type: "json" };
+
+// Footer
+<footer>
+  <p>{site.gallery.name} · {site.address.street}, {site.address.city}</p>
+  <p>{site.contact.phone_us} · {site.contact.email_general}</p>
+</footer>
+
+// Head — paste the structured-data block
+<script type="application/ld+json">
+  {JSON.stringify(site.json_ld)}
+</script>
+```
+
+The schema is curator-edited in `data/site.yaml` — re-run
+`make report` (or `python -m src.cli export-site`) after edits.
+
+## 14 · Year fallback (`era_display`)
 
 The base feed now ships an optional `era_display` string for works
 whose `year` is null but whose tags carry a period inference. The
@@ -344,7 +368,7 @@ Examples today: `"19th century"`, `"Ancient"`, `"Contemporary"`.
 Only emitted when `year === null`; works with a year never carry
 this key so there's no redundant signal.
 
-## 14 · Sold-state plumbing
+## 15 · Sold-state plumbing
 
 The enrichment step (§9) now consults a `SOLD` column in the curator
 Catalog & Inventory Sheet. Rows with `SOLD` set are excluded from
@@ -371,7 +395,7 @@ The curator reviews this file periodically and confirms — then either:
 
 Today (2026-06): 3 candidates pending curator review.
 
-## 15 · Open questions for the site author
+## 16 · Open questions for the site author
 
 These are decisions the inventory pipeline can't make for you:
 

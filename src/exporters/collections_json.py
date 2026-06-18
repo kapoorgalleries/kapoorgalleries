@@ -241,6 +241,15 @@ def export_collections(
         # Stable display ordering: alpha by title.
         members.sort(key=lambda m: m["title"].lower())
 
+        # hero_image — first member with a primary/thumbnail image.
+        # Curator can override with `hero_image_url` in the YAML.
+        hero = spec.get("hero_image_url")
+        if not hero:
+            for m in members:
+                if m.get("thumbnail"):
+                    hero = m["thumbnail"]
+                    break
+
         collections_out.append({
             "slug": slug,
             "title": spec.get("title") or slug,
@@ -248,6 +257,7 @@ def export_collections(
             "description": (spec.get("description") or "").strip() or None,
             "source_catalog": spec.get("source_catalog"),
             "url_path": f"/collections/{slug}",
+            "hero_image": hero,
             "include_tags": sorted(include_tags),
             "member_count": len(members),
             "members": members,

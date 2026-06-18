@@ -137,6 +137,9 @@ prefer the enriched feed if available, falling back to the base.
   catalog publications (Virtual Ragamala, Incarnations of Devotion,
   God/Goddess, Himalayan Art, etc.). Drives the
   `/collections/<slug>` routes. Schema below.
+- **`data/site.json`** — gallery name, address, hours, contact, social,
+  navigation, and a pre-built JSON-LD `ArtGallery` block for SEO.
+  Curator-edited via `data/site.yaml`. Schema below.
 
 ## `MasterWork` (for masterworks.json)
 
@@ -193,6 +196,8 @@ type Collection = {
   description:    string | null;     // long-form intro paragraph
   source_catalog: string | null;     // "2021 Catalogue - Incarnations…"
   url_path:       string;            // "/collections/<slug>"
+  hero_image:     string | null;     // CDN URL — first imaged member,
+                                     // or curator-supplied override.
   include_tags:   string[];          // the tag filter that drove membership
   member_count:   number;
   members: Array<{
@@ -212,6 +217,52 @@ than 404.
 
 Membership union: tag filter + explicit KG-# list + fuzzy seed-title
 matches (`data/collection_seed_audit.csv` records every decision).
+
+## `Site` (for site.json)
+
+```ts
+type SiteFeed = {
+  schema_version: 1;
+  generated_at: string;
+  gallery: {
+    name: string;
+    legal_name: string;
+    tagline: string;
+    established: number;
+    description: string;
+  } | null;
+  contact: {
+    email_general:   string;
+    email_inquiries: string;
+    email_press:     string;
+    phone_us:        string;
+    wechat:          string;
+  } | null;
+  address: {
+    street: string; street_2: string;
+    city: string; state: string; postal_code: string;
+    country: string; country_code: string;
+    lat: number; lng: number;
+  } | null;
+  hours: Array<{
+    day: string;
+    opens: string;       // "HH:MM" or "" if closed
+    closes: string;
+    note: string;
+  }> | null;
+  social: { instagram: string; twitter: string;
+            facebook: string; academia: string } | null;
+  memberships: string[] | null;
+  team: Array<{ name: string; role: string; email: string }> | null;
+  nav: Array<{ label: string; url: string }> | null;
+  // Pre-built JSON-LD ArtGallery block — drop into <head> for SEO.
+  json_ld: object;
+};
+```
+
+Drop the `json_ld` block straight into a `<script type="application/ld+json">`
+tag in the site's `<head>` — Google reads it for the gallery's
+Knowledge Panel.
 
 ## Stability & versioning
 

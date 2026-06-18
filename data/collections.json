@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-18T19:14:46Z",
+  "generated_at": "2026-06-18T19:50:00Z",
   "count": 9,
   "collections": [
     {
@@ -10,6 +10,7 @@
       "description": "A scholarly survey of master painters whose names rarely surface in Western collections.  This selection draws from the gallery's ongoing Arcane Masters research catalogue.",
       "source_catalog": "Arcane Masters catalogue (unsold only)",
       "url_path": "/collections/arcane-masters",
+      "hero_image": "https://data-us-east-1.primerws.com/kapoor_galleries/i/dbf742e9-c92a-48b8-b954-9bb8577be3c8/Screenshot%202023-07-10%20at%2012.28.52%20PM.jpg?Expires=1802811923&Signature=Cn10rQ7qM8sfQJ1LsYc3i0CPnKoFdkUwS5l6B7EBFogeSqkWTwITR02deCFMUCs1vel2dlshTsXYgLR1RWGgoX4scZ1K6Lnv7gCWvIApkKpu48OUEJ2~QsQql9cNDE9v~6vB-K2rsuTlk06ySnyIrdkBHdWJiJDZos6w1pYvzuAMFQfKWb~Lz5glA4g9NR5Bu0fAVslXwpghrnFVCWKILSraQCqecj34l4QcJ3HI6E88u~UCj1h4KxaAJwgZTlHC0cOLQ-bPPUNO8o9TmKddmLLzEeqJXQfMT96edIf7RkWnbNhkznOpo4YqI2pHg7jelLQUVg31xcPe0Hoj2tla8w__&Key-Pair-Id=K2SVGVHI7PEVAH",
       "include_tags": [],
       "member_count": 54,
       "members": [
@@ -400,6 +401,7 @@
       "description": "Works highlighting the iconographic richness of Hindu and Buddhist devotional art across India, Nepal, and the Himalayas.",
       "source_catalog": "2021 Catalogue - Incarnations of Devotion",
       "url_path": "/collections/incarnations-of-devotion",
+      "hero_image": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b14dfb93-a177-4eb5-b3b9-e932442f40f0/CC291-5_2.jpg?Expires=1802811827&Signature=yoxo-OhUnJ60UIHRAblXgbDk-YUVgO89A4KKOL8N5UtokEj-ue6-VtuHPGYyVWayqrqkoJt7oL1Oz0Um2nwM5wK6dCGVV5ynAAU6GxXG2zgRevgGhBOdaZfbXrOCTVZ6Cl7Y1pEmTpuPu3wa0V3prtRF95QHjvMKb~hNblzM~gFMQOVPWIEtvAwexCVN-tw3fDtZwhfnDzOkoPYp3pwP4vK66UUtKHeqp6WC3LTSAfDHHcUYK8xA2186RdGcKR2HR0d2nNmR2Yadsp3IvMv5PMLKlMZHWcTCrj7MTIxMz4n2I6o7gwW-~NiWPJ27nPiPTrZ1s6EHo2dF68LbbLJ8AQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
       "include_tags": [
         "avalokiteshvara",
         "buddha",
@@ -2120,6 +2122,7 @@
       "description": "Ragamala folios — visual interpretations of the modes of Indian classical music.  Each painting personifies a raga or ragini.",
       "source_catalog": "Virtual Ragamala",
       "url_path": "/collections/virtual-ragamala",
+      "hero_image": "https://data-us-east-1.primerws.com/kapoor_galleries/i/e1534094-95b6-4835-89d4-d512f8750ad3/DSC_5142.jpg?Expires=1802811887&Signature=WNcVRjtwh9CGw48sdYxaFlySSQNMJ~mT9ib5dm6OXO3rcVS1T0~FUbzmq7RE4aMZJYVX9AxPs7GjN7-Jkip-qzlowWfPAZBgWNFxX0EASdXjx2BzOYCXcdNTxOtxl7I-cp76TnSydszl55JcKm043WtwQ26zIHd9Q4UYbYPeYwfhP2JVplsC7uhi~zobfCfnnDbCreyrNpGBzEPA-s-~GOdCWLUypPj7qy2yGixD3RmdPcZPHrrtx88JvfIJl3QmuvUyFbkBy--nKZ7iIQKFhdXkBpX6ZkmAqrW-F-zZNkPeSAoarJlcWhsGlsmv3JPs3QRez3Vi8dnOK0Ap-Ra6uQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
       "include_tags": [
         "ragamala"
       ],
@@ -2393,6 +2396,7 @@
       "description": "Illustrations to Keshav Das's Rasikapriya, the 16th-century treatise on the moods of love and the categories of heroines and heroes.",
       "source_catalog": "Rasikapriya 2024",
       "url_path": "/collections/rasikapriya",
+      "hero_image": "https://data-us-east-1.primerws.com/kapoor_galleries/i/02abeedb-dfaa-4fee-80be-74975cbaed93/Illustration%20to%20a%20Rasikapriya%20Series.%20An%20older%20Sakhi%20comforts%20a%20forlorn%20Radha%20hq.jpg?Expires=1802811805&Signature=N3dGX7JxDe6jOkxgomQFoJVdC1DDSJk4XKb2wPYXCA3iUqDv4t~fu-zwQIH2N7IIAaajY7tfl8GN1rzfpvX4ow7mskCoG82BcWkcSn-s4npr4TJ5DsRe7DtfWDQMl2arQx0Wf1Bivopc3l66n9VgC8v9VTHO0qG3VZqK-zrb~6XdFuPHiv~7pbtQdwDtCI1FcPY-4mBLpG6rCQ3ror4FRyDIAfeiu7kM6vBf4Fu4-s47hW8Vo8JcOfOnoC1SPDmn~KmZyaRGXkN--YqYSztdydSV9P-7zn86nvoLM3cLqyZE0YS5SHnF9dyREU2AFz664o8cmQXGrm0lzDN-zzFB-A__&Key-Pair-Id=K2SVGVHI7PEVAH",
       "include_tags": [],
       "member_count": 8,
       "members": [
@@ -2461,6 +2465,7 @@
       "description": "Iconographic studies of major deities across the South Asian and Himalayan pantheons.",
       "source_catalog": "God/Goddess 2020 Catalogue",
       "url_path": "/collections/god-goddess",
+      "hero_image": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b14dfb93-a177-4eb5-b3b9-e932442f40f0/CC291-5_2.jpg?Expires=1802811827&Signature=yoxo-OhUnJ60UIHRAblXgbDk-YUVgO89A4KKOL8N5UtokEj-ue6-VtuHPGYyVWayqrqkoJt7oL1Oz0Um2nwM5wK6dCGVV5ynAAU6GxXG2zgRevgGhBOdaZfbXrOCTVZ6Cl7Y1pEmTpuPu3wa0V3prtRF95QHjvMKb~hNblzM~gFMQOVPWIEtvAwexCVN-tw3fDtZwhfnDzOkoPYp3pwP4vK66UUtKHeqp6WC3LTSAfDHHcUYK8xA2186RdGcKR2HR0d2nNmR2Yadsp3IvMv5PMLKlMZHWcTCrj7MTIxMz4n2I6o7gwW-~NiWPJ27nPiPTrZ1s6EHo2dF68LbbLJ8AQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
       "include_tags": [
         "buddha",
         "shiva",
@@ -4011,6 +4016,7 @@
       "description": "Thangkas, sculpture, and ritual objects from Tibet, Nepal, and neighbouring regions.",
       "source_catalog": "Himalayan Art",
       "url_path": "/collections/himalayan-art",
+      "hero_image": "https://data-us-east-1.primerws.com/kapoor_galleries/i/d7f91410-5c37-4652-adb2-b3c0cbe05f40/220217_KapoorGalleries_Flats_0015.jpg?Expires=1802811811&Signature=JJGhfLzEMSnL2SQVj2vyyKxkrO-hUp1A-0xNCPces~-8qI6Re~x4n4MuMzfcyzwC61aH0RW-rIOyIBVADJs-bd2e3N00r41OM~MKB8Lah2Q2kPncobmXhCm0jJoVnWUAhuwLroflXzwO4~bl1KAP6in~M6Oxw0JESNUgdU4I9S1ANGviW72AJB1lunC3gSE62g~S1WYCGyWQv96qhvRGLZGxryJsJxL1Kwu2XqdBgI9f503GpqiSpUiAtEhHp4As6sXdPKiPjYtoQ3j9zOciE1BoH4rWiGSqKQv7iz-MlZTuv~rBi4JQCue0CNj4zqIkAx7wmw6mwGDT1eDIXIQCzw__&Key-Pair-Id=K2SVGVHI7PEVAH",
       "include_tags": [
         "mandala",
         "nepalese",
@@ -4357,6 +4363,7 @@
       "description": "Royal and courtly portraiture from the Indian subcontinent.",
       "source_catalog": "Portraits catalogue",
       "url_path": "/collections/portraits",
+      "hero_image": "https://data-us-east-1.primerws.com/kapoor_galleries/i/0ba131a3-1f51-4f3c-ab4d-0f5f9cb5d736/img410.jpg?Expires=1802811948&Signature=DLg9KSnLZHLzMRbKpNdlDYm-fJDAtQvaV0kNTQNvJp0W7l8jkI7vEsHV-eooHsBPQAbj7i2PalpKBIARIdG8eFP~TumFBn4GyXpw74DAsp3jQpwfa3~u~vRmSx~4eFrUSg~UcTGtn3m5lFAXZizQv1Hpe55-NahzHa72c-CjBrCyhCCdowowF8I6cLBReAtHnTPp9BPabni1~wE0e5BtyV2M575GV9H9tup2sCjLkBZ-4GKolSxcQiKQV9Yby9DGZ6nCi2Y4ObGKA-wIUMNnR4De2jUj20SR9AJptn-aPMkmhZXBn2LscR2yGuKWU6egLl5gpRIVQTSxqiXcVMgSKQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
       "include_tags": [
         "portrait"
       ],
@@ -5288,6 +5295,7 @@
       "description": "A focused selection of miniature paintings — manuscript folios, album leaves, and detached illustrations.",
       "source_catalog": "Indian Miniatures",
       "url_path": "/collections/indian-miniatures",
+      "hero_image": "https://data-us-east-1.primerws.com/kapoor_galleries/i/2eb61484-5a42-40c8-86e7-e05a86c639ac/Screenshot%202023-07-07%20at%204.15.51%20PM.jpg?Expires=1802811759&Signature=bDRWLoh-4Jdm9DzFzVqCcERBI8AkN5g~W6PVZBKDl0hgCi3Eru9vLpCs1SzrPTGYDH4GOWx7AMJ15amtQE6v4YnDv-oMJ0JCbdpqM-oD5ZxbGm3Kt7~HvoTFShjKUyiqIFZBeuPkCeqxv91Irh0M-OpfuiGMW8n365B-nTZUoQsDgXSs1oSiZvMAmGmVDno5yYeV7E1Yb4rJCxtlhH-jy2Yp5AklRjRfrEGP4W3J4bAUJcKvbClQHFqnyr-unXbfp8l22yBur55jlpFHgnB3JodyYGM9txttNfDEJ1ytjqwZx3XfqVizsjEnD~D-adxQhMbnDn-WM4InzEuDiitR6A__&Key-Pair-Id=K2SVGVHI7PEVAH",
       "include_tags": [
         "indian"
       ],
@@ -6226,6 +6234,7 @@
       "description": "The gallery's holding of vintage travel-poster graphics from the Air India era and adjacent campaigns.",
       "source_catalog": "Travel Posters",
       "url_path": "/collections/travel-posters",
+      "hero_image": "https://data-us-east-1.primerws.com/kapoor_galleries/i/789e6210-bb5b-40a7-99ca-6c88878ef9b4/201124_KapoorGalleries_0034.jpg?Expires=1802811752&Signature=k8-BDsFPNqEo96KL6MXV~4lFm3-owvC-STLQrVqzSpuDPvL~AQ5nVB8temPQO3QBDKPMQxBsYsED~UkSTazu05S-LsLGW~Irmu~EcmVIC~hkXeYofH40vKs9mimo9lwJDvWbQ4BPFQq2X1u89yvFaki6IbKNAOv58ILisQLJVrB~dasnC2CpJK8PiAjj7ET4UCHjy8MuGfeSzdG9jfz6VZbpHwoxpe6UydRw3ua2dZcfYOvKGwJnMKk6TRkhBxKqivpKkEdGQtUtn-7V0ZxvZAo2ZIuK4~WKYWIScSooT96Ao5g7MkORODGK9efZfie1vAVG6Fcy1Lr9Njoykj4XfQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
       "include_tags": [],
       "member_count": 1,
       "members": [
