@@ -6,12 +6,10 @@ __pycache__/
 venv/
 .DS_Store
 *.egg-info/
-
 # Derived SQLite database; rebuilt from sources.yaml on every `make ingest`.
 # Binary churn that adds zero value to git history.  CI uploads it as a
 # workflow artifact instead.
 data/inventory.db
-
 # Local-only raw downloads from Drive (large; reproducible from sources.yaml).
 # Keep small fixtures committed under tests/fixtures/, not data/raw/.
 # Use file-level patterns (not data/raw/) so git negation rules work.
@@ -40,3 +38,8 @@ data/raw/*
 !data/raw/Textile_Boxes_2022-07.docx
 # 6.4 MB Himalayas price list (12 KG-#s with prices + dims) — committed for CI.
 !data/raw/KG_Art_of_the_Himalayas_Price_List.pdf
+# Source PDFs are too large for git; fetched per-machine via scripts/fetch_pdfs.sh
+READY_TO_PUBLISH/*/document.pdf
+READY_TO_PUBLISH/*/*.pdf
+# Per-machine upload state
+READY_TO_PUBLISH/*/.uploaded
