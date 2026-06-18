@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-18T19:49:47Z",
+  "gallery": {
+    "name": "Kapoor Galleries",
+    "legal_name": "Kapoor Galleries Inc.",
+    "tagline": "Indian, Himalayan, and Southeast Asian Art",
+    "established": 1973,
+    "description": "Kapoor Galleries Inc. is a third-generation art gallery based in New York City, specializing in the fine art of South Asia and the Himalayas — from Gandharan sculpture through Mughal manuscript illustration to 19th-century Pahari painting and Tibetan thangka art.  We work with private collectors and major museums worldwide.\n"
+  },
+  "contact": {
+    "email_general": "info@kapoorgalleries.com",
+    "email_inquiries": "info@kapoorgalleries.com",
+    "email_press": "info@kapoorgalleries.com",
+    "phone_us": "+1 (212) 888-2257",
+    "wechat": "Vajrapani90"
+  },
+  "address": {
+    "street": "34 East 67th Street",
+    "street_2": "",
+    "city": "New York",
+    "state": "NY",
+    "postal_code": "10065",
+    "country": "USA",
+    "country_code": "US",
+    "lat": 40.7677,
+    "lng": -73.9667
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "opens": "10:00",
+      "closes": "18:00",
+      "note": ""
+    },
+    {
+      "day": "Tuesday",
+      "opens": "10:00",
+      "closes": "18:00",
+      "note": ""
+    },
+    {
+      "day": "Wednesday",
+      "opens": "10:00",
+      "closes": "18:00",
+      "note": ""
+    },
+    {
+      "day": "Thursday",
+      "opens": "10:00",
+      "closes": "18:00",
+      "note": ""
+    },
+    {
+      "day": "Friday",
+      "opens": "10:00",
+      "closes": "18:00",
+      "note": ""
+    },
+    {
+      "day": "Saturday",
+      "opens": "10:00",
+      "closes": "18:00",
+      "note": ""
+    },
+    {
+      "day": "Sunday",
+      "opens": "",
+      "closes": "",
+      "note": "Closed (by appointment)"
+    }
+  ],
+  "social": {
+    "instagram": "kapoorgalleriesinc",
+    "twitter": "",
+    "facebook": "",
+    "academia": "https://soas-uk.academia.edu/KapoorGalleries"
+  },
+  "memberships": [
+    "Asia Week New York",
+    "AADLA (Art and Antique Dealers League of America)",
+    "CINOA (Confédération Internationale des Négociants en Œuvres d'Art)",
+    "ISA (International Society of Appraisers)"
+  ],
+  "team": [
+    {
+      "name": "Sanjay Kapoor",
+      "role": "Principal",
+      "email": "sanjay@kapoors.com"
+    },
+    {
+      "name": "Ramesh Kapoor",
+      "role": "Founder",
+      "email": ""
+    }
+  ],
+  "nav": [
+    {
+      "label": "Works",
+      "url": "/works"
+    },
+    {
+      "label": "Collections",
+      "url": "/collections"
+    },
+    {
+      "label": "Masterworks",
+      "url": "/masterworks"
+    },
+    {
+      "label": "About",
+      "url": "/about"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "json_ld": {
+    "@context": "https://schema.org",
+    "@type": "ArtGallery",
+    "name": "Kapoor Galleries",
+    "legalName": "Kapoor Galleries Inc.",
+    "description": "Kapoor Galleries Inc. is a third-generation art gallery based in New York City, specializing in the fine art of South Asia and the Himalayas — from Gandharan sculpture through Mughal manuscript illustration to 19th-century Pahari painting and Tibetan thangka art.  We work with private collectors and major museums worldwide.",
+    "url": "https://kapoorgalleries.com",
+    "telephone": "+1 (212) 888-2257",
+    "email": "info@kapoorgalleries.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "34 East 67th Street",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10065",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.7677,
+      "longitude": -73.9667
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Tuesday",
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "18:00"
+      }
+    ]
+  }
+}

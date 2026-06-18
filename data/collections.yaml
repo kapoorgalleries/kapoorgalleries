@@ -1,0 +1,207 @@
+# Collection landing pages for the public website.
+#
+# Each collection becomes a /collections/<slug> page surfacing a curated
+# subset of the inventory.  Membership can come from either:
+#
+#   - ``include_tags``   — any work carrying one of the listed tag values
+#                          is a member.  Tags come from
+#                          ``website_inventory.json#works[].tags``.
+#   - ``include_kg_ids`` — explicit KG-# list (curator-maintained).
+#
+# A work is a member if it matches EITHER mechanism.  Use ``include_tags``
+# for tag-driven groupings (Virtual Ragamala = everything tagged
+# ``ragamala``) and ``include_kg_ids`` for catalog publications where the
+# membership list comes from a PDF rather than from tags.
+#
+# Tag values are the same lowercase-kebab strings the website-inventory
+# exporter emits — see docs/WEBSITE_SCHEMA.md "Tag taxonomy".
+#
+# A third mechanism is also supported:
+#
+#   - ``seed_titles``  — a list of title strings extracted from the
+#     gallery's Drive catalog folders.  The pipeline fuzzy-matches each
+#     against the website feed (rapidfuzz token-set-ratio, threshold
+#     90) and adds the best match to the collection's members.  All
+#     match decisions are recorded in ``data/collection_seed_audit.csv``
+#     so the curator can spot-check.
+
+collections:
+  - slug: arcane-masters
+    title: "Arcane Masters"
+    subtitle: "Court painters of the Indian subcontinent, 17th–19th century"
+    source_catalog: "Arcane Masters catalogue (unsold only)"
+    description: >
+      A scholarly survey of master painters whose names rarely surface in
+      Western collections.  This selection draws from the gallery's
+      ongoing Arcane Masters research catalogue.
+    include_tags: []
+    include_kg_ids: []
+    # Titles extracted from the Drive folder
+    # `1iLYkP-40JuvdD6BmZmxmbd2I60xp24bU` (Arcane Masters catalogue
+    # (unsold only)).  Each folder is named "<lot> - <title>".
+    seed_titles:
+      - "Tired Prince Led To Bed"
+      - "Nandi"
+      - "Sajnu Kali"
+      - "Yama Dharmaraja"
+      - "Mahakala"
+      - "A Leaf from the Hamir Hath"
+      - "Radha and Krishna watching Nautch"
+      - "Illustration to a Bhagavata Purana: Krishna Uprooting the tree, The Liberation of Nalakuvara and Manigriva"
+      - "Illustration to the Rasamanjari of Bhanu Dutta: The Intoxicated Courtesan"
+      - "A leaf from the Shahnameh"
+      - "Leaf from the Bhagavata Purana: Varaha Avatar"
+      - "Portrait of a Woman with a Cat"
+      - "Leaf from a Gita Govinda series: Radha Vents her Frustrations"
+      - "Amitayus"
+      - "Krishna & Radha: Illustration to a Baramasa Series: The Month of Pausha"
+      - "Krishna Paying Homage to Radha"
+      - "The Elephant Meghabaran Goes on a Rampage"
+      - "Composite Camel Painting"
+      - "Ladies at a Water Well"
+      - "Krishna on the Road to Kundinapura: A folio from a Rukmini Harana Series"
+      - "Wood Indra"
+      - "White Tara"
+      - "Krishna shares a drink with Radha"
+      - "Vajrasattva / Vajrapani"
+      - "Hayagriva"
+      - "Lakshmi massaging the foot of Vishnu"
+      - "Vajradhara"
+      - "Leaf from the Bhagavata Purana: Vamana Avatar"
+      - "Leaf from the Madhavanala Kamakandla"
+      - "Illustration to a Rasikapriya Series"
+      - "Krishna and Radha playing Yo-Yo"
+      - "Silver Padmapani"
+      - "Avalokiteshvara"
+      - "The Asuras Madhu and Kaitabha Attack Brahma"
+      - "Women in a Hunting Lodge"
+      - "Illustration from the Bhagavata Purana: Krishna Slaying the Bull Demon (Arishtasura)"
+      - "Illustration to the Markandeya Purana: The Beauty of Ambika"
+      - "Je Tsongkhapa"
+      - "56 Divinities, Pancaraksa Devi mandala"
+      - "A fine thangka of Shakyamuni"
+      - "A Leaf from the Krishna Sudama"
+      - "Leaf from the Bhagavata Purana Depicting Vishnu and Garuda: The Liberation of Gajendra Gajendra Moksha"
+      - "The Elder Arhat Kanakavatsa"
+      - "Madonna and Child"
+      - "Rama and Sita Enthroned"
+      - "Illustration to a Ragamala Series: Kakubha Ragini"
+      - "Love-Lorn Lady"
+      - "Vajrapani"
+      - "Vajrasattva"
+      - "Pala Padmapani"
+      - "Chakrasamvara"
+      - "Saraswati"
+      - "2 Preparatory Drawings for the Mahabharata"
+      - "Blind Mans Buff"
+      - "Leaf from the Devi Mahatmya: Durga in a Battle Against a Demon"
+      - "Amoghapasha"
+      - "Maitreya"
+      - "Dakini, Pala Style (Vajrayogini)"
+      - "Bhagavata Purana: The Pandavas and Krishna Bathe in the Jamuna"
+      - "Radha and Krishna with Mirror"
+      - "Prajnaparamita"
+      - "Samudra Manthan (The Churning of the Ocean)"
+      - "Illustration to a Harivamsa Series: Narada Warns Kamsa"
+      - "Radha and Krishna under parasol"
+
+  - slug: incarnations-of-devotion
+    title: "Incarnations of Devotion"
+    subtitle: "2021 Catalogue"
+    source_catalog: "2021 Catalogue - Incarnations of Devotion"
+    description: >
+      Works highlighting the iconographic richness of Hindu and Buddhist
+      devotional art across India, Nepal, and the Himalayas.
+    include_tags: ["vishnu", "shiva", "buddha", "tara",
+                   "avalokiteshvara", "mandala"]
+    include_kg_ids: []
+
+  - slug: virtual-ragamala
+    title: "Virtual Ragamala"
+    subtitle: "Painted music"
+    source_catalog: "Virtual Ragamala"
+    description: >
+      Ragamala folios — visual interpretations of the modes of Indian
+      classical music.  Each painting personifies a raga or ragini.
+    include_tags: ["ragamala"]
+    include_kg_ids: []
+
+  - slug: rasikapriya
+    title: "Rasikapriya 2024"
+    subtitle: "Connoisseur's passion"
+    source_catalog: "Rasikapriya 2024"
+    description: >
+      Illustrations to Keshav Das's Rasikapriya, the 16th-century treatise
+      on the moods of love and the categories of heroines and heroes.
+    include_tags: []
+    include_kg_ids: []
+    # Titles extracted from the Drive folder
+    # `1JQ7J9eDsbRBQ00wFgLNml1B9FReEml4m` (Rasikapriya 2024).
+    seed_titles:
+      - "Illustration to a Rasikapriya Series: An Older Sakhi Comforts a Forlorn Radha"
+      - "Illustration to a Rasikapriya Series: Krishna Seated with Radha"
+      - "Illustration to a Rasikapriya Series: Krishna Enthroned"
+      - "Illustration to a Rasikapriya series: Vihit Hava"
+      - "Illustration to a Rasikapriya Series: Krishna and Radha at a Jharokha Window"
+      - "Illustration to a Rasikapriya series: Radha and Female Companion"
+      - "Illustration to a Rasikapriya Series: Krishna Conversing with a Sakhi"
+      - "Illustration to a Rasikapriya Series: Radha Seated with a Confidant in a Pavilion"
+
+  - slug: god-goddess
+    title: "God / Goddess"
+    subtitle: "2020 Catalogue"
+    source_catalog: "God/Goddess 2020 Catalogue"
+    description: >
+      Iconographic studies of major deities across the South Asian and
+      Himalayan pantheons.
+    include_tags: ["vishnu", "shiva", "tara", "buddha"]
+    include_kg_ids: []
+
+  - slug: himalayan-art
+    title: "Himalayan Art"
+    subtitle: "Tibet, Nepal, and the high regions"
+    source_catalog: "Himalayan Art"
+    description: >
+      Thangkas, sculpture, and ritual objects from Tibet, Nepal, and
+      neighbouring regions.
+    include_tags: ["tibetan", "nepalese", "thangka", "mandala"]
+    include_kg_ids: []
+
+  - slug: portraits
+    title: "Portraits"
+    subtitle: "Court and personal likeness"
+    source_catalog: "Portraits catalogue"
+    description: >
+      Royal and courtly portraiture from the Indian subcontinent.
+    include_tags: ["portrait"]
+    include_kg_ids: []
+
+  - slug: indian-miniatures
+    title: "Indian Miniatures"
+    subtitle: "Painted folios"
+    source_catalog: "Indian Miniatures"
+    description: >
+      A focused selection of miniature paintings — manuscript folios,
+      album leaves, and detached illustrations.
+    include_tags: ["indian"]
+    include_kg_ids: []
+
+  - slug: travel-posters
+    title: "Travel Posters"
+    subtitle: "Mid-century travel graphics"
+    source_catalog: "Travel Posters"
+    description: >
+      The gallery's holding of vintage travel-poster graphics from the
+      Air India era and adjacent campaigns.
+    include_tags: []
+    include_kg_ids: []
+    # Titles extracted from the Drive folder
+    # `12N4xitPW8IjUFfL6mZ2HliJ794lIPQ9C` (Travel Posters, KG Air-India
+    # & Travel Posters (High-Res) subfolder).
+    seed_titles:
+      - "Air India - Executive Class"
+      - "Air India - First Class Passengers deserve better than first - our Maharajah Class"
+      - "Air India, there is an air about India"
+      - "Air India - London"
+      - "Air India - Tokyo"
+      - "There is an Air about India, Air India"

@@ -1,0 +1,32 @@
+[project]
+name = "kapoorgalleries-inventory"
+version = "0.4.1"
+description = "Master inventory pipeline for Kapoor Galleries: ingest Primer / Artsy / catalog / sub-inventory sources into a single canonical record with full provenance."
+requires-python = ">=3.11"
+dependencies = [
+    "pdfplumber>=0.11",
+    "openpyxl>=3.1",
+    "pandas>=2.0",
+    "rapidfuzz>=3.0",
+    "pydantic>=2.0",
+    "sqlite-utils>=3.36",
+    "click>=8.1",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+kg-inv = "src.cli:cli"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src", "src.ingest", "src.exporters"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

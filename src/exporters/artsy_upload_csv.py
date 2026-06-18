@@ -1,0 +1,77 @@
+"""Build the Artsy bulk-upload CSV (only Artsy-eligible rows).
+
+Eligibility: status='active' AND title/classification/medium/primary_image_url
+are all populated AND the title is not an internal placeholder. Output
+columns match the Artsy template exactly.
+"""
+
+from __future__ import annotations
+
+import csv
+from pathlib import Path
+
+import sqlite_utils
+
+from ..normalize import INTERNAL_PLACEHOLDER_TITLES
+
+# EXACT headers from the official Artsy bulk-upload template
+# (data/raw/Kapoor_Galleries_Bulk_upload_Template_Artsy.xlsx), including
+# the literal newlines Artsy embeds.  Artsy's importer matches columns by
+# header string, so these must be byte-for-byte identical to the template
+# or the columns won't map.  Do not "tidy" the \n into spaces.
+ARTSY_HEADER = [
+    "Inventory ID \n (OPTIONAL)",
+    "Artist Name\n",
+    "Title\n",
+    "Year\n",
+    "Price\n",
+    "Medium\n",
+    "Materials\n",
+    "Height\n",
+    "Width\n",
+    "Depth",
+    "Certificate of Authenticity\n",
+    "Signature\n",
+    "Classification\n",
+]
+
+
+def export_artsy_upload(db: sqlite_utils.Database, out_path: Path | str) -> int:
+    out = Path(out_path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    rows = db.execute(
+        """SELECT work_id, artist, title, year, price_usd, medium, materials,
+                  height_in, width_in, depth_in, coa_status, signature, classification
+           FROM works
+           WHERE COALESCE(status,'active') = 'active'
+             AND title IS NOT NULL
+             AND classification IS NOT NULL
+             AND medium IS NOT NULL
+             AND primary_image_url IS NOT NULL
+           ORDER BY work_id"""
+    ).fetchall()
+    # Hold back works whose "title" is an internal placeholder — they'd
+    # publish e.g. the literal string "Need title" to Artsy.  They're
+    # surfaced by `kg-inv check-artsy` and need a real title first.
+    rows = [r for r in rows
+            if (r[2] or "").strip().lower() not in INTERNAL_PLACEHOLDER_TITLES]
+    with out.open("w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(ARTSY_HEADER)
+        for r in rows:
+            w.writerow([
+                r[0],                 # Inventory ID
+                r[1] or "Unknown Artist",
+                r[2] or "",
+                r[3] or "",
+                r[4] or "",
+                r[5] or "",           # Medium
+                r[6] or r[5] or "",   # Materials -> fall back to medium
+                r[7] or "",
+                r[8] or "",
+                r[9] or "",
+                r[10] or "",
+                r[11] or "",
+                r[12] or "",
+            ])
+    return len(rows)

@@ -1,0 +1,1366 @@
+work_id,field,current_in_primer,should_be,evidence_source,reason
+KG-0012,title,,"A Thangka of Palden Lhamo, 19th century",price_list_pdf,(filled from price_list_pdf)
+KG-0012,classification,,Painting,human_resolution,Title hint: thangka form.
+KG-0012,medium,,Ground mineral pigments on cloth,human_resolution,Title hint: thangka form.
+KG-0012,height_in,,16.75,price_list_pdf,(filled from price_list_pdf)
+KG-0012,width_in,,12.75,price_list_pdf,(filled from price_list_pdf)
+KG-0012,price_usd,,28000.0,price_list_pdf,(filled from price_list_pdf)
+KG-0012,provenance_text,,"Provenance: The Estate of Dr. Joseph W. Foxell Jr., New Jersey Thence by descent to the current owner",price_list_pdf,(filled from price_list_pdf)
+KG-0012,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-0906,title,,Abhayakaragupta,price_list_pdf,(filled from price_list_pdf)
+KG-0906,height_in,,39.5,price_list_pdf,(filled from price_list_pdf)
+KG-0906,width_in,,23.5,price_list_pdf,(filled from price_list_pdf)
+KG-0906,price_usd,,80000.0,price_list_pdf,(filled from price_list_pdf)
+KG-0906,provenance_text,,"Provenance: Private New York collection, acquired in the 1960s, by repute. Thence by descent. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
+KG-0906,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-1000,materials,,Opaque Watercolor on Paper,match_workbook,(filled from match_workbook)
+KG-1001,materials,,Opaque watercolor heightened with gold on paper,match_workbook,(filled from match_workbook)
+KG-1002,materials,,Gouache and gold on paper,match_workbook,(filled from match_workbook)
+KG-1003,materials,,Opaque watercolor heightened with gold on paper,match_workbook,(filled from match_workbook)
+KG-1004,materials,,Opaque watercolor heightened with gold on paper,match_workbook,(filled from match_workbook)
+KG-1006,materials,,Sandstone,match_workbook,(filled from match_workbook)
+KG-1007,materials,,Stucco,match_workbook,(filled from match_workbook)
+KG-1008,materials,,Gray Schist,match_workbook,(filled from match_workbook)
+KG-1009,materials,,Blue Grey Schist,match_workbook,(filled from match_workbook)
+KG-1010,materials,,Schist,match_workbook,(filled from match_workbook)
+KG-1011,materials,,Watercolor on Whatman paper,match_workbook,(filled from match_workbook)
+KG-1012,materials,,Jade-hilted and jeweled Khanjar,match_workbook,(filled from match_workbook)
+KG-1013,materials,,Opaque watercolor heightened with gold on paper,match_workbook,(filled from match_workbook)
+KG-1014,materials,,Bronze with polychrome,match_workbook,(filled from match_workbook)
+KG-1015,materials,,Opaque watercolor heightened with gold on paper,match_workbook,(filled from match_workbook)
+KG-1016,materials,,Schist,match_workbook,(filled from match_workbook)
+KG-1019,medium,Jade-hilted and gilt khanjar,Jade-hilted dagger with steel blade,auto_resolution,Khanjars are jade-hilted daggers with steel blades.
+KG-1020,medium,Jade-hilted and jeweled khanjar,Jade-hilted dagger with steel blade,auto_resolution,Khanjars are jade-hilted daggers with steel blades.
+KG-1021,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1036,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1037,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1038,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1069,medium,A Ram’s Head Shamshir,Watered-steel blade with carved hilt,auto_resolution,Shamshirs are curved watered-steel sabres.
+KG-1082,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1083,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1093,medium,Thangka -Opaque watercolor on cloth,Opaque watercolor on cloth,artsy_csv,(per artsy_csv)
+KG-1111,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1112,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1136,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1172,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1178,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1220,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1223,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1224,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1241,medium,,Gelatin silver print,human_resolution,Late 19th/early 20th c. royal portrait photograph; gelatin silver is the period standard.
+KG-1242,medium,,Gelatin silver print,human_resolution,Late 19th/early 20th c. portrait photograph.
+KG-1248,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1261,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-1262,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-1263,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-1276,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1276,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1289,medium,,Watered steel; gold-koftgari hilt,auto_resolution,Talwars are typically gold-koftgari watered-steel sabres.
+KG-1290,medium,,Watered steel; gold-koftgari hilt,auto_resolution,Talwars are typically gold-koftgari watered-steel sabres.
+KG-1312,title,Vasishtha Teaches Rama and Lakshmana,Battle between Banasura and Krishna,bulk_upload_xlsx,(per bulk_upload_xlsx)
+KG-1312,year,1700,1775,bulk_upload_xlsx,(per bulk_upload_xlsx)
+KG-1312,medium,Opaque watercolor heightened with gold on paper,Ground mineral pigments on paper,bulk_upload_xlsx,(per bulk_upload_xlsx)
+KG-1312,height_in,9.0,13.0,bulk_upload_xlsx,(per bulk_upload_xlsx)
+KG-1312,width_in,14.0,20.0,bulk_upload_xlsx,(per bulk_upload_xlsx)
+KG-1312,price_usd,26000.0,50000.0,bulk_upload_xlsx,(per bulk_upload_xlsx)
+KG-1312,status,active,needs_renumbering,human_resolution,"Primer has two physically different works under this KG-#: 'Battle between Banasura and Krishna' (1700, $26k, 13x14) AND 'Vasishtha Teaches Rama and Lakshmana' (1775, $50k, 9x20). Held back from Artsy upload until Primer assigns one of them a new KG-#."
+KG-1316,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1317,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1318,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1319,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1319,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1320,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1321,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1327,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1329,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1329,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1334,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1335,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1336,medium,,Linen backed color lithograph,human_resolution,Vintage travel poster — matches the rest of the Visit-India / SwissAir cohort.
+KG-1337,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1337,medium,Linen backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1338,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1338,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1339,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1339,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1341,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1342,classification,Print,Posters,auto_resolution,Sabena India travel poster.
+KG-1344,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1347,classification,Print,Posters,artsy_csv,(per artsy_csv)
+KG-1348,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1351,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1351,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1352,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1352,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1353,classification,,Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1353,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1354,classification,,Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1354,medium,,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1355,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1355,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1356,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1356,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1357,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1358,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1358,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1359,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1359,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1360,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1360,medium,,Color lithograph on paper,human_resolution,Period print of Indian temple subject.
+KG-1361,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1361,medium,,Color lithograph on paper,human_resolution,Period print of Indian temple subject.
+KG-1362,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1362,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1363,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1363,medium,,Linen backed color lithograph,human_resolution,Air India poster — matches the cohort.
+KG-1364,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1364,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1365,classification,,Posters,human_resolution,Title hint: Air France travel poster.
+KG-1365,medium,,Color lithograph on paper,human_resolution,Title hint: Air France travel poster.
+KG-1366,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1366,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1367,classification,,Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1367,medium,,Linen backed color lithograph,human_resolution,Air India poster — matches the cohort.
+KG-1368,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1368,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1369,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1369,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1370,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1370,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1371,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1371,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1372,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1372,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1373,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1373,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1374,classification,,Posters,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1374,medium,,Color lithograph on paper,human_resolution,Vintage travel/airline poster — matches the Visit-India / SwissAir / Pan Am cohort.
+KG-1377,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1377,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1378,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1378,medium,Linen-backed poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1380,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1381,classification,"Drawing, Collage or other Work on Paper",Posters,artsy_csv,(per artsy_csv)
+KG-1382,classification,Print,Posters,artsy_csv,(per artsy_csv)
+KG-1384,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1385,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1386,classification,Print,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1387,classification,Print,Posters,artsy_csv,(per artsy_csv)
+KG-1388,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1388,medium,Poster,Lithographic print on paper,auto_resolution,Visit-India travel posters belong in Artsy's Posters category.
+KG-1389,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1390,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1391,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1392,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1393,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1394,classification,"Drawing, Collage or other Work on Paper",Posters,auto_resolution,Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets).
+KG-1400,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1401,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1402,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1403,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1405,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1406,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1415,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1424,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1425,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1425,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1427,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1429,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1430,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1431,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1440,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1443,medium,"Gouache and gold on paper, Manuscript",Gouache and gold on paper,artsy_csv,(per artsy_csv)
+KG-1450,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1452,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1453,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1454,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1457,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1458,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1459,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1460,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1461,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1462,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1463,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1464,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1465,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1466,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1467,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1468,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1469,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1470,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1471,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1472,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1473,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1474,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1475,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1476,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1477,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1478,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1479,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1480,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1481,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1482,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1483,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1484,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1485,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1486,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1487,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1488,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1489,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1490,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1491,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1492,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1494,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1495,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1496,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1497,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1498,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1499,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1501,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1502,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1503,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1504,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1505,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1506,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1507,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1508,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1511,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1512,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1513,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1514,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1515,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1517,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1518,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1519,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1520,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1521,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1522,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1523,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1524,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1525,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1525,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1526,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1527,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1528,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1529,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1530,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1530,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1531,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1531,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1532,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1533,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1534,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1535,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1536,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1537,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1538,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1540,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-1541,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1542,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1543,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1544,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1545,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1546,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1547,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1548,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1548,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1549,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1550,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1551,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1552,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1553,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1554,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1555,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1556,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1558,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1559,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1561,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1562,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1563,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1564,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1564,medium,,Ink and opaque colors on paper,human_resolution,Jain manuscript leaves — standard Western Indian medium.
+KG-1565,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1566,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1567,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1568,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1569,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1569,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1570,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1571,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1572,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1575,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1576,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1577,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1578,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1579,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1580,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1581,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1582,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1583,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1584,classification,,"Drawing, Collage or other Work on Paper",human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1584,medium,,Opaque watercolor on paper,human_resolution,"Indian miniature / manuscript folio — Drawing, Collage on Artsy; opaque watercolor on paper is the period standard."
+KG-1585,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1586,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1587,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1588,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1589,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1590,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1591,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1592,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1593,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1594,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1596,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1597,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1598,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1599,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1600,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-1601,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1602,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1603,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1604,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1605,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1606,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1607,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1608,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1609,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1612,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-1613,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-1615,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1616,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1617,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1618,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1619,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1620,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1622,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1624,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1625,classification,,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1626,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1628,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1629,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1630,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1631,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1632,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1633,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1634,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1635,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1636,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1637,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1638,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1639,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1640,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1642,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1643,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1644,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1645,classification,,Sculpture,auto_resolution,Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%).
+KG-1646,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1647,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1648,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1650,classification,,Jewelry,human_resolution,Makara Bangle in gold and rubies; Jewelry is the Artsy category.
+KG-1651,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Ink & gouache heightened with gold — work on paper.
+KG-1652,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1654,classification,,Sculpture,human_resolution,Brahma in marble — Sculpture.
+KG-1655,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1657,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1658,classification,,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1659,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1660,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1661,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-1664,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-1666,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1667,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-1668,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1669,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-1671,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1672,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1673,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1674,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1675,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1676,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1677,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1678,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1679,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1680,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1681,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1682,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1683,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1684,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1685,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1686,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1687,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1688,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1689,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1690,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1691,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1692,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1693,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1694,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1695,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1697,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
+KG-1698,classification,,Sculpture,auto_resolution,Schist works are sculptures.
+KG-1699,classification,,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1703,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1704,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1707,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1709,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1711,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1712,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1715,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-1717,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-1721,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1723,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1725,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1729,classification,,Sculpture,human_resolution,Title hint: title-medium hint.
+KG-1729,medium,,Silver,human_resolution,Title hint: title-medium hint.
+KG-1734,classification,,Sculpture,human_resolution,Title hint: Pala Style hint.
+KG-1734,medium,,Copper alloy,human_resolution,Title hint: Pala Style hint.
+KG-1735,classification,,Sculpture,human_resolution,Title hint: title-medium hint.
+KG-1735,medium,,Wood,human_resolution,Title hint: title-medium hint.
+KG-1736,classification,,Painting,human_resolution,Title hint: mandala thangka.
+KG-1736,medium,,Ground mineral pigments on cloth,human_resolution,Title hint: mandala thangka.
+KG-1737,height_in,,24.0,price_list_pdf,(filled from price_list_pdf)
+KG-1737,width_in,,15.0,price_list_pdf,(filled from price_list_pdf)
+KG-1737,provenance_text,,Provenance: Collection of late John Walden (1925-2013).,price_list_pdf,(filled from price_list_pdf)
+KG-1737,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-1738,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1739,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1741,height_in,,29.25,price_list_pdf,(filled from price_list_pdf)
+KG-1741,width_in,,20.0,price_list_pdf,(filled from price_list_pdf)
+KG-1741,provenance_text,,Provenance: From a Private Italian Collection.,price_list_pdf,(filled from price_list_pdf)
+KG-1741,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-1745,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1746,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Krishna Sudama folio.
+KG-1746,medium,,Opaque watercolor on paper,human_resolution,Title hint: Krishna Sudama folio.
+KG-1747,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1749,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1750,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1751,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1752,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Indian miniature.
+KG-1752,medium,,Opaque watercolor on paper,human_resolution,Title hint: Indian miniature.
+KG-1753,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1757,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1758,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1759,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1760,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1761,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1762,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1763,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Indian miniature.
+KG-1763,medium,,Opaque watercolor on paper,human_resolution,Title hint: Indian miniature.
+KG-1764,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1765,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1766,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1767,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1768,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1769,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1770,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1771,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1772,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1773,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1774,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1775,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1776,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1777,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1778,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1779,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1780,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1781,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1782,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1783,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1784,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1785,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1786,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1789,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1793,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1796,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1810,classification,,Sculpture,auto_resolution,Terracotta works are sculptures.
+KG-1812,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1812,height_in,,42.5,price_list_pdf,(filled from price_list_pdf)
+KG-1812,width_in,,27.75,price_list_pdf,(filled from price_list_pdf)
+KG-1812,provenance_text,,"Provenance: East coast collection, acquired in the 1970s. Sotheby's New York, 12 June 2020, lot 899.",price_list_pdf,(filled from price_list_pdf)
+KG-1812,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-1813,height_in,,34.5,price_list_pdf,(filled from price_list_pdf)
+KG-1813,width_in,,23.5,price_list_pdf,(filled from price_list_pdf)
+KG-1813,price_usd,24000.0,38000.0,price_list_pdf,(per price_list_pdf)
+KG-1813,provenance_text,,"Provenance: Southern Alleghenies Museum of Art (SAMA). Exhibited: ""Mirrors of the Heart-Mind"" at SAMA in 1988. Published: Himalayan Art Resources (himalayanart.org), item no. 90527. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
+KG-1813,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-1814,title,Dipankara Buddha with Arhats Deities Thangka,Dipankara Buddha with Arhats Deities,price_list_pdf,(per price_list_pdf)
+KG-1814,height_in,,25.5,price_list_pdf,(filled from price_list_pdf)
+KG-1814,width_in,,20.0,price_list_pdf,(filled from price_list_pdf)
+KG-1814,price_usd,24000.0,28000.0,price_list_pdf,(per price_list_pdf)
+KG-1814,provenance_text,,"Provenance: Southern Alleghenies Museum of Art (SAMA). www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",price_list_pdf,(filled from price_list_pdf)
+KG-1814,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-1815,classification,tskali,Painting,auto_resolution,Works on cotton are categorized as Painting.
+KG-1819,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1820,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1823,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1824,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1836,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1838,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1841,medium,,Parcel-gilt bronze,human_resolution,Title medium hint: Tibetan parcel-gilt seated lama.
+KG-1842,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1842,medium,,Bronze,human_resolution,Title medium hint: bronze figure.
+KG-1843,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1843,medium,,Bronze,human_resolution,Title medium hint: bronze figure of Vajrabhairava.
+KG-1844,classification,,Design/Decorative Art,human_resolution,Title hint: Tibetan gau (amulet box).
+KG-1844,medium,,Silver filigree set with turquoise,human_resolution,Title hint: Tibetan gau (amulet box).
+KG-1849,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1851,medium,,Gilt bronze,human_resolution,Title medium hint: gilt-bronze Tara.
+KG-1852,medium,,Gold,human_resolution,Title medium hint: gold figure.
+KG-1853,medium,,Gold,human_resolution,Title medium hint: gold figure.
+KG-1855,medium,,Gold,human_resolution,Title medium hint: gold figure.
+KG-1857,medium,,Gold,human_resolution,Title medium hint: gold object.
+KG-1858,medium,,Gold,human_resolution,Title medium hint: gold figure.
+KG-1861,classification,,Sculpture,human_resolution,Title hint: title-medium hint.
+KG-1861,medium,,Gilt copper alloy,human_resolution,Title hint: title-medium hint.
+KG-1863,classification,,Painting,human_resolution,Title hint: thangka form.
+KG-1863,medium,,Ground mineral pigments on cloth,human_resolution,Title hint: thangka form.
+KG-1865,classification,,Painting,human_resolution,Title hint: mandala thangka.
+KG-1865,medium,,Ground mineral pigments on cloth,human_resolution,Title hint: mandala thangka.
+KG-1874,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-1876,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1886,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1891,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1893,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1894,classification,,Design/Decorative Art,human_resolution,Title hint: Japanese polearm + cloisonné.
+KG-1894,medium,,Watered steel blade with cloisonné enamel mounts,human_resolution,Title hint: Japanese polearm + cloisonné.
+KG-1896,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1918,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1919,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-1920,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1925,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1927,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1928,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1929,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1930,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1931,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1933,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1934,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-1938,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1940,classification,,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1941,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1945,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1946,classification,,Sculpture,human_resolution,Title hint: title-medium hint.
+KG-1946,medium,,Sandstone,human_resolution,Title hint: title-medium hint.
+KG-1950,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1952,classification,,Sculpture,auto_resolution,Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%).
+KG-1955,classification,,Sculpture,human_resolution,Title hint: title-medium hint.
+KG-1955,medium,,Sandstone,human_resolution,Title hint: title-medium hint.
+KG-1956,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
+KG-1957,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
+KG-1959,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
+KG-1960,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1961,classification,,Sculpture,auto_resolution,Terracotta works are sculptures.
+KG-1963,classification,,Sculpture,auto_resolution,Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%).
+KG-1964,classification,,Sculpture,auto_resolution,Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%).
+KG-1965,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
+KG-1968,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-1970,classification,,Sculpture,auto_resolution,Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%).
+KG-1974,classification,,Sculpture,auto_resolution,Schist works are sculptures.
+KG-1975,classification,,Sculpture,auto_resolution,Stone works are sculptures.
+KG-1976,classification,,Sculpture,auto_resolution,Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%).
+KG-1997,medium,,Bronze,human_resolution,Title medium hint: bronze group.
+KG-2001,medium,,Bronze,human_resolution,Title medium hint: bronze figure of Surya.
+KG-2002,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-2008,medium,,Ivory,human_resolution,Title medium hint: erotic ivory.
+KG-2009,classification,,Sculpture,auto_resolution,Steles are sculptures (8/8 100%).
+KG-2009,medium,,Stone,human_resolution,Title medium hint: stone stele.
+KG-2010,medium,,Silver- and copper-inlaid bronze,human_resolution,Title medium hint: silver/copper-inlaid Manjushri.
+KG-2019,medium,,Watered steel,human_resolution,Decorative art (Sword) — period material.
+KG-2023,medium,,Watered steel,human_resolution,Decorative art (Knife tip) — period material.
+KG-2031,medium,,Gold,human_resolution,Title medium hint: gold object.
+KG-2032,medium,,Bronze,human_resolution,Title medium hint: bronze figure.
+KG-2034,classification,,Textile Arts,human_resolution,Title hint: Kashmir pashmina shawl.
+KG-2034,medium,,Pashmina wool,human_resolution,Title hint: Kashmir pashmina shawl.
+KG-2037,classification,Design/Decorative Art,Sculpture,auto_resolution,Stone works are sculptures.
+KG-2039,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2040,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2041,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2042,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2043,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2044,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2045,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2049,medium,,Bronze,human_resolution,Title medium hint: bronze stupa.
+KG-2050,medium,,Bronze,human_resolution,Title medium hint: bronze phurba.
+KG-2051,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2052,medium,,Gilt bronze,human_resolution,Title medium hint: Sino-Tibetan gilt-bronze Green Tara.
+KG-2055,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2059,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2060,medium,,"Gilt bronze and silver, stone-inlaid",human_resolution,Title medium hint: kapala skull cup.
+KG-2063,medium,,Bronze,human_resolution,Title medium hint: Nepalese bronze Yamantaka.
+KG-2067,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2068,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2069,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2070,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2071,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2072,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2073,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2074,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2075,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2076,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2077,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2078,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Indian miniature.
+KG-2078,medium,,Opaque watercolor on paper,human_resolution,Title hint: Indian miniature.
+KG-2079,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Indian miniature.
+KG-2079,medium,,Opaque watercolor on paper,human_resolution,Title hint: Indian miniature.
+KG-2080,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2081,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2082,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: manuscript folio.
+KG-2082,medium,,Ink and opaque colors on paper,human_resolution,Title hint: manuscript folio.
+KG-2083,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2084,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2086,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2087,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2089,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2090,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2094,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2096,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2097,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2098,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2100,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2102,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2103,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Krishna Sudama series.
+KG-2103,medium,,Opaque watercolor on paper,human_resolution,Title hint: Krishna Sudama series.
+KG-2105,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2106,title,Tibetan Thangka depicting Saddha (Milarepa),Tibetan Thangka depicting Saddha,price_list_pdf,(per price_list_pdf)
+KG-2106,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2106,height_in,27.0,27.125,price_list_pdf,(per price_list_pdf)
+KG-2106,width_in,39.0,39.5,price_list_pdf,(per price_list_pdf)
+KG-2106,price_usd,30000.0,80000.0,price_list_pdf,(per price_list_pdf)
+KG-2106,provenance_text,,Provenance: Property from the José M. Neistein Collection.,price_list_pdf,(filled from price_list_pdf)
+KG-2106,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-2108,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2109,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2110,classification,Print,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2110,medium,,Etching on paper,human_resolution,Print classification + title hint (etching/aquatint).
+KG-2111,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2114,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Indian miniature (title says so).
+KG-2114,medium,,Opaque watercolor on paper,human_resolution,Title hint: Indian miniature (title says so).
+KG-2115,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2116,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2117,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2118,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2119,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2120,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-2121,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2122,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2123,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2124,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2125,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2137,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2138,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2139,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-2140,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2141,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2142,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2143,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2144,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2145,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2146,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2147,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2148,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2152,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2153,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2154,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2155,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2156,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2157,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2158,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2159,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2163,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2165,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2166,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2169,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2170,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2171,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2172,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Indian miniature.
+KG-2172,medium,,Opaque watercolor on paper,human_resolution,Title hint: Indian miniature.
+KG-2176,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2177,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2178,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2179,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2180,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2181,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2185,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2186,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Indian miniature portrait.
+KG-2186,medium,,Opaque watercolor on paper,human_resolution,Title hint: Indian miniature portrait.
+KG-2188,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-2193,classification,,Sculpture,auto_resolution,'Figure of' titles are sculptures (suggested by suggest-rules).
+KG-2194,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2195,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2196,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2197,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2200,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2201,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2208,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Ramayana folio (title says PAINTING but Artsy bucket).
+KG-2208,medium,,Opaque watercolor on paper,human_resolution,Title hint: Ramayana folio (title says PAINTING but Artsy bucket).
+KG-2209,medium,,Opaque watercolor on paper,auto_resolution,Default for paper works without medium.
+KG-2210,classification,,Sculpture,human_resolution,Title hint: title-medium hint.
+KG-2210,medium,,Bronze,human_resolution,Title hint: title-medium hint.
+KG-2212,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2213,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2214,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2215,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2216,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2219,classification,,Print,human_resolution,Title hint: Daniell-style architectural view.
+KG-2219,medium,,Aquatint with brown wash,human_resolution,Title hint: Daniell-style architectural view.
+KG-2222,medium,,Lithograph plates bound in book,human_resolution,Illustrated book — appropriate medium for the book/portfolio category.
+KG-2224,title,Thangka Of Two Trailokyavijaya Mandalas with Ganapathi,Thangka Of Two Trailokyavijaya Mandalas,price_list_pdf,(per price_list_pdf)
+KG-2224,width_in,18.0,18.25,price_list_pdf,(per price_list_pdf)
+KG-2224,price_usd,38000.0,48000.0,price_list_pdf,(per price_list_pdf)
+KG-2224,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-2227,classification,Design/Decorative Art,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-2228,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2229,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2230,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2234,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2235,medium,,Color illustrations bound in book,human_resolution,Illustrated book — appropriate medium for the book/portfolio category.
+KG-2237,medium,,Hand-colored aquatint with stipple,human_resolution,Print classification + title hint (etching/aquatint).
+KG-2239,classification,Tibet,Design/Decorative Art,auto_resolution,Saddles are decorative arts on Artsy.
+KG-2248,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2249,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2250,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2251,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2252,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2253,classification,,Sculpture,auto_resolution,Schist works are sculptures.
+KG-2254,classification,,Sculpture,auto_resolution,Schist works are sculptures.
+KG-2255,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2256,classification,,Painting,auto_resolution,Pigment-on-cloth works (thangkas) are Painting on Artsy.
+KG-2257,classification,,Sculpture,auto_resolution,Bronze cast works are sculptures.
+KG-2259,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2260,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2262,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2264,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Islamic calligraphic text.
+KG-2264,medium,,Ink on paper,human_resolution,Title hint: Islamic calligraphic text.
+KG-2265,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Indian miniature.
+KG-2265,medium,,Opaque watercolor on paper,human_resolution,Title hint: Indian miniature.
+KG-2266,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2272,classification,,Print,human_resolution,Title hint: Daniell-style architectural view.
+KG-2272,medium,,Aquatint with brown wash,human_resolution,Title hint: Daniell-style architectural view.
+KG-2273,classification,,Print,human_resolution,Title hint: Daniell-style Tank Square view.
+KG-2273,medium,,Aquatint with brown wash,human_resolution,Title hint: Daniell-style Tank Square view.
+KG-2274,classification,,Print,human_resolution,Title hint: Daniell-style Tank Square view.
+KG-2274,medium,,Aquatint with brown wash,human_resolution,Title hint: Daniell-style Tank Square view.
+KG-2275,classification,,Print,human_resolution,Title hint: Daniell-style Town Hall view.
+KG-2275,medium,,Aquatint with brown wash,human_resolution,Title hint: Daniell-style Town Hall view.
+KG-2276,classification,,Print,human_resolution,Title hint: Daniell-style Esplanade view.
+KG-2276,medium,,Aquatint with brown wash,human_resolution,Title hint: Daniell-style Esplanade view.
+KG-2277,classification,,Sculpture,auto_resolution,Stone works are sculptures.
+KG-2278,classification,miniature,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2279,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2280,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: sketch form.
+KG-2280,medium,,Ink on paper,human_resolution,Title hint: sketch form.
+KG-2281,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2282,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2283,classification,,Ephemera or Merchandise,human_resolution,"Air India postcard set — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2283,medium,,Set of printed postcards,human_resolution,"Air India postcard set — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2284,classification,,Ephemera or Merchandise,human_resolution,"Air India airline ticket — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2284,medium,,Printed airline ticket,human_resolution,"Air India airline ticket — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2285,classification,,Ephemera or Merchandise,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2285,medium,,Printed booklet,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2286,classification,,Ephemera or Merchandise,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2286,medium,,Printed booklet,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2287,classification,,Ephemera or Merchandise,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2287,medium,,Printed booklet,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2288,classification,,Ephemera or Merchandise,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2288,medium,,Printed booklet,human_resolution,"Air India printed timetable — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2289,classification,miniature,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2290,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2291,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2294,classification,paintings,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2295,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2297,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2298,classification,,Sculpture,auto_resolution,Stone matrix materials are categorized as Sculpture on Artsy.
+KG-2299,classification,,Ephemera or Merchandise,human_resolution,"Air India in-flight menu — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2299,medium,,Printed menu card,human_resolution,"Air India in-flight menu — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2300,classification,,Ephemera or Merchandise,human_resolution,"Air India safety pamphlet — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2300,medium,,Printed pamphlet,human_resolution,"Air India safety pamphlet — Ephemera or Merchandise on Artsy, not a poster. Overrides auto-rule that fired on the 'Air India' title prefix."
+KG-2303,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2304,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2305,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2307,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2309,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2315,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2317,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2318,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2323,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2324,classification,,Sculpture,auto_resolution,Stone works are sculptures.
+KG-2325,classification,paintings,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2326,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2327,classification,Books and Portfolios,Photograph,auto_resolution,Works with photograph in medium are Photographs (20/20 100%).
+KG-2327,medium,,Photographic prints bound in album,human_resolution,Illustrated book — appropriate medium for the book/portfolio category.
+KG-2336,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2346,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2347,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2348,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2349,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2350,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2351,classification,,Jewelry,human_resolution,Title hint: rose-cut diamond.
+KG-2351,medium,,Diamond,human_resolution,Title hint: rose-cut diamond.
+KG-2353,classification,,Jewelry,human_resolution,Title hint: ring (gold + sapphire).
+KG-2353,medium,,Gold and sapphire,human_resolution,Title hint: ring (gold + sapphire).
+KG-2359,medium,,Iron with lacquer (akoda nari kabuto),human_resolution,Decorative art (Helmet) — period material.
+KG-2364,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2365,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2375,height_in,19.0,19.5,price_list_pdf,(per price_list_pdf)
+KG-2375,width_in,13.0,13.75,price_list_pdf,(per price_list_pdf)
+KG-2375,price_usd,18000.0,25000.0,price_list_pdf,(per price_list_pdf)
+KG-2375,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-2379,medium,,Opaque watercolor on paper,auto_resolution,Default for paintings without medium: most-common gallery medium.
+KG-2383,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2384,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2385,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2386,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2387,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2388,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2389,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2390,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2391,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2392,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2393,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2394,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2395,price_usd,,80000.0,price_list_pdf,(filled from price_list_pdf)
+KG-2395,exhibitions,,KG_Art_of_the_Himalayas_Price_List,price_list_pdf,(filled from price_list_pdf)
+KG-2396,classification,,"Drawing, Collage or other Work on Paper",human_resolution,Title hint: Jain Kalpa-sutra folio.
+KG-2396,medium,,Ink and opaque colors on paper,human_resolution,Title hint: Jain Kalpa-sutra folio.
+KG-2397,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2398,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2399,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2400,classification,Other,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2411,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2412,medium,,Gelatin silver print,human_resolution,19th/early-20th c. Indian photograph; gelatin silver is the period default.
+KG-2435,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2436,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2437,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2441,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2448,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2449,classification,,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2454,classification,Painting,"Drawing, Collage or other Work on Paper",auto_resolution,Works on paper map to Artsy's Drawing/Collage category.
+KG-2461,classification,,Sculpture,auto_resolution,Stone works are sculptures.
+UNRESOLVED-026fdb79e7,title,,"Coulon, Jean Hebe",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-026fdb79e7,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-026fdb79e7,external_id,,G40614,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-026fdb79e7,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0648da1646,title,,"Engman, Robert Linear Series, Oliver",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0648da1646,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0648da1646,external_id,,G80030,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0648da1646,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-096dcd9636,title,,"Fyfe, Joe A Sock Pulled Off",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-096dcd9636,year,,2002,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-096dcd9636,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-096dcd9636,external_id,,G41207,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-096dcd9636,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0c5a9694b7,title,,"Barye, Antoine-Louis Pair of Basset Hounds",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0c5a9694b7,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0c5a9694b7,external_id,,G41792,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0c5a9694b7,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0cc91bb9c3,title,,"Iommi, Enio Sin Titulo, c. 1970s",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0cc91bb9c3,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0cc91bb9c3,external_id,,G80010,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0cc91bb9c3,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0e0ba97bf8,title,,"Poor, Henry Varnum Drawing: Landscape",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0e0ba97bf8,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0e0ba97bf8,external_id,,G40862,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-0e0ba97bf8,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-140f508068,title,,Unknown Cartoon: Man by Piano,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-140f508068,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-140f508068,external_id,,G40883,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-140f508068,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1999f945b6,title,,"Suba, Miklos Architectural Rendering, Hotel St. George",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1999f945b6,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1999f945b6,external_id,,G40758,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1999f945b6,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1c1db02f28,title,,"Shinn, Everett Sketch for the Doors of Clyde Filcher Home (couple in landscape)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1c1db02f28,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1c1db02f28,external_id,,G40828,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1c1db02f28,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1f2b40169e,title,,"Hannock, Stephen Flooded River, Mauve Dam",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1f2b40169e,year,,2006,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1f2b40169e,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1f2b40169e,external_id,,G41097,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-1f2b40169e,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-209f23e9e6,title,,"Bluemner, Oscar Leraw Avenue",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-209f23e9e6,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-209f23e9e6,external_id,,G40304,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-209f23e9e6,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2156194e4d,title,,"Barye, Antoine-Louis Lion",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2156194e4d,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2156194e4d,external_id,,G80002,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2156194e4d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-22e611597a,title,,"du Bois, Guy Pene Portrait of Chester Dale",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-22e611597a,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-22e611597a,external_id,,G80029,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-22e611597a,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2587b9c67d,title,,"Kieff, Antonio Grediaga Folkloric Fado",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2587b9c67d,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2587b9c67d,external_id,,G80012,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2587b9c67d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-26d43edb97,title,,"Kemeys, Edward The Still Hunt",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-26d43edb97,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-26d43edb97,external_id,,G41115,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-26d43edb97,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2a7f10b619,title,,"Vonnoh, Bessie Potter Mother and Child",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2a7f10b619,year,,1920,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2a7f10b619,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2a7f10b619,external_id,,G41794,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2a7f10b619,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2d885e6826,title,,"Gay, Walter A Picture Gallery",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2d885e6826,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2d885e6826,external_id,,G80007,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2d885e6826,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2fc46ce490,title,,"Bluhm, Norman Untitled",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2fc46ce490,year,,1961,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2fc46ce490,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2fc46ce490,external_id,,G41793,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-2fc46ce490,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-31292b9ca7,title,,"Barye, Antoine-Louis Cheval Turc No 3",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-31292b9ca7,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-31292b9ca7,external_id,,G80000,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-31292b9ca7,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-31b7b70887,title,,Box 1: see hand-written notes,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31b7b70887,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31b7b70887,status,,external,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31b7b70887,external_id,,Box-1,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31b7b70887,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31bfdb6891,title,,Box 6: Malian Hunter’s Shirts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31bfdb6891,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31bfdb6891,status,,external,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31bfdb6891,external_id,,Box-6,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-31bfdb6891,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-32866b0e64,title,,"Moigniez, Jules Pair of Hares",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-32866b0e64,year,,1880,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-32866b0e64,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-32866b0e64,external_id,,G41134,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-32866b0e64,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-39e3d6018c,title,,"Simon, Paul Le Jeune Elephant",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-39e3d6018c,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-39e3d6018c,external_id,,G41778,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-39e3d6018c,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3e7949c7a2,title,,"Howard, Cecil B. Wrestlers",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3e7949c7a2,year,,1935,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3e7949c7a2,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3e7949c7a2,external_id,,G41727,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3e7949c7a2,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3eb4283e5d,title,,"Fratin, Christopher Tiger and Ostrich",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3eb4283e5d,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3eb4283e5d,external_id,,G41078,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3eb4283e5d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-3fc6a61a52,title,,"Box 4: Central Asia, Guatemala, Africa, South Sumatra",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-3fc6a61a52,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-3fc6a61a52,status,,external,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-3fc6a61a52,provenance_text,,"Central Asia: 2 pieces
+Uzbek Suzani, very large, used as screen (~50in x 180in)
+Ikat coat: loaned to Mpls Inst of Arts ~1980 for display in Ikat show
+Guatemala:3 pieces
+Tzute from Quezaltanango
+Ceremonial huipile from San Mateo Ixtatlan, Huehuetenango, ~1960 (no picture)
+Panel (no picture)
+Africa: 5 pieces
+Nigeria: 1 panel; 1 adire cloth (no picture)
+Burkina Faso indigo skirt (no picture)
+Ghana/Togo
+Ashanti chief’s wrap, 1st half 20th C, (~80in x 240in)
+Ewe, 1st half 20th C (~80in x 125in)
+Chief’s wrap, early 20th C; illustrated in Gillow’s African Textiles: Color and Creativity across a Continent (possibly fig 25)
+South Sumatria: 1 lampung",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-3fc6a61a52,external_id,,Box-4,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-3fc6a61a52,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-4023d55da8,title,,"West, Benjamin Coll. Belasarius as a Blind Beggar",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4023d55da8,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4023d55da8,external_id,,G40870,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4023d55da8,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-40fe6f8ea6,title,,"Zorn, Anders etching of unknown title: woman seated by a window",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-40fe6f8ea6,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-40fe6f8ea6,external_id,,G40902,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-40fe6f8ea6,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4557a107d3,title,,"Bluhm, Norman Untitled",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4557a107d3,year,,1961,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4557a107d3,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4557a107d3,external_id,,G40779,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4557a107d3,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4d6ae1ecea,title,,"Bonheur, Isidore Jules Retour au Pesage (Return to Enclosure)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4d6ae1ecea,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4d6ae1ecea,external_id,,G41723,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4d6ae1ecea,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4dd639c0b1,title,,"Johnson, David Trees",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4dd639c0b1,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4dd639c0b1,external_id,,G17076,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-4dd639c0b1,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-504567630d,title,,"Howard, Cecil B. Finish of Crotch-Hold and Throw",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-504567630d,year,,1935,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-504567630d,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-504567630d,external_id,,G80009,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-504567630d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5286cbff65,title,,"Vonnoh, Bessie Potter Motherhood",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5286cbff65,year,,1902,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5286cbff65,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5286cbff65,external_id,,G80025,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5286cbff65,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55122a12d1,title,,"Katchadourian, Sarkis Calla Lillies",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55122a12d1,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55122a12d1,external_id,,G40086,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55122a12d1,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55cbf4c2d1,title,,"Neel, Alice Untitled (Young Girl in Red Striped Shirt)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55cbf4c2d1,year,,1973,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55cbf4c2d1,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55cbf4c2d1,external_id,,G41076,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55cbf4c2d1,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55f80d7a61,title,,"Butterworth, Elizabeth Scarlet Macaw",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55f80d7a61,year,,1993,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55f80d7a61,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55f80d7a61,external_id,,M91849,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-55f80d7a61,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5a75924b80,title,,"Mozier, Joseph Springtime",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5a75924b80,year,,1870,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5a75924b80,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5a75924b80,external_id,,G80016,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5a75924b80,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5afc5baf22,title,,Box 2: Central Asia,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5afc5baf22,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5afc5baf22,status,,external,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5afc5baf22,provenance_text,,"Afghanistan: 2 men’s coats, early 20th C
+Purple and black stripe on velvet
+Blue, yellow, white stripe
+Uzbekistan: 6 pieces
+1 Perenje, green embroidered, ikat interior trim
+1 Atlas silk coat, ikat stripes, gold embroidery
+4 Ikat chapans",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5afc5baf22,external_id,,Box-2,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5afc5baf22,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-5d049caa47,title,,"Bluemner, Oscar Willet Street, Bloomfield",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5d049caa47,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5d049caa47,external_id,,G40309,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5d049caa47,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5e34208f36,title,,"Gordin, Sidney 7 20",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5e34208f36,year,,1958,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5e34208f36,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5e34208f36,external_id,,G80026,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5e34208f36,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5ef178cedd,title,,"Manship, Paul Sagittarius Ashtray",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5ef178cedd,year,,1919,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5ef178cedd,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5ef178cedd,external_id,,G40626,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-5ef178cedd,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-61ebfe64dd,title,,"Day, James Francis Mother and Child",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-61ebfe64dd,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-61ebfe64dd,external_id,,G40021,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-61ebfe64dd,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63a1b1d601,title,,"Lorenz, Nancy Fireworks",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63a1b1d601,year,,2006,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63a1b1d601,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63a1b1d601,external_id,,G41740,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63a1b1d601,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63d7d8ab48,title,,"American School, 20th c. Abstract Form",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63d7d8ab48,year,,1930,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63d7d8ab48,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63d7d8ab48,external_id,,G41779,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-63d7d8ab48,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6456945937,title,,"Johnson, David Cook's Island, Lake George",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6456945937,year,,1859,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6456945937,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6456945937,external_id,,G31187,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6456945937,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-652e60085e,title,,"Jennewein, Carl Paul Over the Waves",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-652e60085e,year,,1927,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-652e60085e,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-652e60085e,external_id,,G80011,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-652e60085e,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-678727ab7d,title,,"Poncet, Antoine Untitled (unique)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-678727ab7d,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-678727ab7d,external_id,,G80018,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-678727ab7d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6c6aed6130,title,,"Akeley, Clar E. Stung",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6c6aed6130,year,,1914,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6c6aed6130,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6c6aed6130,external_id,,G40502,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6c6aed6130,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6fae2c9609,title,,"Resika, Paul The Dark Pond (Horseleech)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6fae2c9609,year,,1983,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6fae2c9609,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6fae2c9609,external_id,,G40710,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-6fae2c9609,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-71942aca00,title,,"Zuniga, Francisco Mujer Sentada con Rebozo (Seated Woman with Shawl)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-71942aca00,year,,1974,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-71942aca00,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-71942aca00,external_id,,G80022,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-71942aca00,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74191bf369,title,,"Butterworth, Elizabeth Green Winged Macaw",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74191bf369,year,,1993,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74191bf369,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74191bf369,external_id,,M91850,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74191bf369,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74cd20e7d6,title,,"Bluemner, Oscar Bloomfield, New Jersey",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74cd20e7d6,year,,1917,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74cd20e7d6,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74cd20e7d6,external_id,,G40361,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-74cd20e7d6,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-76879044aa,title,,Unknown John Taylor,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-76879044aa,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-76879044aa,external_id,,G40013,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-76879044aa,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-790b5bd4c4,title,,"Johnson, David Study for Trees",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-790b5bd4c4,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-790b5bd4c4,external_id,,G31210,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-790b5bd4c4,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-7c3ae1dffa,title,,"Johnson, David Saint Meaque, Lake George",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-7c3ae1dffa,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-7c3ae1dffa,external_id,,G31324,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-7c3ae1dffa,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-7f7843d1d5,title,,"Poncet, Antoine Tirelyre",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-7f7843d1d5,year,,1969,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-7f7843d1d5,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-7f7843d1d5,external_id,,G80020,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-7f7843d1d5,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8090f17881,title,,"Barye, Antoine-Louis Elephant du Senegal",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8090f17881,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8090f17881,external_id,,G80003,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8090f17881,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8546abde7d,title,,"Barye, Antoine-Louis Ours Couche Sur Le Dos",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8546abde7d,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8546abde7d,external_id,,G80004,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8546abde7d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-85dbc7373d,title,,"Johnson, David Lake George, September 1859",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-85dbc7373d,year,,1859,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-85dbc7373d,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-85dbc7373d,external_id,,G17028,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-85dbc7373d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-85e03614be,title,,"Dickens, Sophie Minotaur",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-85e03614be,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-85e03614be,external_id,,G80024,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-85e03614be,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-89bd5d1956,title,,"Shinn, Everett Sketch: Wickford, Rhode Island",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-89bd5d1956,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-89bd5d1956,external_id,,G40822,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-89bd5d1956,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8ca8694a1e,title,,Unknown Sketch: trees,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8ca8694a1e,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8ca8694a1e,external_id,,G40900,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-8ca8694a1e,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9116526edf,title,,"Berge, Edward Henry Portrait of the Black Children",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9116526edf,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9116526edf,external_id,,G41120,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9116526edf,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9165f4ce9b,title,,Box 5: (never opened),textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9165f4ce9b,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9165f4ce9b,status,,external,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9165f4ce9b,provenance_text,,"Egyptian decorative textile, early 20th C
+Uzbek Ikat Chapan",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9165f4ce9b,external_id,,Box-5,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9165f4ce9b,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,title,,"Box 3: Central Asia, Ottoman, Iran",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,classification,,Textile Arts,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,status,,external,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,provenance_text,,"Afghanistan: 3 shawls, 1 large (100inches long) with beaded ends
+Uzbekistan: 5 pieces
+2 ikat panels
+1 Suzani door surround, embroidery on black velvet
+1 panel, pink and green embroidery on black velvet (? Origin)
+Uzbek/Ottoman panel, red and gold on indigo
+Ottoman: 5 pieces/panels
+2 gold embroidery on red
+1 bedspread, gold on fuschia
+1 square panel, gold and black and red
+1 runner, gold and black and red
+Iran: 1 stamped/printed panel",textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,external_id,,Box-3,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-9233f715a0,external_id_system,,Textile Boxes 2022-07,textile_boxes,(filled from textile_boxes)
+UNRESOLVED-965a0010d8,title,,"Shinn, Everett Sketch: Reclining Man",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-965a0010d8,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-965a0010d8,external_id,,G40821,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-965a0010d8,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9dd11a93b3,title,,"Shinn, Everett Pardon Me Sir",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9dd11a93b3,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9dd11a93b3,external_id,,G13917,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-9dd11a93b3,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a39e50a9bc,title,,"Bluemner, Oscar Bloomfield Heights",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a39e50a9bc,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a39e50a9bc,external_id,,G40308,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a39e50a9bc,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a5cd91b9db,title,,"Fraser, Laura Gardin Frightened Dog",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a5cd91b9db,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a5cd91b9db,external_id,,G33863,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a5cd91b9db,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a600f0267b,title,,"Troubetzkoy, Paul Pomeranian",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a600f0267b,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a600f0267b,external_id,,G80028,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-a600f0267b,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-aa209bcbe0,title,,"McCartan, Edward Diana Torso",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-aa209bcbe0,classification,,Sculpture,auto_resolution,Torsos are sculptures.
+UNRESOLVED-aa209bcbe0,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-aa209bcbe0,external_id,,G80014,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-aa209bcbe0,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-acfbfca4ad,title,,"Bluhm, Norman Yangtze",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-acfbfca4ad,year,,1960,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-acfbfca4ad,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-acfbfca4ad,external_id,,G41250,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-acfbfca4ad,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ad2930795a,title,,"Bluemner, Oscar Soho Ruin, Morris Canal",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ad2930795a,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ad2930795a,external_id,,G40299,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ad2930795a,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-af8dd89d04,title,,"Koons, Jeff Balloon Dog (Red)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-af8dd89d04,year,,1995,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-af8dd89d04,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-af8dd89d04,external_id,,G80023,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-af8dd89d04,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b10c39ae79,title,,"Gay, Walter Library Interior",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b10c39ae79,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b10c39ae79,external_id,,G80006,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b10c39ae79,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b65519a07e,title,,"Borglum, Gutzon Nero",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b65519a07e,year,,1903,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b65519a07e,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b65519a07e,external_id,,G41002,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b65519a07e,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b6d8dac7e9,title,,Unknown portrait of a woman,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b6d8dac7e9,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b6d8dac7e9,external_id,,G40901,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b6d8dac7e9,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b8c255c8a7,title,,"Mihich, Vasa Velizar #2062",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b8c255c8a7,year,,1983,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b8c255c8a7,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b8c255c8a7,external_id,,G80015,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-b8c255c8a7,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ba669d6f6a,title,,"Resika, Paul Spring",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ba669d6f6a,year,,1980,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ba669d6f6a,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ba669d6f6a,external_id,,G40709,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ba669d6f6a,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bb1730b3bb,title,,"de Glehn, Wilfred Gabriel The Bathers",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bb1730b3bb,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bb1730b3bb,external_id,,G40729,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bb1730b3bb,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bd3def798d,title,,"MacMonnies, Frederick Pan of Rahallion",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bd3def798d,year,,1890,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bd3def798d,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bd3def798d,external_id,,G41791,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bd3def798d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bf9242a9c2,title,,"MacNeil, Herman Indian Girl with Papoose",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bf9242a9c2,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bf9242a9c2,external_id,,G41040,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-bf9242a9c2,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c084e8b003,title,,"Voelckerling, Fred The Race: Horse and Jockey",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c084e8b003,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c084e8b003,external_id,,G41173,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c084e8b003,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c0bbab19ef,title,,"Poncet, Antoine Untitled (bronze)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c0bbab19ef,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c0bbab19ef,external_id,,G80017,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c0bbab19ef,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c0bff11198,title,,"Bluhm, Norman Noir, 194",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c0bff11198,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c0bff11198,external_id,,G41254,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c0bff11198,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c10aed050e,title,,"Hiquily, Philippe Girouette Marbella",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c10aed050e,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c10aed050e,external_id,,G80008,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c10aed050e,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c26cfd27e1,title,,"Barye, Antoine-Louis Panther Seizing a Stag",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c26cfd27e1,year,,1829,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c26cfd27e1,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c26cfd27e1,external_id,,G39861,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c26cfd27e1,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c5490439d2,title,,"Brett, Lady Dorothy Woman's Dance",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c5490439d2,year,,1952,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c5490439d2,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c5490439d2,external_id,,G80005,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c5490439d2,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c8e99bac72,title,,"Bluemner, Oscar Brewery in Boston, Boylston Station",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c8e99bac72,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c8e99bac72,external_id,,G40303,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-c8e99bac72,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cc730c69a0,title,,"du Bois, Guy Pene The Intellectuals",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cc730c69a0,year,,1912,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cc730c69a0,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cc730c69a0,external_id,,G41218,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cc730c69a0,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cf18dc730e,title,,"Barye, Antoine-Louis Standing Bear (Ours Debout)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cf18dc730e,year,,1875,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cf18dc730e,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cf18dc730e,external_id,,G80001,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-cf18dc730e,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d321c32d34,title,,"Moigniez, Jules Setter",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d321c32d34,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d321c32d34,external_id,,G40696,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d321c32d34,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d70619fe48,title,,"Valton, Charles Reclining Lionness",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d70619fe48,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d70619fe48,external_id,,G39823,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d70619fe48,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d7b3a65c3a,title,,"Lorjou, Bernard La Carpe",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d7b3a65c3a,year,,1953,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d7b3a65c3a,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d7b3a65c3a,external_id,,G80013,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d7b3a65c3a,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d863fefb20,title,,"Zorn, Anders etching of unknown title: woman in fur coat",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d863fefb20,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d863fefb20,external_id,,G40903,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d863fefb20,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d883fbdb25,title,,"Johnson, David Nyack on Hudson",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d883fbdb25,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d883fbdb25,external_id,,G31205,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d883fbdb25,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d8e79974d5,title,,"Bluemner, Oscar The Negro's House, Bloomfield, New Jersey",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d8e79974d5,year,,1917,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d8e79974d5,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d8e79974d5,external_id,,G40335,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-d8e79974d5,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-dde06b5589,title,,"Bluhm, Norman Himalayas",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-dde06b5589,year,,1966,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-dde06b5589,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-dde06b5589,external_id,,G41141,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-dde06b5589,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ddf94e1c77,title,,"Torr, Helen Veneer and Grapes",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ddf94e1c77,year,,1930,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ddf94e1c77,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ddf94e1c77,external_id,,G41095,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ddf94e1c77,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e0144ca701,title,,"Saint-Gaudens, Augustus World's Columbian Exposition Medal",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e0144ca701,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e0144ca701,external_id,,G40539,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e0144ca701,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e1f75a4fb2,title,,"Shinn, Everett Untitled (Reclining Nude)",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e1f75a4fb2,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e1f75a4fb2,external_id,,G40487,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e1f75a4fb2,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e7522410db,title,,"Barye, Antoine-Louis Eagle on Rock, Inkwell",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e7522410db,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e7522410db,external_id,,G12979,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-e7522410db,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ea0bd2d67c,title,,Unknown Sketches: female heads,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ea0bd2d67c,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ea0bd2d67c,external_id,,G40980,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ea0bd2d67c,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ea63847a8d,title,,"Suba, Miklos Architectural Rendering",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ea63847a8d,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ea63847a8d,external_id,,G40759,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ea63847a8d,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ee969e798b,title,,"Bluemner, Oscar View of Belleville from Irish Saloon",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ee969e798b,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ee969e798b,external_id,,G40307,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-ee969e798b,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f2ebed3e84,title,,"Eberle, Abastenia St. Leger Little Mother",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f2ebed3e84,year,,1907,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f2ebed3e84,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f2ebed3e84,external_id,,G41810,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f2ebed3e84,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f55b2059d4,title,,"Troubetzkoy, Paul Pavlova Seated",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f55b2059d4,year,,1915,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f55b2059d4,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f55b2059d4,external_id,,G80021,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f55b2059d4,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f9cda6665f,title,,Unknown Mon Ami Meylan,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f9cda6665f,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f9cda6665f,external_id,,G40916,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-f9cda6665f,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fd62ecdd4a,title,,"Resika, Paul Roses",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fd62ecdd4a,year,,1988,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fd62ecdd4a,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fd62ecdd4a,external_id,,G40708,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fd62ecdd4a,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fde1fd3874,title,,"Shinn, Everett Figure Sketches",sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fde1fd3874,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fde1fd3874,external_id,,G40829,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fde1fd3874,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fdf323dfb9,title,,Unknown Mon Ami Meylan,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fdf323dfb9,status,,external,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fdf323dfb9,external_id,,G40915,sub_inventory,(filled from sub_inventory)
+UNRESOLVED-fdf323dfb9,external_id_system,,Graham Inventory owned,sub_inventory,(filled from sub_inventory)

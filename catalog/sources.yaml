@@ -1,0 +1,211 @@
+# Source registry for the Kapoor Galleries inventory pipeline.
+#
+# `local_path` must point at a file under data/raw/ (gitignored). Any source
+# whose `local_path` is missing is reported in `make ingest` output and
+# silently skipped — drop the file in and re-run.
+#
+# To add a new source:
+#   1. Pick `type` from src/cli.py:INGESTERS
+#   2. Note the Drive ID (so we can re-fetch if needed)
+#   3. Drop the file at data/raw/<name>
+#   4. `make ingest`
+#
+# IDs were discovered during Phase A; the registry is append-only.
+
+- name: Artsy_2-16-2026.csv
+  type: artsy_csv
+  drive_file_id: 1IEIQhviVzfwXeaZoDzdAps5srjQOzmva
+  drive_file_path: My Drive / Kapoor Internal / Artsy / Artsy_2-16-2026.csv
+  local_path: data/raw/Artsy_2-16-2026.csv
+  notes: |
+    Primer→Artsy snapshot, Feb 16 2026. Authoritative for KG-1000..KG-1698.
+    FileMaker `I_Iinfo::D__Height` namespace; multi-image rows belong to the
+    previous KG-#.
+
+- name: Kapoor Galleries - Bulk upload Template Artsy.xlsx
+  type: bulk_upload_xlsx
+  drive_file_id: 1LkOpVoVaGuG3s1C6caJCo7zmyacGJDFA
+  drive_file_path: My Drive / Artsy bulk upload templates review / Kapoor Galleries - Bulk upload Template Artsy.xlsx
+  local_path: data/raw/Kapoor_Galleries_Bulk_upload_Template_Artsy.xlsx
+  notes: |
+    110 KB, 1425 rows.  Artsy's official column names with literal
+    newlines in headers.  Covers KG-1000..KG-2350+ (763 KG-#s NOT in
+    the Feb 2026 Artsy CSV).  This is the broader inventory snapshot
+    the gallery has prepared for upload.
+
+- name: Kapoor_Galleries_Artsy_Match_Workbook_completed_with_images.xlsx
+  type: match_workbook
+  drive_file_id: 1lUTRcjGczM0IuxmIYey4UqG5_hGgAvJW
+  drive_file_path: My Drive / Artsy Match Workbooks / Kapoor_Galleries_Artsy_Match_Workbook_completed_with_images.xlsx
+  local_path: data/raw/Kapoor_Galleries_Artsy_Match_Workbook_completed_with_images.xlsx
+  notes: |
+    26MB. KG-1000..KG-1099 → primary source PDF + page + match confidence.
+    Drop the full xlsx in data/raw/ to fully populate.
+
+- name: match_workbook_summary_kg1000_1099 (partial fixture)
+  type: match_workbook
+  local_path: data/raw/match_workbook_summary_kg1000_1099.xlsx
+  notes: |
+    Small fixture (KG-1000..KG-1015) committed for CI verification.
+    Replaced by the full Match Workbook xlsx if/when that's downloaded.
+
+- name: Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099)
+  type: image_dir
+  drive_file_id: 1KZjEY1RbmCFNvhppOAGClLO84CVuBgX7
+  drive_file_path: My Drive / Artsy Match Workbooks / Kapoor Galleries - Artsy First 100 - PNGs (KG-1000 to KG-1099)
+  local_path: data/raw/artsy_first_100_pngs
+  notes: |
+    76 PNGs. Many are tiny (<1KB) placeholders — flag with is_placeholder.
+
+- name: KG_Art of the Himalayas Price List.pdf
+  type: price_list_pdf
+  drive_file_id: 1OzJtFN8YSSCpJ9VCWW1j4TLtHknWyXf2
+  local_path: data/raw/KG_Art_of_the_Himalayas_Price_List.pdf
+  enabled: true
+  notes: |
+    6.4 MB, 6 pages, 12 thangkas with KG-#s, dimensions, prices,
+    provenance, exhibition history.  First price-list source with
+    direct KG-# linkage (most price lists drop the inventory number).
+    Format: "<num>. KG-#### $price" entry header.
+
+- name: KG_The Blossom & the Sword Price List.pdf
+  type: price_list_pdf
+  drive_file_id: 1fEPjP_BkU4NQeV3aSFCN28k1YOYDqe7R
+  local_path: data/raw/Blossom_and_Sword_Price_List.pdf
+  notes: |
+    Sample price list with full provenance/exhibition/publication detail.
+    Reference shape for the catalog/price-list PDF parser.
+
+- name: KG Inventory - 9-25-2025.pdf
+  type: kg_inventory_pdf
+  drive_file_id: 16io-Drs2YYwpq4m3nifxfwT3YEqKwlFk
+  local_path: data/raw/KG_Inventory_2025-09-25.pdf
+  notes: |
+    172MB. Likely the printed-Primer inventory book the gallery referred to as
+    "primer pages". Page-stream the parser; never load the full PDF.
+
+- name: KG_Available Works_5-13-2025_1065.pdf
+  type: kg_inventory_pdf
+  drive_file_id: 1XDpGBR7V1DnjSkNkQOVcg-vRUXoJd59i
+  drive_file_path: shared with sanjay@kapoors.com by trivedi@kapoors.com
+  local_path: data/raw/KG_Available_Works_2025-05-13.pdf
+  notes: |
+    108MB. Primer "image/list" export of 1059 available works pulled by
+    Shruti Trivedi (trivedi@kapoors.com) on May 13 2025. The actual Primer
+    PDF the user described as "primer pages". Originally attached to Gmail
+    thread 196c67161fbd97f4 ("Primer Exports"), also in Drive.
+    Manual fetch: see tools/FETCH_PRIMER_PDFS.md.
+
+# --- Sub-inventories (custom ID schemes, fuzzy match by title to KG-#) ---
+- name: Graham Inventory - owned.pdf
+  type: sub_inventory
+  drive_file_id: 1wSKFu8AX633cIocDvYQB9VwB4m0TEZ4o
+  local_path: data/raw/Graham_Inventory_owned.pdf
+  enabled: true
+  notes: |
+    Graham collection (Akeley, Barye, Bluemner, etc.).  ~105 entries.
+    Format: "<id> Lastname, Firstname Title, year".  We extract id +
+    combined-name-and-title + year; reliable artist/title splitting
+    needs per-collection name dictionary, deferred.
+
+- name: Darion Inventory Book.pdf
+  type: sub_inventory
+  drive_file_id: 1OA6yU_XM6sOUzjeXsrXzLrWlQk7tM-RJ
+  local_path: data/raw/Darion_Inventory_Book.pdf
+  enabled: false
+
+- name: Notarized Scans of Huc Inventory.pdf
+  type: sub_inventory
+  drive_file_id: 1yxdGbvwF-2SqEpjVdiQUtsQpDldo8BMB
+  local_path: data/raw/Huc_Inventory_Notarized.pdf
+  enabled: false
+
+- name: July 2022 Textile Boxes Inventory.docx
+  type: textile_boxes
+  drive_file_id: 1SRs4jmAFSB0brRy_5WPAhkBALX8cWrRA
+  local_path: data/raw/Textile_Boxes_2022-07.docx
+  enabled: true
+  notes: |
+    Word doc with a "Box N: <topic>" hierarchy.  Items inside boxes
+    don't have unique IDs ("2 men's coats, early 20th C"), so the
+    unit of identity is the BOX.  Each box becomes one record with
+    classification=Textile Arts and provenance_text containing the
+    full description.
+
+# --- Catalog production (year-based) ---
+- name: Inventory for 2024 catalog.xlsx
+  type: reference
+  drive_file_id: 1l3rWoPT534jnuVsnSmJ_qhli8x47-K3G
+  local_path: data/raw/Inventory_for_2024_catalog.xlsx
+  enabled: false
+  notes: |
+    27 KB.  Despite the filename, this is a curatorial brainstorm for
+    the 2024 catalog, NOT an inventory source.  Single sheet with
+    "Portraits" header and ~170 candidate titles bucketed under the
+    year of the previous catalog they appeared in (2019-2022).  No
+    KG-#, no artist, no medium, no dimensions.  Ingesting these as
+    observations would just emit ~170 untethered title strings with
+    no field linkages.  Reclassified as `reference` and left disabled.
+    Real catalog-source ingestion will come from year-based catalog
+    PDFs (Phase E in the original plan).
+
+# --- Email gap reports ---
+- name: Sarah Fenner @ Artsy gap reports
+  type: email_gaps
+  drive_file_id: gmail:from:sarah.fenner@artsy.net
+  local_path: data/raw/email_gaps_sarah_fenner.json
+  enabled: false
+  notes: |
+    Run a Gmail MCP fetch into data/raw/email_gaps_sarah_fenner.json:
+    one JSON object per thread {thread_id, snippet, full_text}.
+
+# --- Artsy follow-on batch uploads (Sarah Fenner curated) ---
+# Sheets owned by sarah.fenner@artsymail.com or sanjay@kapoors.com.  These
+# are smaller batches that landed AFTER the initial 1,415-row
+# Bulk_upload_Template Artsy.  No KG-#s on entries — rich Artsy-format
+# metadata (year, dimensions, price, provenance, published, exhibited,
+# materials).  Would emit UNRESOLVED-* observations, then `kg-inv
+# match-external` can suggest KG-# matches by title.
+# Format: section dividers (SCULPTURE/ OBJECT, MANUSCRIPT, PAINTING,
+# SUMMER EXHIB., Photos Needed) followed by rows.  Header row is row 2,
+# row 1 is the literal string "Published" then nothing else.
+# Deferred: needs a new `artsy_batch_csv` ingester variant — the
+# existing artsy_csv parser expects FileMaker `::` columns.
+- name: Artsy 7/25 Batch Upload
+  type: artsy_batch_csv
+  drive_file_id: 1xnK16RxE-6YJpmMwLJZYBI8g3DPjVCviwsXizgwNIMw
+  drive_export_mime: text/csv
+  local_path: data/raw/Artsy_7_25_Batch_Upload.csv
+  enabled: false
+  notes: "~80 works, ~28 KB CSV. Mixed sections: paintings, manuscripts, jewelry, sculpture."
+- name: Artsy 9/25 Batch Upload
+  type: artsy_batch_csv
+  drive_file_id: 1axNhsUHkyahuMS1jze7wZh_2tBGGa2VOnH8xmzReXVs
+  drive_export_mime: text/csv
+  local_path: data/raw/Artsy_9_25_Batch_Upload.csv
+  enabled: false
+  notes: "3 KB CSV — small follow-on batch."
+- name: Artsy Travel Posters Upload
+  type: artsy_batch_csv
+  drive_file_id: 11HoiM0XqSfyZZBlnQCMNgJk0HwAfy4y8fOzELfiEgAA
+  drive_export_mime: text/csv
+  local_path: data/raw/Artsy_Travel_Posters_Upload.csv
+  enabled: false
+  notes: "15 KB CSV — travel-poster classification batch."
+
+# --- Resolution layer (always run last) ---
+# Deterministic field-inference rules.  Below human, above Primer.
+- name: auto_resolution_rules
+  type: auto_resolution
+  local_path: data/auto_resolution_rules.yaml
+  notes: |
+    Rules-based: e.g. "medium contains paper -> classification=Drawing".
+    Edit data/auto_resolution_rules.yaml to add more rules.
+
+# Per-(work_id, field) human decisions.  Highest priority — always wins.
+- name: human_resolutions
+  type: human_resolution
+  local_path: data/human_resolutions.yaml
+  notes: |
+    Human conflict-resolution log.  Append with `python -m src.cli resolve`
+    or edit data/human_resolutions.yaml directly.

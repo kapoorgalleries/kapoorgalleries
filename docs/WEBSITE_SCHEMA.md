@@ -1,0 +1,317 @@
+# `website_inventory.json` schema (v1)
+
+Stable contract between the Kapoor Galleries inventory pipeline and
+the public-facing site (`kapoorgalleries/sb1-vuxiwzek`).
+
+Top-level shape:
+
+```ts
+type Feed = {
+  schema_version: 1;
+  generated_at: string;        // ISO 8601 UTC, e.g. "2026-06-18T14:23:11Z"
+  count: number;               // number of works (== works.length)
+  facets: Facets;              // pre-computed filter dropdowns
+  works: Work[];
+};
+
+type Facets = {
+  classification: { value: string; count: number }[];  // sorted desc by count
+  tags:           { value: string; count: number }[];  // ditto
+  with_image:     number;
+  without_image:  number;
+};
+```
+
+## `Work`
+
+```ts
+type Work = {
+  // identifiers
+  id:        string;   // "kg-1023" — lowercased, slug-safe
+  kg_id:     string;   // "KG-1023" — canonical display form
+  slug:      string;   // "kg-1023-kakubha-ragini-folio-from-a-ragamala"
+  url_path:  string;   // "/works/kg-1023-kakubha-ragini-folio-from-a-ragamala"
+
+  // primary text
+  title:           string;          // never empty
+  classification:  string | null;   // one of Artsy's 17 categories; null only if missing
+  medium:          string | null;
+  year:            number | null;   // 1850, -200 (BCE), etc.
+  year_display:    string | null;   // "1850", "circa 1700", etc.
+  era_display?:    string | null;   // "19th century", "Ancient", etc.
+                                    // ONLY emitted when year is null —
+                                    // a render-time fallback so the
+                                    // site doesn't show a blank date.
+
+  // optional — present only when populated upstream
+  artist?:                 string;
+  period_school_region?:   string;
+  materials?:              string;
+  provenance?:             string;
+  exhibitions?:            string;
+  publications?:           string;
+  signature?:              string;
+  coa_status?:             string;
+
+  // structured fields
+  dimensions: {
+    height_in: number | null;
+    width_in:  number | null;
+    depth_in:  number | null;
+    display:   string | null;   // "29 1/4 × 20 in. (74.3 × 50.8 cm.)"
+  };
+
+  price: {
+    usd:       number | null;
+    display:   string;          // "$30,000" or "Price on request"
+    available: boolean;         // true if usd > 0 AND not redacted
+  };
+
+  image: {
+    primary:    string | null;  // CDN URL — typically Primer's signed S3
+    alternates: string[];       // additional shots; populated as image map fills in
+    thumbnail:  string | null;  // explicit thumbnail; may be null even with primary
+  };
+
+  // search / filter
+  tags:    string[];     // ["19th-century", "tibetan", "thangka", "metal", ...]
+  status:  "available";  // currently the only emitted value
+                          // (sold / hidden are filtered out upstream)
+
+  // not for display — surfaced for internal use
+  _internal: {
+    primer_uuid:  string | null;
+    has_conflict: boolean;      // expected false in production
+  };
+};
+```
+
+## Tag taxonomy (current)
+
+Inferred from title + classification + medium + year. Multiple tags
+per work allowed; tags are additive filters.
+
+**Period** (one of):
+`ancient` · `medieval` · `early-modern` · `18th-century` ·
+`19th-century` · `20th-century` · `21st-century` · plus
+century-from-year fallbacks (`13th-century`, `15th-century` …).
+
+**Region**:
+`tibetan` · `indian` · `nepalese` · `south-east-asian` · `persian` ·
+`japanese` · `chinese` · `western`.
+
+**Subject**:
+`thangka` · `mandala` · `buddha` · `vishnu` · `shiva` · `tara` ·
+`avalokiteshvara` · `manuscript` · `ragamala` · `portrait` ·
+`weapon` · `jewelry`.
+
+**Medium family**:
+`metal` · `stone` · `wood` · `works-on-paper` · `textile-ground`.
+
+## Enrichment fields (added by v2 merge)
+
+When `data/website_inventory_enriched.json` is produced via
+`kg-inv enrich-website`, works whose titles matched the curator's
+Catalog & Inventory Sheet may carry additional fields:
+
+```ts
+type Work = Work & {
+  physical_location?: string;            // "Drawer 13", "Glass Cabinet", "Gallery 4/28"
+  acquired_from?: string;                // "Christies", "Hindman", "Sotheby's", "Davidson"
+  publications_and_exhibitions?: string; // Free-form citations + show history
+};
+```
+
+These are present on a subset of works (~125 today) and grow as the
+gallery extends the Catalog & Inventory Sheet. The base feed
+(`website_inventory.json`) never carries these — the website should
+prefer the enriched feed if available, falling back to the base.
+
+## Companion feeds
+
+- **`data/masterworks.json`** — separate schema, 150 works the
+  gallery placed in museum collections (Norton Simon, SDMA, Rietberg,
+  LACMA, Met, Mingei, etc.). Drives the `/masterworks` landing page.
+  See the bottom of this doc for its schema block.
+- **`data/collections.json`** — curated landing pages mapped to past
+  catalog publications (Virtual Ragamala, Incarnations of Devotion,
+  God/Goddess, Himalayan Art, etc.). Drives the
+  `/collections/<slug>` routes. Schema below.
+- **`data/site.json`** — gallery name, address, hours, contact, social,
+  navigation, and a pre-built JSON-LD `ArtGallery` block for SEO.
+  Curator-edited via `data/site.yaml`. Schema below.
+
+## `MasterWork` (for masterworks.json)
+
+```ts
+type MasterworksFeed = {
+  schema_version: 1;
+  generated_at: string;
+  count: number;
+  facets: {
+    acquired_by: Array<{ value: string; count: number }>;
+    tags:        Array<{ value: string; count: number }>;
+    with_image:  number;
+    without_image: number;
+  };
+  works: MasterWork[];
+};
+
+type MasterWork = {
+  id:        string;         // "mw-001"
+  slug:      string;
+  url_path:  string;         // "/masterworks/<slug>"
+  title:     string;
+  origin:    string | null;  // "India, Madhya Pradesh, Malwa"
+  date:      string | null;  // "ca. 1630-40"
+  medium:    string | null;
+  dimensions_display: string | null;
+  acquired_by:        string | null;
+  provenance:         string | null;
+  published_and_exhibited: string | null;
+  label_copy:         string | null;  // long-form scholarly text
+  museum_link:        string | null;  // e.g. metmuseum.org collection URL
+  image: {
+    drive_file_id: string | null;
+    url:           string | null;     // direct img-src-ready URL
+  };
+  tags: string[];
+};
+```
+
+## `Collection` (for collections.json)
+
+```ts
+type CollectionsFeed = {
+  schema_version: 1;
+  generated_at: string;
+  count: number;
+  collections: Collection[];
+};
+
+type Collection = {
+  slug:           string;            // "virtual-ragamala"
+  title:          string;            // "Virtual Ragamala"
+  subtitle:       string | null;
+  description:    string | null;     // long-form intro paragraph
+  source_catalog: string | null;     // "2021 Catalogue - Incarnations…"
+  url_path:       string;            // "/collections/<slug>"
+  hero_image:     string | null;     // CDN URL — first imaged member,
+                                     // or curator-supplied override.
+  include_tags:   string[];          // the tag filter that drove membership
+  member_count:   number;
+  members: Array<{
+    id:        string;               // "kg-1023"
+    kg_id:     string;               // "KG-1023"
+    title:     string;
+    url_path:  string;
+    thumbnail: string | null;
+  }>;
+};
+```
+
+Empty `members` is meaningful — it means the collection page exists
+but the curator hasn't supplied an explicit KG-# list or seed-title
+list yet. The website should render those as "Coming soon" rather
+than 404.
+
+Membership union: tag filter + explicit KG-# list + fuzzy seed-title
+matches (`data/collection_seed_audit.csv` records every decision).
+
+## `Site` (for site.json)
+
+```ts
+type SiteFeed = {
+  schema_version: 1;
+  generated_at: string;
+  gallery: {
+    name: string;
+    legal_name: string;
+    tagline: string;
+    established: number;
+    description: string;
+  } | null;
+  contact: {
+    email_general:   string;
+    email_inquiries: string;
+    email_press:     string;
+    phone_us:        string;
+    wechat:          string;
+  } | null;
+  address: {
+    street: string; street_2: string;
+    city: string; state: string; postal_code: string;
+    country: string; country_code: string;
+    lat: number; lng: number;
+  } | null;
+  hours: Array<{
+    day: string;
+    opens: string;       // "HH:MM" or "" if closed
+    closes: string;
+    note: string;
+  }> | null;
+  social: { instagram: string; twitter: string;
+            facebook: string; academia: string } | null;
+  memberships: string[] | null;
+  team: Array<{ name: string; role: string; email: string }> | null;
+  nav: Array<{ label: string; url: string }> | null;
+  // Pre-built JSON-LD ArtGallery block — drop into <head> for SEO.
+  json_ld: object;
+};
+```
+
+Drop the `json_ld` block straight into a `<script type="application/ld+json">`
+tag in the site's `<head>` — Google reads it for the gallery's
+Knowledge Panel.
+
+## Stability & versioning
+
+- `schema_version: 1` will tick on any breaking change.
+- Optional fields (artist, materials, provenance, etc.) may appear
+  on more works over time; their absence on a work is not a guarantee.
+- New tags will be added in v1. The frontend should treat unknown
+  tag values as opaque filter strings.
+- `_internal` is reserved — its keys may change without a version
+  bump. Do not render to users.
+
+## Example work
+
+```json
+{
+  "id": "kg-1813",
+  "kg_id": "KG-1813",
+  "slug": "kg-1813-large-thangka-white-tara-tibetan",
+  "url_path": "/works/kg-1813-large-thangka-white-tara-tibetan",
+  "title": "Large Thangka White Tara Tibetan",
+  "classification": "Painting",
+  "medium": "Gouache on cotton",
+  "year": 1801,
+  "year_display": "1801",
+  "dimensions": {
+    "height_in": 34.5,
+    "width_in": 23.5,
+    "depth_in": null,
+    "display": "34 1/2 × 23 1/2 in. (87.6 × 59.7 cm.)"
+  },
+  "price": {
+    "usd": 38000,
+    "display": "$38,000",
+    "available": true
+  },
+  "image": {
+    "primary": "https://data-us-east-1.primerws.com/.../white_tara.jpg?Expires=...",
+    "alternates": [],
+    "thumbnail": null
+  },
+  "tags": [
+    "19th-century",
+    "tibetan",
+    "tara",
+    "textile-ground"
+  ],
+  "status": "available",
+  "_internal": { "primer_uuid": "...", "has_conflict": false },
+  "provenance": "Southern Alleghenies Museum of Art (SAMA)...",
+  "exhibitions": "KG_Art_of_the_Himalayas_Price_List"
+}
+```

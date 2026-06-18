@@ -1,0 +1,293 @@
+# Deterministic field-inference rules.
+#
+# Each rule says: "if a work's existing observations match `if`, then add an
+# observation for the field(s) in `then` with confidence='medium' and
+# source_type='auto_resolution'."  The consolidator places these BELOW
+# `human_resolution` but ABOVE `artsy_csv`/`primer_*` — so a rule fills a
+# Primer gap but a human override always wins.
+#
+# Pattern keys:
+#   <field>_contains: substring match (case-insensitive)
+#   <field>_eq:       exact match
+#   <field>_in:       value is in a list
+#   <field>_missing:  the field is null/empty (true) or populated (false)
+#
+# These are gallery conventions Sanjay confirmed: works on paper map to
+# Artsy's "Drawing/Collage", certain stone/metal materials are sculptures,
+# Khanjars/saddles/talwars are decorative arts.
+
+# --- works on paper -> Drawing/Collage classification ---
+- if:
+    medium_contains: paper
+  then:
+    classification: "Drawing, Collage or other Work on Paper"
+  reason: "Works on paper map to Artsy's Drawing/Collage category."
+
+# --- stone & cast-metal materials -> Sculpture ---
+- if:
+    medium_contains: sandstone
+  then:
+    classification: Sculpture
+  reason: "Stone matrix materials are categorized as Sculpture on Artsy."
+
+- if:
+    medium_contains: schist
+  then:
+    classification: Sculpture
+  reason: "Schist works are sculptures."
+
+- if:
+    medium_contains: bronze
+  then:
+    classification: Sculpture
+  reason: "Bronze cast works are sculptures."
+
+- if:
+    medium_contains: stucco
+  then:
+    classification: Sculpture
+  reason: "Stucco works are sculptures."
+
+- if:
+    medium_contains: gilt-bronze
+  then:
+    classification: Sculpture
+  reason: "Gilt-bronze cast works are sculptures."
+
+- if:
+    medium_contains: copper
+  then:
+    classification: Sculpture
+  reason: "Copper works are sculptures (suggested by kg-inv suggest-rules: 27/27 100%)."
+
+- if:
+    medium_contains: brass
+  then:
+    classification: Sculpture
+  reason: "Brass works are sculptures (suggested by kg-inv suggest-rules: 11/11 100%)."
+
+- if:
+    medium_contains: alloy
+  then:
+    classification: Sculpture
+  reason: "Cast-alloy works are sculptures (suggested by kg-inv suggest-rules: 18/18 100%)."
+
+# --- Medium-keyword classifications mined by suggest-rules ---
+- if:
+    medium_contains: photograph
+  then:
+    classification: Photograph
+  reason: "Works with photograph in medium are Photographs (20/20 100%)."
+
+- if:
+    medium_contains: woodblock
+  then:
+    classification: Print
+  reason: "Woodblock prints (17/17 100%)."
+
+- if:
+    medium_contains: lithographic
+  then:
+    classification: "Drawing, Collage or other Work on Paper"
+  reason: "Lithographic prints on paper (12/12 100%)."
+
+# --- Title-keyword classifications for sculptures ---
+- if:
+    title_contains: bodhisattva
+  then:
+    classification: Sculpture
+  reason: "Bodhisattva figures are sculptures (10/10 100%)."
+
+- if:
+    title_contains: stele
+  then:
+    classification: Sculpture
+  reason: "Steles are sculptures (8/8 100%)."
+
+- if:
+    title_contains: figure of
+  then:
+    classification: Sculpture
+  reason: "'Figure of' titles are sculptures (suggested by suggest-rules)."
+
+- if:
+    title_contains: torso
+  then:
+    classification: Sculpture
+  reason: "Torsos are sculptures."
+
+- if:
+    medium_contains: stone
+  then:
+    classification: Sculpture
+  reason: "Stone works are sculptures."
+
+- if:
+    medium_contains: terracotta
+  then:
+    classification: Sculpture
+  reason: "Terracotta works are sculptures."
+
+- if:
+    medium_contains: ivory
+  then:
+    classification: Sculpture
+  reason: "Ivory works are sculptures."
+
+- if:
+    medium_contains: jade
+  then:
+    classification: Design/Decorative Art
+  reason: "Jade works are decorative arts (Khanjars, etc.)."
+
+# --- decorative-arts keywords in title -> Design/Decorative Art ---
+- if:
+    title_contains: khanjar
+  then:
+    classification: Design/Decorative Art
+  reason: "Khanjars (jeweled daggers) are decorative arts on Artsy."
+
+- if:
+    title_contains: talwar
+  then:
+    classification: Design/Decorative Art
+  reason: "Talwars (curved swords) are decorative arts on Artsy."
+
+- if:
+    title_contains: shamshir
+  then:
+    classification: Design/Decorative Art
+  reason: "Shamshirs (Persian sabres) are decorative arts on Artsy."
+
+- if:
+    title_contains: saddle
+  then:
+    classification: Design/Decorative Art
+  reason: "Saddles are decorative arts on Artsy."
+
+# --- thangkas / textile / paper-mounted ground -> Painting (large) ---
+- if:
+    medium_contains: thangka
+  then:
+    classification: Painting
+  reason: "Thangkas hung on cloth are categorized as Painting."
+
+# "on cloth" (not bare "cloth") so we don't catch "Clay, hair, cloth"
+# (a comma-separated material list for a sculpture).  Catches the
+# Tibetan-thangka cohort: "Distemper on cloth", "Mineral pigment(s)
+# on cloth", "Opaque watercolor on cloth", etc.
+- if:
+    medium_contains: "on cloth"
+  then:
+    classification: Painting
+  reason: "Pigment-on-cloth works (thangkas) are Painting on Artsy."
+
+- if:
+    medium_contains: cotton
+  then:
+    classification: Painting
+  reason: "Works on cotton are categorized as Painting."
+
+# --- Consignment-tag artist values: clear them so they don't pollute artist ---
+# These are not real artists; they're consignment notes.  Setting artist to
+# null via a sentinel that normalize.normalize_artist filters out.
+- if:
+    artist_eq: Weiner Consignment
+  then:
+    artist: Unknown
+  reason: "Weiner is a consignor, not an artist; clear so artist field is empty."
+
+- if:
+    artist_eq: Wiener Consignment
+  then:
+    artist: Unknown
+  reason: "Wiener (typo of Weiner) is a consignor, not an artist."
+
+- if:
+    artist_eq: LaPuma Consignmnet
+  then:
+    artist: Unknown
+  reason: "LaPuma is a consignor (typo Consignmnet); not an artist."
+
+- if:
+    artist_eq: Unspecified Artist
+  then:
+    artist: Unknown
+  reason: "Unspecified Artist is a placeholder; clear it."
+
+# --- Travel / advertising posters -> Posters on Artsy ---
+# Curator decision (2026-05-28): vintage travel & airline posters go in
+# Artsy's dedicated "Posters" category.  Each rule excludes airline
+# ephemera (tickets, timetables, postcards, menus, pamphlets) which
+# share the same brand prefix but aren't posters.
+- if:
+    title_contains: "Visit India"
+    title_excludes: ["ticket", "timetable", "postcard", "menu", "pamphlet", "brochure"]
+  then:
+    classification: "Posters"
+    medium: "Lithographic print on paper"
+  reason: "Visit-India travel posters belong in Artsy's Posters category."
+
+- if:
+    title_contains: "travel poster"
+  then:
+    classification: "Posters"
+  reason: "Travel posters belong in Artsy's Posters category."
+
+- if:
+    title_contains: "Sabena"
+    title_excludes: ["ticket", "timetable", "postcard", "menu", "pamphlet", "brochure"]
+  then:
+    classification: "Posters"
+  reason: "Sabena India travel poster."
+
+- if:
+    title_contains: "Air India"
+    title_excludes: ["ticket", "timetable", "postcard", "menu", "pamphlet", "brochure",
+                     "safety", "in flight", "in-flight"]
+  then:
+    classification: "Posters"
+  reason: "Air India advertising posters belong in Artsy's Posters category. Excludes ephemera (tickets/timetables/menus/safety pamphlets)."
+
+# --- Talwars / shamshirs without explicit medium -> steel/iron weapon medium ---
+- if:
+    title_contains: talwar
+  then:
+    medium: "Watered steel; gold-koftgari hilt"
+  reason: "Talwars are typically gold-koftgari watered-steel sabres."
+
+- if:
+    title_contains: koftgari talwar
+  then:
+    medium: "Steel with gold koftgari decoration"
+  reason: "Koftgari talwars are steel with gold-koftgari work."
+
+- if:
+    title_contains: shamshir
+  then:
+    medium: "Watered-steel blade with carved hilt"
+  reason: "Shamshirs are curved watered-steel sabres."
+
+- if:
+    title_contains: khanjar
+  then:
+    medium: "Jade-hilted dagger with steel blade"
+  reason: "Khanjars are jade-hilted daggers with steel blades."
+
+# --- Generic gallery defaults to fill the long tail ---
+# When a work has dimensions on paper but no explicit medium, default to the
+# most common gallery medium so it becomes Artsy-eligible.  Intentionally
+# weak: a more specific human resolution will override.
+- if:
+    classification_eq: Painting
+    medium_missing: true
+  then:
+    medium: Opaque watercolor on paper
+  reason: "Default for paintings without medium: most-common gallery medium."
+
+- if:
+    classification_eq: "Drawing, Collage or other Work on Paper"
+    medium_missing: true
+  then:
+    medium: Opaque watercolor on paper
+  reason: "Default for paper works without medium."

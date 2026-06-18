@@ -1,0 +1,116 @@
+name: inventory
+
+# Auto-regenerate the inventory artifacts whenever code changes on a tracked
+# branch.  If `make all` produces a different `data/master.csv`,
+# `data/conflicts.csv`, `data/gaps.csv`, `data/artsy_upload.csv`, or
+# `reports/*.md`, this workflow commits the changes back to the same branch.
+#
+# `data/inventory.db` is a binary derived artifact — we *don't* commit it from
+# CI to avoid noisy diffs; rebuild locally with `make init && make ingest`.
+
+on:
+  push:
+    branches:
+      - main
+      - 'claude/**'
+    paths:
+      - 'src/**'
+      - 'catalog/**'
+      - 'data/**'
+      - 'tests/**'
+      - 'pyproject.toml'
+      - 'Makefile'
+      - '.github/workflows/inventory.yml'
+      - 'CHANGELOG.md'
+      - 'INVENTORY.md'
+      - 'OPERATIONS.md'
+  # Don't double-trigger on PR events; the push event already covers the
+  # branch.  Only run on PR when it's from a fork (push wouldn't fire there).
+  pull_request:
+    branches: [main]
+    types: [opened, ready_for_review]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Only one active run per branch — cancel old in-progress runs when a new
+# commit lands.  Avoids the "two runs racing on the same artifacts" pattern.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e '.[dev]'
+
+      - name: Diagnose env
+        run: |
+          python --version
+          which python
+          which pytest || echo "(no pytest in path; will use python -m pytest)"
+          python -c "import src.cli; print('src.cli OK')"
+          ls -la data/raw/ 2>/dev/null | head -20
+
+      - name: Test
+        run: |
+          python -m pytest -v --tb=short
+
+      - name: Build inventory artifacts
+        run: |
+          set -euo pipefail
+          make init
+          make ingest
+          make consolidate
+          make report
+
+      - name: Pre-flight validate Artsy upload CSV (strict)
+        run: python -m src.cli check-artsy --strict
+
+      - name: Show coverage report
+        run: cat reports/coverage_report.md
+
+      # Don't auto-commit regenerated artifacts back to the branch.
+      #
+      # Reason: concurrent CI runs race to push, and the deterministic
+      # `extracted_at` timestamps in observations make every run produce a
+      # slightly different master.csv even when nothing meaningful changed —
+      # so auto-commits would create infinite churn even with [skip ci].
+      #
+      # Artifacts are still uploaded as workflow artifacts (next step) for
+      # debugging, and the team commits regenerated CSVs from local runs.
+      - name: Show post-build state
+        if: github.event_name == 'push'
+        run: |
+          echo "==== regenerated artifacts ===="
+          ls -la data/*.csv data/*.json reports/*.md 2>/dev/null || true
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: inventory-${{ github.sha }}
+          path: |
+            data/master.csv
+            data/master.json
+            data/master_provenance.csv
+            data/conflicts.csv
+            data/gaps.csv
+            data/artsy_upload.csv
+            data/primer_corrections.csv
+            reports/
+            data/inventory.db
+          retention-days: 14

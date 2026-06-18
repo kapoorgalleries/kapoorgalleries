@@ -1,6 +1,45 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+# Derived SQLite database; rebuilt from sources.yaml on every `make ingest`.
+# Binary churn that adds zero value to git history.  CI uploads it as a
+# workflow artifact instead.
+data/inventory.db
+# Local-only raw downloads from Drive (large; reproducible from sources.yaml).
+# Keep small fixtures committed under tests/fixtures/, not data/raw/.
+# Use file-level patterns (not data/raw/) so git negation rules work.
+data/raw/*
+# Keep the 1 MB Artsy CSV committed so CI can rebuild master.csv on every push.
+!data/raw/Artsy_2-16-2026.csv
+!data/raw/.gitkeep
+# 113 KB Masterworks & Museum Accessions Sheet export — drives the website
+# /masterworks page.  Re-export from Drive Sheet 17jK96JKxAmH... when stale.
+!data/raw/masterworks_and_museum_accessions.csv
+# 67 KB first-tab export of the master Catalog & Inventory Sheet — drives
+# the website-feed enrichment (provenance/location/literature merge).
+!data/raw/catalog_and_inventory_tab1.csv
+# Small Match Workbook fixture (KG-1000..KG-1015) for CI verification.
+!data/raw/match_workbook_summary_kg1000_1099.xlsx
+# 27 KB year-grouped 2024 catalog — small enough to commit, parser TBD.
+!data/raw/Inventory_for_2024_catalog.xlsx
+# Small sample of Artsy First-100 PNGs (5 files, <50 KB total) for CI verification.
+!data/raw/artsy_first_100_pngs/
+!data/raw/artsy_first_100_pngs/*.png
+# 110 KB Artsy Bulk Upload Template (1,415 KG-#s) — committed for CI.
+!data/raw/Kapoor_Galleries_Bulk_upload_Template_Artsy.xlsx
+# 49 KB Graham sub-inventory PDF (~105 owned works) — committed for CI.
+!data/raw/Graham_Inventory_owned.pdf
+# 197 KB Textile Boxes Word doc (6 boxes) — committed for CI.
+!data/raw/Textile_Boxes_2022-07.docx
+# 6.4 MB Himalayas price list (12 KG-#s with prices + dims) — committed for CI.
+!data/raw/KG_Art_of_the_Himalayas_Price_List.pdf
 # Source PDFs are too large for git; fetched per-machine via scripts/fetch_pdfs.sh
 READY_TO_PUBLISH/*/document.pdf
 READY_TO_PUBLISH/*/*.pdf
-
 # Per-machine upload state
 READY_TO_PUBLISH/*/.uploaded
