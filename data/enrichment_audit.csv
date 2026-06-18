@@ -234,7 +234,7 @@ KG-1007,100,A stucco hand of Buddha,skipped: KG-# already enriched from earlier 
 KG-1016,96,A Grey Schist Figure of a seated Boddhisattva,skipped: KG-# already enriched from earlier source
 ,0,A gray schist frieze with three  Boddhisattva,no match >= threshold
 KG-1017,100,A Green Schist Figure of a Standing Attendant,skipped: KG-# already enriched from earlier source
-,0,A Gray Schist Relief of Panchika and Hariti,skipped: SOLD flag set in curator sheet
+KG-1010,100,A Gray Schist Relief of Panchika and Hariti,skipped: SOLD flag set in curator sheet (sold-candidate emitted)
 KG-1794,100,Mahakala Shadbhuja,skipped: KG-# already enriched from earlier source
 KG-1018,100,Indian clay figures,skipped: KG-# already enriched from earlier source
 KG-1086,100,Two Brass Figures of Venugopala and Radha,matched-but-nothing-new
@@ -357,10 +357,10 @@ KG-1105,100,Illustration to the Jayadeva Gita Govinda: Krishna adorns Radha with
 KG-1106,100,Kamrup and friends at sea from an Urdu version of the Qissa-i Kamrup va Kamlata,skipped: KG-# already enriched from earlier source
 KG-1107,100,The Shipwreck of Kamrup's Vessel from an Urdu version of the Qissa-i Kamrup va K,skipped: KG-# already enriched from earlier source
 KG-1108,97,Manjnun in the Wilderness,skipped: KG-# already enriched from earlier source
-,0,The Descent of the Holy Family from Kailasha,skipped: SOLD flag set in curator sheet
+KG-1109,100,The Descent of the Holy Family from Kailasha,skipped: SOLD flag set in curator sheet (sold-candidate emitted)
 KG-1110,100,A Prince and His Consort Strolling In a Garden,skipped: KG-# already enriched from earlier source
 ,0,Leaf from the Kalpsutra,no match >= threshold
-,0,Architrave,skipped: SOLD flag set in curator sheet
+KG-1114,100,Architrave,skipped: SOLD flag set in curator sheet (sold-candidate emitted)
 ,0,X,no match >= threshold
 ,0,X,no match >= threshold
 ,0,X,no match >= threshold

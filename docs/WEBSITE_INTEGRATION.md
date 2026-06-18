@@ -324,18 +324,61 @@ export const load = async ({ params, fetch }) => {
 };
 ```
 
-## 13 · Open questions for the site author
+## 13 · Year fallback (`era_display`)
+
+The base feed now ships an optional `era_display` string for works
+whose `year` is null but whose tags carry a period inference. The
+site can render this in place of a blank date:
+
+```ts
+const dateLabel =
+  work.year_display ?? work.era_display ?? "Date unknown";
+```
+
+Examples today: `"19th century"`, `"Ancient"`, `"Contemporary"`.
+Only emitted when `year === null`; works with a year never carry
+this key so there's no redundant signal.
+
+## 14 · Sold-state plumbing
+
+The enrichment step (§9) now consults a `SOLD` column in the curator
+Catalog & Inventory Sheet. Rows with `SOLD` set are excluded from
+the enrichment merge — but the inventory pipeline does NOT
+auto-remove sold works from the public feed, because a fuzzy title
+match can collide across centuries ("Krishna and Radha" exists 30+
+times in the inventory).
+
+Instead, every SOLD row whose fuzzy title match exceeds 95 (vs the
+88-threshold used for normal enrichment) is recorded in
+`data/sold_candidates.csv` with shape:
+
+```csv
+kg_id,match_score,external_title,current_title,action
+KG-1010,100,A Gray Schist Relief…,A gray schist relief…,review-and-confirm-…
+```
+
+The curator reviews this file periodically and confirms — then either:
+1. Sets `status="sold"` on the work in the canonical master CSV
+   (Apps Script supports this; once the master flips status, the
+   work drops out of the website feed via the existing filter).
+2. Adds it to a forthcoming `data/sold_overrides.yaml` for fast
+   removal without round-tripping through the master.
+
+Today (2026-06): 3 candidates pending curator review.
+
+## 15 · Open questions for the site author
 
 These are decisions the inventory pipeline can't make for you:
 
-- **Year fallback**: shows of works without a year (519 of 1,377).
-  Render as blank, as "Date unknown", or as the era from tags?
+- **Year fallback**: 519 of 1,377 works have no `year`. The pipeline
+  now ships `era_display` as the "era from tags" option for the
+  small fraction (5 today) where the title carries a century word.
+  For the remaining 514, the site still has to choose: blank vs
+  "Date unknown" vs hide.
 - **Artist fallback**: 1,249 of 1,377 have no artist on file. Render
   as "Artist unknown" or omit the field entirely?
-- **Sold-state**: how to surface works that sell (will need a new
-  status field plumbed through). Note: enrichment now honors a SOLD
-  flag in the Catalog & Inventory Sheet — sold works are excluded
-  from enrichment merge but still appear in the base feed.
+- **Sold-state**: see §14. Pipeline emits candidates; curator
+  confirms; site doesn't need to change anything yet.
 - **Primer URL expiry**: see §5 — needs a long-term plan before launch.
 - **Empty collections**: 3 of 9 collection pages have 0 members
   pending a curator-supplied KG-# list. Render as "Coming soon"

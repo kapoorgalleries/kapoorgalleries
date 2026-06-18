@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-18T16:34:46Z",
+  "generated_at": "2026-06-18T19:06:24Z",
   "count": 1377,
   "facets": {
     "classification": [
@@ -382,6 +382,7 @@
         "manuscript"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -418,6 +419,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -491,6 +493,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -528,6 +531,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -563,6 +567,7 @@
         "weapon"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "011c1356-2b84-4b21-bbfb-79fc2e9e53d1",
         "has_conflict": false
@@ -995,6 +1000,7 @@
         "weapon"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -1028,6 +1034,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -1096,6 +1103,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -1131,6 +1139,7 @@
         "japanese"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -1204,6 +1213,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "e862814f-2953-4634-b38a-1c614c951a15",
         "has_conflict": false
@@ -1284,6 +1294,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "da0a03d9-bd92-4ad4-818d-701daf9003db",
         "has_conflict": false
@@ -1325,6 +1336,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "23d82cb3-654a-4e36-9bfe-d1dbf5d9f8ed",
         "has_conflict": false
@@ -1367,6 +1379,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "61f51a8e-d5b9-4b59-add4-45ab37057d7b",
         "has_conflict": false
@@ -1448,6 +1461,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "d9ca5f8f-0c8f-4afa-a0a1-7f1924f57736",
         "has_conflict": false
@@ -1803,6 +1817,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "9d4bb31c-3a34-452d-8d48-07908cf3eebb",
         "has_conflict": false
@@ -1959,6 +1974,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "2d20f3f5-df1f-408a-8368-2564c40293c6",
         "has_conflict": false
@@ -1994,6 +2010,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "f46caf44-b457-47b7-a652-e44fb136f312",
         "has_conflict": false
@@ -2592,6 +2609,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "24f32ea3-e8dd-46cf-80f1-6bf1492c5bdc",
         "has_conflict": false
@@ -3638,6 +3656,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "894bfaf4-5505-49dc-baaa-1a9883a1df9b",
         "has_conflict": false
@@ -4229,6 +4248,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "4228dd9d-3459-475b-a382-473dcff46255",
         "has_conflict": false
@@ -4337,6 +4357,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "c773190c-174d-4c1e-b3f3-695bebf9a927",
         "has_conflict": false
@@ -4519,6 +4540,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "64d59590-cb7d-444c-91ce-6b1ea01d6436",
         "has_conflict": false
@@ -5262,6 +5284,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "dfe3f938-3286-4393-aab4-d95985eee6bf",
         "has_conflict": false
@@ -5443,6 +5466,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "e2426965-f281-4fe4-b972-5d4238cef95c",
         "has_conflict": false
@@ -5958,6 +5982,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "c8f21116-d617-4f55-a64d-3859888b136b",
         "has_conflict": false
@@ -5993,6 +6018,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "36b941c0-4c6a-4868-8571-9a6a1f48653a",
         "has_conflict": false
@@ -7021,6 +7047,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "49bb08eb-dd18-4853-a043-1a6062f36e64",
         "has_conflict": false
@@ -7056,6 +7083,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "15481927-baaa-439d-9576-1ca870dd5ce1",
         "has_conflict": false
@@ -7274,6 +7302,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "51ff7658-3833-4b16-9651-2825d6206322",
         "has_conflict": false
@@ -7679,6 +7708,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "f6acdd40-071c-46e9-be5f-c89ea0607391",
         "has_conflict": false
@@ -7936,6 +7966,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "8f72df85-d878-47f3-9948-7b9d2a000fe3",
         "has_conflict": false
@@ -8189,6 +8220,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "c9789ee6-7073-4b82-9f3c-9207a8422f91",
         "has_conflict": false
@@ -8635,6 +8667,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "78231312-a992-4675-a1cf-0cd4e5f11ae2",
         "has_conflict": false
@@ -8815,6 +8848,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "406d4c0d-b187-4767-93dc-a950445e870a",
         "has_conflict": false
@@ -9943,6 +9977,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "ce1f738a-4878-4c2b-9447-29b88e50f5b6",
         "has_conflict": false
@@ -9979,6 +10014,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "486d311c-0747-4f98-9092-13e20f2de2f8",
         "has_conflict": false
@@ -10272,6 +10308,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "0db0a9b1-860a-4d7a-bcda-3c239d7fee49",
         "has_conflict": false
@@ -10305,6 +10342,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "088f8611-5c7e-47c6-99d7-068392bf0226",
         "has_conflict": false
@@ -10858,6 +10896,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "4548aea7-a892-4b3b-afe9-3313988c0128",
         "has_conflict": false
@@ -11077,6 +11116,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "beafe9af-f564-4944-9de2-ea0926adf90b",
         "has_conflict": false
@@ -12173,6 +12213,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "45d42270-17d5-47c1-990a-a4dda05b28b6",
         "has_conflict": false
@@ -12501,6 +12542,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "7f6a8bf5-0968-4335-a3c0-5e99406d26cb",
         "has_conflict": false
@@ -12537,6 +12579,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "3d4bd4e3-e693-421f-a8c6-093f07926839",
         "has_conflict": false
@@ -13751,6 +13794,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "2b6de6f0-e1e4-412c-87bb-69444dcb94f9",
         "has_conflict": false
@@ -15618,6 +15662,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "43823050-b8dd-447d-af07-a1e703cd02a9",
         "has_conflict": false
@@ -15726,6 +15771,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -17874,6 +17920,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -17912,6 +17959,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -17991,6 +18039,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -18142,6 +18191,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19113,6 +19163,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19185,6 +19236,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19257,6 +19309,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19732,6 +19785,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19805,6 +19859,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19842,6 +19897,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19877,6 +19933,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19912,6 +19969,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19948,6 +20006,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -19983,6 +20042,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20020,6 +20080,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20055,6 +20116,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20090,6 +20152,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20125,6 +20188,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20197,6 +20261,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20234,6 +20299,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20274,6 +20340,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20310,6 +20377,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20347,6 +20415,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20383,6 +20452,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20418,6 +20488,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20455,6 +20526,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20490,6 +20562,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20526,6 +20599,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20561,6 +20635,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20596,6 +20671,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20631,6 +20707,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20666,6 +20743,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20704,6 +20782,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20743,6 +20822,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20779,6 +20859,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20816,6 +20897,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20853,6 +20935,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20889,6 +20972,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20926,6 +21010,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -20963,6 +21048,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21000,6 +21086,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21036,6 +21123,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21072,6 +21160,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21145,6 +21234,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21180,6 +21270,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21253,6 +21344,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21289,6 +21381,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21471,6 +21564,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21506,6 +21600,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21541,6 +21636,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21576,6 +21672,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21611,6 +21708,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21646,6 +21744,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21681,6 +21780,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21865,6 +21965,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -21937,6 +22038,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22009,6 +22111,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22045,6 +22148,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22080,6 +22184,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22151,6 +22256,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22187,6 +22293,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22222,6 +22329,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22293,6 +22401,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22328,6 +22437,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22400,6 +22510,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22584,6 +22695,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22620,6 +22732,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22691,6 +22804,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22909,6 +23023,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22944,6 +23059,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -22979,6 +23095,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23015,6 +23132,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23050,6 +23168,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23086,6 +23205,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23158,6 +23278,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23193,6 +23314,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23228,6 +23350,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23263,6 +23386,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23299,6 +23423,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23335,6 +23460,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23371,6 +23497,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23406,6 +23533,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23442,6 +23570,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23479,6 +23608,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23516,6 +23646,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23552,6 +23683,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23588,6 +23720,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23624,6 +23757,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23660,6 +23794,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23696,6 +23831,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23732,6 +23868,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -23769,6 +23906,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24143,6 +24281,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24254,6 +24393,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24289,6 +24429,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24324,6 +24465,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24431,6 +24573,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24502,6 +24645,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24537,6 +24681,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24644,6 +24789,7 @@
         "jewelry"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24679,6 +24825,7 @@
         "manuscript"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24714,6 +24861,7 @@
         "manuscript"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24747,6 +24895,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24782,6 +24931,7 @@
         "manuscript"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24817,6 +24967,7 @@
         "manuscript"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24887,6 +25038,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24958,6 +25110,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -24993,6 +25146,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -25028,6 +25182,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -25135,6 +25290,7 @@
         "manuscript"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -25170,6 +25326,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -25207,6 +25364,7 @@
         "thangka"
       ],
       "status": "available",
+      "era_display": "19th century",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -25359,6 +25517,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "3ca46540-4e8e-465b-902c-03b7912bf203",
         "has_conflict": false
@@ -25392,6 +25551,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "1f4202fd-d5b7-4de2-8770-b39d5db39c56",
         "has_conflict": false
@@ -25426,6 +25586,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "a51f9806-4bf2-4f46-9bc7-2a42b4a67e40",
         "has_conflict": false
@@ -25459,6 +25620,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "cd9c3065-79a2-4afe-b37b-c538874927bd",
         "has_conflict": false
@@ -25492,6 +25654,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "2361fd12-9480-4257-bc80-cb3b7b272ef9",
         "has_conflict": false
@@ -25525,6 +25688,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "2e35e1f0-2220-4828-b847-d5e36d94b142",
         "has_conflict": false
@@ -25558,6 +25722,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "7b65dac6-1389-4e34-9f85-1edf73361566",
         "has_conflict": false
@@ -25594,6 +25759,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "2dfbb99d-2d49-4f16-8092-44fe525b38b2",
         "has_conflict": false
@@ -25629,6 +25795,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "1781e89c-d62c-4b86-91b1-5451fb9e5773",
         "has_conflict": false
@@ -25701,6 +25868,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "0c5f0802-49d9-4d78-9da6-ce8aec907112",
         "has_conflict": false
@@ -25988,6 +26156,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "c4817a33-393e-4d55-9e42-8febf8bbe4c6",
         "has_conflict": false
@@ -26023,6 +26192,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "ff6987e5-b7a8-406a-849b-19fcfa05517b",
         "has_conflict": false
@@ -26058,6 +26228,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "4dc7c1f0-c5a7-4192-9e69-1fb0ece8be93",
         "has_conflict": false
@@ -26093,6 +26264,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "0321f3cc-da43-4152-aa74-a4521d6b8d16",
         "has_conflict": false
@@ -26128,6 +26300,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "5d40eaa3-7e6a-4d83-baba-d153495a0214",
         "has_conflict": false
@@ -26276,6 +26449,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "dd9c17cd-8982-4ccc-8fb0-368223eba673",
         "has_conflict": false
@@ -26311,6 +26485,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "88529d2d-fbda-432f-a791-efb73b44a39c",
         "has_conflict": false
@@ -26346,6 +26521,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "9b3991be-86e1-4a54-93ed-6f833e10676c",
         "has_conflict": false
@@ -26602,6 +26778,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "4b0f80e9-cb6d-410a-a02c-63be3cd756a3",
         "has_conflict": false
@@ -26673,6 +26850,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -26709,6 +26887,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "a1d09556-b1ef-4b3e-81a1-1c60c9d777af",
         "has_conflict": false
@@ -26744,6 +26923,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "1200f187-ae8e-46ca-b294-1e97c734aedb",
         "has_conflict": false
@@ -26927,6 +27107,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "3c4a89bd-911a-4272-95b4-db15a0fb55dc",
         "has_conflict": false
@@ -27074,6 +27255,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "4f617c5a-9a39-45d3-ac2a-3d985d40d710",
         "has_conflict": false
@@ -27110,6 +27292,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "76236685-058b-4a61-a56f-8f067bb49d92",
         "has_conflict": false
@@ -27221,6 +27404,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "1fa32f25-09f0-4e3d-9931-523dba1b6b34",
         "has_conflict": false
@@ -27256,6 +27440,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "4263ddb5-695f-4f6c-b5ea-97efe23cd834",
         "has_conflict": false
@@ -27291,6 +27476,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "785dfca6-3de0-489f-ab98-72dfc19d840c",
         "has_conflict": false
@@ -27471,6 +27657,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "d407b3b5-539a-45c3-a3ff-a951a40d82d9",
         "has_conflict": false
@@ -27506,6 +27693,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "5c623d5f-1384-4cfd-8036-fdc1e997243f",
         "has_conflict": false
@@ -27541,6 +27729,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "5d31a926-6c8b-410c-986d-35aab3cdc151",
         "has_conflict": false
@@ -27993,6 +28182,7 @@
         "textile-ground"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -28106,6 +28296,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -28177,6 +28368,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29184,6 +29376,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29219,6 +29412,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29254,6 +29448,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29289,6 +29484,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29324,6 +29520,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29359,6 +29556,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29394,6 +29592,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29429,6 +29628,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29464,6 +29664,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29499,6 +29700,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29535,6 +29737,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29571,6 +29774,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29606,6 +29810,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29642,6 +29847,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29677,6 +29883,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29714,6 +29921,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29749,6 +29957,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29784,6 +29993,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29820,6 +30030,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29855,6 +30066,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29926,6 +30138,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29961,6 +30174,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -29998,6 +30212,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30036,6 +30251,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30074,6 +30290,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30111,6 +30328,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30148,6 +30366,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30184,6 +30403,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30220,6 +30440,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30255,6 +30476,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30290,6 +30512,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30326,6 +30549,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30362,6 +30586,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30397,6 +30622,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30433,6 +30659,7 @@
         "thangka"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30468,6 +30695,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30504,6 +30732,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30539,6 +30768,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30575,6 +30805,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30610,6 +30841,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30646,6 +30878,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30683,6 +30916,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30718,6 +30952,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30753,6 +30988,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30789,6 +31025,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30824,6 +31061,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30860,6 +31098,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30896,6 +31135,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30933,6 +31173,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -30968,6 +31209,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31001,6 +31243,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31110,6 +31353,7 @@
         "jewelry"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31147,6 +31391,7 @@
         "thangka"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31221,6 +31466,7 @@
         "textile-ground"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31256,6 +31502,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31293,6 +31540,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31329,6 +31577,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31364,6 +31613,7 @@
         "textile-ground"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31543,6 +31793,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31577,6 +31828,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31614,6 +31866,7 @@
         "textile-ground"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31648,6 +31901,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31758,6 +32012,7 @@
         "textile-ground"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31794,6 +32049,7 @@
         "textile-ground"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -31897,6 +32153,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "52c79c16-ace9-4e5f-9bde-64913596e7fe",
         "has_conflict": false
@@ -32008,6 +32265,7 @@
         "portrait"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32041,6 +32299,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32146,6 +32405,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32179,6 +32439,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32214,6 +32475,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32249,6 +32511,7 @@
         "portrait"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32282,6 +32545,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32315,6 +32579,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32351,6 +32616,7 @@
         "nepalese"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32386,6 +32652,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32422,6 +32689,7 @@
         "portrait"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32493,6 +32761,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32529,6 +32798,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32565,6 +32835,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32675,6 +32946,7 @@
         "portrait"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32745,6 +33017,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32852,6 +33125,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32885,6 +33159,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32920,6 +33195,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -33463,6 +33739,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "d9806e1d-1555-47e4-a804-4267cd357b8a",
         "has_conflict": false
@@ -33572,6 +33849,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "6aadb38c-b235-422f-9361-51cb0b8e0beb",
         "has_conflict": false
@@ -33715,6 +33993,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "b8b4bfdd-13a6-4d6b-8666-79727c835af1",
         "has_conflict": false
@@ -33748,6 +34027,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "fbf537ce-d7db-4d18-9f7e-a560f9bd758b",
         "has_conflict": false
@@ -33858,6 +34138,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "664eccdf-7e08-4e94-a84d-bb5396547020",
         "has_conflict": false
@@ -33894,6 +34175,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "08b51928-0ec3-40f5-8a2b-be3321f79540",
         "has_conflict": false
@@ -33930,6 +34212,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "084bd542-e0aa-47d9-8637-f27bfe7da080",
         "has_conflict": false
@@ -33966,6 +34249,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "1ca8e141-69d3-4706-b7ee-85673ae89151",
         "has_conflict": false
@@ -34002,6 +34286,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "b9973c98-7914-4bcc-a35f-86251f6939c1",
         "has_conflict": false
@@ -34076,6 +34361,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "41bd6c95-8133-4e6c-9c49-17e795955e3c",
         "has_conflict": false
@@ -34113,6 +34399,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "5da70b97-6054-4471-80f7-782c3326bac1",
         "has_conflict": false
@@ -34187,6 +34474,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": "Ancient",
       "_internal": {
         "primer_uuid": "3c05f5b9-0097-45d1-98f6-fd30d2bf1d9b",
         "has_conflict": false
@@ -34223,6 +34511,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -34261,6 +34550,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "798a1cf9-36a2-44c5-a7e2-d480d805ec7f",
         "has_conflict": false
@@ -34296,6 +34586,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "04193628-6c74-4102-baa3-ca65b9b21c53",
         "has_conflict": false
@@ -34332,6 +34623,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "fdf70e98-cf22-4185-a8ea-130b54ea6fb9",
         "has_conflict": false
@@ -34368,6 +34660,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "48bdda0c-af80-4547-88ed-0d371d43d2f5",
         "has_conflict": false
@@ -34405,6 +34698,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "7f739c70-c3c6-44be-834e-6ee8c9ef8f19",
         "has_conflict": false
@@ -34478,6 +34772,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "418c24da-c253-4c31-b596-240d5cb19614",
         "has_conflict": false
@@ -34516,6 +34811,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "0f3cd7f8-cad6-4422-85d6-9e59b5295384",
         "has_conflict": false
@@ -34554,6 +34850,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "6e4ff42d-a3ca-47b9-af15-b3a6a07bd569",
         "has_conflict": false
@@ -34663,6 +34960,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "48267824-24b1-4b26-bd75-3e73ccb2423d",
         "has_conflict": false
@@ -35024,6 +35322,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "1af4e5d0-0a09-4d59-83f0-7f92662c46f6",
         "has_conflict": false
@@ -35095,6 +35394,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "3ec95475-f303-4144-9107-beb145b7050d",
         "has_conflict": false
@@ -35348,6 +35648,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -35637,6 +35938,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -35847,6 +36149,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -35883,6 +36186,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -35920,6 +36224,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -35993,6 +36298,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -36029,6 +36335,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -36066,6 +36373,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -36103,6 +36411,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "36e372bf-8acb-4580-a181-864f261a453f",
         "has_conflict": false
@@ -36142,6 +36451,7 @@
         "buddha"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "0689a076-988c-4093-bd43-c8c607ebdebf",
         "has_conflict": false
@@ -36181,6 +36491,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "96a1f10f-3cb2-43f5-82d1-451c707a9565",
         "has_conflict": false
@@ -36221,6 +36532,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "0f833f9e-b200-42cd-a482-bd8aa2bec2bc",
         "has_conflict": false
@@ -36258,6 +36570,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "5db1cd6b-f5a0-40b7-a25c-0be7371e9408",
         "has_conflict": false
@@ -36295,6 +36608,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "38fdc845-e638-4ecf-88fd-11a35a5bb433",
         "has_conflict": false
@@ -39057,6 +39371,7 @@
         "avalokiteshvara"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -39170,6 +39485,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -39207,6 +39523,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -39242,6 +39559,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -39313,6 +39631,7 @@
         "shiva"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -39674,6 +39993,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -39780,6 +40100,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -39886,6 +40207,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40290,6 +40612,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40325,6 +40648,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40360,6 +40684,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40685,6 +41010,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40756,6 +41082,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40791,6 +41118,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40862,6 +41190,7 @@
         "buddha"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40898,6 +41227,7 @@
         "tara"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40931,6 +41261,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40964,6 +41295,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -40997,6 +41329,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -41030,6 +41363,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -41063,6 +41397,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -41096,6 +41431,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -41129,6 +41465,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -41162,6 +41499,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -41195,6 +41533,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -41302,6 +41641,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -41337,6 +41677,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -41989,6 +42330,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -42060,6 +42402,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -42095,6 +42438,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -42379,6 +42723,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -42776,6 +43121,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43060,6 +43406,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43093,6 +43440,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43126,6 +43474,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43161,6 +43510,7 @@
         "shiva"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43198,6 +43548,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43305,6 +43656,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43340,6 +43692,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43376,6 +43729,7 @@
         "shiva"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43481,6 +43835,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43517,6 +43872,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43552,6 +43908,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43587,6 +43944,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43620,6 +43978,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43653,6 +44012,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43688,6 +44048,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43721,6 +44082,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43824,6 +44186,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -43859,6 +44222,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44036,6 +44400,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44073,6 +44438,7 @@
         "shiva"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44108,6 +44474,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44143,6 +44510,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44178,6 +44546,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44216,6 +44585,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44253,6 +44623,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44290,6 +44661,7 @@
         "nepalese"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44326,6 +44698,7 @@
         "nepalese"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44362,6 +44735,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44398,6 +44772,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44435,6 +44810,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44471,6 +44847,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44507,6 +44884,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44543,6 +44921,7 @@
         "nepalese"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44579,6 +44958,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44615,6 +44995,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44650,6 +45031,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44685,6 +45067,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44723,6 +45106,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44758,6 +45142,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44793,6 +45178,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44829,6 +45215,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44865,6 +45252,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44900,6 +45288,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44935,6 +45324,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -44968,6 +45358,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45001,6 +45392,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45034,6 +45426,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45071,6 +45464,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45104,6 +45498,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45139,6 +45534,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45175,6 +45571,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45210,6 +45607,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45246,6 +45644,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45427,6 +45826,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45463,6 +45863,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45572,6 +45973,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45607,6 +46009,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45643,6 +46046,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45679,6 +46083,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45712,6 +46117,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45748,6 +46154,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45783,6 +46190,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45818,6 +46226,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45853,6 +46262,7 @@
         "ancient"
       ],
       "status": "available",
+      "era_display": "Ancient",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45888,6 +46298,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -45924,6 +46335,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46143,6 +46555,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46215,6 +46628,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46323,6 +46737,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46360,6 +46775,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46397,6 +46813,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46430,6 +46847,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46466,6 +46884,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46502,6 +46921,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46537,6 +46957,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46572,6 +46993,7 @@
         "tibetan"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46607,6 +47029,7 @@
         "indian"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46643,6 +47066,7 @@
         "wood"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46678,6 +47102,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46713,6 +47138,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46746,6 +47172,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46781,6 +47208,7 @@
         "metal"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46816,6 +47244,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46851,6 +47280,7 @@
         "stone"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46884,6 +47314,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46917,6 +47348,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46954,6 +47386,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -46990,6 +47423,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47026,6 +47460,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47062,6 +47497,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47098,6 +47534,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47134,6 +47571,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47170,6 +47608,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47206,6 +47645,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47242,6 +47682,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47278,6 +47719,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47314,6 +47756,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47348,6 +47791,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47384,6 +47828,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47420,6 +47865,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47456,6 +47902,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47492,6 +47939,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47746,6 +48194,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": "2960af1d-ab98-4ec7-9f2a-be6cb450b2ee",
         "has_conflict": false
@@ -47815,6 +48264,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47919,6 +48369,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47954,6 +48405,7 @@
         "tara"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -47987,6 +48439,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48164,6 +48617,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48232,6 +48686,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48370,6 +48825,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48509,6 +48965,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48544,6 +49001,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48578,6 +49036,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48611,6 +49070,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48645,6 +49105,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48681,6 +49142,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48715,6 +49177,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48820,6 +49283,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48959,6 +49423,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -48992,6 +49457,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49027,6 +49493,7 @@
         "19th-century"
       ],
       "status": "available",
+      "era_display": "19th century",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49063,6 +49530,7 @@
         "portrait"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49096,6 +49564,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49129,6 +49598,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49197,6 +49667,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49302,6 +49773,7 @@
         "portrait"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49337,6 +49809,7 @@
         "chinese"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49443,6 +49916,7 @@
         "21st-century"
       ],
       "status": "available",
+      "era_display": "Contemporary",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49478,6 +49952,7 @@
         "jewelry"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49513,6 +49988,7 @@
         "jewelry"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49548,6 +50024,7 @@
         "jewelry"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49583,6 +50060,7 @@
         "jewelry"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49618,6 +50096,7 @@
         "jewelry"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -50021,6 +50500,7 @@
         "works-on-paper"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -50205,6 +50685,7 @@
         "manuscript"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -50278,6 +50759,7 @@
         "avalokiteshvara"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -50313,6 +50795,7 @@
         "avalokiteshvara"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -50348,6 +50831,7 @@
         "vishnu"
       ],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -50416,6 +50900,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -50449,6 +50934,7 @@
       },
       "tags": [],
       "status": "available",
+      "era_display": null,
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false

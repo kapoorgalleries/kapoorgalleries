@@ -231,9 +231,10 @@ def test_enrichment_skips_sold_rows(tmp_path: Path):
     )
     out_feed = tmp_path / "enr.json"
     audit = tmp_path / "audit.csv"
+    sold = tmp_path / "sold.csv"
     _, stats = enrichment.export_enrichment(
         source_csv=src, base_feed=feed_path,
-        out_feed=out_feed, audit_csv=audit,
+        out_feed=out_feed, audit_csv=audit, sold_csv=sold,
     )
     feed = json.loads(out_feed.read_text())
     kg100 = next(w for w in feed["works"] if w["kg_id"] == "KG-100")
@@ -242,6 +243,45 @@ def test_enrichment_skips_sold_rows(tmp_path: Path):
     assert kg100.get("physical_location") is None
     assert stats["matched"] == 0
     assert stats["skipped_sold"] == 1
+
+
+def test_enrichment_emits_sold_candidate_for_tight_match(tmp_path: Path):
+    """A SOLD row that closely matches an active KG-# should land in
+    sold_candidates.csv so the curator can confirm before removal."""
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        {"kg_id": "KG-100", "title": "Krishna Revels with the Gopis",
+         "image": {"primary": None, "alternates": [], "thumbnail": None}},
+        {"kg_id": "KG-200", "title": "A Bronze Vajra",
+         "image": {"primary": None, "alternates": [], "thumbnail": None}},
+    ])
+    src = tmp_path / "src.csv"
+    src.write_text(
+        "Title,Origin,Date,Medium,Dimensions,Physical Location,"
+        "File Location,Acquired From,Literature & Exhibited,Provenance,"
+        "SOLD,tab\n"
+        # Tight match to KG-100 (identical title) -> sold candidate.
+        "Krishna Revels with the Gopis,,,,,,,,,,X,1\n"
+        # Weak match (no KG-# above sold_threshold) -> NO candidate.
+        "Some Random Sold Painting,,,,,,,,,,X,1\n"
+    )
+    out_feed = tmp_path / "enr.json"
+    audit = tmp_path / "audit.csv"
+    sold = tmp_path / "sold.csv"
+    _, stats = enrichment.export_enrichment(
+        source_csv=src, base_feed=feed_path,
+        out_feed=out_feed, audit_csv=audit, sold_csv=sold,
+    )
+    # Public feed must NOT auto-remove sold candidates — the curator
+    # has to confirm.  KG-100 still in the feed unchanged.
+    feed = json.loads(out_feed.read_text())
+    assert {w["kg_id"] for w in feed["works"]} == {"KG-100", "KG-200"}
+    rows = list(csv.DictReader(open(sold)))
+    assert len(rows) == 1
+    assert rows[0]["kg_id"] == "KG-100"
+    assert "review-and-confirm" in rows[0]["action"]
+    assert stats["sold_candidates"] == 1
+    assert stats["skipped_sold"] == 2
 
 
 def test_enrichment_audit_row_per_source_row(tmp_path: Path):

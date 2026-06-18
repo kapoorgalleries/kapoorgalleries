@@ -146,6 +146,34 @@ def test_infer_tags_basic_patterns():
     assert "works-on-paper" in tags
 
 
+def test_era_display_fills_when_year_missing(tmp_path: Path):
+    csv_path = tmp_path / "master.csv"
+    _write_master_csv(csv_path, [
+        # Year missing but title strongly hints at 19th century.
+        {"work_id": "KG-1",
+         "title": "Thangka of Tara, 19th century",
+         "classification": "Painting",
+         "medium": "Mineral pigment on cloth",
+         "status": "active"},
+        # Year missing AND no period hint -> era_display stays None.
+        {"work_id": "KG-2", "title": "A Bronze Vajra",
+         "classification": "Sculpture", "medium": "Bronze",
+         "status": "active"},
+        # Year present -> era_display NOT emitted (would be redundant).
+        {"work_id": "KG-3", "title": "Krishna on a Terrace",
+         "classification": "Painting", "medium": "Watercolor",
+         "year": "1820", "status": "active"},
+    ])
+    out = tmp_path / "feed.json"
+    export_website_inventory(None, out, source_csv=csv_path)
+    feed = json.load(open(out))
+    by_kg = {w["kg_id"]: w for w in feed["works"]}
+    assert by_kg["KG-1"]["era_display"] == "19th century"
+    assert by_kg["KG-2"].get("era_display") is None
+    # Works with a year don't carry the redundant era_display key.
+    assert "era_display" not in by_kg["KG-3"]
+
+
 def test_active_count_matches_master_csv(tmp_path: Path):
     """Spot check on real data — feed should have the right number of
     works from data/master.csv (active + non-placeholder)."""

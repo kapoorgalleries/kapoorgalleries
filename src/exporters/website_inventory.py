@@ -142,6 +142,38 @@ _SUBJECT_PATTERNS = {
 }
 
 
+# Map period tags to display strings — used to derive ``era_display``
+# when a work has no explicit year.  The site author asked: "Year
+# fallback — render as blank, as 'Date unknown', or as the era from
+# tags?" — this populates the era-from-tags option so the site can
+# pick a fallback at render time without re-computing it.
+_PERIOD_DISPLAY = {
+    "ancient":       "Ancient",
+    "medieval":      "Medieval",
+    "early-modern":  "Early modern",
+    "18th-century":  "18th century",
+    "19th-century":  "19th century",
+    "20th-century":  "20th century",
+    "21st-century":  "Contemporary",
+}
+
+
+def _era_display_from_tags(tags: list[str]) -> str | None:
+    """Pick the most specific period tag and return its display label.
+    Returns None if no period-shaped tag is present.
+    """
+    # Prefer century tags over the broader buckets.
+    for t in tags:
+        if re.match(r"^\d+(st|nd|rd|th)-century$", t):
+            n = re.match(r"^(\d+)", t).group(1)
+            # Match the natural-language form ("19th century").
+            return _PERIOD_DISPLAY.get(t) or f"{n}{t.split('-')[0][-2:]} century"
+    for t in tags:
+        if t in _PERIOD_DISPLAY:
+            return _PERIOD_DISPLAY[t]
+    return None
+
+
 def _infer_tags(title: str, classification: str, medium: str, year: int | None) -> list[str]:
     blob = " ".join(filter(None, [title, classification, medium])).lower()
     tags: list[str] = []
@@ -256,11 +288,23 @@ def export_website_inventory(
                 },
                 "tags": _infer_tags(title, classification, medium, year),
                 "status": "available",
+                "era_display": None,  # filled in below — needs the tag list
                 "_internal": {
                     "primer_uuid": (row.get("primer_uuid") or "").strip() or None,
                     "has_conflict": bool(int((row.get("has_conflict") or "0") or 0)),
                 },
             }
+
+            # era_display — fallback for the site author's
+            # "year missing → what to show?" decision.  We derive it
+            # from the inferred period tags so the site can render
+            # "19th century" instead of blank when year is null.
+            if year is None:
+                doc["era_display"] = _era_display_from_tags(doc["tags"])
+            else:
+                # Drop the placeholder so works with a year don't carry
+                # a redundant era string.
+                doc.pop("era_display", None)
 
             # Optional fields — only emit if populated, so the consumer
             # doesn't see noisy nulls.

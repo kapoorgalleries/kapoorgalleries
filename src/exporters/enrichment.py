@@ -90,7 +90,9 @@ def export_enrichment(
     base_feed: Path | str = "data/website_inventory.json",
     out_feed: Path | str = "data/website_inventory_enriched.json",
     audit_csv: Path | str = "data/enrichment_audit.csv",
+    sold_csv: Path | str = "data/sold_candidates.csv",
     threshold: int = 88,
+    sold_threshold: int = 95,
 ) -> tuple[Path, dict]:
     """Merge external enrichment data into the website feed.
 
@@ -107,8 +109,10 @@ def export_enrichment(
     base = Path(base_feed)
     out = Path(out_feed)
     audit = Path(audit_csv)
+    sold_out = Path(sold_csv)
     out.parent.mkdir(parents=True, exist_ok=True)
     audit.parent.mkdir(parents=True, exist_ok=True)
+    sold_out.parent.mkdir(parents=True, exist_ok=True)
 
     if not base.exists():
         raise FileNotFoundError(
@@ -158,6 +162,7 @@ def export_enrichment(
         skipped_no_title=0, skipped_sold=0,
     )
     audit_rows: list[dict] = []
+    sold_candidates: list[dict] = []
     seen_kg: set[str] = set()
     for r in rows:
         stats["source_rows"] += 1
@@ -167,11 +172,31 @@ def export_enrichment(
             continue
         if _is_sold(r):
             stats["skipped_sold"] += 1
+            # Run the fuzzy match against the active feed at a TIGHTER
+            # threshold (95 vs 88).  If the curator-flagged-sold title
+            # closely matches an active KG-#, record it as a candidate
+            # for review.  We never auto-remove from the public feed —
+            # curator confirmation is required, since title collisions
+            # across centuries happen ("Krishna and Radha" exists ~30x).
+            sold_match = _best_match(
+                _norm_title(ext_title), haystack, sold_threshold
+            )
+            if sold_match:
+                kg_id, score = sold_match
+                sold_candidates.append({
+                    "kg_id": kg_id,
+                    "match_score": score,
+                    "external_title": ext_title[:120],
+                    "current_title": by_kg.get(kg_id, {}).get("title", "")[:120],
+                    "action": "review-and-confirm-before-removing-from-public-feed",
+                })
             audit_rows.append({
-                "kg_id": "",
-                "match_score": 0,
+                "kg_id": sold_match[0] if sold_match else "",
+                "match_score": sold_match[1] if sold_match else 0,
                 "external_title": ext_title[:80],
-                "decision": "skipped: SOLD flag set in curator sheet",
+                "decision": ("skipped: SOLD flag set in curator sheet"
+                             + (" (sold-candidate emitted)" if sold_match
+                                else "")),
             })
             continue
         result = _best_match(_norm_title(ext_title), haystack, threshold)
@@ -243,4 +268,13 @@ def export_enrichment(
                                           "external_title", "decision"])
         w.writeheader()
         w.writerows(audit_rows)
+    # Always write sold_candidates.csv (even if empty) so the curator
+    # can pick it up in a known location.
+    with sold_out.open("w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=["kg_id", "match_score",
+                                          "external_title",
+                                          "current_title", "action"])
+        w.writeheader()
+        w.writerows(sold_candidates)
+    stats["sold_candidates"] = len(sold_candidates)
     return out, dict(stats)

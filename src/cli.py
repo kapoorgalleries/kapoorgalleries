@@ -447,6 +447,7 @@ def report(db_path: str):
         base_feed="data/website_inventory.json",
         out_feed="data/website_inventory_enriched.json",
         audit_csv="data/enrichment_audit.csv",
+        sold_csv="data/sold_candidates.csv",
     )
     # Masterworks showcase feed (no-op if the source CSV isn't present).
     _, n_mw = masterworks_json.export_masterworks(
@@ -476,6 +477,9 @@ def report(db_path: str):
     if enr_stats.get("matched"):
         click.echo(f"website_inventory_enriched.json: {enr_stats['matched']} "
                    f"of {enr_stats['source_rows']} merged from Catalog & Inventory")
+    if enr_stats.get("sold_candidates"):
+        click.echo(f"  sold_candidates.csv: {enr_stats['sold_candidates']} "
+                   f"work(s) flagged for curator review")
     if n_mw:
         click.echo(f"masterworks.json: {n_mw} masterworks")
     if n_coll:
@@ -890,11 +894,20 @@ def export_masterworks_cmd(source_csv: str, out_path: str):
               show_default=True)
 @click.option("--audit", "audit_csv", default="data/enrichment_audit.csv",
               show_default=True)
+@click.option("--sold-csv", "sold_csv",
+              default="data/sold_candidates.csv", show_default=True,
+              help="Audit of SOLD-flagged rows whose fuzzy title match "
+                   "exceeds --sold-threshold.")
 @click.option("--threshold", default=88, show_default=True,
-              help="rapidfuzz token-set-ratio cutoff (0..100).")
+              help="rapidfuzz token-set-ratio cutoff (0..100) for "
+                   "merging curator data into a work.")
+@click.option("--sold-threshold", default=95, show_default=True,
+              help="Tighter cutoff used to flag possible sold works "
+                   "for curator review.  Higher = fewer false positives.")
 def enrich_website(source_csv: str, extra_sources: tuple[str, ...],
                    base_feed: str, out_feed: str,
-                   audit_csv: str, threshold: int):
+                   audit_csv: str, sold_csv: str,
+                   threshold: int, sold_threshold: int):
     """Enrich data/website_inventory.json with curator-grade fields
     (provenance, physical location, acquired-from, literature) by fuzzy
     title-matching against the master Catalog & Inventory Sheet.
@@ -907,7 +920,8 @@ def enrich_website(source_csv: str, extra_sources: tuple[str, ...],
         source_csv=source_csv,
         extra_sources=list(extra_sources),
         base_feed=base_feed, out_feed=out_feed,
-        audit_csv=audit_csv, threshold=threshold,
+        audit_csv=audit_csv, sold_csv=sold_csv,
+        threshold=threshold, sold_threshold=sold_threshold,
     )
     click.echo(f"  Wrote {out} (audit: {audit_csv}).")
     for k, v in stats.items():

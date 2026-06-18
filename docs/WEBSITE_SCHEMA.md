@@ -38,6 +38,10 @@ type Work = {
   medium:          string | null;
   year:            number | null;   // 1850, -200 (BCE), etc.
   year_display:    string | null;   // "1850", "circa 1700", etc.
+  era_display?:    string | null;   // "19th century", "Ancient", etc.
+                                    // ONLY emitted when year is null —
+                                    // a render-time fallback so the
+                                    // site doesn't show a blank date.
 
   // optional — present only when populated upstream
   artist?:                 string;
