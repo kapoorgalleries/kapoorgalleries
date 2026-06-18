@@ -12,8 +12,9 @@ from . import db as dbmod
 from . import consolidate as consolidate_mod
 from . import reports
 from .exporters import (
-    artsy_upload_csv, conflicts_csv, gaps_csv, master_csv, master_json,
-    primer_corrections_csv, provenance_csv, website_inventory,
+    artsy_upload_csv, conflicts_csv, enrichment, gaps_csv, image_map,
+    master_csv, master_json, masterworks_json, primer_corrections_csv,
+    provenance_csv, website_inventory,
 )
 from .normalize import INTERNAL_PLACEHOLDER_TITLES
 
@@ -433,6 +434,24 @@ def report(db_path: str):
     _, n_web = website_inventory.export_website_inventory(
         db, "data/website_inventory.json",
     )
+    # Apply curator image map (no-op if data/image_map.csv absent).
+    img_stats = image_map.apply_image_map(
+        map_csv="data/image_map.csv",
+        feed_path="data/website_inventory.json",
+    )
+    # Enrich the website feed with the Catalog & Inventory Sheet (no-op
+    # if the source CSV isn't present).
+    _, enr_stats = enrichment.export_enrichment(
+        source_csv="data/raw/catalog_and_inventory_tab1.csv",
+        base_feed="data/website_inventory.json",
+        out_feed="data/website_inventory_enriched.json",
+        audit_csv="data/enrichment_audit.csv",
+    )
+    # Masterworks showcase feed (no-op if the source CSV isn't present).
+    _, n_mw = masterworks_json.export_masterworks(
+        source_csv="data/raw/masterworks_and_museum_accessions.csv",
+        out_path="data/masterworks.json",
+    )
     click.echo(f"master.csv: {n} rows")
     click.echo(f"conflicts.csv: {nc} rows")
     click.echo(f"gaps.csv: {ng} rows")
@@ -442,6 +461,14 @@ def report(db_path: str):
     click.echo(f"master.json: {nj} works")
     click.echo(f"photo_queue.csv: {n_photo_ready} works ready-when-photographed")
     click.echo(f"website_inventory.json: {n_web} works (active, non-placeholder)")
+    if img_stats.get("applied"):
+        click.echo(f"  image_map: {img_stats['applied']} applied "
+                   f"({img_stats.get('missing_kg',0)} missing-kg)")
+    if enr_stats.get("matched"):
+        click.echo(f"website_inventory_enriched.json: {enr_stats['matched']} "
+                   f"of {enr_stats['source_rows']} merged from Catalog & Inventory")
+    if n_mw:
+        click.echo(f"masterworks.json: {n_mw} masterworks")
     click.echo("reports/*.md written")
 
 
@@ -815,6 +842,78 @@ def export_website(out_path: str, no_prices: bool, source_csv: str):
     click.echo(f"  Wrote {n} works to {out}.")
     if no_prices:
         click.echo("  (prices stripped — all show 'Price on request')")
+
+
+@cli.command("export-masterworks")
+@click.option("--source", "source_csv",
+              default="data/raw/masterworks_and_museum_accessions.csv",
+              show_default=True)
+@click.option("--out", "out_path", default="data/masterworks.json",
+              show_default=True)
+def export_masterworks_cmd(source_csv: str, out_path: str):
+    """Build data/masterworks.json — the showcase feed of works that
+    Kapoor Galleries placed in major museum collections (Norton Simon,
+    SDMA, Rietberg, LACMA, Met, Mingei, etc.).
+
+    Drives the website's /masterworks landing page.  Sourced from the
+    "Masterworks and Museum Accessions" curator Sheet.
+    """
+    out, n = masterworks_json.export_masterworks(
+        source_csv=source_csv, out_path=out_path)
+    click.echo(f"  Wrote {n} masterworks to {out}.")
+
+
+@cli.command("enrich-website")
+@click.option("--source", "source_csv",
+              default="data/raw/catalog_and_inventory_tab1.csv",
+              show_default=True)
+@click.option("--base", "base_feed", default="data/website_inventory.json",
+              show_default=True)
+@click.option("--out", "out_feed",
+              default="data/website_inventory_enriched.json",
+              show_default=True)
+@click.option("--audit", "audit_csv", default="data/enrichment_audit.csv",
+              show_default=True)
+@click.option("--threshold", default=88, show_default=True,
+              help="rapidfuzz token-set-ratio cutoff (0..100).")
+def enrich_website(source_csv: str, base_feed: str, out_feed: str,
+                   audit_csv: str, threshold: int):
+    """Enrich data/website_inventory.json with curator-grade fields
+    (provenance, physical location, acquired-from, literature) by fuzzy
+    title-matching against the master Catalog & Inventory Sheet.
+
+    Writes the enriched feed AND a per-row audit CSV so the curator can
+    spot-check matches.  Conservative threshold; only matches at
+    score >= 88 (token_set_ratio) get merged.
+    """
+    out, stats = enrichment.export_enrichment(
+        source_csv=source_csv, base_feed=base_feed, out_feed=out_feed,
+        audit_csv=audit_csv, threshold=threshold,
+    )
+    click.echo(f"  Wrote {out} (audit: {audit_csv}).")
+    for k, v in stats.items():
+        click.echo(f"    {k:25s} {v}")
+
+
+@cli.command("apply-image-map")
+@click.option("--map", "map_csv", default="data/image_map.csv",
+              show_default=True)
+@click.option("--feed", "feed_path", default="data/website_inventory.json",
+              show_default=True)
+@click.option("--init", is_flag=True, default=False,
+              help="Write a starter template if the map doesn't exist.")
+def apply_image_map_cmd(map_csv: str, feed_path: str, init: bool):
+    """Merge data/image_map.csv (curator-maintained KG-# ↔ Drive
+    image URLs) into the website feed.  --init writes a starter
+    template if no map exists yet.
+    """
+    if init:
+        p = image_map.write_starter_template(map_csv)
+        click.echo(f"  Wrote starter template at {p}.")
+        return
+    stats = image_map.apply_image_map(map_csv=map_csv, feed_path=feed_path)
+    for k, v in stats.items():
+        click.echo(f"  {k:20s} {v}")
 
 
 @cli.command("export-filtered")

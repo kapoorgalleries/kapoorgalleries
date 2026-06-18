@@ -196,7 +196,79 @@ Two flags the site should respect:
   through — the inventory pipeline normally holds these back. Log it
   loud and skip the work.
 
-## 9 · Open questions for the site author
+## 9 · The richer enriched feed (recommended for v1)
+
+`make report` now produces two inventory feeds:
+
+- `data/website_inventory.json` — base feed (1,377 active works).
+- **`data/website_inventory_enriched.json` — base feed PLUS curator-
+  grade fields** (provenance, physical location, acquired-from,
+  publications/exhibitions) merged in from the master Catalog &
+  Inventory Google Sheet via fuzzy title match.
+
+Today the enriched feed adds these fields to ~125 works (8.8% of the
+inventory). The frontend should prefer the enriched feed when it
+exists and gracefully fall back to the base — the schemas are
+identical except for the three extra optional fields documented in
+`WEBSITE_SCHEMA.md`.
+
+There's a sibling `data/enrichment_audit.csv` that records every
+match the system made (KG-#, score, external title, what was merged).
+Spot-check it once after each pipeline run — wrong matches at the
+high-confidence threshold (>=88) are rare but possible.
+
+## 10 · Masterworks / museum-accessions feed
+
+A separate `/masterworks` page is sourced from
+`data/masterworks.json`:
+
+```ts
+import mw from "./masterworks.json" assert { type: "json" };
+const norton = mw.works.filter(w => w.acquired_by === "Norton Simon Museum");
+```
+
+Each masterwork carries:
+- A `label_copy` field that's typically scholarly prose with poetry
+  citations — use a `<article>` wrapper with serif typography.
+- A `museum_link` URL to the institution's collection record — show
+  as "View at the Metropolitan Museum" / "View at Norton Simon" link.
+- `acquired_by` makes a great filter facet (Norton Simon 45, San
+  Diego 36, Rietberg 27, LACMA 17, Mingei 16, Met 2, Princeton 3, …).
+
+This page is **historical showcase content**, not for sale. Make that
+visually clear in the layout (no price, no "inquire" button — instead
+"In the collection of the Metropolitan Museum of Art since 2003").
+
+## 11 · Image map workflow (for shoot images)
+
+`data/image_map.csv` is a curator-maintained spreadsheet that bridges
+KG-#s to the Drive photo shoots. Once filled in by the gallery,
+`make report` merges it into the website feed automatically.
+
+Initialize:
+```bash
+python -m src.cli apply-image-map --init
+# Opens data/image_map.csv with a starter template.
+```
+
+Edit (in Sheets or any CSV editor):
+```csv
+kg_id,drive_url,role,notes
+KG-1023,https://drive.google.com/file/d/AAA/view,primary,front
+KG-1023,https://drive.google.com/file/d/BBB/view,alternate,verso
+KG-1023,https://drive.google.com/file/d/CCC/view,thumbnail,tight-crop
+```
+
+`role` is one of `primary`, `alternate`, `thumbnail`. When a curator
+promotes a Drive image to `primary`, the previous Primer CDN URL is
+preserved as an alternate so we don't lose it.
+
+Drive sharing URLs are auto-rewritten to direct
+`drive.google.com/uc?export=view&id=<id>` form, which an `<img>` tag
+can render directly (provided the file is set to "Anyone with the
+link" — the gallery's default for these folders).
+
+## 12 · Open questions for the site author
 
 These are decisions the inventory pipeline can't make for you:
 

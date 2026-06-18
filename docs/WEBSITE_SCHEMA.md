@@ -104,6 +104,70 @@ century-from-year fallbacks (`13th-century`, `15th-century` …).
 **Medium family**:
 `metal` · `stone` · `wood` · `works-on-paper` · `textile-ground`.
 
+## Enrichment fields (added by v2 merge)
+
+When `data/website_inventory_enriched.json` is produced via
+`kg-inv enrich-website`, works whose titles matched the curator's
+Catalog & Inventory Sheet may carry additional fields:
+
+```ts
+type Work = Work & {
+  physical_location?: string;            // "Drawer 13", "Glass Cabinet", "Gallery 4/28"
+  acquired_from?: string;                // "Christies", "Hindman", "Sotheby's", "Davidson"
+  publications_and_exhibitions?: string; // Free-form citations + show history
+};
+```
+
+These are present on a subset of works (~125 today) and grow as the
+gallery extends the Catalog & Inventory Sheet. The base feed
+(`website_inventory.json`) never carries these — the website should
+prefer the enriched feed if available, falling back to the base.
+
+## Companion feeds
+
+- **`data/masterworks.json`** — separate schema, 150 works the
+  gallery placed in museum collections (Norton Simon, SDMA, Rietberg,
+  LACMA, Met, Mingei, etc.). Drives the `/masterworks` landing page.
+  See the bottom of this doc for its schema block.
+
+## `MasterWork` (for masterworks.json)
+
+```ts
+type MasterworksFeed = {
+  schema_version: 1;
+  generated_at: string;
+  count: number;
+  facets: {
+    acquired_by: Array<{ value: string; count: number }>;
+    tags:        Array<{ value: string; count: number }>;
+    with_image:  number;
+    without_image: number;
+  };
+  works: MasterWork[];
+};
+
+type MasterWork = {
+  id:        string;         // "mw-001"
+  slug:      string;
+  url_path:  string;         // "/masterworks/<slug>"
+  title:     string;
+  origin:    string | null;  // "India, Madhya Pradesh, Malwa"
+  date:      string | null;  // "ca. 1630-40"
+  medium:    string | null;
+  dimensions_display: string | null;
+  acquired_by:        string | null;
+  provenance:         string | null;
+  published_and_exhibited: string | null;
+  label_copy:         string | null;  // long-form scholarly text
+  museum_link:        string | null;  // e.g. metmuseum.org collection URL
+  image: {
+    drive_file_id: string | null;
+    url:           string | null;     // direct img-src-ready URL
+  };
+  tags: string[];
+};
+```
+
 ## Stability & versioning
 
 - `schema_version: 1` will tick on any breaking change.

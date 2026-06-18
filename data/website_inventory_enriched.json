@@ -667,7 +667,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/753962cd-fb2b-492c-95cf-78133a6db634/Painted%20Saddle%20A%20%5B2%5D.jpg?Expires=1802811813&Signature=vvUs9XQ58iri7UplA3bcpfeAWwJTDdsGoPmRJHuk5rMcGlWVKazpunYNtVPRCO4psudhCgnLLj0DVOAtDW7nbFDKWlEZAJUYUG~K7rvDM3de6MZb6O2e3PdUEgq4QR5Ifo6QfYbNV2zVDEMTsy7lxGkqI9cuQS27tXLFZuWBWKfSxRNy6FFDf4iu2yBmSKTIrqE7dq4lVW5RmYSuzWEhT6QKSElY7Mb8rQvVD2W1aJ6DZcwzw64aak4fMghJID-kW4PKZeR-qXT7aFqJ8Pwm5jNBU~70EgKUvg6gFJeQoSCjUtzWE3y1cwXp81FESXhDFx-16-sYMl6uT9jtwaOOEA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1QS6D73bx62adQzab4be6dNeDJODI57hy?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -679,7 +681,10 @@
       "_internal": {
         "primer_uuid": "753962cd-fb2b-492c-95cf-78133a6db634",
         "has_conflict": false
-      }
+      },
+      "physical_location": "gallery",
+      "acquired_from": "Runjeet Singh",
+      "publications_and_exhibitions": "Himalayan Art Resources item no. 7504"
     },
     {
       "id": "kg-1069",
@@ -715,7 +720,10 @@
       "_internal": {
         "primer_uuid": "b82f5f96-b4d2-4a9f-8bb4-a73c0bb5d8fe",
         "has_conflict": false
-      }
+      },
+      "provenance": "Acquried by the present owner on the UK art market",
+      "physical_location": "Gallery",
+      "acquired_from": "Runjeet Singh"
     },
     {
       "id": "kg-1072",
@@ -740,7 +748,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/4bfeac6f-ea69-459d-8713-2e8db430f9a9/PD%20Marble%20Table%20A%20%5B1%5D.jpg?Expires=1802811922&Signature=LI-oTY2c5mXfUcDXP-lYPR6wWuHeBJ9i4330cdk4Je5AiuC~Anoe4ZgHtvAkAnWM60KzNOMDsix3oBVZQH5uiz1AaTj~B~8UyugjYwdNTg3fZKEzNyfjQmpSgpcUIK8G7jH824mAx6W1zPOU9OnGhDXitwPiVOud19~swe5b7l9HuHMxK7ZubNNSkNquFQ9tTi6CmSm~MqmQSVVkauuKwbsGo45TCOqYUOgkkHkC1FnPY4bjN9g9bKuWQ2dlDHsAnTRIkJgYX~RaVCI8dwoYxwyJB6OphBrtzJ~J00VFdglfYGRb1zJzUi3bCbSHrcfRF9Y-JI~CXMnMqS54cDW2Tg__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1DmLNQ3M7G4hy68MTYYJ9I0mKg3bHaDnI?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -751,7 +761,9 @@
       "_internal": {
         "primer_uuid": "4bfeac6f-ea69-459d-8713-2e8db430f9a9",
         "has_conflict": false
-      }
+      },
+      "provenance": "Sotheby's New York, 28 October 1991, lot 182.",
+      "physical_location": "Gallery"
     },
     {
       "id": "kg-1075",
@@ -776,7 +788,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/05b35ebf-234b-483a-a770-1a322f37bf51/Five-pointed%20Spear%20E%20%5B1%5D.jpg?Expires=1802811922&Signature=zV8nNDR3TY4swEHf8beQuvh5RnmlJewP4t9L8oMvy0Blq9TJxRBvjTMuaFcP2nuyUS9~BT9kg8cZ4iAOcHJU-E4nr4UvfQL4lb1LT5r6ncRxX5qMr-vcJYky0cQdz9UtCGk0OyeE-CVXxazofjE~ZRDI6j88tSC9B3yos2110VEMQkcaYq3maVYSw2S~nSoyA7huWgN8ikOD9wDZcgPH~WcKqAGBgl4eAotOokBiDX~oh7kvFaMYVe3OsO3K069jJYjCV5aGzb7y-H2nepgPBg6Iu5I084Ku-NaaJQAqIvj6i7Nm3iSS4AD3spgotMiL8fhvvGYgXnfekegi7nmRUg__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1RXhqQrrOn8N1DqYGrKhEito7eEWlQX7N?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -786,7 +800,10 @@
       "_internal": {
         "primer_uuid": "05b35ebf-234b-483a-a770-1a322f37bf51",
         "has_conflict": false
-      }
+      },
+      "provenance": "Jean Claude Moreau-Gobard.\nThe Andrault Collection.",
+      "physical_location": "Gallery",
+      "acquired_from": "Runjeet Singh, 23 October 2020."
     },
     {
       "id": "kg-1289",
@@ -848,7 +865,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/a7c88bf4-f47d-49f9-9eaf-a034a5175ed7/Koftgari%20Talwar%20K.jpg?Expires=1802811925&Signature=yNr~gkIq9pjm7pP90-c0Glp~OZ61EQr65pXoyiKIF4T7rRt-Qr3b~EkPdZeM2~R0ZGKwMkoGH-c3Zkuh7zg4sziyv-6BfXJ3lr64NDD2r7Kr6cMLyKyYtEcmyHyN6LSbno~y7wVoigyWDHYkymyL7bqmmuRGx3EZfaR7TpjRW66uI0DTMKPFnCrhXZ37q8y5iTw3Vn8RASI5eXcQAave6Dpe14Nr2hCLH3Nw0FrsBJN7JiJW52G~mJKQnBUjjmu7~qDDoeIyoTFBpmp5Uup1C8bq5d-IOWiICO0GZKPiOmMgk8pTKsW-Q1pY1N45imWBcaLYGc4eNNQ5vR-FeuJpfw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/16r5BTUTE__9ThVO3TTCFnzbd8K8bKi2g?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -859,7 +878,11 @@
       "_internal": {
         "primer_uuid": "a7c88bf4-f47d-49f9-9eaf-a034a5175ed7",
         "has_conflict": false
-      }
+      },
+      "provenance": "Ex-collection Dr. Leo S. Figiel, M.D. (1918-2013).\n\nThe renowned collection of Mughal arms of Dr. Figiel M.D. was sold through Butterfield & Butterfield, San Francisco, on 24 August 1998.",
+      "physical_location": "gallery",
+      "acquired_from": "Sotheby's London, 31 March 2021, lot 95.",
+      "publications_and_exhibitions": "Leo S. Figiel, M.D., On Damascus Steel, New York, 1991, pp.100-1, no. IS5."
     },
     {
       "id": "kg-1844",
@@ -1178,7 +1201,9 @@
         "has_conflict": false
       },
       "materials": "Opaque watercolor heightened with gold on paper",
-      "signature": "No signature"
+      "signature": "No signature",
+      "acquired_from": "on view",
+      "publications_and_exhibitions": "https://drive.google.com/drive/folders/1SEP3s7R2gVGvB2wRGaSaDkNS0GjVxjn6?usp=sharing"
     },
     {
       "id": "kg-1002",
@@ -1203,7 +1228,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/4f256122-ce73-4f9e-a5ab-ff02c4fa9229/Screenshot%202023-06-07%20at%2012.49.56%20PM.jpg?Expires=1802811607&Signature=sMRMZD2S6Eual-VaptvG0SiPYybMsfgf9Rn4WIlSQgaJOfCPi1fhNHPJzQlk5-kscctQv88ZTaX0JlGmStVXsU12XIZtQxPutRPaMRyKJr2xc7T10eAyrdmOl-GRtE1WI~gE5iQg1iuVDi9IPuwhK4pTWQ2lEoEyARjAQiXfa8qfRwRiMTpWPuCL9tMLY7DBkXbGQiWBoCT8L9-edDb~RFUApDe3t1iqOxpnYZj2LLJjPZn214eX7VTEuJkPaczYWr0sBsyXix7XupqipPATCx70w5sEUpEL~XolGbZvhnqiOT~FAVgsR2MYL2~CeEvgR3jHGQ-uwaY4XSUUYgvFrA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1cQ_HIbHGHc-DaZQmB8uo06O45WaQYQjJ?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -1217,7 +1244,9 @@
         "has_conflict": false
       },
       "materials": "Gouache and gold on paper",
-      "signature": "No signature"
+      "signature": "No signature",
+      "provenance": "From a Private European Collection.",
+      "physical_location": "Gallery 4/28"
     },
     {
       "id": "kg-1003",
@@ -1242,7 +1271,10 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/da0a03d9-bd92-4ad4-818d-701daf9003db/CC%20Ganesha%20Enthroned%20crop.jpg?Expires=1802811607&Signature=rcoZ6-kj6LW54g5y4tqgYdA9oldIMPSj1qn942HgfMf1Kr4xr0q9nJgXFxTgYf9Nb4n9f2OdVJ93krRQbMYQZhIZYfT6MOxKX1vRDlFNiBQeVHrd6ZrfYOxXLhxdcNeI2H9WanOsH~TYx8sKM7Ajsy2FJPZEmMTmLeIGSuRqxohUR~rHHXJFP~9B6m5SVtyon2-3CAfrUtMfBM~MbRG-Tq1IQ1l9ZzcfJ5XDlnnIXIJ1j1EosASk5GccbUiokUo1VPB~5J2yz4FvlyQhUXV-R1KvT9goQoqLZuxYMojoabQIv7kyYLDgrRryg5Uf36NJYGgqyYmJGdsUpwa46dX2CQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1eUc4r2EcwE6taMbe0fMBS8UXNDziAt4E?usp=sharing",
+          "drive.google.com/drive/folders/1HK8238GsU_bnNaJMxOxX-qfE7T6TMtFE?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -1254,7 +1286,11 @@
         "has_conflict": false
       },
       "materials": "Opaque watercolor heightened with gold on paper",
-      "signature": "No signature"
+      "signature": "No signature",
+      "physical_location": "Framed; office",
+      "acquired_from": "gallery",
+      "publications_and_exhibitions": "https://drive.google.com/drive/folders/1eUc4r2EcwE6taMbe0fMBS8UXNDziAt4E?usp=sharing",
+      "provenance": "From the collection of Jean-Claude Moreau- Gobard, 1960’s"
     },
     {
       "id": "kg-1004",
@@ -1279,7 +1315,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/23d82cb3-654a-4e36-9bfe-d1dbf5d9f8ed/CC%20Shiva%20and%20Parvati%20crop.jpg?Expires=1802811607&Signature=rhPNduK-ZHOQMQHs6x9~prIPkQhsWs9OTbBxwK~3q-0mRHp00Xm-Dc3Xti3~WzqI49h7GOdiQPs6gvjA1N9YaIEbGFR6AL6fupJ8YgtupPSQ-hCsLdR8AGIgXk6ps5pFnm92x4d0PHT80Meg8-G3toiwfacDSTWv7275skytn-D3DyHLXK6FPPgbt~XT65eN-SucPdxsyUzUjP50TUyICscC4ESZ-MN~jXazIJpielookJ6NMKc9uJlXHEZfR4Zag71mL0V~tzQ7egLmYzACQ8V-vs0G3e3x3my-r3HqWjBP~GEWepP2a4lKInbdR6ijG-m5EMV5r8PSbd-BaEKaUw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1PGU9-YkiEcledcebSM6B0s8A41nCsIVr?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -1292,7 +1330,10 @@
         "has_conflict": false
       },
       "materials": "Opaque watercolor heightened with gold on paper",
-      "signature": "No signature"
+      "signature": "No signature",
+      "physical_location": "Gallery",
+      "acquired_from": "Rob Dean Art Ltd 11/1/2020",
+      "provenance": "Acquried by the present owner on the UK art market"
     },
     {
       "id": "kg-1011",
@@ -1368,7 +1409,9 @@
         "has_conflict": false
       },
       "materials": "Opaque watercolor heightened with gold on paper",
-      "signature": "No signature"
+      "signature": "No signature",
+      "provenance": "Arthur L. Funk Collection acquired January 2nd, 1970 plus additional publications",
+      "acquired_from": "Consigned in"
     },
     {
       "id": "kg-1015",
@@ -1443,7 +1486,10 @@
         "primer_uuid": "35337c26-d7f7-41bc-8d03-7703da120a15",
         "has_conflict": false
       },
-      "signature": "No signature"
+      "signature": "No signature",
+      "provenance": "Consigned-in",
+      "physical_location": "Image: 6 5/8 x 9 ½ in.",
+      "acquired_from": "https://drive.google.com/drive/folders/1ksjZZ_tsIORaw5Ik5caBhtvH38Xoaai8?usp=sharing"
     },
     {
       "id": "kg-1022",
@@ -1480,7 +1526,9 @@
       "_internal": {
         "primer_uuid": "e7615da0-3cf3-49b0-9cb1-ec7c88aa6e6b",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Image: 11 ½ x 14 ¾ in.",
+      "acquired_from": "8888"
     },
     {
       "id": "kg-1023",
@@ -1518,7 +1566,10 @@
       "_internal": {
         "primer_uuid": "3156b0d7-bc93-47c7-a38e-bdf8ce79c9f3",
         "has_conflict": false
-      }
+      },
+      "provenance": "Doris Wiener Gallery, acquired 1/27/76.\rRubin-Ladd Foundation no. I-1415-2, 2015-present.",
+      "physical_location": "Framed,\ncloset, B2",
+      "acquired_from": "Millon, 12/3/18, lot 305"
     },
     {
       "id": "kg-1025",
@@ -1764,7 +1815,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1S8z2Sxz9zyTsVNlhIIfFDnIVrbbTJzFS?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -1776,7 +1829,9 @@
         "primer_uuid": null,
         "has_conflict": false
       },
-      "artist": "Attributed to Manaku"
+      "artist": "Attributed to Manaku",
+      "provenance": "The collection of Brendan Garry (d. 16 September 2011).\nThe collection of Siva Swaminathan (d. 26 March 2014).",
+      "physical_location": "Gallery 4/28"
     },
     {
       "id": "kg-1037",
@@ -1801,7 +1856,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1zT8ApTffe_YPMK3-yFQyZikZQwq78WUi?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -1813,7 +1870,9 @@
         "primer_uuid": null,
         "has_conflict": false
       },
-      "artist": "Attributed to First Generation after Nainsukh and Manaku"
+      "artist": "Attributed to First Generation after Nainsukh and Manaku",
+      "physical_location": "shipment pending",
+      "acquired_from": "Christie's London, 28 October 2021, lot 60."
     },
     {
       "id": "kg-1038",
@@ -1838,7 +1897,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/e65782c7-9979-4190-854c-1fb7a2d6f2b7/Sambara%20and%20Rati.jpg?Expires=1802811820&Signature=S7cQG9LYP~lLhJvooFUO14kYKtnxnAUuQCyfPv70e1Z9WTTZhlUxmeyRs8M4dAtMTY4cb1afiTcU9SDsb4SYfgqFjmEhvbryJ7Jfql9ZbGff8g2BUd648n5oKXC0ioKEcHKomgjpm5r~GbdKUE~lJ5yr8KYFsykZ-YuXmbnfMWgVXNUHBKKqIvwf1kU1-glIGYrC9Qa2G71iCqLPxVwYRoCNnEYbMyChS-sj2oBMH4blE-~YdjA6XsSQuP9KVwB2936o3lnrfyvRv61FgTxtgiyFrUbTDdKDnsJnujzSVGCl-zlvyim8s6fGg5Q-~-YqyjBxxRkuIKHl~vUhqW4YMQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1tiyqXZK7yzmThq-TWZEZA0axomLNjADN?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -1849,7 +1910,10 @@
       "_internal": {
         "primer_uuid": "e65782c7-9979-4190-854c-1fb7a2d6f2b7",
         "has_conflict": false
-      }
+      },
+      "provenance": "Maggs Bros Ltd., London.\nPrivate collection, acquired from the above 30 June 1984.",
+      "physical_location": "Framed,\nA2",
+      "acquired_from": "Christie's New York, 11 September 2019, lot 405."
     },
     {
       "id": "kg-1046",
@@ -1952,7 +2016,9 @@
       "_internal": {
         "primer_uuid": "cd311007-b1e3-42ca-84af-70b61166847b",
         "has_conflict": false
-      }
+      },
+      "provenance": "??",
+      "physical_location": "Gallery 4/28"
     },
     {
       "id": "kg-1063",
@@ -1977,7 +2043,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/d5cd9cdd-064f-4e77-8b49-25f663edff2c/Rasikapriya%20-%20Radha%20Seated%20with%20a%20Confidant%20recto%20crop.jpg?Expires=1802811805&Signature=t81Ie-AxAU~mDp6oetckg~4o4IAVYBxifCEvTqVcFOshMw6mQZjrH5Gr6p2z9eV1h-bEEVlXNhUDi5AY~T9UEOzf5A9osR0YkGHh4U35Xp1FjfewFoZfqtKyjJxEPpTqao~NA1hsydDRrbLqxgb1FJzhu1i6Nu2arNGHo3ukRc2S6VD5tffg81n29EBpNVNXGU23FZujKgknqXLNMHoC2BUjTjWydLSZKlJiCxaWVi6~xbbff~szFJSTxCRz1LxSfFIWPvf6~FhQQjGGbBZ-3ODkAUn7xgLZYrZBaEmbvvfK4fxj5aLUda0MPj1waPKohC45ElDu5b5NQoc8gkyLxA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1nCtXMVQuwg69piZfn7Tx-xKxRVU53aUT?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -1988,7 +2056,10 @@
       "_internal": {
         "primer_uuid": "d5cd9cdd-064f-4e77-8b49-25f663edff2c",
         "has_conflict": false
-      }
+      },
+      "provenance": "Mandi Royal Collection. Private English Collection.",
+      "physical_location": "Gallery",
+      "acquired_from": "Christie's London, Arts of India: Heavenly Gods and Earthly Pleasures, 26 June 2020, lot 69"
     },
     {
       "id": "kg-1064",
@@ -2013,7 +2084,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/02abeedb-dfaa-4fee-80be-74975cbaed93/Illustration%20to%20a%20Rasikapriya%20Series.%20An%20older%20Sakhi%20comforts%20a%20forlorn%20Radha%20hq.jpg?Expires=1802811805&Signature=N3dGX7JxDe6jOkxgomQFoJVdC1DDSJk4XKb2wPYXCA3iUqDv4t~fu-zwQIH2N7IIAaajY7tfl8GN1rzfpvX4ow7mskCoG82BcWkcSn-s4npr4TJ5DsRe7DtfWDQMl2arQx0Wf1Bivopc3l66n9VgC8v9VTHO0qG3VZqK-zrb~6XdFuPHiv~7pbtQdwDtCI1FcPY-4mBLpG6rCQ3ror4FRyDIAfeiu7kM6vBf4Fu4-s47hW8Vo8JcOfOnoC1SPDmn~KmZyaRGXkN--YqYSztdydSV9P-7zn86nvoLM3cLqyZE0YS5SHnF9dyREU2AFz664o8cmQXGrm0lzDN-zzFB-A__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1zC_qUk8YXsl9D9VZEvF0ulmly6Tp83PC?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2024,7 +2097,10 @@
       "_internal": {
         "primer_uuid": "02abeedb-dfaa-4fee-80be-74975cbaed93",
         "has_conflict": false
-      }
+      },
+      "provenance": "Mandi Royal Collection. Private English Collection.",
+      "physical_location": "Gallery",
+      "acquired_from": "Christie's London, Arts of India: Heavenly Gods and Earthly Pleasures, 26 June 2020, lot 67"
     },
     {
       "id": "kg-1065",
@@ -2049,7 +2125,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b5dd231a-b7be-42ed-847f-ac4bab4265f7/Illustration%20to%20a%20Rasikapriya%20series.%20Krishna%20seated%20with%20Radha%20%20%20hq.jpg?Expires=1802811806&Signature=y0ulcuaQwIStPSwaKzJttHJ3lDrftPc5ZfVLP0ndFUOWbcrE4g5G0w5w84Wi8JA8z9JU1nbCKvbooom-43EMhpxkoTXLk-qMUXrKW-woabDauKtv4ug5Ae823VKSN-93b9-bTxRjVcW5X~HfeIgObGO2EoH13rSL1pxyzN01swFW3zl3mtJ2NxO-3XcvOdO2XRUVi9ZmFDT9ciNJIisxsyrJwJNTDvKvsNaHzb5b9i-30g2q5Vu7LujuSd-R1a~32RvjR6JsRl5zuagevhJRwKbFrj6jXbjrMY5NKrCVtkzQaC0m9oVTnUm27N2nXLuDIMlw7X93E5Pe4nu4~jKfwQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1VtCwbmbmkpSJZ4vrNXgakha4AwZWpr_Z?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2061,7 +2139,10 @@
       "_internal": {
         "primer_uuid": "b5dd231a-b7be-42ed-847f-ac4bab4265f7",
         "has_conflict": false
-      }
+      },
+      "provenance": "Mandi Royal Collection, Private English Collection.",
+      "physical_location": "Gallery",
+      "acquired_from": "Christie's London, Arts of India: Heavenly Gods and Earthly Pleasures, 26 June 2020, lot 28"
     },
     {
       "id": "kg-1067",
@@ -2086,7 +2167,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/ac7a1fd3-d4f5-4023-9d03-ca2e511bc408/201124_KapoorGalleries_0026.jpg?Expires=1802812074&Signature=Z6yoHEyEY9464R262K4CaQw5gUbp-iU5h2WFokX4hpj3luGyRPHaynxMGzY~p3o1kXysDIvT5EufWOgcOLeZkLTaSxGeOCBpAMDIvGpnLEAl5u-VFnYWDMu4-P8B-vcFDPaWk~Pxg0kZFlkQ~UB~uFN6O4k5-UYa~oHrL7ii2XjkadCl3HWsHJd07S6iNoTeRa5zMRuxUdfoaA8pkMRXyg43WkVwmmHZ0obINLT7F5XZd9rha7rP9jExBCjjr2d~0R0ijl69yNA1cQxAZNKvWkfS2h4095iVAwPR61sOq5VBSslolbLemnkk4Fs5BgOgAAo5PPsoLqvPvlWRvNpWCQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/u/0/folders/1NmqnCAzKFht22hHflRugf9XJ0YsckQzc"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2097,7 +2180,8 @@
       "_internal": {
         "primer_uuid": "ac7a1fd3-d4f5-4023-9d03-ca2e511bc408",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Drawer 11"
     },
     {
       "id": "kg-1068",
@@ -2122,7 +2206,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/19be2981-73b6-4728-b858-d2ea145a3e15/Baz%20Bahadur%20and%20Rupmati%20Riding%20at%20Night.jpg?Expires=1802811854&Signature=A54eQ0SO4dgnPHwH7dtr0gYV1A2fWvr5K9kQM7DiALb-pA0Jwos1yA~dfZ48BTHbIki-7mj~pL0l~RKgS3aF0mn~ZpRulBBZgam-G6bq61AYW7qFn1c3erusX6r7LB6OBM89TNVGn38sx43kf2IlUxDzhIl7s5QtaOVhII7A29TkjP3uqkDo5PLD~~4h~5nLTvmka7Wb9umRiJ9GqCtwcvwyezyZzOxdzqCSD8UXnznlT7UoRvA~mQ5jSeKY5zkdKkQnfp2JZ01S7o3n0IvaIlp1pz5Zrx02MDuNTEY5yM4D9ktvptvzvPxTElYPqfTvDphaL89x5oRlWUejc9PyCg__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/u/1/folders/17FW3DYX-l9izB2R1LvUUn5dPBDhB45Y0"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2133,7 +2219,10 @@
       "_internal": {
         "primer_uuid": "19be2981-73b6-4728-b858-d2ea145a3e15",
         "has_conflict": false
-      }
+      },
+      "provenance": "The Ehrenfeld Collection, California\nSotheby's, New York, 6 October 1990, lot 19\nCarlton Rochell Asian Art, New York\nThe Sterling Collection, USA, 2011.",
+      "physical_location": "STOLEN BY RAMESH",
+      "publications_and_exhibitions": "Published: \nDaniel J. Ehnbom, Indian Miniatures: The Ehrenfeld Collection, New York, 1985, p.76-7, no.30.\nKapoor Galleries, A Sterling Collection of Indian & Himalayan Art, New York, 2011, no.15.\n\nExhibited:\nIndian Miniatures from the Ehrenfeld Collection, American Federation of Arts, circulated September 1985-November 1987."
     },
     {
       "id": "kg-1070",
@@ -2158,7 +2247,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/7be78e8d-827d-432e-bd47-aca08a0ae124/A%20Maiden%20Approaches%20a%20Nobleman.jpg?Expires=1802812097&Signature=yHAN77tZTCKcGVFmf7swfAgxCgF9YuzmuHxJ0GKyyjegzZWUa6Crn33Gifvl4vJZ4un1pETCc5zlbeQ1XSaVf-62ToJqBpfFBRTvp~Eom~rNBBuyUxInXKNFI-1PvveoxDqPPH7-0EGPWlr1-4idtS309hKOdRUtqBbX5q5LlByFgiaDq~ctZ7pA8hQG99Y4X048a6PRIUL6YkRzRbtq3aPCTKUBPzGSmXFCrBoTc4njsEC5cObbgHEUKcKHq~7~SXfjQUtzDo5sZtA--CHfGZI4~3Tpw15ZfB3aHhXGzcoo6EG2t8pttX9EBESpduZyqMim9Fb7rnmQcj-qoIWuRA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/u/1/folders/1pnXyVesuIYgKcTyyvHyqakHh8XFLkOgx"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2169,7 +2260,10 @@
       "_internal": {
         "primer_uuid": "7be78e8d-827d-432e-bd47-aca08a0ae124",
         "has_conflict": false
-      }
+      },
+      "provenance": "Doris Wiener Gallery. \nDorothy Seisel, 322 82nd Street, NY, NY.",
+      "physical_location": "closet, G3",
+      "acquired_from": "Abel Auctions"
     },
     {
       "id": "kg-1076",
@@ -2194,7 +2288,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/9c0cf1cb-1e37-4176-ab25-013e086197b8/Rasikapriya%20-%20Beauty%20of%20Radha.jpg?Expires=1802811806&Signature=sOo68bgQbLU5DGBLV2ScEKyXKgeO6836ljzm6DWqsASaf0H9OKU8reZTvF8N4QeaWyENIGCGn6uFjJYFFs1gxz97VJeZkgWtwlXk6lnPGwurCvy47tloqCtoamd~NZPSs1H7idC1NGvGwl~49vi9OlpusvCnEloaLqHlaEUkNbXAnSO7rpEg00m6LeNgFDycv0-EK9awtol73vtCeYg-mMY0MdYL2MqTQZIJG~Hvnn5QJ3rQUDhP-eK8lwEj0dwe48fmmXcvEP2uMhzelS9oOdaZbdKi1-QLmyGnd7bdixNV3vaEGWZvOcpKWcq2mNbYufAKQ25UayIFMav7Mvtc8g__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1x803Dd5yD_8ZJE_ImFOzYTQftYOinZ1F?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2205,7 +2301,10 @@
       "_internal": {
         "primer_uuid": "9c0cf1cb-1e37-4176-ab25-013e086197b8",
         "has_conflict": false
-      }
+      },
+      "provenance": "Michael Goedhius Colnaghi Oriental, London.\nAcquired from the above by Francoise et Claude Bourelier, Paris, 18 February 1987. Artcurial, Paris, 12 May 2015, lot 292.",
+      "physical_location": "Drawer 14",
+      "acquired_from": "Acquired from Michael Goedhius of Colnaghi Oriental, London, by Francoise et Claude Bourelier, Paris, 18 February 1987."
     },
     {
       "id": "kg-1077",
@@ -2242,7 +2341,10 @@
       "_internal": {
         "primer_uuid": "03d09ab8-0d41-4677-8e12-3e3d30b8c7db",
         "has_conflict": false
-      }
+      },
+      "provenance": "The Collection of Helen and Joe Darion, New York, by February 1968 (no. 41).",
+      "physical_location": "closet, framed, A2",
+      "acquired_from": "Rago 4/14/19, lot 1001"
     },
     {
       "id": "kg-1078",
@@ -2267,7 +2369,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/672a6d45-1edd-4b4b-84aa-10c33f808f32/Raja%20and%20Courtiers%20Playing%20Chaupar%20crop.jpg?Expires=1802811832&Signature=Rn9H9tJeb0w7DKsGKlYwgPsoozbS6y-bL8Nu6j3TWRzVpyTMGWJAESEfOQBvnng6l~VjuavhZ3MofxMU8aU6OeHuWE5SiowqAJC0erU6JzgSjo2~pJVtEkQkRlRuHWxIssgP-pf63WSnMZ8ZiwFzRz~vwMTfwQU1dOpFJ2hY10D0xBiv3ziQNBJQgKsemtbYyryefRTxgAJ6jU0ryzU8gFQIs5W3B-fwtrqsDQpIeUWe1g-ZUbt9WlpozLtZ0jyYiFLKjJzV-GgrVM8GkvemhdWnOtKn1Q6QqhBKQNwv~1MGM~91HYV-M287dxp-oXACfueCuys3vSl4e9T9VPdi~Q__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1G5lNsmthk3OpSkVXJcBTbs53AcHfW48G?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2278,7 +2382,10 @@
       "_internal": {
         "primer_uuid": "672a6d45-1edd-4b4b-84aa-10c33f808f32",
         "has_conflict": false
-      }
+      },
+      "provenance": "Owner's father acquired them in the 1960's in India. They date back to the 1700's. He was a recognized collector from San Francisco. The family ran the Hale Bros Department Stores in SF, later became Carter, Hawley, Hale Stores..and later acquired a number of retail store chains including Nieman Marcus. He collected Monet, Manet, Morisot, Degas, Renoir, among others. There is a Renoir he donated to the Legion of Honor Museum in the SF Presidio. Do not know the exact date of the Stanford exhibition.",
+      "physical_location": "apartment",
+      "acquired_from": "purchased from small auction in NY"
     },
     {
       "id": "kg-1082",
@@ -2375,7 +2482,10 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/61e9cb02-81e0-472e-aa4b-2fd56884e1be/220308_KapoorGalleries_0020.jpg?Expires=1802811823&Signature=zQUASMYDQlX-Y30y~-tGiZoA6JyXMbI0MvgpKfnmiIOijATaofnlYPp6NZta4MA04gBfImdsrrpS9qFd0PlXN4sXPoAnBWrmxNBz4ZQQc6Y05KaltgQc41cSu3ov5rwAZryCWDNQ8dDL~JKud58MdC3nP6HCCs1cK~V8axXYriByuBGoNbHB89~Ge4rxaT32w8LoQxmfXVN-PVUDEEwe8YsevqdiUiKnW2ne0wzsG5nANcjTKHWuknigNN-U65EZE7f4zgnc-tVkebLLrh6YsPJcGNK1GJuBmfEdF5hynWieZu9yKFGx6Mn3hhLh2Ct8uzcpvvF2IAQ7BlqH4wK-9w__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1pygSqSMEsq5cHRpwg_GAqQJgcZIrCDya?usp=sharing",
+          "drive.google.com/drive/folders/1vtMCEDPUXM346vfbvV_QA2lki2a5KkQm?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2387,7 +2497,9 @@
       "_internal": {
         "primer_uuid": "61e9cb02-81e0-472e-aa4b-2fd56884e1be",
         "has_conflict": false
-      }
+      },
+      "physical_location": "glass case",
+      "provenance": "Christie’s South Kensington, 4 October 2012, lot 211."
     },
     {
       "id": "kg-1101",
@@ -2423,7 +2535,8 @@
       "_internal": {
         "primer_uuid": "77bd4445-25dc-4bb7-b663-68d00dfe32ff",
         "has_conflict": false
-      }
+      },
+      "acquired_from": "https://drive.google.com/drive/folders/1Rpn9HIa8spV1rbU9KDUxUD9tA3L_5mr8?usp=sharing"
     },
     {
       "id": "kg-1102",
@@ -2458,7 +2571,8 @@
       "_internal": {
         "primer_uuid": "24f32ea3-e8dd-46cf-80f1-6bf1492c5bdc",
         "has_conflict": false
-      }
+      },
+      "acquired_from": "https://drive.google.com/drive/folders/1EXQ6tarII8T1aoBXRg3tDxP7N6Dz53mI?usp=sharing"
     },
     {
       "id": "kg-1103",
@@ -2605,7 +2719,8 @@
       "_internal": {
         "primer_uuid": "351570e5-d9c0-4f82-b47f-0fd9da1f7b7a",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Image: 9 7/8 x 5 7/8 in. (25 x 15 cm.)\nFolio: 10 7/8 x 6 7/8 in. (27.6 x 17.5 cm.)"
     },
     {
       "id": "kg-1107",
@@ -2641,7 +2756,9 @@
       "_internal": {
         "primer_uuid": "3318aad8-2dde-41c8-9f83-74633ca64543",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Image: 9 7/8 x 5 3/4 in. (25 x 14.6 cm.)\nFolio: 10 7/8 x 6 7/8 in. (27.6 x 17.5 cm.)",
+      "acquired_from": "https://drive.google.com/drive/folders/1Ds_PsTMHIEiF5CqLbM_m6W-kc0EdbDGH?usp=sharing"
     },
     {
       "id": "kg-1108",
@@ -2677,7 +2794,9 @@
       "_internal": {
         "primer_uuid": "8bcd3fe8-ebb4-46bb-b0db-decd1828fe09",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Image: 7⅜ by 4¼ in. (18.7 by 10.8 cm)\nFolio: 8⅜ by 5⅜ in. (21.3 by 13.6 cm), unframed",
+      "acquired_from": "https://drive.google.com/drive/folders/1-9iG0S-1286xXAOvlP41O5l7gwX_KOyD?usp=sharing"
     },
     {
       "id": "kg-1109",
@@ -2750,7 +2869,9 @@
       "_internal": {
         "primer_uuid": "4596bd14-32bc-4329-94f6-309ef4656730",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Image: 6 ⅜ by 4 in. (16.2 by 10.2 cm)\nFolio: 9 ⅜ by 6 ⅞in. (23.8 by 17.5 cm)",
+      "acquired_from": "https://drive.google.com/drive/folders/1HNDKPUmBW_NLocjNuc-YjWCcIi42vgId?usp=sharing"
     },
     {
       "id": "kg-1115",
@@ -2812,7 +2933,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/d42ee7fa-d106-4f7c-aa4b-dbbe69df8159/IMG_2475.jpg?Expires=1802811813&Signature=QBMUgyGSWCw-y2Qa8KebewejYSsZfIGt7MSFzkHc5g3dkRxoeQ586HNW~veA93S2XUKEDL9ubcLLbdfYfdtSPtFx4tccRhCVTk4ywPIvrh5YeY3AkVPR4-gvATHFlN7bqhUb-vWPeNCu0y6nkM5FCdc19KUljU3rUkD4cpVVYYnKU4~Bh7LnHOU~Hm1ZDJetOKSARcJZ6JD2z7wXxnc7j0omVm24gwdzylx3cp~2IPYuYrEW2PcaSV6ERHT3IeqvJ5KSl27mziZhF8vhi~ZA01zfezdE8bakg-2tZSoqXIbktRk9MJF2vX4t2HmNzRBYHFz-ghmyYDhU-gw0xdRFTg__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1KuT3SkpxeI4q1_mrt3fjQuDwxQ9VeHni?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2824,7 +2947,10 @@
       "_internal": {
         "primer_uuid": "d42ee7fa-d106-4f7c-aa4b-dbbe69df8159",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private European collection.",
+      "physical_location": "basement,\nBB2",
+      "acquired_from": "Millon, 12/3/18, lot 304"
     },
     {
       "id": "kg-1117",
@@ -2922,7 +3048,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/efa4decd-7417-42e0-a22f-6b201c538ee1/Rao%20Bishan%20Singh%20Watching%20an%20Elephant%20Fight%20crop.jpg?Expires=1802811877&Signature=Xqyu~oORSc4ESvE2x~Yx3Hulzr4WpGeC32rTly0MTinYhGop3qyeTGqxsyhxYccu66vi32Xo0wvzRLKuX7Rj0Ufc32A5RLybm6KrbgBNx4ItSVOaKTAOzL03unrMHwndwjYtvchUcWHjHW3ZAiCWZqpWRvKbK6dIbRYjFDLaokToP4EzCzM1fwxpICannc6wCSbyvTsz3lVnzVbsnglygSTj2jUDP06H9mqpBWMecunOX1nZabihUB~bUAlFNz-pWp3nQ-vSJGlItBar0K8w5JT0-wBGgn96gs9GuuCMDwpxUExqPYRbwQoaDuPqA1GiN4Y6OYOMYDIbce8FcuIfbA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/u/1/folders/1nkmubnI5-Ixa3YUKz4YWQKWfzTL2BoK-"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -2933,7 +3061,9 @@
       "_internal": {
         "primer_uuid": "efa4decd-7417-42e0-a22f-6b201c538ee1",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private European collection.",
+      "physical_location": "Consigned to Christies September 2021"
     },
     {
       "id": "kg-1120",
@@ -3211,7 +3341,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/60530025-4506-4bad-af50-8076c3a26ec5/Screenshot%202023-07-03%20at%203.28.45%20PM.jpg?Expires=1802811870&Signature=wFYBp8yiyO~11TzwfOxHMTx5bwIoRVfpYQBcZJXS35TRan2KdrQ5zJo24zB2-a9IHeU3m0UxyufzQqM6P3S82~5zWu3uS86obComSROsy6ys1HJ-p0NeItaIqS0sCgwuwyUQTHktDms0nszzlJVFEj4uQpPZ4z2ziR74K4X7J0p4LuXBUDnLk5Jwm3E-2q6SgNoAqRmV50uH~luAObDyxAZbgz3ZxZhrRDe9xgcnG2ar-fCpOd694z1INlauTs2xzrE817rM52uDqgMduQnzLysmTZUVniV1limvtTEBqCpe9-NO9BEwmYyABF~wSG5OBT~nYpasGSJT~2rqn6AY4Q__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1eKmP6phHi2JIvITq7okS_RAD_LOH93cb?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -3223,7 +3355,10 @@
       "_internal": {
         "primer_uuid": "60530025-4506-4bad-af50-8076c3a26ec5",
         "has_conflict": false
-      }
+      },
+      "provenance": "Ex-collection of Robert O Muller",
+      "physical_location": "Drawer 13",
+      "publications_and_exhibitions": "Literature:\nWill Heinrich, “Art: Tiny Works Full of Wonder”, New York Times, 17 August 2019.\nWill Heinrich, “Art: Bold Colors from Rajasthan” in “The Week in Arts: An End to ‘The Affair’; A Lincoln Center Horror Show”, nytimes.com, 17 August 2019."
     },
     {
       "id": "kg-1128",
@@ -4215,7 +4350,8 @@
       "_internal": {
         "primer_uuid": "597dc5c8-7b0a-465c-a251-6dab159293ca",
         "has_conflict": false
-      }
+      },
+      "acquired_from": "https://drive.google.com/drive/folders/1u-UlNCaIH6VOR1m574QxiszLof2gQf-l?usp=sharing"
     },
     {
       "id": "kg-1155",
@@ -4567,7 +4703,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/bf1a008b-ca2a-4a1b-8a02-a9cba2fa5045/201013_KapoorGalleries_FLATS_0068.jpg?Expires=1802811816&Signature=ifRS60vVV-SoqFwQLmyxRKnE2b6yg5b1wI3u3UlcVfEAduNFtJr7D-evyW-hWOOEc9UZ-8RbmdNwSSyvackLHv-fAnImtWqIiNzuQ5MoZ9Y6ioLf0ebLnOPYLytcXn~6o9rtA0TC9GNhYTGt5l5vNfMfO2w1UtCGRABU8FiZsecxDtzaDc0x1-XR1CYuU8MJZ8bKMxuOT4PPcMDt9luAXHr~1J9IThOXoyPhvhj6tq1AsKbIa6YXb4Di2mJ6mEgBSxsU2RLQI~Si~d~HaCvlK~ADHP7QX~SJS1sgsWxrAHzFNzZCOOQCettvTw8TYxlVFbThGAfmVBgYwcdVw71R9w__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1NkC9vFawtCsdgnReblHlEE2T34y-y9F4?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -4579,7 +4717,11 @@
       "_internal": {
         "primer_uuid": "bf1a008b-ca2a-4a1b-8a02-a9cba2fa5045",
         "has_conflict": false
-      }
+      },
+      "provenance": "The collection of Robert O. Muller.\nChristie’s New York, 14 September 2010, lot 203.",
+      "physical_location": "portfolio",
+      "acquired_from": "Christie’s New York, 14 September 2010, lot 203.",
+      "publications_and_exhibitions": "Rosemary Crill, Marwar Painting, a History of the Jodhpur Style (Mumbai: India Book House, 2000), p. 75, fig. 46."
     },
     {
       "id": "kg-1165",
@@ -4898,7 +5040,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b0fb93b6-4487-4f61-9a94-086c9de222df/img258.jpg?Expires=1802811817&Signature=IgYOQiLgN271BUUXILtZJMvi4qncN89eKKbcvXYZaAzXnvzUPTK3Vw4SWYpDlg9kHf5d5Kvnu9qKhHT9tDZPhC~6JxytweXhRw~jGjufWszCWBMXpaK4T6BUEPMcevHlopq2dEQE~hIhs2tupoGUWBwijREd35R1sYkxRm1DfO-TCIrRpEbkPOKHE4sJmrqUhsj2SAq3BX5L5By8lhr3jo-WCTIT39ioub492eN8z9b3QszyZacKWcXOIsmGjj-D6z~srIfCPu2~n8p899LvBcp3auM31qhzF4Q-B~jdyXCNxGcqSfr3babJnRy5JDj9XK6GBBWakX3IfMIqQQG9gQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1f1g7btFngSiEZfW6tJTMvcD_FlV1pxbR?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -4910,7 +5054,10 @@
       "_internal": {
         "primer_uuid": "b0fb93b6-4487-4f61-9a94-086c9de222df",
         "has_conflict": false
-      }
+      },
+      "provenance": "Collection of the Maharaja of Bikaner, 1964, according to inventory seal verso (no. 4724).",
+      "physical_location": "closet, cabinet",
+      "acquired_from": "Cowan's, 3/10/18, lot 386"
     },
     {
       "id": "kg-1175",
@@ -5272,7 +5419,8 @@
       "_internal": {
         "primer_uuid": "e2426965-f281-4fe4-b972-5d4238cef95c",
         "has_conflict": false
-      }
+      },
+      "acquired_from": "https://drive.google.com/drive/folders/1QqKsDlK9RvH4wRqq4lgDpidD9sZD80q4?usp=sharing"
     },
     {
       "id": "kg-1186",
@@ -5333,7 +5481,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/e9b2a288-75dd-4545-b319-3f29db3768a6/Seated%20Nobleman%20on%20a%20Terrace%20recto%20crop.jpg?Expires=1802811842&Signature=YRt3e-rPWSi5lmb4AK3-5n5aRMDAszIJRC8tK8Jr3iqN7IVUltnwLRfDvzO8budUtXN4XWuTRKNhOrSmtixlGm4LQd~P833nO93VbQVqGWEZalvN-dhnHmAYth1cmc3tffHIMnJRoLeFRd~nJ0UQmQbP2~Johaeavt3hZmC7YIOaJ3ydWn8se3M7GyeRdxDPsGCF1DVINF6F5AKNyjCKUFyYoifALCW0mbMGtnT1YXgKDvRW0-QCbh4NSQctBZfooquGKQYwM-qg3r0iF6mdQ89aIeMtpi18fOcIYIWpVxx5~oq16b5gb-4U5U6nhE3rzo3LggQZkw1HRQ~nVTF8aw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1-b6ztm3x8V3MfvnhijJkYTpSQxAutHgp?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -5344,7 +5494,10 @@
       "_internal": {
         "primer_uuid": "e9b2a288-75dd-4545-b319-3f29db3768a6",
         "has_conflict": false
-      }
+      },
+      "provenance": "Christie's New York, 20 March 2019, lot 713. Exhibited at Poster house",
+      "physical_location": "Poster House Show,\nFramed C2",
+      "acquired_from": "Christie's 3/20/19, lot 713"
     },
     {
       "id": "kg-1188",
@@ -6462,7 +6615,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b79d23f3-bb7f-4224-8f48-74c6246f6a5f/Bladesmith-Illustration-scaled%20%5B1%5D.jpg?Expires=1802811978&Signature=yFrp7~PCBND-~U73iGU12j2FDV9wOzrsh2-ifimMz3kX5z7kZhoTmRuqD2n0aKQapkRoWY3m7L1us4pvCGfs7yiaCKtFTfR8Xtyz0twZee4h7SzUtZY-Ih~2Wz1deEHYuBuGyE7sEbdgM2BvyhZym7rzGwlNj-WryjamTbtmOCFvWgeesmczFvpAgffTYi9p1aP1GPOR4epo78zbdPjZZ9J-KezADEXrHE3ASVjf6I~A6kGcUhahqHhXUsTb-zhgS9Rk8H~qJ8NjmOHb9QXSRzSkbuIW3l30JtrHSnrOpseXRtLojKRw-zgubjrCqTPLR9sWmxIr5puFD1O8QYgNHw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1hl2eVXOc83s5oRzUU4H04muTUiFI_26w?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -6473,7 +6628,8 @@
       "_internal": {
         "primer_uuid": "b79d23f3-bb7f-4224-8f48-74c6246f6a5f",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Portraits binder"
     },
     {
       "id": "kg-1221",
@@ -7090,7 +7246,9 @@
       "_internal": {
         "primer_uuid": "51ff7658-3833-4b16-9651-2825d6206322",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Closet, A3",
+      "acquired_from": "https://drive.google.com/drive/folders/1_gHnF8Cnm40GlA163dJMFPAF1Wz_Vw5x?usp=sharing"
     },
     {
       "id": "kg-1244",
@@ -7223,7 +7381,10 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/1656471b-f14f-4131-848e-f177e38c8ece/USE%20THIS%20ONE.jpg?Expires=1802811639&Signature=A-Yw47SUX~131bGAZmwJB15tYFbfhet-yXu66wTmZePE3uQKv9iHh2zLH46K3NTB4SQRRspkP5CWshfuDdYVYPFjzwVIaanIk9lBaWMo2ovIi0o2xmk0megbtht~ibE-ge9k82bVJ3cXGXLn3ufnxeogWJI99aRiYZt160xPLPvydPur47Jy0e66YpGJX8f167mQYiW8TKpzT~NHTqTj0CvFFZOLnLygZxrfpaSMkMZQl9sAKqMfRZ5DU~TTmm0rTuRveTNVoUUdfSNUe8~neUIaOx85DoPoW1HgQ3Hy-h-QuBZHqGIYfyWSmQgyRuK1Rb2~0dikQLLyKSrnL76j3A__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/141kONHZwegMRjLRdCZ0P9DVUdG0JlXjw?usp=sharing",
+          "drive.google.com/drive/u/1/folders/1GQngw1z_sCKyapNdkLodl9dayOy3tCxO"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -7234,7 +7395,9 @@
       "_internal": {
         "primer_uuid": "1656471b-f14f-4131-848e-f177e38c8ece",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Drawer 11",
+      "publications_and_exhibitions": "Pal, Pratapaditya, Romance of the Taj Mahal (Los Angeles County Museum of Art: 1989), p. 236-234, no. 254."
     },
     {
       "id": "kg-1248",
@@ -8098,7 +8261,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/5318ef37-bf6b-4b48-9a1a-cd3dd768b3b7/AWNY_Catalog_2020.jpg?Expires=1802812097&Signature=e72e0Apn0yTaJbhZpwNzLn5oeSTUX5G556A82EsXZaPlEQUJCQsEZmJzR4MOrpU6m9InGFSLW2QmXQdBxnYiVMJbdHgYuKcmohVZgBo4MegOPY5PV-jGKNRCBQN7HuT8-ghHHDo0Nj1lgf0KgvzanotUqyJXzpmvdA7xP6mTEchWrHiBgCEJzzd6Q6SxgTz8~zDr6QnWP9h2O4WQKSqyk4e-qctv7O5RR~aPLHlKzKHYAfzwqafJoRBnr0fZWRevtJ1jbtTfy8vf5bN-2f40luqksT0-2tkyDeL7iTdbhAqyIszwI4oMOpxlRJdCLkcUzDi9h6bpu3Sm9-hqSlOWNA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/10JQ0xLi8wkbJ_TYrXJUnXKtLwRNeH8S9?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -8110,7 +8275,10 @@
       "_internal": {
         "primer_uuid": "5318ef37-bf6b-4b48-9a1a-cd3dd768b3b7",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private European collection.",
+      "physical_location": "Framed, closet, B3",
+      "acquired_from": "Million, 12/3/18, lot 300"
     },
     {
       "id": "kg-1273",
@@ -8245,7 +8413,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/06841da0-9536-4d5a-8fea-03442d14a04b/201124_KapoorGalleries_0007.jpg?Expires=1802811756&Signature=RanTvoT90V1GAuIwk~0Fj5JqVxftdpqIBaPgwQx8QbknjeVlva6iz0KG8diDxrbDa1TRJtWNFYVR~Q8hWDX7n693~l0X0F4aWXiDjXb3thuffJKBpr6UmViGYihubDJIu13OobMQAoEDDbxBb0n1ZQnDRdqVuQVB~7J21WQ0imDb~rqEfur7x8l6zvrJls8KbXu9hW2SDlh~wcU0U2HltDIpveHj3-TpQ7i5C3DVssEMS5gzAyldyXYI7gpKbQmbL0vwg7cNHHouDQ7XUp9ZDmUkkYMOMiiuLloL7DdeuUjmD15UYOuFMQkQ6Ybfl8MO5Roep93x2G~J0GVD8btfgA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1-lOFx1_RQEd6NbL6Cend4wymJYFU7oco?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -8256,7 +8426,9 @@
       "_internal": {
         "primer_uuid": "06841da0-9536-4d5a-8fea-03442d14a04b",
         "has_conflict": false
-      }
+      },
+      "provenance": "Chrisite's London, 25 April 2013, lot 172.",
+      "physical_location": "Gallery"
     },
     {
       "id": "kg-1277",
@@ -8895,7 +9067,10 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/5baed58c-5a13-4f4f-928b-8f18d930e695/Todi%20Ragini%20%20%5B1%5D.jpg?Expires=1802811882&Signature=waRmYDxVYBOQbuY5XLUe3HltAsi3djR-ZLwTcSXKTyxaQe4exq436n6gPlwM5GXezR4P3M~FfuvPRzccgG1vFNU4QnFf-fMVcN9cAUn9a5AVuscJPeogm5CvHHclPdJ23bQ47TMST2Mi5ACsCBFj9~wBEM6lmKFd7k0hNwMKdm9GYC8F~bl0V3jS4eGTuNmuunwib5Jp6cnqtTHZr49bkPFQ-VtaTH778UUnAkCIcsSq5PbEPF~Gy9XzwtP~JGOt3ups0tqAF5g-Vg7SzTZVpX6XUK3MwznE-yh5ft6T~JFYCRb50ixNnneSDaob5puHyhLJOsd3OnigtsBes7H90g__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1KbSxq0B9lr2dlPS7nPqFrG-8LS4usttL?usp=sharing",
+          "drive.google.com/drive/folders/1XitIHUghify4TPXOBMLZeXlybZeyCTL0?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -8907,7 +9082,10 @@
       "_internal": {
         "primer_uuid": "5baed58c-5a13-4f4f-928b-8f18d930e695",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private Florida collection, since 1992.\nBonham's San Francisco, 17 December 2018, lot 345",
+      "physical_location": "Poster House Show,\nFramed C2",
+      "acquired_from": "Bonham's 17 Dec 2018, lot 345."
     },
     {
       "id": "kg-1299",
@@ -8969,7 +9147,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/e32717a3-0255-405f-81b5-4de95a40c273/Gujari%20Ragini.jpg?Expires=1802811882&Signature=BclqsCzGARh3U3ZabWm-jdBiQ9pjDA2JXpIQlpnOzTzeN5k3Q-HNcb2uixKZaLubL974n5eyiECU8pnYEn62~Ts54RTTuozaGUAF7ZujUQsRJFp601x6ZWAhkrLP-pw7QQhjqLUMCESK1hPbx5AgOoG6wlzMOFeznEUv~Ferv01hwTtAjdFXOjfItWaC5rjDxOxi6VJpApwn17EyvtI3TC4yvSg07aWj6ftKoZQpy6HPBtDjquwnWmsdc-xvsaa9o84HVTUyGSL3EQudab1n910i4w6Z780SjQ8H9M0LDcK4GsuyPIqxLfeA36VyU0FZw3TW1DTnFS6r1nwStqqIYw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1HxJ-Ra8w0rhIQGEG33ckw5hp01-4DYwT?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -8981,7 +9161,10 @@
       "_internal": {
         "primer_uuid": "e32717a3-0255-405f-81b5-4de95a40c273",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private Florida collection, since 1992.\nBonham's San Francisco, 17 December 2018, lot 345",
+      "physical_location": "Drawer 14",
+      "acquired_from": "Bonham's 17 Dec 2018, lot 345."
     },
     {
       "id": "kg-1301",
@@ -9042,7 +9225,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/25d77337-8973-4c5b-af34-ae990de4bc81/Angels%20Dance%20and%20Fly.jpg?Expires=1802811790&Signature=uD0z6pEoS9AgoBkwhj9tdRHeURjt8bbYy0Qs4I7hF9spxnR~aiU7y47AWAhUejoMo77nKaYdrJVQkxA9Ua3HFYugRTBUKY0XukMou~QO5GcvGIAOLqXar0ZX-19esxm6k5AGIM~wImX~pQrcaNBPudT~dW8BF4H3oi16d24x9RGCrmwdbjP4ZUDMRg3mqeoT0Jzd-PUdeFSXfGejAQukf1MluKiyIX-DVcwenw7SsU-nkJqao66HectW7BABGJul8sCSnfl5TqC~hzjXJVVxa2Y4KPpFzErgcRKdU-tV2UVbj9LS-2JBVBuRV~NjV0VzYnB7XYltoTUFD9DYlpk~DQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1_4HPCYxhcTbMRD2X_KSKToEsBvUr386l?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -9053,7 +9238,8 @@
       "_internal": {
         "primer_uuid": "25d77337-8973-4c5b-af34-ae990de4bc81",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Gallery"
     },
     {
       "id": "kg-1303",
@@ -9115,7 +9301,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/93f98d17-4198-4f66-9130-ff31082ba6ad/Lakshmi%20Narayana%20enthroned%20recto%20crop%202.jpg?Expires=1802811811&Signature=WHyHoCqcKwDjWEEAtufHdT4Ffo8xlI5FlhH4Ygrv94LU3Q37eRRpnVfEPKieKFdUYuoSzSD6l5hp9fKZ3fi9C6CzKUD4JNSanTbkkKkWkECATHa2LDTUVoOa6hPlPuCQtwCf8B4iRiNOAESeVelLeVRIoeLyHXRuzadiEA2FD6me7qYe7S7c8SK0u0Xcq3pMUnekVljoGZdp8kCJnNrtKPJp-hpk1TRyKCuvc4qSFI3i-TPN~bRcpR~2LeYRNBtNFooXFjS1SXFC96XzUive0bVBJD3StszqDlf-vyagbyekQ~xvq823ykRxCow~SyWJF~p4Lw215x8C0AWjKjEXPg__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1EQjkI43N_Y_xaivGQch0gB_eEUfGkCYv?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -9127,7 +9315,10 @@
       "_internal": {
         "primer_uuid": "93f98d17-4198-4f66-9130-ff31082ba6ad",
         "has_conflict": false
-      }
+      },
+      "provenance": "Hearst & Hearst, Boston, early 1980s.\nPrivate Boston collection.",
+      "physical_location": "shipment pending",
+      "acquired_from": "Bonhams London,  25 October 2021, lot 304."
     },
     {
       "id": "kg-1305",
@@ -9225,7 +9416,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/abf427a8-5bc3-490d-831d-5beab986ebba/Nayika%20preparing%20to%20meet%20her%20beloved.jpg?Expires=1802811893&Signature=eCutGgj5SAHmYvfdYW5SdHqKetZe4~6qd2tvYAxq6Sb-xCGcafY4b46Bd6ibe5qDQZ5JnpdEIALysxSXSZXBiHTvL6M~X4PwKbWN~YvcHMWHXucWT5bdxC0XDhNirgmYbPAbXKoprEbFILje7HvlemED2nRFh4TOmr8akvEjKBqp5z2t1oxnXB62Ql09ZfS3IBeoyD5KC0PMCMdntUD6PB8Db~YdL92M-IxGEn4irU4iEPzt9twrabli~whKNN6D7Vq6oEjd9MaN~FpHLJ6fyTsPkvVRlBOEiw577J1C5gIXaIlnVQAhDMKJy0y6Nxui0kXEdBT5vjvpp4oDEtNtwg__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1qJzuzJFz9rMRZmS2EUGom_D1Y1uDvRJ3?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -9236,7 +9429,9 @@
       "_internal": {
         "primer_uuid": "abf427a8-5bc3-490d-831d-5beab986ebba",
         "has_conflict": false
-      }
+      },
+      "provenance": "Christie’s New York, 6 July 1978, lot 64. \nThe collection of Dr. Alec Simpson.",
+      "physical_location": "Gallery 4/28"
     },
     {
       "id": "kg-1308",
@@ -9273,7 +9468,9 @@
       "_internal": {
         "primer_uuid": "c5fadf52-3d8d-4031-bf7d-349c3b7cb498",
         "has_conflict": false
-      }
+      },
+      "provenance": "Spink & Son Ltd, London, 1985",
+      "physical_location": "Drawer 14"
     },
     {
       "id": "kg-1309",
@@ -9298,7 +9495,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/0b60649d-c907-4680-8709-fbfd14caa042/Tilangi%20Ragini%20-%20Kangra.jpg?Expires=1802811882&Signature=WqPv36iv0PqzezQwu964cM8y08RwLjya4t5x4OP03fsUly5NWgVvDvzHqJ-nG2eMlIAdBz0GLnq12-lAK2RFr66prfahuMnvaOhOjnMRSvuMKAaRO08vC4T9FLoIsdYOD1S~oI97ev5UvURf-g6y60sZr4I-NaBMIG~QArs5OA79bc6hWq2aiYYy0huPhI9eEc~rEimoc6MrPmqW84Sv-5EABoxAE48-GM8zGqJS18b9uoJKHwGWjiSTsPTseMFMo-8TFd5vy3D3DPHAx7VC6MtvUXaEc~eW9~8ohtQY4q6V5YbWlQ-B8D4EBh2W95fSJeTHbiLoRGBG5VHBdMIl4g__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1tNIxAE8W8NugPHopKXXY4mLB_rTvHTzC?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -9310,7 +9509,9 @@
       "_internal": {
         "primer_uuid": "0b60649d-c907-4680-8709-fbfd14caa042",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private English collection.",
+      "physical_location": "framed, gallery"
     },
     {
       "id": "kg-1310",
@@ -9335,7 +9536,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/dd961dbe-b9df-4b37-a452-e6a95cc4f1e1/Srihathi%20Ragini.jpg?Expires=1802811883&Signature=yOpijmQx96mrzOn2GlMJm84-jWEcJRaWa~LX5XwdmNEZ7Juu2xoZ-8b7T0QNU3OXiKOHoICDPVQNy8nzPvNbbvGbgbP8FOJqmis14wFEWutWvv00lRfMoPkEleKJ5nwgiLYPrX88iw1QrbbSi~uQnTtS1bRqqKtBmc6-L0VGa2Qqd9hwAXcLRz0e0U8spNlcEyrxA6oqnt16VTmY27~DlqHrh2CpJ7ST71ZQYLzfud8CW-0WjM~WeuegTSXoxMszE5ieKiHcTztFItCBDWdecatF747FzyLzGmcBLsDmPgGs172nT9xoF~njjKFTy28PgxT8Mi7pTs8sssHqIIjgYw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1Dvn9YsOu91eJ52Z4XJmDxjlUANUFTiwR?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -9347,7 +9550,9 @@
       "_internal": {
         "primer_uuid": "dd961dbe-b9df-4b37-a452-e6a95cc4f1e1",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private English collection.",
+      "physical_location": "drawer 14"
     },
     {
       "id": "kg-1311",
@@ -9372,7 +9577,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/fa0f8029-69e6-410e-8ca7-ac94e0d26f76/DSC_4242.jpg?Expires=1802811914&Signature=vaaimV7W09ssr9V658BguzmPaFZgUebl293HJRR1QzdwwMRWeddWLR1nQFpijJkNilMfYAdZO-4BNrDk1anOIY8wHXMVI-zU-7tmax9e86PN6MH7FvVS4XZGuDTUiXzgS7XGjd8~t98JQGvrxMAcxaVUpfqZL5CKz4R1HM9AwBFuinmazeVJSB6wIU0NT0R1h1n4dxbedtHt-V1rWR~hYoVq2oVyq8fa8BI~ZaRDtqEd0LNp9WIGUyD9T7gFeMCtwpxMkpcW2quAFoKFnA-waTeSWfoHnFPV4~QIUsahx9S4qMdSiyInCJyIcb6HtdLobnOV0DgZkA56I1FxqkIIFA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1VXU2jtBEhsIyW5v6YGTppmlrSxDs8Mnb?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -9383,7 +9590,8 @@
       "_internal": {
         "primer_uuid": "fa0f8029-69e6-410e-8ca7-ac94e0d26f76",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Consigned to Christies September 2021"
     },
     {
       "id": "kg-1314",
@@ -9408,7 +9616,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/dc63d92a-fb71-4b03-982b-55d090eb3a2d/Illustration%20to%20a%20Bhagavata%20Purana%20series.jpg?Expires=1802811897&Signature=zgjc71texpSff-E6Yg8ShhwbLDq1a-honVa9sGNJtNW51qD4RmTdOdIWRWDtGsC2Doqu50j1z47~T92-SP-4sM-osA3cNt3EP7yS6Gcn8FgOQQhmUm8Uei1xrwLPZ~1N1Ir~Mxb3a4K8ouOeAtF8ZDOIrw9up4fA4UZzkltVOUGX3gMyd-fcYEJypEYKjZGa2q57PyfU~NligAX~MlKXEWJTFERFZ80Kk9-HgHw21awbcljIel~mNznX7seY60L-gGomwkFLvuWp8crvSMgxHQy2Gdsyjy4~LrsQA9RD~Nk3A3ziGP6GCUEAWAf6yVPYLLAOfDCDt72vrvKV54YigA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1jddGJqnjg2YolLdN82y048MONyd0AbPH?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -9419,7 +9629,8 @@
       "_internal": {
         "primer_uuid": "dc63d92a-fb71-4b03-982b-55d090eb3a2d",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Drawer 14"
     },
     {
       "id": "kg-1315",
@@ -9455,7 +9666,9 @@
       "_internal": {
         "primer_uuid": "4070e830-07f7-423b-99bc-b8b4c4242115",
         "has_conflict": false
-      }
+      },
+      "acquired_from": "Closet A3",
+      "publications_and_exhibitions": "https://drive.google.com/drive/folders/1F9xxxOEdjKxni7tYV2qfwYY0WVdSNhxN?usp=sharing"
     },
     {
       "id": "kg-1328",
@@ -9886,7 +10099,10 @@
       "_internal": {
         "primer_uuid": "098d87d6-b7bf-4c59-a259-10859d124965",
         "has_conflict": false
-      }
+      },
+      "provenance": "Nik Douglas, British Virgin Islands, 17 December 1982.\nThe James and Marilynn Alsdorf Collection, Chicago.",
+      "physical_location": "Gallery 4/28",
+      "acquired_from": "Christies New York, Sacred and Imperial: The Hames and Marulynn Alsdorf Collection Online, 4-29 September 2020, lot 25."
     },
     {
       "id": "kg-1397",
@@ -9911,7 +10127,11 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/c49fdde4-cd64-4798-90cb-f9f5daf708ae/DSC_4158.jpg?Expires=1802811869&Signature=f9o8xGzZHvPiaU1DWunlQh4l6aENRZw8i0ZVBrVxYk4c24jq0gDOnbuqfJ-PdxY9YO3oHdzEFUjkdXiOtU7tQGkJ~SJMlrGbTljWoSsIX48zjb7~AN96NlsVkd6uV9mcxkrSQKE0~9k2g~oprasXogm3oqwOtaeR09dxC23Xk3liIPuzvNSASyh6kc-XMrq1Utx2G~jInMWYTfwfc7bmXJPFexfrCXxdQvksI3xf5bepDcwrHFD4LfFBl6VFCuxcL8XMoNa0k9bcgFqF1dDyFID1Uw9mj3KcZp~-fEH0vbqLgCg4tU8jtda6Erz7eAkrHw2oxQxbMb4D~GV1LU20Ww__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1dSPCPAJrEARhbtTw_T-4aQ-bkIxhcXyJ?usp=sharing",
+          "drive.google.com/drive/folders/1U9PTShvaK9c3NxjklNbM8xbWDUdQmXsQ?usp=sharing",
+          "drive.google.com/drive/folders/19ufKs_Cs6ECBEKGzeHzOhFHFek12cTcO?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -9923,7 +10143,11 @@
       "_internal": {
         "primer_uuid": "c49fdde4-cd64-4798-90cb-f9f5daf708ae",
         "has_conflict": false
-      }
+      },
+      "provenance": "2014.021; London Art Market, 2014.\nChristie's New York, 26-27 September 2017, lot 228; The Collection of Paul F. Walter",
+      "acquired_from": "Able auction",
+      "publications_and_exhibitions": "D. Wiener, Indian Miniature Painting, New York, 1974, no. 19.\nK. Kalista and C. Rochell, Classical Indian Painting, New York, 2015, pp. 68-69.\nB.N. Goswami, Manaku of Guler: The Life and Work of Another Great Indian Painter from a Small Hill State, New Delhi, 2017, no. B162, p. 447.       Exhibited:   Doris Wiener Gallery, New York, \"Indian Miniature Painting,\" 16 November - 31 December 1974, no. 19.\nCarlton Rochell Asian Art, New York, \"Classical Indian Paintings,\" 13-20 March, 2015, no. 24.",
+      "physical_location": "Framed,\nB2"
     },
     {
       "id": "kg-1398",
@@ -10524,7 +10748,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/a039357a-820a-4799-a1b2-963f68929926/img436.jpg?Expires=1802811860&Signature=ofFrtuGGvaZTMByunydPa4Ocx9xVAmC5NCAdqFeqZgsaDTUzhOAWIvxt3GoyY77NA1un9ZrVv97gxuDlzXU1duln8U6FbGAdYz9zbZLGQdZA0NAr8dbe7YYO00zBwe9l1~I7BJts~ExCq3Rd3RtJZEbo0LGZeKYWtk7gi2EJQDmJGPE3SA7c8ejxy0pe6ZyWduOKIhqTHrAdUUAbjUaIncUFTc2HkC3ru4b-4ERsIwU4gTZlNQpWRlz52d5jREiMV6bJAIKsiuXWc~PRUTreJ-OLZ2~EhLO3NQtgBxryiHwqZalbM7s5iNSFqOHX01Z5MiVpqeVtCNEaAzWTM74a1g__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1K-dv-tw_XpKGOk8B_bqCm_8RKDmhvFEn?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -10537,7 +10763,9 @@
       "_internal": {
         "primer_uuid": "a039357a-820a-4799-a1b2-963f68929926",
         "has_conflict": false
-      }
+      },
+      "provenance": "Christie’s New York, 27 September 2017, lot 251. \nBonhams New York, 11 September 2012, lot 63.",
+      "physical_location": "Framed,\nA2"
     },
     {
       "id": "kg-1425",
@@ -10892,7 +11120,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/a5bd56d5-61b8-4679-a8dd-5d536787a43a/IMG_0244.jpg?Expires=1802811759&Signature=gF7OkrvILHoXQ9~gGAGR7s1x5cVpW4wGjvBGHTMlxjbaI90ryKWFVLQzN5sx1p6wsNmVNazj2PX0BNaiTMEpzfZ17hqjc3mqbD7cWSh~p-~r3ERUOUV8bP96vuxFiDW3IqQWi4NS7Z2ajRMhu8BaO2WDNc9rK8hjp-vVk9su0D4~IhckBJwVtlbrmZvrEZDpA4l-wmTMlnoVH~sGbhkfVLbOtQGurG2bwtRAibkPa2doV5rOZR4IiHaV98k0yGNEx-nLbdW2B3vvnRPIn9tBZSJwM1Pit8L4XguvxHOwJiEFZ0TDTKfmzmiYAz43nlBC1yEARWXdxmIzUY0fggw2KQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1wvA-f-tzhUPKVAyFeOPXx3bNOuy1jFEo?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -10904,7 +11134,9 @@
       "_internal": {
         "primer_uuid": "a5bd56d5-61b8-4679-a8dd-5d536787a43a",
         "has_conflict": false
-      }
+      },
+      "provenance": "Estate of Theordore Allen Heinrich (1910-1981).\nProfessor Heinrich was an art historian, curator and educator. From 1955 to 1962, he was the director of the Royal Ontario Museum, and afterwards he taught art history at the University of Saskatchewan and York University.",
+      "physical_location": "Taken by Ramesh"
     },
     {
       "id": "kg-1439",
@@ -12616,7 +12848,10 @@
       "_internal": {
         "primer_uuid": "fda064e2-ad73-4027-9843-6eea65dfde75",
         "has_conflict": false
-      }
+      },
+      "provenance": "Nik Douglas, British Virgin Islands, 17 December 1982.\nThe James and Marilynn Alsdorf Collection, Chicago.",
+      "physical_location": "Gallery 4/28",
+      "acquired_from": "Christies New York, Sacred and Imperial: The Hames and Marulynn Alsdorf Collection Online, 4-29 September 2020, lot 26."
     },
     {
       "id": "kg-1514",
@@ -12689,7 +12924,8 @@
       "_internal": {
         "primer_uuid": "eab80139-1adb-4725-8763-e24d202bb654",
         "has_conflict": false
-      }
+      },
+      "provenance": "Potomack"
     },
     {
       "id": "kg-1517",
@@ -12895,7 +13131,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/0de1292b-76bf-49c0-ae9b-27e44d7730ff/Screenshot%202023-07-06%20at%201.36.55%20PM.jpg?Expires=1802811898&Signature=xnFNmvfFjZ41pW7h5fxvhH3tTs5d3dtuViI44qwrgUacMmwwAwD0TeuFwhDFhoAvKzv~pkJABk4bHK1vqdxyCVGksKrkZJcH1EY9k7bfkM-efadZWVjj21~-p0o5OUuNAhTZRw1gAnJnToUPHW0~zM2hx7Y~MkaOorYk048tDMRhG~97bFoNRmkE12pA1AkzKKlIWOWQzZBe9Gi61r7d4ksvYWQRmRRNCs~PPgcG-Z5ze5f8lWbEawa-eVXnfrmnSK8plIkzjdwmaHgWI5-Xf4trxyUUsfcZQ-V-vTINuP3VCZAsqccD9Tq~TGJbdd9ZSZT1kl34pY4bEnaSaDCG-Q__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/178diNXdY6AfGpbDhs2310r5SblUYXIRh?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -12907,7 +13145,10 @@
       "_internal": {
         "primer_uuid": "0de1292b-76bf-49c0-ae9b-27e44d7730ff",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private Swiss Collection. Christie's King Street, 10 June 2015, lot 70.",
+      "physical_location": "Drawer 14",
+      "acquired_from": "Christie's King Street, 10 June 2015, lot 70."
     },
     {
       "id": "kg-1524",
@@ -15531,7 +15772,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/1856040d-3d00-4070-8872-8157ca8560a0/Homage%20of%20the%20Gods%2C%20A%20Leaf%20from%20the%20Devi%20Mahatmya%20Hi%20Res.jpg?Expires=1802811870&Signature=mLsMi~t8AxVxZbW9W9gsby6qqfCKlxOg6GKPVHfCbblvelFFAteUR89IEURtkPzsbvs8E2oFRjzg5cPqF2nNqgKVHUnQSpzQrt5m7o06Gdj-OEAu8djHeC2MUl14Vx~uwec~ZgWiMULfYLleeUTfvyXtoh6KrTiwRofnllGQ3~-hyZpfzwFb-lXJXAqBkUCBPRndyBrtBOvujuhbDJOCXWIFmW3jb7AJ9SKFt7Fh2Ct8Vizipdxp9N36oJGzgZPuiDd4TaMzGcQMbKVGfdpxaT69BOHfsJhn26arxM51Rxui2NokViWq5D9cZ~RtemOpFWkh~neiSSpS5RTKzL2Hqg__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1n9DhW2AspJV13Qxpio8JDQyt2jzeFac2?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -15543,7 +15786,9 @@
       "_internal": {
         "primer_uuid": "1856040d-3d00-4070-8872-8157ca8560a0",
         "has_conflict": false
-      }
+      },
+      "provenance": "Collection of the Marquess of Tweeddale.\nSotheby’s New York, 16 & 17 September 1998, lot 561. Private collection, United States.",
+      "physical_location": "Drawer 6"
     },
     {
       "id": "kg-1615",
@@ -15582,7 +15827,10 @@
         "primer_uuid": null,
         "has_conflict": false
       },
-      "artist": "Attributed to First Generation after Nainsukh and Manaku"
+      "artist": "Attributed to First Generation after Nainsukh and Manaku",
+      "provenance": "Doris Weiner Gallery (label on frame)",
+      "physical_location": "Tibet Nepal Drawer, Drawer 14",
+      "acquired_from": "Material Culture, 5/5/19, lot 59"
     },
     {
       "id": "kg-1616",
@@ -15988,7 +16236,10 @@
         "primer_uuid": null,
         "has_conflict": false
       },
-      "artist": "Attributed to Sajnu"
+      "artist": "Attributed to Sajnu",
+      "provenance": "Royal Mandi collection.\nAcquired by the present owner on the UK art market.",
+      "physical_location": "Gallery",
+      "acquired_from": "Runjeet Singh, 23 October 2020."
     },
     {
       "id": "kg-1632",
@@ -16050,7 +16301,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/969b4e7e-7b48-4c81-8c85-b200037c78a3/Rasikapriya%20-%20Krishna%20Enthroned%20recto.jpg?Expires=1802811807&Signature=Myn2cz4ZuJIZUh54nkeWbdgPcyDgQJMW8nlCGQb9bHO3sdzAVrHVXFES~z9xWMa~2drL5PwWObfTIJ1IJCwOBM30YLjlLghj3f~AXN1nrbA89RMHv4S5lb9sQyDMIVH6EGAsOs7g44E8pyXJBeFmRyCZ~Y9LfziuqRsEw0bjIT8ilmu6khXx~tAw9oqtR~85BrAjraOE-owqdwJUL0VeQV46RE28knb6SmoEVRsQj6XXmdbWCvF8d4OAB7tocvkJ7caC3DCwnQgtZki2w~crBUTcf~aE53vSP7TSgMr9sEu6~rClvhkrGICKE6wrmFTuIxnVBL4TOuEI-y~C5dtw2g__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/10NTlarXW0TcSMnobGIyz8X6QL2DM8PBA?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16062,7 +16315,10 @@
       "_internal": {
         "primer_uuid": "969b4e7e-7b48-4c81-8c85-b200037c78a3",
         "has_conflict": false
-      }
+      },
+      "provenance": "Mandi Royal Collection, Private English Collection.",
+      "physical_location": "Closet A2",
+      "acquired_from": "Christie's London, Arts of India: Heavenly Gods and Earthly Pleasures, 26 June 2020, lot 30"
     },
     {
       "id": "kg-1634",
@@ -16087,7 +16343,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/462a9a11-cb82-4e6d-86de-a7675a44feff/KG_Catalog_SW_PDF_FINAL_2021.jpg?Expires=1802811806&Signature=CD~5SIKtfOcVVMa2CD9lBOXrtZaWNiHOmNr2ZzTCVDlM8grzp194yEK~d06RBiNlgMZ0HiUFu9IBFJGY9gxNmeZaWN28-vNUWUJcYi7opS0F3oFukO7poSoXEOCmaObEQ8Du1KUaI0tlNAMYeZDWFTRH8AGk0Bx~xeLXS2Bs7k89IG8P8ityr2NUkwA~81Q0okfC6FoeVdhB~fHSjFxyXQMPLK~HG3tUywCZwEZPqA8UI-FeLKBht7XeKJIVQ7UOYr2gZ~o5IBaMSPAOozPPKP02OplOA2q3KN7CBQIU1b98nuAUQQxUuWIpcG282-M~sC6NPWeJRwc-D9iGs9PN-g__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1SrIZ19l6J4u2Ip9MROPEHGtfadKsofmm?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16099,7 +16357,10 @@
       "_internal": {
         "primer_uuid": "462a9a11-cb82-4e6d-86de-a7675a44feff",
         "has_conflict": false
-      }
+      },
+      "provenance": "Mandi Royal Collection (gifted to the vendor in the UK in the late 70s or early 80s), Private English Collection.",
+      "physical_location": "Gallery",
+      "acquired_from": "Christie's London, Arts of India: Heavenly Gods and Earthly Pleasures, 26 June 2020, lot 9"
     },
     {
       "id": "kg-1635",
@@ -16124,7 +16385,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/2feb3daf-0e58-4008-8563-6e919afdaf74/CC%20Nayika%20Writing%20a%20Note%20recto.jpg?Expires=1802811892&Signature=z~8ar41Sv-OMQSoVgsomtnJNnS2xe93CebVR7FdTwFkNvzf4h0oSohO3Dv76liFyxI1PjEAO9R67xINhCN9F3jvZgcvG1RUmPI9WndELkF7U3qBvvLAlPSDLX9rhPEs9k8dabR3Ueh4oc~Y3DyxfvyhOspbWdsFuLxkQEMbRcTzQuhLlky4yigCl-24wtetjudvlf998qVxBhF72h6VoTcdYROcG5ORKkg3WUIG~yYDVoZedS~kM4viidM6IU0nLaaJmNCsELO3wTS-MeXasjrlhLRnwIqMYOsuZyR24oyXeWuGLWxVu87CC9i88elho7bboJ5t4~~xZR3M89KDA2w__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1RqeJcdyX9g-725p8VSBPJxpmjnSaX45S"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16135,7 +16398,8 @@
       "_internal": {
         "primer_uuid": "2feb3daf-0e58-4008-8563-6e919afdaf74",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Closet cabinet"
     },
     {
       "id": "kg-1636",
@@ -16160,7 +16424,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/3825b2da-1750-486b-a5cb-799294f04687/Maiden%20with%20a%20Mirror.jpg?Expires=1802811917&Signature=rRMmZbAxxOsLeMzHlI2cOu6WgObQWv51Pr2HXGE~~~TOqg1XDVLQywKlM6yTSW74Hxutnh3gi1s08mFKHwzmVJ8EFVa8AKuOXghZRKH0xWjccmSr2uh3Qgqq6aq61AhS28DE~SbYfUNMsmYr4JJEQ2xeeTq11DlTGbYOFPCwSf4OMazBIC5DUO9zNKVj2Ovbbq~kek6RxS5n7Z6CgsqfO2PE1QitdmgiD0lkMrDtS3b884j7kKG1N1QPoBsqj-qeL0eHbjdVblp4nMgNU5Rg-oHeugPefFlUOc7WrfZb6EgoCZ0PJOnS6J3ll-uBsl7wbeTDpEk0Rw5TEU1yJEkAmA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1u7hNzYtJtZ5PDfHPtX--T66f_4mJKn1m?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16171,7 +16437,10 @@
       "_internal": {
         "primer_uuid": "3825b2da-1750-486b-a5cb-799294f04687",
         "has_conflict": false
-      }
+      },
+      "provenance": "Lawner.\nThe Collection of Hellen and Joe Darion, New York, by February 1968 (no. 39).",
+      "physical_location": "Laura?",
+      "acquired_from": "Rago 4/14/19 lot 1006"
     },
     {
       "id": "kg-1637",
@@ -16281,7 +16550,11 @@
       "_internal": {
         "primer_uuid": "067f1f7c-cf75-46c4-b142-d9af315d1035",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private collection, California. \nChristie’s, London, 8 July 1982, lot 144.\nForge and Lynch\nKapoor\nGary Crawford\nKapoor",
+      "physical_location": "Gallery 4/28",
+      "acquired_from": "Skinner 3/22/19, lot 452",
+      "publications_and_exhibitions": "Doris Weiner Gallery P.1899"
     },
     {
       "id": "kg-1640",
@@ -16415,7 +16688,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/61755836-a144-4e65-af73-56c1d70e3c6b/Lord%20Kubera.jpg?Expires=1802811635&Signature=0K7KchkmYbQGkRxtC6F84mwjQ-TTU90XCQytNE8uA3CFgR-l~MzRbX4msZxmkHFQjVLEvEOnYQYwjSRENYeqfyKU~r2osZH84ps7mb40USHOfXSOXXLOw4R1MzRt9Or22Gn6oVE86W8JXvM6HEYwzqD9-MikIDEGGcemkrW40vPQFEXZ7qn5kMzo1xD6n~CFloi7pxEFyS~CY0L-xXcVJNzcL8ohIe~KetvcRYn0mNyYzZAJ6qOaRKCwCqUOFuv-daGeF19c3ozt1B8LmEenM5Y84YRDcgnZIgTH4MG1TWG4zwurykb19O1-e4HC7nWB0WWx8BVI93qEHjTHhCbNuQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1sTTNU0W-BqCJB1vP54GGZmHAIQvuyxvI?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16426,7 +16701,10 @@
       "_internal": {
         "primer_uuid": "61755836-a144-4e65-af73-56c1d70e3c6b",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private European collection.",
+      "physical_location": "closet, B2",
+      "acquired_from": "Rita Dixit, Indian Miniatures, Gods and Gardens: Divinity, Magic, and Faith, cat. 6."
     },
     {
       "id": "kg-1646",
@@ -16451,7 +16729,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/0918f494-3aab-4f0f-a20c-d5de19301b4d/IMG_4954.jpg?Expires=1802811622&Signature=k6rO0Z62s-BGgL5cEn-EBIKp01iKdDFa-E-98tZ6DyO7grGo~ZY-bNRbIj86Nop1KVJtKX~Ss1qJbfI337dzfJ1OPPQN2ncYVzFySiqXSaVk5etJMRbkoBnXvcOuz4l6tEP8bTSfxboIA8vnOlsvCg2SL27OkYoDZoJ7aO3E3pZWr7hIEG99s9wWif0VNPJWKmQwLTycl6gF2KIazlHqCIMVpFn0vka~WGbcbNTz57Dfuy03CHOSlMt71OTg7XizovjKw-j5L5vn127udPF1e4sdJqr2gCkSyyoAUqil6jAV5qEBQjqDao8yoSOv5~lPS2U0EMBp6XerPhvmxhIzHA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1csQXFtp0AeNp7jMwX8bDdp2X2y170zdr?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16464,7 +16744,8 @@
       "_internal": {
         "primer_uuid": "0918f494-3aab-4f0f-a20c-d5de19301b4d",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Closet cabinet"
     },
     {
       "id": "kg-1648",
@@ -16489,7 +16770,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/72d2e6c1-c251-4622-8e4f-195c20d6149e/Abhisandhita%20Nayika.jpg?Expires=1802811893&Signature=SZA2SUvB-qRj53xMuCPI70IvGAgVy8bfoO5HNd0y7fP0bR5HCnh84kSc7YmCKTCyCyzZNGeTWQku-RBbd9ZbQqgAHizmGvHVTzMEtgK28iGp1uadkj6DYW8uogCdSsOlHp7pht-BmCtzYju3R7NpQETkUN8LwCQcUKKb2-WlK0ksCziLkhjrRvyAERYdhcCf7cKmQxDMo2NLnfhV05RI72fftVApf81QZ2DbuAkFOwxqTCtDq3TrRggtcf4JfsDDt2nIMYYzOcgyzutv0NCMTRvbNrKzEvK06MXDWqSliKuab3lttG9C-fj4rUMhuU7bn7W~jAzX25ZoWczI2FmivQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1SRpvDQnklqHDHFBNBkzZG4tqPMNiK2If?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16500,7 +16783,9 @@
       "_internal": {
         "primer_uuid": "72d2e6c1-c251-4622-8e4f-195c20d6149e",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private New York collection, acquired in the 1970s.",
+      "physical_location": "Gallery"
     },
     {
       "id": "kg-1651",
@@ -16596,7 +16881,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/6a3f8b66-6e2f-46ac-9b5c-263ce28aa1a3/Brahma%20with%20Devotees%20recto.jpg?Expires=1802811879&Signature=hMEhHcXfW7XuXVvTX~cpgwm2l79JfpdAWWOf5v6e9uTK-y3bd1rypUH5eKUe3vfSFAu3qrNyuKRzVKeMqbGxYMFvX7dQLPC82IyHCVpQfdtj~~jei2bLNS0TOH595tCoX5ph6jT5x3iQihaxdvUaQ9rzfLYBKIjp2QNPKWer8~fNuskhfm7zOqazBQP8j7JRupGO7lwLvhjEocM49jL6lQEMUXeAhuY9c7cF435AGHw8tgGdLs3ItUvBZEU9IOaGIsMJW6Cyu9CSRlvM9rONhq8dm5WnJnKWJeIKSLYorgA5KUFLpmC1HsKHy2eg0TuW6GGjnbDORDPmoWmdiUbcHA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1LxUolBY-IfTBjc0f8_L7T8fhDShCG4Op?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16607,7 +16894,10 @@
       "_internal": {
         "primer_uuid": "6a3f8b66-6e2f-46ac-9b5c-263ce28aa1a3",
         "has_conflict": false
-      }
+      },
+      "provenance": "Josefowitz (internal only)",
+      "physical_location": "Framed,\nCloset, B2",
+      "acquired_from": "Christie's 3/20/19, lot 710"
     },
     {
       "id": "kg-1672",
@@ -16668,7 +16958,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/23b2760c-7474-4d70-84c5-7f4955fb5981/Maharishi%20on%20a%20Terrace.jpg?Expires=1802811845&Signature=sgIIyNzrkMlVDfC0gKXKV8lTlrKh2nESYeFeDpmtIpS88M6XGHBLeRq6kamSO3Enke9WuPUd1RvQPRW5Xcpc8i~DM0LPwE21hW3A3tZZVbMsFQVZP~CaV3Cidf1fs9qQ5uqcYkl~--98VWCmxLqVK-xnW1pOPDMB5VgVlLGXxrxoYvbY-UkD8G~L5gqsaDl10zzniYhiRUVyyIWy5CwFwTwQdHXCk9LO0Y4GUcb60LCGHetKila31MGq7hg2zjk29mQn8usGjGEAxfG3aIhR04jWTdv4GrXLqBtGxALCSfLDzJ7IT8YEP-8A0K3sI5Sb3PsG8DygatFsNgPhIbt5NQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1P_PTAiTfJJquzKGD28c_mqd0SjCiId4Y?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16679,7 +16971,11 @@
       "_internal": {
         "primer_uuid": "23b2760c-7474-4d70-84c5-7f4955fb5981",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private American collection.",
+      "physical_location": "Framed,\nC2",
+      "acquired_from": "?",
+      "publications_and_exhibitions": "0"
     },
     {
       "id": "kg-1674",
@@ -16741,7 +17037,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b515a015-de33-4c20-9b40-66b076cb5240/Screenshot%202023-07-07%20at%201.19.40%20PM.jpg?Expires=1802811918&Signature=i2GkMmXaTh~EEM8V67mnnmbyKytEhshy-18aicHnjuCufoNXZTw94fiOvkzT-wq2AFh~YTl7ZfVhSaFZk-URUoVpt~qrFfUSOqx4ki32do4NGzzb~ejIdqakXlxpD7irtcctq-Us6c5Z~fhV56DFRtuLDXXyTK2F1YxVrLXs5bX9RCHyUdkMtkLbNrH0sZcJZGjzHSzOYClli3ndq7kKf4K5Sh24HGHveeMK1fDwcMGXq4TvcJwg9w4mEBTMWz~utSkoOB7twYNDEaMZFUoNvAzs8f7SQbhWtQhjy04MBZi4L2sXubvTwks9gUrvUF4WJiTRZtNhH33LBRRskyBWMA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1ldAhx8kuwxw9qUVd_9fVqAtt6EaWOBAk?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16753,7 +17051,10 @@
       "_internal": {
         "primer_uuid": "b515a015-de33-4c20-9b40-66b076cb5240",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private collection, Ohio.",
+      "physical_location": "closet,\nFramed B2",
+      "acquired_from": "?"
     },
     {
       "id": "kg-1676",
@@ -16778,7 +17079,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/41fd5685-856b-4a8c-8253-510a8fd6f479/Leaf%20from%20a%20Panchatantra%20Series.jpg?Expires=1802811808&Signature=qVD3byFDpYgGIzcT~4SjWt9bF25Qfcr4rG95LvRTR9B7Xv~PeV14uBoQQRECTe5lZ2KiM7z1PHS2fLVlwfp9nfFgLDJfvYtgvEgH96AveCUteyFt2X6x2u4Wzqh~8mhf79x-3uvnQEDYFPAeny3hF2yXeFEFhiqy7J3OR0YYweaAagzztoMM36~Wcd1ZkTs50I6SsdCBImTeBN2CMXQbfzz710Tzjh01occkQF76USqKFkutOMmOHhFQ1nN04xNkARBPMrrQLZO2eIWM-dhpjuef26A7ux-rPUjaMJo9hotS2p2XfaJ0cc6~rQoENDJowxN9xZfkYGW8CrPElNRNNw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1wHS5ZdGpTTD1Mwqnixgispq1FnUEDcF3?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16790,7 +17093,9 @@
       "_internal": {
         "primer_uuid": "41fd5685-856b-4a8c-8253-510a8fd6f479",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private collection.\nBonham's New York, 11 September 2012, lot 124.\nChristie's New York, 27 September 2017, lot 251.",
+      "physical_location": "Framed,\nA2"
     },
     {
       "id": "kg-1677",
@@ -16888,7 +17193,10 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b1fa5364-5b92-41b3-988c-746166ae7889/Rama%20and%20Lakshmana.jpg?Expires=1802811898&Signature=jf701KWpxNr-JgvINhzJ0qwLwH5-ccflmpulwv6gYRBidan83l8TRgztokgsMSNsBbilFJqbYqxVlMHpLgW59HnCRdAD07iHtcT7NLbEYodQiS4buUDrk5eM7sn8U1jkDSV-laYB7XkGpGevmd-0aEYwBqZgJAv~dgM9VO6fpnFLGTpD~979OcSt6U8khJw07q0q-mjUVDDxTGnUjxIUi2FFDSe0YkjRydPAcRnhTriqSu9xmSBLyGOkKxZGegnU0rASALGlhGyGFTqCNRcrKx8ETH18-7u2KMpVPTjJ1GSxZ~kDIum7bsgHEtPBK8o2~c0ctTqWmzQty~yuMCI3ZA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1xA7aMwDPri0QSveBOUbRvsbtGuV8b5pL?usp=sharing",
+          "drive.google.com/drive/folders/1SO5hr7x5blILHYjzwZy0EJIuksVU32Cr?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -16900,7 +17208,10 @@
       "_internal": {
         "primer_uuid": "b1fa5364-5b92-41b3-988c-746166ae7889",
         "has_conflict": false
-      }
+      },
+      "physical_location": "closet, cabinet",
+      "provenance": "Owner's father acquired them in the 1960's in India. They date back to the 1700's. He was a recognized collector from San Francisco. The family ran the Hale Bros Department Stores in SF, later became Carter, Hawley, Hale Stores..and later acquired a number of retail store chains including Nieman Marcus. He collected Monet, Manet, Morisot, Degas, Renoir, among others. There is a Renoir he donated to the Legion of Honor Museum in the SF Presidio. Do not know the exact date of the Stanford exhibition.",
+      "acquired_from": "?"
     },
     {
       "id": "kg-1680",
@@ -17012,7 +17323,10 @@
       "_internal": {
         "primer_uuid": "f3db9f8b-ccbd-4f9c-a1d9-0081cc2c02f5",
         "has_conflict": false
-      }
+      },
+      "provenance": "Royal Mandi Collection. The estate of Carol Summers (1925-2016).",
+      "physical_location": "Framed,\ngallery",
+      "acquired_from": "Christie's 3/20/19, lot 698"
     },
     {
       "id": "kg-1683",
@@ -17037,7 +17351,10 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/e01fd087-5576-4d40-bea6-c312905cb5b2/Woman%20with%20a%20Cat.jpg?Expires=1802811845&Signature=HjBiioIrAhw9QL5rPNU-yrvowtd8GEcEDoKTWrSZvX56uxOPZMDaHKv3GijeQjVK1wodcZsiFW0iXvptH8t~LDiLDfa0Kv6uRrk1INV~6-vXPjWfpmoJ06IfWao~3cJZHNPzqj6VD8zAbgi1T5Za-UUA1MBHN4n3Q70MS0pnOxSpTaMdbssqH6gzvLZs26Te5d0h9Ms3sb2z6NO2RRp6EKkRDjm4q5r2paMTWkYuBUdJ7IPzIf7urcfTWVUlHV4CXq3w4SJwoXz1fd-KsyX6TDb3YQsP9M93~oYkbbBuMe4ie8N7FKf41G1Xhd-tBGOPoyQwvmNsO-XrVqBGX1M9xw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1vjfOjWo5JevGOh6Dv6z1wZVjn15u3nhI?usp=sharing",
+          "drive.google.com/drive/folders/1gTfrdvChlK3ysJhUazqUJL3wvklsxOac?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17049,7 +17366,10 @@
       "_internal": {
         "primer_uuid": "e01fd087-5576-4d40-bea6-c312905cb5b2",
         "has_conflict": false
-      }
+      },
+      "provenance": "From a distinguished New York collection, acquired 1968.",
+      "physical_location": "B3",
+      "acquired_from": "Andy Schoelkopf"
     },
     {
       "id": "kg-1684",
@@ -17187,7 +17507,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/ae01fffe-816c-468a-a11a-bd3b95df316f/Demon%20Army.jpg?Expires=1802811886&Signature=n1aL2T3UQntiCGBLJyL5cApsL-~hfNMO0X5G2Dp8BO4kbbHImi28SqTRVK1pL2OpcNdjOnWHWzu5mU1gkw6kYmqc6B8usZFLFpjODLusyigA520yMVEC082vsaNipp4lhiFkENsiwVex8dNOGGNpAxm6Qj6Ei4DQuy~5Smk0b9a7JYd6pmznVR-V9OQSV1-aQ02T74ZokNITNqIqvtu~MwHkYkmrCz6cKjqezFyqG-jDAeYy-WuKp2VvLmi6Gnt9S-gZh-wikucWC4djjg-zuDNiobNeUmWOirqQmBMZRzwCFVbVNU2OF~qamiL6-U3ANx7~~2H7A56ZWFJD-879aA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1qU9qJBAu5bTdn2tIZmU94XZtzkLEl8fB?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17198,7 +17520,11 @@
       "_internal": {
         "primer_uuid": "ae01fffe-816c-468a-a11a-bd3b95df316f",
         "has_conflict": false
-      }
+      },
+      "provenance": "Bharany’s Gallery, 14 Sunder Nagar Market, New Delhi, India. \nPrivate collection, acquired from the above, 1978.",
+      "physical_location": "Drawer 14",
+      "acquired_from": "Freeman's auction",
+      "publications_and_exhibitions": "Exhibited:\nLycoming College Gallery; Williamsport Pennsylvania, 1981."
     },
     {
       "id": "kg-1688",
@@ -17297,7 +17623,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/5999e55a-5480-447d-b8d1-beb79e3ba03d/Screenshot%202025-01-21%20at%2012.08.19%E2%80%AFPM.png?Expires=1802812035&Signature=qf2Wxa6FpMHQzYARyMN1kFPaLLpf4hEASWwntBeW7l9wMFOkVuLTfZTFZgy6vMCyS5~m4ZD1EbnDDeYkbQAu6OprTacMahI64fP-d6BAVw28WWUdCAY65DpbAdTZXuv-bMYyiHAQVyazyahIfn89nJejUhmyE5UP47imawRIBvggkYWi3bFlVzeuoXiOicFNgwv40bI0TVTDhUY-biNWa13GPAZB4ECo40y77bm7QNBfHZm3WzekmHAxdYdhjtsuGNddiB47Uj5h4WeI-msmBlk7qwjJpf-3sU6O5XIfDCtP~NCYnYZJrCHzAv8J2QqzcaJ9xOS6vkR2zLD9gl5T2A__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1TraNXQ5yvtMIjOjC6krj8ZX4xL40lzHQ?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17308,7 +17636,11 @@
       "_internal": {
         "primer_uuid": "5999e55a-5480-447d-b8d1-beb79e3ba03d",
         "has_conflict": false
-      }
+      },
+      "provenance": "From the Collection of Asian Scholar Simon Digby",
+      "physical_location": "glass case",
+      "acquired_from": "John Suidmak, sold to Cecala, wife consigned to Kapoor",
+      "publications_and_exhibitions": "John Siudmak, Indian and Himalayan Sculpture and Thankas from the Collection of the Late Simon Digby, 2011, pp. 20-21, no. 9."
     },
     {
       "id": "kg-1691",
@@ -17371,7 +17703,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/596f0429-ca22-43c0-b96b-3e26adda87b0/Paithan%20Ramayana%20Compiled.jpg?Expires=1802811898&Signature=Pvky8PyaAZT3xvCEtxIK74Nj2S-4Lvo-DLMCE6ut3PAd7gNCziUzKnjiK0MNg2nb3rT~~MF4nmh8Yj4h1R~x0M7PBu4a2Jxq~twKi6BN8v7yCeXRKQJmln~JLJkWr242tRF0Eqg1elmgcTjwA5t4-3qidi70BhhdX9vDh861pVvqrkGmnPZbIA38jGQz8BEXHARlyg~lwgxKV00hc1i8R8TiPMsaPtW3l7-6~sBUSW5R0h6FSkfTV~y4e3Y8pxlScSvUz-IXQyJ7ckcVyHpFA75Tnja-PhDC5dvFCbDEIsI6bE3ecR2CCCv-ASALBfxZPsBscz6NsoJY8~FhXhgQgg__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/17OCh5jx-YG2khriZ4nAtfkdRy3D7sTX5?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17383,7 +17717,10 @@
       "_internal": {
         "primer_uuid": "596f0429-ca22-43c0-b96b-3e26adda87b0",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private collection, Ohio.",
+      "physical_location": "basement",
+      "acquired_from": "EBTH"
     },
     {
       "id": "kg-1693",
@@ -17516,7 +17853,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/19X-ghm2uErRzZd-WSRbjZCI5sWKmnoIK?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17526,7 +17865,10 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Koller Zurich, June 1978, lot 46.",
+      "physical_location": "gallery",
+      "publications_and_exhibitions": "Himalayan Art Resources item no. 36292"
     },
     {
       "id": "kg-1739",
@@ -17561,7 +17903,10 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "from the Uzes Collection (France) acquired in the 1950s",
+      "physical_location": "basement\nBC2",
+      "acquired_from": "Chris Barker"
     },
     {
       "id": "kg-1745",
@@ -17598,7 +17943,9 @@
         "primer_uuid": null,
         "has_conflict": false
       },
-      "artist": "Attributed to First Generation after Nainsukh"
+      "artist": "Attributed to First Generation after Nainsukh",
+      "provenance": "Francoise & Claude Bourelier, Paris",
+      "physical_location": "Consigned to Christies September 2021"
     },
     {
       "id": "kg-1746",
@@ -17660,7 +18007,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1j2lSHkOBgO6lQ7U0KX3ZaEN45M0Pyk0p?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17671,7 +18020,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "From a private European Collection.",
+      "acquired_from": "Bonhams 12/5/18, lot 27"
     },
     {
       "id": "kg-1751",
@@ -17769,7 +18120,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1IIkjenmbidAg9LxB-fXte7o5i64sD8qo?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17780,7 +18133,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Christie’s, London, 4 October 2012, lot 178.",
+      "physical_location": "Closet, C3"
     },
     {
       "id": "kg-1758",
@@ -17805,7 +18160,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1_eF0GPCj8XSkJ2BWRwr-SRi2Gqa9H29c?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17817,7 +18174,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Christie’s London, 4 October 2012, Lot 177.",
+      "physical_location": "Drawer 6"
     },
     {
       "id": "kg-1759",
@@ -17842,7 +18201,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/17QFbFw2TnUmpO7T1ohgGZjF4OtxtDWCh?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17854,7 +18215,8 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "physical_location": "RK apartment"
     },
     {
       "id": "kg-1760",
@@ -17916,7 +18278,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1SJLKVF5TycdLNWStEkTPLE6n4MsEl04B?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -17929,7 +18293,11 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Bharany's Gallery, 14 Sunder Nagar Market, New Delhi, India.\nAcquired from the above by the present owner 1978.",
+      "physical_location": "Drawer 8",
+      "acquired_from": "Freeman's 3/26/18, lot 203",
+      "publications_and_exhibitions": "Lycoming College Gallery; Williamsport Pennsylvania, 1981."
     },
     {
       "id": "kg-1763",
@@ -17990,7 +18358,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1sO6z7HDp_zyTbtwMoFx42g2bjFWEzH2_?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -18001,7 +18371,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Christies, London, 10 October 1989, lot 70.",
+      "physical_location": "AAL"
     },
     {
       "id": "kg-1765",
@@ -18026,7 +18398,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1RFzn21y4ANkUtqbxin9tL-qKWseCUbZP?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -18037,7 +18411,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Mandi Royal Collection, 1969.\nPrivate European Collection.",
+      "physical_location": "basement\nBB2"
     },
     {
       "id": "kg-1766",
@@ -18100,7 +18476,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1baCafAJqtWs8ipe7wJCzPosc8MLrNYv7?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -18111,7 +18489,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Acquired by Stanley A Kaplan, in India, during the 1940s-1950s.",
+      "physical_location": "RK apartment"
     },
     {
       "id": "kg-1768",
@@ -18211,7 +18591,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1e8eTFh-Q6GexPgXmFZM-LStNvef964nr?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -18223,7 +18605,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Collection of Dr. K. Aterman, acquired in London, 1950s-1960s.",
+      "physical_location": "RK apartment"
     },
     {
       "id": "kg-1773",
@@ -18296,7 +18680,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Collection of the late Pearl King (1918-2015).\nProbably acquired from Maggs Bros or Sotheby's London from the 1960’s onwards (based on communication).",
+      "physical_location": "Drawer 8"
     },
     {
       "id": "kg-1776",
@@ -18321,7 +18707,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1lnn9R-Gs8avLimpQT_uUbIVRT0Nv-ZOR?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -18333,7 +18721,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Forge Lynch will find invoice\n\nPrivate collection, Canada.",
+      "physical_location": "Framed,\nC2"
     },
     {
       "id": "kg-1777",
@@ -18395,7 +18785,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1vQ3WQ8_iiQF3nEOCKKooYV-uAABRKXS2?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -18407,7 +18799,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Private European Collection.",
+      "physical_location": "RK apartment"
     },
     {
       "id": "kg-1782",
@@ -18432,7 +18826,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1e8UHkojxPr2bGnstnwzlrCHsZmGGD--g?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -18444,7 +18840,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Koller Zurich, 30 October 20154, Lot 54.",
+      "physical_location": "closet,\nFramed\nB2"
     },
     {
       "id": "kg-1784",
@@ -18469,7 +18867,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1mD9uXX4smNcuEVXlk_nKrD0hx36KJdU5?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -18480,7 +18880,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Sotheby’s, New York, 19 September 2008, lot 222.",
+      "physical_location": "RK apartment"
     },
     {
       "id": "kg-1785",
@@ -18541,7 +18943,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1A5ejbe76dk2DEgrCA-Fzt4k-U0x63Kpm?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -18552,7 +18956,10 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "From a Private New York Collection.",
+      "physical_location": "z",
+      "acquired_from": "** need to add image in folder"
     },
     {
       "id": "kg-1824",
@@ -19563,7 +19970,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "physical_location": "18 1/2 x 13 1/4 in. (47 x 34 cm.)",
+      "acquired_from": "https://drive.google.com/drive/folders/1LPwyurUqZr_Mo9qlel2zeZWD7Bus8Sd7?usp=sharing"
     },
     {
       "id": "kg-2088",
@@ -19813,7 +20222,10 @@
         "primer_uuid": null,
         "has_conflict": false
       },
-      "artist": "Attributed to First Generation after Nainsukh and Manaku"
+      "artist": "Attributed to First Generation after Nainsukh and Manaku",
+      "provenance": "Collection of Dr Alma Latifi, CIE, OBE (1879-1959).\nSotheby’s New York, 5 December 1992, lot 163.\nChristie’s New York, 27 September 2023, lot 501.",
+      "acquired_from": "Christies",
+      "publications_and_exhibitions": "https://drive.google.com/drive/u/0/folders/1oh7B_EyCKy0jZ-DFZWx8hD_QNKXjYVE-"
     },
     {
       "id": "kg-2103",
@@ -19885,7 +20297,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Davidson",
+      "acquired_from": "Drawer 13"
     },
     {
       "id": "kg-2108",
@@ -20264,7 +20678,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1xA5PEAtcQ8PltpvXdhZSA0cxRqpM3KOx?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -20275,7 +20691,10 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Mandi Royal Collection. Private English Collection.",
+      "physical_location": "Gallery 4/28",
+      "acquired_from": "Christie's London, Arts of India: Heavenly Gods and Earthly Pleasures, 26 June 2020, lot 68"
     },
     {
       "id": "kg-2142",
@@ -20479,7 +20898,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/17ZAzyjY-soO5wR1t-1hF0Ew8t_V-pC5E?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -20489,7 +20910,8 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Sotheby’s Parke Bernet, New York, 30 June 1980, Lot 166.\nDoris Wiener, New York, 1981.\nBonhams, New York, 11 Sep 2012, lot 83.\nPrivate Collection, USA."
     },
     {
       "id": "kg-2148",
@@ -24949,7 +25371,8 @@
       "_internal": {
         "primer_uuid": "1f4202fd-d5b7-4de2-8770-b39d5db39c56",
         "has_conflict": false
-      }
+      },
+      "acquired_from": "https://drive.google.com/drive/folders/1KqJoVb5eaD_g_j9-otR304OzXFniEE3U?usp=sharing"
     },
     {
       "id": "kg-1095",
@@ -26666,7 +27089,9 @@
       "_internal": {
         "primer_uuid": "76236685-058b-4a61-a56f-8f067bb49d92",
         "has_conflict": false
-      }
+      },
+      "provenance": "Hindman",
+      "acquired_from": "Shelf above husky??"
     },
     {
       "id": "kg-1521",
@@ -27192,7 +27617,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/f4a39627-9f03-4f33-b079-59bd58919e2d/Konchog%20Bang%20recto.jpg?Expires=1802811621&Signature=uL2c3UnfFIkeJEzwkeTWzjix7vwtbV7Umunvz1cMfw7z3acVS1P4IUiS4wk0Br7tn9epvzImvFIous~kVGItJupQAkSIsWvGBMCza-6ENInDEqdQ5y31i6uBNyDo0NrJUv59Ee7DO9fJTv3iE03BrjYdfTth8uYMk7k5uSVoQmamQZ0FfsBDsN1fJuL3JlnI7pp4EYRRRsTumvcevRYSu~XWnNnikgqvj8OvprmAVwf1QqAYuw31FnHqKGtggb3ytS2ecBrabwYGKlw3K~R58DFD1RMPlUnc0pxPnqPW59GQi9srnD2XUnlFUPP53B7wp3BwFWxoW-31wRehm~lKug__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1JY-AsFMv4H-vFNBqn30guzW5SusUKMyl?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -27203,7 +27630,11 @@
       "_internal": {
         "primer_uuid": "f4a39627-9f03-4f33-b079-59bd58919e2d",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private UK Collection",
+      "physical_location": "storage, Crawford",
+      "acquired_from": "Sun Ming Collection",
+      "publications_and_exhibitions": "Himalayan Art Resources item no. 88593"
     },
     {
       "id": "kg-1664",
@@ -27300,7 +27731,10 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/60cfcafb-1446-482f-9679-aaf5aee270d1/Screenshot%202025-01-02%20at%201.19.34%E2%80%AFPM.png?Expires=1802812030&Signature=vFP8TUj26iJB3cPsKZLecNMxM7oBaY50MfDD8Pc940AJu~4w3HeZfzzAlLEKAabsUHn4gq0bUxczXlhTp0QcjS1oZdsHn6jqzF8c72SMN2T8FVyHOCPti0lfAgD8H6OuxeI41tm0JS2kPLFSMlalVjHAS~vrfQyQqIye2dIZwnPPCSj8YSV5Ydwt5fWldkE5dQG~2d8IsDB2lbmzgsHV-X-N9uzapVAMN-Um6cqmHfAT8IvyiwJ9yNeHBPYAaSRNgS6l8wet5M4Jxf47zvwG-fz0eu~YDxKY9jTY-6JGy8xiC6ra6zsZsKCOx~ukFoXwuTaTYdX1iBr44fkc1qpfbw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1nCYQ7fdj6f36fb3LT9lQb9q2BJxxNOVi?usp=sharing",
+          "drive.google.com/drive/folders/1NYJtFAUbMFKQzhnF86u545dmLxjwZBlc?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -27311,7 +27745,11 @@
       "_internal": {
         "primer_uuid": "60cfcafb-1446-482f-9679-aaf5aee270d1",
         "has_conflict": false
-      }
+      },
+      "provenance": "From a private North American Collection.",
+      "physical_location": "RK apartment",
+      "publications_and_exhibitions": "Himalayan Art Resources (himalayanart.org), item no. 8040.",
+      "acquired_from": "Han Hai then private watson hotel collection"
     },
     {
       "id": "kg-1669",
@@ -27372,7 +27810,10 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1bDa2xYmmtQwGuadlJ0D-o0N_oMPhw2cM?usp=sharing",
+          "drive.google.com/drive/folders/1S9j3ijgndNTTO5mjlXzE_5Jvu7eP9VjT?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -27384,7 +27825,11 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Bruce Miller, San Francisco, 9 June 1976.\nThe James and Marilynn Alsdorf Collection, Chicago.",
+      "physical_location": "basement\nBC2",
+      "acquired_from": "Chris Barker",
+      "publications_and_exhibitions": "HAR No. 8045"
     },
     {
       "id": "kg-1717",
@@ -27445,7 +27890,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1tmsJtDOZ0hAmpH6Rtu_JhRevof5cHT5q?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -27456,7 +27903,11 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Private New York collection, acquired in the 1960s, by repute. \nThence by descent.",
+      "physical_location": "gallery; gold frame",
+      "acquired_from": "Heritage 9/9-10/19, lot 78314",
+      "publications_and_exhibitions": "Himalayan Art Resources (himalayanart.org), item no. 7718."
     },
     {
       "id": "kg-1720",
@@ -27774,7 +28225,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1-hGipkfQ8lotBYlVme8ukvYvUshFztyJ?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -27785,7 +28238,8 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "physical_location": "Consigned to Christies September 2021"
     },
     {
       "id": "kg-1769",
@@ -27882,7 +28336,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1KI9yMttLKKVvHhtDOmTxdh5EsX63X-Ng?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -27893,7 +28349,8 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "physical_location": "office"
     },
     {
       "id": "kg-1778",
@@ -28028,7 +28485,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1P9300gXZZFOmD9_hBHWAzkIPdUtgSzzD?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -28040,7 +28499,8 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "physical_location": "RK apartment"
     },
     {
       "id": "kg-1794",
@@ -28076,7 +28536,10 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Toronto Collection, with Sipnk & Son, London, circa 1995.\nAcquired by the current owner from a public sale, Toronto, 10 June 2013.\nChristie's New York, 14 March 2017, lot 209.",
+      "physical_location": "closet, D3",
+      "publications_and_exhibitions": "Himalayan Art Resources (himalayanart.org), item no. 35867."
     },
     {
       "id": "kg-1802",
@@ -28299,7 +28762,10 @@
         "has_conflict": false
       },
       "provenance": "Provenance: Southern Alleghenies Museum of Art (SAMA). Exhibited: \"Mirrors of the Heart-Mind\" at SAMA in 1988. Published: Himalayan Art Resources (himalayanart.org), item no. 90527. www.kapoors.com | info@kapoors.com | (212) 888 - 2257 | 34 E 67th St, Floor 3, New York, NY, 10065",
-      "exhibitions": "KG_Art_of_the_Himalayas_Price_List"
+      "exhibitions": "KG_Art_of_the_Himalayas_Price_List",
+      "physical_location": "glass case",
+      "acquired_from": "Sotheby's New York, 22 September 2020, lot 316.",
+      "publications_and_exhibitions": "Himalayan Art Resources item no. 13749."
     },
     {
       "id": "kg-1814",
@@ -31453,7 +31919,10 @@
       "_internal": {
         "primer_uuid": "61f6f5fc-49b8-4df9-981b-528862a01378",
         "has_conflict": false
-      }
+      },
+      "provenance": "Davidson",
+      "physical_location": "NEEDED",
+      "acquired_from": "Shelf above Husky"
     },
     {
       "id": "kg-1573",
@@ -34020,7 +34489,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/0f3cd7f8-cad6-4422-85d6-9e59b5295384/201124_KapoorGalleries_0040.jpg?Expires=1802811753&Signature=zev6ZBrwFUnfEvGrlObu4MO2H0t0v87IYtHYyAgsiMcvi9Ll8cyvgpwq6XGNZU2b1~IB6Qto6UIqBCLFuxNpX1j4SeOSMCyT7OTON1eWQthnqSuO08EMwA5hztLq~AlWz5pP4g15sFbYD5h2l4JxNZKA4H6BtEpLKJBFPR9OW2cqHQ5~LaPhHc6g34yoL4qg5P~Q-DZw7PfOC28zLCFoyaOlIIcSpn5X5MEywwsu0wpcd8GprtqqqM5uHxgFz2aPtawL9W-F10kGQgC18YoTMOlRkqtXd2QLJuZaqOOsAqUQ-Qxnwi2zUmVZhm~jUNl3FhHTaoNWx2Dyi2GVgE63FQ__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1F_uDTlxYxGg0wU7dum8ZJfH6ZjNKDdV6?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -34031,7 +34502,9 @@
       "_internal": {
         "primer_uuid": "0f3cd7f8-cad6-4422-85d6-9e59b5295384",
         "has_conflict": false
-      }
+      },
+      "physical_location": "Closet, A2",
+      "acquired_from": "RAGO\n8/28/2018\nlot 126"
     },
     {
       "id": "kg-1374",
@@ -35618,7 +36091,9 @@
         "has_conflict": false
       },
       "materials": "Sandstone",
-      "signature": "No signature"
+      "signature": "No signature",
+      "provenance": "Consigned-in",
+      "acquired_from": "gallery"
     },
     {
       "id": "kg-1007",
@@ -35655,7 +36130,9 @@
         "has_conflict": false
       },
       "materials": "Stucco",
-      "signature": "No signature"
+      "signature": "No signature",
+      "provenance": "Consigned-in",
+      "acquired_from": "gallery"
     },
     {
       "id": "kg-1008",
@@ -35680,7 +36157,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/96a1f10f-3cb2-43f5-82d1-451c707a9565/Copy%20of%20220715_KapoorGalleries_0030-Pano.jpg?Expires=1802811608&Signature=YaHsTdKQuXpkT99g~XsjAfQh9SjzUwiQTsyyQy7biXDlYkK1QeD8np9NFOXdYYAm2tC5UAf8RlMO9qPwVKrAWBpzroBVzgav0yWeYhqzNUngLKVBEmvsnLxumkccF6eHSMF1ZPsiP4LcaxoeoQgbUp2NNf~fMlxvmEJs8l38F8mdiJrRfJQhTW-Tc0xpYDGFjtDImrg0xmMwzgUNNwZFIdDY~yK7OGf7JGMvouJxbYtpr9Is1GO1d5wnNFFkuJUrFcebEO9ZARk~2kkqZPnTLxWMzxSWa3LjEEuzWUEbRUZTcNR-q7R9xHVyNXRB0NyCqqy8r4fagupBAyIbkHYj2Q__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1sbU4ipJzxdn80imvJzKibsbkr_Xnvg1d?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -35692,7 +36171,11 @@
         "has_conflict": false
       },
       "materials": "Gray Schist",
-      "signature": "No signature"
+      "signature": "No signature",
+      "provenance": "Private Belgian collection, by inheritance, originally acquired by his father during a working stay in Pakistan in the 1960’",
+      "physical_location": "gallery",
+      "acquired_from": "German auction",
+      "publications_and_exhibitions": "Himalayan Art Resources (himalayanart.org), item no. 7774."
     },
     {
       "id": "kg-1009",
@@ -35841,7 +36324,9 @@
         "has_conflict": false
       },
       "materials": "Schist",
-      "signature": "No signature"
+      "signature": "No signature",
+      "provenance": "Consigned-in",
+      "acquired_from": "gallery"
     },
     {
       "id": "kg-1017",
@@ -35878,7 +36363,9 @@
         "primer_uuid": "a04272a6-45e1-407d-8af5-28e26e90b60e",
         "has_conflict": false
       },
-      "signature": "No signature"
+      "signature": "No signature",
+      "provenance": "Consigned-in",
+      "acquired_from": "glass cabinet"
     },
     {
       "id": "kg-1018",
@@ -35903,7 +36390,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1EhgcD9cxuOpEODKb8Fg1pAswIcn_-bFF?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -35916,7 +36405,9 @@
         "primer_uuid": null,
         "has_conflict": false
       },
-      "artist": "Jadunath Pal"
+      "artist": "Jadunath Pal",
+      "physical_location": "gallery",
+      "acquired_from": "John McInnis Auctioneers, 23 February 2021, lot #0601"
     },
     {
       "id": "kg-1032",
@@ -35952,7 +36443,8 @@
       "_internal": {
         "primer_uuid": "585f0504-d56f-4d0e-a575-b4b88cc4304c",
         "has_conflict": false
-      }
+      },
+      "provenance": "Consigned-in"
     },
     {
       "id": "kg-1033",
@@ -35977,7 +36469,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/7e654cb5-dd69-40d8-9dc2-fc0f88ae3bb9/Vajradhara%20A.jpg?Expires=1802811814&Signature=wEy7R3rFPPyxpAYfiXfbBra~05fOsoEfDlregly-a0b6~RmsBT4rjvrtHS4NgMdt6CbKUjSsQsu0Q-ZswE7IfZZTMNaCWbEQYMO0RBj0OSC6askgbdtCQ4ShdsJu4gi-hhI5xE2kNDM5pJRbJiMeQblSIp0I99ACzoDd2qA-dtoABBThY4qPQTRxBRg5a3qpkZlQZZ6helViz9STg3UEw1L0~-1UKxQPQWn9fKmFAeDfZyI8rEzm7u9EUHjFrEDQJWgqaOQz-TGg1BiQRV9I7EQEbNIjMCOJ8ivNhjHsR~RbZRDViN6NDXBvBjoVMzrj-eyORSiberAVdJ~U2Ouk9g__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1fxKH5FmOkZ_a42XVvCHa61ecbSEu3ES0?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -35988,7 +36482,10 @@
       "_internal": {
         "primer_uuid": "7e654cb5-dd69-40d8-9dc2-fc0f88ae3bb9",
         "has_conflict": false
-      }
+      },
+      "provenance": "The collection of Holger Rosell (1917–2009), Stockholm.\nThe collection of the National Museum Prins Eugens Waldemarsudde, Stockholm.\nUppsala Auktionskammare, 5 December 2014, lot 1001.",
+      "physical_location": "glass case",
+      "publications_and_exhibitions": "Himalayan Art Resources (himalayanart.org), item no. 8375."
     },
     {
       "id": "kg-1034",
@@ -36013,7 +36510,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/e0a89207-cd83-488f-a2ce-022793b8e90a/Vajravarahi%20B.jpg?Expires=1802811814&Signature=rqV3o8JMEyo4lDjj19BRK730aWBkh-lQvsukheTZEg6W5pN5-L5yx6SsAVNJUj~fT70lF6P4M81e5ctgPolyZ3IhvBR7hWKBu5~piKYyuydLArB98ybQPae2IQ9bJHLXbiGpPSMR2o7~gq9aXOQmZKOIY~0TtSsfAukFv4VGWukMADH11jrfjbU6cJ5~UMeEe1Hrf2BCYqw5e5dnUPMOkH8c4kaF2t7nLgir7YT-UT686NHWDbUz28TkhqOTw0sfYl1VOF5~C7agbDBRiHKhv23rAqfQJqXcifj9aDu3XFe7unS6vvCnagkEe9t3oInDqAHSmFBdjwHsl7ekHGkeQA__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1wLrkHjJJx0doGRUCIVfiIHl6yNUvpkYK?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -36024,7 +36523,10 @@
       "_internal": {
         "primer_uuid": "e0a89207-cd83-488f-a2ce-022793b8e90a",
         "has_conflict": false
-      }
+      },
+      "provenance": "Philip Goldman, London.\nHayward Gallery, London.",
+      "acquired_from": "Heritage Auctions, 22 September 2021, lot. 78288.",
+      "publications_and_exhibitions": "“Tantra,” Hayward Gallery, London, Art Council of Great Britain, 30 September–7 November 1971.\nP. Rawson, Tantra: Hayward Gallery, London, 1971, p. 31, no. 115.\nHAR no. 7547"
     },
     {
       "id": "kg-1061",
@@ -36049,7 +36551,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/41f6939f-a04e-4d76-95a9-5cb94e200875/Yaksha%20A.jpg?Expires=1802811840&Signature=KeeV-5LZJFFiLot2FKqjI6e48iFLlrqvgTYZCG5melGaBVTrOIA1tGRj3B3RGmw8KjRAXM0aFwZQxBYYzUz--r~TCSB88Pq1HpUZRXadOkPeUqpi1SqyjFqKb-GNj7lZppbXbaJ~3l8RQxnqwDFGrYjomIwN-9qBw53T0cs~FhV-9R~aIevy3iEzx1rAQOIjZaGnXZ8QMPbIaRQZxBOBPNIWJNUQBs2plNYBRSKHegTyVYnt~x00mCKkF9EK1mSsBBOmi0V6Y7op8n7sJHGJ~2x7lBopVyk2DB46DrY9-h9-dq7A-dUuHnPgj85jDpkhKausApEBmv3nYGEus-xezg__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1Q5-XDUdShUHARXxUQN-6to91Y7Yrv5Sl?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -36059,7 +36563,9 @@
       "_internal": {
         "primer_uuid": "41f6939f-a04e-4d76-95a9-5cb94e200875",
         "has_conflict": false
-      }
+      },
+      "provenance": "Sotheby’s, New York, 29 March 2006, lot 207",
+      "physical_location": "gallery"
     },
     {
       "id": "kg-1062",
@@ -36096,7 +36602,10 @@
       "_internal": {
         "primer_uuid": "5157887d-d4d1-4559-bd6b-780c81914459",
         "has_conflict": false
-      }
+      },
+      "provenance": "Provenance: \nEstate of Kelly Brook, acquired in India in the 1950s.\nGalleria Ethnologica, Forli, Italy, 2011.",
+      "physical_location": "Gallery",
+      "acquired_from": "Galleria Ethnologica, Forli, Italy, 2011"
     },
     {
       "id": "kg-1066",
@@ -36302,7 +36811,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b87c4105-414a-4214-acc1-a7984a82d0e5/AD_4nXemTckqGIi2MlEbWeRpBfYtBZN3LkXL2u_sKY5K6RjdBACDnfu32WWoYksov5556KfZAZXhNXwqw-VvDJB27m2xny1GMhA8uLjWDHTx-OQH8izOJ9sRlDEv.png?Expires=1802811922&Signature=Pp62pnm~wOPMyqyCxFXkatNawGTR3doHQvbixbnPkAGKXWsMTJFgNl1PFo7D6EkZ34HS~BOQu6krEy~nUBXPu1Fq-buKwH0O5iH6gDYpZ5HEIAomPaihrCpm~~qE-PULYUzuMmIudgDj8YGqMRc4w2Mu5tL8hICi0Xb9UQo5qH3H~O7Ro4a8TsVyQqulLXT~QzYrtZ~Su82WU7LitaAo4ak~qQoXOAmwWiPcrSrZZyEIAioZkPmFiDWJhKPHLHHrglxtq7wp~8m~KEoE6QmVsD4q2LhaHhTc2QOP0F7t3VZ2BeTC9QEw3VFwhIGIpnQIYyEi2L7TSCpZfC0JdqDKZw__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1o9RPnUbzFg1R1iZ5CYZljzQVeaI8cPyP"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -36313,7 +36824,10 @@
       "_internal": {
         "primer_uuid": "b87c4105-414a-4214-acc1-a7984a82d0e5",
         "has_conflict": false
-      }
+      },
+      "provenance": "An important Italian collection",
+      "physical_location": "RETURNED (NOT SOLD)\nRAMESH's",
+      "publications_and_exhibitions": "Art Loss No. S00156749"
     },
     {
       "id": "kg-1081",
@@ -36338,7 +36852,10 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/db555a06-894f-4983-a4ae-66b216a3aa0a/Vajrasattva%20A.jpg?Expires=1802811922&Signature=q6oKaPha1vg5RNt4yHFEIGfW9zXlBhQX-8Xp37ceuvFyz68IzPoUoNAnSvrNK05pYW3waw65EyAZ8rC1kpTLaShrg8TeLitFfgV73gZah0vQZAKsbvr8Js~yABvLZeAkrXqm7gKp6buekC9p3x4GcrDHEbgl4Y6p0jZhUdFsVSs7HcYELp9FD491Aw96-xE2Nbh1ZNsnX6B2jCpbDdaqt1hDnnMz60r6duV0TmYSsbenYuB9CxZViZqCrlZNDa0ZNErx36zQdeAh-7m2YcsPD37Nivx40uQjHi0mK5M7VGBmYOAiHpr4T~X6ghgo9DNmVx6PGTBmZfGhJqE7jPdE4g__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/182IgQleu9p-uBwTblK-dG23fWQYluRsR?usp=sharing",
+          "drive.google.com/drive/folders/1yc66Wcv1eJ8VPgi7JuTacu7XcypcxuRR?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -36349,7 +36866,11 @@
       "_internal": {
         "primer_uuid": "db555a06-894f-4983-a4ae-66b216a3aa0a",
         "has_conflict": false
-      }
+      },
+      "provenance": "Cees van der Plog, 1995, by repute. Bonham’s Hong Kong, 2 Oct 2018, lot 132.",
+      "physical_location": "gallery",
+      "acquired_from": "Bonham’s Hong Kong, 2 Oct 2018, lot 132.",
+      "publications_and_exhibitions": "Himalayan Art Resources (himalayanart.org), item no. 61643."
     },
     {
       "id": "kg-1084",
@@ -36386,7 +36907,10 @@
       "_internal": {
         "primer_uuid": "bb228bb5-91a4-439e-b8bf-33089cbae264",
         "has_conflict": false
-      }
+      },
+      "provenance": "Consigned-in",
+      "acquired_from": "Gallery",
+      "publications_and_exhibitions": "https://drive.google.com/drive/folders/1qNWDOHAnyOFZzvr0axsA9phz6FVcoX_a"
     },
     {
       "id": "kg-1085",
@@ -36422,7 +36946,10 @@
       "_internal": {
         "primer_uuid": "848b264a-49db-4ce5-89e6-216e055a55e1",
         "has_conflict": false
-      }
+      },
+      "provenance": "Consigned-in (Ghose)",
+      "acquired_from": "Gallery",
+      "publications_and_exhibitions": "https://drive.google.com/drive/u/0/folders/1TCzdkQ8_dwMOCYHkQEJ4xon5tYDf9Bt1"
     },
     {
       "id": "kg-1086",
@@ -36603,7 +37130,9 @@
       "_internal": {
         "primer_uuid": "dbf742e9-c92a-48b8-b954-9bb8577be3c8",
         "has_conflict": false
-      }
+      },
+      "provenance": "Private European Collection",
+      "publications_and_exhibitions": "HAR item no. 36297"
     },
     {
       "id": "kg-1091",
@@ -37030,7 +37559,9 @@
       },
       "image": {
         "primary": "https://data-us-east-1.primerws.com/kapoor_galleries/i/e37cd7a9-276e-473d-86d0-a5a331260394/200828_KapoorGalleries_Statues_0057.jpg?Expires=1802811925&Signature=fFyOs9QQmf-ycfI2j0nHq7N-cV-hSqdHtxWM~6mirhd3dNVrB55LBTipSa5Rh1emDfkwajcJdTKZSN0R7vwmwtHUGO4eRr9YWiqBRW-i7JU7615ut~BNjzM2T7UAcFoHPilWguixaYl1sIHzW3Ll8Ipux6~7H3Jy5wDK2mX7WcYnGe4VUVWUPVJxzRLiES5CbBCTbm0XykkJdczY-2HHoEQyuasBx2Vl7VgqhW5jCQzOGBTxgEKvm-ZULO1m6TupTnIkh9EgqZ6oC9R4h5Xjw1vEq~LHUPcr6fUfhs4BtWRojH-FwIJh2EW2Pp4wxfwnK1KouCqXX9vt~DYHS-8R6g__&Key-Pair-Id=K2SVGVHI7PEVAH",
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1mgrDYrTaq7U8odMn1o52WlSxMxK2nK1w?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -37042,7 +37573,9 @@
       "_internal": {
         "primer_uuid": "e37cd7a9-276e-473d-86d0-a5a331260394",
         "has_conflict": false
-      }
+      },
+      "physical_location": "glass case",
+      "publications_and_exhibitions": "HAR item no. 7628"
     },
     {
       "id": "kg-1641",
@@ -37551,7 +38084,11 @@
       "_internal": {
         "primer_uuid": "eea75ac3-17de-4def-8d59-b8aedcdd1d60",
         "has_conflict": false
-      }
+      },
+      "provenance": "Henri and Dolores Kamer, New York\nPrivate Collection, USA, acquired from the above in the early 1990s",
+      "physical_location": "gallery",
+      "acquired_from": "Bonhams New York, 23 Sept 2020, lot. 629.",
+      "publications_and_exhibitions": "Himalayan Art Resources item no. 16809"
     },
     {
       "id": "kg-1696",
@@ -37867,7 +38404,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1Y73IuiPyA5z-bn9NRhA_bGWVtc8usNoc?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -37879,7 +38418,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Provenance:\nFrom a private American Collection",
+      "publications_and_exhibitions": "HAR item no. 8022"
     },
     {
       "id": "kg-1705",
@@ -37976,7 +38517,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1G6ZDWtpldhna4MSqVZQL3zezlh9f3aZu?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -37988,7 +38531,10 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Private Florida Collection, acquired 1965-67.\nBonham’s San Francisco, 17 December 2018, lot 340.",
+      "physical_location": "glass case",
+      "acquired_from": "Bonham’s San Francisco, 17 December 2018, lot 340\nhttps://www.bonhams.com/auctions/24948/lot/340/"
     },
     {
       "id": "kg-1709",
@@ -38050,7 +38596,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1wOT_Tgzv5vY5mNmH_0ZFBxWgpvxvxona?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -38061,7 +38609,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Art & Textiles of the Islamic & Indian Worlds Including Works from the Collection of the Late SImon Digby; Christie’s South Kensington, 7 October 2011, Lot 313(1)",
+      "physical_location": "gallery"
     },
     {
       "id": "kg-1711",
@@ -38122,7 +38672,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1Pbujd6Agj9XhP81BDeyrlxsjkwH_u-il?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -38133,7 +38685,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Private collection, acquired in 1990s \nChristie’s New York, September 21, 2005, lot 63",
+      "physical_location": "stairway"
     },
     {
       "id": "kg-1713",
@@ -38158,7 +38712,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1iyewqOb5jW2tPmiF1vtxCtizN3_MIBzj?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -38169,7 +38725,10 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Sotheby's New York, 27 March 1991, lot 103.",
+      "physical_location": "glass case",
+      "publications_and_exhibitions": "Himalayan Art Resources (himalayanart.org), item no. 7771."
     },
     {
       "id": "kg-1714",
@@ -38229,7 +38788,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1DnmQVOBukek6Pli1hx7TBXjjbjQX2_UC?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -38240,7 +38801,11 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Private collection, New York.",
+      "acquired_from": "Bidsquare?",
+      "physical_location": "with Fritz Mang (conservator) as of 1/13",
+      "publications_and_exhibitions": "Himalayan Art Resources (himalayanart.org), item no. 7770."
     },
     {
       "id": "kg-1719",
@@ -38444,7 +39009,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1YGP6J0y7BUk8Uipq9oO11T32ixYqLRap?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -38456,7 +39023,10 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Private Polish collection.",
+      "physical_location": "RK apartment",
+      "publications_and_exhibitions": "Himalayan Art Resources (himalayanart.org), item no. 8021."
     },
     {
       "id": "kg-1729",
@@ -38591,7 +39161,9 @@
       },
       "image": {
         "primary": null,
-        "alternates": [],
+        "alternates": [
+          "drive.google.com/drive/folders/1ikTsc0IqPg8xs3166cJprhG0MKLitAft?usp=sharing"
+        ],
         "thumbnail": null
       },
       "tags": [
@@ -38602,7 +39174,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "From a private European collection, acquired in the 1980’s-1990’s",
+      "physical_location": "STOLEN BY RAMESH"
     },
     {
       "id": "kg-1734",
@@ -43083,7 +43657,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Consigned-in",
+      "acquired_from": "gallery"
     },
     {
       "id": "kg-2025",
@@ -44113,7 +44689,9 @@
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
-      }
+      },
+      "provenance": "Christies",
+      "acquired_from": "With Christies"
     },
     {
       "id": "kg-2112",

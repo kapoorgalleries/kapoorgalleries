@@ -1,0 +1,230 @@
+kg_id,match_score,external_title,decision
+KG-2098,100,Bharany Ramayana,"merged: provenance,acquired_from,publications_and_exhibitions"
+KG-1397,100,"Draupadi and her five husbands leave after visiting a prince,
+Illustration from ","merged: provenance,acquired_from,publications_and_exhibitions"
+KG-1013,100,Illustration from the Bhagavata Purana: Shishupal and his Retinue,"merged: provenance,acquired_from"
+KG-1036,100,"Illustration to the ‘Large’ Guler-Basohli Bhagavata Purana: 
+The Liberation of N","merged: provenance,physical_location"
+KG-1515,100,"An illustration from a Kirata Arjuniya series , circa 1820
+Kirata Arjuniya",merged: provenance
+KG-1716,100,A bronze figure of Jambhala,"merged: provenance,acquired_from"
+KG-2101,100,"A Pair of Carved, silvered  and painted horses","merged: provenance,acquired_from"
+KG-1242,100,"Hand colored, gelatin Portrait of Maharaja of Jaipur","merged: provenance,physical_location,acquired_from"
+KG-2105,100,Hunting Party Miniature,"merged: provenance,acquired_from"
+KG-1513,100,A Tibetan Thangka depicting Saddha,"merged: provenance,acquired_from"
+,0,"Yoshida Hiroshi Taj Mahal in the morning, signed in ink Yoshida, in pencil in Ro",no match >= threshold
+,0,Yoshida Hiroshi Afghanistan day woodblock,no match >= threshold
+,0,Yoshida Hiroshi Taj Mahal in the evening,no match >= threshold
+,0,Yoshida Hiroshi Afghanistan evening woodblock,no match >= threshold
+KG-1023,100,Kakubha Ragini,"merged: provenance,physical_location,acquired_from"
+KG-1021,100,Bhim Singh with attendants,"merged: provenance,physical_location"
+KG-1006,100,A Buff Sandstone Torso of  Vishnu,"merged: provenance,acquired_from"
+KG-2024,100,A gray schist head of Boddhisattva,"merged: provenance,acquired_from"
+KG-1007,100,A stucco hand of Buddha,"merged: provenance,acquired_from"
+KG-1016,96,A Grey Schist Figure of a seated Boddhisattva,"merged: provenance,acquired_from"
+,0,A gray schist frieze with three  Boddhisattva,no match >= threshold
+KG-1017,100,A Green Schist Figure of a Standing Attendant,"merged: provenance,acquired_from"
+KG-1032,90,Panchamukhilingam,merged: provenance
+KG-1085,96,A sandstone Chaturmukhilingam,"merged: provenance,acquired_from,publications_and_exhibitions"
+KG-1084,100,A black stone bust of Buddha,"merged: provenance,acquired_from,publications_and_exhibitions"
+KG-1001,100,A painting of a composite horse and rider,"merged: acquired_from,publications_and_exhibitions"
+KG-1315,100,Inebriated ascetics,"merged: acquired_from,publications_and_exhibitions"
+KG-1003,100,Ganesha,"merged: physical_location,acquired_from,publications_and_exhibitions"
+KG-1794,100,Mahakala Shadbhuja,"merged: provenance,physical_location,publications_and_exhibitions"
+KG-1670,100,Chakrasamvara and Vajrayogini,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions"
+KG-1739,100,Chakrasamvara,"merged: provenance,physical_location,acquired_from"
+KG-1523,100,Illustration to the Devi Mahatmya: Kali Withdraws from Vishnu,"merged: provenance,physical_location"
+KG-1396,100,Kali Trampling Shiva,"merged: provenance,physical_location,acquired_from"
+KG-1511,100,Chinnamasta,"merged: provenance,physical_location,acquired_from"
+KG-1631,100,Lalita Maha Tripura Sundari,"merged: provenance,physical_location,acquired_from"
+KG-1062,100,Uma (Parvati),"merged: provenance,physical_location,acquired_from"
+KG-1069,100,A Ram’s Head Shamshir,"merged: provenance,physical_location,acquired_from"
+KG-1060,100,Krishna with Female Attendants,"merged: provenance,physical_location"
+KG-1745,100,Leaf from a Gita Govinda series: Radha Vents her Frustrations,"merged: provenance,physical_location"
+KG-1715,100,Buddha Shakyamuni,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions"
+KG-1008,100,Bodhisattva,"merged: provenance,physical_location,acquired_from"
+KG-1813,100,Tara,"merged: physical_location,acquired_from,publications_and_exhibitions"
+KG-1061,100,Yaksha,"merged: provenance,physical_location"
+KG-1715,100,Buddha Shakyamuni,"merged: physical_location,publications_and_exhibitions"
+KG-1775,100,"An illustration to a Rasikapriya series:
+Radha, seated in a pavilion, visited by","merged: provenance,physical_location"
+KG-1615,100,Illustration from the Ramayana,"merged: provenance,physical_location,acquired_from"
+KG-1100,100,Illustration to the Ramayana: Rama and Sita Enthroned,merged: physical_location
+KG-1639,100,A leaf from the ‘Second’ Guler Ramayana series: Rama and His Allies Take Counsel,"merged: provenance,physical_location,acquired_from"
+KG-1639,100,Two illustrations from the Ramayana: Sita in Ravana’s Palace,"merged: physical_location,acquired_from,publications_and_exhibitions"
+KG-1023,100,Illustration to a Ragamala series: Kakubha Ragini,merged: provenance
+KG-1023,100,Illustration to a Ragamala Series: Kakubha Ragini,"merged: physical_location,acquired_from"
+KG-1077,100,A Prince with a Falcon,"merged: provenance,physical_location,acquired_from"
+KG-1682,100,"Shiva as Tripurantaka, The Destroyer of Tripura","merged: provenance,physical_location,acquired_from"
+KG-1033,100,vajradhara,"merged: provenance,physical_location,publications_and_exhibitions"
+KG-1081,100,Vajrasattva,"merged: provenance,physical_location"
+KG-1738,100,Arhat Kanakavatsa,"merged: provenance,physical_location,publications_and_exhibitions"
+KG-1667,100,Vajrapani,"merged: provenance,physical_location,publications_and_exhibitions"
+KG-1667,100,"Vajrapani, Hayagriva, Garuda combined","merged: physical_location,acquired_from,publications_and_exhibitions"
+KG-1725,100,Amitayus,"merged: provenance,physical_location,publications_and_exhibitions"
+KG-1090,100,Maitreya,"merged: provenance,publications_and_exhibitions"
+KG-1002,100,Folio from an Usha-Aniruddha romance series: Chitralekha visits Aniruddha in Dwa,"merged: provenance,physical_location"
+KG-1308,100,A princess enjoying paan on a terrace,"merged: provenance,physical_location"
+KG-1290,100,Koftgari talwar,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1031,100,Painted saddle,"merged: physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1034,100,vajravarahi,"merged: provenance,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1018,100,Indian clay figures,"merged: physical_location,acquired_from,image.alternates"
+KG-1218,100,illustration of bladesmith,"merged: physical_location,image.alternates"
+KG-1247,100,Two architectural drawings of the tombs of Shah Jahan and Mumtaz Mahal,"merged: physical_location,image.alternates"
+KG-1298,100,Illustration to a Ragamala series: Todi Ragini,"merged: provenance,physical_location,image.alternates"
+KG-1298,100,Illustration to a Ragamala series: Todi Ragini,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1300,100,Illustration to a Ragamala series: Gujari Ragini,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1302,100,Angels dance and fly,"merged: physical_location,image.alternates"
+KG-1304,100,Lakshmi-Narayana enthroned,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1307,100,A nayika preparing to meet her beloved,"merged: provenance,physical_location,image.alternates"
+KG-1309,100,Illustration to a Ragamala series: Tilangi Ragini,"merged: provenance,physical_location,image.alternates"
+KG-1310,100,Illustration to a Ragamala series: Srihathi Ragini,"merged: provenance,physical_location,image.alternates"
+KG-1037,100,"Illustration to the ‘Large’ Guler-Basohli Bhagavata Purana:
+Satadhanva, Akrura, ","merged: physical_location,acquired_from,image.alternates"
+KG-1038,100,Sambara and Rati,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1679,100,Illustration to the Ramayana: Vasishtha Teaches Rama and Lakshmana,"merged: physical_location,image.alternates"
+KG-1314,100,Illustration to the Ramayana: Rishi Vishvamitra Visits King Dasharatha,"merged: physical_location,image.alternates"
+KG-1094,100,Illustration from a Kama Sutra series,merged: acquired_from
+KG-1094,100,Illustration from a Kama Sutra series,merged: acquired_from
+KG-1094,100,Illustration from a Kama Sutra series,merged: acquired_from
+KG-1094,100,Illustration from a Kama Sutra series,merged: acquired_from
+KG-1094,100,Illustration from a Kama Sutra series,merged: acquired_from
+KG-1094,100,Illustration from a Kama Sutra series,merged: acquired_from
+KG-1185,100,Sansar Chand's Marriage Procession,merged: acquired_from
+KG-1101,100,Illustration to a Rasikapriya series: Vihit Hava?,merged: acquired_from
+KG-1154,100,couple,merged: acquired_from
+KG-1243,100,Raja smoking hookah,"merged: physical_location,acquired_from"
+KG-1102,100,Sidh Sen,merged: acquired_from
+KG-1004,100,Shiva and Parvati on Mount Kailasa,"merged: physical_location,acquired_from"
+KG-1106,100,Kamrup and friends at sea from an Urdu version of the Qissa-i Kamrup va Kamlata,merged: physical_location
+KG-1107,100,The Shipwreck of Kamrup's Vessel from an Urdu version of the Qissa-i Kamrup va K,"merged: physical_location,acquired_from"
+KG-1108,97,Manjnun in the Wilderness,"merged: physical_location,acquired_from"
+KG-1110,100,A Prince and His Consort Strolling In a Garden,"merged: physical_location,acquired_from"
+KG-1021,100,Bhim Singh with attendants,"merged: physical_location,acquired_from"
+KG-1022,100,Krishna Playing the Flute with Gopis,"merged: physical_location,acquired_from"
+,0,Leaf from the Kalpsutra,no match >= threshold
+KG-1003,100,Ganesha,"merged: provenance,physical_location,image.alternates"
+KG-1004,100,Shiva and Parvati,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1627,100,Matrika Lotus Mandala,"merged: physical_location,publications_and_exhibitions,image.alternates"
+KG-2139,100,Illustration to a Rasikapriya Series: Krishna and Radha at a Jarokha window,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1063,100,Illustration to a Rasikapriya Series: Radha seated with a confidant in a pavilio,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1064,100,Illustration to a Rasikapriya Series: An older Sakhi comforts a forlorn Radha,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1633,100,Illustration to a Rasikapriya Series: Krishna Enthroned,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1065,100,Illustration to a Rasikapriya series: Krishna seated with Radha,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1634,100,Illustration to a Rasikapriya series: Krishna conversing with a Sakhi,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1635,100,A Nayika Writing a Note,"merged: physical_location,image.alternates"
+KG-1636,100,Maiden with Mirror,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1100,100,Rama,"merged: provenance,physical_location,image.alternates"
+KG-1644,100,Lord Kubera,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1646,100,"Leaf from a Panch Kalyanaka of 
+Rishabhanatha series:
+ Prince Shreyans Achieves ","merged: physical_location,image.alternates"
+KG-1648,100,Illustration to the Ashta Nayika: Abhisandhita Nayika,"merged: provenance,physical_location,image.alternates"
+KG-1003,100,Ganesha Enthroned,"merged: physical_location,image.alternates"
+KG-1002,100,Folio from an Usha-Aniruddha romance series: Chitralekha visits Aniruddha in Dwa,"merged: physical_location,image.alternates"
+KG-1187,100,Seated Nobleman on a Terrace,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1276,100,Women in the Zenana,"merged: provenance,physical_location,image.alternates"
+KG-1067,100,Aurangzeb in Court,"merged: physical_location,image.alternates"
+KG-1068,100,Baz Bahadur and Rupmati Riding at Night,"merged: provenance,physical_location,publications_and_exhibitions,image.alternates"
+KG-1164,100,Maharaja Abhai Singh Receiving Thakur Bhandari Girdhar Das,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1119,100,Rao Bishan Singh Watching an Elephant Fight,"merged: provenance,physical_location,image.alternates"
+KG-1070,100,A Maiden Approaches a Nobleman,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1247,100,Shah Jahan at a Jarokha Window,"merged: physical_location,publications_and_exhibitions,image.alternates"
+KG-1373,100,Print from the India and Southeast Asia series: “Taj Mahal No. 1”,"merged: physical_location,acquired_from,image.alternates"
+KG-1072,100,Pietra-Dura inlaid marble games table,"merged: provenance,physical_location,image.alternates"
+KG-1075,100,Five-pointed spear,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1663,100,Konchog Bang,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1671,100,Brahma with Devotees,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1673,100,A Maharishi on a Terrace,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1675,100,Narasimha Disemboweling Hiranyakashipu,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1076,100,Illustration to a Rasikapriya series: Beauty of Radha,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1676,100,A leaf from a Panchatantra Series (or ‘Panchakhyana’ Series),"merged: provenance,physical_location,image.alternates"
+KG-1423,100,An illustration to a Ragamala Series: Nat Ragini,"merged: provenance,physical_location,image.alternates"
+KG-1679,100,An illustration to the Ramayana: Rama and Lakshmana,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1078,100,A Raja and His Courtiers Playing Chaupar,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1683,100,A portrait of a woman with a cat,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1116,100,Maharaja Vijay Singh of Marwar,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1174,100,A commemorative portrait of Maharaja Rai Singh,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1687,100,An illustration to the Devi Mahatmya: The Demon Army,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1614,100,A leaf from the Devi Mahatmya: Homage of the Gods,"merged: provenance,physical_location,image.alternates"
+KG-1127,100,An equestrian portrait of Maharana Bhim Singh of Mewar,"merged: provenance,physical_location,publications_and_exhibitions,image.alternates"
+KG-1272,100,Portrait of the Master Sufi Al-Shaykh Abd Al-Qadir Al-jaylani,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1692,100,Two Paithan paintings illustrating the Ramayana,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1008,100,A gray schist head of a bodhisattva,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+,0,Ardoksho,no match >= threshold
+KG-1061,100,Yaksha,"merged: physical_location,image.alternates"
+KG-1690,100,A silver-inlaid bronze figure of Ganesha,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1080,98,A bronze figure of Sambandhar,"merged: provenance,physical_location,publications_and_exhibitions,image.alternates"
+KG-1708,100,A bronze figure of Parvati,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1710,100,A bronze shrine of Tirthankara Anantanatha,"merged: provenance,physical_location,image.alternates"
+KG-1713,100,A gilt-bronze figure of Kala Bhairava,"merged: provenance,physical_location,publications_and_exhibitions,image.alternates"
+KG-1667,100,A silver figure of Vajrapani,"merged: physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1715,100,Buddha Shakyamuni and the Thirty-five Buddhas of Confession,"merged: physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1716,100,A bronze figure of Kala Jambhala,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1081,100,A small bronze figure of Vajrasattva,"merged: physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1718,100,Abhayakaragupta,"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1667,100,Vajrapani,"merged: physical_location,publications_and_exhibitions,image.alternates"
+KG-1725,100,Amitayus,"merged: physical_location,publications_and_exhibitions,image.alternates"
+KG-1033,100,Vajradhara,"merged: provenance,physical_location,publications_and_exhibitions,image.alternates"
+KG-1090,100,Maitreya,merged: publications_and_exhibitions
+KG-1081,100,Vajrasattva,"merged: physical_location,image.alternates"
+KG-1704,100,Avalokiteshvara,"merged: provenance,publications_and_exhibitions,image.alternates"
+KG-1733,100,Pala Padmapani,"merged: provenance,physical_location,image.alternates"
+KG-1715,100,Shakyamuni,"merged: physical_location,publications_and_exhibitions,image.alternates"
+KG-1738,100,The Elder Arhat Kanakavatsa,"merged: physical_location,image.alternates"
+KG-1712,100,Figure of Nandi,"merged: provenance,physical_location,image.alternates"
+KG-1036,100,"Illustration to the ‘Large’ Guler-Basohli Bhagavata Purana: 
+The Liberation of N","merged: physical_location,image.alternates"
+KG-1683,100,Portrait of a Woman with a Cat,"merged: physical_location,image.alternates"
+KG-1748,100,"Two preparatory drawings, depicting an extensive battle scene, and a ploughing c","merged: provenance,acquired_from,image.alternates"
+KG-2086,100,"An Illustration To A Mahabharata Series:
+Vidura confers with Dhritharashtra
+Attr","merged: physical_location,acquired_from"
+KG-1397,100,"Leaf from the Bhagavata Purana: The Story of Creation
+Varaha, the Boar Incarnati","merged: provenance,physical_location,acquired_from,image.alternates"
+KG-2147,96,Illustration to the Rasamanjari of Bhanu Dutta: The Intoxicated Courtesan,"merged: provenance,image.alternates"
+KG-1438,100,A leaf from the Shahnameh,"merged: provenance,physical_location,image.alternates"
+KG-1757,100,Drunken Prince Led to Bed,"merged: provenance,physical_location,image.alternates"
+KG-1758,100,A Leaf from the Madhavanala Kamakandla,"merged: provenance,physical_location,image.alternates"
+KG-1759,100,Bhagavata Purana: The Pandavas and Krishna Bathe in the Jamuna,"merged: physical_location,image.alternates"
+KG-1397,100,An Illustration from the Bhagavata Purana: Krishna Slaying the Bull Demon (Arish,"merged: provenance,physical_location,image.alternates"
+KG-1761,100,Blind Mans Buff,"merged: physical_location,image.alternates"
+KG-1762,100,Leaf from the Devi Mahatmya: Durga in a Battle Against a Demon (Nishumbha),"merged: provenance,physical_location,acquired_from,publications_and_exhibitions,image.alternates"
+KG-1764,100,Illustration to the Devi Mahatmya: The Beauty of Ambika,"merged: provenance,physical_location,image.alternates"
+KG-1765,100,An Illustration to the Markandeya Purana: Ambika Reduces Dhumralochana to Ashes,"merged: provenance,physical_location,image.alternates"
+KG-1523,100,Sajnu Kali,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1767,100,Illustration to a Harivamsa Series: Narada Warns Kamsa,"merged: provenance,physical_location,image.alternates"
+KG-1397,100,Leaf from the Bhagavata Purana Depicting Vishnu and Garuda: The Liberation of Ga,"merged: physical_location,image.alternates"
+,0,A Leaf from the Hamir Hath,no match >= threshold
+KG-1100,100,Rama and Sita Enthroned,"merged: provenance,image.alternates"
+KG-1772,98,Rada and Krishna watching Nautch,"merged: provenance,physical_location,image.alternates"
+KG-1774,100,Love-Lorn Lady,"merged: physical_location,image.alternates"
+KG-1776,100,Lakshmi massaging the foot of Vishnu,"merged: provenance,physical_location,image.alternates"
+KG-1779,100,Krishna shares a drink with Radha,"merged: provenance,physical_location,image.alternates"
+KG-1311,100,Krishna & Radha / Illustration to a Baramasa Series: The Month of Pausha (Mid De,"merged: physical_location,image.alternates"
+KG-1782,100,Krishna Paying Homage to Radha,"merged: provenance,physical_location,image.alternates"
+KG-1783,100,Krishna on the Road to Kundinapura: A folio from a Rukmini Harana Series,"merged: physical_location,image.alternates"
+KG-1784,100,The Elephant Meghabaran Goes on a Rampage,"merged: provenance,physical_location,image.alternates"
+KG-1786,100,Women at a Water Well,"merged: provenance,physical_location,acquired_from,image.alternates"
+KG-1121,100,Maharao Ram Singh of Bundi Holding a Blossom,matched-but-nothing-new
+KG-1030,100,Maharao Ram Singh II of Kotah & Maharao Ram Singh of Bundi,matched-but-nothing-new
+KG-1124,100,Maharao Ram Singh II Taming a Black Buck,matched-but-nothing-new
+KG-1026,100,Maharana Ari Singh Riding in a Procession to Jagan Nath,matched-but-nothing-new
+KG-1140,100,A Portrait of the Stallion Sitaraj,matched-but-nothing-new
+KG-1142,100,Maharana Bhim Singh Riding a Caparisoned Elephant,matched-but-nothing-new
+KG-1078,100,A Raja and His Courtiers Playing Chaupar,matched-but-nothing-new
+KG-1203,100,Portrait of Mian Avalia,matched-but-nothing-new
+KG-1204,100,Portrait of Tholu Sanyal,matched-but-nothing-new
+KG-1134,100,Prince Thata Singh in a Hunting Procession,matched-but-nothing-new
+KG-1207,100,Maharaja Kailash Pal of Nurpur,matched-but-nothing-new
+KG-1198,100,Dev Singh of Mandi,matched-but-nothing-new
+KG-1067,100,Aurangzeb in Court,matched-but-nothing-new
+KG-1247,100,Shah Jahan at a Jarokha Window,matched-but-nothing-new
+KG-1250,100,Khalifah Sayyid Ahmad Lies Dead,matched-but-nothing-new
+KG-1189,100,A Nobleman Holding a Hunting Falcon,matched-but-nothing-new
+KG-1681,100,A Portrait of Mian Hadala Pal,matched-but-nothing-new
+KG-1190,100,Raja Prakash Chand of Guler Smoking (Check inscription),matched-but-nothing-new
+KG-1933,100,Sayyid Hussein Ali (Firoz Jang) Speaking to Courtiers,matched-but-nothing-new
+KG-1211,100,Sayyid Hasan Ali Receives a Minister,matched-but-nothing-new
+KG-1179,100,A Maiden with an Open Book,matched-but-nothing-new
+KG-1193,100,A Shaivite Yogi Plucks a Veena,matched-but-nothing-new

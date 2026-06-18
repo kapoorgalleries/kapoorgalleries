@@ -19,6 +19,12 @@ data/raw/*
 # Keep the 1 MB Artsy CSV committed so CI can rebuild master.csv on every push.
 !data/raw/Artsy_2-16-2026.csv
 !data/raw/.gitkeep
+# 113 KB Masterworks & Museum Accessions Sheet export — drives the website
+# /masterworks page.  Re-export from Drive Sheet 17jK96JKxAmH... when stale.
+!data/raw/masterworks_and_museum_accessions.csv
+# 67 KB first-tab export of the master Catalog & Inventory Sheet — drives
+# the website-feed enrichment (provenance/location/literature merge).
+!data/raw/catalog_and_inventory_tab1.csv
 # Small Match Workbook fixture (KG-1000..KG-1015) for CI verification.
 !data/raw/match_workbook_summary_kg1000_1099.xlsx
 # 27 KB year-grouped 2024 catalog — small enough to commit, parser TBD.
