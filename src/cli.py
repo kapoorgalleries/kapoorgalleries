@@ -13,7 +13,7 @@ from . import consolidate as consolidate_mod
 from . import reports
 from .exporters import (
     artsy_upload_csv, conflicts_csv, gaps_csv, master_csv, master_json,
-    primer_corrections_csv, provenance_csv,
+    primer_corrections_csv, provenance_csv, website_inventory,
 )
 from .normalize import INTERNAL_PLACEHOLDER_TITLES
 
@@ -430,6 +430,9 @@ def report(db_path: str):
     _, n_photo_ready = reports.photo_queue_report(
         db, "reports/photo_queue.md", "data/photo_queue.csv",
     )
+    _, n_web = website_inventory.export_website_inventory(
+        db, "data/website_inventory.json",
+    )
     click.echo(f"master.csv: {n} rows")
     click.echo(f"conflicts.csv: {nc} rows")
     click.echo(f"gaps.csv: {ng} rows")
@@ -438,6 +441,7 @@ def report(db_path: str):
     click.echo(f"primer_corrections.csv: {npc} rows")
     click.echo(f"master.json: {nj} works")
     click.echo(f"photo_queue.csv: {n_photo_ready} works ready-when-photographed")
+    click.echo(f"website_inventory.json: {n_web} works (active, non-placeholder)")
     click.echo("reports/*.md written")
 
 
@@ -779,6 +783,38 @@ def conflict_patterns(db_path: str, limit: int):
     if len(patterns) > limit:
         click.echo(f"  … and {len(patterns) - limit} more patterns.")
         click.echo()
+
+
+@cli.command("export-website")
+@click.option("--out", "out_path",
+              default="data/website_inventory.json", show_default=True,
+              help="Path to write the website feed JSON.")
+@click.option("--no-prices", "no_prices", is_flag=True, default=False,
+              help="Strip numeric prices, replace with 'Price on request' "
+                   "everywhere (for public-facing variants).")
+@click.option("--source", "source_csv",
+              default="data/master.csv", show_default=True,
+              help="master.csv produced by `make all`.")
+def export_website(out_path: str, no_prices: bool, source_csv: str):
+    """Build the website-ready inventory feed (data/website_inventory.json).
+
+    Filters to active works only, excludes internal placeholder titles,
+    pre-formats dimensions/prices, infers tags for filter facets, and
+    emits a stable schema documented at docs/WEBSITE_SCHEMA.md.
+
+    Pairs with kapoorgalleries/sb1-vuxiwzek (the Vite/StackBlitz site).
+    See docs/WEBSITE_INTEGRATION.md for how to consume.
+
+    --no-prices is useful when generating a copy for a public deploy
+    where the gallery doesn't want USD values exposed.
+    """
+    out, n = website_inventory.export_website_inventory(
+        db=None, out_path=out_path,
+        source_csv=source_csv, include_prices=not no_prices,
+    )
+    click.echo(f"  Wrote {n} works to {out}.")
+    if no_prices:
+        click.echo("  (prices stripped — all show 'Price on request')")
 
 
 @cli.command("export-filtered")
