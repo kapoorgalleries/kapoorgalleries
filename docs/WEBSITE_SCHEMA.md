@@ -129,6 +129,10 @@ prefer the enriched feed if available, falling back to the base.
   gallery placed in museum collections (Norton Simon, SDMA, Rietberg,
   LACMA, Met, Mingei, etc.). Drives the `/masterworks` landing page.
   See the bottom of this doc for its schema block.
+- **`data/collections.json`** — curated landing pages mapped to past
+  catalog publications (Virtual Ragamala, Incarnations of Devotion,
+  God/Goddess, Himalayan Art, etc.). Drives the
+  `/collections/<slug>` routes. Schema below.
 
 ## `MasterWork` (for masterworks.json)
 
@@ -167,6 +171,40 @@ type MasterWork = {
   tags: string[];
 };
 ```
+
+## `Collection` (for collections.json)
+
+```ts
+type CollectionsFeed = {
+  schema_version: 1;
+  generated_at: string;
+  count: number;
+  collections: Collection[];
+};
+
+type Collection = {
+  slug:           string;            // "virtual-ragamala"
+  title:          string;            // "Virtual Ragamala"
+  subtitle:       string | null;
+  description:    string | null;     // long-form intro paragraph
+  source_catalog: string | null;     // "2021 Catalogue - Incarnations…"
+  url_path:       string;            // "/collections/<slug>"
+  include_tags:   string[];          // the tag filter that drove membership
+  member_count:   number;
+  members: Array<{
+    id:        string;               // "kg-1023"
+    kg_id:     string;               // "KG-1023"
+    title:     string;
+    url_path:  string;
+    thumbnail: string | null;
+  }>;
+};
+```
+
+Empty `members` is meaningful — it means the collection page exists
+but the curator hasn't supplied an explicit KG-# list yet (Arcane
+Masters, Rasikapriya, Travel Posters today). The website should
+render those as "Coming soon" rather than 404.
 
 ## Stability & versioning
 

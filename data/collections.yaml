@@ -1,0 +1,109 @@
+# Collection landing pages for the public website.
+#
+# Each collection becomes a /collections/<slug> page surfacing a curated
+# subset of the inventory.  Membership can come from either:
+#
+#   - ``include_tags``   — any work carrying one of the listed tag values
+#                          is a member.  Tags come from
+#                          ``website_inventory.json#works[].tags``.
+#   - ``include_kg_ids`` — explicit KG-# list (curator-maintained).
+#
+# A work is a member if it matches EITHER mechanism.  Use ``include_tags``
+# for tag-driven groupings (Virtual Ragamala = everything tagged
+# ``ragamala``) and ``include_kg_ids`` for catalog publications where the
+# membership list comes from a PDF rather than from tags.
+#
+# Tag values are the same lowercase-kebab strings the website-inventory
+# exporter emits — see docs/WEBSITE_SCHEMA.md "Tag taxonomy".
+
+collections:
+  - slug: arcane-masters
+    title: "Arcane Masters"
+    subtitle: "Court painters of the Indian subcontinent, 17th–19th century"
+    source_catalog: "Arcane Masters catalogue (unsold only)"
+    description: >
+      A scholarly survey of master painters whose names rarely surface in
+      Western collections.  This selection draws from the gallery's
+      ongoing Arcane Masters research catalogue.
+    include_tags: []
+    include_kg_ids: []
+
+  - slug: incarnations-of-devotion
+    title: "Incarnations of Devotion"
+    subtitle: "2021 Catalogue"
+    source_catalog: "2021 Catalogue - Incarnations of Devotion"
+    description: >
+      Works highlighting the iconographic richness of Hindu and Buddhist
+      devotional art across India, Nepal, and the Himalayas.
+    include_tags: ["vishnu", "shiva", "buddha", "tara",
+                   "avalokiteshvara", "mandala"]
+    include_kg_ids: []
+
+  - slug: virtual-ragamala
+    title: "Virtual Ragamala"
+    subtitle: "Painted music"
+    source_catalog: "Virtual Ragamala"
+    description: >
+      Ragamala folios — visual interpretations of the modes of Indian
+      classical music.  Each painting personifies a raga or ragini.
+    include_tags: ["ragamala"]
+    include_kg_ids: []
+
+  - slug: rasikapriya
+    title: "Rasikapriya 2024"
+    subtitle: "Connoisseur's passion"
+    source_catalog: "Rasikapriya 2024"
+    description: >
+      Illustrations to Keshav Das's Rasikapriya, the 16th-century treatise
+      on the moods of love and the categories of heroines and heroes.
+    include_tags: []
+    include_kg_ids: []
+
+  - slug: god-goddess
+    title: "God / Goddess"
+    subtitle: "2020 Catalogue"
+    source_catalog: "God/Goddess 2020 Catalogue"
+    description: >
+      Iconographic studies of major deities across the South Asian and
+      Himalayan pantheons.
+    include_tags: ["vishnu", "shiva", "tara", "buddha"]
+    include_kg_ids: []
+
+  - slug: himalayan-art
+    title: "Himalayan Art"
+    subtitle: "Tibet, Nepal, and the high regions"
+    source_catalog: "Himalayan Art"
+    description: >
+      Thangkas, sculpture, and ritual objects from Tibet, Nepal, and
+      neighbouring regions.
+    include_tags: ["tibetan", "nepalese", "thangka", "mandala"]
+    include_kg_ids: []
+
+  - slug: portraits
+    title: "Portraits"
+    subtitle: "Court and personal likeness"
+    source_catalog: "Portraits catalogue"
+    description: >
+      Royal and courtly portraiture from the Indian subcontinent.
+    include_tags: ["portrait"]
+    include_kg_ids: []
+
+  - slug: indian-miniatures
+    title: "Indian Miniatures"
+    subtitle: "Painted folios"
+    source_catalog: "Indian Miniatures"
+    description: >
+      A focused selection of miniature paintings — manuscript folios,
+      album leaves, and detached illustrations.
+    include_tags: ["indian"]
+    include_kg_ids: []
+
+  - slug: travel-posters
+    title: "Travel Posters"
+    subtitle: "Mid-century travel graphics"
+    source_catalog: "Travel Posters"
+    description: >
+      The gallery's holding of vintage travel-poster graphics from the
+      Air India era and adjacent campaigns.
+    include_tags: []
+    include_kg_ids: []

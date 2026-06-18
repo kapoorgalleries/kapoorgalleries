@@ -1,8 +1,9 @@
-"""Tests for the v2/v3/v5 website-pipeline exporters.
+"""Tests for the v2/v3/v4/v5 website-pipeline exporters.
 
-  v2 = enrichment.py  (Catalog & Inventory Sheet merge)
-  v3 = masterworks_json.py  (museum-accession showcase feed)
-  v5 = image_map.py  (curator KG-# ↔ Drive image map)
+  v2 = enrichment.py       (Catalog & Inventory Sheet merge)
+  v3 = masterworks_json.py (museum-accession showcase feed)
+  v4 = collections_json.py (per-collection landing pages)
+  v5 = image_map.py        (curator KG-# ↔ Drive image map)
 """
 
 from pathlib import Path
@@ -10,7 +11,9 @@ from pathlib import Path
 import csv
 import json
 
-from src.exporters import enrichment, image_map, masterworks_json
+from src.exporters import (
+    collections_json, enrichment, image_map, masterworks_json,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -168,6 +171,79 @@ def test_enrichment_threshold_rejects_weak_match(tmp_path: Path):
     assert stats["skipped_low_score"] == 1
 
 
+def test_enrichment_chains_extra_sources_first_source_wins(tmp_path: Path):
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        {"kg_id": "KG-100", "title": "Krishna Revels with the Gopis",
+         "image": {"primary": None, "alternates": [], "thumbnail": None}},
+        {"kg_id": "KG-200", "title": "A Bronze Standing Buddha",
+         "image": {"primary": None, "alternates": [], "thumbnail": None}},
+    ])
+
+    # Primary source: matches KG-100 with prov="primary"
+    primary = tmp_path / "primary.csv"
+    primary.write_text(
+        "j,Image,Title,Origin,Date,Medium ,Dimensions,Physical Location,"
+        "File Location,Acquired From,Literature & Exhibited,Provenance,"
+        "Essay Writtenn( Yes/No)\n"
+        ",,Krishna Revels with the Gopis,,,,,Drawer 13,,Christies,,primary-prov,Y\n"
+    )
+    # Extra source: would match KG-100 again with prov="from-extra" AND
+    # adds a new match for KG-200.  KG-100 must NOT be overwritten.
+    extra = tmp_path / "extra.csv"
+    extra.write_text(
+        "Title,Origin,Date,Medium,Dimensions,Physical Location,"
+        "File Location,Acquired From,Literature & Exhibited,Provenance,"
+        "SOLD,tab\n"
+        "Krishna Revels with the Gopis,,,,,Different Drawer,,,,extra-prov,,2\n"
+        "A Bronze Standing Buddha,,,,,Cabinet B,,Sothebys,,b-prov,,2\n"
+    )
+    out_feed = tmp_path / "enr.json"
+    audit = tmp_path / "audit.csv"
+    _, stats = enrichment.export_enrichment(
+        source_csv=primary, extra_sources=[extra],
+        base_feed=feed_path, out_feed=out_feed, audit_csv=audit,
+    )
+    feed = json.loads(out_feed.read_text())
+    kg100 = next(w for w in feed["works"] if w["kg_id"] == "KG-100")
+    kg200 = next(w for w in feed["works"] if w["kg_id"] == "KG-200")
+    # KG-100 stays on the primary source's values (shorter prov wins
+    # because primary saw it first).
+    assert kg100["physical_location"] == "Drawer 13"
+    # KG-200 picked up entirely from the extra source.
+    assert kg200["physical_location"] == "Cabinet B"
+    assert kg200["acquired_from"] == "Sothebys"
+    assert stats["matched"] == 2
+
+
+def test_enrichment_skips_sold_rows(tmp_path: Path):
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        {"kg_id": "KG-100", "title": "Krishna Revels with the Gopis",
+         "image": {"primary": None, "alternates": [], "thumbnail": None}},
+    ])
+    src = tmp_path / "src.csv"
+    src.write_text(
+        "Title,Origin,Date,Medium,Dimensions,Physical Location,"
+        "File Location,Acquired From,Literature & Exhibited,Provenance,"
+        "SOLD,tab\n"
+        "Krishna Revels with the Gopis,,,,,Drawer 13,,Christies,,prov,X,1\n"
+    )
+    out_feed = tmp_path / "enr.json"
+    audit = tmp_path / "audit.csv"
+    _, stats = enrichment.export_enrichment(
+        source_csv=src, base_feed=feed_path,
+        out_feed=out_feed, audit_csv=audit,
+    )
+    feed = json.loads(out_feed.read_text())
+    kg100 = next(w for w in feed["works"] if w["kg_id"] == "KG-100")
+    # SOLD-flagged row never merged — the work is unchanged.
+    assert kg100.get("provenance") is None
+    assert kg100.get("physical_location") is None
+    assert stats["matched"] == 0
+    assert stats["skipped_sold"] == 1
+
+
 def test_enrichment_audit_row_per_source_row(tmp_path: Path):
     feed_path = tmp_path / "feed.json"
     _write_feed(feed_path, [
@@ -263,3 +339,136 @@ def test_image_map_starter_template_has_comment_rows(tmp_path: Path):
     assert "kg_id,drive_url,role,notes" in text
     # Starter rows are commented out so applying it doesn't error
     assert "# KG-" in text
+
+
+# ---------------------------------------------------------------------------
+# v4 — collections feed
+# ---------------------------------------------------------------------------
+
+
+def _make_work(kg: str, title: str, tags: list[str],
+               primary: str | None = None) -> dict:
+    return {
+        "id": kg.lower(),
+        "kg_id": kg,
+        "title": title,
+        "slug": f"{kg.lower()}-{title.lower().replace(' ', '-')}",
+        "url_path": f"/works/{kg.lower()}",
+        "tags": tags,
+        "image": {"primary": primary, "alternates": [], "thumbnail": None},
+    }
+
+
+def test_collections_tag_filter_picks_members(tmp_path: Path):
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        _make_work("KG-1", "Ragamala Folio", ["ragamala", "indian"]),
+        _make_work("KG-2", "Bronze Vajra", ["tibetan", "metal"]),
+        _make_work("KG-3", "Another Ragamala", ["ragamala"]),
+    ])
+    cfg = tmp_path / "coll.yaml"
+    cfg.write_text(
+        "collections:\n"
+        "  - slug: virtual-ragamala\n"
+        "    title: Virtual Ragamala\n"
+        "    include_tags: [ragamala]\n"
+        "    include_kg_ids: []\n"
+    )
+    out, n = collections_json.export_collections(
+        config_yaml=cfg, feed_path=feed_path,
+        out_path=tmp_path / "collections.json",
+    )
+    feed = json.loads(out.read_text())
+    coll = feed["collections"][0]
+    assert n == 1
+    assert coll["slug"] == "virtual-ragamala"
+    assert coll["url_path"] == "/collections/virtual-ragamala"
+    assert coll["member_count"] == 2
+    kg_ids = {m["kg_id"] for m in coll["members"]}
+    assert kg_ids == {"KG-1", "KG-3"}
+
+
+def test_collections_explicit_kg_ids_override_tag_filter(tmp_path: Path):
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        _make_work("KG-1", "Untagged Manuscript", []),
+        _make_work("KG-2", "Thangka", ["tibetan", "thangka"]),
+    ])
+    cfg = tmp_path / "coll.yaml"
+    cfg.write_text(
+        "collections:\n"
+        "  - slug: arcane-masters\n"
+        "    title: Arcane Masters\n"
+        "    include_tags: []\n"
+        "    include_kg_ids: [KG-1]\n"
+    )
+    out, n = collections_json.export_collections(
+        config_yaml=cfg, feed_path=feed_path,
+        out_path=tmp_path / "collections.json",
+    )
+    feed = json.loads(out.read_text())
+    coll = feed["collections"][0]
+    assert n == 1
+    assert {m["kg_id"] for m in coll["members"]} == {"KG-1"}
+
+
+def test_collections_deduplicates_when_tag_and_kg_overlap(tmp_path: Path):
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        _make_work("KG-1", "Thangka", ["tibetan"]),
+    ])
+    cfg = tmp_path / "coll.yaml"
+    cfg.write_text(
+        "collections:\n"
+        "  - slug: himalayan\n"
+        "    title: Himalayan Art\n"
+        "    include_tags: [tibetan]\n"
+        "    include_kg_ids: [KG-1]\n"
+    )
+    out, _ = collections_json.export_collections(
+        config_yaml=cfg, feed_path=feed_path,
+        out_path=tmp_path / "collections.json",
+    )
+    feed = json.loads(out.read_text())
+    coll = feed["collections"][0]
+    assert coll["member_count"] == 1
+
+
+def test_collections_empty_member_collection_still_emitted(tmp_path: Path):
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        _make_work("KG-1", "Lonely Work", ["solo"]),
+    ])
+    cfg = tmp_path / "coll.yaml"
+    cfg.write_text(
+        "collections:\n"
+        "  - slug: empty-page\n"
+        "    title: Future Collection\n"
+        "    include_tags: [no-such-tag]\n"
+        "    include_kg_ids: []\n"
+    )
+    out, n = collections_json.export_collections(
+        config_yaml=cfg, feed_path=feed_path,
+        out_path=tmp_path / "collections.json",
+    )
+    feed = json.loads(out.read_text())
+    assert n == 0
+    # Page is still scaffolded — "Coming soon" UX.
+    assert feed["count"] == 1
+    assert feed["collections"][0]["member_count"] == 0
+
+
+def test_collections_no_op_when_config_missing(tmp_path: Path):
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        _make_work("KG-1", "X", []),
+    ])
+    out, n = collections_json.export_collections(
+        config_yaml=tmp_path / "nope.yaml",
+        feed_path=feed_path,
+        out_path=tmp_path / "collections.json",
+    )
+    feed = json.loads(out.read_text())
+    assert n == 0
+    assert feed["count"] == 0
+    assert "_note" in feed

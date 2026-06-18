@@ -268,7 +268,63 @@ Drive sharing URLs are auto-rewritten to direct
 can render directly (provided the file is set to "Anyone with the
 link" — the gallery's default for these folders).
 
-## 12 · Open questions for the site author
+## 12 · Collection landing pages (`/collections/<slug>`)
+
+`data/collections.json` drives a set of curated landing pages mapped
+to the gallery's past catalog publications and thematic groupings:
+
+| slug                      | source catalog                       | populated today |
+| ------------------------- | ------------------------------------ | --------------- |
+| `incarnations-of-devotion` | 2021 Catalogue                       | 243 works       |
+| `god-goddess`              | God / Goddess 2020 Catalogue         | 219 works       |
+| `indian-miniatures`        | Indian Miniatures cohort             | 132 works       |
+| `portraits`                | Portraits catalogue                  | 131 works       |
+| `himalayan-art`            | Himalayan Art cohort                 | 47 works        |
+| `virtual-ragamala`         | Virtual Ragamala                     | 37 works        |
+| `arcane-masters`           | Arcane Masters catalogue (unsold)    | 0 (scaffolded)  |
+| `rasikapriya`              | Rasikapriya 2024                     | 0 (scaffolded)  |
+| `travel-posters`           | Travel Posters                       | 0 (scaffolded)  |
+
+Membership is driven by `data/collections.yaml` and is a union of:
+
+- `include_tags`: any work carrying one of the listed tag values
+  (e.g. `ragamala` → Virtual Ragamala).
+- `include_kg_ids`: explicit curator-maintained KG-# list, used for
+  catalogs whose membership can't be reduced to a tag filter.
+
+To populate one of the scaffolded collections, add an explicit
+KG-# list to the YAML:
+
+```yaml
+- slug: arcane-masters
+  title: "Arcane Masters"
+  include_tags: []
+  include_kg_ids:
+    - KG-1023
+    - KG-1187
+    - KG-1305
+```
+
+Then re-run `make report` (or `python -m src.cli export-collections`).
+Scaffolded collections still appear in the feed with `member_count: 0`
+— render them as "Coming soon" rather than 404.
+
+Each collection ships with `members[].thumbnail` (falls back to the
+work's primary image), so the index card grid can render without a
+secondary lookup.
+
+```ts
+// SvelteKit-ish
+// src/routes/collections/[slug]/+page.ts
+export const load = async ({ params, fetch }) => {
+  const feed = await fetch("/collections.json").then(r => r.json());
+  const coll = feed.collections.find(c => c.slug === params.slug);
+  if (!coll) throw error(404);
+  return { coll };
+};
+```
+
+## 13 · Open questions for the site author
 
 These are decisions the inventory pipeline can't make for you:
 
@@ -277,8 +333,13 @@ These are decisions the inventory pipeline can't make for you:
 - **Artist fallback**: 1,249 of 1,377 have no artist on file. Render
   as "Artist unknown" or omit the field entirely?
 - **Sold-state**: how to surface works that sell (will need a new
-  status field plumbed through).
+  status field plumbed through). Note: enrichment now honors a SOLD
+  flag in the Catalog & Inventory Sheet — sold works are excluded
+  from enrichment merge but still appear in the base feed.
 - **Primer URL expiry**: see §5 — needs a long-term plan before launch.
+- **Empty collections**: 3 of 9 collection pages have 0 members
+  pending a curator-supplied KG-# list. Render as "Coming soon"
+  rather than 404? (Recommended.)
 
 If you have a preferred shape for any of these, the schema can
 expand in a v1-compatible way (e.g. add `artist_display` with a

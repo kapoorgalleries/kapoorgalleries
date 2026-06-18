@@ -70,9 +70,23 @@ def _best_match(
     return (best_kg, best_score) if best_kg and best_score >= threshold else None
 
 
+def _read_csv_rows(path: Path) -> list[dict]:
+    """Read a CSV and return rows with stripped header/value whitespace."""
+    with path.open(newline="") as fh:
+        raw = list(csv.DictReader(fh))
+    return [{k.strip(): (v or "").strip() for k, v in r.items()} for r in raw]
+
+
+def _is_sold(row: dict) -> bool:
+    """Honor a SOLD-like column if present (all-tabs CSV adds one)."""
+    val = (row.get("SOLD") or row.get("Sold") or "").lower().strip()
+    return val in {"x", "yes", "y", "sold", "true", "1"}
+
+
 def export_enrichment(
     *,
     source_csv: Path | str = "data/raw/catalog_and_inventory_tab1.csv",
+    extra_sources: list[Path | str] | None = None,
     base_feed: Path | str = "data/website_inventory.json",
     out_feed: Path | str = "data/website_inventory_enriched.json",
     audit_csv: Path | str = "data/enrichment_audit.csv",
@@ -80,9 +94,16 @@ def export_enrichment(
 ) -> tuple[Path, dict]:
     """Merge external enrichment data into the website feed.
 
+    ``source_csv`` is the primary catalog CSV (tab-1 export today).
+    ``extra_sources`` lets the caller chain additional CSVs (e.g. the
+    all-tabs export covering tabs 2-5).  Rows already matched by an
+    earlier source aren't overwritten by later ones — first source wins
+    per field, except where the later value is strictly richer.
+
     Returns (out_feed, stats) where stats is a dict with match counts.
     """
     src = Path(source_csv)
+    extras = [Path(p) for p in (extra_sources or []) if Path(p).exists()]
     base = Path(base_feed)
     out = Path(out_feed)
     audit = Path(audit_csv)
@@ -95,14 +116,15 @@ def export_enrichment(
         )
     feed = json.loads(base.read_text())
 
-    # If the enrichment source is missing, emit the base feed unchanged
-    # and an empty audit — keeps `make report` deterministic.
-    if not src.exists():
+    # If the primary enrichment source is missing, emit the base feed
+    # unchanged and an empty audit — keeps `make report` deterministic.
+    if not src.exists() and not extras:
         out.write_text(json.dumps(feed, indent=2, ensure_ascii=False) + "\n")
         audit.write_text("kg_id,match_score,external_title,decision\n")
         return out, {
             "source_rows": 0, "matched": 0, "skipped_low_score": 0,
-            "skipped_no_title": 0, "note": f"{src} not present",
+            "skipped_no_title": 0, "skipped_sold": 0,
+            "note": f"{src} not present",
         }
 
     if not HAS_RAPIDFUZZ:
@@ -119,26 +141,38 @@ def export_enrichment(
     ]
     by_kg = {w["kg_id"]: w for w in feed["works"]}
 
-    # Read the enrichment source.  Strip header trailing whitespace
-    # because the curator sheet has "Medium " with a trailing space.
-    with src.open(newline="") as fh:
-        raw_rows = list(csv.DictReader(fh))
-    rows = [
-        {k.strip(): (v or "").strip() for k, v in r.items()}
-        for r in raw_rows
-    ]
+    # Read all sources, in priority order: primary first, then extras.
+    # Header whitespace is stripped because the curator sheets vary
+    # ("Medium " with a trailing space in tab-1, plain "Medium" in
+    # the all-tabs export).
+    rows: list[dict] = []
+    if src.exists():
+        rows.extend(_read_csv_rows(src))
+    for ex in extras:
+        rows.extend(_read_csv_rows(ex))
 
     # Predeclare the keys so the returned dict always has the same
     # shape — consumers can assume `stats["matched"]` is always there.
     stats: Counter = Counter(
-        source_rows=0, matched=0, skipped_low_score=0, skipped_no_title=0,
+        source_rows=0, matched=0, skipped_low_score=0,
+        skipped_no_title=0, skipped_sold=0,
     )
     audit_rows: list[dict] = []
+    seen_kg: set[str] = set()
     for r in rows:
         stats["source_rows"] += 1
         ext_title = r.get("Title", "")
         if not ext_title:
             stats["skipped_no_title"] += 1
+            continue
+        if _is_sold(r):
+            stats["skipped_sold"] += 1
+            audit_rows.append({
+                "kg_id": "",
+                "match_score": 0,
+                "external_title": ext_title[:80],
+                "decision": "skipped: SOLD flag set in curator sheet",
+            })
             continue
         result = _best_match(_norm_title(ext_title), haystack, threshold)
         if not result:
@@ -151,6 +185,18 @@ def export_enrichment(
             })
             continue
         kg_id, score = result
+        # First-source-wins: if we already merged this KG-# from an
+        # earlier row, skip later rows from extra sources rather than
+        # overwriting.  The audit still records the matched-skip.
+        if kg_id in seen_kg:
+            audit_rows.append({
+                "kg_id": kg_id,
+                "match_score": score,
+                "external_title": ext_title[:80],
+                "decision": "skipped: KG-# already enriched from earlier source",
+            })
+            continue
+        seen_kg.add(kg_id)
         stats["matched"] += 1
         work = by_kg[kg_id]
         # Track which fields we've actually changed.

@@ -12,9 +12,9 @@ from . import db as dbmod
 from . import consolidate as consolidate_mod
 from . import reports
 from .exporters import (
-    artsy_upload_csv, conflicts_csv, enrichment, gaps_csv, image_map,
-    master_csv, master_json, masterworks_json, primer_corrections_csv,
-    provenance_csv, website_inventory,
+    artsy_upload_csv, collections_json, conflicts_csv, enrichment, gaps_csv,
+    image_map, master_csv, master_json, masterworks_json,
+    primer_corrections_csv, provenance_csv, website_inventory,
 )
 from .normalize import INTERNAL_PLACEHOLDER_TITLES
 
@@ -443,6 +443,7 @@ def report(db_path: str):
     # if the source CSV isn't present).
     _, enr_stats = enrichment.export_enrichment(
         source_csv="data/raw/catalog_and_inventory_tab1.csv",
+        extra_sources=["data/raw/catalog_and_inventory_all_tabs.csv"],
         base_feed="data/website_inventory.json",
         out_feed="data/website_inventory_enriched.json",
         audit_csv="data/enrichment_audit.csv",
@@ -451,6 +452,14 @@ def report(db_path: str):
     _, n_mw = masterworks_json.export_masterworks(
         source_csv="data/raw/masterworks_and_museum_accessions.csv",
         out_path="data/masterworks.json",
+    )
+    # Collection landing pages (no-op if data/collections.yaml absent).
+    _, n_coll = collections_json.export_collections(
+        config_yaml="data/collections.yaml",
+        feed_path="data/website_inventory_enriched.json"
+        if Path("data/website_inventory_enriched.json").exists()
+        else "data/website_inventory.json",
+        out_path="data/collections.json",
     )
     click.echo(f"master.csv: {n} rows")
     click.echo(f"conflicts.csv: {nc} rows")
@@ -469,6 +478,8 @@ def report(db_path: str):
                    f"of {enr_stats['source_rows']} merged from Catalog & Inventory")
     if n_mw:
         click.echo(f"masterworks.json: {n_mw} masterworks")
+    if n_coll:
+        click.echo(f"collections.json: {n_coll} populated collection page(s)")
     click.echo("reports/*.md written")
 
 
@@ -867,6 +878,11 @@ def export_masterworks_cmd(source_csv: str, out_path: str):
 @click.option("--source", "source_csv",
               default="data/raw/catalog_and_inventory_tab1.csv",
               show_default=True)
+@click.option("--extra", "extra_sources", multiple=True,
+              default=("data/raw/catalog_and_inventory_all_tabs.csv",),
+              show_default=True,
+              help="Additional CSV(s) chained after --source; "
+                   "first-source-wins per KG-#.")
 @click.option("--base", "base_feed", default="data/website_inventory.json",
               show_default=True)
 @click.option("--out", "out_feed",
@@ -876,7 +892,8 @@ def export_masterworks_cmd(source_csv: str, out_path: str):
               show_default=True)
 @click.option("--threshold", default=88, show_default=True,
               help="rapidfuzz token-set-ratio cutoff (0..100).")
-def enrich_website(source_csv: str, base_feed: str, out_feed: str,
+def enrich_website(source_csv: str, extra_sources: tuple[str, ...],
+                   base_feed: str, out_feed: str,
                    audit_csv: str, threshold: int):
     """Enrich data/website_inventory.json with curator-grade fields
     (provenance, physical location, acquired-from, literature) by fuzzy
@@ -887,7 +904,9 @@ def enrich_website(source_csv: str, base_feed: str, out_feed: str,
     score >= 88 (token_set_ratio) get merged.
     """
     out, stats = enrichment.export_enrichment(
-        source_csv=source_csv, base_feed=base_feed, out_feed=out_feed,
+        source_csv=source_csv,
+        extra_sources=list(extra_sources),
+        base_feed=base_feed, out_feed=out_feed,
         audit_csv=audit_csv, threshold=threshold,
     )
     click.echo(f"  Wrote {out} (audit: {audit_csv}).")
@@ -914,6 +933,28 @@ def apply_image_map_cmd(map_csv: str, feed_path: str, init: bool):
     stats = image_map.apply_image_map(map_csv=map_csv, feed_path=feed_path)
     for k, v in stats.items():
         click.echo(f"  {k:20s} {v}")
+
+
+@cli.command("export-collections")
+@click.option("--config", "config_yaml", default="data/collections.yaml",
+              show_default=True)
+@click.option("--feed", "feed_path", default="data/website_inventory.json",
+              show_default=True,
+              help="Inventory feed to filter on; pass the _enriched.json "
+                   "variant if available.")
+@click.option("--out", "out_path", default="data/collections.json",
+              show_default=True)
+def export_collections_cmd(config_yaml: str, feed_path: str, out_path: str):
+    """Emit data/collections.json — the per-collection landing-page feed
+    consumed by the website's /collections/<slug> routes.
+
+    Membership comes from include_tags (tag filter) and/or
+    include_kg_ids (explicit list) declared in data/collections.yaml.
+    """
+    out, n = collections_json.export_collections(
+        config_yaml=config_yaml, feed_path=feed_path, out_path=out_path,
+    )
+    click.echo(f"  Wrote {out} ({n} populated collections).")
 
 
 @cli.command("export-filtered")
