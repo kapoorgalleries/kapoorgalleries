@@ -281,9 +281,9 @@ to the gallery's past catalog publications and thematic groupings:
 | `portraits`                | Portraits catalogue                  | 131 works       |
 | `himalayan-art`            | Himalayan Art cohort                 | 47 works        |
 | `virtual-ragamala`         | Virtual Ragamala                     | 37 works        |
-| `arcane-masters`           | Arcane Masters catalogue (unsold)    | 0 (scaffolded)  |
-| `rasikapriya`              | Rasikapriya 2024                     | 0 (scaffolded)  |
-| `travel-posters`           | Travel Posters                       | 0 (scaffolded)  |
+| `arcane-masters`           | Arcane Masters catalogue (unsold)    | 54 works        |
+| `rasikapriya`              | Rasikapriya 2024                     | 8 works         |
+| `travel-posters`           | Travel Posters                       | 1 work          |
 
 Membership is driven by `data/collections.yaml` and is a union of:
 
@@ -291,6 +291,11 @@ Membership is driven by `data/collections.yaml` and is a union of:
   (e.g. `ragamala` → Virtual Ragamala).
 - `include_kg_ids`: explicit curator-maintained KG-# list, used for
   catalogs whose membership can't be reduced to a tag filter.
+- `seed_titles`: a list of title strings (typically extracted from a
+  Drive catalog folder). The exporter fuzzy-matches each (rapidfuzz
+  token-set-ratio, threshold 90) against the inventory feed and adds
+  the best match. `data/collection_seed_audit.csv` records every
+  decision so the curator can spot-check.
 
 To populate one of the scaffolded collections, add an explicit
 KG-# list to the YAML:

@@ -146,6 +146,42 @@ def test_infer_tags_basic_patterns():
     assert "works-on-paper" in tags
 
 
+def test_period_inferred_from_regional_school(tmp_path: Path):
+    """Tag inference should derive a period tag from regional-school
+    cues when the title/year don't otherwise carry one."""
+    csv_path = tmp_path / "master.csv"
+    _write_master_csv(csv_path, [
+        # Pahari school -> 18th-century inferred.
+        {"work_id": "KG-1", "title": "Krishna and Radha, Pahari School",
+         "classification": "Painting",
+         "medium": "Opaque watercolor on paper",
+         "status": "active"},
+        # Mughal -> early-modern.
+        {"work_id": "KG-2", "title": "A Mughal hunting scene",
+         "classification": "Painting", "medium": "Wasli",
+         "status": "active"},
+        # Gandharan -> ancient.
+        {"work_id": "KG-3", "title": "A Gandharan Bodhisattva",
+         "classification": "Sculpture", "medium": "Grey schist",
+         "status": "active"},
+        # No school cue + no year -> NO period tag (don't make things up).
+        {"work_id": "KG-4", "title": "A Bronze Vajra",
+         "classification": "Sculpture", "medium": "Bronze",
+         "status": "active"},
+    ])
+    out = tmp_path / "feed.json"
+    export_website_inventory(None, out, source_csv=csv_path)
+    feed = json.load(open(out))
+    by_kg = {w["kg_id"]: w for w in feed["works"]}
+    assert "18th-century" in by_kg["KG-1"]["tags"]
+    assert "early-modern" in by_kg["KG-2"]["tags"]
+    assert "ancient" in by_kg["KG-3"]["tags"]
+    period_like = [t for t in by_kg["KG-4"]["tags"]
+                   if t.endswith("-century") or
+                   t in ("ancient", "medieval", "early-modern")]
+    assert period_like == []
+
+
 def test_era_display_fills_when_year_missing(tmp_path: Path):
     csv_path = tmp_path / "master.csv"
     _write_master_csv(csv_path, [

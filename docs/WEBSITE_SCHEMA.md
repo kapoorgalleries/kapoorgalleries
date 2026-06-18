@@ -206,9 +206,12 @@ type Collection = {
 ```
 
 Empty `members` is meaningful — it means the collection page exists
-but the curator hasn't supplied an explicit KG-# list yet (Arcane
-Masters, Rasikapriya, Travel Posters today). The website should
-render those as "Coming soon" rather than 404.
+but the curator hasn't supplied an explicit KG-# list or seed-title
+list yet. The website should render those as "Coming soon" rather
+than 404.
+
+Membership union: tag filter + explicit KG-# list + fuzzy seed-title
+matches (`data/collection_seed_audit.csv` records every decision).
 
 ## Stability & versioning
 

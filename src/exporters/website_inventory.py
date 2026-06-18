@@ -185,6 +185,43 @@ def _infer_tags(title: str, classification: str, medium: str, year: int | None) 
         c = (year + 99) // 100  # 1850 -> 19th
         suffix = {1: "st", 2: "nd", 3: "rd"}.get(c % 10 if (c % 100) not in (11, 12, 13) else 0, "th")
         tags.append(f"{c}{suffix}-century")
+    # Period-from-regional-school fallback — only applied when nothing
+    # period-shaped surfaced from the title or year.  Conservative
+    # mappings: each school's mainstream production window.  False
+    # positives are possible (a 20th-century revival Mughal-style work
+    # would tag as early-modern) — but they're rare in this inventory.
+    has_period = any(
+        t.endswith("-century") or t in ("ancient", "medieval", "early-modern")
+        for t in tags
+    )
+    if not has_period:
+        _SCHOOL_PERIOD = [
+            (r"\bpala\b",        "medieval"),
+            (r"\bgupta\b",       "ancient"),
+            (r"\bgandhar(a|an)", "ancient"),
+            (r"\bmughal\b",      "early-modern"),
+            (r"\bdeccan(i)?\b",  "early-modern"),
+            (r"\bsafavid\b",     "early-modern"),
+            (r"\bedo\b",         "early-modern"),
+            (r"\bpahari\b",      "18th-century"),
+            (r"\bkangra\b",      "18th-century"),
+            (r"\bbasohli\b",     "18th-century"),
+            (r"\bguler\b",       "18th-century"),
+            (r"\bmewar\b",       "18th-century"),
+            (r"\bbundi\b",       "18th-century"),
+            (r"\bkota\b",        "18th-century"),
+            (r"\bbikaner\b",     "18th-century"),
+            (r"\bjaipur\b",      "18th-century"),
+            (r"\bjodhpur\b",     "19th-century"),
+            (r"\bqajar\b",       "19th-century"),
+            (r"\bmeiji\b",       "19th-century"),
+            (r"\bcompany\s+school", "19th-century"),
+        ]
+        for pat, lab in _SCHOOL_PERIOD:
+            if re.search(pat, blob):
+                tags.append(lab)
+                break  # pick the first matching school — don't stack
+                       # competing periods for the same work.
     # Medium-family tag.
     m = (medium or "").lower()
     if "bronze" in m or "copper alloy" in m or "gilt" in m: tags.append("metal")

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-18T19:06:41Z",
+  "generated_at": "2026-06-18T19:14:46Z",
   "count": 9,
   "collections": [
     {
@@ -11,8 +11,387 @@
       "source_catalog": "Arcane Masters catalogue (unsold only)",
       "url_path": "/collections/arcane-masters",
       "include_tags": [],
-      "member_count": 0,
-      "members": []
+      "member_count": 54,
+      "members": [
+        {
+          "id": "kg-1736",
+          "kg_id": "KG-1736",
+          "title": "56 Divinities, Pancaraksa Devi mandala",
+          "url_path": "/works/kg-1736-56-divinities-pancaraksa-devi-mandala",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1704",
+          "kg_id": "KG-1704",
+          "title": "A bronze figure of Manjushri or Avalokiteshvara",
+          "url_path": "/works/kg-1704-a-bronze-figure-of-manjushri-or-avalokit",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1090",
+          "kg_id": "KG-1090",
+          "title": "A Gray Schist Torso of Maitreya",
+          "url_path": "/works/kg-1090-a-gray-schist-torso-of-maitreya",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/dbf742e9-c92a-48b8-b954-9bb8577be3c8/Screenshot%202023-07-10%20at%2012.28.52%20PM.jpg?Expires=1802811923&Signature=Cn10rQ7qM8sfQJ1LsYc3i0CPnKoFdkUwS5l6B7EBFogeSqkWTwITR02deCFMUCs1vel2dlshTsXYgLR1RWGgoX4scZ1K6Lnv7gCWvIApkKpu48OUEJ2~QsQql9cNDE9v~6vB-K2rsuTlk06ySnyIrdkBHdWJiJDZos6w1pYvzuAMFQfKWb~Lz5glA4g9NR5Bu0fAVslXwpghrnFVCWKILSraQCqecj34l4QcJ3HI6E88u~UCj1h4KxaAJwgZTlHC0cOLQ-bPPUNO8o9TmKddmLLzEeqJXQfMT96edIf7RkWnbNhkznOpo4YqI2pHg7jelLQUVg31xcPe0Hoj2tla8w__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1581",
+          "kg_id": "KG-1581",
+          "title": "A Leaf from the Krishna Sudama",
+          "url_path": "/works/kg-1581-a-leaf-from-the-krishna-sudama",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/69ca6441-f67f-49fd-aafe-41b047a29353/IMG_4927.jpg?Expires=1802811826&Signature=ShnmojN63BMA1fxZvOL6jm7ZQ8G8-gRMiFLvcEe4pBYJ2nkJ8mBX8of-t6R59nQ~3yFOrhUDn58wLJfudxrV2B0v63~H5eK8kp7szR-mNSlJJ6mZt87iBRfqRn4DnwbKt2OWbAefHUoV6Yl6iHWRmupkqhr6FjnsL8os36yl8TFEae2x-xC4YGV6nFMLIJtl0e5WO-wtdZsIaX0p~xCB6PWtM5RdpUx2ULp4F7ztKImcE2iKmdW3nPgA82b1rIkrmtu6hx-sb9-ZiWFjCnQrfMcAWfMjR3LERDd5KIGlQDFqr~Tt-cE3I52lw7DIaoGL2emif~xLFXd8B8xU7gJprw__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1758",
+          "kg_id": "KG-1758",
+          "title": "A Leaf from the Madhavanala Kamakandla",
+          "url_path": "/works/kg-1758-a-leaf-from-the-madhavanala-kamakandla",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1683",
+          "kg_id": "KG-1683",
+          "title": "A portrait of a woman with a cat",
+          "url_path": "/works/kg-1683-a-portrait-of-a-woman-with-a-cat",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/e01fd087-5576-4d40-bea6-c312905cb5b2/Woman%20with%20a%20Cat.jpg?Expires=1802811845&Signature=HjBiioIrAhw9QL5rPNU-yrvowtd8GEcEDoKTWrSZvX56uxOPZMDaHKv3GijeQjVK1wodcZsiFW0iXvptH8t~LDiLDfa0Kv6uRrk1INV~6-vXPjWfpmoJ06IfWao~3cJZHNPzqj6VD8zAbgi1T5Za-UUA1MBHN4n3Q70MS0pnOxSpTaMdbssqH6gzvLZs26Te5d0h9Ms3sb2z6NO2RRp6EKkRDjm4q5r2paMTWkYuBUdJ7IPzIf7urcfTWVUlHV4CXq3w4SJwoXz1fd-KsyX6TDb3YQsP9M93~oYkbbBuMe4ie8N7FKf41G1Xhd-tBGOPoyQwvmNsO-XrVqBGX1M9xw__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1391",
+          "kg_id": "KG-1391",
+          "title": "Air India, Nandi (Fiji)",
+          "url_path": "/works/kg-1391-air-india-nandi-fiji",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/809273b5-b8d0-4066-82b1-808df6de88d4/Screen%20Shot%202023-07-07%20at%2010.52.24%20AM.jpg?Expires=1802811909&Signature=eZq5bAx9116HSCwTCGykK~bR2nkuhDEgjzu3viOUygqJIpqYgXS7eY0TShiyWKjIb2qL17edy2l~Wf49SXShZMmzm0mSY-Qp-yo~rjSTx-I271xbyXlJr4PBnQOTwONc8p0qGuwbWymqagkUNM~kgXeY~rYXvLqrcY5QQEcGufU4O6amIGUzWPWsM~1P2jO0M3FqtoU2vBW1jTVVZ1KKLvsJ34e5uAINhxGM0dqygOUomxCMbH9DmQ1X3lTqdXRwuwPrqk9oyB3WTcOG5i3WQjf-Ca8pSnPjNjoR0RzYxInZcs74PhByyLwFIMZVDrnE7ViH~UKrhCicsCE-g8qenA__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1725",
+          "kg_id": "KG-1725",
+          "title": "Amitayus",
+          "url_path": "/works/kg-1725-amitayus",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1723",
+          "kg_id": "KG-1723",
+          "title": "Amoghapasha",
+          "url_path": "/works/kg-1723-amoghapasha",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-2147",
+          "kg_id": "KG-2147",
+          "title": "An illustration from the third Rasamanjari of Bhanu Dutta: The intoxicated courtesan",
+          "url_path": "/works/kg-2147-an-illustration-from-the-third-rasamanja",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1617",
+          "kg_id": "KG-1617",
+          "title": "An Indian Miniature of the Madonna and Child with Angels",
+          "url_path": "/works/kg-1617-an-indian-miniature-of-the-madonna-and-c",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/a706b8a2-8095-4793-8305-5f91cd76d755/E3CACA80-3915-4D42-8440-53B5C12C10D7.jpg?Expires=1802811647&Signature=uHe0NoRyUAw~QPlFlZ1OszOEuOvxIm8Il9TlEmer8Yu~vEWMK-yPixbMlIq3xI4bh26~jRnA5JAOsDR3I9OiWsDF06bSFa6WRjkkqA0pHQM51LreurcySd6FE8R1w0qJvbsRBiWq1bYt7oLk5n6nZTCcNnPTPHXrOxhEmGhv~xbC5ls4ikEW4WGevJdvq-3IGheoLSIt0MwbLYZEnCjUC1m8iUeAZBm8ZgRpJxLk547VVa3Ckc7fz8n9hXTnVHlA9qP4sOCvVVUiV3LhuIo-SuitT7sMngUUdLiUIugCjRsk5A-AOJrgBaHky3uUjAV1ZxtCeKulEf29rl-HMBxHcg__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1761",
+          "kg_id": "KG-1761",
+          "title": "Blind Mans Buff",
+          "url_path": "/works/kg-1761-blind-mans-buff",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1739",
+          "kg_id": "KG-1739",
+          "title": "Chakrasamvara and Consort",
+          "url_path": "/works/kg-1739-chakrasamvara-and-consort",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1785",
+          "kg_id": "KG-1785",
+          "title": "Composite Camel",
+          "url_path": "/works/kg-1785-composite-camel",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1734",
+          "kg_id": "KG-1734",
+          "title": "Dombini [Dakini, Pala Style (Vajrayogini)]",
+          "url_path": "/works/kg-1734-dombini-dakini-pala-style-vajrayogini",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1824",
+          "kg_id": "KG-1824",
+          "title": "Eight leaves of a Prajnaparamita manuscript",
+          "url_path": "/works/kg-1824-eight-leaves-of-a-prajnaparamita-manuscr",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1720",
+          "kg_id": "KG-1720",
+          "title": "Four-armed Mahakala with Consort",
+          "url_path": "/works/kg-1720-four-armed-mahakala-with-consort",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1782",
+          "kg_id": "KG-1782",
+          "title": "Illustration to a Rasikapriya Series: Krishna Paying Homage to Radha",
+          "url_path": "/works/kg-1782-illustration-to-a-rasikapriya-series-kri",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1745",
+          "kg_id": "KG-1745",
+          "title": "Illustration to Gita Govinda: Radha Vents her Frustrations",
+          "url_path": "/works/kg-1745-illustration-to-gita-govinda-radha-vents",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-2291",
+          "kg_id": "KG-2291",
+          "title": "Illustration to the Devi Mahatmya: Durga in Battle",
+          "url_path": "/works/kg-2291-illustration-to-the-devi-mahatmya-durga",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1722",
+          "kg_id": "KG-1722",
+          "title": "Je Tsongkhapa",
+          "url_path": "/works/kg-1722-je-tsongkhapa",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1023",
+          "kg_id": "KG-1023",
+          "title": "Kakubha Ragini: Folio from a Ragamala Series",
+          "url_path": "/works/kg-1023-kakubha-ragini-folio-from-a-ragamala-ser",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/3156b0d7-bc93-47c7-a38e-bdf8ce79c9f3/2023_NYR_22040_0542_000%5Ba_painting_from_a_ragamala_series_kakubha_ragini_india_rajasthan_ragho115808%5D%20%5B1%5D.jpg?Expires=1802811961&Signature=LyyvpIGNyZ8VgKVCnmQtc74hE~ImFow79kGgxoZmPSUzoHaAq82gAP6GYE~bXfqq3IOm~vVJNTWdFQ1I9lyYWk8-XQn4yxhi3-Ab3pxcJlAKG2HyD2Kw-hkNivYnpMO-B0iz~DqH0SKPM4IGbaThmQgFn3RcF7hfSaAmqjJgZlPnC-WHK~kxIpHsYtBkZ3T7Io1YuJEZRh5y6nPYJVD7WUTTuMatFV2q4fHMqSsIF~jd5rLpYWL9581vE4JurbgAhOUEPA5bjM0hHtTUfQdx63qs6oZnY0t6QciSk3sCtx64HDgIcIdWH2C1ra-giScrf-RAHfS-UbwS7sDXxuZibg__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1523",
+          "kg_id": "KG-1523",
+          "title": "Kali",
+          "url_path": "/works/kg-1523-kali",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/0de1292b-76bf-49c0-ae9b-27e44d7730ff/Screenshot%202023-07-06%20at%201.36.55%20PM.jpg?Expires=1802811898&Signature=xnFNmvfFjZ41pW7h5fxvhH3tTs5d3dtuViI44qwrgUacMmwwAwD0TeuFwhDFhoAvKzv~pkJABk4bHK1vqdxyCVGksKrkZJcH1EY9k7bfkM-efadZWVjj21~-p0o5OUuNAhTZRw1gAnJnToUPHW0~zM2hx7Y~MkaOorYk048tDMRhG~97bFoNRmkE12pA1AkzKKlIWOWQzZBe9Gi61r7d4ksvYWQRmRRNCs~PPgcG-Z5ze5f8lWbEawa-eVXnfrmnSK8plIkzjdwmaHgWI5-Xf4trxyUUsfcZQ-V-vTINuP3VCZAsqccD9Tq~TGJbdd9ZSZT1kl34pY4bEnaSaDCG-Q__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1777",
+          "kg_id": "KG-1777",
+          "title": "Krishna and Radha playing Yo-Yo",
+          "url_path": "/works/kg-1777-krishna-and-radha-playing-yo-yo",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1783",
+          "kg_id": "KG-1783",
+          "title": "Krishna on the Road to Kundinapura",
+          "url_path": "/works/kg-1783-krishna-on-the-road-to-kundinapura",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-2139",
+          "kg_id": "KG-2139",
+          "title": "Krishna Radha",
+          "url_path": "/works/kg-2139-krishna-radha",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1779",
+          "kg_id": "KG-1779",
+          "title": "Krishna shares a drink with Radha",
+          "url_path": "/works/kg-1779-krishna-shares-a-drink-with-radha",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1776",
+          "kg_id": "KG-1776",
+          "title": "Lakshmi massaging the foot of Vishnu",
+          "url_path": "/works/kg-1776-lakshmi-massaging-the-foot-of-vishnu",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1813",
+          "kg_id": "KG-1813",
+          "title": "Large Thangka White Tara Tibetan",
+          "url_path": "/works/kg-1813-large-thangka-white-tara-tibetan",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1397",
+          "kg_id": "KG-1397",
+          "title": "Leaf from the Bhagavata Purana",
+          "url_path": "/works/kg-1397-leaf-from-the-bhagavata-purana",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/c49fdde4-cd64-4798-90cb-f9f5daf708ae/DSC_4158.jpg?Expires=1802811869&Signature=f9o8xGzZHvPiaU1DWunlQh4l6aENRZw8i0ZVBrVxYk4c24jq0gDOnbuqfJ-PdxY9YO3oHdzEFUjkdXiOtU7tQGkJ~SJMlrGbTljWoSsIX48zjb7~AN96NlsVkd6uV9mcxkrSQKE0~9k2g~oprasXogm3oqwOtaeR09dxC23Xk3liIPuzvNSASyh6kc-XMrq1Utx2G~jInMWYTfwfc7bmXJPFexfrCXxdQvksI3xf5bepDcwrHFD4LfFBl6VFCuxcL8XMoNa0k9bcgFqF1dDyFID1Uw9mj3KcZp~-fEH0vbqLgCg4tU8jtda6Erz7eAkrHw2oxQxbMb4D~GV1LU20Ww__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1438",
+          "kg_id": "KG-1438",
+          "title": "Leaf from the Shahnameh",
+          "url_path": "/works/kg-1438-leaf-from-the-shahnameh",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/a5bd56d5-61b8-4679-a8dd-5d536787a43a/IMG_0244.jpg?Expires=1802811759&Signature=gF7OkrvILHoXQ9~gGAGR7s1x5cVpW4wGjvBGHTMlxjbaI90ryKWFVLQzN5sx1p6wsNmVNazj2PX0BNaiTMEpzfZ17hqjc3mqbD7cWSh~p-~r3ERUOUV8bP96vuxFiDW3IqQWi4NS7Z2ajRMhu8BaO2WDNc9rK8hjp-vVk9su0D4~IhckBJwVtlbrmZvrEZDpA4l-wmTMlnoVH~sGbhkfVLbOtQGurG2bwtRAibkPa2doV5rOZR4IiHaV98k0yGNEx-nLbdW2B3vvnRPIn9tBZSJwM1Pit8L4XguvxHOwJiEFZ0TDTKfmzmiYAz43nlBC1yEARWXdxmIzUY0fggw2KQ__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1774",
+          "kg_id": "KG-1774",
+          "title": "Love-Lorn Lady",
+          "url_path": "/works/kg-1774-love-lorn-lady",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1767",
+          "kg_id": "KG-1767",
+          "title": "Narada Warns Kamsa",
+          "url_path": "/works/kg-1767-narada-warns-kamsa",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1733",
+          "kg_id": "KG-1733",
+          "title": "Pala Padmapani",
+          "url_path": "/works/kg-1733-pala-padmapani",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1772",
+          "kg_id": "KG-1772",
+          "title": "Radha and Krishna watching Nautch",
+          "url_path": "/works/kg-1772-radha-and-krishna-watching-nautch",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1063",
+          "kg_id": "KG-1063",
+          "title": "Radha seated with a confidant in a pavilion: Illustration to a Rasikapriya Series",
+          "url_path": "/works/kg-1063-radha-seated-with-a-confidant-in-a-pavil",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/d5cd9cdd-064f-4e77-8b49-25f663edff2c/Rasikapriya%20-%20Radha%20Seated%20with%20a%20Confidant%20recto%20crop.jpg?Expires=1802811805&Signature=t81Ie-AxAU~mDp6oetckg~4o4IAVYBxifCEvTqVcFOshMw6mQZjrH5Gr6p2z9eV1h-bEEVlXNhUDi5AY~T9UEOzf5A9osR0YkGHh4U35Xp1FjfewFoZfqtKyjJxEPpTqao~NA1hsydDRrbLqxgb1FJzhu1i6Nu2arNGHo3ukRc2S6VD5tffg81n29EBpNVNXGU23FZujKgknqXLNMHoC2BUjTjWydLSZKlJiCxaWVi6~xbbff~szFJSTxCRz1LxSfFIWPvf6~FhQQjGGbBZ-3ODkAUn7xgLZYrZBaEmbvvfK4fxj5aLUda0MPj1waPKohC45ElDu5b5NQoc8gkyLxA__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1100",
+          "kg_id": "KG-1100",
+          "title": "Rama and Sita Enthroned",
+          "url_path": "/works/kg-1100-rama-and-sita-enthroned",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/61e9cb02-81e0-472e-aa4b-2fd56884e1be/220308_KapoorGalleries_0020.jpg?Expires=1802811823&Signature=zQUASMYDQlX-Y30y~-tGiZoA6JyXMbI0MvgpKfnmiIOijATaofnlYPp6NZta4MA04gBfImdsrrpS9qFd0PlXN4sXPoAnBWrmxNBz4ZQQc6Y05KaltgQc41cSu3ov5rwAZryCWDNQ8dDL~JKud58MdC3nP6HCCs1cK~V8axXYriByuBGoNbHB89~Ge4rxaT32w8LoQxmfXVN-PVUDEEwe8YsevqdiUiKnW2ne0wzsG5nANcjTKHWuknigNN-U65EZE7f4zgnc-tVkebLLrh6YsPJcGNK1GJuBmfEdF5hynWieZu9yKFGx6Mn3hhLh2Ct8uzcpvvF2IAQ7BlqH4wK-9w__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1553",
+          "kg_id": "KG-1553",
+          "title": "Saraswati",
+          "url_path": "/works/kg-1553-saraswati",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/7735c8d6-9df3-47ed-9ac8-04fa9294a684/img218.jpg?Expires=1802811900&Signature=T6bdTukAP8uHopm0SmLUKsX3DufFW2o7IumR8AaPBglDtqOOiXcF2oZtlZXa2RmI1MGv1L5WhNoAfzP9aKMPlLssIeoxnwZM7gmMiClcTd132owj5RqMe0onT9vV75-Lj8biuOG4QQFKCiflDkrmUowV8MWfAqFldWBHQjCYjJAg6yWFpQZ1p2aESUI~2NBX~iiIh7PbFhNYWsILkMxTCZmBEJkcbtEl~2ccAB70jqAH32KuhgpWu-tMntwVvsPi3Cup5aPbh1Mrid2I8C4yp1lSNom6t9wmlUYz4hMlV5Se9xzUzsvEj1lfSWIUA5plP6-N3gl3OdUdbqc81W~Hew__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1729",
+          "kg_id": "KG-1729",
+          "title": "Silver Padmapani",
+          "url_path": "/works/kg-1729-silver-padmapani",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1513",
+          "kg_id": "KG-1513",
+          "title": "Thangka",
+          "url_path": "/works/kg-1513-thangka",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/76236685-058b-4a61-a56f-8f067bb49d92/IMG_0991.jpg?Expires=1802811891&Signature=eew2g9AZyDXLTx~HpgxwjsJziFv4-BaDoaTQZ3gvt~srPfFw5-21v4oBD03qSIL4qHr3E~mJgyo5xd6ydgRQBgwiB6hbEVrOgWoYM7HA5MtJornfMznwfLY0S5fl4kId-ra-lIIbGuZdk7FN~ZybH052f~hrIKARz17Ti1UneuXr3bUFUpEzwI8TTEhcuOD6dMfqaBjyD67NJX6QgtkJ1mtzEetxOV5Fa5OnssMXZNrk6Yg9bhyPqAhK~PLiPW~F5Hwe9RN-eYrUnATCc1Q6BMAy87vzpkxIxej3xn3bLNvi3Vfdm2H5tHoDM49pMhr7wBa2goSYrgjK26WFF-yNaw__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1763",
+          "kg_id": "KG-1763",
+          "title": "The Asuras Madhu and Kaitabha Attack Brahma",
+          "url_path": "/works/kg-1763-the-asuras-madhu-and-kaitabha-attack-bra",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1764",
+          "kg_id": "KG-1764",
+          "title": "The Beauty of Ambika",
+          "url_path": "/works/kg-1764-the-beauty-of-ambika",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1738",
+          "kg_id": "KG-1738",
+          "title": "The Elder Arhat Kanakavatsa",
+          "url_path": "/works/kg-1738-the-elder-arhat-kanakavatsa",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1784",
+          "kg_id": "KG-1784",
+          "title": "The Elephant Meghabaran Goes on a Rampage",
+          "url_path": "/works/kg-1784-the-elephant-meghabaran-goes-on-a-rampag",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1752",
+          "kg_id": "KG-1752",
+          "title": "The Kurma Avatar: Samudra Manthan (The Churning of the Ocean)",
+          "url_path": "/works/kg-1752-the-kurma-avatar-samudra-manthan-the-chu",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1311",
+          "kg_id": "KG-1311",
+          "title": "The Month of Pausha",
+          "url_path": "/works/kg-1311-the-month-of-pausha",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/fa0f8029-69e6-410e-8ca7-ac94e0d26f76/DSC_4242.jpg?Expires=1802811914&Signature=vaaimV7W09ssr9V658BguzmPaFZgUebl293HJRR1QzdwwMRWeddWLR1nQFpijJkNilMfYAdZO-4BNrDk1anOIY8wHXMVI-zU-7tmax9e86PN6MH7FvVS4XZGuDTUiXzgS7XGjd8~t98JQGvrxMAcxaVUpfqZL5CKz4R1HM9AwBFuinmazeVJSB6wIU0NT0R1h1n4dxbedtHt-V1rWR~hYoVq2oVyq8fa8BI~ZaRDtqEd0LNp9WIGUyD9T7gFeMCtwpxMkpcW2quAFoKFnA-waTeSWfoHnFPV4~QIUsahx9S4qMdSiyInCJyIcb6HtdLobnOV0DgZkA56I1FxqkIIFA__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1748",
+          "kg_id": "KG-1748",
+          "title": "Two preparatory drawings, depicting an extensive battle scene, and a ploughing contest, probably scenes from the Mahabharata",
+          "url_path": "/works/kg-1748-two-preparatory-drawings-depicting-an-ex",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1033",
+          "kg_id": "KG-1033",
+          "title": "Vajradhara (Large)",
+          "url_path": "/works/kg-1033-vajradhara-large",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/7e654cb5-dd69-40d8-9dc2-fc0f88ae3bb9/Vajradhara%20A.jpg?Expires=1802811814&Signature=wEy7R3rFPPyxpAYfiXfbBra~05fOsoEfDlregly-a0b6~RmsBT4rjvrtHS4NgMdt6CbKUjSsQsu0Q-ZswE7IfZZTMNaCWbEQYMO0RBj0OSC6askgbdtCQ4ShdsJu4gi-hhI5xE2kNDM5pJRbJiMeQblSIp0I99ACzoDd2qA-dtoABBThY4qPQTRxBRg5a3qpkZlQZZ6helViz9STg3UEw1L0~-1UKxQPQWn9fKmFAeDfZyI8rEzm7u9EUHjFrEDQJWgqaOQz-TGg1BiQRV9I7EQEbNIjMCOJ8ivNhjHsR~RbZRDViN6NDXBvBjoVMzrj-eyORSiberAVdJ~U2Ouk9g__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1667",
+          "kg_id": "KG-1667",
+          "title": "Vajrapani",
+          "url_path": "/works/kg-1667-vajrapani",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/60cfcafb-1446-482f-9679-aaf5aee270d1/Screenshot%202025-01-02%20at%201.19.34%E2%80%AFPM.png?Expires=1802812030&Signature=vFP8TUj26iJB3cPsKZLecNMxM7oBaY50MfDD8Pc940AJu~4w3HeZfzzAlLEKAabsUHn4gq0bUxczXlhTp0QcjS1oZdsHn6jqzF8c72SMN2T8FVyHOCPti0lfAgD8H6OuxeI41tm0JS2kPLFSMlalVjHAS~vrfQyQqIye2dIZwnPPCSj8YSV5Ydwt5fWldkE5dQG~2d8IsDB2lbmzgsHV-X-N9uzapVAMN-Um6cqmHfAT8IvyiwJ9yNeHBPYAaSRNgS6l8wet5M4Jxf47zvwG-fz0eu~YDxKY9jTY-6JGy8xiC6ra6zsZsKCOx~ukFoXwuTaTYdX1iBr44fkc1qpfbw__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1741",
+          "kg_id": "KG-1741",
+          "title": "Vajrapani, Hayagriva, Garuda combined",
+          "url_path": "/works/kg-1741-vajrapani-hayagriva-garuda-combined",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1081",
+          "kg_id": "KG-1081",
+          "title": "Vajrasattva",
+          "url_path": "/works/kg-1081-vajrasattva",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/db555a06-894f-4983-a4ae-66b216a3aa0a/Vajrasattva%20A.jpg?Expires=1802811922&Signature=q6oKaPha1vg5RNt4yHFEIGfW9zXlBhQX-8Xp37ceuvFyz68IzPoUoNAnSvrNK05pYW3waw65EyAZ8rC1kpTLaShrg8TeLitFfgV73gZah0vQZAKsbvr8Js~yABvLZeAkrXqm7gKp6buekC9p3x4GcrDHEbgl4Y6p0jZhUdFsVSs7HcYELp9FD491Aw96-xE2Nbh1ZNsnX6B2jCpbDdaqt1hDnnMz60r6duV0TmYSsbenYuB9CxZViZqCrlZNDa0ZNErx36zQdeAh-7m2YcsPD37Nivx40uQjHi0mK5M7VGBmYOAiHpr4T~X6ghgo9DNmVx6PGTBmZfGhJqE7jPdE4g__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1770",
+          "kg_id": "KG-1770",
+          "title": "Women in a Hunting Lodge",
+          "url_path": "/works/kg-1770-women-in-a-hunting-lodge",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1735",
+          "kg_id": "KG-1735",
+          "title": "Wood Indra",
+          "url_path": "/works/kg-1735-wood-indra",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1730",
+          "kg_id": "KG-1730",
+          "title": "Yama Dharmaraja",
+          "url_path": "/works/kg-1730-yama-dharmaraja",
+          "thumbnail": null
+        }
+      ]
     },
     {
       "slug": "incarnations-of-devotion",
@@ -2015,8 +2394,65 @@
       "source_catalog": "Rasikapriya 2024",
       "url_path": "/collections/rasikapriya",
       "include_tags": [],
-      "member_count": 0,
-      "members": []
+      "member_count": 8,
+      "members": [
+        {
+          "id": "kg-1064",
+          "kg_id": "KG-1064",
+          "title": "An older Sakhi comforts a forlorn Radha: Illustration to a Rasikapriya Series",
+          "url_path": "/works/kg-1064-an-older-sakhi-comforts-a-forlorn-radha",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/02abeedb-dfaa-4fee-80be-74975cbaed93/Illustration%20to%20a%20Rasikapriya%20Series.%20An%20older%20Sakhi%20comforts%20a%20forlorn%20Radha%20hq.jpg?Expires=1802811805&Signature=N3dGX7JxDe6jOkxgomQFoJVdC1DDSJk4XKb2wPYXCA3iUqDv4t~fu-zwQIH2N7IIAaajY7tfl8GN1rzfpvX4ow7mskCoG82BcWkcSn-s4npr4TJ5DsRe7DtfWDQMl2arQx0Wf1Bivopc3l66n9VgC8v9VTHO0qG3VZqK-zrb~6XdFuPHiv~7pbtQdwDtCI1FcPY-4mBLpG6rCQ3ror4FRyDIAfeiu7kM6vBf4Fu4-s47hW8Vo8JcOfOnoC1SPDmn~KmZyaRGXkN--YqYSztdydSV9P-7zn86nvoLM3cLqyZE0YS5SHnF9dyREU2AFz664o8cmQXGrm0lzDN-zzFB-A__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1632",
+          "kg_id": "KG-1632",
+          "title": "Krishna and Radha at a Jharokha window: Illustration to a Rasikapriya Series",
+          "url_path": "/works/kg-1632-krishna-and-radha-at-a-jharokha-window-i",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/a58273de-dc57-42bd-b25a-c3812ae4e275/Illustration%20to%20a%20Rasikapriya%20Series.%20Krishna%20and%20Radha%20at%20a%20Jarokha%20window%20hq.jpg?Expires=1802811807&Signature=UUEt6uE8wyk2dYsR3yEfEX~SpwmUP7aGlmeRbmJUo5xieb1h-VAiqI2g8fMWNLK0kyFo1rzM7UlhGRckkA3PwCqqwRsyHTCX7T5CkNRwc0-WgUZ~ZqWTuB4qKon2ApFgiUg1KXvHYI-tmamM~Yq3lMvhBJ1Yb1rEhHoONfkcwkuSOCIFm8eZcizva3Fre1yz700ilRe0uymC71B9y9LiuBCN59Qqo3tzaw2dANPOCIzZQKt0plV02GzUyoKID4ifk8uJVtp7m8mPm7onIrOjiltcX8x-sdD0zjQUpjjUjJM3WAg6hipSD0UpeG3Ff0PQgnpUhqe5qqun19HjPgI31g__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1634",
+          "kg_id": "KG-1634",
+          "title": "Krishna conversing with a Sakhi: Illustration to a Rasikapriya Series",
+          "url_path": "/works/kg-1634-krishna-conversing-with-a-sakhi-illustra",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/462a9a11-cb82-4e6d-86de-a7675a44feff/KG_Catalog_SW_PDF_FINAL_2021.jpg?Expires=1802811806&Signature=CD~5SIKtfOcVVMa2CD9lBOXrtZaWNiHOmNr2ZzTCVDlM8grzp194yEK~d06RBiNlgMZ0HiUFu9IBFJGY9gxNmeZaWN28-vNUWUJcYi7opS0F3oFukO7poSoXEOCmaObEQ8Du1KUaI0tlNAMYeZDWFTRH8AGk0Bx~xeLXS2Bs7k89IG8P8ityr2NUkwA~81Q0okfC6FoeVdhB~fHSjFxyXQMPLK~HG3tUywCZwEZPqA8UI-FeLKBht7XeKJIVQ7UOYr2gZ~o5IBaMSPAOozPPKP02OplOA2q3KN7CBQIU1b98nuAUQQxUuWIpcG282-M~sC6NPWeJRwc-D9iGs9PN-g__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1633",
+          "kg_id": "KG-1633",
+          "title": "Krishna Enthroned: Illustration to a Rasikapriya Series",
+          "url_path": "/works/kg-1633-krishna-enthroned-illustration-to-a-rasi",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/969b4e7e-7b48-4c81-8c85-b200037c78a3/Rasikapriya%20-%20Krishna%20Enthroned%20recto.jpg?Expires=1802811807&Signature=Myn2cz4ZuJIZUh54nkeWbdgPcyDgQJMW8nlCGQb9bHO3sdzAVrHVXFES~z9xWMa~2drL5PwWObfTIJ1IJCwOBM30YLjlLghj3f~AXN1nrbA89RMHv4S5lb9sQyDMIVH6EGAsOs7g44E8pyXJBeFmRyCZ~Y9LfziuqRsEw0bjIT8ilmu6khXx~tAw9oqtR~85BrAjraOE-owqdwJUL0VeQV46RE28knb6SmoEVRsQj6XXmdbWCvF8d4OAB7tocvkJ7caC3DCwnQgtZki2w~crBUTcf~aE53vSP7TSgMr9sEu6~rClvhkrGICKE6wrmFTuIxnVBL4TOuEI-y~C5dtw2g__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1065",
+          "kg_id": "KG-1065",
+          "title": "Krishna seated with Radha: Illustration to a Rasikapriya Series",
+          "url_path": "/works/kg-1065-krishna-seated-with-radha-illustration-t",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/b5dd231a-b7be-42ed-847f-ac4bab4265f7/Illustration%20to%20a%20Rasikapriya%20series.%20Krishna%20seated%20with%20Radha%20%20%20hq.jpg?Expires=1802811806&Signature=y0ulcuaQwIStPSwaKzJttHJ3lDrftPc5ZfVLP0ndFUOWbcrE4g5G0w5w84Wi8JA8z9JU1nbCKvbooom-43EMhpxkoTXLk-qMUXrKW-woabDauKtv4ug5Ae823VKSN-93b9-bTxRjVcW5X~HfeIgObGO2EoH13rSL1pxyzN01swFW3zl3mtJ2NxO-3XcvOdO2XRUVi9ZmFDT9ciNJIisxsyrJwJNTDvKvsNaHzb5b9i-30g2q5Vu7LujuSd-R1a~32RvjR6JsRl5zuagevhJRwKbFrj6jXbjrMY5NKrCVtkzQaC0m9oVTnUm27N2nXLuDIMlw7X93E5Pe4nu4~jKfwQ__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1775",
+          "kg_id": "KG-1775",
+          "title": "Radha seated in a pavilion, visited by a female companion dressed as a boy: Illustration to a Rasikapriya Series",
+          "url_path": "/works/kg-1775-radha-seated-in-a-pavilion-visited-by-a",
+          "thumbnail": null
+        },
+        {
+          "id": "kg-1063",
+          "kg_id": "KG-1063",
+          "title": "Radha seated with a confidant in a pavilion: Illustration to a Rasikapriya Series",
+          "url_path": "/works/kg-1063-radha-seated-with-a-confidant-in-a-pavil",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/d5cd9cdd-064f-4e77-8b49-25f663edff2c/Rasikapriya%20-%20Radha%20Seated%20with%20a%20Confidant%20recto%20crop.jpg?Expires=1802811805&Signature=t81Ie-AxAU~mDp6oetckg~4o4IAVYBxifCEvTqVcFOshMw6mQZjrH5Gr6p2z9eV1h-bEEVlXNhUDi5AY~T9UEOzf5A9osR0YkGHh4U35Xp1FjfewFoZfqtKyjJxEPpTqao~NA1hsydDRrbLqxgb1FJzhu1i6Nu2arNGHo3ukRc2S6VD5tffg81n29EBpNVNXGU23FZujKgknqXLNMHoC2BUjTjWydLSZKlJiCxaWVi6~xbbff~szFJSTxCRz1LxSfFIWPvf6~FhQQjGGbBZ-3ODkAUn7xgLZYrZBaEmbvvfK4fxj5aLUda0MPj1waPKohC45ElDu5b5NQoc8gkyLxA__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        },
+        {
+          "id": "kg-1101",
+          "kg_id": "KG-1101",
+          "title": "Vihit Hava: Illustration to a Rasikapriya Series",
+          "url_path": "/works/kg-1101-vihit-hava-illustration-to-a-rasikapriya",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/77bd4445-25dc-4bb7-b663-68d00dfe32ff/Illustration%20to%20a%20Rasikapriya%20series_%20Vihit%20Hava%20Recto%20%5B1%5D.jpg?Expires=1802811924&Signature=XcCnX~4nTv6HGAZrzUKdNjFB7aKCnLNJvDOX1kcQi7sfyDlx4AUw4xeqUJMEceD2GDyBFkdOSJ2pEkfjdd6O5PIdG5k8pcIDSFPH~a-ov5~egZMcOp-hfdSmzKxwZ1GlEeGKi20QJ0dcbDc1897NtZiMAWSV2-Spkw7mR3SRJNtURKFAqZc5Qez0lo0~-ZZ~bdMwOgluWvs0Y6LhfVnoG0CuwjkrIzgH-EipOPiF0h0485N1MK77CXnqUtNawGQvTZ1vlCdEk77NdVoiCBu5M5tJ62Gg6v~tD~JBEya3PhLC4qcJ0TAfhpgOeiuGDGR3SAMxKvzdI~4BkoBfAvNaXg__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        }
+      ]
     },
     {
       "slug": "god-goddess",
@@ -5791,8 +6227,16 @@
       "source_catalog": "Travel Posters",
       "url_path": "/collections/travel-posters",
       "include_tags": [],
-      "member_count": 0,
-      "members": []
+      "member_count": 1,
+      "members": [
+        {
+          "id": "kg-1363",
+          "kg_id": "KG-1363",
+          "title": "India, Air India",
+          "url_path": "/works/kg-1363-india-air-india",
+          "thumbnail": "https://data-us-east-1.primerws.com/kapoor_galleries/i/789e6210-bb5b-40a7-99ca-6c88878ef9b4/201124_KapoorGalleries_0034.jpg?Expires=1802811752&Signature=k8-BDsFPNqEo96KL6MXV~4lFm3-owvC-STLQrVqzSpuDPvL~AQ5nVB8temPQO3QBDKPMQxBsYsED~UkSTazu05S-LsLGW~Irmu~EcmVIC~hkXeYofH40vKs9mimo9lwJDvWbQ4BPFQq2X1u89yvFaki6IbKNAOv58ILisQLJVrB~dasnC2CpJK8PiAjj7ET4UCHjy8MuGfeSzdG9jfz6VZbpHwoxpe6UydRw3ua2dZcfYOvKGwJnMKk6TRkhBxKqivpKkEdGQtUtn-7V0ZxvZAo2ZIuK4~WKYWIScSooT96Ao5g7MkORODGK9efZfie1vAVG6Fcy1Lr9Njoykj4XfQ__&Key-Pair-Id=K2SVGVHI7PEVAH"
+        }
+      ]
     }
   ]
 }

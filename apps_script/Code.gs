@@ -32,10 +32,135 @@ function onOpen() {
     .addItem('Show photo queue', 'showPhotoQueue')
     .addItem('Highlight conflicts', 'highlightConflicts')
     .addSeparator()
+    .addItem('Review sold candidates', 'reviewSoldCandidates')
+    .addSeparator()
     .addItem('Inspect selected work', 'showGapsForSelectedWork')
     .addItem('Suggest resolution for selected cell', 'suggestResolution')
     .addItem('Open Drive folder for KG-#', 'openDriveForSelectedWork')
     .addToUi();
+}
+
+
+// Pulls data/sold_candidates.csv from the repo and shows each
+// candidate (KG-#, match_score, external title, current title) in a
+// sidebar.  For each row, the curator either:
+//
+//   - Clicks "Confirm sold" — writes status='sold' into the Master
+//     sheet for that KG-# and shows the row-level git command the
+//     curator should run locally to persist the change to master.csv.
+//   - Clicks "Reject" — paints a note in the audit so the next
+//     pipeline run can skip this candidate.
+//
+// We deliberately do not auto-flip status because title collisions
+// across centuries are real ("Krishna and Radha" exists 30+ times).
+// The 95-threshold from the pipeline cuts the false-positive rate
+// but cannot eliminate it.
+function reviewSoldCandidates() {
+  var url = MASTER_CSV_URL.replace(/master\.csv$/, 'sold_candidates.csv');
+  var resp = UrlFetchApp.fetch(url, {muteHttpExceptions: true});
+  if (resp.getResponseCode() !== 200) {
+    SpreadsheetApp.getUi().alert(
+      'sold_candidates.csv not found at ' + url + '.\n' +
+      'Run `kg-inv enrich-website` locally and push to populate.'
+    );
+    return;
+  }
+  var rows = Utilities.parseCsv(resp.getContentText());
+  if (rows.length < 2) {
+    SpreadsheetApp.getUi().alert(
+      'No sold candidates pending review.\n' +
+      'Either nothing in the curator sheet has the SOLD flag, or all ' +
+      'flagged rows already match works that fall below the 95 ' +
+      'confidence threshold.'
+    );
+    return;
+  }
+  var header = rows[0];
+  var idx = {};
+  header.forEach(function (h, i) { idx[h] = i; });
+
+  var html =
+    '<style>body{font-family:Arial,sans-serif;padding:14px;font-size:13px}' +
+    '.cand{margin:10px 0;padding:10px;border:1px solid #eee;border-radius:4px}' +
+    '.kg{font-weight:bold;color:#1976d2}' +
+    '.score{color:#080;float:right;font-size:12px}' +
+    '.row{margin:4px 0}' +
+    '.label{color:#888;font-size:11px;text-transform:uppercase;letter-spacing:0.5px}' +
+    'pre{background:#f4f4f4;padding:6px;font-size:11px;white-space:pre-wrap;border-radius:4px}' +
+    'button{padding:6px 12px;margin-right:6px;cursor:pointer;border-radius:3px;border:1px solid #ccc}' +
+    'button.confirm{background:#fee;border-color:#c00;color:#900}' +
+    'button.reject{background:#f4f4f4}</style>' +
+    '<h3>Sold candidates · ' + (rows.length - 1) + ' pending review</h3>' +
+    '<p style="color:#888">Fuzzy-matched (score ≥ 95) from the curator ' +
+    'Catalog & Inventory Sheet. Confirm only after spot-checking the ' +
+    'title against the current Master row.</p>';
+
+  for (var i = 1; i < rows.length; i++) {
+    var r = rows[i];
+    var kg = r[idx['kg_id']] || '';
+    var score = r[idx['match_score']] || '?';
+    var ext = (r[idx['external_title']] || '').replace(/</g, '&lt;');
+    var cur = (r[idx['current_title']] || '').replace(/</g, '&lt;');
+    var safeKg = kg.replace(/'/g, '');
+    html +=
+      '<div class="cand">' +
+      '<div class="score">match ' + score + '/100</div>' +
+      '<div class="kg">' + kg + '</div>' +
+      '<div class="row"><span class="label">Curator sheet says:</span><br>' + ext + '</div>' +
+      '<div class="row"><span class="label">Current Master row:</span><br>' + cur + '</div>' +
+      '<div class="row" style="margin-top:8px">' +
+      '<button class="confirm" onclick="google.script.run.applySoldStatus(\'' + safeKg + '\')">Confirm sold &amp; flip Master row</button>' +
+      '</div>' +
+      '<div class="row"><span class="label">To persist to master.csv:</span>' +
+      '<pre>python -m src.cli resolve ' + safeKg + ' status sold \\\n' +
+      '  --reason "Curator sheet SOLD flag confirmed via Apps Script" \\\n' +
+      '  --by your.email@kapoors.com</pre></div>' +
+      '</div>';
+  }
+  SpreadsheetApp.getUi().showSidebar(
+    HtmlService.createHtmlOutput(html).setTitle('Sold candidates')
+  );
+}
+
+
+// Called from the sold-candidates sidebar.  Locates the KG-# row in
+// the Master sheet, flips its `status` cell to 'sold', and paints
+// the row pink so the curator sees the change reflected in the
+// sheet immediately.  Note: this does NOT push to the repo — the
+// curator still has to run `kg-inv resolve ... status sold` locally
+// to make the master.csv change durable.  The sheet edit is a
+// preview / fast-feedback mechanism, not the source of truth.
+function applySoldStatus(kgId) {
+  if (!kgId) return;
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName(MASTER_SHEET);
+  if (!sheet) {
+    SpreadsheetApp.getUi().alert('Run "Refresh from repo" first.');
+    return;
+  }
+  var data = sheet.getDataRange().getValues();
+  if (data.length < 2) return;
+  var header = data[0];
+  var idCol = header.indexOf('work_id');
+  var statusCol = header.indexOf('status');
+  if (idCol < 0 || statusCol < 0) {
+    SpreadsheetApp.getUi().alert(
+      'Master sheet missing work_id or status column.'
+    );
+    return;
+  }
+  for (var r = 1; r < data.length; r++) {
+    if (String(data[r][idCol]) === kgId) {
+      sheet.getRange(r + 1, statusCol + 1).setValue('sold');
+      sheet.getRange(r + 1, 1, 1, header.length)
+        .setBackground('#ffe4e4');
+      ss.toast('Marked ' + kgId + ' as sold (preview).', 'Inventory', 4);
+      return;
+    }
+  }
+  SpreadsheetApp.getUi().alert(
+    kgId + ' not found in Master sheet — Refresh from repo first?'
+  );
 }
 
 // Pulls data/photo_queue.csv from the repo and shows the

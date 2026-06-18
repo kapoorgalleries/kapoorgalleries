@@ -39,7 +39,9 @@ Designed to be a no-op when ``collections.yaml`` is missing — keeps
 
 from __future__ import annotations
 
+import csv
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -50,8 +52,38 @@ try:
 except ImportError:
     HAS_YAML = False
 
+try:
+    from rapidfuzz import fuzz
+    HAS_RAPIDFUZZ = True
+except ImportError:
+    HAS_RAPIDFUZZ = False
+
 
 _SCHEMA_VERSION = 1
+
+# Strip noise terms before fuzzy-matching seed titles against feed
+# titles.  Same vocabulary as enrichment.py — catalog folder/file
+# names use "Illustration to / Leaf from / Folio from" patterns that
+# the inventory feed often omits.
+_SEED_NOISE = re.compile(
+    r"\b(folio|leaf|page|illustration|to a|to the|from a|from the|"
+    r"series|circa|c\.|ca\.|the|of)\b",
+    re.IGNORECASE,
+)
+
+
+def _norm_seed(s: Any) -> str:
+    # Defensive: a curator can accidentally write an unquoted YAML
+    # entry like `- Title: With a colon`, which PyYAML parses as a
+    # dict.  Coerce non-strings to empty so they're emitted as
+    # "no match" rows in the audit instead of crashing the pipeline.
+    if not isinstance(s, str):
+        return ""
+    s = s.lower().strip()
+    s = _SEED_NOISE.sub(" ", s)
+    s = re.sub(r"[^\w\s]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
 
 
 def _now_utc() -> str:
@@ -80,11 +112,33 @@ def _member_summary(work: dict) -> dict:
     }
 
 
+def _best_seed_match(
+    needle: str, haystack: list[tuple[str, str]], threshold: int,
+) -> tuple[str, int] | None:
+    """Best fuzzy match for a seed title against (kg_id, normalized_title)
+    pairs.  Same family of token-set-ratio matching as enrichment.py.
+    """
+    if not needle or not HAS_RAPIDFUZZ:
+        return None
+    best_kg = None
+    best_score = 0
+    for kg_id, h_title in haystack:
+        if not h_title:
+            continue
+        score = int(fuzz.token_set_ratio(needle, h_title))
+        if score > best_score:
+            best_score = score
+            best_kg = kg_id
+    return (best_kg, best_score) if best_kg and best_score >= threshold else None
+
+
 def export_collections(
     *,
     config_yaml: Path | str = "data/collections.yaml",
     feed_path: Path | str = "data/website_inventory.json",
     out_path: Path | str = "data/collections.json",
+    seed_audit_csv: Path | str = "data/collection_seed_audit.csv",
+    seed_threshold: int = 90,
 ) -> tuple[Path, int]:
     """Build collections.json from the YAML config and the inventory feed.
 
@@ -119,7 +173,12 @@ def export_collections(
 
     # Pre-index works for fast tag and KG-# lookup.
     by_kg = {w["kg_id"]: w for w in works}
+    # Haystack for seed-title fuzzy matching.
+    haystack: list[tuple[str, str]] = [
+        (w["kg_id"], _norm_seed(w["title"])) for w in works
+    ]
 
+    audit_rows: list[dict] = []
     collections_out: list[dict] = []
     n_with_members = 0
     for spec in coll_specs:
@@ -128,6 +187,7 @@ def export_collections(
             continue
         include_tags = set(spec.get("include_tags") or [])
         include_kg_ids = set(spec.get("include_kg_ids") or [])
+        seed_titles: list[str] = spec.get("seed_titles") or []
 
         members: list[dict] = []
         seen: set[str] = set()
@@ -145,6 +205,36 @@ def export_collections(
         for kg in include_kg_ids:
             w = by_kg.get(kg)
             if w and kg not in seen:
+                members.append(_member_summary(w))
+                seen.add(kg)
+
+        # Seed-title fuzzy matches — for catalogs where membership is
+        # known by title (curator extracted from a Drive folder of
+        # lot-numbered PDFs) but the KG-#s haven't been mapped.
+        for title in seed_titles:
+            res = _best_seed_match(_norm_seed(title), haystack, seed_threshold)
+            if not res:
+                audit_rows.append({
+                    "collection": slug,
+                    "seed_title": title[:120],
+                    "kg_id": "",
+                    "match_score": 0,
+                    "decision": "no match >= threshold",
+                })
+                continue
+            kg, score = res
+            audit_rows.append({
+                "collection": slug,
+                "seed_title": title[:120],
+                "kg_id": kg,
+                "match_score": score,
+                "decision": ("added" if kg not in seen
+                             else "already-in-collection"),
+            })
+            if kg in seen:
+                continue
+            w = by_kg.get(kg)
+            if w:
                 members.append(_member_summary(w))
                 seen.add(kg)
 
@@ -172,4 +262,14 @@ def export_collections(
         "collections": collections_out,
     }
     out.write_text(json.dumps(out_feed, indent=2, ensure_ascii=False) + "\n")
+    # Always write the seed audit (even if empty) so the curator can
+    # review what matched and what didn't.
+    audit_path = Path(seed_audit_csv)
+    audit_path.parent.mkdir(parents=True, exist_ok=True)
+    with audit_path.open("w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=[
+            "collection", "seed_title", "kg_id", "match_score", "decision",
+        ])
+        w.writeheader()
+        w.writerows(audit_rows)
     return out, n_with_members

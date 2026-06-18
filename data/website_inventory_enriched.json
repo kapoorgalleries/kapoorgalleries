@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-18T19:06:24Z",
+  "generated_at": "2026-06-18T19:14:43Z",
   "count": 1377,
   "facets": {
     "classification": [
@@ -60,11 +60,11 @@
       },
       {
         "value": "18th-century",
-        "count": 305
+        "count": 308
       },
       {
         "value": "19th-century",
-        "count": 248
+        "count": 250
       },
       {
         "value": "metal",
@@ -216,6 +216,10 @@
       },
       {
         "value": "8th-century",
+        "count": 2
+      },
+      {
+        "value": "medieval",
         "count": 2
       },
       {
@@ -1814,10 +1818,11 @@
         "thumbnail": null
       },
       "tags": [
+        "18th-century",
         "works-on-paper"
       ],
       "status": "available",
-      "era_display": null,
+      "era_display": "18th century",
       "_internal": {
         "primer_uuid": "9d4bb31c-3a34-452d-8d48-07908cf3eebb",
         "has_conflict": false
@@ -30171,10 +30176,11 @@
         "thumbnail": null
       },
       "tags": [
+        "19th-century",
         "works-on-paper"
       ],
       "status": "available",
-      "era_display": null,
+      "era_display": "19th century",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32261,11 +32267,12 @@
         "thumbnail": null
       },
       "tags": [
+        "18th-century",
         "indian",
         "portrait"
       ],
       "status": "available",
-      "era_display": null,
+      "era_display": "18th century",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -32508,10 +32515,11 @@
         "thumbnail": null
       },
       "tags": [
+        "19th-century",
         "portrait"
       ],
       "status": "available",
-      "era_display": null,
+      "era_display": "19th century",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -39482,10 +39490,11 @@
       },
       "tags": [
         "avalokiteshvara",
+        "medieval",
         "metal"
       ],
       "status": "available",
-      "era_display": null,
+      "era_display": "Medieval",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -39520,10 +39529,11 @@
         "thumbnail": null
       },
       "tags": [
+        "medieval",
         "metal"
       ],
       "status": "available",
-      "era_display": null,
+      "era_display": "Medieval",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false
@@ -49526,11 +49536,12 @@
         "thumbnail": null
       },
       "tags": [
+        "18th-century",
         "indian",
         "portrait"
       ],
       "status": "available",
-      "era_display": null,
+      "era_display": "18th century",
       "_internal": {
         "primer_uuid": null,
         "has_conflict": false

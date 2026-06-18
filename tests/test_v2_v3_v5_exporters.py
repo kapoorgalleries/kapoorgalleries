@@ -498,6 +498,47 @@ def test_collections_empty_member_collection_still_emitted(tmp_path: Path):
     assert feed["collections"][0]["member_count"] == 0
 
 
+def test_collections_seed_titles_fuzzy_match(tmp_path: Path):
+    """seed_titles should fuzzy-match against the inventory feed and
+    pull matched KG-#s into the collection's members."""
+    feed_path = tmp_path / "feed.json"
+    _write_feed(feed_path, [
+        _make_work("KG-1", "Krishna and Radha at a Jharokha Window", []),
+        _make_work("KG-2", "A Bronze Vajra", []),
+        _make_work("KG-3", "Krishna Conversing with a Sakhi", []),
+    ])
+    cfg = tmp_path / "coll.yaml"
+    cfg.write_text(
+        "collections:\n"
+        "  - slug: rasikapriya\n"
+        "    title: Rasikapriya\n"
+        "    include_tags: []\n"
+        "    include_kg_ids: []\n"
+        "    seed_titles:\n"
+        '      - "Illustration to a Rasikapriya Series: '
+        'Krishna and Radha at a Jharokha Window"\n'
+        '      - "Illustration to a Rasikapriya series: '
+        'Krishna conversing with a Sakhi"\n'
+        '      - "Something Totally Unrelated To Anything"\n'
+    )
+    audit_path = tmp_path / "audit.csv"
+    out, n = collections_json.export_collections(
+        config_yaml=cfg, feed_path=feed_path,
+        out_path=tmp_path / "collections.json",
+        seed_audit_csv=audit_path,
+    )
+    feed = json.loads(out.read_text())
+    coll = feed["collections"][0]
+    assert n == 1
+    kg_ids = {m["kg_id"] for m in coll["members"]}
+    assert kg_ids == {"KG-1", "KG-3"}
+    rows = list(csv.DictReader(open(audit_path)))
+    # 3 audit rows — 2 matched, 1 no-match.
+    assert len(rows) == 3
+    matched = [r for r in rows if r["kg_id"]]
+    assert len(matched) == 2
+
+
 def test_collections_no_op_when_config_missing(tmp_path: Path):
     feed_path = tmp_path / "feed.json"
     _write_feed(feed_path, [
