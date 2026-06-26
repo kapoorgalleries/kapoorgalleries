@@ -3,6 +3,14 @@
 Quick start for whoever's wiring up the public-facing Kapoor Galleries
 website (StackBlitz project `kapoorgalleries/sb1-vuxiwzek`).
 
+> **Two ways to consume the data:**
+> 1. **Static feeds** (this doc) — fetch the committed `data/*.json`
+>    at build time and filter client-side. Simplest; no server.
+> 2. **Live REST API** ([`BACKEND_API.md`](./BACKEND_API.md)) — point
+>    the site at `/api/works?...` for server-side search, filter, and
+>    pagination. Same item shapes, so the two are interchangeable and
+>    the API can fall back to the static feeds.
+
 > **Status today** (2026-06-18): 1,377 active works in the feed.
 > 624 (45%) have images via Primer's CDN. The remaining 753 active
 > works are awaiting a date-seq → KG-# mapping from the Drive shoots

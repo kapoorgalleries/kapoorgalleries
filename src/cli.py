@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib
+import os
 from pathlib import Path
 
 import click
@@ -2418,6 +2419,39 @@ def check_artsy(csv_path: str, strict: bool):
     # CSV can't slip through a green build.  Warnings never fail.
     if strict and by_sev["error"]:
         raise SystemExit(1)
+
+
+@cli.command("serve")
+@click.option("--host", default="127.0.0.1", show_default=True)
+@click.option("--port", default=8000, show_default=True, type=int)
+@click.option("--data-dir", default="data", show_default=True,
+              help="Directory holding the generated JSON feeds.")
+@click.option("--reload", "reload_", is_flag=True, default=False,
+              help="Auto-reload on code changes (dev only).")
+@click.option("--cors", default=None,
+              help="Comma-separated allowed CORS origins "
+                   "(default: * — set to the website origin in prod).")
+def serve(host: str, port: int, data_dir: str, reload_: bool,
+          cors: str | None):
+    """Run the backend API that serves the website feeds.
+
+    Reads data/*.json (works, collections, masterworks, site) and
+    exposes them at /api/* with server-side search, filter, and
+    pagination.  Requires the 'api' extra: pip install -e '.[api]'.
+    """
+    try:
+        import uvicorn  # noqa: F401
+    except ImportError:
+        raise SystemExit(
+            "FastAPI/uvicorn not installed. Run: pip install -e '.[api]'"
+        )
+    os.environ["KG_API_DATA_DIR"] = data_dir
+    if cors:
+        os.environ["KG_API_CORS_ORIGINS"] = cors
+    click.echo(f"  Serving {data_dir}/*.json at http://{host}:{port}  "
+               f"(docs: /docs)")
+    import uvicorn
+    uvicorn.run("src.api.app:app", host=host, port=port, reload=reload_)
 
 
 if __name__ == "__main__":

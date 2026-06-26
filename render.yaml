@@ -1,0 +1,19 @@
+# Render.com blueprint for the Kapoor Galleries backend API.
+# One-click deploy: connect this repo in the Render dashboard, or
+# `render blueprint launch`.  Free tier is fine for read-only feeds.
+services:
+  - type: web
+    name: kapoor-galleries-api
+    runtime: docker
+    plan: free
+    region: oregon
+    branch: claude/gallery-inventory-system-phuSJ
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      # Lock CORS to the production website origin(s) before launch.
+      - key: KG_API_CORS_ORIGINS
+        value: "https://kapoorgalleries.com,https://www.kapoorgalleries.com"
+      - key: KG_API_DATA_DIR
+        value: /app/data
+    autoDeploy: true
