@@ -1,0 +1,20 @@
+# Keep the image lean — only src/ and data/ are needed at runtime.
+.git
+.github
+.pytest_cache
+**/__pycache__
+*.egg-info
+tests
+docs
+reports
+audits
+catalog
+apps_script
+scripts
+tools
+viewer
+READY_TO_PUBLISH
+data/raw
+data/inventory.db
+*.md
+Makefile
